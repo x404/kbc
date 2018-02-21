@@ -122,7 +122,7 @@ textarea{
 	}
 	&:before{
 		@extend .before;
-		border-bottom: 5px solid $color7;		
+		border-bottom: 5px solid $color7;
 		bottom: -8px;
 		left: 0;
 		width: 100%;
@@ -157,6 +157,7 @@ textarea{
 	padding-left: 1.4rem;
 	padding-right: 1.4rem;
 	transition: .3s background-color, color ease-out;
+	white-space: nowrap;
 	&:hover{
 		color: $color2;
 		background: $color8;
@@ -285,13 +286,165 @@ form{
 	}
 }
 
-/* =main
+/* =header
 ---------------------------*/
+.header{
+	.flexbox{
+		height: 10rem;
+		align-items: center;		
+	}
+	.contacts{
+		&__cell{
+			color: $color10;
+			margin-left: 2.5rem;
+			a{
+				font-weight: 700;
+				color: $color1;
+			}
+			span{
+				color: $color9;
+			}
+		}
+	}
 
-.main{
-	aside{
+	.btn-callback{
+		margin-left: 2.8rem;
+	}
+
+	&__wishlist{
+		margin-left: 2.8rem;
 	}
 }
+
+.extra-toggle{
+	background-color: $color8;
+	border: none;
+	cursor: pointer;
+	$s: 50px;
+	width: $s;
+	height: $s;
+	display: block;
+	margin-left: 2rem;
+	position: relative;
+	padding: 0 15px; 
+	.icon-bar{
+		background: #fff;
+		display: block;
+		height: 2px;
+		margin: 5px 0;
+		position: relative;
+		z-index: 5;
+		transition: .15s margin ease-out;
+		&-full{
+			width: 20px;
+		}
+		&-left{
+			margin-right: 5px;
+		}
+		&-right{
+			margin-left: 5px;
+		}
+	}
+
+	&:hover{
+		.icon-bar-right{
+			margin-left: 0;
+		}
+		.icon-bar-left{
+			margin-right: 0;
+		}
+		&:after{
+			height: calc(100% + 8px);
+		}
+	}
+
+	&:after{
+		@extend .before;
+		border-bottom: 5px solid $color7;
+		bottom: -8px;
+		left: 0;
+		width: 100%;
+	}
+}
+
+.mainnav{
+	// flex-grow: 1;
+	display: flex;
+	margin-left: 1.8rem;
+	a{
+		display: block;
+		text-decoration: none;		
+	}
+	& > ul > li{
+		font-weight: 600;
+		height: 100%;
+		position: relative;
+		& > a{
+			height: 100%;
+			padding-left: 1.2rem;
+			padding-right: 1.2rem;
+			font-size: 1.6rem;
+			display: flex;
+			align-items: center;
+			transition: .3s background-color ease-out;
+			span{
+				border-bottom: 3px solid $color7;
+			}
+			&:hover{
+				// padding-left: 1.3rem;
+				// padding-right: 1.3rem;
+				// font-weight: normal;
+				background: $color7;
+				color: $color2;
+			}
+		}
+
+		&:hover{
+			ul{
+				opacity: 1;
+				z-index: 1;
+				display: block;
+			}
+		}
+
+		ul{ //2-level
+			// display: none;
+			z-index: -10;
+			opacity: 0;
+			background: $color7;
+			position: absolute;
+			padding-top: .8rem;
+			z-index: 10;
+			width: 30rem;
+			@include transition-param();
+			li{
+				a{
+					color: $color2;
+					display: block;
+					font-size: 1.5rem;
+					font-weight: normal;
+					padding: 1.4rem 2.6rem;
+					transition: .3s background-color ease-out;
+					&:hover{
+						background-color: $color11;
+					}
+				}
+				&.active{
+					a, span{
+						background-color: $color11;
+					}
+				}
+			}
+		}
+	}
+}
+/* =header
+---------------------------*/
+
+
+
+
+
 
 
 
@@ -407,11 +560,14 @@ form{
 		}
 	}
 
+
+	// subscribe
 	.subscribe{
 		width: 90%;
 		.title{
 			color: $color2;
 			font-size: 2.4rem;
+			font-weight: 500;
 		}
 
 		p:not(.title){

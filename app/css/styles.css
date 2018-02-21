@@ -1,28 +1,30 @@
 @font-face {
   font-family: 'proxima';
   src: url("../fonts/proxima_nova_black.woff2") format("woff2"), url("../fonts/proxima_nova_black.woff") format("woff");
-  font-weight: normal;
   font-style: normal;
   font-weight: 700; }
 
 @font-face {
   font-family: 'proxima';
+  src: url("../fonts/proxima_nova_semibold.woff2") format("woff2"), url("../fonts/proxima_nova_semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'proxima';
   src: url("../fonts/proxima_nova_bold.woff2") format("woff2"), url("../fonts/proxima_nova_bold.woff") format("woff");
-  font-weight: normal;
   font-style: normal;
   font-weight: 500; }
 
 @font-face {
   font-family: 'proxima';
   src: url("../fonts/proxima_nova_regular.woff2") format("woff2"), url("../fonts/proxima_nova_regular.woff") format("woff");
-  font-weight: normal;
   font-style: normal;
   font-weight: 400; }
 
 @font-face {
   font-family: 'proxima';
   src: url("../fonts/proxima_nova_light.woff2") format("woff2"), url("../fonts/proxima_nova_light.woff") format("woff");
-  font-weight: normal;
   font-style: normal;
   font-weight: 100; }
 
@@ -173,7 +175,7 @@ h3 {
   .tdu:hover, .footer__menu a:hover, .footer .idealpromo a:hover {
     text-decoration: none; }
 
-.before, .btn-animate:before, .btn-animate:after, .footer__menu dt:after, .icon-people:before {
+.before, .btn-animate:before, .btn-animate:after, .extra-toggle:after, .footer__menu dt:after, .icon-people:before {
   content: "";
   display: block;
   position: absolute; }
@@ -230,7 +232,8 @@ textarea {
   height: 4rem;
   padding-left: 1.4rem;
   padding-right: 1.4rem;
-  transition: .3s background-color, color ease-out; }
+  transition: .3s background-color, color ease-out;
+  white-space: nowrap; }
   .btn-callback:hover {
     color: #fff;
     background: #00874d; }
@@ -318,7 +321,113 @@ form .form-control {
   .owl-carousel .owl-controls .owl-buttons .owl-next {
     right: -110px; }
 
-/* =main
+/* =header
+---------------------------*/
+.header .flexbox {
+  height: 10rem;
+  align-items: center; }
+
+.header .contacts__cell {
+  color: #353d3f;
+  margin-left: 2.5rem; }
+  .header .contacts__cell a {
+    font-weight: 700;
+    color: #000; }
+  .header .contacts__cell span {
+    color: #009257; }
+
+.header .btn-callback {
+  margin-left: 2.8rem; }
+
+.header__wishlist {
+  margin-left: 2.8rem; }
+
+.extra-toggle {
+  background-color: #00874d;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-left: 2rem;
+  position: relative;
+  padding: 0 15px; }
+  .extra-toggle .icon-bar {
+    background: #fff;
+    display: block;
+    height: 2px;
+    margin: 5px 0;
+    position: relative;
+    z-index: 5;
+    transition: .15s margin ease-out; }
+    .extra-toggle .icon-bar-full {
+      width: 20px; }
+    .extra-toggle .icon-bar-left {
+      margin-right: 5px; }
+    .extra-toggle .icon-bar-right {
+      margin-left: 5px; }
+  .extra-toggle:hover .icon-bar-right {
+    margin-left: 0; }
+  .extra-toggle:hover .icon-bar-left {
+    margin-right: 0; }
+  .extra-toggle:hover:after {
+    height: calc(100% + 8px); }
+  .extra-toggle:after {
+    border-bottom: 5px solid #c20831;
+    bottom: -8px;
+    left: 0;
+    width: 100%; }
+
+.mainnav {
+  display: flex;
+  margin-left: 1.8rem; }
+  .mainnav a {
+    display: block;
+    text-decoration: none; }
+  .mainnav > ul > li {
+    font-weight: 600;
+    height: 100%;
+    position: relative; }
+    .mainnav > ul > li > a {
+      height: 100%;
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
+      font-size: 1.6rem;
+      display: flex;
+      align-items: center;
+      transition: .3s background-color ease-out; }
+      .mainnav > ul > li > a span {
+        border-bottom: 3px solid #c20831; }
+      .mainnav > ul > li > a:hover {
+        background: #c20831;
+        color: #fff; }
+    .mainnav > ul > li:hover ul {
+      opacity: 1;
+      z-index: 1;
+      display: block; }
+    .mainnav > ul > li ul {
+      z-index: -10;
+      opacity: 0;
+      background: #c20831;
+      position: absolute;
+      padding-top: .8rem;
+      z-index: 10;
+      width: 30rem;
+      -webkit-transition: opacity 0.2s ease-out;
+      transition: opacity 0.2s ease-out; }
+      .mainnav > ul > li ul li a {
+        color: #fff;
+        display: block;
+        font-size: 1.5rem;
+        font-weight: normal;
+        padding: 1.4rem 2.6rem;
+        transition: .3s background-color ease-out; }
+        .mainnav > ul > li ul li a:hover {
+          background-color: #980928; }
+      .mainnav > ul > li ul li.active a, .mainnav > ul > li ul li.active span {
+        background-color: #980928; }
+
+/* =header
 ---------------------------*/
 /* =footer
 ---------------------------*/
@@ -393,7 +502,8 @@ form .form-control {
     width: 90%; }
     .footer .subscribe .title {
       color: #fff;
-      font-size: 2.4rem; }
+      font-size: 2.4rem;
+      font-weight: 500; }
     .footer .subscribe p:not(.title) {
       padding: 2.5rem 0; }
     .footer .subscribe .form-control {
