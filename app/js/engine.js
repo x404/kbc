@@ -1,40 +1,40 @@
 $(document).ready(function(){
 
 	// карусель
-	$('#foo1').owlCarousel({
-		loop:false,
-		nav:true,
-		dots: false,
-		items:3,
-		startPosition : 2,
-		stagePadding : 250,
-		navText: ["", ""],
-		onInitialized: function (event) {
-			refreshFirstLastVisible(event);
-		},
-		onChanged: function (event) {
-			refreshFirstLastVisible(event);
-		},
-		responsive:{
-			0:{
-				items:1,
-				stagePadding: 20
-			},
-			900:{
-				items:2,
-				stagePadding: 0
-			},
-			992:{
-				items:1
-			},
-			1250:{
-				items:2
-			},
-			1550:{
-				items:3
-			}
-		}
-	});
+	// $('#foo1').owlCarousel({
+	// 	loop:false,
+	// 	nav:true,
+	// 	dots: false,
+	// 	items:3,
+	// 	startPosition : 2,
+	// 	stagePadding : 250,
+	// 	navText: ["", ""],
+	// 	onInitialized: function (event) {
+	// 		refreshFirstLastVisible(event);
+	// 	},
+	// 	onChanged: function (event) {
+	// 		refreshFirstLastVisible(event);
+	// 	},
+	// 	responsive:{
+	// 		0:{
+	// 			items:1,
+	// 			stagePadding: 20
+	// 		},
+	// 		900:{
+	// 			items:2,
+	// 			stagePadding: 0
+	// 		},
+	// 		992:{
+	// 			items:1
+	// 		},
+	// 		1250:{
+	// 			items:2
+	// 		},
+	// 		1550:{
+	// 			items:3
+	// 		}
+	// 	}
+	// });
 
 
 	// mobile-menu
@@ -66,6 +66,27 @@ $(document).ready(function(){
 		}
 	});
 
+
+	// inputs
+	$('.input-field').each(function(){
+		if ($(this).find('.form-control').val().length > 0) {
+			return $(this).addClass('is-charged');
+		}
+	});
+
+	$('body').on('focusin', '.input-field', function(e) {
+		return $(this).addClass('is-focused');
+	})
+	.on('focusout', '.input-field', function(e) {
+		$(this).removeClass('is-focused');
+		return $(this).removeClass('is-focused');
+	})
+	.on('change', '.input-field', function() {
+		$(this).removeClass('is-charged');
+		if ($(this).find('.form-control').val().length > 0) {
+			return $(this).addClass('is-charged');
+		}
+	});
 	
 });
 

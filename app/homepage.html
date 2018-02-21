@@ -78,16 +78,16 @@
 		</nav>
 		<!-- =/nav -->
 
-		<button type="button" class="callback_btn">Обратный звонок</button>
+		<button type="button" class="btn-callback">Обратный звонок</button>
 
 
 		<!-- =contacts -->
 		<div class="header__contacts">
-			<div class="header__contacts_cell">
+			<div class="contacts__cell">
 				<p>Недвижимость</p>
 				<a href="tel:+73912179217" title="" class="tel"><span class="code">+7 (391)</span> 217-9-217</a>
 			</div>
-			<div class="header__contacts_cell">
+			<div class="contacts__cell">
 				<p>ЖБИ брусчатка</p>
 				<a href="tel:+73912016092" title="" class="tel"><span class="code">+7 (391)</span> 201-60-92</a>
 			</div>
@@ -156,18 +156,21 @@
 			<!-- =content -->
 			<div class="col-7">
 				<div class="footer__content">
-					<div class="footer__contacts">
-						Недвижимость
-						+7 (391) 217-9-217
+					<div class="footer__contacts flexbox">
+						<div class="contacts__cell">
+							<p>Недвижимость</p>
+							<a href="tel:+73912179217" title="" class="tel"><span class="code">+7 (391)</span> 217-9-217</a>
+						</div>
+						<div class="contacts__cell">
+							<p>ЖБИ брусчатка</p>
+							<a href="tel:+73912016092" title="" class="tel"><span class="code">+7 (391)</span> 201-60-92</a>
+						</div>
 
-						ЖБИ брусчатка
-						+7 (391) 201-60-92
-
-						<button type="button">Обратный звонок</button>
+						<button type="button" class="btn-callback">Обратный звонок</button>
 
 						<div class="footer__social">
-							<a href="#" title="" target="_blank"></a>
-							<a href="#" title="" target="_blank"></a>
+							<a href="#" title="" target="_blank"><img src="images/social/vk.png" alt="Вконтакте" /></a>
+							<a href="#" title="" target="_blank"><img src="images/social/fb.png" alt="Facebook" /></a>
 							<a href="#" title="" target="_blank"></a>
 						</div>
 					</div>
@@ -237,8 +240,12 @@
 					<p>Подпишь на обновления, чтобы незамедлительно получать наши новости</p>
 					<form action="#" method="post">
 						<fieldset>
-							<input type="text" class="form-control" name="email" value="">
-							<button type="submit" class="submit btn-bline" value="">Подписаться</button>
+							<div class="input-field icon-people">
+								<label for="subscribe_email" class="name-field">E-mail</label>
+								<label for="subscribe_email" class="helper-field helper-field-name">E-mail</label>
+								<input type="email" id="subscribe_email" name="email" class="form-control email required" value="" />
+							</div>
+							<button type="submit" class="submit btn-animate" value=""><span>Подписаться</span></button>
 						</fieldset>
 					</form>
 				</div>
