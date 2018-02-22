@@ -92,6 +92,23 @@ textarea{
 	font-family: 'proxima';
 }
 
+
+.flex-cv{
+	display: flex;
+	align-items: center;
+}
+
+.flex-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.transition-bg-color{
+	transition: .3s background-color, color ease-out;
+}
+
+
 .form-control {
    border: 1px solid $color3;
    border-radius: 0;
