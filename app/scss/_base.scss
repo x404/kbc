@@ -301,8 +301,6 @@ form{
 
 
 
-
-
 .fill-effect{
 	display: block;
 	position: relative;
@@ -488,16 +486,14 @@ form{
 			span{
 				border-bottom: 3px solid $color7;
 			}
-			&:hover{
-				// padding-left: 1.3rem;
-				// padding-right: 1.3rem;
-				// font-weight: normal;
-				background: $color7;
-				color: $color2;
-			}
 		}
 
 		&:hover{
+			& > a,
+			& > span{
+				background: $color7;
+				color: $color2;
+			}
 			ul{
 				opacity: 1;
 				z-index: 100;
@@ -689,4 +685,10 @@ form{
 		@extend .before;
 		@include sprite($icon-people);
 	}
+}
+
+
+
+.filter{
+	padding: 3.5rem 0 3.2rem;
 }

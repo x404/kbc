@@ -3,13 +3,19 @@
 	z-index: 20;
 	overflow: hidden;
 
+	.row{
+		flex-wrap: nowrap;
+	}
+
 	&__left{
 		// flex-grow: 1;
 		width: 960px;
 	}
 
 	&__right{
-		flex: 0 0 638px;			
+		flex: 0 0 638px;
+		display: flex;
+		flex-direction: column;
 	}
 
 	// =carousel
@@ -451,10 +457,14 @@
 
 	// =about
 	.about{
+		flex-grow: 1;
+		// display: flex;
 		&__cell{
+			display: flex;
 			flex-basis: 50%;
 			img{
 				display: block;
+				height: 100%;
 			}
 			p{
 				font-size: 1.5rem;
@@ -508,9 +518,131 @@
 		}
 
 		.more{
+			display: inline-flex;
 			font-weight: 500;
 			margin-top: 1.4rem;
 		}
 	}
 	// =/about
 }
+
+
+// =objects
+.objects-intro{
+	background: url(../images/bg-1.jpg) no-repeat center #ebeef1 /cover;
+	padding: 3.5rem 0 4.3rem;
+	.intro{
+		padding-top: 11rem;
+	}
+}
+
+
+.objects{}
+
+.object{
+	&__item{
+		position: relative;
+		width: 365px;
+
+		&:after{
+			@extend .before;
+			border-bottom: 5px solid $color7;
+			bottom: -8px;
+			z-index: 10;
+			width: 100%;
+			transition: .2s border-bottom ease-out;
+		}
+		&:hover{
+			.object__image{
+				transform: scale(1.15);
+			}
+			.more{
+				background-color: $color7;
+				color: $color2;
+			}
+
+			&:after{
+				border-bottom-width: 8px;
+			}
+		}
+	}
+	&__link{
+		display: block;
+		overflow: hidden;
+		position: relative;
+	}
+
+	&__description{
+		bottom: 0;
+		display: flex;
+		flex-direction: column;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 2;
+	}
+	&__top{
+		flex-grow: 1;
+		padding: 4rem 40px 0 55px;
+		color: $color2;
+		p:not(.name){
+			font-size: 1.5rem;
+			font-weight: 100;
+		}
+		.name{
+			font-size: 30px;
+			font-weight: 800;
+			padding-bottom: 3px;
+			position: relative;
+			text-transform: uppercase;
+			&:after{
+				@extend .before;
+				border-bottom: 3px solid $color7;
+				width: 180px;
+				bottom: 0;
+			}
+		}
+	}
+	&__bottom{
+		background: url(../images/object-bg.png) no-repeat left top;
+		height: 123px;
+		color: $color2;
+		padding: 50px 40px 0 55px;
+		display: flex;
+		justify-content: space-between;
+		p:not(.price){
+			font-size: 1.6rem;
+			font-weight: 100;
+		}
+		.price{
+			padding-top: .5rem;
+			font-size: 2rem;
+			font-weight: 500;
+		}
+		.more{
+			$h: 44px;
+			align-items: center;
+			background: white;
+			border-radius: $h;
+			color: $color13;
+			display: inline-flex;
+			font-size: 1.5rem !important;
+			font-weight: 600;
+			height: $h;
+			padding: 0 1.8rem;
+			transition: .3s background-color, color ease-out;
+		}
+	}
+
+
+	&__image{
+		display: block;
+		transition: .3s transform ease-out;
+	}
+
+	&__labels{
+		margin-top: 1.5rem;
+	}
+}
+// =/objects
