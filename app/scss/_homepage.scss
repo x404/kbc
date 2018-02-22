@@ -105,7 +105,8 @@
 
 
 	// =news
-	.news{
+	.news,
+	.about{
 		&__cell{
 			flex-basis: 50%;
 			position: relative;
@@ -117,9 +118,28 @@
 				img{
 					transform: scale(1.15)
 				}
+			}
+		}
+		&__link{
+			overflow: hidden;
+			display: block;
+			position: relative;
+		}
+
+		&__meta{
+			position: absolute;
+			z-index: 2;			
+			margin: 0 2.5rem 0 3rem;
+			transition: .3s bottom ease-out;
+		}
+	}
+
+	.news{
+		&__cell{
+			&:hover{
 				.news{
 					&__meta{
-						bottom: 95px;
+						bottom: 85px;
 						span{
 							background-color: $color7;
 							color: $color2;
@@ -132,9 +152,6 @@
 			}
 		}
 		&__link{
-			overflow: hidden;
-			display: block;
-			position: relative;
 			&:before{
 				$color_1: rgba(0,0,0,.3);
 				$color_2: rgba(0,0,0,.8);
@@ -194,11 +211,7 @@
 		}
 
 		&__meta{
-			position: absolute;
-			z-index: 2;			
-			bottom: 30px;
-			margin: 0 2.5rem 0 3rem;
-			transition: .3s bottom ease-out;
+			bottom: 20px;
 		}
 
 		&__title{
@@ -206,8 +219,6 @@
 			font-size: 1.8rem;
 			font-weight: 500;
 			color: $color2;
-			// position: absolute;
-			// z-index: 2;
 			line-height: 1.5;
 			span{
 				border-bottom: 2px solid $color7;
@@ -226,4 +237,69 @@
 		}
 	}
 	// =/news
+
+	// =about
+	.about{
+		&__cell{
+			flex-basis: 50%;
+			img{
+				display: block;
+			}
+			p{
+				font-size: 1.5rem;
+				line-height: 1.6;
+			}
+			.title{
+				font-size: 2.4rem;
+				font-weight: 500;
+				line-height: 1.4;
+				padding-bottom: 2rem;
+				padding-right: 7rem;
+				text-decoration: none;
+			}
+			&-right{
+				.title{
+					color: $color2;
+				}
+				p:not(.more){
+					color: $color2;					
+				}
+			}
+		}
+		.tocat{
+			font-size: 2rem;
+			font-weight: 500;
+			margin-bottom: 2.5rem;
+			margin-top: .2rem;
+			padding-left: 96px;
+			position: relative;
+			&:before{
+				@extend .before;
+				@include sprite($icon-catalog);
+				left: 0;
+				top: 0;
+				transition: .3s left ease-out;
+			}
+			span{
+				border-bottom: 2px solid $color7;
+			}
+			&:hover{
+				&:before{
+					left: -10px;
+				}
+			}
+		}
+		&__meta{
+			top: 4rem;
+		}
+		&__link{
+			text-decoration: none;
+		}
+
+		.more{
+			font-weight: 500;
+			margin-top: 1.4rem;
+		}
+	}
+	// =/about
 }

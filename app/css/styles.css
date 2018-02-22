@@ -175,7 +175,7 @@ h3 {
   .tdu:hover, .footer__menu a:hover, .footer .idealpromo a:hover {
     text-decoration: none; }
 
-.before, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after, .extra-toggle:after, .footer__menu dt:after, .icon-people:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .feature .news__link:before {
+.before, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after, .extra-toggle:after, .footer__menu dt:after, .icon-people:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .feature .news__link:before, .feature .about .tocat:before {
   content: "";
   display: block;
   position: absolute; }
@@ -185,7 +185,7 @@ button,
 textarea {
   font-family: 'proxima'; }
 
-.flex-cv, .feature .news .date, .feature .news .cat__link {
+.flex-cv, .btn-more, .feature .news .date, .feature .news .cat__link {
   display: flex;
   align-items: center; }
 
@@ -205,6 +205,25 @@ textarea {
   .form-control:focus, .form-control:active {
     outline: 0;
     border-color: #c20831; }
+
+button {
+  cursor: pointer; }
+
+.btn-more {
+  border: none;
+  border-radius: 4rem;
+  height: 4rem;
+  padding: 0 2rem;
+  font-weight: 500;
+  font-size: 1.5rem; }
+
+.btn-white {
+  color: #010101;
+  background-color: white;
+  transition: .3s background-color, color ease-out; }
+  .btn-white:hover {
+    background-color: #c20831;
+    color: #fff; }
 
 .btn-animate {
   background: #00874d;
@@ -392,12 +411,12 @@ form .form-control {
       top: -5px; }
     .header .wishlist__link:before {
       background-image: url(../images/sprite.png);
-      background-position: 0px 0px;
+      background-position: -77px 0px;
       width: 31px;
       height: 30px; }
     .header .wishlist__link:after {
       background-image: url(../images/sprite.png);
-      background-position: -31px 0px;
+      background-position: -77px -30px;
       width: 31px;
       height: 30px;
       -webkit-transition: opacity 0.2s ease-out;
@@ -593,7 +612,7 @@ form .form-control {
 
 .icon-people:before {
   background-image: url(../images/sprite.png);
-  background-position: 0px -30px;
+  background-position: 0px -65px;
   width: 18px;
   height: 17px; }
 
@@ -671,36 +690,46 @@ form .form-control {
       font-weight: 500; }
       .feature .service__title-middle {
         font-size: 2rem; }
-  .feature .news__cell {
+  .feature .news__cell,
+  .feature .about__cell {
     flex-basis: 50%;
     position: relative; }
-    .feature .news__cell img {
+    .feature .news__cell img,
+    .feature .about__cell img {
       display: block;
       transition: .3s transform ease-out; }
-    .feature .news__cell:hover img {
+    .feature .news__cell:hover img,
+    .feature .about__cell:hover img {
       transform: scale(1.15); }
-    .feature .news__cell:hover .news__meta {
-      bottom: 95px; }
-      .feature .news__cell:hover .news__meta span {
-        background-color: #c20831;
-        color: #fff; }
-    .feature .news__cell:hover .news__desc {
-      opacity: 1; }
-  .feature .news__link {
+  .feature .news__link,
+  .feature .about__link {
     overflow: hidden;
     display: block;
     position: relative; }
-    .feature .news__link:before {
-      background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%);
-      background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%);
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%);
-      background-repeat: repeat-x;
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4D000000', endColorstr='#CC000000', GradientType=0);
-      bottom: 0;
-      left: 0;
-      right: 0;
-      top: 0;
-      z-index: 2; }
+  .feature .news__meta,
+  .feature .about__meta {
+    position: absolute;
+    z-index: 2;
+    margin: 0 2.5rem 0 3rem;
+    transition: .3s bottom ease-out; }
+  .feature .news__cell:hover .news__meta {
+    bottom: 85px; }
+    .feature .news__cell:hover .news__meta span {
+      background-color: #c20831;
+      color: #fff; }
+  .feature .news__cell:hover .news__desc {
+    opacity: 1; }
+  .feature .news__link:before {
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%);
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4D000000', endColorstr='#CC000000', GradientType=0);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2; }
   .feature .news__top {
     display: flex;
     justify-content: space-between;
@@ -732,11 +761,7 @@ form .form-control {
       background-color: #fff;
       color: #000; }
   .feature .news__meta {
-    position: absolute;
-    z-index: 2;
-    bottom: 30px;
-    margin: 0 2.5rem 0 3rem;
-    transition: .3s bottom ease-out; }
+    bottom: 20px; }
   .feature .news__title {
     display: inline-block;
     font-size: 1.8rem;
@@ -755,6 +780,50 @@ form .form-control {
     opacity: 0;
     position: absolute;
     transition: .3s opacity ease-out; }
+  .feature .about__cell {
+    flex-basis: 50%; }
+    .feature .about__cell img {
+      display: block; }
+    .feature .about__cell p {
+      font-size: 1.5rem;
+      line-height: 1.6; }
+    .feature .about__cell .title {
+      font-size: 2.4rem;
+      font-weight: 500;
+      line-height: 1.4;
+      padding-bottom: 2rem;
+      padding-right: 7rem;
+      text-decoration: none; }
+    .feature .about__cell-right .title {
+      color: #fff; }
+    .feature .about__cell-right p:not(.more) {
+      color: #fff; }
+  .feature .about .tocat {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+    margin-top: .2rem;
+    padding-left: 96px;
+    position: relative; }
+    .feature .about .tocat:before {
+      background-image: url(../images/sprite.png);
+      background-position: 0px 0px;
+      width: 77px;
+      height: 65px;
+      left: 0;
+      top: 0;
+      transition: .3s left ease-out; }
+    .feature .about .tocat span {
+      border-bottom: 2px solid #c20831; }
+    .feature .about .tocat:hover:before {
+      left: -10px; }
+  .feature .about__meta {
+    top: 4rem; }
+  .feature .about__link {
+    text-decoration: none; }
+  .feature .about .more {
+    font-weight: 500;
+    margin-top: 1.4rem; }
 
 /* =mobile-menu
 ---------------------------*/
