@@ -1,6 +1,104 @@
 .feature{
-	background-color: $color4;
-	height: 200px;
 	position: relative;
 	z-index: 20;
+	overflow: hidden;
+
+	&__left{
+		flex-grow: 1;
+	}
+
+	&__right{
+		flex: 0 0 638px;			
+	}
+
+	.service{
+		$color_1: #980929;
+		$color_2: #c20831;
+		@include gradient-vertical($color_1, $color_2);
+		background-color: #a7092c;
+		align-items: center;
+		margin-top: 5px;
+		&__cell{
+			flex: 1 0 50%;
+			height: 125px;
+			position: relative;
+			img{
+				left: 35px;
+				margin-top: -30px;
+				position: absolute;
+				top: 50%;
+				z-index: 2;
+				transition: .25s transform ease-out;
+			}
+			&:first-child(){
+				&:before{
+					@extend .before;
+					height: 70px;
+					border-left: 2px solid $color2;
+					top: 50%;
+					margin-top: -35px;
+					right: 0;
+				}
+			}
+		}
+		&__link{
+			// align-items: center;
+			color: $color2;
+			display: flex;
+			flex-direction: column;
+			font-size: 1.6rem;
+			height: 100%;
+			justify-content: center;
+			padding-left: 120px;
+			text-decoration: none;
+			&:after,
+			&:before{
+				@extend .before;
+				background-color: #e20c3c;
+				top: 0;
+				left: 0;
+				height: calc(100% + 5px);
+				width: 100%;
+				z-index: 1;
+			}
+			
+			&:after{
+				opacity: 0;
+				transition-duration: .1s, .3s;
+				transition-property: opacity, top;
+			}
+			&:before{
+				transition: .3s top ease-out;
+				z-index: -1;
+				display: none;
+			}
+			&:hover{
+				&:before{
+					z-index: 1;
+					top: -5px;
+				}
+				&:after{
+					top: -5px;
+					opacity: 1;
+					// height: calc(100% + 5px);
+				}
+				img{
+					transform: translateY(-10px)
+				}
+			}
+
+			p{
+				position: relative;
+				z-index: 2;
+			}
+		}
+
+		&__title{
+			font-size: 2.4rem;
+			font-weight: 500;
+			&-middle{
+				font-size: 2rem;
+			}
+		}
+	}
 }
