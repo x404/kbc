@@ -6,7 +6,8 @@ $(document).ready(function(){
 		nav:true,
 		dots: true,
 		items:1,
-		navText: ["", ""]
+		navText: ["", ""],
+		stagePadding : 0
 		// onInitialized: function (event) {
 		// 	refreshFirstLastVisible(event);
 		// },
