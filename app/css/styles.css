@@ -175,7 +175,7 @@ h3 {
   .tdu:hover, .footer__menu a:hover, .footer .idealpromo a:hover {
     text-decoration: none; }
 
-.before, .btn-animate:before, .btn-animate:after, .extra-toggle:after, .footer__menu dt:after, .icon-people:before {
+.before, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after, .extra-toggle:after, .footer__menu dt:after, .icon-people:before {
   content: "";
   display: block;
   position: absolute; }
@@ -296,13 +296,14 @@ form .form-control {
 
 .contacts__cell p {
   font-size: 1.5rem;
-  margin-bottom: .2rem; }
+  margin-bottom: .4rem; }
 
 .contacts__cell a {
   color: #fff;
   font-size: 20px;
   font-weight: 500;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-left: .2rem; }
   .contacts__cell a .code {
     font-weight: 100; }
 
@@ -321,15 +322,31 @@ form .form-control {
   .owl-carousel .owl-controls .owl-buttons .owl-next {
     right: -110px; }
 
+.fill-effect {
+  display: block;
+  position: relative;
+  overflow: hidden; }
+  .fill-effect:before {
+    top: 0;
+    left: 0;
+    background-color: #c20831;
+    transform: translateX(-110%);
+    height: 100%;
+    width: 100%;
+    transition: .3s transform ease-out; }
+  .fill-effect:hover:before {
+    transform: translateX(0); }
+
 /* =header
 ---------------------------*/
 .header .flexbox {
   height: 10rem;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-between; }
 
 .header .contacts__cell {
   color: #353d3f;
-  margin-left: 2.5rem; }
+  margin-left: 2rem; }
   .header .contacts__cell a {
     font-weight: 700;
     color: #000; }
@@ -337,10 +354,56 @@ form .form-control {
     color: #009257; }
 
 .header .btn-callback {
-  margin-left: 2.8rem; }
+  margin-left: 1.5rem;
+  margin-top: .4rem; }
 
-.header__wishlist {
-  margin-left: 2.8rem; }
+.header .wishlist {
+  display: flex;
+  margin-left: 2.2rem;
+  padding-top: 1rem;
+  width: 65px;
+  justify-content: center; }
+  .header .wishlist i {
+    font-style: normal;
+    -webkit-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out; }
+  .header .wishlist__link {
+    height: 31px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: block;
+    padding-left: 34px;
+    position: relative;
+    text-decoration: none; }
+    .header .wishlist__link:before, .header .wishlist__link:after {
+      left: 0;
+      top: -5px; }
+    .header .wishlist__link:before {
+      background-image: url(../images/sprite.png);
+      background-position: 0px 0px;
+      width: 31px;
+      height: 30px; }
+    .header .wishlist__link:after {
+      background-image: url(../images/sprite.png);
+      background-position: -31px 0px;
+      width: 31px;
+      height: 30px;
+      -webkit-transition: opacity 0.2s ease-out;
+      transition: opacity 0.2s ease-out;
+      opacity: 0; }
+    .header .wishlist__link:hover:after {
+      opacity: 1; }
+    .header .wishlist__link:hover i {
+      color: #fff;
+      position: relative;
+      z-index: 3; }
+    .header .wishlist__link:hover .fill-effect:before {
+      transform: translateX(0); }
+  .header .wishlist .count {
+    border-bottom: 2px solid #c20831;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-align: center; }
 
 .extra-toggle {
   background-color: #00874d;
@@ -349,7 +412,8 @@ form .form-control {
   width: 50px;
   height: 50px;
   display: block;
-  margin-left: 2rem;
+  margin-left: 1rem;
+  margin-top: -.9rem;
   position: relative;
   padding: 0 15px; }
   .extra-toggle .icon-bar {
@@ -379,8 +443,11 @@ form .form-control {
     width: 100%; }
 
 .mainnav {
+  flex-grow: 1;
   display: flex;
-  margin-left: 1.8rem; }
+  margin-left: 2.8rem; }
+  .mainnav .nav {
+    padding-top: .6rem; }
   .mainnav a {
     display: block;
     text-decoration: none; }
@@ -403,7 +470,7 @@ form .form-control {
         color: #fff; }
     .mainnav > ul > li:hover ul {
       opacity: 1;
-      z-index: 1;
+      z-index: 100;
       display: block; }
     .mainnav > ul > li ul {
       z-index: -10;
@@ -514,9 +581,15 @@ form .form-control {
 
 .icon-people:before {
   background-image: url(../images/sprite.png);
-  background-position: 0px 0px;
+  background-position: 0px -30px;
   width: 18px;
   height: 17px; }
+
+.feature {
+  background-color: #adb4be;
+  height: 200px;
+  position: relative;
+  z-index: 20; }
 
 /* =mobile-menu
 ---------------------------*/

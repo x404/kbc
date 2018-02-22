@@ -60,7 +60,6 @@ input::-moz-focus-inner{
 }
 
 /*** standart classes *****/
-p{}
 a{color:#020000; transition: .3s color ease-out;}
 h1{font-size:2.5rem}
 h2{font-size:2.4rem}
@@ -234,10 +233,7 @@ form{
 		&:focused{
 		}
 	}
-
 }
-
-
 
 
 
@@ -245,7 +241,7 @@ form{
 	&__cell{
 		p{
 			font-size: 1.5rem;
-			margin-bottom: .2rem;
+			margin-bottom: .4rem;
 		}
 
 		a{
@@ -253,6 +249,7 @@ form{
 			font-size: 20px;
 			font-weight: 500;
 			text-decoration: none;
+			margin-left: .2rem;
 			.code{
 				font-weight: 100;
 			}
@@ -286,17 +283,41 @@ form{
 	}
 }
 
+
+.fill-effect{
+	display: block;
+	position: relative;
+	overflow: hidden;
+	&:before{
+		@extend .before;
+		top: 0;
+		left: 0;
+		background-color: $color7;
+		transform: translateX(-110%);
+		height: 100%;
+		width: 100%;
+		transition: .3s transform ease-out;
+	}
+	&:hover{
+		&:before{
+			transform: translateX(0);
+		}
+	}
+}
+
+
 /* =header
 ---------------------------*/
 .header{
 	.flexbox{
 		height: 10rem;
-		align-items: center;		
+		align-items: center;
+		justify-content: space-between;
 	}
 	.contacts{
 		&__cell{
 			color: $color10;
-			margin-left: 2.5rem;
+			margin-left: 2rem;
 			a{
 				font-weight: 700;
 				color: $color1;
@@ -308,11 +329,65 @@ form{
 	}
 
 	.btn-callback{
-		margin-left: 2.8rem;
+		margin-left: 1.5rem;
+		margin-top: .4rem;
 	}
 
-	&__wishlist{
-		margin-left: 2.8rem;
+	.wishlist{
+		display: flex;
+		margin-left: 2.2rem;
+		padding-top: 1rem;
+		width: 65px;
+		justify-content: center;
+		i{
+			font-style: normal;
+			@include transition-param(color);
+		}
+		&__link{
+			height: 31px;
+			font-size: 1.5rem;
+			font-weight: 400;
+			display: block;
+			padding-left: 34px;
+			position: relative;
+			text-decoration: none;
+			&:before,
+			&:after{
+				@extend .before;
+				left: 0;
+				top: -5px;
+			}
+			&:before{
+				@include sprite($icon-star);
+			}
+			&:after{
+				@include sprite($icon-starfill);
+				@include transition-param();
+				opacity: 0;
+			}
+			&:hover{
+				&:after{
+					opacity: 1;
+				}
+				i{
+					color: $color2;
+					position: relative;
+					z-index: 3;
+				}
+
+				.fill-effect{
+					&:before{
+						transform: translateX(0);
+					}
+				}
+			}
+		}
+		.count{
+			border-bottom: 2px solid $color7;
+			padding-left: 2px;
+			padding-right: 2px;
+			text-align: center;
+		}
 	}
 }
 
@@ -324,7 +399,8 @@ form{
 	width: $s;
 	height: $s;
 	display: block;
-	margin-left: 2rem;
+	margin-left: 1rem;
+	margin-top: -.9rem;
 	position: relative;
 	padding: 0 15px; 
 	.icon-bar{
@@ -368,9 +444,12 @@ form{
 }
 
 .mainnav{
-	// flex-grow: 1;
+	flex-grow: 1;
 	display: flex;
-	margin-left: 1.8rem;
+	margin-left: 2.8rem;
+	.nav{
+		padding-top: .6rem;
+	}
 	a{
 		display: block;
 		text-decoration: none;		
@@ -402,7 +481,7 @@ form{
 		&:hover{
 			ul{
 				opacity: 1;
-				z-index: 1;
+				z-index: 100;
 				display: block;
 			}
 		}
