@@ -7,15 +7,30 @@ $(document).ready(function(){
 		dots: true,
 		items:1,
 		navText: ["", ""],
-		stagePadding : 0
-		// onInitialized: function (event) {
-		// 	refreshFirstLastVisible(event);
-		// },
-		// onChanged: function (event) {
-		// 	refreshFirstLastVisible(event);
-		// },
+		stagePadding : 0,
+		dotsContainer: '.owl-dots',
+		navContainer: '.owl-nav',
+		animateOut: 'fadeOut',
+		onChanged: function (event) {
+			changeclass(event);
+		},
+		onInitialized: function (event) {
+			changeclass(event);
+		}
 	});
 
+	function changeclass(event){
+		var $this = $(event.target),
+			$index = event.item.index,
+			$active = $this.find('.owl-item').eq($index).children(),
+			$class = 'light';
+
+		if ($active.hasClass('dark')) $class = 'dark';
+		if ($active.hasClass('light')) $class = 'light';
+
+		document.querySelector('.manage').classList.remove('dark', 'light');
+		document.querySelector('.manage').classList.add($class);
+	}
 
 	// mobile-menu
 	$('#navbar').each(function(){
