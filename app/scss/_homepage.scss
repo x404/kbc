@@ -490,25 +490,6 @@
 		.tocat{
 			font-size: 2rem;
 			font-weight: 500;
-			margin-bottom: 2.5rem;
-			margin-top: .2rem;
-			padding-left: 96px;
-			position: relative;
-			&:before{
-				@extend .before;
-				@include sprite($icon-catalog);
-				left: 0;
-				top: 0;
-				transition: .3s left ease-out;
-			}
-			span{
-				border-bottom: 2px solid $color7;
-			}
-			&:hover{
-				&:before{
-					left: -10px;
-				}
-			}
 		}
 		&__meta{
 			top: 4rem;
@@ -530,17 +511,49 @@
 // =objects
 .objects-callback{
 	width: 100%;
-	.right{
+	.side{
 		flex-grow: 1;
 		display: flex;
 		justify-content: flex-end;
 	}
 }
+
 .objects-intro{
 	background: url(../images/bg-1.jpg) no-repeat center #ebeef1 /cover;
-	padding: 3.5rem 0 4.3rem;
+	padding: 3.5rem 0 8rem;
 	.intro{
-		padding-top: 11rem;
+		padding-top: 11.7rem;
+	}
+}
+
+
+.objects,
+.intro__carousel{
+	.owl-carousel{
+		.owl{
+			&-prev,
+			&-next
+			{
+				&:before{
+					@extend .before;
+					transition: .3s all ease-out;
+					background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAYCAMAAAAmopZHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAqFBMVEUAh00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah03////LzDCzAAAANnRSTlMAYyZ50Sx4/LEGd+NFAeQ9/t873jziesojAv3Nlp6PZvdn9gN9z5uklHzJIXvhOdzdOELULiiNp6GjAAAAAWJLR0Q3MLi4RwAAAAd0SU1FB+ICFxEtB4P8KmQAAACiSURBVCjPdZFHFsIwDERFh4AoCTGdUEIJxHR0/6Mhr/KMlNl5Rv7jAlCoUgVNNao3FLvZImp3hB2w3e2hhBD1BxIyJBqFKiQaq5WxhASOLacNsyfTf3dm5jy+WK48rSFh1yW+NrAlTTvYp4ynw/Hk6cwNGfuXq3wwzDmwN+UpDd/LhkqQ84nu2g7X8XiWdMRlKPtCGRj9HwFTen8UEGDyLRY/EnAekAPc1nQAAAAASUVORK5CYII=") no-repeat center;
+					filter: grayscale(1);
+					height: 24px;
+					width: 23px;
+				}
+				&:hover{
+					&:before{
+						filter: grayscale(0);
+					}
+				}
+			}
+			&-next{
+				&:before{
+					@include rotation(180deg);
+				}
+			}
+		}
 	}
 }
 
@@ -594,7 +607,6 @@
 		margin-top: 4.2rem;
 		.owl{
 			&-nav{
-				// height: 90px;
 				margin-top: -45px;
 				position: absolute;
 				top: 50%;
@@ -608,15 +620,9 @@
 				top: 0;
 				width: 50px;
 				&:before{
-					@extend .before;
-					@include transition-param(filter);
-					background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAYCAMAAAAmopZHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAqFBMVEUAh00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah03////LzDCzAAAANnRSTlMAYyZ50Sx4/LEGd+NFAeQ9/t873jziesojAv3Nlp6PZvdn9gN9z5uklHzJIXvhOdzdOELULiiNp6GjAAAAAWJLR0Q3MLi4RwAAAAd0SU1FB+ICFxEtB4P8KmQAAACiSURBVCjPdZFHFsIwDERFh4AoCTGdUEIJxHR0/6Mhr/KMlNl5Rv7jAlCoUgVNNao3FLvZImp3hB2w3e2hhBD1BxIyJBqFKiQaq5WxhASOLacNsyfTf3dm5jy+WK48rSFh1yW+NrAlTTvYp4ynw/Hk6cwNGfuXq3wwzDmwN+UpDd/LhkqQ84nu2g7X8XiWdMRlKPtCGRj9HwFTen8UEGDyLRY/EnAekAPc1nQAAAAASUVORK5CYII=") no-repeat center;
-					filter: grayscale(1);
-					height: 24px;
 					left: 50%;
 					margin-top: -12px;
 					top: 50%;
-					width: 23px;
 					z-index: 2;
 				}
 				&:after{
@@ -626,11 +632,7 @@
 					top: 0;
 					width: 40px;
 				}
-				&:hover{
-					&:before{
-						filter: grayscale(0);
-					}
-				}
+
 			}
 			&-prev{
 				left: -50px;
@@ -647,16 +649,15 @@
 			}
 			&-next{
 				@include transition-param(right);
-				right: -50px;
+				right: -30px;
 				&:before{
-					@include rotation(180deg);
 					left: 10px;
 				}
 				&:after{
 					right: 10px;
 				}
 				&:hover{
-					right: -40px;
+					right: -20px;
 				}
 			}
 		}
@@ -665,13 +666,15 @@
 
 .object{
 	&__item{
+		$d: 8px;
+		padding-bottom: $d;
 		position: relative;
 		width: 365px;
 
 		&:after{
 			@extend .before;
 			border-bottom: 5px solid $color7;
-			bottom: -8px;
+			bottom: 0;
 			z-index: 10;
 			width: 100%;
 			transition: .2s border-bottom ease-out;
@@ -764,3 +767,160 @@
 	}
 }
 // =/objects
+
+
+// =intro
+.intro{
+	align-items: center;
+	&__left{
+		flex-basis: 650px;
+	}
+	&__right{
+		flex-grow: 1;
+		font-size: 1.7rem;
+		line-height: 1.4;
+		padding-left: 160px;
+		padding-right: 140px;
+		h1{
+			margin-bottom: 1rem;
+		}
+		p{
+			color: $color15;
+			line-height: 1.7;
+		}
+	}
+	&__carousel{
+		position: relative;
+		width: 640px;
+		img{
+			position: relative;
+			z-index: 2;
+		}
+		&:before,
+		&:after{
+			background: rgba(31, 45, 39, .1);
+			@extend .before;
+		}
+
+		&:before{
+			left: 10px;
+			top: 10px;
+			width: 640px;
+			height: 460px;
+		}
+		&:after{
+			left: 20px;
+			top: 20px;
+			width: 640px;
+			height: 440px;
+		}
+
+		.owl{
+			&-nav{
+				background: #fff;
+				right: 0;
+				bottom: 0;
+				width: 120px;
+				height: 60px;
+			}
+			&-next,
+			&-prev{
+				position: absolute;
+				opacity: .5;
+				bottom: 0;
+				top: 18px;
+				&:hover{
+					opacity: 1;
+				}
+			}
+			&-prev{
+				padding-left: 40px;
+				left: 0;
+				&:before{
+					right: 0;
+				}
+				&:hover{
+					&:before{
+						right: 5px;
+					}
+				}
+			}
+
+			&-next{
+				padding-right: 40px;
+				right: 0;
+				&:before{
+					left: 0;
+				}
+				&:hover{
+					&:before{
+						left: 5px;
+					}					
+				}
+			}
+		}
+	}
+
+	.link_groups{
+		display: flex;
+		margin-top: 4rem;
+		font-size: 2.4rem;
+		a{
+			padding-left: 97px;
+			position: relative;
+			margin-right: 7.5rem;
+			text-decoration: none;
+			line-height: 1.4;
+			span{
+				border-bottom: 2px solid $color7;
+			}
+			&:before{
+				transition: .3s left ease-out;
+				@extend .before;				
+				left: 0;
+				top: 0;
+			}
+			&:hover{
+				&:before{
+					left: -10px;
+				}
+				span{
+					border-bottom: none;
+				}
+			}
+		}
+	}
+	.link_calc{
+		&:before{
+			@include sprite($icon-sett);
+		}
+	}
+}
+// =/intro
+
+.big-icon{
+	margin-bottom: 2.5rem;
+	margin-top: .2rem;
+	padding-left: 96px;
+	position: relative;
+	&:before{
+		@extend .before;
+		@include sprite($icon-catalog);
+		left: 0;
+		top: 0;
+		transition: .3s left ease-out;
+	}
+	span{
+		border-bottom: 2px solid $color7;
+	}
+	&:hover{
+		&:before{
+			left: -10px;
+		}
+		span{
+			// background-color: $color7;
+			// color: $color2;
+			border-bottom: none;
+		}
+	}
+}

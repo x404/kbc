@@ -29,6 +29,15 @@ $(document).ready(function(){
 		stagePadding : 0
 	});
 
+	$('#intro').owlCarousel({
+		loop:false,
+		nav:true,
+		dots: false,
+		items:1,
+		navText: ["", ""],
+		stagePadding : 0
+	});
+
 	function changeclass(event){
 		var $this = $(event.target),
 			$index = event.item.index,
