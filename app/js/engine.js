@@ -188,3 +188,18 @@ $(document).on('click', '.o-menu .folder > a, .o-menu .folder > span', function(
 	var $this = $(this);
 	$this.next('.subnav').slideToggle().prev().toggleClass('open');
 })
+
+
+// sticky header
+var fh = document.querySelector('.fixed-header'),
+	headerh = document.querySelector('.header').offsetHeight;
+
+window.onscroll = function(){
+	if (window.scrollY > 200 ) {
+		fh.classList.add('sticky');
+	} else {
+		if (window.scrollY < 400) {
+			fh.classList.remove('sticky');
+		}
+	}
+};

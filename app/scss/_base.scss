@@ -180,6 +180,7 @@ button{
 }
 
 
+
 .btn-animate{
 	background: #00874d;
 	border: none;
@@ -310,7 +311,6 @@ form{
 }
 
 
-
 .contacts{
 	&__cell{
 		p{
@@ -330,7 +330,6 @@ form{
 		}
 	}
 }
-
 
 
 .fill-effect{
@@ -360,28 +359,21 @@ form{
 .header{
 	.flexbox{
 		height: 10rem;
-		align-items: center;
-		justify-content: space-between;
-	}
-	.contacts{
-		&__cell{
-			color: $color10;
-			margin-left: 2rem;
-			a{
-				font-weight: 700;
-				color: $color1;
-			}
-			span{
-				color: $color9;
-			}
-		}
 	}
 
 	.btn-callback{
 		margin-left: 1.5rem;
 		margin-top: .4rem;
 	}
+}
 
+.header,
+.fixed-header
+{
+	.flexbox{
+		align-items: center;
+		justify-content: space-between;
+	}
 	.wishlist{
 		display: flex;
 		margin-left: 2.2rem;
@@ -438,7 +430,112 @@ form{
 			text-align: center;
 		}
 	}
+	.contacts{
+		&__cell{
+			color: $color10;
+			margin-left: 2rem;
+			a{
+				font-weight: 700;
+				color: $color1;
+			}
+			span{
+				color: $color9;
+			}
+		}
+	}
 }
+
+.fixed-header{
+	background: $color2;
+	box-shadow: 0 10px 10px rgba(0,0,0,.2);
+	position: fixed;
+	top: 0;
+	transform: translateY(-140%);
+	transition: transform .8s;
+	width: 100%;
+	z-index: 99;
+	.flexbox{
+		height: 7rem;		
+	}
+
+	.btn-callback{
+		margin-right: -1rem;
+	}
+	.contacts{
+		&__cell{
+			margin-left: 3.5rem;
+			p{
+				display: inline-block;
+				margin-right: .9rem;
+			}
+		}
+	}
+
+	.qfilter{
+		flex-grow: 1;
+		padding-left: 5rem;
+		font-weight: 600;
+		font-size: 1.5rem;
+		i{
+			font-style: normal;
+			position: relative;
+			z-index: 3;
+		}
+		a{
+			position: relative;
+			text-decoration: none;
+			padding-left: 55px;
+			&:before{
+				@extend .before;
+				@include sprite($icon-filter);
+				left: 0;
+			}
+			span{
+				border-bottom: 2px solid $color7;
+			}
+		}
+	}
+
+	&.sticky{
+		transform: translateY(0);
+	}
+}
+
+
+
+.line-animate{
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	span{
+		@include transition-param(color);
+		border-bottom: 2px solid $color7;
+		display: inline-block;
+		margin-top: 3px;
+		overflow: hidden;
+		position: relative;
+		z-index: 2;
+		&:after{
+			@include transition-param(transform);
+			@extend .before;
+			background-color: $color7;
+			height: 100%;
+			left: 0;
+			top: 0;
+			width: 100%;
+			transform: translateX(-100%)
+		}
+	}
+	&:hover{
+		span{
+			color: $color2;
+			&:after{
+				transform: translateX(0)
+			}
+		}
+	}
+}
+
 
 .extra-toggle{
 	background-color: $color8;
