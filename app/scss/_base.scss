@@ -93,6 +93,11 @@ textarea{
 }
 
 
+.submit,
+input[type="submit"]{
+	cursor: pointer;
+}
+
 .flex-cv{
 	display: flex;
 	align-items: center;
@@ -147,6 +152,7 @@ button{
 	}
 
 	&-red{
+		border: none;
 		$s: 4rem;
 		align-items: center;
 		background-color: $color7;
@@ -165,10 +171,11 @@ button{
 		}
 		&:before{
 			@extend .before;
-			@include transition-param(left);
-			@include sprite($icon-list);
-			left: 19px;
 		}
+	}
+
+	&-hoverwhite{
+
 	}
 }
 
@@ -563,6 +570,82 @@ form{
 
 
 
+/* =callback
+---------------------------*/
+.callback{
+	background-color: $color14;
+	@include gradient-vertical(#008e54, #0d6640);
+	padding: 3.5rem 4rem;
+	width: 31.5rem;
+	color: $color2;
+	&__title{
+		font-size: 2.5rem;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	&__text{
+		font-size: 1.6rem;
+		font-weight: 100;
+		line-height: 1.5;
+		margin-top: 2.5rem;
+	}
+
+	.call{
+		display: block;
+		margin-top: 3.1rem;
+		a{
+			color: inherit;
+			font-size: 2rem;
+			font-weight: 500;
+			padding-left: 48px;
+			height: 41px;
+			line-height: 41px;
+			display: inline-block;
+			text-decoration: none;
+		}
+		&:before{
+			@extend .before;
+			@include sprite($icon-tel);
+		}
+	}
+
+	&__form{
+		margin-top: .6rem;
+	}
+
+	.input-field{
+		margin-top: 1.4rem;
+		&:before{
+			bottom: 13px;
+		}
+	}
+
+	.form-control{
+		width: 100%;
+	}
+
+	.submit{
+		display: block;
+		font-size: 1.6rem;
+		font-weight: 100;
+		height: 5.5rem;
+		margin-top: 3rem;
+		text-align: center;
+		width: 185px;
+		padding: 0;
+		&:hover{
+			background-color: $color2;
+			color: $color1;
+			font-weight: 500;
+		}
+	}
+}
+/* =/callback
+---------------------------*/
+
+
+
 
 
 
@@ -703,7 +786,8 @@ form{
 		}
 	}
 }
-
+/* =/footer
+---------------------------*/
 
 .icon-people{
 	&:before{
@@ -712,8 +796,21 @@ form{
 	}
 }
 
+.icon-tel{
+	&:before{
+		@extend .before;
+		@include sprite($icon-telsmall);
+	}
+}
 
 
 .filter{
 	padding: 3.5rem 0 3.2rem;
+}
+
+
+.carousel-image{
+	display: block;
+	transition: .3s transform ease-out;
+	width: 100%;
 }

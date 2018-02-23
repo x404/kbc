@@ -9,7 +9,7 @@
 
 	&__left{
 		// flex-grow: 1;
-		width: 960px;
+		width: 958px;
 	}
 
 	&__right{
@@ -528,6 +528,9 @@
 
 
 // =objects
+.objects-callback{
+	width: 100%;
+}
 .objects-intro{
 	background: url(../images/bg-1.jpg) no-repeat center #ebeef1 /cover;
 	padding: 3.5rem 0 4.3rem;
@@ -538,14 +541,15 @@
 
 
 .objects{
-	width: 1187px;
+	// width: 1187px;
+	flex-grow: 1;
 	.flexbox{
 		align-items: center;
 	}
 	.more{
 		flex-grow: 1;
+		margin-right: 66px;
 		text-align: right;
-		margin-right: 32px;
 		&__link{
 			&:before{
 				@include transition-param(left);
@@ -674,12 +678,6 @@
 			padding: 0 1.8rem;
 			transition: .3s background-color, color ease-out;
 		}
-	}
-
-
-	&__image{
-		display: block;
-		transition: .3s transform ease-out;
 	}
 
 	&__labels{

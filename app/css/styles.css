@@ -182,7 +182,7 @@ h3 {
   .tdu:hover, .footer__menu a:hover, .footer .idealpromo a:hover {
     text-decoration: none; }
 
-.before, .btn-red:before, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after, .extra-toggle:after, .footer__menu dt:after, .icon-people:before, .feature .promo .owl-dot:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .feature .news__link:before, .feature .about .tocat:before, .objects__info:before, .object__item:after, .object__top .name:after {
+.before, .btn-red:before, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after, .extra-toggle:after, .callback .call:before, .footer__menu dt:after, .icon-people:before, .icon-tel:before, .feature .promo .owl-dot:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .feature .news__link:before, .feature .about .tocat:before, .objects__info:before, .object__item:after, .object__top .name:after {
   content: "";
   display: block;
   position: absolute; }
@@ -191,6 +191,10 @@ input,
 button,
 textarea {
   font-family: 'proxima'; }
+
+.submit,
+input[type="submit"] {
+  cursor: pointer; }
 
 .flex-cv, .btn-more, .feature .news .date, .feature .news .cat__link {
   display: flex;
@@ -234,6 +238,7 @@ button {
     color: #fff; }
 
 .btn-red {
+  border: none;
   align-items: center;
   background-color: #c20831;
   border-radius: 4rem;
@@ -248,14 +253,6 @@ button {
   .btn-red:hover {
     background-color: #00874d;
     color: #fff; }
-  .btn-red:before {
-    -webkit-transition: left 0.2s ease-out;
-    transition: left 0.2s ease-out;
-    background-image: url(../images/sprite.png);
-    background-position: 0px -65px;
-    width: 18px;
-    height: 20px;
-    left: 19px; }
 
 .btn-animate {
   background: #00874d;
@@ -428,12 +425,12 @@ form .form-control {
       top: -5px; }
     .header .wishlist__link:before {
       background-image: url(../images/sprite.png);
-      background-position: -77px 0px;
+      background-position: 0px -65px;
       width: 31px;
       height: 30px; }
     .header .wishlist__link:after {
       background-image: url(../images/sprite.png);
-      background-position: -77px -30px;
+      background-position: -31px -65px;
       width: 31px;
       height: 30px;
       -webkit-transition: opacity 0.2s ease-out;
@@ -545,6 +542,68 @@ form .form-control {
 
 /* =header
 ---------------------------*/
+/* =callback
+---------------------------*/
+.callback {
+  background-color: #038650;
+  background-image: -webkit-linear-gradient(top, #008e54 0%, #0d6640 100%);
+  background-image: -o-linear-gradient(top, #008e54 0%, #0d6640 100%);
+  background-image: linear-gradient(to bottom, #008e54 0%, #0d6640 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF008E54', endColorstr='#FF0D6640', GradientType=0);
+  padding: 3.5rem 4rem;
+  width: 31.5rem;
+  color: #fff; }
+  .callback__title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: uppercase; }
+  .callback__text {
+    font-size: 1.6rem;
+    font-weight: 100;
+    line-height: 1.5;
+    margin-top: 2.5rem; }
+  .callback .call {
+    display: block;
+    margin-top: 3.1rem; }
+    .callback .call a {
+      color: inherit;
+      font-size: 2rem;
+      font-weight: 500;
+      padding-left: 48px;
+      height: 41px;
+      line-height: 41px;
+      display: inline-block;
+      text-decoration: none; }
+    .callback .call:before {
+      background-image: url(../images/sprite.png);
+      background-position: -77px 0px;
+      width: 41px;
+      height: 41px; }
+  .callback__form {
+    margin-top: .6rem; }
+  .callback .input-field {
+    margin-top: 1.4rem; }
+    .callback .input-field:before {
+      bottom: 13px; }
+  .callback .form-control {
+    width: 100%; }
+  .callback .submit {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 100;
+    height: 5.5rem;
+    margin-top: 3rem;
+    text-align: center;
+    width: 185px;
+    padding: 0; }
+    .callback .submit:hover {
+      background-color: #fff;
+      color: #000;
+      font-weight: 500; }
+
+/* =/callback
+---------------------------*/
 /* =footer
 ---------------------------*/
 .footer {
@@ -628,14 +687,27 @@ form .form-control {
     .footer .subscribe .submit {
       margin-top: 2rem; }
 
+/* =/footer
+---------------------------*/
 .icon-people:before {
   background-image: url(../images/sprite.png);
-  background-position: -18px -65px;
+  background-position: -95px -41px;
   width: 18px;
   height: 17px; }
 
+.icon-tel:before {
+  background-image: url(../images/sprite.png);
+  background-position: -62px -65px;
+  width: 16px;
+  height: 16px; }
+
 .filter {
   padding: 3.5rem 0 3.2rem; }
+
+.carousel-image {
+  display: block;
+  transition: .3s transform ease-out;
+  width: 100%; }
 
 .feature {
   position: relative;
@@ -644,7 +716,7 @@ form .form-control {
   .feature .row {
     flex-wrap: nowrap; }
   .feature__left {
-    width: 960px; }
+    width: 958px; }
   .feature__right {
     flex: 0 0 638px;
     display: flex;
@@ -994,6 +1066,9 @@ form .form-control {
       font-weight: 500;
       margin-top: 1.4rem; }
 
+.objects-callback {
+  width: 100%; }
+
 .objects-intro {
   background: url(../images/bg-1.jpg) no-repeat center #ebeef1/cover;
   padding: 3.5rem 0 4.3rem; }
@@ -1001,18 +1076,18 @@ form .form-control {
     padding-top: 11rem; }
 
 .objects {
-  width: 1187px; }
+  flex-grow: 1; }
   .objects .flexbox {
     align-items: center; }
   .objects .more {
     flex-grow: 1;
-    text-align: right;
-    margin-right: 32px; }
+    margin-right: 66px;
+    text-align: right; }
     .objects .more__link:before {
       -webkit-transition: left 0.2s ease-out;
       transition: left 0.2s ease-out;
       background-image: url(../images/sprite.png);
-      background-position: 0px -65px;
+      background-position: -77px -41px;
       width: 18px;
       height: 20px;
       left: 19px; }
@@ -1107,10 +1182,6 @@ form .form-control {
     height: 44px;
     padding: 0 1.8rem;
     transition: .3s background-color, color ease-out; }
-
-.object__image {
-  display: block;
-  transition: .3s transform ease-out; }
 
 .object__labels {
   margin-top: 1.5rem; }

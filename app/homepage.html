@@ -128,7 +128,7 @@
 					<div class="promo">
 						<div class="owl-carousel" id="promocarousel">
 							<div class="type-1 light">
-								<img src="tmp/slide-1.jpg" alt="" />
+								<img src="tmp/slide-1.jpg" alt="" class="carousel-image" />
 								<div class="description">
 									<p class="title">Доступные квартиры <br> в Красноярске от <br>надежного застройщика</p>
 									<div class="statistic flexbox">
@@ -148,14 +148,14 @@
 								</div>
 							</div>
 							<div class="type-2 dark">
-								<img src="tmp/slide-2.jpg" alt="" />
+								<img src="tmp/slide-2.jpg" alt="" class="carousel-image" />
 								<div class="description">
 									<p class="title">Планируй квартиру как жизнь</p>
 									<a href="#" class="more">Узнать подробности</a>
 								</div>
 							</div>
 							<div class="type-3 dark">
-								<img src="tmp/slide-3.jpg" alt="" />
+								<img src="tmp/slide-3.jpg" alt="" class="carousel-image" />
 								<div class="description">
 									<p class="title">Квартиры <span class="red">КБС SPACE*</span> в каждом районе города</p>
 									<a href="#" class="more">Узнать подробности</a>
@@ -190,7 +190,7 @@
 					<div class="news flexbox">
 						<div class="news__cell">
 							<a href="#" title="" class="news__link">
-								<img src="tmp/new-1.jpg" alt="">
+								<img src="tmp/new-1.jpg" alt="" />
 								<div class="news__meta">
 									<p class="news__title"><span>График заселения. Годенко 2.1.3</span></p>
 									<div class="news__desc"><p>Уважаемые клиенты! Рады сообщить вам о том, что дом введен в эксплуатацию...</p></div>
@@ -209,7 +209,7 @@
 						</div>
 						<div class="news__cell">
 							<a href="#" title="" class="news__link">
-								<img src="tmp/new-2.jpg" alt="">
+								<img src="tmp/new-2.jpg" alt="" />
 								<div class="news__meta">
 									<p class="news__title"><span>Новый тендер на субподрядные работы по «Региональный центр по регби. Спорткомплекс "Авангард" (Этап)»</span></p>
 									<div class="news__desc"><p>Уважаемые клиенты! Рады сообщить вам о том, что дом введен в эксплуатацию...</p></div>
@@ -273,7 +273,8 @@
 	<div class="objects-intro">
 		<div class="container">
 			<div class="row">
-				<div class="objects-callback">
+				<div class="objects-callback flexbox">
+					<!-- =objects -->
 					<section class="objects">
 						<header>
 							<div class="flexbox">
@@ -287,7 +288,7 @@
 						<div class="owl-carousel" id="objects">
 							<div class="object__item">
 								<a href="#" class="object__link">
-									<img src="tmp/object-1.jpg" alt="" class="object__image" />
+									<img src="tmp/object-1.jpg" alt="" class="carousel-image" />
 									<div class="object__description">
 										<div class="object__top">
 											<div class="object__title">
@@ -314,7 +315,7 @@
 							</div>
 							<div class="object__item">
 								<a href="#" class="object__link">
-									<img src="tmp/object-2.jpg" alt="" class="object__image" />
+									<img src="tmp/object-2.jpg" alt="" class="carousel-image" />
 									<div class="object__description">
 										<div class="object__top">
 											<div class="object__title">
@@ -339,7 +340,7 @@
 							</div>
 							<div class="object__item">
 								<a href="#" class="object__link">
-									<img src="tmp/object-3.jpg" alt="" class="object__image" />
+									<img src="tmp/object-3.jpg" alt="" class="carousel-image" />
 									<div class="object__description">
 										<div class="object__top">
 											<div class="object__title">
@@ -364,6 +365,30 @@
 							</div>
 						</div>
 					</section>
+					<!-- =/objects -->
+
+					<!-- =callback -->
+					<div class="callback">
+						<p class="callback__title">У вас есть вопросы?</p>
+						<div class="callback__text">Позвоните по телефону или оставьте заявку и мы Вам перезвоним</div>
+						<p class="call"><a href="tel:+73912179217">+7 (391) 217-9-217</a></p>
+						<form action="#" method="post" class="callback__form">
+							<fieldset>
+								<div class="input-field icon-people">
+									<label for="callback_name" class="name-field">Ваше имя</label>
+									<label for="callback_name" class="helper-field helper-field-name">Ваше имя</label>
+									<input type="email" id="callback_name" name="name" class="form-control required" value="" />
+								</div>
+								<div class="input-field icon-tel">
+									<label for="callback_tel" class="name-field">Телефон</label>
+									<label for="callback_tel" class="helper-field helper-field-name">Телефон</label>
+									<input type="tel" id="callback_tel" name="tel" class="form-control tel required" value="" />
+								</div>
+								<input type="submit" class="submit btn-red" value="Перезвоните мне" />
+							</fieldset>
+						</form>
+					</div>
+					<!-- =/callback -->
 				</div>
 				<section class="intro">
 					<div class="intro__left"></div>
