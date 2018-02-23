@@ -568,13 +568,15 @@ form{
 ---------------------------*/
 
 
-
+.green-gradient{
+	@include gradient-vertical(#008e54, #0d6640);	
+}
 
 /* =callback
 ---------------------------*/
 .callback{
+	@extend .green-gradient;
 	background-color: $color14;
-	@include gradient-vertical(#008e54, #0d6640);
 	padding: 3.5rem 4rem;
 	width: 31.5rem;
 	color: $color2;
@@ -789,6 +791,15 @@ form{
 /* =/footer
 ---------------------------*/
 
+.icon-catalog{
+	&:before{
+		@extend .before;
+		@include sprite($icon-catalog);
+		left: 0;
+		top: 0;
+	}
+}
+
 .icon-people{
 	&:before{
 		@extend .before;
@@ -800,6 +811,24 @@ form{
 	&:before{
 		@extend .before;
 		@include sprite($icon-telsmall);
+	}
+}
+
+.icon-bulldozer{
+	&:before{
+		@extend .before;
+		@include sprite($icon-bulldozer);
+		top: 8px;
+		left: 0;
+	}
+}
+
+.icon-house{
+	&:before{
+		@extend .before;
+		@include sprite($icon-house);
+		top: -4px;
+		left: 0;
 	}
 }
 
