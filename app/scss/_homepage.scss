@@ -537,7 +537,48 @@
 }
 
 
-.objects{}
+.objects{
+	width: 1187px;
+	.flexbox{
+		align-items: center;
+	}
+	.more{
+		flex-grow: 1;
+		text-align: right;
+		margin-right: 32px;
+		&__link{
+			&:before{
+				@include transition-param(left);
+				@include sprite($icon-list);
+				left: 19px;
+			}
+			&:hover{
+				&:before{
+					left: 24px;
+				}
+			}
+		}
+	}
+
+	&__info{
+		font-size: 1.5rem;
+		font-weight: 100;
+		margin-left: 3rem;
+		padding-left: 3rem;
+		position: relative;
+		&:before{
+			@extend .before;
+			border-left: 5px solid $color8;
+			height: 28px;
+			left: 0;
+			top: 4px;			
+		}
+	}
+
+	.owl-carousel{
+		margin-top: 4.2rem;
+	}
+}
 
 .object{
 	&__item{
@@ -556,7 +597,7 @@
 			.object__image{
 				transform: scale(1.15);
 			}
-			.more{
+			.btn-more{
 				background-color: $color7;
 				color: $color2;
 			}
@@ -620,7 +661,7 @@
 			font-size: 2rem;
 			font-weight: 500;
 		}
-		.more{
+		.btn-more{
 			$h: 44px;
 			align-items: center;
 			background: white;

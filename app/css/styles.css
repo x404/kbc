@@ -163,7 +163,8 @@ a {
   transition: .3s color ease-out; }
 
 h1 {
-  font-size: 2.5rem; }
+  font-size: 4rem;
+  font-weight: 500; }
 
 h2 {
   font-size: 2.4rem; }
@@ -181,7 +182,7 @@ h3 {
   .tdu:hover, .footer__menu a:hover, .footer .idealpromo a:hover {
     text-decoration: none; }
 
-.before, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after, .extra-toggle:after, .footer__menu dt:after, .icon-people:before, .feature .promo .owl-dot:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .feature .news__link:before, .feature .about .tocat:before, .object__item:after, .object__top .name:after {
+.before, .btn-red:before, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after, .extra-toggle:after, .footer__menu dt:after, .icon-people:before, .feature .promo .owl-dot:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .feature .news__link:before, .feature .about .tocat:before, .objects__info:before, .object__item:after, .object__top .name:after {
   content: "";
   display: block;
   position: absolute; }
@@ -231,6 +232,30 @@ button {
   .btn-white:hover {
     background-color: #c20831;
     color: #fff; }
+
+.btn-red {
+  align-items: center;
+  background-color: #c20831;
+  border-radius: 4rem;
+  color: #fff;
+  display: inline-flex;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.8rem 0 4.6rem;
+  text-decoration: none;
+  transition: .3s background-color, color ease-out;
+  position: relative; }
+  .btn-red:hover {
+    background-color: #00874d;
+    color: #fff; }
+  .btn-red:before {
+    -webkit-transition: left 0.2s ease-out;
+    transition: left 0.2s ease-out;
+    background-image: url(../images/sprite.png);
+    background-position: 0px -65px;
+    width: 18px;
+    height: 20px;
+    left: 19px; }
 
 .btn-animate {
   background: #00874d;
@@ -605,7 +630,7 @@ form .form-control {
 
 .icon-people:before {
   background-image: url(../images/sprite.png);
-  background-position: 0px -65px;
+  background-position: -18px -65px;
   width: 18px;
   height: 17px; }
 
@@ -975,6 +1000,38 @@ form .form-control {
   .objects-intro .intro {
     padding-top: 11rem; }
 
+.objects {
+  width: 1187px; }
+  .objects .flexbox {
+    align-items: center; }
+  .objects .more {
+    flex-grow: 1;
+    text-align: right;
+    margin-right: 32px; }
+    .objects .more__link:before {
+      -webkit-transition: left 0.2s ease-out;
+      transition: left 0.2s ease-out;
+      background-image: url(../images/sprite.png);
+      background-position: 0px -65px;
+      width: 18px;
+      height: 20px;
+      left: 19px; }
+    .objects .more__link:hover:before {
+      left: 24px; }
+  .objects__info {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-left: 3rem;
+    padding-left: 3rem;
+    position: relative; }
+    .objects__info:before {
+      border-left: 5px solid #00874d;
+      height: 28px;
+      left: 0;
+      top: 4px; }
+  .objects .owl-carousel {
+    margin-top: 4.2rem; }
+
 .object__item {
   position: relative;
   width: 365px; }
@@ -986,7 +1043,7 @@ form .form-control {
     transition: .2s border-bottom ease-out; }
   .object__item:hover .object__image {
     transform: scale(1.15); }
-  .object__item:hover .more {
+  .object__item:hover .btn-more {
     background-color: #c20831;
     color: #fff; }
   .object__item:hover:after {
@@ -1039,7 +1096,7 @@ form .form-control {
     padding-top: .5rem;
     font-size: 2rem;
     font-weight: 500; }
-  .object__bottom .more {
+  .object__bottom .btn-more {
     align-items: center;
     background: white;
     border-radius: 44px;

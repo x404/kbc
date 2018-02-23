@@ -61,7 +61,7 @@ input::-moz-focus-inner{
 
 /*** standart classes *****/
 a{color:#020000; transition: .3s color ease-out;}
-h1{font-size:2.5rem}
+h1{font-size:4rem; font-weight: 500;}
 h2{font-size:2.4rem}
 h3{font-size:1.6rem}
 
@@ -143,6 +143,31 @@ button{
 		&:hover{
 			background-color: $color7;
 			color: $color2;
+		}
+	}
+
+	&-red{
+		$s: 4rem;
+		align-items: center;
+		background-color: $color7;
+		border-radius: $s;
+		color: $color2;
+		display: inline-flex;
+		font-weight: 500;
+		height: $s;
+		padding: 0 1.8rem 0 4.6rem;
+		text-decoration: none;
+		transition: .3s background-color, color ease-out;
+		position: relative;
+		&:hover{
+			background-color: $color8;
+			color: $color2;
+		}
+		&:before{
+			@extend .before;
+			@include transition-param(left);
+			@include sprite($icon-list);
+			left: 19px;
 		}
 	}
 }

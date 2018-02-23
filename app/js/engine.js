@@ -19,6 +19,16 @@ $(document).ready(function(){
 		}
 	});
 
+
+	$('#objects').owlCarousel({
+		loop:false,
+		nav:true,
+		dots: false,
+		items:3,
+		navText: ["", ""],
+		stagePadding : 0
+	});
+
 	function changeclass(event){
 		var $this = $(event.target),
 			$index = event.item.index,
