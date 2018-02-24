@@ -101,7 +101,143 @@ $(document).ready(function(){
 			return $(this).addClass('is-charged');
 		}
 	});
-	
+
+
+	var $searchSelect = $('.j-search-select');
+
+	$('.j-search-select').selectize({
+		plugins: ['clear_button'],
+		render: {
+			option: function option(item) {
+				return '<div class="option ' + item.type + '">' + item.text + '</div>';
+			}
+		},
+		// при выборе не удаляем опцию из выпадающего списка
+		hideSelected: false,
+		// коллбэк: при инициализации
+		onInitialize: function onInitialize() {
+			var that = this;
+			this.revertSettings.$children.each(function () {
+				$.extend(that.options[this.value], $(this).data());
+			});
+
+			// находим инпут с текущим плейсхолдером
+			$searchSelect.closest('div').find('.selectize-input input').focus(function () {
+				var $this = $(this);
+				// если ничего не введено, то меняем плейсхолдер и ширину инпута
+				if (!$this.parent().hasClass('has-items')) {
+					$this.attr('placeholder', 'начните вводить').css('width', '100%');
+					// в противном случае удаляем плейсхолдер
+				} else {
+					$this.attr('placeholder', '');
+				}
+			}).blur(function () {
+				var $this = $(this);
+				// получаем плейсхолдер по-умолчанию из дата-аттрибутов родителя
+				var placeholderTxt = $this.parents('.j-search-select__wrap').find($searchSelect).data('placeholder');
+				// если ничего так и не введено, то при блере возвращаем плейсхолдер по-умолчанию
+				if (!$this.parent().hasClass('has-items')) {
+					$this.attr('placeholder', placeholderTxt);
+					// в противном случае удаляем плейсхолдер
+				} else {
+					$this.attr('placeholder', '');
+				}
+			});
+		},
+		// коллбэк: при открытии списка опций
+		onDropdownOpen: function onDropdownOpen($dropdown) {
+			var that = this;
+			var $dropdownCnt = $('.selectize-dropdown-content');
+			// в область стрелочки добавляем невидимый крестик для закрытия списка опций
+			$dropdown.append('<div class="selectize-close"></div>');
+
+			var $selectClose = $('.selectize-close');
+
+			// при клике на крестик в области стрелки закрываем список опций и удаляем крестик
+			$selectClose.on('click', function () {
+				that.close();
+				that.blur();
+				$selectClose.remove();
+			});
+
+			if ($selectClose.length > 1) {
+				$selectClose.not(':first').remove();
+			}
+
+			// // добавляем кастомный скролл на список опций
+			// $dropdownCnt.each(function () {
+			//	 $(this).perfectScrollbar({
+			//		 maxScrollbarLength: 48,
+			//		 minScrollbarLength: 48
+			//	 }).scrollTop(100); // скролл нужен для инициализации кастомного скролла
+
+			//	 // асинхронно возвращаем скролл с исходную позицию
+			//	 setTimeout(function () {
+			//		 $dropdownCnt.scrollTop(0);
+			//	 }, 0);
+			// });
+		},
+		// коллбэк: при добавлении опции
+		onItemAdd: function onItemAdd(value, $item) {
+			var that = this;
+			var $selected = $item.parent(); // родитель текущей опции
+			var count = $selected.children().length - 1; // количество выбранных опций
+			var $parent = $selected.parents('.objects-select__wrap').find($searchSelect);
+			var countTxt = $parent.data('count'); // слово для вывода количества
+			var countTxtPlural = $parent.data('count-plural'); // другая словоформа того же слова
+			var countTxtSingle = $parent.data('count-single'); // это же слово в единственном числе
+			var removeOption = '.selectize-remove-option'; // класс для удаления опции
+
+			// функция для изменения словоформы в зависимости от числа
+			function countTxtForm(n, wordForms) {
+				n = Math.abs(n) % 100;
+				var n1 = n % 10;
+
+				if (n > 10 && n < 20) {
+					return wordForms[1];
+				}
+
+				if (n1 > 1 && n1 < 5) {
+					return wordForms[0];
+				}
+
+				return wordForms[1];
+			}
+
+			// если опций больше 1, то добавляем фразу с количеством выбранного чего-либо
+			if (count > 1) {
+				$selected.find('.item:first-child').html('Выбрано ' + count + ' ' + countTxtForm(count, [countTxt, countTxtPlural]));
+			}
+
+			// при выборе опции добавляем внутрь неё невидимый крестик
+			$('.option.selected').find(removeOption).remove().end().append('<span class="selectize-remove-option"></span>');
+
+			// при клике на невидимый крестик удаляем текущую опцию из выбора
+			$(removeOption).on('click', function (e) {
+				var $removingItem = $(e.target).parent(); // родитель опции по которой кликнули
+				var removingValue = $removingItem.data('value').toString(); // значение этой опкции
+
+				// удаляем класс "выбранный" и удаляем сам крестик
+				$removingItem.removeClass('selected').end().remove();
+
+				// из массива всех выбранных значений удаляем текущее значение
+				var newValue = $.grep(that.getValue(), function (currentValues) {
+					return currentValues !== removingValue;
+				});
+
+				// обновляем значения всего селекта
+				that.setValue(newValue);
+
+				if ($('.item').length === 1) {
+					$selected.find('.item:first-child').html('Выбрано: 1 ' + countTxtSingle);
+				}
+			});
+
+		},
+		// коллбэк: при изменении
+		onChange: function onChange() {
+		}
+	});
 });
 
 // =заглушка для IE
