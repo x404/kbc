@@ -958,3 +958,135 @@ form{
 		position: absolute;
 	}
 }
+
+
+// filter
+.filter{
+	.nav{
+		width: 185px;
+		.btn{
+			display: block;
+			font-size: 1.7rem;
+			font-weight: 500;
+			height: 50px;
+			text-decoration: none;
+			padding-left: 1.8rem;
+			line-height: 50px;
+			border: 2px solid #c8d1dc;
+			@include transition-param(border);
+			&:hover:not(.active){
+				border-color: $color1;
+			}
+			&:last-child{
+				margin-top: -2px;
+			}
+
+			&.active{
+				border-color: #00874d;
+				border-right: none;
+				position: relative;
+				&:after{
+					@extend .before;
+					background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAzBAMAAACUBW49AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAG1BMVEUAh03///8Ah00Ah00Ah00Ah00Ah00Ah03///+vCw10AAAAB3RSTlMAAHhLdU43VK7zVQAAAAFiS0dEAf8CLd4AAAAHdElNRQfiAhgQDSDq08HMAAAAoUlEQVQoz33SMQ7DIBBEUSxfIFbkPj4FdU7h1mdAlvb6WVgMM1OE7uk3wG4qqZ1lq+eV7EPMhbhGftjzYOTByJMtT7YMrBlYM9Iz0jNxtQPpmdjzw54HIw9Gnmx5csk3cbcvcjtvomekZ+JuFzIXrG87kH4voEe6VflzZ36RvJd/Q/6Kf1L+macgM+IJynx5+rIbvDmyV7x1spOysbLPvO0/ydExditOQqgAAAAASUVORK5CYII=") no-repeat right center;
+					right: -26px;
+					top: -2px;
+					height: 50px;
+					width: 27px;
+				}		
+			}
+		}
+	}
+	&__body{
+		flex-grow: 1;
+	}
+
+	.tab-content{
+		padding-left: 6.5rem;
+	}
+}
+
+.installment{
+	margin-top: 1.6rem;
+	&__container{
+		display: flex;
+	cursor: pointer;
+	}
+
+	.checkbox:checked + .checkbox-icon{
+		border-color: red;
+	}
+
+	.checkbox{
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+		&-icon{
+			$s: 25px;
+			border: 2px solid $color8;
+			display: inline-block;
+			height: $s;
+			width: $s;
+			margin-top: 3px;
+		}
+		&-label{
+			color: #363636;
+			display: block;
+			padding-left: 10px;
+			line-height: 1.2;
+		}
+	}
+
+	&__tooltip{
+		$color: $color16;
+		$s: 20px;
+		border-radius: 50%;
+		border: 1px solid $color;
+		height: $s;
+		margin-left: 18px;
+		margin-top: 10px;
+		width: $s;
+		position: relative;
+		&:before{
+			display: block;
+			content: "?";
+			color: $color;
+			text-align: center;
+			width: 18px;
+			line-height: 20px;
+			font-size: 1.2rem;
+		}
+
+		&_content{
+			background: $color2;
+			box-shadow: 0 0 20px rgba(112, 121, 133, .25);
+			color: #3f3f3f;
+			left: calc(100% + 12px);
+			line-height: 1.5;
+			opacity: 0;
+			padding: 1.5rem;
+			position: absolute;
+			top: -20px;
+			transform: translateX(-10px);
+			transition: .3s all ease-out;
+			visibility: hidden;
+			width: 24.5rem;
+			z-index: 2;
+			&:before{
+				@extend .before;
+				top: 22px;
+				left: -7px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 7px 7px 7px 0;
+				border-color: transparent #fff transparent transparent;
+			}
+		}
+		&:hover .installment__tooltip_content{
+			opacity: 1;
+			transform: translateX(0);
+			visibility: visible;
+			z-index: 30;
+		}
+	}
+}

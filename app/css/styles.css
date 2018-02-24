@@ -184,7 +184,7 @@ h3 {
 
 .before, .btn-red:before, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
 .fixed-header .wishlist__link:before,
-.fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .callback .call:before, .footer__menu dt:after, .icon-catalog:before, .icon-people:before, .icon-tel:before, .icon-bulldozer:before, .icon-house:before, .feature .promo .owl-dot:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .feature .news__link:before, .objects .owl-carousel .owl-prev:before, .objects .owl-carousel .owl-next:before,
+.fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .callback .call:before, .footer__menu dt:after, .icon-catalog:before, .icon-people:before, .icon-tel:before, .icon-bulldozer:before, .icon-house:before, .filter .nav .btn.active:after, .installment__tooltip_content:before, .feature .promo .owl-dot:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .feature .news__link:before, .objects .owl-carousel .owl-prev:before, .objects .owl-carousel .owl-next:before,
 .intro__carousel .owl-carousel .owl-prev:before,
 .intro__carousel .owl-carousel .owl-next:before, .objects__info:before, .objects .owl-carousel .owl-prev:after, .objects .owl-carousel .owl-next:after, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .big-icon:before {
@@ -836,6 +836,107 @@ form .form-control {
 
 .owl-nav {
   position: absolute; }
+
+.filter .nav {
+  width: 185px; }
+  .filter .nav .btn {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 500;
+    height: 50px;
+    text-decoration: none;
+    padding-left: 1.8rem;
+    line-height: 50px;
+    border: 2px solid #c8d1dc;
+    -webkit-transition: border 0.2s ease-out;
+    transition: border 0.2s ease-out; }
+    .filter .nav .btn:hover:not(.active) {
+      border-color: #000; }
+    .filter .nav .btn:last-child {
+      margin-top: -2px; }
+    .filter .nav .btn.active {
+      border-color: #00874d;
+      border-right: none;
+      position: relative; }
+      .filter .nav .btn.active:after {
+        background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAzBAMAAACUBW49AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAG1BMVEUAh03///8Ah00Ah00Ah00Ah00Ah00Ah03///+vCw10AAAAB3RSTlMAAHhLdU43VK7zVQAAAAFiS0dEAf8CLd4AAAAHdElNRQfiAhgQDSDq08HMAAAAoUlEQVQoz33SMQ7DIBBEUSxfIFbkPj4FdU7h1mdAlvb6WVgMM1OE7uk3wG4qqZ1lq+eV7EPMhbhGftjzYOTByJMtT7YMrBlYM9Iz0jNxtQPpmdjzw54HIw9Gnmx5csk3cbcvcjtvomekZ+JuFzIXrG87kH4voEe6VflzZ36RvJd/Q/6Kf1L+macgM+IJynx5+rIbvDmyV7x1spOysbLPvO0/ydExditOQqgAAAAASUVORK5CYII=") no-repeat right center;
+        right: -26px;
+        top: -2px;
+        height: 50px;
+        width: 27px; }
+
+.filter__body {
+  flex-grow: 1; }
+
+.filter .tab-content {
+  padding-left: 6.5rem; }
+
+.installment {
+  margin-top: 1.6rem; }
+  .installment__container {
+    display: flex;
+    cursor: pointer; }
+  .installment .checkbox:checked + .checkbox-icon {
+    border-color: red; }
+  .installment .checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0; }
+    .installment .checkbox-icon {
+      border: 2px solid #00874d;
+      display: inline-block;
+      height: 25px;
+      width: 25px;
+      margin-top: 3px; }
+    .installment .checkbox-label {
+      color: #363636;
+      display: block;
+      padding-left: 10px;
+      line-height: 1.2; }
+  .installment__tooltip {
+    border-radius: 50%;
+    border: 1px solid #5f6b79;
+    height: 20px;
+    margin-left: 18px;
+    margin-top: 10px;
+    width: 20px;
+    position: relative; }
+    .installment__tooltip:before {
+      display: block;
+      content: "?";
+      color: #5f6b79;
+      text-align: center;
+      width: 18px;
+      line-height: 20px;
+      font-size: 1.2rem; }
+    .installment__tooltip_content {
+      background: #fff;
+      box-shadow: 0 0 20px rgba(112, 121, 133, 0.25);
+      color: #3f3f3f;
+      left: calc(100% + 12px);
+      line-height: 1.5;
+      opacity: 0;
+      padding: 1.5rem;
+      position: absolute;
+      top: -20px;
+      transform: translateX(-10px);
+      transition: .3s all ease-out;
+      visibility: hidden;
+      width: 24.5rem;
+      z-index: 2; }
+      .installment__tooltip_content:before {
+        top: 22px;
+        left: -7px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 7px 7px 7px 0;
+        border-color: transparent #fff transparent transparent; }
+    .installment__tooltip:hover .installment__tooltip_content {
+      opacity: 1;
+      transform: translateX(0);
+      visibility: visible;
+      z-index: 30; }
 
 .feature {
   position: relative;

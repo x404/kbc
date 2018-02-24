@@ -308,8 +308,47 @@
 
 
 	<!-- =filter -->
-	<div class="filter">
-		
+	<div class="container">
+		<div class="row">
+			<div class="filter flexbox">
+				<div class="nav">
+					<a href="#panel1" role="button" class="btn active" data-toggle="tab" aria-controls="panel1">Квартиры</a>
+					<a href="#panel2" role="button" class="btn" data-toggle="tab" aria-controls="panel2">Коммерческое</a>
+				</div>
+				<div class="tab-content filter__body">
+					<div role="tabpanel" class="tab-pane fade show active" id="panel1">
+						<div class="flexbox">
+							<div class="cell">
+								<select name="object">
+									<option value="ЖК Стасовой">ЖК Стасовой</option>
+									<option value="ЖК Миручино">ЖК Миручино</option>
+									<option value="ЖК Годенко">ЖК Годенко</option>
+									<option value="ЖК Новониколаевский">ЖК Новониколаевский</option>
+								</select>
+								<div class="installment">
+									<label class="installment__container">
+										<input type="checkbox" class="checkbox" name="special" value="" />
+										<span class="checkbox-icon"></span>
+										<span class="checkbox-label">Рассрочка 5% <br>от застройщика (ЖНК)</span>										
+										<div class="installment__tooltip">
+											<div class="installment__tooltip_content">
+												С 1998 года фирма «Культбытстрой» освоила выпуск тротуарной плитки на немецком оборудовании фирмы «НESS». Двухбункерная система
+											</div>
+										</div>
+									</label>
+								</div>
+							</div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="panel2">
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!-- =/filter -->
 

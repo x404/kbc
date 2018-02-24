@@ -195,10 +195,10 @@ var fh = document.querySelector('.fixed-header'),
 	headerh = document.querySelector('.header').offsetHeight;
 
 window.onscroll = function(){
-	if (window.scrollY > 200 ) {
+	if (window.pageYOffset  > 200 ) {
 		fh.classList.add('sticky');
 	} else {
-		if (window.scrollY < 400) {
+		if (window.pageYOffset  < 400) {
 			fh.classList.remove('sticky');
 		}
 	}
