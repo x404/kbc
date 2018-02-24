@@ -335,9 +335,31 @@
 								</div>
 								<div class="cell">
 									<p class="cell__title">Стоимость</p>
+									<div class="slider">
+										<div class="slider">
+											<div id="slider-cost"></div>
+											<p class="slider_start">0</p>
+											<p class="slider_end">124</p>
+										</div>
+										<div class="slider_controls">
+											<input type="text" id="cost-from" class="param_control" placeholder="от"  /> —
+											<input type="text" id="cost-to" class="param_control" placeholder="до"  />
+										</div>
+									</div>
 								</div>
 								<div class="cell">
 									<p class="cell__title">Площадь</p>
+									<div class="slider">
+										<div class="slider">
+											<div id="slider-area"></div>
+											<p class="slider_start">25</p>
+											<p class="slider_end">120</p>
+										</div>
+										<div class="slider_controls">
+											<input type="text" id="area-from" class="param_control" placeholder="от"  /> —
+											<input type="text" id="area-to" class="param_control" placeholder="до"  />
+										</div>
+									</div>
 								</div>
 								<div class="cell">
 									<a href="#" class="showflat icon-flats">
@@ -784,6 +806,9 @@
 <div id="outdated"></div>
 <link rel="stylesheet" property="stylesheet" href="/outdatedbrowser/outdatedbrowser.min.css" />
 <script src="/outdatedbrowser/outdatedbrowser.min.js"></script>
+
+<script src="/js/nouislider.min.js"></script>
+<link rel="stylesheet" property="stylesheet" href="css/nouislider.css" />
 
 <script src="/js/owl.carousel.min.js"></script>
 <link rel="stylesheet" property="stylesheet" href="css/owl.carousel.css">

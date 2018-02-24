@@ -41,7 +41,13 @@ gulp.task('css-libs', ['scss'],  function(){
 		.pipe(rename({suffix: '.min'}))  // Добавляем суффикс .min
 		.pipe(gulp.dest(config.templateDir + '/css')) // Выгружаем в папку app/css
 		.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
-})
+});
+
+
+gulp.task('js-libs', function(){
+	var countdown = gulp.src(config.libsDir + '/nouislider/distribute/nouislider.min.js').pipe(gulp.dest(config.templateDir + '/js/'));
+});
+
 
 // автоперезагрузка страницы браузера
 gulp.task('browser-sync', function(){
@@ -76,7 +82,7 @@ gulp.task('clean', function() {
 
 // отслеживаем изменения
 // в квадратных скобках перечисляются таски, которые должны выполниться до watcher (до запуска сервера)
-gulp.task('watcher', ['browser-sync', 'css-libs', 'compress'], function(){
+gulp.task('watcher', ['browser-sync', 'css-libs', 'compress', 'js-libs'], function(){
 	return gulp.watch('app/scss/**/*.scss', ['scss', 'css-libs']), // при изменении любого *scss-файла вызываем таск scss
 		gulp.watch('app/*.html', browserSync.reload),
 		gulp.watch('app/js/**/*.js', browserSync.reload)

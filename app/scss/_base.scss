@@ -1041,6 +1041,11 @@ form{
 				opacity: 0;
 				margin: 10px 0 0 20px;
 			}
+			.checkbox + label:hover {
+				background: #cfd4da;
+				border-color: #cfd4da;
+				box-shadow: 0 2px 4px rgba(0,0,0,.2);
+			}
 			.checkbox + label {
 				background: #fff;
 				border-radius: 50%;
@@ -1064,8 +1069,6 @@ form{
 				background: $color8;
 				color: $color2;
 			}
-
-
 		}
 	}
 
