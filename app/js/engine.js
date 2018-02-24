@@ -326,6 +326,18 @@ $(document).on('click', '.o-menu .folder > a, .o-menu .folder > span', function(
 })
 
 
+// обратный звоно
+$(document).on('click', '.btn-callback', function(e){
+	document.querySelector('.modal-callback').classList.add('open')
+	document.querySelector('.body').classList.add('m-modal-open')
+});
+
+$(document).on('click', '.close-modal', function(e){
+	$(this).closest('.open').removeClass('open');
+	document.querySelector('.body').classList.remove('m-modal-open')
+});
+
+
 // sticky header
 var fh = document.querySelector('.fixed-header'),
 	headerh = document.querySelector('.header').offsetHeight;

@@ -27,16 +27,22 @@ html {
 body{
 	font-family: 'proxima', Arial;
 	font-weight: 400;
-	@include flexbox;
 	@include font-size(1.4);
-	flex-flow: column;
 	font-display: swap;
 	height: 100vh;
 }
 
-html, body{
+.body{
+	perspective: 1000px;
+	@include flexbox;
+	flex-flow: column;
+	height: 100vh;	
+}
+
+html, body, .body{
 	height: 100%
 }
+
 
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -49,6 +55,13 @@ input::-moz-focus-inner{
 	padding: 0;
 }
 
+
+.outerwrapper,
+.footer{
+	transition: .3s transform ease-out;
+	transform-origin: 0 50%;
+	
+}
 
 .outerwrapper{
 	-webkit-flex: 1;
@@ -451,9 +464,10 @@ form{
 	position: fixed;
 	top: 0;
 	transform: translateY(-140%);
-	transition: transform .8s;
+	transition: .6s;
 	width: 100%;
-	z-index: 99;
+	z-index: -10;
+	
 	.flexbox{
 		height: 7rem;		
 	}
@@ -498,6 +512,7 @@ form{
 
 	&.sticky{
 		transform: translateY(0);
+		z-index: 99;
 	}
 }
 
@@ -594,7 +609,7 @@ form{
 	display: flex;
 	margin-left: 2.8rem;
 	.nav{
-		padding-top: .6rem;
+		// padding-top: .6rem;
 	}
 	a{
 		display: block;
@@ -1227,5 +1242,94 @@ form{
 			visibility: visible;
 			z-index: 30;
 		}
+	}
+}
+
+
+
+.modal-callback{
+	background: rgba(13,103,64,.97);
+	color: $color2;
+	// height: 100%;
+	// min-height: 630px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 480px;
+	z-index: 505;
+	transform: translateX(100%);
+	transition: .3s transform ease-out;
+
+	&.open{
+		transform: translateX(0);		
+	}
+
+	.callback__form{
+		margin-top: 1.2rem;
+	}
+
+	.inner{
+		padding: 12.5rem 0 0 3.7rem;
+		position: absolute;
+		width: 31rem;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		overflow-y: auto;
+	}
+	.title{
+		font-weight: 500;
+		font-size: 2.5rem;
+		text-transform: uppercase;
+	}
+	.text{
+		font-size: 1.6rem;
+		line-height: 1.6;
+		padding-top: 2.2rem;
+		padding-right: 2rem;
+	}
+
+	.input-field{
+		margin-top: 1.3rem;
+		label{
+			font-size: 1.4rem;
+		}
+	}
+
+	.submit{
+		margin-top: 4.5rem;
+	}
+
+	.form-control{
+		width: 100%;
+	}
+
+	.close-modal{
+		background: none;
+		border: none;
+		position: absolute;
+		right: 0px;
+		top: 35px;
+		z-index: 99;
+		svg{
+			@include transition-param(transform)
+		}
+		&:hover{
+			svg{
+				@include rotation(90deg)
+			}
+		}
+	}
+}
+
+
+
+.m-modal-open{
+	// overflow: hidden;;
+	.outerwrapper,
+	.footer{
+		transform: rotateY(14.6deg);
 	}
 }
