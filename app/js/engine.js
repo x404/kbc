@@ -165,17 +165,17 @@ $(document).ready(function(){
 			}
 
 			// // добавляем кастомный скролл на список опций
-			// $dropdownCnt.each(function () {
-			//	 $(this).perfectScrollbar({
-			//		 maxScrollbarLength: 48,
-			//		 minScrollbarLength: 48
-			//	 }).scrollTop(100); // скролл нужен для инициализации кастомного скролла
+			$dropdownCnt.each(function () {
+				$(this).perfectScrollbar({
+					 maxScrollbarLength: 48,
+					 minScrollbarLength: 48
+				}).scrollTop(100); // скролл нужен для инициализации кастомного скролла
 
-			//	 // асинхронно возвращаем скролл с исходную позицию
-			//	 setTimeout(function () {
-			//		 $dropdownCnt.scrollTop(0);
-			//	 }, 0);
-			// });
+				 // асинхронно возвращаем скролл с исходную позицию
+				setTimeout(function () {
+					 $dropdownCnt.scrollTop(0);
+				}, 0);
+			});
 		},
 		// коллбэк: при добавлении опции
 		onItemAdd: function onItemAdd(value, $item) {

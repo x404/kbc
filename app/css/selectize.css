@@ -245,7 +245,7 @@
 .selectize-dropdown {
   position: absolute;
   z-index: 10;
-  border: 1px solid #d0d0d0;
+  /*border: 1px solid #d0d0d0;*/
   background: #ffffff;
   margin: 1px 0 0 0;
   border-top: 0 none;
@@ -292,7 +292,7 @@
 .selectize-dropdown-content {
   overflow-y: auto;
   overflow-x: hidden;
-  max-height: 200px;
+  max-height: 160px;
   -webkit-overflow-scrolling: touch;
 }
 .selectize-control.single .selectize-input,
