@@ -945,11 +945,6 @@ form{
 }
 
 
-.filter{
-	padding: 3.5rem 0 3.2rem;
-}
-
-
 .carousel-image{
 	display: block;
 	transition: .3s transform ease-out;
@@ -977,6 +972,7 @@ form{
 
 // filter
 .filter{
+	padding: 3.5rem 0 3.2rem;
 	flex-grow: 1;
 	.nav{
 		width: 160px;
@@ -1182,6 +1178,10 @@ form{
 		border-bottom: 2px solid #00874d;
 		height: 4rem;
 	}
+
+	.tab-pane{
+		min-height: 10rem
+	}
 }
 
 .installment{
@@ -1356,5 +1356,16 @@ form{
 	.outerwrapper,
 	.footer{
 		transform: rotateY(14.6deg);
+	}
+}
+
+
+
+.tab-content {
+	> .tab-pane {
+		display: none;
+	}
+	> .active {
+		display: block;
 	}
 }

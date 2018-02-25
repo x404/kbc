@@ -368,6 +368,67 @@
 							</div>
 						</div>
 						<div role="tabpanel" class="tab-pane fade" id="panel2">
+							<div class="flexbox">
+								<div class="cell">
+									<div class="objects-select__wrap">
+										<select name="obj2[]"
+											multiple
+											placeholder="Выберите объект"
+											data-placeholder="Объекты"
+											data-count="объекта"
+											data-count-plural="объектов"
+											data-count-single="объект"
+											class="j-search-select">
+												<option value="34">ЖК Стасовой</option>
+												<option value="57">ЖК Миручино</option>
+												<option value="39">ЖК Годенко</option>
+												<option value="76">ЖК Новониколаевский</option>
+												<option value="72">Калейдоскоп</option>
+												<option value="63">Паруса</option>
+												<option value="86">Звездный Дуэт</option>
+												<option value="36">Цивилизация</option>
+												<option value="41">София</option>
+												<option value="55">Цветной город</option>
+												<option value="78">Богемия</option>
+												<option value="60">Новая Охта</option>
+												<option value="88">Цивилизация на Неве</option>
+												<option value="61">Шуваловский</option>
+										</select>	
+									</div>
+								</div>
+								<div class="cell">
+									<p class="cell__title">Стоимость</p>
+									<div class="slider">
+										<div class="slider">
+											<div id="slider-cost2"></div>
+										</div>
+										<div class="slider_controls">
+											<input type="text" id="cost2-from" class="param_control" placeholder="от"  /> 
+											<span class="separate"> — </span>
+											<input type="text" id="cost2-to" class="param_control" placeholder="до"  />
+										</div>
+									</div>
+								</div>
+								<div class="cell">
+									<p class="cell__title">Площадь</p>
+									<div class="slider">
+										<div class="slider">
+											<div id="slider-area2"></div>
+										</div>
+										<div class="slider_controls">
+											<input type="text" id="area2-from" class="param_control" placeholder="от"  />
+											<span class="separate"> — </span>
+											<input type="text" id="area2-to" class="param_control" placeholder="до"  />
+										</div>
+									</div>
+								</div>
+								<div class="cell">
+									<a href="#" class="showflat icon-flats">
+										Показать <br> <span id="countflat2">256 квартир</span>
+									</a>
+									<button type="button" class="showmap icon-label">Карта объектов</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -385,6 +446,18 @@
 		areato = document.getElementById('area-to');
 
 
+
+	var handlesSlider3 = document.getElementById('slider-cost2'),
+		cost2from = document.getElementById('cost2-from'),
+		cost2to = document.getElementById('cost2-to');
+
+
+	var handlesSlider4 = document.getElementById('slider-area2'),
+		area2from = document.getElementById('area2-from'),
+		area2to = document.getElementById('area2-to');
+
+
+	// цена - квартиры
 	noUiSlider.create(handlesSlider1, {
 		start: [ 40, 120 ],
 		connect: true,
@@ -394,7 +467,6 @@
 		}
 	});
 
-	// цена
 	handlesSlider1.noUiSlider.on('update', function(values, handle){
 		costfrom.value = 'от ' + parseInt(values[0]) + ' млн. руб';
 		costto.value = 'от ' + parseInt(values[1]) + ' млн. руб';
@@ -411,7 +483,7 @@
 	});	
 
 
-	// площадь
+	// площадь - квартиры
 	noUiSlider.create(handlesSlider2, {
 		start: [ 40, 120 ],
 		connect: true,
@@ -434,6 +506,60 @@
 		value = value.replace(/\D+/g,"");
 		handlesSlider2.noUiSlider.set([null, value]);
 	});	
+
+
+
+
+	// цена - коммерческое
+	noUiSlider.create(handlesSlider3, {
+		start: [ 40, 120 ],
+		connect: true,
+		range: {
+			'min': 20,
+			'max': 150
+		}
+	});
+
+	handlesSlider3.noUiSlider.on('update', function(values, handle){
+		cost2from.value = 'от ' + parseInt(values[0]) + ' млн. руб';
+		cost2to.value = 'от ' + parseInt(values[1]) + ' млн. руб';
+	});
+	cost2from.addEventListener('change', function ( ) {
+		var value = this.value;
+		value = value.replace(/\D+/g,"");
+		handlesSlider3.noUiSlider.set([value, null]);
+	});
+	cost2to.addEventListener('change', function ( ) {
+		var value = this.value;
+		value = value.replace(/\D+/g,"");
+		handlesSlider3.noUiSlider.set([null, value]);
+	});	
+
+
+	// площадь - коммерческое
+	noUiSlider.create(handlesSlider4, {
+		start: [ 40, 120 ],
+		connect: true,
+		range: {
+			'min': 25,
+			'max': 250
+		}
+	});
+	handlesSlider4.noUiSlider.on('update', function(values, handle){
+		area2from.value = 'от ' + parseInt(values[0]) + ' м.кв.';
+		area2to.value = 'от ' + parseInt(values[1]) + ' м.кв.';
+	});
+	area2from.addEventListener('change', function ( ) {
+		var value = this.value;
+		value = value.replace(/\D+/g,"");
+		handlesSlider4.noUiSlider.set([value, null]);
+	});
+	area2to.addEventListener('change', function ( ) {
+		var value = this.value;
+		value = value.replace(/\D+/g,"");
+		handlesSlider4.noUiSlider.set([null, value]);
+	});	
+
 </script>
 		<!-- =/filter -->
 

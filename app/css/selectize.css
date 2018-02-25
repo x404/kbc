@@ -204,6 +204,7 @@
   line-height: inherit !important;
   -webkit-user-select: auto !important;
   font-weight: 500;
+  /*min-width: 140px;*/
   /*width: 100% !important;*/
 }
 .selectize-input > input::-ms-clear {

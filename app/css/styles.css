@@ -826,9 +826,6 @@ form .form-control {
   top: -4px;
   left: 0; }
 
-.filter {
-  padding: 3.5rem 0 3.2rem; }
-
 .carousel-image {
   display: block;
   transition: .3s transform ease-out;
@@ -846,6 +843,7 @@ form .form-control {
   position: absolute; }
 
 .filter {
+  padding: 3.5rem 0 3.2rem;
   flex-grow: 1; }
   .filter .nav {
     width: 160px; }
@@ -1006,6 +1004,8 @@ form .form-control {
     border: none;
     border-bottom: 2px solid #00874d;
     height: 4rem; }
+  .filter .tab-pane {
+    min-height: 10rem; }
 
 .installment {
   margin-top: 1.1rem; }
@@ -1133,6 +1133,12 @@ form .form-control {
 .m-modal-open .outerwrapper,
 .m-modal-open .footer {
   transform: rotateY(14.6deg); }
+
+.tab-content > .tab-pane {
+  display: none; }
+
+.tab-content > .active {
+  display: block; }
 
 .feature {
   position: relative;
@@ -1840,6 +1846,29 @@ form .form-control {
     left: -10px; }
   .big-icon:hover span {
     border-bottom: none; }
+
+.fade {
+  opacity: 0;
+  transition: opacity .15s linear; }
+  .fade.show {
+    opacity: 1; }
+
+.collapse {
+  display: none; }
+  .collapse.show {
+    display: block; }
+
+tr.collapse.show {
+  display: table-row; }
+
+tbody.collapse.show {
+  display: table-row-group; }
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height .35s ease; }
 
 /* =mobile-menu
 ---------------------------*/
