@@ -104,7 +104,7 @@
 
 */
 /*** reset ***********/
-html, body, ul, ol, li, dl, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, a, img, label {
+html, body, ul, ol, li, dl, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, a, img, label, dt, dd {
   margin: 0;
   padding: 0;
   border: 0; }
@@ -186,20 +186,24 @@ h3 {
   .tdn:hover {
     text-decoration: underline; }
 
-.tdu, .footer__menu a, .footer .idealpromo a {
+.tdu, .modal-menu .menu a, .footer__menu a, .footer .idealpromo a {
   text-decoration: underline; }
-  .tdu:hover, .footer__menu a:hover, .footer .idealpromo a:hover {
+  .tdu:hover, .modal-menu .menu a:hover, .footer__menu a:hover, .footer .idealpromo a:hover {
     text-decoration: none; }
 
 .before, .btn-red:before, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
 .fixed-header .wishlist__link:before,
-.fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .callback .call:before, .footer__menu dt:after, .icon-catalog:before, .icon-people:before, .icon-tel:before, .icon-bulldozer:before, .icon-house:before, .filter .nav .btn.active:after, .filter .showflat:before, .filter .showmap:before, .installment__tooltip_content:before, .feature .promo .owl-dot:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .feature .news__link:before, .objects .owl-carousel .owl-prev:before, .objects .owl-carousel .owl-next:before,
+.fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .callback .call:before, .modal-menu .menu .title:after,
+.modal-menu .menu dt:after, .modal-menu .contacts .title:after, .modal-menu .close-modal:after, .footer__menu dt:after, .icon-catalog:before, .icon-people:before, .icon-tel:before, .icon-bulldozer:before, .icon-house:before, .filter .nav .btn.active:after, .filter .showflat:before, .filter .showmap:before, .installment__tooltip_content:before, .feature .promo .owl-dot:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .feature .news__link:before, .objects .owl-carousel .owl-prev:before, .objects .owl-carousel .owl-next:before,
 .intro__carousel .owl-carousel .owl-prev:before,
 .intro__carousel .owl-carousel .owl-next:before, .objects__info:before, .objects .owl-carousel .owl-prev:after, .objects .owl-carousel .owl-next:after, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .big-icon:before {
   content: "";
   display: block;
   position: absolute; }
+
+strong {
+  font-weight: 500; }
 
 input,
 button,
@@ -214,7 +218,7 @@ input[type="submit"] {
   display: flex;
   align-items: center; }
 
-.flex-center, .feature .promo .type-2 .more,
+.flex-center, .modal-menu .close-modal, .feature .promo .type-2 .more,
 .feature .promo .type-3 .more, .feature .news .date .num {
   display: flex;
   align-items: center;
@@ -641,7 +645,7 @@ form .form-control {
 
 /* =header
 ---------------------------*/
-.green-gradient, .callback, .about-partners .partners {
+.green-gradient, .callback, .modal-menu, .about-partners .partners {
   background-image: -webkit-linear-gradient(top, #008e54 0%, #0d6640 100%);
   background-image: -o-linear-gradient(top, #008e54 0%, #0d6640 100%);
   background-image: linear-gradient(to bottom, #008e54 0%, #0d6640 100%);
@@ -705,6 +709,143 @@ form .form-control {
 
 /* =/callback
 ---------------------------*/
+.social {
+  display: flex;
+  flex-grow: 1; }
+  .social a {
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin-left: .8rem;
+    width: 40px;
+    transition: .3s background, border-color ease-out; }
+    .social a:hover {
+      background: #00874d;
+      border-color: #00874d; }
+
+.modal-menu {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 0 10rem;
+  z-index: 9999;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: .5s all; }
+  .modal-menu .container {
+    padding-top: 9.6rem;
+    position: relative; }
+  .modal-menu .row {
+    flex-wrap: nowrap; }
+  .modal-menu .menu {
+    color: #fff;
+    padding-right: 160px;
+    width: 1280px; }
+    .modal-menu .menu a {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 100; }
+    .modal-menu .menu .title,
+    .modal-menu .menu dt {
+      font-size: 2.2rem;
+      position: relative;
+      margin-bottom: 25px;
+      font-weight: 500; }
+      .modal-menu .menu .title:after,
+      .modal-menu .menu dt:after {
+        border-bottom: 2px solid #c20831;
+        bottom: -8px;
+        width: 42px; }
+    .modal-menu .menu .subtitle {
+      font-size: 1.7rem;
+      font-weight: 500;
+      margin-bottom: 1.6rem !important; }
+    .modal-menu .menu .columns .column {
+      flex: 1 0 50%; }
+      .modal-menu .menu .columns .column a {
+        width: 100%; }
+    .modal-menu .menu__top .flexbox {
+      justify-content: space-between; }
+    .modal-menu .menu__top .cell p {
+      margin-bottom: 1.2rem; }
+    .modal-menu .menu__top .cell-flat {
+      flex-grow: 1; }
+    .modal-menu .menu__top .cell-commerce {
+      flex: 0 1 320px; }
+    .modal-menu .menu__top .cell-others {
+      flex: 0 1 160px; }
+      .modal-menu .menu__top .cell-others p {
+        margin-bottom: 3rem; }
+        .modal-menu .menu__top .cell-others p:last-child {
+          margin-bottom: 0; }
+      .modal-menu .menu__top .cell-others a {
+        font-size: 2.2rem;
+        font-weight: 500; }
+    .modal-menu .menu__bottom {
+      border-top: 2px solid rgba(255, 255, 255, 0.2);
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+      padding-top: 3.5rem; }
+      .modal-menu .menu__bottom dd {
+        margin: 1.2rem 0; }
+  .modal-menu .contacts {
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 3rem 3.4rem;
+    font-size: 1.5rem; }
+    .modal-menu .contacts__cell {
+      margin-bottom: 2rem; }
+      .modal-menu .contacts__cell p {
+        font-size: 1.8rem; }
+    .modal-menu .contacts .title {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin: 1.8rem 0 1.4rem;
+      position: relative; }
+      .modal-menu .contacts .title:after {
+        border-bottom: 2px solid #c20831;
+        width: 30px;
+        bottom: -5px; }
+  .modal-menu .social {
+    margin-top: 2.6rem; }
+    .modal-menu .social a {
+      margin-left: 0;
+      margin-right: .9rem; }
+  .modal-menu .btn-callback {
+    border-color: #fff;
+    color: #fff;
+    margin-top: .8rem; }
+  .modal-menu .address {
+    margin-top: 3.3rem; }
+  .modal-menu .close-modal {
+    background: #fff;
+    border: none;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: 50px; }
+    .modal-menu .close-modal svg {
+      -webkit-transition: transform 0.2s ease-out;
+      transition: transform 0.2s ease-out; }
+    .modal-menu .close-modal:after {
+      bottom: -7px;
+      width: 100%;
+      left: 0;
+      border-bottom: 5px solid #c20831; }
+    .modal-menu .close-modal:hover svg {
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
+  .modal-menu.open {
+    transform: translateY(0);
+    opacity: 1; }
+
 /* =footer
 ---------------------------*/
 .footer {
@@ -722,24 +863,6 @@ form .form-control {
     border-bottom: 3px solid #253628; }
   .footer .contacts__cell {
     margin-right: 8rem; }
-  .footer__social {
-    display: flex;
-    flex-grow: 1;
-    text-align: right;
-    justify-content: flex-end; }
-    .footer__social a {
-      align-items: center;
-      border-radius: 50%;
-      border: 1px solid #fff;
-      display: flex;
-      height: 40px;
-      justify-content: center;
-      margin-left: .8rem;
-      width: 40px;
-      transition: .3s background, border-color ease-out; }
-      .footer__social a:hover {
-        background: #00874d;
-        border-color: #00874d; }
   .footer__menu {
     padding-top: 3.5rem;
     justify-content: space-between; }
@@ -787,6 +910,9 @@ form .form-control {
       width: 24rem; }
     .footer .subscribe .submit {
       margin-top: 2rem; }
+  .footer .social {
+    justify-content: flex-end;
+    text-align: right; }
 
 /* =/footer
 ---------------------------*/

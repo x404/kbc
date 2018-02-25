@@ -1,5 +1,5 @@
 /*** reset ***********/
-html,body,ul,ol,li,dl,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,a,img,label{margin:0;padding:0;border:0}
+html,body,ul,ol,li,dl,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,a,img,label, dt, dd{margin:0;padding:0;border:0}
 header, section, footer, aside, nav, article {display:block}
 ul{list-style:none}
 
@@ -97,6 +97,10 @@ h3{font-size:1.6rem}
 	content: "";
 	display: block;
 	position: absolute;
+}
+
+strong{
+	font-weight: 500
 }
 
 input,
@@ -763,6 +767,206 @@ form{
 
 
 
+.social{
+	display: flex;
+	flex-grow: 1;
+	a{
+		$s: 40px;
+		align-items: center;
+		border-radius: 50%;
+		border: 1px solid #fff;
+		display: flex;
+		height: $s;
+		justify-content: center;
+		margin-left: .8rem;
+		width: $s;
+		transition: .3s background, border-color ease-out;
+		&:hover{
+			$color: $color8;
+			background: $color;
+			border-color: $color;
+		}
+	}
+}
+
+
+.modal-menu{
+	@extend .green-gradient;
+	// display: block ;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 0 0 10rem;
+	z-index: 9999;
+	transform: translateY(-100%);
+	opacity: 0;
+	transition: .5s all;
+	.container{
+		padding-top: 9.6rem;
+		position: relative;
+	}
+	.row{
+		flex-wrap: nowrap;
+	}
+	.menu{
+		color: $color2;
+		padding-right: 160px;
+		width: 1280px;
+		a{
+			@extend .tdu;
+			color: $color2;
+			font-size: 1.5rem;
+			font-weight: 100;
+		}
+
+		.title,
+		dt{
+			font-size: 2.2rem;
+			position: relative;
+			margin-bottom: 25px;
+			font-weight: 500;
+			&:after{
+				@extend .before;
+				border-bottom: 2px solid $color7;
+				bottom: -8px;
+				width: 42px;
+			}
+		}
+
+		.subtitle{
+			font-size: 1.7rem;
+			font-weight: 500;
+			margin-bottom: 1.6rem !important;
+		}
+
+		.columns{
+			.column{
+				flex: 1 0 50%;
+				a{
+					width: 100%;
+				}
+			}
+		}
+
+		&__top{
+			.flexbox{
+				justify-content: space-between;
+			}
+			.cell{
+				p{
+					margin-bottom: 1.2rem;
+				}
+				&-flat{
+					flex-grow: 1;
+				}
+				&-commerce{
+					flex: 0 1 320px;
+				}
+				&-others{
+					flex: 0 1 160px;
+					p{
+						margin-bottom: 3rem;
+						&:last-child{
+							margin-bottom: 0;
+						}
+					}
+					a{
+						font-size: 2.2rem;
+						font-weight: 500;
+
+					}
+				}
+			}
+		}
+
+		&__bottom{
+			border-top: 2px solid rgba(255,255,255,.2);
+			display: flex;
+			justify-content: space-between;
+			margin-top: 2rem;
+			padding-top: 3.5rem;
+			dd{
+				margin: 1.2rem 0;
+			}
+		}
+	}
+
+	.contacts{
+		background: rgba(0,0,0,.2);
+		color: $color2;
+		padding: 3rem 3.4rem;
+		font-size: 1.5rem;
+		&__cell{
+			margin-bottom: 2rem;
+			p{
+				font-size: 1.8rem;
+			}
+		}
+		.title{
+			font-size: 1.8rem;
+			font-weight: 500;
+			margin: 1.8rem 0 1.4rem;
+			position: relative;
+			&:after{
+				@extend .before;
+				border-bottom: 2px solid $color7;
+				width: 30px;
+				bottom: -5px;
+			}
+		}
+	}
+
+	.social{
+		margin-top: 2.6rem;
+		a{
+			margin-left: 0;
+			margin-right: .9rem;
+		}
+	}
+
+	.btn-callback{
+		border-color: $color2;
+		color: $color2;
+		margin-top: .8rem;
+	}
+
+	.address{
+		margin-top: 3.3rem;
+	}
+
+	.close-modal{
+		background: #fff;
+		border: none;
+		height: 50px;
+		position: absolute;
+		right: 0;
+		top: 20px;
+		width: 50px;
+		@extend .flex-center;
+		svg{
+			@include transition-param(transform);			
+		}
+		&:after{
+			@extend .before;
+			bottom: -7px;
+			width: 100%;
+			left: 0;
+			border-bottom: 5px solid #c20831;
+		}
+		&:hover{
+			svg{
+				@include rotation(90deg);	
+			}
+		}
+	}
+
+
+	&.open{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
 
 /* =footer
 ---------------------------*/
@@ -791,30 +995,6 @@ form{
 	.contacts{
 		&__cell{
 			margin-right: 8rem;		
-		}
-	}
-
-	&__social{
-		display: flex;
-		flex-grow: 1;
-		text-align: right;
-		justify-content: flex-end;
-		a{
-			$s: 40px;
-			align-items: center;
-			border-radius: 50%;
-			border: 1px solid #fff;
-			display: flex;
-			height: $s;
-			justify-content: center;
-			margin-left: .8rem;
-			width: $s;
-			transition: .3s background, border-color ease-out;
-			&:hover{
-				$color: $color8;
-				background: $color;
-				border-color: $color;
-			}
 		}
 	}
 
@@ -898,6 +1078,11 @@ form{
 		.submit{
 			margin-top: 2rem;
 		}
+	}
+
+	.social{
+		justify-content: flex-end;
+		text-align: right;
 	}
 }
 /* =/footer
@@ -1352,7 +1537,6 @@ form{
 
 
 .m-modal-open{
-	// overflow: hidden;;
 	.outerwrapper,
 	.footer{
 		transform: rotateY(14.6deg);

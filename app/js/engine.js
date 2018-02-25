@@ -245,7 +245,7 @@ $(document).ready(function(){
 		showMaskOnHover : false
 	});
 	// #mask
-	
+
 });
 
 // =заглушка для IE
@@ -334,7 +334,7 @@ $(document).on('click', '.o-menu .folder > a, .o-menu .folder > span', function(
 })
 
 
-// обратный звоно
+// обратный звонок
 $(document).on('click', '.btn-callback', function(e){
 	document.querySelector('.modal-callback').classList.add('open')
 	document.querySelector('.body').classList.add('m-modal-open')
@@ -344,6 +344,17 @@ $(document).on('click', '.close-modal', function(e){
 	$(this).closest('.open').removeClass('open');
 	document.querySelector('.body').classList.remove('m-modal-open')
 });
+
+
+
+// меню по иконки
+$(document).on('click', '.extra-toggle', function(e){
+	var modal = $(this).data('popup');
+	console.log($('#' + modal));
+	$('#' + modal).addClass('open')
+});
+
+
 
 
 // sticky header

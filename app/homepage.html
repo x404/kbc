@@ -89,7 +89,7 @@
 					<!-- =/wishlist -->
 
 					<!-- =extra menu -->
-					<button type="button" class="extra-toggle btn-animate">
+					<button type="button" class="extra-toggle btn-animate" data-popup="modal-menu">
 						<span class="icon-bar icon-bar-full"></span>
 						<span class="icon-bar icon-bar-left"></span>
 						<span class="icon-bar icon-bar-right"></span>
@@ -822,7 +822,7 @@
 
 							<button type="button" class="btn-callback">Обратный звонок</button>
 
-							<div class="footer__social">
+							<div class="social">
 								<a href="#" title="" target="_blank"><img src="images/social/vk.png" alt="Вконтакте" /></a>
 								<a href="#" title="" target="_blank"><img src="images/social/fb.png" alt="Facebook" /></a>
 								<a href="#" title="" target="_blank"></a>
@@ -947,7 +947,7 @@
 			<!-- =/wishlist -->
 
 			<!-- =extra menu -->
-			<button type="button" class="extra-toggle btn-animate">
+			<button type="button" class="extra-toggle btn-animate" data-popup="modal-menu">
 				<span class="icon-bar icon-bar-full"></span>
 				<span class="icon-bar icon-bar-left"></span>
 				<span class="icon-bar icon-bar-right"></span>
@@ -981,13 +981,153 @@
 		</form>
 		<button type="button" data-dismiss="modal" class="close-modal" aria-label="Закрыть">
 			<svg width="24" height="24">
-				<line x1="0" y1="0" x2="24" y2="24" style="stroke:white;stroke-width:2" />				
-				<line x1="24" y1="0" x2="0" y2="24" style="stroke:white;stroke-width:2" />				
+				<line x1="0" y1="0" x2="24" y2="24" style="stroke:white;stroke-width:2" />
+				<line x1="24" y1="0" x2="0" y2="24" style="stroke:white;stroke-width:2" />
 			</svg>
 		</button>
 	</div>
 </div>
 <!-- =/modal callback -->
+
+
+<!-- =modal menu -->
+<div class="modal modal-menu" id="modal-menu" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="inner" role="document">
+		<div class="container">
+			<div class="row">
+				<div class="menu">
+					<div class="menu__top">
+						<p class="title">Объекты в продаже</p>
+						<div class="flexbox">
+							<div class="cell cell-flat">
+								<p class="subtitle">Квартиры</p>
+
+								<div class="columns flexbox">
+									<div class="column">
+										<p><a href="#" title="">Новониколаевский</a></p>
+										<p><a href="#" title="">Мичурино</a></p>
+										<p><a href="#" title="">Тихие зори</a></p>
+										<p><a href="#" title="">Годенко - Киренского - Белорусская</a></p>
+										<p><a href="#" title="">Иннокентьевский</a></p>
+										<p><a href="#" title="">Стасовой</a></p>
+									</div>
+									<div class="column">
+										<p><a href="#" title="">Курчатова</a></p>
+										<p><a href="#" title="">Калина</a></p>
+										<p><a href="#" title="">Домино</a></p>
+										<p><a href="#" title="">пер. Уютный</a></p>
+										<p><a href="#" title="">Шахтеров</a></p>
+									</div>
+								</div>
+
+							
+							</div>
+							<div class="cell cell-commerce">
+								<p class="subtitle">Коммерческое</p>
+								<p><a href="#" title="">Новониколаевский</a></p>
+								<p><a href="#" title="">Годенко - Киренского - Белорусская</a></p>
+								<p><a href="#" title="">Курчатова</a></p>
+								<p><a href="#" title="">Домино</a></p>
+							</div>
+
+							<div class="cell cell-others">
+								<p><a href="#" title="">Все объекты</a></p>
+								<p><a href="#" title="">Избранные</a></p>
+								<p><a href="#" title="">Ход строительства</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="menu__bottom">
+						<div class="cell">
+							<dl>
+								<dt>О компании</dt>
+								<dd><a href="#" title="">История компании</a></dd>
+								<dd><a href="#" title="">Отзывы</a></dd>
+								<dd><a href="#" title="">Тендеры</a></dd>
+								<dd><a href="#" title="">Разрешения на ввод</a></dd>				
+								<dd><a href="#" title="">Новости и статьи</a></dd>
+								<dd><a href="#" title="">Акции</a></dd>
+								<dd><a href="#" title="">Контакты</a></dd>
+							</dl>
+						</div>
+						<div class="cell">
+							<dl>
+								<dt>Покупателю</dt>
+								<dd><a href="#" title="">Ипотека</a></dd>
+								<dd><a href="#" title="">Ипотечный калькулятор</a></dd>
+								<dd><a href="#" title="">Покупка</a></dd>
+								<dd><a href="#" title="">Использование</a></dd>
+								<dd><a href="#" title="">Часто задаваемые вопросы</a></dd>
+							</dl>
+						</div>
+						<div class="cell">
+							<dl>
+								<dt>Кооператив</dt>
+								<dd><a href="#" title="">Энциклопедия пайщика</a></dd>
+								<dd><a href="#" title="">Способы оплаты</a></dd>
+								<dd><a href="#" title="">Калькулятор платежей</a></dd>
+								<dd><a href="#" title="">Квартиры ЖНК</a></dd>
+							</dl>
+						</div>
+						<div class="cell">
+							<dl>
+								<dt>ЖБИ</dt>
+								<dd><a href="#" title="">Продукция</a></dd>
+								<dd><a href="#" title="">Цены</a></dd>
+								<dd><a href="#" title="">Калькулятор брусчатки</a></dd>
+								<dd><a href="#" title="">Контакты</a></dd>
+							</dl>
+						</div>
+						<div class="cell">
+							<dl>
+								<dt>Партнерам</dt>
+								<dd><a href="#" title="">Подрядчикам</a></dd>
+								<dd><a href="#" title="">Риэлторам</a></dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<div class="contacts col-2">
+					<div class="contacts__cell">
+						<p>Недвижимость</p>
+						<a href="tel:+73912179217" title="" class="tel"><span class="code">+7 (391)</span> 217-9-217</a>
+					</div>
+					<div class="contacts__cell">
+						<p>ЖБИ брусчатка</p>
+						<a href="tel:+73912016092" title="" class="tel"><span class="code">+7 (391)</span> 201-60-92</a>
+					</div>
+
+					<button type="button" class="btn-callback">Обратный звонок</button>
+
+					<div class="address">
+						<p class="title">Головной офис</p>
+						<p>г. Красноярск, ул. Мусоргского, 18. </p>
+
+						<p class="title">Офисы продаж</p>
+						<p><strong>Офис продаж «Центр»</strong></p>
+						<p>ул. Ады Лебедевой, 18.</p>
+						<br>
+						<p><strong>Офис продаж «Октябрьский»</strong></p>
+						<p>ул. Академика Киренского, 71.</p>
+					</div>
+
+					<div class="social">
+						<a href="#" title="" target="_blank"><img src="images/social/vk.png" alt="Вконтакте" /></a>
+						<a href="#" title="" target="_blank"><img src="images/social/fb.png" alt="Facebook" /></a>
+						<a href="#" title="" target="_blank"></a>
+					</div>
+				</div>
+				<button type="button" data-dismiss="modal" class="close-modal" aria-label="Закрыть">
+					<svg width="24" height="24">
+						<line x1="0" y1="0" x2="24" y2="24" style="stroke:black;stroke-width:2" />
+						<line x1="24" y1="0" x2="0" y2="24" style="stroke:black;stroke-width:2" />
+					</svg>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- =/modal menu -->
 
 <div id="outdated"></div>
 <link rel="stylesheet" property="stylesheet" href="/outdatedbrowser/outdatedbrowser.min.css" />
