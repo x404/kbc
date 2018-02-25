@@ -197,7 +197,7 @@ h3 {
 .modal-menu .menu dt:after, .modal-menu .contacts .title:after, .modal-menu .close-modal:after, .footer__menu dt:after, .icon-catalog:before, .icon-people:before, .icon-tel:before, .icon-bulldozer:before, .icon-house:before, .filter .nav .btn.active:after, .filter .showflat:before, .filter .showmap:before, .installment__tooltip_content:before, .feature .promo .owl-dot:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .feature .news__link:before, .objects .owl-carousel .owl-prev:before, .objects .owl-carousel .owl-next:before,
 .intro__carousel .owl-carousel .owl-prev:before,
 .intro__carousel .owl-carousel .owl-next:before, .objects__info:before, .objects .owl-carousel .owl-prev:after, .objects .owl-carousel .owl-next:after, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
-.about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .big-icon:before {
+.about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .big-icon:before, .popover-link:before {
   content: "";
   display: block;
   position: absolute; }
@@ -214,12 +214,12 @@ textarea {
 input[type="submit"] {
   cursor: pointer; }
 
-.flex-cv, .btn-more, .feature .news .date, .feature .news .cat__link {
+.flex-cv, .btn-more, .feature .news .date, .feature .news .cat__link, .popover-bottom {
   display: flex;
   align-items: center; }
 
 .flex-center, .modal-menu .close-modal, .feature .promo .type-2 .more,
-.feature .promo .type-3 .more, .feature .news .date .num {
+.feature .promo .type-3 .more, .feature .news .date .num, .popover .diagram {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -1972,6 +1972,98 @@ form .form-control {
     left: -10px; }
   .big-icon:hover span {
     border-bottom: none; }
+
+.modal-map {
+  background: #fff;
+  left: 0;
+  position: absolute;
+  top: 10rem;
+  width: 100%; }
+  .modal-map .container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding-left: 0;
+    padding-right: 0; }
+  .modal-map .head {
+    font-size: 3rem;
+    font-weight: 500;
+    height: 114px;
+    line-height: 114px;
+    padding-left: 4rem;
+    text-transform: uppercase; }
+  .modal-map #map {
+    height: 585px; }
+
+.popover {
+  display: block;
+  background: #fff; }
+  .popover img {
+    display: block; }
+  .popover .close {
+    position: absolute;
+    right: 5px;
+    top: 1px; }
+  .popover-inner {
+    width: 430px; }
+  .popover-container {
+    background: #fff;
+    width: 430px; }
+  .popover-description {
+    padding: 10px 17px 10px 17px;
+    flex-grow: 1; }
+  .popover-title {
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 7px; }
+  .popover-content {
+    display: flex;
+    align-items: center; }
+  .popover .diagram {
+    background: none !important;
+    background-repeat: no-repeat;
+    height: 55px;
+    width: 55px;
+    border-radius: 55px;
+    font-weight: 500;
+    border: 10px solid #d7dce1;
+    border-right: 10px solid #b7da50; }
+  .popover .left {
+    color: #575757; }
+    .popover .left .name {
+      color: #000;
+      font-size: 15px;
+      font-weight: 500; }
+  .popover .right {
+    margin-left: 10px; }
+  .popover-bottom {
+    border-top: 1px solid #d7dce1;
+    margin-top: 8px;
+    padding-top: 11px; }
+    .popover-bottom-right {
+      margin-left: 1.4rem; }
+  .popover-link {
+    font-weight: 500;
+    border-bottom: 2px solid #c20831;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    display: block; }
+    .popover-link span {
+      padding-left: 2px;
+      padding-right: 2px;
+      position: relative;
+      white-space: nowrap; }
+    .popover-link:hover {
+      color: #fff; }
+      .popover-link:hover:before {
+        transform: translateX(0); }
+    .popover-link:before {
+      transition: .3s transform;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: #c20831;
+      transform: translateX(-100%); }
 
 .fade {
   opacity: 0;

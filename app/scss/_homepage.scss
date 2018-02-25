@@ -1028,4 +1028,28 @@
 }
 
 
+.modal-map{
+	background: #fff;
+	left: 0;
+	position: absolute;
+	top: 10rem;	
+	width: 100%;
+	.container{
+		box-shadow: 0 0 10px rgba(0,0,0,.5);
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.head{
+		$h: 114px;
+		font-size: 3rem;
+		font-weight: 500;
+		height: $h;
+		line-height: $h;
+		padding-left: 4rem;
+		text-transform: uppercase;
+	}
+	#map{
+		height: 585px;
+	}
+}
 
