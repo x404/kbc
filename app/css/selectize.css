@@ -132,7 +132,7 @@
   display: inline-block;
 }
 .selectize-input {
-  padding: 8px 8px 8px 0;
+  padding: 9px 8px 10px 0;
   border-bottom: 2px solid #00874d;
   display: inline-block;
   width: 100%;
@@ -218,7 +218,7 @@
 	clear: left;
 	position: absolute;
 	right: 4px;
-	top: 15px;
+	top: 21px;
 	width: 12px;
 	height: 7px;
 	background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHBAMAAADOnLEXAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAHlBMVEUAh00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah03///+7OFeyAAAACHRSTlMAG1oJ22ZpbtEBxs4AAAABYktHRAnx2aXsAAAAB3RJTUUH4gIYEw4yMAFdHgAAADNJREFUCNdjYFRgYGASYDBpZWCIcGZg6whg7UhgYMhojWhjYAByQRwGhop2EMnAXsDAAADFAwgKjAL6DwAAAABJRU5ErkJggg==") no-repeat right top;
