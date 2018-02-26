@@ -370,3 +370,17 @@ window.onscroll = function(){
 		}
 	}
 };
+
+
+
+
+var Circle = function(sel){
+    var circles = document.querySelectorAll(sel);
+    [].forEach.call(circles,function(el){
+        var valEl = parseFloat(el.innerHTML);
+        valEl = valEl*408/100;
+        el.innerHTML = '<svg width="56" height="56"><circle transform="rotate(-90)" r="65" cx="-28" cy="28" /><circle transform="rotate(-90)" style="stroke-dasharray:'+valEl+'px 408px;" r="28" cx="-28" cy="28" /></svg>';
+        
+    });
+};
+Circle('.circle');

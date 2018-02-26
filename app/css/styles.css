@@ -219,7 +219,7 @@ input[type="submit"] {
   align-items: center; }
 
 .flex-center, .modal-menu .close-modal, .feature .promo .type-2 .more,
-.feature .promo .type-3 .more, .feature .news .date .num, .popover .diagram {
+.feature .promo .type-3 .more, .feature .news .date .num, .popover .diagram, .popover .diagram .num {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -1994,8 +1994,11 @@ form .form-control {
     height: 585px; }
 
 .popover {
+  box-shadow: 0 5px 20px rgba(73, 82, 95, 0.5);
+  width: 430px;
   display: block;
-  background: #fff; }
+  background: #fff;
+  position: absolute; }
   .popover img {
     display: block; }
   .popover .close {
@@ -2008,7 +2011,7 @@ form .form-control {
     background: #fff;
     width: 430px; }
   .popover-description {
-    padding: 10px 17px 10px 17px;
+    padding: 10px 17px 8px 17px;
     flex-grow: 1; }
   .popover-title {
     font-size: 19px;
@@ -2018,14 +2021,20 @@ form .form-control {
     display: flex;
     align-items: center; }
   .popover .diagram {
-    background: none !important;
     background-repeat: no-repeat;
-    height: 55px;
-    width: 55px;
-    border-radius: 55px;
+    background: none !important;
     font-weight: 500;
-    border: 10px solid #d7dce1;
-    border-right: 10px solid #b7da50; }
+    position: relative;
+    border-radius: 56px;
+    height: 56px;
+    width: 56px; }
+    .popover .diagram .num {
+      position: absolute;
+      text-align: center;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
   .popover .left {
     color: #575757; }
     .popover .left .name {
@@ -2064,6 +2073,45 @@ form .form-control {
       top: 0;
       background: #c20831;
       transform: translateX(-100%); }
+  .popover .close {
+    font-weight: 100;
+    position: absolute;
+    right: 2px;
+    text-decoration: none;
+    top: -3px; }
+
+.popover .arrow, .popover .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid; }
+
+.popover .arrow {
+  border-width: 11px; }
+
+.popover.bottom .arrow {
+  top: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-bottom-color: #fff;
+  border-top-width: 0; }
+
+.circle {
+  display: block;
+  float: left; }
+
+circle {
+  fill: transparent;
+  stroke: #eee;
+  stroke-width: 10;
+  stroke-dasharray: 144px 144px; }
+
+circle:nth-child(2n) {
+  fill: transparent;
+  stroke: #b7da50;
+  stroke-width: 10; }
 
 .fade {
   opacity: 0;

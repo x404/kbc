@@ -1176,151 +1176,164 @@ function init(){
 			zoom: 16
 		}),
 
-        MyBalloonLayout = ymaps.templateLayoutFactory.createClass(
-            '<div class="popover top">' +
-                '<a class="close" href="#">&times;</a>' +
-                '<div class="arrow"></div>' +
-                '<div class="popover-inner">' +
-                '$[[options.contentLayout observeSize minWidth=235 maxWidth=430 maxHeight=350]]' +
-                '</div>' +
-                '</div>', {
-                /**
-                 * Строит экземпляр макета на основе шаблона и добавляет его в родительский HTML-элемент.
-                 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/layout.templateBased.Base.xml#build
-                 * @function
-                 * @name build
-                 */
-                build: function () {
-                    this.constructor.superclass.build.call(this);
+		MyBalloonLayout = ymaps.templateLayoutFactory.createClass(
+			'<div class="popover bottom">' +
+				'<a class="close" href="#">&times;</a>' +
+				'<div class="arrow"></div>' +
+				'<div class="popover-inner">' +
+				'$[[options.contentLayout observeSize minWidth=235 maxWidth=430 maxHeight=350]]' +
+				'</div>' +
+				'</div>', {
+				/**
+				 * Строит экземпляр макета на основе шаблона и добавляет его в родительский HTML-элемент.
+				 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/layout.templateBased.Base.xml#build
+				 * @function
+				 * @name build
+				 */
+				build: function () {
+					this.constructor.superclass.build.call(this);
 
-                    this._$element = $('.popover', this.getParentElement());
+					this._$element = $('.popover', this.getParentElement());
 
-                    this.applyElementOffset();
+					this.applyElementOffset();
 
-                    this._$element.find('.close')
-                        .on('click', $.proxy(this.onCloseClick, this));
-                },
+					this._$element.find('.close')
+						.on('click', $.proxy(this.onCloseClick, this));
+					
+						var Circle = function(sel){
+							var circles = document.querySelectorAll(sel);
+							[].forEach.call(circles,function(el){
+								var num = el.innerHTML,
+									valEl = parseFloat(num);
 
-                /**
-                 * Удаляет содержимое макета из DOM.
-                 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/layout.templateBased.Base.xml#clear
-                 * @function
-                 * @name clear
-                 */
-                clear: function () {
-                    this._$element.find('.close')
-                        .off('click');
+								valEl = valEl*144/100;
+								el.innerHTML = '<svg width="56" height="56"><circle transform="rotate(-90)" r="23" cx="-28" cy="28" /><circle transform="rotate(-90)" style="stroke-dasharray:'+valEl+'px 144px;" r="23" cx="-28" cy="28" /></svg><div class="num">'+num+'</div>';
+								
+							});
+						};
+						Circle('.circle');
+				},
 
-                    this.constructor.superclass.clear.call(this);
-                },
+				/**
+				 * Удаляет содержимое макета из DOM.
+				 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/layout.templateBased.Base.xml#clear
+				 * @function
+				 * @name clear
+				 */
+				clear: function () {
+					this._$element.find('.close')
+						.off('click');
 
-                /**
-                 * Метод будет вызван системой шаблонов АПИ при изменении размеров вложенного макета.
-                 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/IBalloonLayout.xml#event-userclose
-                 * @function
-                 * @name onSublayoutSizeChange
-                 */
-                onSublayoutSizeChange: function () {
-                    MyBalloonLayout.superclass.onSublayoutSizeChange.apply(this, arguments);
+					this.constructor.superclass.clear.call(this);
+				},
 
-                    if(!this._isElement(this._$element)) {
-                        return;
-                    }
+				/**
+				 * Метод будет вызван системой шаблонов АПИ при изменении размеров вложенного макета.
+				 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/IBalloonLayout.xml#event-userclose
+				 * @function
+				 * @name onSublayoutSizeChange
+				 */
+				onSublayoutSizeChange: function () {
+					MyBalloonLayout.superclass.onSublayoutSizeChange.apply(this, arguments);
 
-                    this.applyElementOffset();
+					if(!this._isElement(this._$element)) {
+						return;
+					}
 
-                    this.events.fire('shapechange');
-                },
+					this.applyElementOffset();
 
-                /**
-                 * Сдвигаем балун, чтобы "хвостик" указывал на точку привязки.
-                 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/IBalloonLayout.xml#event-userclose
-                 * @function
-                 * @name applyElementOffset
-                 */
-                applyElementOffset: function () {
-                    this._$element.css({
-                        left: -(this._$element[0].offsetWidth / 2),
-                        top: -(this._$element[0].offsetHeight + this._$element.find('.arrow')[0].offsetHeight)
-                    });
-                },
+					this.events.fire('shapechange');
+				},
 
-                /**
-                 * Закрывает балун при клике на крестик, кидая событие "userclose" на макете.
-                 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/IBalloonLayout.xml#event-userclose
-                 * @function
-                 * @name onCloseClick
-                 */
-                onCloseClick: function (e) {
-                    e.preventDefault();
+				/**
+				 * Сдвигаем балун, чтобы "хвостик" указывал на точку привязки.
+				 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/IBalloonLayout.xml#event-userclose
+				 * @function
+				 * @name applyElementOffset
+				 */
+				applyElementOffset: function () {
+					this._$element.css({
+						left: -(this._$element[0].offsetWidth / 2 - 22),
+						top: 30
+					});
+				},
 
-                    this.events.fire('userclose');
-                },
+				/**
+				 * Закрывает балун при клике на крестик, кидая событие "userclose" на макете.
+				 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/IBalloonLayout.xml#event-userclose
+				 * @function
+				 * @name onCloseClick
+				 */
+				onCloseClick: function (e) {
+					e.preventDefault();
 
-                /**
-                 * Используется для автопозиционирования (balloonAutoPan).
-                 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/ILayout.xml#getClientBounds
-                 * @function
-                 * @name getClientBounds
-                 * @returns {Number[][]} Координаты левого верхнего и правого нижнего углов шаблона относительно точки привязки.
-                 */
-                getShape: function () {
-                    if(!this._isElement(this._$element)) {
-                        return MyBalloonLayout.superclass.getShape.call(this);
-                    }
+					this.events.fire('userclose');
+				},
 
-                    var position = this._$element.position();
+				/**
+				 * Используется для автопозиционирования (balloonAutoPan).
+				 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/ILayout.xml#getClientBounds
+				 * @function
+				 * @name getClientBounds
+				 * @returns {Number[][]} Координаты левого верхнего и правого нижнего углов шаблона относительно точки привязки.
+				 */
+				getShape: function () {
+					if(!this._isElement(this._$element)) {
+						return MyBalloonLayout.superclass.getShape.call(this);
+					}
 
-                    return new ymaps.shape.Rectangle(new ymaps.geometry.pixel.Rectangle([
-                        [position.left, position.top], [
-                            position.left + this._$element[0].offsetWidth,
-                            position.top + this._$element[0].offsetHeight + this._$element.find('.arrow')[0].offsetHeight
-                        ]
-                    ]));
-                },
+					var position = this._$element.position();
 
-                /**
-                 * Проверяем наличие элемента (в ИЕ и Опере его еще может не быть).
-                 * @function
-                 * @private
-                 * @name _isElement
-                 * @param {jQuery} [element] Элемент.
-                 * @returns {Boolean} Флаг наличия.
-                 */
-                _isElement: function (element) {
-                    return element && element[0] && element.find('.arrow')[0];
-                }
-            }), 	
+					return new ymaps.shape.Rectangle(new ymaps.geometry.pixel.Rectangle([
+						[position.left, position.top], [
+							position.left + this._$element[0].offsetWidth,
+							position.top + this._$element[0].offsetHeight + this._$element.find('.arrow')[0].offsetHeight
+						]
+					]));
+				},
 
-        MyBalloonContentLayout = ymaps.templateLayoutFactory.createClass(
-            '<div class="popover-container flexbox">' + 
-            	'<div class="popover-pic"><img src="$[properties.balloonPic]" /></div>' +
-            	'<div class="popover-description">' +
-            		'<p class="popover-title">$[properties.balloonHeader]</p>' +
-            		'<div class="popover-content">' + 
-            			'<div class="left"><p class="name">$[properties.balloonTitle]</p>Готов на</div>' +
-            			'<div class="right"><div class="diagram" style="background-image:url($[properties.diagram])">$[properties.percent]</div></div>' +
-            		'</div>' +
-            		'<div class="popover-bottom">'+
-            			'<div class="popover-scheme"><img src="$[properties.scheme]" /></div>' +
-            			'<div class="popover-bottom-right"><a href="$[properties.link]" class="popover-link"><span>$[properties.titleLink]</span></a></div>' +
-            		'</div>' +
-            	'</div>'+
-            '</div>'
-        ),
+				/**
+				 * Проверяем наличие элемента (в ИЕ и Опере его еще может не быть).
+				 * @function
+				 * @private
+				 * @name _isElement
+				 * @param {jQuery} [element] Элемент.
+				 * @returns {Boolean} Флаг наличия.
+				 */
+				_isElement: function (element) {
+					return element && element[0] && element.find('.arrow')[0];
+				}
+			}), 	
+
+		MyBalloonContentLayout = ymaps.templateLayoutFactory.createClass(
+			'<div class="popover-container flexbox">' + 
+				'<div class="popover-pic"><img src="$[properties.balloonPic]" /></div>' +
+				'<div class="popover-description">' +
+					'<p class="popover-title">$[properties.balloonHeader]</p>' +
+					'<div class="popover-content">' + 
+						'<div class="left"><p class="name">$[properties.balloonTitle]</p>Готов на</div>' +
+						'<div class="right"><div class="diagram circle">$[properties.percent]</div></div>' +
+					'</div>' +
+					'<div class="popover-bottom">'+
+						'<div class="popover-scheme"><img src="$[properties.scheme]" /></div>' +
+						'<div class="popover-bottom-right"><a href="$[properties.link]" class="popover-link"><span>$[properties.titleLink]</span></a></div>' +
+					'</div>' +
+				'</div>'+
+			'</div>'
+		),
 
 		myPlacemark1 = new ymaps.Placemark(
 			[56.034195, 92.796605],
 			{
-	            balloonHeader: 'ЖК Стасовой',
+				balloonHeader: 'ЖК Стасовой',
 				balloonPic: '/tmp/gk.jpg',
 				balloonTitle: 'Дом 1.1',
-	            balloonContent: 'Контент балуна',
-	            percent: '66%',
-	            diagram: '/images/circle-60.png',
-	            scheme: '/tmp/scheme.png',
-	            link: 'http://google.com',
-	            titleLink: 'Смотреть 523 квартиры',
+				balloonContent: 'Контент балуна',
+				percent: '66%',
+				diagram: '/images/circle-60.png',
+				scheme: '/tmp/scheme.png',
+				link: 'http://google.com',
+				titleLink: 'Смотреть 523 квартиры',
 			}, 
 			{
 				// http://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/option.presetStorage.xml
@@ -1343,26 +1356,24 @@ function init(){
 		myPlacemark2 = new ymaps.Placemark(
 			[56.034295, 92.798605],
 			{
-			 balloonContentBody: [
-			            '<address>',
-			            '<strong>Офис  в Москве</strong>',
-			            '<br/>',
-			            'Подробнее: <a href="https://company.yandex.ru/">https://company.yandex.ru</a>',
-			            '</address>'
-			        ].join('')
+				balloonHeader: 'ЖК Курчатова',
+				balloonPic: '/tmp/gk.jpg',
+				balloonTitle: 'Дом 2.1',
+				balloonContent: 'Контент балуна',
+				percent: '25%',
+				diagram: '/images/circle-60.png',
+				scheme: '/tmp/scheme.png',
+				link: 'http://google.com',
+				titleLink: 'Смотреть 200 квартир',
 			}, 
 			{
-				// http://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/option.presetStorage.xml
-				// preset: 'islands#darkGreenDotIcon'
-				// Необходимо указать данный тип макета.
 				iconLayout: 'default#image',
-				// Своё изображение иконки метки.
 				iconImageHref: '/images/balloon.png',
-				// Размеры метки.
-				iconImageSize: [50, 61],
-				// Смещение левого верхнего угла иконки относительно
-				// её "ножки" (точки привязки).
-				iconImageOffset: [-3, -42]
+				iconImageSize: [51, 61],
+				iconImageOffset: [-3, -42],
+				hideIconOnBalloonOpen: false,
+				balloonLayout: MyBalloonLayout,
+				balloonContentLayout: MyBalloonContentLayout
 			},{
 		});
 

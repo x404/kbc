@@ -1,6 +1,10 @@
 .popover {
+	box-shadow: 0 5px 20px rgba(73,82,95,.5);
+	$w: 430px;
+	width: $w;
     display: block;
     background: #fff;
+    position: absolute;
     img{
     	display: block;
     }
@@ -10,15 +14,15 @@
 	    top: 1px;
 	}
 	&-inner{
-		width: 430px;
+		width: $w;
 	}
 	&-container{
 		background: #fff;
-		width: 430px;	
+		width: $w;	
 	}
 
 	&-description{
-		padding: 10px 17px 10px 17px;
+		padding: 10px 17px 8px 17px;
 		flex-grow: 1;
 	}
 
@@ -33,17 +37,24 @@
 		align-items: center;
 	}
 	.diagram{
-		background: none !important;
+		$s: 56px;
+		@extend .flex-center;
 		background-repeat: no-repeat;
-		$s: 55px;
+		background: none !important;
+		font-weight: 500;
+		position: relative;
+		border-radius: $s;
 		height: $s;
 		width: $s;
-		border-radius: $s;
-		@extend .flex-center;
-		font-weight: 500;
-		border: 10px solid #d7dce1;
-	    border-right: 10px solid #b7da50;
-
+		.num{
+			position: absolute;
+			text-align: center;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			@extend .flex-center;
+		}
 	}
 
 	.left{
@@ -70,9 +81,6 @@
 		}
 	}
 
-	&-scheme{
-
-	}
 
 	&-link{
 		font-weight: 500;
@@ -105,4 +113,52 @@
 			transform: translateX(-100%)
 		}
 	}
+
+	.close{
+		font-weight: 100;
+		position: absolute;
+		right: 2px;
+		text-decoration: none;
+		top: -3px;
+	}
 } 
+
+.popover .arrow, .popover .arrow:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+
+.popover .arrow {
+    border-width: 11px;
+}
+
+.popover.bottom .arrow {
+    top: -11px;
+    left: 50%;
+    margin-left: -11px;
+    border-bottom-color: #fff;
+    border-top-width: 0;
+}
+
+
+
+.circle {
+    display: block;
+    float: left;
+}
+circle {
+  fill: rgba(0,0,0,0);
+  stroke: #eee;
+  stroke-width: 10;
+  stroke-dasharray: 144px 144px;
+}
+circle:nth-child(2n) {
+  fill: rgba(0,0,0,0);
+  stroke: #b7da50;
+  stroke-width: 10;
+}
