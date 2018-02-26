@@ -353,6 +353,19 @@ $(document).on('click', '.close-modal', function(e){
 });
 
 
+	// faq
+$(document).on('click', '.faq__item .toggle', function(e){
+	e.preventDefault();
+	var $this = $(this),
+		item = $this.closest('.faq__item');
+	item.find('.answer').slideToggle('normal',function(){
+		$this.toggleClass('toggle-collapse');
+		item.toggleClass('faq__item-expand');
+	})
+});
+
+
+
 // меню по иконке, карта
 $(document).on('click', '.extra-toggle, .showmap', function(e){
 	var modal = $(this).data('popup');

@@ -133,10 +133,10 @@
 .pagination{
 	$s: 40px;
 	@extend .flex-center;
-	background: $color21;
+	
 	font-size: 1.7rem;
 	margin-top: 5rem;
-	margin-bottom: 5rem;
+	margin-bottom: 3rem;
 	padding: 2rem 0;
 	a, span{
 		@extend .flex-center;
@@ -203,6 +203,10 @@
 			right: -32px;
 			@include rotation(180deg);
 		}
+	}
+
+	&-gray{
+		background: $color21;
 	}
 }
 // =/pagination

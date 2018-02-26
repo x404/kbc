@@ -191,8 +191,41 @@ button{
 		}
 	}
 
-	&-hoverwhite{
-
+	&-faq{
+		@extend .green-gradient;
+		@extend .flex-center;
+		color: $color2;
+		font-size: 2rem;
+		font-weight: 600;
+		height: 8rem;
+		text-decoration: none;
+		width: 100%;
+		position: relative;
+		span{
+			position: relative;
+			z-index: 2;
+			&:before{
+				@extend .before;
+				@include sprite($icon-question);				
+				left: -42px;
+				top: -3px;
+			}
+		}
+		&:after{
+			@extend .before;
+			background: $color7;
+			bottom: 0;
+			left: 0;
+			opacity: 0;
+			right: 0;
+			top: 0;
+			transition: .3s opacity;
+		}
+		&:hover{
+			&:after{
+				opacity: 1;
+			}
+		}
 	}
 }
 
@@ -792,7 +825,6 @@ form{
 
 .modal-menu{
 	@extend .green-gradient;
-	// display: block ;
 	left: 0;
 	position: fixed;
 	top: 0;
@@ -1145,6 +1177,19 @@ form{
 		top: 0;
 	}	
 }
+
+
+.icon-darkclock{
+	padding-left: 25px;
+	position: relative;
+	&:before{
+		@extend .before;
+		@include sprite($icon-clock-dark);
+		left: 0;
+		top: 0;
+	}	
+}
+
 
 .icon-back{
 	&:before{

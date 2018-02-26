@@ -1,0 +1,166 @@
+.faq-page{
+	.head{
+		p{
+			font-size: 2rem;
+			line-height: 1.5;
+			a{
+				color: $color2;
+				font-weight: 500;
+				@extend .tdu;
+			}
+		}
+		.btn{
+			$h: 50px;
+			@include transition-param(background-color);
+			@extend .flex-cv;
+			background-color: $color7;
+			border-radius: $h;
+			color: $color2;
+			font-size: 1.7rem;
+			font-weight: 500;
+			height: $h;
+			margin-left: 2rem;
+			padding-left: 55px;
+			padding-right: 26px;
+			text-decoration: none;
+			position: relative;
+			&:before{
+				@extend .before;
+				@include sprite($icon-question);
+				left: 13px;
+				top: 10px;
+			}
+			&:hover{
+				background-color: $color25;
+			}
+		}
+
+		&__left{
+			.flexbox{
+				margin-bottom: 1.8rem;
+			}
+		}
+	}
+}
+
+
+.list_faq{
+	.faq{
+		&__item{
+			$color: $color26;
+			border: 2px solid $color;
+			margin-bottom: 2rem;
+			@include transition-param(border-color);
+			&:hover{
+				border-color: $color8;
+				.faq__wrapper{
+					border-color: $color8
+				}
+			}
+			&-expand{
+				box-shadow: 0 5px 20px rgba(83, 99, 121, .5);
+				border: none;
+				.faq__wrapper{
+					border: none;
+				}
+				.faq__question{
+					padding-top: 3.2rem;
+					padding-left: 94px;
+					padding-bottom: 2.2rem;
+				}
+				.toggle{
+					left: 25px !important;
+					top: 27px !important;
+				}
+				.answer{
+					border-left: 4px solid $color29;
+				}
+			}
+			.name{
+				font-weight: 500;
+				font-size: 1.5rem;
+				span{
+					margin-left: .2rem;
+				}
+			}
+			.date{
+				color: $color27;
+				font-weight: 400;
+				margin-top: .2rem;
+				padding-left: 25px;
+				left: 18px;
+			}
+			.text{
+				font-size: 1.6rem;
+				line-height: 1.6;
+				padding-top: 1.3rem;
+				padding-right: 3rem;
+			}
+			.toggle{
+				@include transition-param(background-color);
+				$s: 50px;
+				background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAMCAMAAAC6EAb3AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAolBMVEWJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7H///8ITLuUAAAANHRSTlMADJ1tAZN9kftmj2JF6fyM1CpA7AKN0SM+Z47OHer9ZdMiP/ohPWPSIOv0vNBB79slSbomyRI3CwAAAAFiS0dENd622WsAAAAHdElNRQfiAhoUJRurheYVAAAAgElEQVQY02WOVxLCMAwFBRgIxZTQQkkg9F73/mcjHgi2h/16syPpSQrFkniockVJlaDmyTo0pKlpuboNna5I2HN0fwDDkUmRJhh/7QSms0+MYpJ5LhdpvreMWWVHlJlc24qNJtmaot3e/Sc8cDzBORWP7LYtslyu3O7yx+P5+uU3CjcMhh5gtQAAAAAASUVORK5CYII=") no-repeat center $color28;
+				border-radius: $s;
+				border: 2px solid $color28;
+				cursor: pointer;
+				height: $s;
+				left: 21px;
+				position: absolute;
+				top: 23px;
+				width: $s;
+				@include transition-param(transform);
+				&:hover{
+					background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAMCAQAAAAnxz5OAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAhoUJi7WG3H1AAAAtUlEQVQoz33QPU4CARDF8VlrrmCCGi28A1+FhdeQgJVH8AaoIdRchHAGI2DHCRZJaKhA8rOABQSWTDXz/pl5b0JB14s4U4mOV0loY6l5BvwAT+FBit9cuAW+3YdQNc2BL7yBgRuxHpWlWHo+QN/Bp0uRoaFsgpXGEThyve53QsUEi42NZLvxKiP2z5WkWKlvwwwVd/p/b1U/mOuDr+z0KTTzvBcmHw01M4zdHiqnnv6o5+54/gew/T2CS/HSuwAAAABJRU5ErkJggg==");
+					background-color: $color8;
+					border-color: $color8;
+				}
+				&-collapse{
+					background-color: #fff;
+					@include rotation(180deg);
+				}
+			}
+		}
+
+		&__wrapper{
+			border: 2px solid rgba(255,255,255,0);
+			position: relative;
+			@include transition-param(border-color);
+		}
+		&__question{
+			padding-top: 2.8rem;
+			padding-left: 90px;
+			padding-bottom: 2rem;
+		}
+	}
+	.answer{
+		display: none;
+		background-color: $color29;
+		line-height: 1.6;
+		margin-top: 1.5rem;
+		padding: 1.4rem 2rem 1.4rem 93px;
+		position: relative;
+		&:before{
+			@extend .before;
+			border-left: 4px solid $color8;
+			height: calc(100% - 80px);
+			left: 40px;
+			top: 22px;
+		}
+		&__name{
+			@extend .flex-cv;
+			font-size: 15px;
+			font-weight: 500;
+			margin-top: 1rem;
+			img{
+				margin-right: 12px;
+			}
+		}
+		&__text{
+			font-size: 1.6rem;
+			line-height: 1.6;
+			margin-top: .9rem;
+			padding-top: .8rem;
+			padding-bottom: 2rem;
+		}	
+	}
+}
