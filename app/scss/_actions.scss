@@ -1,12 +1,22 @@
-.actions-page{
-	.content{
-		// margin-right: 160px;
+.category_link{
+	@extend .flex-cv;
+	background: $color8;
+	color: $color2;
+	font-size: 1.3rem;
+	font-weight: 100;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	position: absolute;
+	right: 20px;
+	text-decoration: none;
+	top: 20px;
+	$h: 3rem;
+	height: $h;
+	border-radius: $h;
+	&:hover{
+		background-color: $color2;
+		color: $color1;
 	}
-}
-
-
-
-.list-actions{
 }
 
 .action{
@@ -32,22 +42,6 @@
 		flex: 1 0 335px;
 		overflow: hidden;
 		position: relative;
-		.category_link{
-			@extend .flex-cv;
-			background: $color8;
-			color: $color2;
-			font-size: 1.3rem;
-			font-weight: 100;
-			padding-left: 1rem;
-			padding-right: 1rem;
-			position: absolute;
-			right: 20px;
-			text-decoration: none;
-			top: 20px;
-			$h: 3rem;
-			height: $h;
-			border-radius: $h;
-		}
 	}
 
 	&__info{
@@ -92,8 +86,6 @@
 
 // action page
 .action-page{
-	.neck{
-	}
 	.head{
 		padding: 5rem 0 4.5rem;
 		.flexbox{
