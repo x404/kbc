@@ -247,6 +247,9 @@
 		img{
 			transform: scale(1.15)
 		}
+		span{
+			text-decoration: underline;
+		}
 	}
 }
 // =/picking
@@ -312,6 +315,10 @@
 
 .material{
 	&__item{
+		position: relative;
+		a{
+			text-decoration: none;
+		}
 		width: 335px;
 		img{
 			transition: .3s transform;
@@ -321,6 +328,13 @@
 				img{
 					transform: scale(1.3)
 				}
+			}
+		}
+
+		&:hover{
+			.material__title span{
+				background-color: $color7;
+				color: $color2;
 			}
 		}
 	}
@@ -333,14 +347,10 @@
 		font-size: 1.8rem;
 		font-weight: 500;
 		padding-top: 2rem;
-		a{
+		a, span{
 			border-bottom: 2px solid $color7;
 			line-height: 1.5;
 			text-decoration: none;
-			&:hover{
-				background-color: $color7;
-				color: $color2;
-			}
 		}
 	}
 	&__date{
@@ -348,4 +358,5 @@
 		font-size: 1.3rem;
 		margin-top: 1.7rem;
 	}
+
 }
