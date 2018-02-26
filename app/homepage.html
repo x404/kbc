@@ -1170,6 +1170,8 @@ function init(){
 	//http://api.yandex.ru/maps/jsbox/2.1/placemark_shape
 	//http://api.yandex.ru/maps/jsbox/2.1/placemark_balloon
 	//http://api.yandex.ru/maps/jsbox/2.1/icon_customImage
+	// https://tech.yandex.ru/maps/jsbox/2.1/geo_object_collection
+	// https://tech.yandex.ru/maps/doc/jsapi/2.1/dg/concepts/geoobjects-docpage/#geoobject_collections
 	ymaps.ready(function() {
 		var myMap = new ymaps.Map('map', {
 			center: [56.034139, 92.796815],
@@ -1322,7 +1324,20 @@ function init(){
 			'</div>'
 		),
 
-		myPlacemark1 = new ymaps.Placemark(
+		// создаем коллекции и параметры меток в ней
+		myCollection = new ymaps.GeoObjectCollection({},{
+			iconLayout: 'default#image',
+			iconImageHref: '/images/balloon.png',
+			iconImageSize: [51, 61],
+			iconImageOffset: [-3, -42],
+			hideIconOnBalloonOpen: false,
+			balloonLayout: MyBalloonLayout,
+			balloonContentLayout: MyBalloonContentLayout
+		});
+
+
+		// создаем метку и прописываем ее свойства 
+		myCollection.add(new ymaps.Placemark(
 			[56.034195, 92.796605],
 			{
 				balloonHeader: 'ЖК Стасовой',
@@ -1334,26 +1349,10 @@ function init(){
 				scheme: '/tmp/scheme.png',
 				link: 'http://google.com',
 				titleLink: 'Смотреть 523 квартиры',
-			}, 
-			{
-				// http://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/option.presetStorage.xml
-				// preset: 'islands#darkGreenDotIcon'
-				// Необходимо указать данный тип макета.
-				iconLayout: 'default#image',
-				// Своё изображение иконки метки.
-				iconImageHref: '/images/balloon.png',
-				// Размеры метки.
-				iconImageSize: [51, 61],
-				// Смещение левого верхнего угла иконки относительно
-				// её "ножки" (точки привязки).
-				iconImageOffset: [-3, -42],
-				hideIconOnBalloonOpen: false,
-				balloonLayout: MyBalloonLayout,
-				balloonContentLayout: MyBalloonContentLayout
-			},{
-		});
+			}
+		));
 
-		myPlacemark2 = new ymaps.Placemark(
+		myCollection.add(new ymaps.Placemark(
 			[56.034295, 92.798605],
 			{
 				balloonHeader: 'ЖК Курчатова',
@@ -1365,20 +1364,11 @@ function init(){
 				scheme: '/tmp/scheme.png',
 				link: 'http://google.com',
 				titleLink: 'Смотреть 200 квартир',
-			}, 
-			{
-				iconLayout: 'default#image',
-				iconImageHref: '/images/balloon.png',
-				iconImageSize: [51, 61],
-				iconImageOffset: [-3, -42],
-				hideIconOnBalloonOpen: false,
-				balloonLayout: MyBalloonLayout,
-				balloonContentLayout: MyBalloonContentLayout
-			},{
-		});
-
-		myMap.geoObjects.add(myPlacemark1);
-		myMap.geoObjects.add(myPlacemark2);
+			}
+		));
+   
+	   	// добавляем коллекцию в геообъект
+		myMap.geoObjects.add(myCollection);
 	});	
 }
 
