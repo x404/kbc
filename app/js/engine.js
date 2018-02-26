@@ -18,7 +18,18 @@ $(document).ready(function(){
 			changeclass(event);
 		}
 	});
+	function changeclass(event){
+		var $this = $(event.target),
+			$index = event.item.index,
+			$active = $this.find('.owl-item').eq($index).children(),
+			$class = 'light';
 
+		if ($active.hasClass('dark')) $class = 'dark';
+		if ($active.hasClass('light')) $class = 'light';
+
+		document.querySelector('.manage').classList.remove('dark', 'light');
+		document.querySelector('.manage').classList.add($class);
+	};
 
 	$('#objects').owlCarousel({
 		loop:false,
@@ -38,18 +49,7 @@ $(document).ready(function(){
 		stagePadding : 0
 	});
 
-	function changeclass(event){
-		var $this = $(event.target),
-			$index = event.item.index,
-			$active = $this.find('.owl-item').eq($index).children(),
-			$class = 'light';
 
-		if ($active.hasClass('dark')) $class = 'dark';
-		if ($active.hasClass('light')) $class = 'light';
-
-		document.querySelector('.manage').classList.remove('dark', 'light');
-		document.querySelector('.manage').classList.add($class);
-	}
 
 	// mobile-menu
 	$('#navbar').each(function(){
@@ -374,13 +374,3 @@ window.onscroll = function(){
 
 
 
-var Circle = function(sel){
-    var circles = document.querySelectorAll(sel);
-    [].forEach.call(circles,function(el){
-        var valEl = parseFloat(el.innerHTML);
-        valEl = valEl*408/100;
-        el.innerHTML = '<svg width="56" height="56"><circle transform="rotate(-90)" r="65" cx="-28" cy="28" /><circle transform="rotate(-90)" style="stroke-dasharray:'+valEl+'px 408px;" r="28" cx="-28" cy="28" /></svg>';
-        
-    });
-};
-Circle('.circle');
