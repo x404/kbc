@@ -65,6 +65,7 @@ gulp.task('compress', function(){
 				config.libsDir + '/jquery-validation/dist/jquery.validate.js',
 				config.templateDir + '/js/util.js',
 				config.templateDir + '/js/tab.js',
+				config.templateDir + '/js/modal.js',
 				config.templateDir + '/js/popper.min.js'
 			]),
 			concat('libs.min.js'), // Собираем их в кучу в новом файле libs.min.js

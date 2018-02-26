@@ -164,3 +164,48 @@
 		}	
 	}
 }
+
+
+
+#add-faq{
+	color: $color2;
+	.modal{
+		&-dialog{
+			width: 785px;
+		}
+		&-title{
+			font-weight: 500;
+			font-size: 2.5rem;
+			text-transform: uppercase;
+		}
+	}
+
+	.modal-text{
+		font-size: 1.6rem;
+		padding-right: 2rem;
+		margin: 2.5rem 0;
+	}
+	.modal-content{
+		background-color: $color30;	
+		padding: 5.5rem 5rem;
+	}
+
+	.flexbox{
+		justify-content: space-between;
+	}
+	.cell{
+		width: 312px;
+		.form-control{
+			width: 100%;
+		}
+		label{
+			font-size: 1.4rem;
+		}
+	}
+	.bottom{
+		margin-top: 4rem;
+		.submit{
+			background-color: #1d4436
+		}
+	}
+}
