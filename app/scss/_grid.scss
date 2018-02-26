@@ -17,6 +17,11 @@
 .col-7{flex: 0 0 70%;}
 .col-8{flex: 0 0 80%;}
 
+
+.offset-col-1{
+	margin-left: 10%;
+}
+
 @media (max-width: 767px) {
 	.container{
 		padding-left: 15px;

@@ -1,8 +1,11 @@
 .actions-page{
 	.content{
-		margin-right: 160px;
+		// margin-right: 160px;
 	}
 }
+
+
+
 .list-actions{
 }
 
@@ -25,7 +28,7 @@
 		}
 	}
 
-	&__pic{
+	&__item_pic{
 		flex: 1 0 335px;
 		overflow: hidden;
 		position: relative;
@@ -77,5 +80,24 @@
 		margin-top: 2.5rem;
 		font-size: 1.5rem;
 		color: #858585;
+	}
+
+	// action page
+	&__pic{
+		margin-top: 2rem;
+		margin-bottom: 3rem;
+	}
+}
+
+
+// action page
+.action-page{
+	.neck{
+	}
+	.head{
+		padding: 5rem 0 4.5rem;
+		.flexbox{
+			justify-content: space-between;
+		}
 	}
 }
