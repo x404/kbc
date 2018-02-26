@@ -1241,20 +1241,22 @@ form .form-control {
     margin-top: 4.5rem; }
   .modal-callback .form-control {
     width: 100%; }
-  .modal-callback .close-modal {
-    background: none;
-    border: none;
-    position: absolute;
-    right: 0px;
-    top: 35px;
-    z-index: 99; }
-    .modal-callback .close-modal svg {
-      -webkit-transition: transform 0.2s ease-out;
-      transition: transform 0.2s ease-out; }
-    .modal-callback .close-modal:hover svg {
-      -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      transform: rotate(90deg); }
+
+.close-modal {
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 0px;
+  top: 35px;
+  z-index: 99; }
+  .close-modal svg {
+    -webkit-transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out; }
+  .close-modal:hover svg {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
 
 .m-modal-open .outerwrapper,
 .m-modal-open .footer {
@@ -1978,11 +1980,19 @@ form .form-control {
   left: 0;
   position: absolute;
   top: 10rem;
-  width: 100%; }
+  width: 100%;
+  transition: .3s;
+  opacity: 0;
+  z-index: -10; }
+  .modal-map.open {
+    display: block;
+    opacity: 1;
+    z-index: 10; }
   .modal-map .container {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding-left: 0;
-    padding-right: 0; }
+    padding-right: 0;
+    position: relative; }
   .modal-map .head {
     font-size: 3rem;
     font-weight: 500;
@@ -1992,6 +2002,9 @@ form .form-control {
     text-transform: uppercase; }
   .modal-map #map {
     height: 585px; }
+  .modal-map .close-modal {
+    right: 35px;
+    top: 43px; }
 
 .popover {
   box-shadow: 0 5px 20px rgba(73, 82, 95, 0.5);

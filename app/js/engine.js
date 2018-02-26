@@ -347,14 +347,23 @@ $(document).on('click', '.close-modal', function(e){
 
 
 
-// меню по иконки
-$(document).on('click', '.extra-toggle', function(e){
-	var modal = $(this).data('popup');
-	console.log($('#' + modal));
-	$('#' + modal).addClass('open')
+$(document).on('click', '.close-modal', function(e){
+	$(this).closest('.open').removeClass('open');
+	document.querySelector('.body').classList.remove('m-modal-open')
 });
 
 
+// меню по иконки
+$(document).on('click', '.extra-toggle', function(e){
+	var modal = $(this).data('popup');
+	$('#' + modal).addClass('open')
+});
+
+// карта объектов
+$(document).on('click', '.showmap', function(e){
+	var modal = $(this).data('popup');
+	$('#' + modal).addClass('open')
+});
 
 
 // sticky header

@@ -1516,24 +1516,25 @@ form{
 		width: 100%;
 	}
 
-	.close-modal{
-		background: none;
-		border: none;
-		position: absolute;
-		right: 0px;
-		top: 35px;
-		z-index: 99;
+}
+
+.close-modal{
+	cursor: pointer;
+	background: none;
+	border: none;
+	position: absolute;
+	right: 0px;
+	top: 35px;
+	z-index: 99;
+	svg{
+		@include transition-param(transform)
+	}
+	&:hover{
 		svg{
-			@include transition-param(transform)
-		}
-		&:hover{
-			svg{
-				@include rotation(90deg)
-			}
+			@include rotation(90deg)
 		}
 	}
 }
-
 
 
 .m-modal-open{
