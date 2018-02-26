@@ -1,0 +1,172 @@
+.main{
+	padding: 3rem 0 5rem;
+	position: relative;
+	z-index: 20
+}
+
+// =neck
+.neck{
+	background: #0a6a41 url(../images/neck-bg.jpg) no-repeat center / cover;
+	color: $color2;
+	position: relative;
+	z-index: 20;
+	.row{
+		flex-wrap: nowrap;
+		display: block;
+	}
+
+	.title{
+		font-size: 4rem;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	.head{
+		padding: 3.5rem 0;
+	}
+
+	.tabs{
+		margin-left: 3.5rem;
+		font-size: 1.7rem;
+		font-weight: 500;
+		display: flex;
+		.tab{
+			height: 5rem;
+
+			border: 2px solid $color19;
+			@extend .flex-cv;
+			margin-left: -2px;
+			@include transition-param(border-color);
+			a{
+				color: $color19;
+				text-decoration: none;	
+				padding-left: 2rem;
+				padding-right: 2rem;
+				height: 5rem;
+				@extend .flex-cv;
+				&:hover{
+					color: $color2;
+				}
+			}
+			&.active{
+				border-color: $color2;
+				cursor: default;
+				padding-left: 2rem;
+				padding-right: 2rem;
+				position: relative;
+				&:after{
+					@extend .before;
+					width: 0;
+					height: 0;
+					border-left: 9px solid transparent;
+					border-right: 9px solid transparent;
+					border-top: 8px solid $color2;
+					bottom: -8px;
+					left: 50%;
+					margin-left: -5px;
+				}
+			}
+			&:hover{
+				border-color: $color2;
+			}
+		}
+	}
+}
+// =/neck
+
+// =breadcrumbs
+.breadcrumbs{
+	font-size: 1.3rem;
+	border-bottom: 1px solid $color17;
+	@extend .flex-cv;
+	color: $color18;
+		height: 48px;
+	ul{
+		li{
+			display: inline-block;
+			a{
+				color: $color18;
+				@extend .tdn;
+			}
+		}
+	}
+}
+// =/breadcrumbs
+
+// =pagination
+.pagination{
+	$s: 40px;
+	@extend .flex-center;
+	background: $color21;
+	font-size: 1.7rem;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	padding: 2rem 0;
+	a, span{
+		@extend .flex-center;
+		text-align: center;
+	}
+	a{
+		margin-left: 6px;
+		margin-right: 6px;
+		text-decoration: none;
+	}
+	a:not([class]),
+	span:not(.separator){
+		background: $color2;
+		border-radius: 50%;
+		color: $color22;
+		height: $s;
+		transition: .3s color, background-color;
+		width: $s;
+		&:hover{
+			color: $color2;
+			background-color: $color22;
+		}
+	}
+
+	.separator{
+		margin-left: 18px;
+		margin-right: 18px;
+	}
+
+	.current{
+		background-color: $color22 !important;
+		color: $color2 !important;
+		cursor: default;
+	}
+
+	.prev,
+	.next{
+		@extend .tdu;
+		border-bottom: 1px solid;
+		color: $color22;
+		margin-right: 0;
+		position: relative;
+		text-decoration: none;
+		&:hover{
+			border-bottom: none;
+		}
+		&:before{
+			@extend .before;
+			background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAASCAMAAACKJ8VmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAn1BMVEWntcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcb///+kZQ3uAAAAM3RSTlMAS2MCROr9aEXm8FtC4/JW5O1X7t9HkT9J6f70+fr7WOv1/OWSTE/d51TsU+9aRmpNZQPrV+6mAAAAAWJLR0Q0qbHp/QAAAAd0SU1FB+ICGg4xMDgm7qYAAACESURBVBjTZY/bDoIwEAUXReQmBbSIKIIKKN4Qzv//mybYxK3ztJnsZFuiL8ZkSgxzZs2ZsB243q/wFwgES0JEsZYshZasJNsIgWSdKgwSG2TY7nLFnooSwCE/KiwieQIqv1Y04+2zzX8gL4haTTm43rj6vCBo/8L7g6tnmXXc0KsfxuENHzsOdNIv3ksAAAAASUVORK5CYII=") no-repeat left top;
+			height: 18px;
+			width: 17px;
+			top: 3px;
+		}
+	}
+	.prev{
+		margin-right: 4rem;
+		&:before{
+			left: -32px;
+		}
+	}
+	.next{
+		margin-left: 4rem;
+		&:before{
+			right: -32px;
+			@include rotation(180deg);
+		}
+	}
+}
+// =/pagination

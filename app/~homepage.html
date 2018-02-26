@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="ru"><!-- InstanceBegin template="/Templates/homepage.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="ru">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
@@ -10,9 +10,9 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
 
 <meta name="robots" content="noindex,nofollow" />
-<!-- InstanceBeginEditable name="doctitle" -->
+
 <title>Главная</title>
-<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="/css/selectize.css" />
 <link rel="stylesheet" href="/css/styles.min.css" />
 <script src="/js/libs.min.js"></script>
 <script src="/js/nouislider.min.js"></script>
@@ -24,8 +24,6 @@
 	<link href="/css/styles-ie.css" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
 </head>
 <body>
 
@@ -117,8 +115,7 @@
 			</div>
 		</header>
 		<!-- =/header -->
-		
-		<!-- InstanceBeginEditable name="EditRegion3" -->
+
 		<!-- =feature -->
 		<div class="feature">
 			<div class="container">
@@ -437,132 +434,133 @@
 				</div>
 			</div>
 		</div>
-		<script>
+<script>
 
-			var handlesSlider1 = document.getElementById('slider-cost'),
-				costfrom = document.getElementById('cost-from'),
-				costto = document.getElementById('cost-to');
-
-
-			var handlesSlider2 = document.getElementById('slider-area'),
-				areafrom = document.getElementById('area-from'),
-				areato = document.getElementById('area-to');
+	var handlesSlider1 = document.getElementById('slider-cost'),
+		costfrom = document.getElementById('cost-from'),
+		costto = document.getElementById('cost-to');
 
 
-
-			var handlesSlider3 = document.getElementById('slider-cost2'),
-				cost2from = document.getElementById('cost2-from'),
-				cost2to = document.getElementById('cost2-to');
-
-
-			var handlesSlider4 = document.getElementById('slider-area2'),
-				area2from = document.getElementById('area2-from'),
-				area2to = document.getElementById('area2-to');
-
-
-			// цена - квартиры
-			noUiSlider.create(handlesSlider1, {
-				start: [ 40, 120 ],
-				connect: true,
-				range: {
-					'min': 20,
-					'max': 150
-				}
-			});
-
-			handlesSlider1.noUiSlider.on('update', function(values, handle){
-				costfrom.value = 'от ' + parseInt(values[0]) + ' млн. руб';
-				costto.value = 'от ' + parseInt(values[1]) + ' млн. руб';
-			});
-			costfrom.addEventListener('change', function ( ) {
-				var value = this.value;
-				value = value.replace(/\D+/g,"");
-				handlesSlider1.noUiSlider.set([value, null]);
-			});
-			costto.addEventListener('change', function ( ) {
-				var value = this.value;
-				value = value.replace(/\D+/g,"");
-				handlesSlider1.noUiSlider.set([null, value]);
-			});	
-
-
-			// площадь - квартиры
-			noUiSlider.create(handlesSlider2, {
-				start: [ 40, 120 ],
-				connect: true,
-				range: {
-					'min': 25,
-					'max': 250
-				}
-			});
-			handlesSlider2.noUiSlider.on('update', function(values, handle){
-				areafrom.value = 'от ' + parseInt(values[0]) + ' м.кв.';
-				areato.value = 'от ' + parseInt(values[1]) + ' м.кв.';
-			});
-			areafrom.addEventListener('change', function ( ) {
-				var value = this.value;
-				value = value.replace(/\D+/g,"");
-				handlesSlider2.noUiSlider.set([value, null]);
-			});
-			areato.addEventListener('change', function ( ) {
-				var value = this.value;
-				value = value.replace(/\D+/g,"");
-				handlesSlider2.noUiSlider.set([null, value]);
-			});	
+	var handlesSlider2 = document.getElementById('slider-area'),
+		areafrom = document.getElementById('area-from'),
+		areato = document.getElementById('area-to');
 
 
 
-
-			// цена - коммерческое
-			noUiSlider.create(handlesSlider3, {
-				start: [ 40, 120 ],
-				connect: true,
-				range: {
-					'min': 20,
-					'max': 150
-				}
-			});
-
-			handlesSlider3.noUiSlider.on('update', function(values, handle){
-				cost2from.value = 'от ' + parseInt(values[0]) + ' млн. руб';
-				cost2to.value = 'от ' + parseInt(values[1]) + ' млн. руб';
-			});
-			cost2from.addEventListener('change', function ( ) {
-				var value = this.value;
-				value = value.replace(/\D+/g,"");
-				handlesSlider3.noUiSlider.set([value, null]);
-			});
-			cost2to.addEventListener('change', function ( ) {
-				var value = this.value;
-				value = value.replace(/\D+/g,"");
-				handlesSlider3.noUiSlider.set([null, value]);
-			});	
+	var handlesSlider3 = document.getElementById('slider-cost2'),
+		cost2from = document.getElementById('cost2-from'),
+		cost2to = document.getElementById('cost2-to');
 
 
-			// площадь - коммерческое
-			noUiSlider.create(handlesSlider4, {
-				start: [ 40, 120 ],
-				connect: true,
-				range: {
-					'min': 25,
-					'max': 250
-				}
-			});
-			handlesSlider4.noUiSlider.on('update', function(values, handle){
-				area2from.value = 'от ' + parseInt(values[0]) + ' м.кв.';
-				area2to.value = 'от ' + parseInt(values[1]) + ' м.кв.';
-			});
-			area2from.addEventListener('change', function ( ) {
-				var value = this.value;
-				value = value.replace(/\D+/g,"");
-				handlesSlider4.noUiSlider.set([value, null]);
-			});
-			area2to.addEventListener('change', function ( ) {
-				var value = this.value;
-				value = value.replace(/\D+/g,"");
-				handlesSlider4.noUiSlider.set([null, value]);
-			});	
-		</script>
+	var handlesSlider4 = document.getElementById('slider-area2'),
+		area2from = document.getElementById('area2-from'),
+		area2to = document.getElementById('area2-to');
+
+
+	// цена - квартиры
+	noUiSlider.create(handlesSlider1, {
+		start: [ 40, 120 ],
+		connect: true,
+		range: {
+			'min': 20,
+			'max': 150
+		}
+	});
+
+	handlesSlider1.noUiSlider.on('update', function(values, handle){
+		costfrom.value = 'от ' + parseInt(values[0]) + ' млн. руб';
+		costto.value = 'от ' + parseInt(values[1]) + ' млн. руб';
+	});
+	costfrom.addEventListener('change', function ( ) {
+		var value = this.value;
+		value = value.replace(/\D+/g,"");
+		handlesSlider1.noUiSlider.set([value, null]);
+	});
+	costto.addEventListener('change', function ( ) {
+		var value = this.value;
+		value = value.replace(/\D+/g,"");
+		handlesSlider1.noUiSlider.set([null, value]);
+	});	
+
+
+	// площадь - квартиры
+	noUiSlider.create(handlesSlider2, {
+		start: [ 40, 120 ],
+		connect: true,
+		range: {
+			'min': 25,
+			'max': 250
+		}
+	});
+	handlesSlider2.noUiSlider.on('update', function(values, handle){
+		areafrom.value = 'от ' + parseInt(values[0]) + ' м.кв.';
+		areato.value = 'от ' + parseInt(values[1]) + ' м.кв.';
+	});
+	areafrom.addEventListener('change', function ( ) {
+		var value = this.value;
+		value = value.replace(/\D+/g,"");
+		handlesSlider2.noUiSlider.set([value, null]);
+	});
+	areato.addEventListener('change', function ( ) {
+		var value = this.value;
+		value = value.replace(/\D+/g,"");
+		handlesSlider2.noUiSlider.set([null, value]);
+	});	
+
+
+
+
+	// цена - коммерческое
+	noUiSlider.create(handlesSlider3, {
+		start: [ 40, 120 ],
+		connect: true,
+		range: {
+			'min': 20,
+			'max': 150
+		}
+	});
+
+	handlesSlider3.noUiSlider.on('update', function(values, handle){
+		cost2from.value = 'от ' + parseInt(values[0]) + ' млн. руб';
+		cost2to.value = 'от ' + parseInt(values[1]) + ' млн. руб';
+	});
+	cost2from.addEventListener('change', function ( ) {
+		var value = this.value;
+		value = value.replace(/\D+/g,"");
+		handlesSlider3.noUiSlider.set([value, null]);
+	});
+	cost2to.addEventListener('change', function ( ) {
+		var value = this.value;
+		value = value.replace(/\D+/g,"");
+		handlesSlider3.noUiSlider.set([null, value]);
+	});	
+
+
+	// площадь - коммерческое
+	noUiSlider.create(handlesSlider4, {
+		start: [ 40, 120 ],
+		connect: true,
+		range: {
+			'min': 25,
+			'max': 250
+		}
+	});
+	handlesSlider4.noUiSlider.on('update', function(values, handle){
+		area2from.value = 'от ' + parseInt(values[0]) + ' м.кв.';
+		area2to.value = 'от ' + parseInt(values[1]) + ' м.кв.';
+	});
+	area2from.addEventListener('change', function ( ) {
+		var value = this.value;
+		value = value.replace(/\D+/g,"");
+		handlesSlider4.noUiSlider.set([value, null]);
+	});
+	area2to.addEventListener('change', function ( ) {
+		var value = this.value;
+		value = value.replace(/\D+/g,"");
+		handlesSlider4.noUiSlider.set([null, value]);
+	});	
+
+</script>
 		<!-- =/filter -->
 
 
@@ -714,7 +712,7 @@
 									</fieldset>
 								</form>
 							</div>
-							<!-- =/callback -->
+							<!-- =/callback -->						
 						</div>
 					</div>
 
@@ -788,8 +786,6 @@
 				<!-- =/about-partners -->
 			</div>		
 		</div>
-		
-		<!-- InstanceEndEditable -->
 	</div>
 
 	<!-- =footer -->
@@ -1156,26 +1152,21 @@
 <script src="/outdatedbrowser/outdatedbrowser.min.js"></script>
 
 
-<link rel="stylesheet" href="/css/selectize.css" />
 <link rel="stylesheet" property="stylesheet" href="css/nouislider.css" />
 
-<!-- =owl-->
 <script src="js/owl.carousel.min.js"></script>
 <link rel="stylesheet" property="stylesheet" href="css/owl.carousel.css">
 
 <script src="js/selectize.min.js"></script>
-
-<!-- =scrollbar-->
 <script src="js/perfect-scrollbar.min.js"></script>
 <link rel="stylesheet" property="stylesheet" href="/css/perfect-scrollbar.css">
 
 <!-- =phone mask -->
 <script src="js/inputmask/jquery.inputmask.bundle.min.js"></script>
 <!-- =/phone mask -->
-
 <script src="/js/engine.js"></script>
 
-<!-- InstanceBeginEditable name="EditRegion4" -->
+
 <script src="http://api-maps.yandex.ru/2.1.60/?lang=ru_RU"></script>
 <script>
 $(document).ready(function(){
@@ -1389,6 +1380,5 @@ function init(){
 	});	
 }
 </script>
-<!-- InstanceEndEditable -->
 </body>
-<!-- InstanceEnd --></html>
+</html>
