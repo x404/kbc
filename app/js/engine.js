@@ -353,14 +353,8 @@ $(document).on('click', '.close-modal', function(e){
 });
 
 
-// меню по иконки
-$(document).on('click', '.extra-toggle', function(e){
-	var modal = $(this).data('popup');
-	$('#' + modal).addClass('open')
-});
-
-// карта объектов
-$(document).on('click', '.showmap', function(e){
+// меню по иконке, карта
+$(document).on('click', '.extra-toggle, .showmap', function(e){
 	var modal = $(this).data('popup');
 	$('#' + modal).addClass('open')
 });
