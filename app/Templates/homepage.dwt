@@ -295,7 +295,7 @@
 <!-- =/fixed-header -->
 
 <!-- =modal callback -->
-<div class="modal modal-callback" id="modal-callback" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-callback" id="modal-callback" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="inner" role="document">
 		<p class="title">Обратный звонок</p>
 		<div class="text">Оставьте свои контактные данные и наш менеджер перезвонит Вам в течение рабочего дня</div>
@@ -326,7 +326,7 @@
 
 
 <!-- =modal menu -->
-<div class="modal modal-menu" id="modal-menu" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-menu" id="modal-menu" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="inner" role="document">
 		<div class="container">
 			<div class="row">
@@ -463,6 +463,53 @@
 	</div>
 </div>
 <!-- =/modal menu -->
+
+<!-- =add-faq `FAQ.HTML` -->
+<div class="modal fade" id="add-faq" tabindex="-1" role="dialog" aria-labelledby="add-faqLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-title" id="add-faqLabel">Задать вопрос</div>
+			<p class="modal-text">Оставьте свои контактные данные и наш менеджер перезвонит Вам в течение рабочего дня</p>
+			<form action="#" method="post" id="add-faq-form">
+				<fieldset>
+					<div class="flexbox">
+						<div class="cell">
+							<div class="input-field icon-people">
+								<label for="namefaq" class="name-field">Ваше имя</label>
+								<label for="namefaq" class="helper-field helper-field-name">Ваше имя</label>					
+								<input type="text" id="namefaq" name="name" class="form-control required" value="" />
+							</div>							
+						</div>
+						<div class="cell">
+							<div class="input-field icon-letter">
+								<label for="emailfaq" class="name-field">E-mail</label>
+								<label for="emailfaq" class="helper-field helper-field-email">E-mail</label>
+								<input type="email" id="emailfaq" name="email" class="form-control required email" value="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="input-field textarea-field icon-comment">
+						<label for="msgfaq" class="name-field">Текст вопроса</label>
+						<label for="msgfaq" class="helper-field helper-field-msg">Текст вопроса</label>
+						<textarea id="msgfaq" name="msg" class="form-control required"></textarea>
+					</div>
+
+					<div class="bottom">
+						<button type="submit" class="submit btn-animate"><span>Задать вопрос</span></button>
+					</div>
+				</fieldset>
+			</form>
+			<button type="button" class="close" data-dismiss="modal">
+				<svg width="24" height="24">
+					<line x1="0" y1="0" x2="24" y2="24" style="stroke:#fff;stroke-width:2" />
+					<line x1="24" y1="0" x2="0" y2="24" style="stroke:#fff;stroke-width:2" />
+				</svg>
+			</button>
+		</div>
+	</div>
+</div>
+<!-- =/add-faq -->
 
 
 <!-- =map -->

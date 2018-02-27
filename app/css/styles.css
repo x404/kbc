@@ -1361,9 +1361,9 @@ form .form-control {
 
 body.modal-open {
   overflow: hidden;
-  position: fixed;
   width: 100%; }
-  body.modal-open .outerwrapper {
+  body.modal-open .outerwrapper,
+  body.modal-open footer {
     filter: blur(3px); }
 
 .feature {

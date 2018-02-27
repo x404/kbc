@@ -1646,9 +1646,10 @@ form{
 
 body.modal-open {
 	overflow: hidden;
-	position:fixed;
+	// position:fixed;
 	width: 100%;
-	.outerwrapper{
+	.outerwrapper,
+	footer{
 		filter: blur(3px);
 	}
 }
