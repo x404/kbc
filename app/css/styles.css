@@ -2830,6 +2830,8 @@ main {
     padding-top: 3px;
     resize: none;
     width: 100%; }
+    .modal textarea:focus, .modal textarea:active {
+      background: url("data:image/gif;base64,R0lGODlhAQAeAIABAMIIMQAAACH5BAEAAAEALAAAAAABAB4AAAIFjI+pC1AAOw=="); }
   .modal .textarea-field {
     margin-top: 3.5rem; }
     .modal .textarea-field label {
@@ -2842,7 +2844,7 @@ main {
 
 .modal-text {
   font-size: 1.6rem;
-  padding-right: 2rem;
+  padding-right: 3rem;
   margin: 2.4rem 0;
   line-height: 1.6; }
 

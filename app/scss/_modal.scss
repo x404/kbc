@@ -59,6 +59,10 @@
 		padding-top: 3px;
 		resize: none;
 		width: 100%;
+		&:focus,
+		&:active{
+			background:url('data:image/gif;base64,R0lGODlhAQAeAIABAMIIMQAAACH5BAEAAAEALAAAAAABAB4AAAIFjI+pC1AAOw==');
+		}
 	}
 
 	.textarea-field{
@@ -79,7 +83,7 @@
 
 .modal-text{
 	font-size: 1.6rem;
-	padding-right: 2rem;
+	padding-right: 3rem;
 	margin: 2.4rem 0;
 	line-height: 1.6;
 }
