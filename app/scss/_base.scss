@@ -191,7 +191,8 @@ button{
 		}
 	}
 
-	&-faq{
+	&-faq,
+	&-review{
 		@extend .green-gradient;
 		@extend .flex-center;
 		color: $color2;
@@ -206,7 +207,7 @@ button{
 			z-index: 2;
 			&:before{
 				@extend .before;
-				@include sprite($icon-question);				
+							
 				left: -42px;
 				top: -3px;
 			}
@@ -224,6 +225,22 @@ button{
 		&:hover{
 			&:after{
 				opacity: 1;
+			}
+		}
+	}
+
+	&-faq{
+		span{
+			&:before{
+				@include sprite($icon-question);
+			}
+		}
+	}
+
+	&-review{
+		span{
+			&:before{
+				@include sprite($icon-pencil);
 			}
 		}
 	}
@@ -383,6 +400,7 @@ form{
 
 
 .fill-effect{
+	border-bottom: 2px solid $color7;
 	display: block;
 	position: relative;
 	overflow: hidden;
@@ -400,6 +418,14 @@ form{
 		&:before{
 			transform: translateX(0);
 		}
+		span{
+			color: $color2;			
+		}
+	}
+	span{
+		transition: .3s color;
+		position: relative;
+		z-index: 2;
 	}
 }
 

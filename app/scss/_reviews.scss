@@ -1,0 +1,105 @@
+.list_reviews{
+	flex-wrap: wrap;
+}
+
+.review{
+	&__item{
+		margin-right: 35px;
+		margin-bottom: 4rem;
+		&:nth-child(3n){
+			margin-right: 0;
+		}
+
+		.date{
+			&:before{
+				top: -2px !important;
+			}
+		}
+	}
+
+
+	&__wrapper{
+		border: 2px solid $color28;
+		transition: .3s;
+		width: 507px;
+		&:hover{
+			box-shadow: 0 0 25px rgba(83,99,121,.5);
+			border-color: $color2;
+		}
+	}
+
+	&__body{
+		padding: 2.8rem 3rem 0;		
+	}
+
+	&__top{
+		@extend .flex-cv;
+		.name{
+			cursor: default;
+			font-weight: 500;
+			font-size: 1.5rem;
+		}
+		.date{
+			color: $color27;
+			padding-left: 24px;
+			margin-left: 1.5rem;
+		}
+	}
+
+	&__bottom{
+		background: $color36;
+		border-top: none;
+		padding: 1.8rem 3rem;
+		position: relative;
+		@extend .flex-cv;
+
+		img{
+			border-radius: 50%;
+			display: block;
+		}
+
+		.object{
+			&__info{
+				padding-left: 1.7rem;
+			}
+			&__title{
+				font-size: 1.7rem;
+				font-weight: 500;
+				a{
+					text-decoration: none;
+					display: inline-block;
+				}
+			}
+			&__address{
+				color: $color37;
+			}
+		}
+
+	}
+
+	&__text{
+		font-size: 1.5rem;
+		color: $color35;
+		line-height: 1.6;
+		padding-bottom: 2rem;
+	}
+
+	&__grade{
+		margin: 1rem 0;
+		$h: 24px;
+		.star{
+			display: inline-block;
+			background: url(../images/sprite-star.png) no-repeat left bottom;
+			height: $h;
+			width: 124px;
+			position: relative;
+			overflow: hidden;
+		}
+		span{
+			background: url(../images/sprite-star.png) no-repeat left top;
+			display: block;
+			height: $h;
+		}
+	}
+
+}

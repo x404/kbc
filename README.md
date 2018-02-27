@@ -8,6 +8,13 @@ KBC
 
 ---------------------------------------------------------
 
+**Отзывы** (reviews.html)
+
+Оценки звездочек(от 1 до 5) находятся в позициях ширин - 24, 49, 74, 98, 124px 
+
+
+---------------------------------------------------------
+
 __Используемые в проекте js плагины__
 * Слайдер цен в фильтре [https://refreshless.com/nouislider/](https://refreshless.com/nouislider/)
 * Карусель owl-carousel [http://www.owlcarousel.owlgraphic.com/](http://www.owlcarousel.owlgraphic.com/)
