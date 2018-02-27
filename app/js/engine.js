@@ -404,3 +404,10 @@ function getFileName(el){
 	console.warn(file);
 	$(el).closest('.file-upload').find('.file-name').html('Имя файла: ' + file);
 }
+
+
+// присваиваем название вакансии скрытому полю в форме
+$('#answer-vacancy').on('shown.bs.modal', function (e) {
+	var vacancy = $(e.relatedTarget).data('vacancy');
+	document.querySelector('#vacancy').val = vacancy;
+})

@@ -1181,6 +1181,63 @@
 <!-- =/add-faq -->
 
 
+<!-- =answer-vacancy `VACANCIES.HTML` -->
+<div class="modal fade" id="answer-vacancy" tabindex="-1" role="dialog" aria-labelledby="answer-vacancyLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-title" id="answer-vacancyLabel">Ответить на вакансию</div>
+			<p class="modal-text">Оставьте свои контактные данные и наш менеджер перезвонит Вам в течение рабочего дня</p>
+			<form action="#" method="post" id="answer-vacancy-form">
+				<fieldset>
+					<div class="flexbox">
+						<div class="cell">
+							<div class="input-field icon-people">
+								<label for="namevacancy" class="name-field">Ваше имя</label>
+								<label for="namevacancy" class="helper-field helper-field-name">Ваше имя</label>					
+								<input type="text" id="namevacancy" name="name" class="form-control required" value="" />
+							</div>							
+						</div>
+						<div class="cell">
+							<div class="input-field icon-tel">
+								<label for="emailvacancy" class="name-field">Телефон</label>
+								<label for="emailvacancy" class="helper-field helper-field-tel">Телефон</label>
+								<input type="tel" id="telvacancy" name="tel" class="form-control required tel" value="" />
+							</div>
+						</div>
+					</div>
+
+					<div class="input-field textarea-field icon-comment">
+						<label for="msgvacancy" class="name-field">Комментарий</label>
+						<label for="msgvacancy" class="helper-field helper-field-msg">Комментарий</label>
+						<textarea id="msgvacancy" name="msg" class="form-control required"></textarea>
+					</div>
+
+					<div class="file-upload icon-attach-white">
+						<label for="attachmodal">
+							<input type="file" name="file" id="attachmodal" class="attach" onchange="getFileName(this);" />
+							<span>Прикрепить файл</span>(до 3мб)
+						</label>
+						<div class="file-name"></div>
+					</div>
+
+					<div class="bottom">
+						<input type="hidden" name="vacancy" id="vacancy" value="" />
+						<button type="submit" class="submit btn-animate"><span>Отправить ответ на вакансию</span></button>
+					</div>
+				</fieldset>
+			</form>
+			<button type="button" class="close" data-dismiss="modal">
+				<svg width="24" height="24">
+					<line x1="0" y1="0" x2="24" y2="24" style="stroke:#fff;stroke-width:2" />
+					<line x1="24" y1="0" x2="0" y2="24" style="stroke:#fff;stroke-width:2" />
+				</svg>
+			</button>
+		</div>
+	</div>
+</div>
+<!-- =/answer-vacancy -->
+
+
 <!-- =map -->
 <div class="modal-map" id="modal-map">
 	<div class="inner">

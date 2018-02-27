@@ -195,11 +195,11 @@ h3 {
   .tdn:hover, .breadcrumbs ul li a:hover {
     text-decoration: underline; }
 
-.tdu, .resume .file-upload span, .modal-menu .menu a, .footer__menu a, .footer .idealpromo a, .pagination .prev,
+.tdu, .file-upload span, .modal-menu .menu a, .footer__menu a, .footer .idealpromo a, .pagination .prev,
 .pagination .next, .faq-page .head p a,
 .vacancies-page .head p a {
   text-decoration: underline; }
-  .tdu:hover, .resume .file-upload span:hover, .modal-menu .menu a:hover, .footer__menu a:hover, .footer .idealpromo a:hover, .pagination .prev:hover,
+  .tdu:hover, .file-upload span:hover, .modal-menu .menu a:hover, .footer__menu a:hover, .footer .idealpromo a:hover, .pagination .prev:hover,
   .pagination .next:hover, .faq-page .head p a:hover,
   .vacancies-page .head p a:hover {
     text-decoration: none; }
@@ -208,7 +208,7 @@ h3 {
 .fixed-header .wishlist__link:before,
 .fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .callback .call:before,
 .resume .call:before, .modal-menu .menu .title:after,
-.modal-menu .menu dt:after, .modal-menu .contacts .title:after, .modal-menu .close-modal:after, .footer__menu dt:after, .icon-catalog:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .filter .nav .btn.active:after, .filter .showflat:before, .filter .showmap:before, .installment__tooltip_content:before, .feature .promo .owl-dot:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .feature .news__link:before, .objects .owl-carousel .owl-prev:before, .objects .owl-carousel .owl-next:before,
+.modal-menu .menu dt:after, .modal-menu .contacts .title:after, .modal-menu .close-modal:after, .footer__menu dt:after, .icon-catalog:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .filter .nav .btn.active:after, .filter .showflat:before, .filter .showmap:before, .installment__tooltip_content:before, .feature .promo .owl-dot:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .feature .news__link:before, .objects .owl-carousel .owl-prev:before, .objects .owl-carousel .owl-next:before,
 .intro__carousel .owl-carousel .owl-prev:before,
 .intro__carousel .owl-carousel .owl-next:before, .objects__info:before, .objects .owl-carousel .owl-prev:after, .objects .owl-carousel .owl-next:after, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .big-icon:before, .neck .tabs .tab.active:after, .pagination .prev:before,
@@ -815,20 +815,23 @@ form .form-control {
     padding-right: 3rem;
     width: auto; }
   .resume .file-upload {
-    display: inline-block;
-    margin-top: 25px;
-    color: #9c9c9c;
-    padding-left: 27px; }
-    .resume .file-upload:before {
-      left: 0; }
+    color: #9c9c9c; }
     .resume .file-upload span {
-      cursor: pointer;
-      color: #3c3c3c;
-      margin-right: .7rem; }
-    .resume .file-upload input[type="file"] {
-      display: none; }
-    .resume .file-upload .file-name {
-      margin-top: .3rem; }
+      color: #3c3c3c; }
+
+.file-upload {
+  display: inline-block;
+  margin-top: 25px;
+  padding-left: 27px; }
+  .file-upload:before {
+    left: 0; }
+  .file-upload span {
+    cursor: pointer;
+    margin-right: .7rem; }
+  .file-upload input[type="file"] {
+    display: none; }
+  .file-upload .file-name {
+    margin-top: .3rem; }
 
 /* =resume
 ---------------------------*/
@@ -1049,31 +1052,31 @@ form .form-control {
 
 .icon-people:before {
   background-image: url(../images/sprite.png);
-  background-position: -91px -134px;
+  background-position: -38px -134px;
   width: 18px;
   height: 17px; }
 
 .icon-people-gray:before {
   background-image: url(../images/sprite.png);
-  background-position: -73px -134px;
+  background-position: -56px -134px;
   width: 18px;
   height: 17px; }
 
 .icon-people-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -55px -134px;
+  background-position: -74px -134px;
   width: 18px;
   height: 17px; }
 
 .icon-tel:before {
   background-image: url(../images/sprite.png);
-  background-position: -159px -134px;
+  background-position: -142px -134px;
   width: 16px;
   height: 16px; }
 
 .icon-tel-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -143px -134px;
+  background-position: -126px -134px;
   width: 16px;
   height: 16px; }
 
@@ -1097,7 +1100,7 @@ form .form-control {
   padding-left: 25px; }
   .icon-clock:before {
     background-image: url(../images/sprite.png);
-    background-position: 0px -134px;
+    background-position: -19px -134px;
     width: 19px;
     height: 19px;
     left: 0;
@@ -1108,7 +1111,7 @@ form .form-control {
   position: relative; }
   .icon-darkclock:before {
     background-image: url(../images/sprite.png);
-    background-position: -19px -134px;
+    background-position: 0px -134px;
     width: 19px;
     height: 19px;
     left: 0;
@@ -1116,7 +1119,7 @@ form .form-control {
 
 .icon-back:before {
   background-image: url(../images/sprite.png);
-  background-position: -38px -134px;
+  background-position: -18px -153px;
   width: 17px;
   height: 18px;
   left: 0;
@@ -1124,7 +1127,7 @@ form .form-control {
 
 .icon-letter:before {
   background-image: url(../images/sprite.png);
-  background-position: -175px -134px;
+  background-position: -158px -134px;
   width: 18px;
   height: 14px;
   left: 0; }
@@ -1139,7 +1142,7 @@ form .form-control {
 
 .icon-comment-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -126px -134px;
+  background-position: -92px -134px;
   width: 17px;
   height: 17px;
   left: 0;
@@ -1157,7 +1160,15 @@ form .form-control {
   position: relative; }
   .icon-attach-dark:before {
     background-image: url(../images/sprite.png);
-    background-position: -18px -153px;
+    background-position: -16px -173px;
+    width: 16px;
+    height: 19px; }
+
+.icon-attach-white {
+  position: relative; }
+  .icon-attach-white:before {
+    background-image: url(../images/sprite.png);
+    background-position: 0px -173px;
     width: 16px;
     height: 19px; }
 
@@ -1293,7 +1304,7 @@ form .form-control {
       background-color: #00874d; }
     .filter .showmap:before {
       background-image: url(../images/sprite.png);
-      background-position: -34px -153px;
+      background-position: -35px -153px;
       width: 15px;
       height: 18px;
       left: 20px;
@@ -2727,48 +2738,6 @@ main {
     padding-top: .8rem;
     padding-bottom: 2rem; }
 
-#add-faq {
-  color: #fff; }
-  #add-faq .modal-dialog {
-    width: 785px; }
-  #add-faq .modal-title {
-    font-weight: 500;
-    font-size: 2.5rem;
-    text-transform: uppercase; }
-  #add-faq .modal-text {
-    font-size: 1.6rem;
-    padding-right: 2rem;
-    margin: 2.4rem 0;
-    line-height: 1.6; }
-  #add-faq .modal-content {
-    background-color: #0d6740;
-    padding: 5.5rem 5rem; }
-  #add-faq .flexbox {
-    justify-content: space-between; }
-  #add-faq .cell {
-    width: 312px; }
-    #add-faq .cell .form-control {
-      width: 100%; }
-  #add-faq label {
-    font-size: 1.4rem; }
-  #add-faq .bottom {
-    margin-top: 4rem; }
-    #add-faq .bottom .submit {
-      background-color: #1d4436; }
-  #add-faq textarea {
-    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAYAAADtlXTHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhJREFUeNpi+P//PwMTAxAMDuI/mAUQYADR4QQ3462tfwAAAABJRU5ErkJggg==") left top;
-    border: none;
-    height: 90px;
-    line-height: 30px;
-    overflow: hidden;
-    padding-top: 3px;
-    resize: none;
-    width: 100%; }
-  #add-faq .textarea-field {
-    margin-top: 3.5rem; }
-    #add-faq .textarea-field label {
-      top: 0; }
-
 .modal-open {
   overflow: hidden; }
 
@@ -2783,13 +2752,59 @@ main {
   overflow: hidden;
   outline: 0; }
 
+.modal {
+  color: #fff; }
+  .modal-dialog {
+    width: 785px; }
+  .modal-title {
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-transform: uppercase; }
+  .modal .flexbox {
+    justify-content: space-between; }
+  .modal .cell {
+    width: 312px; }
+    .modal .cell .form-control {
+      width: 100%; }
+    .modal .cell .icon-tel:before {
+      top: 18px; }
+  .modal label {
+    font-size: 1.4rem; }
+  .modal .bottom {
+    margin-top: 4rem; }
+    .modal .bottom .submit {
+      background-color: #1d4436; }
+  .modal textarea {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAYAAADtlXTHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhJREFUeNpi+P//PwMTAxAMDuI/mAUQYADR4QQ3462tfwAAAABJRU5ErkJggg==") left top;
+    border: none;
+    height: 90px;
+    line-height: 30px;
+    overflow: hidden;
+    padding-top: 3px;
+    resize: none;
+    width: 100%; }
+  .modal .textarea-field {
+    margin-top: 3.5rem; }
+    .modal .textarea-field label {
+      top: 0; }
+  .modal .file-upload {
+    margin-bottom: 0rem;
+    color: #a0d6bf; }
+    .modal .file-upload span {
+      color: #fff; }
+
+.modal-text {
+  font-size: 1.6rem;
+  padding-right: 2rem;
+  margin: 2.4rem 0;
+  line-height: 1.6; }
+
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto; }
 
 .modal-dialog {
   position: relative;
-  width: auto;
   margin: 7% auto;
   pointer-events: none; }
   .modal-dialog .close {
@@ -2836,10 +2851,11 @@ main {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
   background-clip: padding-box;
   outline: 0;
-  box-shadow: 0 0 30px rgba(0, 255, 60, 0.26); }
+  box-shadow: 0 0 30px rgba(0, 255, 60, 0.26);
+  background-color: #0d6740;
+  padding: 5.5rem 5rem; }
 
 .modal-backdrop {
   position: fixed;
@@ -2854,6 +2870,9 @@ main {
 
 .modal-backdrop.show {
   opacity: 0.5; }
+
+#answer-vacancy .bottom {
+  margin-top: 1.8rem; }
 
 .vacancies-page .neck {
   padding-bottom: 2rem; }

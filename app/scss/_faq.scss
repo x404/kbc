@@ -170,63 +170,6 @@
 
 
 #add-faq{
-	color: $color2;
-	.modal{
-		&-dialog{
-			width: 785px;
-		}
-		&-title{
-			font-weight: 500;
-			font-size: 2.5rem;
-			text-transform: uppercase;
-		}
-	}
+	
 
-	.modal-text{
-		font-size: 1.6rem;
-		padding-right: 2rem;
-		margin: 2.4rem 0;
-		line-height: 1.6;
-	}
-	.modal-content{
-		background-color: $color30;	
-		padding: 5.5rem 5rem;
-	}
-
-	.flexbox{
-		justify-content: space-between;
-	}
-	.cell{
-		width: 312px;
-		.form-control{
-			width: 100%;
-		}
-	}
-	label{
-		font-size: 1.4rem;
-	}
-	.bottom{
-		margin-top: 4rem;
-		.submit{
-			background-color: #1d4436
-		}
-	}
-
-	textarea{
-		background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAYAAADtlXTHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhJREFUeNpi+P//PwMTAxAMDuI/mAUQYADR4QQ3462tfwAAAABJRU5ErkJggg==') left top;
-		border: none;
-		height: 90px;
-		line-height: 30px;
-		overflow: hidden;
-		padding-top: 3px;
-		resize: none;
-		width: 100%;
-	}
-
-	.textarea-field{
-		margin-top: 3.5rem;
-		label{
-			top: 0;
-		}	
-	}
 }

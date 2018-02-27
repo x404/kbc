@@ -15,6 +15,80 @@
   outline: 0;
 }
 
+.modal{
+	color: $color2;
+	&-dialog{
+		width: 785px;
+	}
+	&-title{
+		font-weight: 500;
+		font-size: 2.5rem;
+		text-transform: uppercase;
+	}
+
+	.flexbox{
+		justify-content: space-between;
+	}
+	.cell{
+		width: 312px;
+		.form-control{
+			width: 100%;
+		}
+		.icon-tel{
+			&:before{
+				top: 18px;
+			}
+		}
+	}
+	label{
+		font-size: 1.4rem;
+	}
+	.bottom{
+		margin-top: 4rem;
+		.submit{
+			background-color: #1d4436
+		}
+	}
+
+	textarea{
+		background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAYAAADtlXTHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhJREFUeNpi+P//PwMTAxAMDuI/mAUQYADR4QQ3462tfwAAAABJRU5ErkJggg==') left top;
+		border: none;
+		height: 90px;
+		line-height: 30px;
+		overflow: hidden;
+		padding-top: 3px;
+		resize: none;
+		width: 100%;
+	}
+
+	.textarea-field{
+		margin-top: 3.5rem;
+		label{
+			top: 0;
+		}	
+	}
+
+	.file-upload{
+		margin-bottom: 0rem;
+		color: #a0d6bf;
+		span{
+			color: $color2;
+		}
+	}
+}
+
+.modal-text{
+	font-size: 1.6rem;
+	padding-right: 2rem;
+	margin: 2.4rem 0;
+	line-height: 1.6;
+}
+.modal-content{
+
+}
+
+
+
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
@@ -22,7 +96,7 @@
 
 .modal-dialog {
   position: relative;
-  width: auto;
+  // width: auto;
   margin: 7% auto;
   pointer-events: none;
   .close{
@@ -76,10 +150,11 @@
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
   background-clip: padding-box;
   outline: 0;
-  box-shadow: 0 0 30px rgba(0,255,60,.26)
+  box-shadow: 0 0 30px rgba(0,255,60,.26);
+ 	background-color: $color30;	
+	padding: 5.5rem 5rem;
 }
 
 .modal-backdrop {
@@ -98,4 +173,11 @@
 
 .modal-backdrop.show {
   opacity: 0.5;
+}
+
+
+#answer-vacancy{
+	.bottom{
+		margin-top: 1.8rem;
+	}
 }

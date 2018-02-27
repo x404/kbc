@@ -866,28 +866,33 @@ form{
 		padding-right: 3rem;
 		width: auto;
 	}
-
 	.file-upload{
-		display: inline-block;
-		margin-top: 25px;
 		color: #9c9c9c;
-		padding-left: 27px;
-		&:before{
-			left: 0;
-		}
 		span{
-			cursor: pointer;
-			@extend .tdu;
 			color: #3c3c3c;
-			margin-right: .7rem;			
-		}
-		input[type="file"]{
-			display: none;
-		}
+		}		
+	}
+}
 
-		.file-name{
-			margin-top: .3rem;
-		}
+
+.file-upload{
+	display: inline-block;
+	margin-top: 25px;
+	padding-left: 27px;
+	&:before{
+		left: 0;
+	}
+	span{
+		cursor: pointer;
+		@extend .tdu;
+		margin-right: .7rem;
+	}
+	input[type="file"]{
+		display: none;
+	}
+
+	.file-name{
+		margin-top: .3rem;
 	}
 }
 /* =resume
@@ -1356,6 +1361,14 @@ form{
 	&:before{
 		@extend .before;
 		@include sprite($icon-attach-dark);
+	}
+}
+
+.icon-attach-white{
+	position: relative;
+	&:before{
+		@extend .before;
+		@include sprite($icon-attach-white);
 	}
 }
 
