@@ -2287,7 +2287,8 @@ body.modal-open {
   width: 100%; }
 
 .side-inner {
-  top: -102px;
+  top: -30px;
+  margin-top: -70px;
   position: relative; }
 
 .side .resume {
@@ -2645,6 +2646,25 @@ main {
     main a:hover {
       color: #c20831;
       text-decoration: none; }
+  main img.justifyleft, main table.justifyleft {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px; }
+  main img.justifyright, main table.justifyright {
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 5px; }
+  main img.justifycenter, main table.justifycenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  main:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    clear: both; }
 
 .faq-page .head p,
 .vacancies-page .head p {
@@ -3043,6 +3063,12 @@ main {
   margin-bottom: 1rem;
   padding-left: 1.8rem;
   padding-right: 1.8rem; }
+
+.news-page h1 {
+  padding-right: 1rem; }
+
+.news-page main {
+  padding-top: 2.5rem; }
 
 .topnews {
   padding-top: 0; }
