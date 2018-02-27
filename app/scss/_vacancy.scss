@@ -13,15 +13,14 @@
 			}
 			&-expand{
 				box-shadow: 0 5px 20px rgba(83, 99, 121, .5);
+				padding-bottom: 0;
 				border: none;
+				background-color: $color29;
 				.vacancy__wrapper{
-					background-color: $color29;
 					border: none;
 				}
 				.vacancy__question{
-					padding-top: 3.2rem;
-					padding-left: 94px;
-					padding-bottom: 0;
+					padding: 3.2rem 0 0 94px;
 					.price{
 						display: none;
 					}
@@ -86,11 +85,11 @@
 			border: 2px solid rgba(255,255,255,0);
 			position: relative;
 			@include transition-param(border-color);
+			padding-bottom: 2rem;
 		}
 		&__question{
 			padding-top: 2.8rem;
 			padding-left: 90px;
-			padding-bottom: 2rem;
 		}
 
 	}
@@ -99,12 +98,12 @@
 		font-size: 2rem;
 		font-weight: 500;
 		margin-top: 1.5rem;
+		padding-left: 90px;
 	}
 	.answer{
 		display: none;		
 		line-height: 1.6;
-		// margin-top: 1.5rem;
-		padding: .4rem 2rem 1.4rem 93px;
+		padding: .4rem 2rem 0 93px;
 		position: relative;
 		&__name{
 			@extend .flex-cv;
@@ -118,9 +117,6 @@
 		&__text{
 			font-size: 1.6rem;
 			line-height: 1.6;
-			// margin-top: .9rem;
-			// padding-top: .8rem;
-			padding-bottom: 2rem;
 		}
 
 		ul{
@@ -131,22 +127,23 @@
 				&:before{
 					@extend .before;
 					border-top: 3px solid $color8;
-					width: 14px;
 					left: 0;
-					top: 50%;
 					margin-top: -3px;
+					top: 50%;
+					width: 14px;
 				}
 			}
 		}
+	}
 
-		.btn{
-			@extend .btn-red;
-			$h: 45px;
-			font-size: 1.5rem;
-			height: $h;
-			margin-top: 1.5rem;
-			padding-left: 1.8rem;
-			padding-right: 1.8rem;
-		}
+	.btn{
+		@extend .btn-red;
+		$h: 45px;
+		font-size: 1.5rem;
+		height: $h;
+		margin-top: 1.5rem;
+		margin-bottom: 1rem;
+		padding-left: 1.8rem;
+		padding-right: 1.8rem;
 	}
 }

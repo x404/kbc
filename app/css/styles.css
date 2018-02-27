@@ -204,7 +204,7 @@ h3 {
   .vacancies-page .head p a:hover {
     text-decoration: none; }
 
-.before, .btn-red:before, .list_vacancy .answer .btn:before, .btn-faq span:before, .btn-faq:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
+.before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-faq:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
 .fixed-header .wishlist__link:before,
 .fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .callback .call:before, .modal-menu .menu .title:after,
 .modal-menu .menu dt:after, .modal-menu .contacts .title:after, .modal-menu .close-modal:after, .footer__menu dt:after, .icon-catalog:before, .icon-people:before, .icon-people-gray:before, .icon-tel:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .filter .nav .btn.active:after, .filter .showflat:before, .filter .showmap:before, .installment__tooltip_content:before, .feature .promo .owl-dot:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .feature .news__link:before, .objects .owl-carousel .owl-prev:before, .objects .owl-carousel .owl-next:before,
@@ -271,7 +271,7 @@ button {
     background-color: #c20831;
     color: #fff; }
 
-.btn-red, .list_vacancy .answer .btn {
+.btn-red, .list_vacancy .btn {
   border: none;
   align-items: center;
   background-color: #c20831;
@@ -284,7 +284,7 @@ button {
   text-decoration: none;
   transition: .3s background-color, color ease-out;
   position: relative; }
-  .btn-red:hover, .list_vacancy .answer .btn:hover {
+  .btn-red:hover, .list_vacancy .btn:hover {
     background-color: #00874d;
     color: #fff; }
 
@@ -2728,14 +2728,13 @@ main {
       border-color: #00874d; }
   .list_vacancy .vacancy__item-expand {
     box-shadow: 0 5px 20px rgba(83, 99, 121, 0.5);
-    border: none; }
+    padding-bottom: 0;
+    border: none;
+    background-color: #ebeef1; }
     .list_vacancy .vacancy__item-expand .vacancy__wrapper {
-      background-color: #ebeef1;
       border: none; }
     .list_vacancy .vacancy__item-expand .vacancy__question {
-      padding-top: 3.2rem;
-      padding-left: 94px;
-      padding-bottom: 0; }
+      padding: 3.2rem 0 0 94px; }
       .list_vacancy .vacancy__item-expand .vacancy__question .price {
         display: none; }
     .list_vacancy .vacancy__item-expand .toggle {
@@ -2789,23 +2788,24 @@ main {
   border: 2px solid rgba(255, 255, 255, 0);
   position: relative;
   -webkit-transition: border-color 0.2s ease-out;
-  transition: border-color 0.2s ease-out; }
+  transition: border-color 0.2s ease-out;
+  padding-bottom: 2rem; }
 
 .list_vacancy .vacancy__question {
   padding-top: 2.8rem;
-  padding-left: 90px;
-  padding-bottom: 2rem; }
+  padding-left: 90px; }
 
 .list_vacancy .price {
   color: #00874d;
   font-size: 2rem;
   font-weight: 500;
-  margin-top: 1.5rem; }
+  margin-top: 1.5rem;
+  padding-left: 90px; }
 
 .list_vacancy .answer {
   display: none;
   line-height: 1.6;
-  padding: .4rem 2rem 1.4rem 93px;
+  padding: .4rem 2rem 0 93px;
   position: relative; }
   .list_vacancy .answer__name {
     font-size: 15px;
@@ -2815,24 +2815,25 @@ main {
       margin-right: 12px; }
   .list_vacancy .answer__text {
     font-size: 1.6rem;
-    line-height: 1.6;
-    padding-bottom: 2rem; }
+    line-height: 1.6; }
   .list_vacancy .answer ul li {
     color: #515151;
     position: relative;
     padding-left: 26px; }
     .list_vacancy .answer ul li:before {
       border-top: 3px solid #00874d;
-      width: 14px;
       left: 0;
+      margin-top: -3px;
       top: 50%;
-      margin-top: -3px; }
-  .list_vacancy .answer .btn {
-    font-size: 1.5rem;
-    height: 45px;
-    margin-top: 1.5rem;
-    padding-left: 1.8rem;
-    padding-right: 1.8rem; }
+      width: 14px; }
+
+.list_vacancy .btn {
+  font-size: 1.5rem;
+  height: 45px;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem; }
 
 .popover {
   box-shadow: 0 5px 20px rgba(73, 82, 95, 0.5);
