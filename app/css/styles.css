@@ -208,7 +208,8 @@ h3 {
 .fixed-header .wishlist__link:before,
 .fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .callback .call:before,
 .resume .call:before, .modal-menu .menu .title:after,
-.modal-menu .menu dt:after, .modal-menu .contacts .title:after, .modal-menu .close-modal:after, .footer__menu dt:after, .icon-catalog:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .filter .nav .btn.active:after, .filter .showflat:before, .filter .showmap:before, .installment__tooltip_content:before, .feature .promo .owl-dot:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .feature .news__link:before, .objects .owl-carousel .owl-prev:before, .objects .owl-carousel .owl-next:before,
+.modal-menu .menu dt:after, .modal-menu .contacts .title:after, .modal-menu .close-modal:after, .footer__menu dt:after, .icon-catalog:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .filter .nav .btn.active:after, .filter .showflat:before, .filter .showmap:before, .installment__tooltip_content:before, .feature .news__link:before,
+.topnews .news__link:before, .feature .promo .owl-dot:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .objects .owl-carousel .owl-prev:before, .objects .owl-carousel .owl-next:before,
 .intro__carousel .owl-carousel .owl-prev:before,
 .intro__carousel .owl-carousel .owl-next:before, .objects__info:before, .objects .owl-carousel .owl-prev:after, .objects .owl-carousel .owl-next:after, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .big-icon:before, .neck .tabs .tab.active:after, .pagination .prev:before,
@@ -230,18 +231,22 @@ textarea {
 input[type="submit"] {
   cursor: pointer; }
 
-.flex-cv, .btn-more, .feature .news .date, .feature .news .cat__link, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
+.flex-cv, .btn-more, .feature .news .date,
+.topnews .news .date, .feature .news .cat__link,
+.topnews .news .cat__link, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
 .vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .popover-bottom {
   display: flex;
   align-items: center; }
 
-.flex-center, .btn-faq, .modal-menu .close-modal, .feature .promo .type-2 .more,
-.feature .promo .type-3 .more, .feature .news .date .num, .pagination, .pagination a, .pagination span, .popover .diagram, .popover .diagram .num {
+.flex-center, .btn-faq, .modal-menu .close-modal, .feature .news .date .num,
+.topnews .news .date .num, .feature .promo .type-2 .more,
+.feature .promo .type-3 .more, .pagination, .pagination a, .pagination span, .popover .diagram, .popover .diagram .num {
   display: flex;
   align-items: center;
   justify-content: center; }
 
-.transition-bg-color, .feature .news .cat__link {
+.transition-bg-color, .feature .news .cat__link,
+.topnews .news .cat__link {
   transition: .3s background-color, color ease-out; }
 
 .form-control {
@@ -1498,6 +1503,132 @@ body.modal-open {
 .text-center {
   text-align: center; }
 
+.feature .news__cell,
+.feature .about__cell,
+.topnews .news__cell,
+.topnews .about__cell {
+  position: relative; }
+  .feature .news__cell img,
+  .feature .about__cell img,
+  .topnews .news__cell img,
+  .topnews .about__cell img {
+    display: block;
+    transition: .3s transform ease-out; }
+  .feature .news__cell:hover img,
+  .feature .about__cell:hover img,
+  .topnews .news__cell:hover img,
+  .topnews .about__cell:hover img {
+    transform: scale(1.15); }
+
+.feature .news__link,
+.feature .about__link,
+.topnews .news__link,
+.topnews .about__link {
+  overflow: hidden;
+  display: block;
+  position: relative; }
+
+.feature .news__meta,
+.feature .about__meta,
+.topnews .news__meta,
+.topnews .about__meta {
+  position: absolute;
+  z-index: 2;
+  margin: 0 2.5rem 0 3rem;
+  transition: .3s bottom ease-out; }
+
+.feature .news__cell:hover .news__meta,
+.topnews .news__cell:hover .news__meta {
+  bottom: 85px; }
+  .feature .news__cell:hover .news__meta span,
+  .topnews .news__cell:hover .news__meta span {
+    background-color: #c20831;
+    color: #fff; }
+
+.feature .news__cell:hover .news__desc,
+.topnews .news__cell:hover .news__desc {
+  opacity: 1; }
+
+.feature .news__link:before,
+.topnews .news__link:before {
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4D000000', endColorstr='#CC000000', GradientType=0);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2; }
+
+.feature .news__top,
+.topnews .news__top {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.8rem 3rem 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2; }
+  .feature .news__top a,
+  .topnews .news__top a {
+    color: inherit; }
+
+.feature .news .date .num,
+.topnews .news .date .num {
+  border: 2px solid #fff;
+  font-size: 2.2rem;
+  height: 4rem;
+  width: 4rem; }
+
+.feature .news .date .my,
+.topnews .news .date .my {
+  font-size: 1.3rem;
+  font-weight: 100;
+  padding-left: .9rem; }
+
+.feature .news .cat__link,
+.topnews .news .cat__link {
+  background-color: #00874d;
+  border-radius: 3rem;
+  font-size: 1.3rem;
+  height: 3rem;
+  padding: 0 1rem;
+  text-decoration: none; }
+  .feature .news .cat__link:hover,
+  .topnews .news .cat__link:hover {
+    background-color: #fff;
+    color: #000; }
+
+.feature .news__meta,
+.topnews .news__meta {
+  bottom: 20px; }
+
+.feature .news__title,
+.topnews .news__title {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.5; }
+  .feature .news__title span,
+  .topnews .news__title span {
+    border-bottom: 2px solid #c20831;
+    padding-left: 2px;
+    padding-right: 5px; }
+
+.feature .news__desc,
+.topnews .news__desc {
+  bottom: -70px;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  opacity: 0;
+  position: absolute;
+  transition: .3s opacity ease-out; }
+
 .feature {
   position: relative;
   z-index: 20;
@@ -1649,6 +1780,9 @@ body.modal-open {
         left: -110px; }
       .feature .promo .owl-carousel .owl-controls .owl-buttons .owl-next {
         right: -110px; }
+  .feature .news__cell,
+  .feature .about__cell {
+    flex-basis: 50%; }
   .feature .service {
     background-image: -webkit-linear-gradient(top, #980929 0%, #c20831 100%);
     background-image: -o-linear-gradient(top, #980929 0%, #c20831 100%);
@@ -1715,96 +1849,6 @@ body.modal-open {
       font-weight: 500; }
       .feature .service__title-middle {
         font-size: 2rem; }
-  .feature .news__cell,
-  .feature .about__cell {
-    flex-basis: 50%;
-    position: relative; }
-    .feature .news__cell img,
-    .feature .about__cell img {
-      display: block;
-      transition: .3s transform ease-out; }
-    .feature .news__cell:hover img,
-    .feature .about__cell:hover img {
-      transform: scale(1.15); }
-  .feature .news__link,
-  .feature .about__link {
-    overflow: hidden;
-    display: block;
-    position: relative; }
-  .feature .news__meta,
-  .feature .about__meta {
-    position: absolute;
-    z-index: 2;
-    margin: 0 2.5rem 0 3rem;
-    transition: .3s bottom ease-out; }
-  .feature .news__cell:hover .news__meta {
-    bottom: 85px; }
-    .feature .news__cell:hover .news__meta span {
-      background-color: #c20831;
-      color: #fff; }
-  .feature .news__cell:hover .news__desc {
-    opacity: 1; }
-  .feature .news__link:before {
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%);
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4D000000', endColorstr='#CC000000', GradientType=0);
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 2; }
-  .feature .news__top {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    padding: 2.8rem 3rem 0;
-    color: #fff;
-    z-index: 2; }
-    .feature .news__top a {
-      color: inherit; }
-  .feature .news .date .num {
-    font-size: 2.2rem;
-    height: 4rem;
-    width: 4rem;
-    border: 2px solid #fff; }
-  .feature .news .date .my {
-    font-size: 1.3rem;
-    font-weight: 100;
-    padding-left: .9rem; }
-  .feature .news .cat__link {
-    background-color: #00874d;
-    border-radius: 3rem;
-    font-size: 1.3rem;
-    height: 3rem;
-    padding: 0 1rem;
-    text-decoration: none; }
-    .feature .news .cat__link:hover {
-      background-color: #fff;
-      color: #000; }
-  .feature .news__meta {
-    bottom: 20px; }
-  .feature .news__title {
-    display: inline-block;
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: #fff;
-    line-height: 1.5; }
-    .feature .news__title span {
-      border-bottom: 2px solid #c20831;
-      padding-left: 2px;
-      padding-right: 5px; }
-  .feature .news__desc {
-    bottom: -70px;
-    color: #fff;
-    font-size: 1.5rem;
-    line-height: 1.4;
-    opacity: 0;
-    position: absolute;
-    transition: .3s opacity ease-out; }
   .feature .about {
     flex-grow: 1; }
     .feature .about__cell {
@@ -2431,9 +2475,11 @@ body.modal-open {
 
 .content-bottom {
   background: #f1f3f5;
-  padding: 5.5rem 0 6.5rem; }
+  padding: 0.01rem 0 6.5rem; }
+  .content-bottom .row {
+    display: block; }
   .content-bottom .subscribe {
-    display: flex;
+    margin-top: 5rem;
     width: 100%;
     background: #fff;
     padding: 4rem 5.5rem; }
@@ -2460,12 +2506,13 @@ body.modal-open {
         width: calc(100% - 40px); }
 
 .materials {
+  margin: 7rem 0;
   width: 100%; }
   .materials .title {
-    text-transform: uppercase;
     font-size: 3rem;
     font-weight: 500;
-    padding: 3.8rem 0 2.6rem; }
+    padding-bottom: 2.6rem;
+    text-transform: uppercase; }
   .materials .flexbox {
     justify-content: space-between; }
 
@@ -2994,6 +3041,30 @@ main {
   margin-bottom: 1rem;
   padding-left: 1.8rem;
   padding-right: 1.8rem; }
+
+.topnews {
+  padding-top: 0; }
+  .topnews .news__cell {
+    flex: 1 0 33.3%; }
+    .topnews .news__cell img {
+      width: 100%; }
+    .topnews .news__cell:hover .news__meta {
+      bottom: 110px; }
+  .topnews .news__top {
+    padding: 4rem 4.2rem 0; }
+  .topnews .news__title {
+    font-size: 2.6rem; }
+  .topnews .news__desc {
+    font-size: 1.7rem; }
+  .topnews .news__meta {
+    bottom: 50px; }
+  .topnews .news .date .num {
+    font-size: 3rem;
+    font-weight: 800;
+    height: 5rem;
+    width: 5rem; }
+  .topnews .news .date .my {
+    font-size: 1.5rem; }
 
 .popover {
   box-shadow: 0 5px 20px rgba(73, 82, 95, 0.5);

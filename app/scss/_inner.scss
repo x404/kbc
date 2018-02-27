@@ -265,10 +265,14 @@
 
 .content-bottom{
 	background: #f1f3f5;
-	padding: 5.5rem 0 6.5rem;
-
+	padding: 0.01rem 0 6.5rem;
+	.row{
+		display: block;
+	}
 	.subscribe{
-		display: flex;
+		// margin: 5rem 0;
+		margin-top: 5rem;
+		// display: flex;
 		width: 100%;
 		background: $color2;
 		padding: 4rem 5.5rem;
@@ -308,12 +312,14 @@
 
 // marerials
 .materials{
+	margin: 7rem 0;
 	width: 100%;
 	.title{
-		text-transform: uppercase;
 		font-size: 3rem;
 		font-weight: 500;
-		padding:3.8rem 0 2.6rem;
+		// margin: 3.8rem 0 2.6rem;
+		padding-bottom: 2.6rem;
+		text-transform: uppercase;
 	}
 
 	.flexbox{
@@ -366,7 +372,6 @@
 		font-size: 1.3rem;
 		margin-top: 1.7rem;
 	}
-
 }
 
 
