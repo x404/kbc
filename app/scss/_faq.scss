@@ -183,7 +183,8 @@
 	.modal-text{
 		font-size: 1.6rem;
 		padding-right: 2rem;
-		margin: 2.5rem 0;
+		margin: 2.4rem 0;
+		line-height: 1.6;
 	}
 	.modal-content{
 		background-color: $color30;	
@@ -198,14 +199,33 @@
 		.form-control{
 			width: 100%;
 		}
-		label{
-			font-size: 1.4rem;
-		}
+	}
+	label{
+		font-size: 1.4rem;
 	}
 	.bottom{
 		margin-top: 4rem;
 		.submit{
 			background-color: #1d4436
 		}
+	}
+
+	textarea{
+		background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAYAAADtlXTHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhJREFUeNpi+P//PwMTAxAMDuI/mAUQYADR4QQ3462tfwAAAABJRU5ErkJggg==') left top;
+		border: none;
+		height: 90px;
+		line-height: 30px;
+		overflow: hidden;
+		padding-top: 3px;
+		// padding-left: 0;
+		resize: none;
+		width: 100%;
+	}
+
+	.textarea-field{
+		margin-top: 3.5rem;
+		label{
+			top: 0;
+		}	
 	}
 }

@@ -1197,7 +1197,24 @@ form{
 		@include sprite($icon-back);
 		left: 0;
 		top: 0;
-	}		
+	}
+}
+
+.icon-letter{
+	&:before{
+		@extend .before;
+		@include sprite($icon-letter);
+		left: 0;
+	}
+}
+
+.icon-comment{
+	&:before{
+		@extend .before;
+		@include sprite($icon-comment);
+		left: 0;
+		top: 10px;
+	}
 }
 
 

@@ -205,7 +205,7 @@ h3 {
 .before, .btn-red:before, .btn-faq span:before, .btn-faq:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
 .fixed-header .wishlist__link:before,
 .fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .callback .call:before, .modal-menu .menu .title:after,
-.modal-menu .menu dt:after, .modal-menu .contacts .title:after, .modal-menu .close-modal:after, .footer__menu dt:after, .icon-catalog:before, .icon-people:before, .icon-people-gray:before, .icon-tel:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .filter .nav .btn.active:after, .filter .showflat:before, .filter .showmap:before, .installment__tooltip_content:before, .feature .promo .owl-dot:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .feature .news__link:before, .objects .owl-carousel .owl-prev:before, .objects .owl-carousel .owl-next:before,
+.modal-menu .menu dt:after, .modal-menu .contacts .title:after, .modal-menu .close-modal:after, .footer__menu dt:after, .icon-catalog:before, .icon-people:before, .icon-people-gray:before, .icon-tel:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .filter .nav .btn.active:after, .filter .showflat:before, .filter .showmap:before, .installment__tooltip_content:before, .feature .promo .owl-dot:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .feature .news__link:before, .objects .owl-carousel .owl-prev:before, .objects .owl-carousel .owl-next:before,
 .intro__carousel .owl-carousel .owl-prev:before,
 .intro__carousel .owl-carousel .owl-next:before, .objects__info:before, .objects .owl-carousel .owl-prev:after, .objects .owl-carousel .owl-next:after, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .big-icon:before, .neck .tabs .tab.active:after, .pagination .prev:before,
@@ -559,7 +559,7 @@ form .form-control {
       padding-left: 55px; }
       .fixed-header .qfilter a:before {
         background-image: url(../images/sprite.png);
-        background-position: -151px -89px;
+        background-position: -190px -89px;
         width: 39px;
         height: 30px;
         left: 0; }
@@ -979,7 +979,7 @@ form .form-control {
 
 .icon-tel:before {
   background-image: url(../images/sprite.png);
-  background-position: -54px -134px;
+  background-position: -71px -134px;
   width: 16px;
   height: 16px; }
 
@@ -1027,6 +1027,21 @@ form .form-control {
   height: 18px;
   left: 0;
   top: 0; }
+
+.icon-letter:before {
+  background-image: url(../images/sprite.png);
+  background-position: -151px -119px;
+  width: 18px;
+  height: 14px;
+  left: 0; }
+
+.icon-comment:before {
+  background-image: url(../images/sprite.png);
+  background-position: -54px -134px;
+  width: 17px;
+  height: 17px;
+  left: 0;
+  top: 10px; }
 
 .carousel-image {
   display: block;
@@ -2267,7 +2282,7 @@ body.modal-open {
       position: relative; }
       .picking__link span:before {
         background-image: url(../images/sprite.png);
-        background-position: -190px -89px;
+        background-position: -151px -89px;
         width: 39px;
         height: 30px;
         left: -72px;
@@ -2575,7 +2590,8 @@ main {
   #add-faq .modal-text {
     font-size: 1.6rem;
     padding-right: 2rem;
-    margin: 2.5rem 0; }
+    margin: 2.4rem 0;
+    line-height: 1.6; }
   #add-faq .modal-content {
     background-color: #0d6740;
     padding: 5.5rem 5rem; }
@@ -2585,12 +2601,25 @@ main {
     width: 312px; }
     #add-faq .cell .form-control {
       width: 100%; }
-    #add-faq .cell label {
-      font-size: 1.4rem; }
+  #add-faq label {
+    font-size: 1.4rem; }
   #add-faq .bottom {
     margin-top: 4rem; }
     #add-faq .bottom .submit {
       background-color: #1d4436; }
+  #add-faq textarea {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAYAAADtlXTHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhJREFUeNpi+P//PwMTAxAMDuI/mAUQYADR4QQ3462tfwAAAABJRU5ErkJggg==") left top;
+    border: none;
+    height: 90px;
+    line-height: 30px;
+    overflow: hidden;
+    padding-top: 3px;
+    resize: none;
+    width: 100%; }
+  #add-faq .textarea-field {
+    margin-top: 3.5rem; }
+    #add-faq .textarea-field label {
+      top: 0; }
 
 .modal-open {
   overflow: hidden; }
@@ -2618,7 +2647,7 @@ main {
   .modal-dialog .close {
     background: none;
     border: none;
-    right: 55px;
+    right: 47px;
     top: 55px;
     position: absolute; }
     .modal-dialog .close svg {
