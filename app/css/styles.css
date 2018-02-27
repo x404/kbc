@@ -195,19 +195,20 @@ h3 {
   .tdn:hover, .breadcrumbs ul li a:hover {
     text-decoration: underline; }
 
-.tdu, .modal-menu .menu a, .footer__menu a, .footer .idealpromo a, .pagination .prev,
+.tdu, .resume .file-upload span, .modal-menu .menu a, .footer__menu a, .footer .idealpromo a, .pagination .prev,
 .pagination .next, .faq-page .head p a,
 .vacancies-page .head p a {
   text-decoration: underline; }
-  .tdu:hover, .modal-menu .menu a:hover, .footer__menu a:hover, .footer .idealpromo a:hover, .pagination .prev:hover,
+  .tdu:hover, .resume .file-upload span:hover, .modal-menu .menu a:hover, .footer__menu a:hover, .footer .idealpromo a:hover, .pagination .prev:hover,
   .pagination .next:hover, .faq-page .head p a:hover,
   .vacancies-page .head p a:hover {
     text-decoration: none; }
 
 .before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-faq:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
 .fixed-header .wishlist__link:before,
-.fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .callback .call:before, .modal-menu .menu .title:after,
-.modal-menu .menu dt:after, .modal-menu .contacts .title:after, .modal-menu .close-modal:after, .footer__menu dt:after, .icon-catalog:before, .icon-people:before, .icon-people-gray:before, .icon-tel:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .filter .nav .btn.active:after, .filter .showflat:before, .filter .showmap:before, .installment__tooltip_content:before, .feature .promo .owl-dot:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .feature .news__link:before, .objects .owl-carousel .owl-prev:before, .objects .owl-carousel .owl-next:before,
+.fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .callback .call:before,
+.resume .call:before, .modal-menu .menu .title:after,
+.modal-menu .menu dt:after, .modal-menu .contacts .title:after, .modal-menu .close-modal:after, .footer__menu dt:after, .icon-catalog:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .filter .nav .btn.active:after, .filter .showflat:before, .filter .showmap:before, .installment__tooltip_content:before, .feature .promo .owl-dot:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .feature .news__link:before, .objects .owl-carousel .owl-prev:before, .objects .owl-carousel .owl-next:before,
 .intro__carousel .owl-carousel .owl-prev:before,
 .intro__carousel .owl-carousel .owl-next:before, .objects__info:before, .objects .owl-carousel .owl-prev:after, .objects .owl-carousel .owl-next:after, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .big-icon:before, .neck .tabs .tab.active:after, .pagination .prev:before,
@@ -301,7 +302,7 @@ button {
     z-index: 2; }
     .btn-faq span:before {
       background-image: url(../images/sprite.png);
-      background-position: -77px -91px;
+      background-position: -108px -102px;
       width: 30px;
       height: 30px;
       left: -42px;
@@ -488,13 +489,13 @@ form .form-control {
     .header .wishlist__link:before,
     .fixed-header .wishlist__link:before {
       background-image: url(../images/sprite.png);
-      background-position: -77px -61px;
+      background-position: -77px -102px;
       width: 31px;
       height: 30px; }
     .header .wishlist__link:after,
     .fixed-header .wishlist__link:after {
       background-image: url(../images/sprite.png);
-      background-position: -108px -61px;
+      background-position: -118px -61px;
       width: 31px;
       height: 30px;
       -webkit-transition: opacity 0.2s ease-out;
@@ -563,7 +564,7 @@ form .form-control {
       padding-left: 55px; }
       .fixed-header .qfilter a:before {
         background-image: url(../images/sprite.png);
-        background-position: -190px -89px;
+        background-position: -190px -94px;
         width: 39px;
         height: 30px;
         left: 0; }
@@ -690,7 +691,8 @@ form .form-control {
 
 /* =header
 ---------------------------*/
-.green-gradient, .btn-faq, .callback, .modal-menu, .about-partners .partners {
+.green-gradient, .btn-faq, .callback,
+.resume, .modal-menu, .about-partners .partners {
   background-image: -webkit-linear-gradient(top, #008e54 0%, #0d6640 100%);
   background-image: -o-linear-gradient(top, #008e54 0%, #0d6640 100%);
   background-image: linear-gradient(to bottom, #008e54 0%, #0d6640 100%);
@@ -699,24 +701,29 @@ form .form-control {
 
 /* =callback
 ---------------------------*/
-.callback {
+.callback,
+.resume {
   background-color: #038650;
   padding: 3.5rem 4rem;
   width: 32rem;
   color: #fff; }
-  .callback__title {
+  .callback__title,
+  .resume__title {
     font-size: 2.5rem;
     font-weight: 500;
     text-transform: uppercase; }
-  .callback__text {
+  .callback__text,
+  .resume__text {
     font-size: 1.6rem;
     font-weight: 100;
     line-height: 1.5;
     margin-top: 2.5rem; }
-  .callback .call {
+  .callback .call,
+  .resume .call {
     display: block;
     margin-top: 3.1rem; }
-    .callback .call a {
+    .callback .call a,
+    .resume .call a {
       color: inherit;
       font-size: 2rem;
       font-weight: 500;
@@ -725,20 +732,26 @@ form .form-control {
       line-height: 41px;
       display: inline-block;
       text-decoration: none; }
-    .callback .call:before {
+    .callback .call:before,
+    .resume .call:before {
       background-image: url(../images/sprite.png);
-      background-position: -151px -48px;
+      background-position: -77px -61px;
       width: 41px;
       height: 41px; }
-  .callback__form {
+  .callback__form,
+  .resume__form {
     margin-top: .6rem; }
-  .callback .input-field {
+  .callback .input-field,
+  .resume .input-field {
     margin-top: 1.4rem; }
-    .callback .input-field:before {
+    .callback .input-field:before,
+    .resume .input-field:before {
       bottom: 13px; }
-  .callback .form-control {
+  .callback .form-control,
+  .resume .form-control {
     width: 100%; }
-  .callback .submit {
+  .callback .submit,
+  .resume .submit {
     display: block;
     font-size: 1.6rem;
     font-weight: 100;
@@ -747,12 +760,77 @@ form .form-control {
     text-align: center;
     width: 185px;
     padding: 0; }
-    .callback .submit:hover {
+    .callback .submit:hover,
+    .resume .submit:hover {
       background-color: #fff;
       color: #000;
       font-weight: 500; }
 
 /* =/callback
+---------------------------*/
+/* =resume
+---------------------------*/
+.resume {
+  background-color: #ebeef1;
+  background-image: none;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+  padding-top: 2.3rem; }
+  .resume__title {
+    color: #000;
+    padding-left: 66px; }
+    .resume__title:before {
+      left: 0;
+      top: 8px; }
+  .resume__text {
+    color: #4c545b;
+    line-height: 1.6;
+    margin-top: 1.5rem; }
+  .resume .input-field label {
+    color: #3c3c3c;
+    font-size: 1.4rem; }
+  .resume .input-field .form-control {
+    color: #3c3c3c;
+    border-bottom-color: #00874d; }
+    .resume .input-field .form-control:focus, .resume .input-field .form-control:active {
+      border-bottom-color: #c20831; }
+  .resume .textarea-field {
+    margin-top: 2.2rem; }
+    .resume .textarea-field label {
+      top: 0; }
+  .resume textarea {
+    background: url("data:image/gif;base64,R0lGODlhAQAeAIABAACHTQAAACH5BAEAAAEALAAAAAABAB4AAAIFjI+pC1AAOw==");
+    border: none;
+    height: 90px;
+    line-height: 30px;
+    overflow: hidden;
+    padding-top: 3px;
+    resize: none;
+    width: 100%; }
+    .resume textarea:focus, .resume textarea:active {
+      background: url("data:image/gif;base64,R0lGODlhAQAeAIABAMIIMQAAACH5BAEAAAEALAAAAAABAB4AAAIFjI+pC1AAOw=="); }
+  .resume .submit {
+    font-weight: 600;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: auto; }
+  .resume .file-upload {
+    display: inline-block;
+    margin-top: 25px;
+    color: #9c9c9c;
+    padding-left: 27px; }
+    .resume .file-upload:before {
+      left: 0; }
+    .resume .file-upload span {
+      cursor: pointer;
+      color: #3c3c3c;
+      margin-right: .7rem; }
+    .resume .file-upload input[type="file"] {
+      display: none; }
+    .resume .file-upload .file-name {
+      margin-top: .3rem; }
+
+/* =resume
 ---------------------------*/
 .social {
   display: flex;
@@ -971,19 +1049,31 @@ form .form-control {
 
 .icon-people:before {
   background-image: url(../images/sprite.png);
-  background-position: -36px -134px;
+  background-position: -91px -134px;
   width: 18px;
   height: 17px; }
 
 .icon-people-gray:before {
   background-image: url(../images/sprite.png);
-  background-position: -18px -134px;
+  background-position: -73px -134px;
+  width: 18px;
+  height: 17px; }
+
+.icon-people-dark:before {
+  background-image: url(../images/sprite.png);
+  background-position: -55px -134px;
   width: 18px;
   height: 17px; }
 
 .icon-tel:before {
   background-image: url(../images/sprite.png);
-  background-position: -71px -134px;
+  background-position: -159px -134px;
+  width: 16px;
+  height: 16px; }
+
+.icon-tel-dark:before {
+  background-image: url(../images/sprite.png);
+  background-position: -143px -134px;
   width: 16px;
   height: 16px; }
 
@@ -1007,7 +1097,7 @@ form .form-control {
   padding-left: 25px; }
   .icon-clock:before {
     background-image: url(../images/sprite.png);
-    background-position: -107px -91px;
+    background-position: 0px -134px;
     width: 19px;
     height: 19px;
     left: 0;
@@ -1018,7 +1108,7 @@ form .form-control {
   position: relative; }
   .icon-darkclock:before {
     background-image: url(../images/sprite.png);
-    background-position: -126px -91px;
+    background-position: -19px -134px;
     width: 19px;
     height: 19px;
     left: 0;
@@ -1026,7 +1116,7 @@ form .form-control {
 
 .icon-back:before {
   background-image: url(../images/sprite.png);
-  background-position: 0px -154px;
+  background-position: -38px -134px;
   width: 17px;
   height: 18px;
   left: 0;
@@ -1034,18 +1124,42 @@ form .form-control {
 
 .icon-letter:before {
   background-image: url(../images/sprite.png);
-  background-position: -151px -119px;
+  background-position: -175px -134px;
   width: 18px;
   height: 14px;
   left: 0; }
 
 .icon-comment:before {
   background-image: url(../images/sprite.png);
-  background-position: -54px -134px;
+  background-position: -109px -134px;
   width: 17px;
   height: 17px;
   left: 0;
   top: 10px; }
+
+.icon-comment-dark:before {
+  background-image: url(../images/sprite.png);
+  background-position: -126px -134px;
+  width: 17px;
+  height: 17px;
+  left: 0;
+  top: 10px; }
+
+.icon-resume {
+  position: relative; }
+  .icon-resume:before {
+    background-image: url(../images/sprite.png);
+    background-position: -151px -48px;
+    width: 45px;
+    height: 46px; }
+
+.icon-attach-dark {
+  position: relative; }
+  .icon-attach-dark:before {
+    background-image: url(../images/sprite.png);
+    background-position: -18px -153px;
+    width: 16px;
+    height: 19px; }
 
 .carousel-image {
   display: block;
@@ -1157,7 +1271,7 @@ form .form-control {
       background-color: #c20831; }
     .filter .showflat:before {
       background-image: url(../images/sprite.png);
-      background-position: -192px -48px;
+      background-position: -196px -48px;
       width: 35px;
       height: 40px;
       left: 11px;
@@ -1179,7 +1293,7 @@ form .form-control {
       background-color: #00874d; }
     .filter .showmap:before {
       background-image: url(../images/sprite.png);
-      background-position: -17px -154px;
+      background-position: -34px -153px;
       width: 15px;
       height: 18px;
       left: 20px;
@@ -1369,6 +1483,9 @@ body.modal-open {
   body.modal-open .outerwrapper,
   body.modal-open footer {
     filter: blur(3px); }
+
+.text-center {
+  text-align: center; }
 
 .feature {
   position: relative;
@@ -1756,7 +1873,7 @@ body.modal-open {
       -webkit-transition: left 0.2s ease-out;
       transition: left 0.2s ease-out;
       background-image: url(../images/sprite.png);
-      background-position: 0px -134px;
+      background-position: 0px -153px;
       width: 18px;
       height: 20px;
       left: 19px; }
@@ -2118,6 +2235,9 @@ body.modal-open {
   top: -102px;
   position: relative; }
 
+.side .resume {
+  margin-top: -10rem; }
+
 .neck {
   background: #0a6a41 url(../images/neck-bg.jpg) no-repeat center/cover;
   color: #fff;
@@ -2286,7 +2406,7 @@ body.modal-open {
       position: relative; }
       .picking__link span:before {
         background-image: url(../images/sprite.png);
-        background-position: -151px -89px;
+        background-position: -151px -94px;
         width: 39px;
         height: 30px;
         left: -72px;
@@ -2368,6 +2488,24 @@ body.modal-open {
   color: #a8a8a8;
   font-size: 1.3rem;
   margin-top: 1.7rem; }
+
+.expert {
+  margin: 3.8rem 0 4.5rem; }
+  .expert__photo {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%; }
+  .expert p {
+    margin: .6rem 0; }
+  .expert__name {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 2rem !important; }
+  .expert__post {
+    color: #717171;
+    font-size: 1.5rem; }
+  .expert__contacts {
+    font-size: 1.6rem; }
 
 .category_link {
   background: #00874d;
@@ -2477,7 +2615,7 @@ main {
   .faq-page .head .btn:before,
   .vacancies-page .head .btn:before {
     background-image: url(../images/sprite.png);
-    background-position: -77px -91px;
+    background-position: -108px -102px;
     width: 30px;
     height: 30px;
     left: 13px;
@@ -2716,6 +2854,9 @@ main {
 
 .modal-backdrop.show {
   opacity: 0.5; }
+
+.vacancies-page .neck {
+  padding-bottom: 2rem; }
 
 .list_vacancy .vacancy__item {
   border: 2px solid #eceff2;

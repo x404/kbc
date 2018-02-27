@@ -10,6 +10,10 @@
 		top: -102px;
 		position: relative;
 	}
+
+	.resume{
+		margin-top: -10rem;
+	}
 }
 
 // =neck
@@ -364,3 +368,34 @@
 	}
 
 }
+
+
+// =expert aside
+.expert{
+	margin: 3.8rem 0 4.5rem;
+	&__photo{
+		display: block;
+		margin: 0 auto;
+		border-radius: 50%;
+	}
+
+	p{
+		margin: .6rem 0;
+	}
+
+	&__name{
+		font-size: 2rem;
+		font-weight: 500;
+		margin-top: 2rem !important;
+	}
+
+	&__post{
+		color: $color32;
+		font-size: 1.5rem;
+	}
+
+	&__contacts{
+		font-size: 1.6rem;
+	}
+}
+// =/expert aside

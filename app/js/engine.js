@@ -398,5 +398,9 @@ window.onscroll = function(){
 };
 
 
-
-
+function getFileName(el){
+	var file = el.value;
+	file = file.replace(/\\/g, "/").split ('/').pop();
+	console.warn(file);
+	$(el).closest('.file-upload').find('.file-name').html('Имя файла: ' + file);
+}

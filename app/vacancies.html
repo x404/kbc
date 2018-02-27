@@ -312,30 +312,47 @@
 						<div class="side side-inner offset-col-1 col-2">
 							<!-- =resume -->
 							<div class="resume">
-								<p class="resume__title">Отправьте резюме</p>
+								<p class="resume__title icon-resume">Отправьте резюме</p>
 								<div class="resume__text">Не нашли подходящей вакансии, но хотите стать членом команды «КБС»? Отправьте Ваше резюме и мы обязательно его рассмотрим.</div>
 								<form action="#" method="post" class="resume__form">
 									<fieldset>
-										<div class="input-field icon-people">
+										<div class="input-field icon-people-dark">
 											<label for="resume_name" class="name-field">Ваше имя</label>
 											<label for="resume_name" class="helper-field helper-field-name">Ваше имя</label>
 											<input type="email" id="resume_name" name="name" class="form-control required" value="" />
 										</div>
-										<div class="input-field icon-tel">
+										<div class="input-field icon-tel-dark">
 											<label for="resume_tel" class="name-field">Телефон</label>
 											<label for="resume_tel" class="helper-field helper-field-name">Телефон</label>
 											<input type="tel" id="resume_tel" name="tel" class="form-control tel required" value="" />
 										</div>
-										<div class="input-field icon-tel">
+										<div class="input-field textarea-field icon-comment-dark">
 											<label for="resume_msg" class="name-field">Комментарий</label>
 											<label for="resume_msg" class="helper-field helper-field-name">Комментарий</label>
 											<textarea name="msg" id="resume_msg" cols="30" rows="10" class="form-control"></textarea>
+										</div>
+
+										<div class="file-upload icon-attach-dark">
+											<label for="attach">
+												<input type="file" name="file" id="attach" class="attach" onchange="getFileName(this);" />
+												<span>Прикрепить файл</span>(до 3мб)
+											</label>
+											<div class="file-name"></div>
 										</div>
 										<input type="submit" class="submit btn-red" value="Отправить" />
 									</fieldset>
 								</form>
 							</div>
 							<!-- =/resume -->
+
+							<!-- =expert -->
+							<div class="expert text-center">
+								<img src="https://dummyimage.com/200x200/929292/00ffd5.png" alt="placeholder image" class="expert__photo" />
+								<p class="expert__name">Иванов Иван Иванович</p>
+								<p class="expert__post">Начальник отдела кадров</p>
+								<p class="expert__contact">+7 (391) 291-67-43</p>
+							</div>
+							<!-- =/expert -->
 
 							<!-- =picking -->
 							<div class="picking">
