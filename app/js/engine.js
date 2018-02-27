@@ -353,7 +353,7 @@ $(document).on('click', '.close-modal', function(e){
 });
 
 
-	// faq
+// faq
 $(document).on('click', '.faq__item .toggle', function(e){
 	e.preventDefault();
 	var $this = $(this),
@@ -364,6 +364,17 @@ $(document).on('click', '.faq__item .toggle', function(e){
 	})
 });
 
+
+// vacancy
+$(document).on('click', '.vacancy__item .toggle', function(e){
+	e.preventDefault();
+	var $this = $(this),
+		item = $this.closest('.vacancy__item');
+	item.find('.answer').slideToggle('normal',function(){
+		$this.toggleClass('toggle-collapse');
+		item.toggleClass('vacancy__item-expand');
+	})
+});
 
 
 // меню по иконке, карта

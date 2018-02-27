@@ -196,20 +196,23 @@ h3 {
     text-decoration: underline; }
 
 .tdu, .modal-menu .menu a, .footer__menu a, .footer .idealpromo a, .pagination .prev,
-.pagination .next, .faq-page .head p a {
+.pagination .next, .faq-page .head p a,
+.vacancies-page .head p a {
   text-decoration: underline; }
   .tdu:hover, .modal-menu .menu a:hover, .footer__menu a:hover, .footer .idealpromo a:hover, .pagination .prev:hover,
-  .pagination .next:hover, .faq-page .head p a:hover {
+  .pagination .next:hover, .faq-page .head p a:hover,
+  .vacancies-page .head p a:hover {
     text-decoration: none; }
 
-.before, .btn-red:before, .btn-faq span:before, .btn-faq:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
+.before, .btn-red:before, .list_vacancy .answer .btn:before, .btn-faq span:before, .btn-faq:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
 .fixed-header .wishlist__link:before,
 .fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .callback .call:before, .modal-menu .menu .title:after,
 .modal-menu .menu dt:after, .modal-menu .contacts .title:after, .modal-menu .close-modal:after, .footer__menu dt:after, .icon-catalog:before, .icon-people:before, .icon-people-gray:before, .icon-tel:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .filter .nav .btn.active:after, .filter .showflat:before, .filter .showmap:before, .installment__tooltip_content:before, .feature .promo .owl-dot:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .feature .news__link:before, .objects .owl-carousel .owl-prev:before, .objects .owl-carousel .owl-next:before,
 .intro__carousel .owl-carousel .owl-prev:before,
 .intro__carousel .owl-carousel .owl-next:before, .objects__info:before, .objects .owl-carousel .owl-prev:after, .objects .owl-carousel .owl-next:after, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .big-icon:before, .neck .tabs .tab.active:after, .pagination .prev:before,
-.pagination .next:before, .picking__link span:before, .faq-page .head .btn:before, .list_faq .answer:before, .popover-link:before {
+.pagination .next:before, .picking__link span:before, .faq-page .head .btn:before,
+.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .popover-link:before {
   content: "";
   display: block;
   position: absolute; }
@@ -226,7 +229,8 @@ textarea {
 input[type="submit"] {
   cursor: pointer; }
 
-.flex-cv, .btn-more, .feature .news .date, .feature .news .cat__link, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn, .list_faq .answer__name, .popover-bottom {
+.flex-cv, .btn-more, .feature .news .date, .feature .news .cat__link, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
+.vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .popover-bottom {
   display: flex;
   align-items: center; }
 
@@ -267,7 +271,7 @@ button {
     background-color: #c20831;
     color: #fff; }
 
-.btn-red {
+.btn-red, .list_vacancy .answer .btn {
   border: none;
   align-items: center;
   background-color: #c20831;
@@ -280,7 +284,7 @@ button {
   text-decoration: none;
   transition: .3s background-color, color ease-out;
   position: relative; }
-  .btn-red:hover {
+  .btn-red:hover, .list_vacancy .answer .btn:hover {
     background-color: #00874d;
     color: #fff; }
 
@@ -2446,14 +2450,17 @@ main {
       color: #c20831;
       text-decoration: none; }
 
-.faq-page .head p {
+.faq-page .head p,
+.vacancies-page .head p {
   font-size: 2rem;
   line-height: 1.5; }
-  .faq-page .head p a {
+  .faq-page .head p a,
+  .vacancies-page .head p a {
     color: #fff;
     font-weight: 500; }
 
-.faq-page .head .btn {
+.faq-page .head .btn,
+.vacancies-page .head .btn {
   -webkit-transition: background-color 0.2s ease-out;
   transition: background-color 0.2s ease-out;
   background-color: #c20831;
@@ -2467,17 +2474,20 @@ main {
   padding-right: 26px;
   text-decoration: none;
   position: relative; }
-  .faq-page .head .btn:before {
+  .faq-page .head .btn:before,
+  .vacancies-page .head .btn:before {
     background-image: url(../images/sprite.png);
     background-position: -77px -91px;
     width: 30px;
     height: 30px;
     left: 13px;
     top: 10px; }
-  .faq-page .head .btn:hover {
+  .faq-page .head .btn:hover,
+  .vacancies-page .head .btn:hover {
     background-color: #e20c3c; }
 
-.faq-page .head__left .flexbox {
+.faq-page .head__left .flexbox,
+.vacancies-page .head__left .flexbox {
   margin-bottom: 1.8rem; }
 
 .list_faq .faq__item {
@@ -2706,6 +2716,123 @@ main {
 
 .modal-backdrop.show {
   opacity: 0.5; }
+
+.list_vacancy .vacancy__item {
+  border: 2px solid #eceff2;
+  margin-bottom: 2rem;
+  -webkit-transition: border-color 0.2s ease-out;
+  transition: border-color 0.2s ease-out; }
+  .list_vacancy .vacancy__item:hover {
+    border-color: #00874d; }
+    .list_vacancy .vacancy__item:hover .vacancy__wrapper {
+      border-color: #00874d; }
+  .list_vacancy .vacancy__item-expand {
+    box-shadow: 0 5px 20px rgba(83, 99, 121, 0.5);
+    border: none; }
+    .list_vacancy .vacancy__item-expand .vacancy__wrapper {
+      background-color: #ebeef1;
+      border: none; }
+    .list_vacancy .vacancy__item-expand .vacancy__question {
+      padding-top: 3.2rem;
+      padding-left: 94px;
+      padding-bottom: 0; }
+      .list_vacancy .vacancy__item-expand .vacancy__question .price {
+        display: none; }
+    .list_vacancy .vacancy__item-expand .toggle {
+      left: 25px !important;
+      top: 27px !important; }
+    .list_vacancy .vacancy__item-expand .answer {
+      border-left: 4px solid #ebeef1; }
+  .list_vacancy .vacancy__item .name {
+    font-weight: 500;
+    font-size: 2rem;
+    margin-top: 1.5rem; }
+    .list_vacancy .vacancy__item .name span {
+      margin-left: .2rem; }
+  .list_vacancy .vacancy__item .date {
+    color: #7d7d7d;
+    font-weight: 400;
+    margin-top: .2rem; }
+  .list_vacancy .vacancy__item .text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    padding-top: 1.3rem;
+    padding-right: 3rem;
+    color: #515151; }
+    .list_vacancy .vacancy__item .text strong {
+      color: #000; }
+  .list_vacancy .vacancy__item .toggle {
+    -webkit-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+    background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAMCAMAAAC6EAb3AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAolBMVEWJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7GJm7H///8ITLuUAAAANHRSTlMADJ1tAZN9kftmj2JF6fyM1CpA7AKN0SM+Z47OHer9ZdMiP/ohPWPSIOv0vNBB79slSbomyRI3CwAAAAFiS0dENd622WsAAAAHdElNRQfiAhoUJRurheYVAAAAgElEQVQY02WOVxLCMAwFBRgIxZTQQkkg9F73/mcjHgi2h/16syPpSQrFkniockVJlaDmyTo0pKlpuboNna5I2HN0fwDDkUmRJhh/7QSms0+MYpJ5LhdpvreMWWVHlJlc24qNJtmaot3e/Sc8cDzBORWP7LYtslyu3O7yx+P5+uU3CjcMhh5gtQAAAAAASUVORK5CYII=") no-repeat center #ebeef1;
+    border-radius: 50px;
+    border: 2px solid #ebeef1;
+    cursor: pointer;
+    height: 50px;
+    left: 21px;
+    position: absolute;
+    top: 23px;
+    width: 50px;
+    -webkit-transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out; }
+    .list_vacancy .vacancy__item .toggle:hover {
+      background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAMCAQAAAAnxz5OAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAhoUJi7WG3H1AAAAtUlEQVQoz33QPU4CARDF8VlrrmCCGi28A1+FhdeQgJVH8AaoIdRchHAGI2DHCRZJaKhA8rOABQSWTDXz/pl5b0JB14s4U4mOV0loY6l5BvwAT+FBit9cuAW+3YdQNc2BL7yBgRuxHpWlWHo+QN/Bp0uRoaFsgpXGEThyve53QsUEi42NZLvxKiP2z5WkWKlvwwwVd/p/b1U/mOuDr+z0KTTzvBcmHw01M4zdHiqnnv6o5+54/gew/T2CS/HSuwAAAABJRU5ErkJggg==");
+      background-color: #00874d;
+      border-color: #00874d; }
+    .list_vacancy .vacancy__item .toggle-collapse {
+      background-color: #fff;
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
+
+.list_vacancy .vacancy__wrapper {
+  border: 2px solid rgba(255, 255, 255, 0);
+  position: relative;
+  -webkit-transition: border-color 0.2s ease-out;
+  transition: border-color 0.2s ease-out; }
+
+.list_vacancy .vacancy__question {
+  padding-top: 2.8rem;
+  padding-left: 90px;
+  padding-bottom: 2rem; }
+
+.list_vacancy .price {
+  color: #00874d;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 1.5rem; }
+
+.list_vacancy .answer {
+  display: none;
+  line-height: 1.6;
+  padding: .4rem 2rem 1.4rem 93px;
+  position: relative; }
+  .list_vacancy .answer__name {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1rem; }
+    .list_vacancy .answer__name img {
+      margin-right: 12px; }
+  .list_vacancy .answer__text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    padding-bottom: 2rem; }
+  .list_vacancy .answer ul li {
+    color: #515151;
+    position: relative;
+    padding-left: 26px; }
+    .list_vacancy .answer ul li:before {
+      border-top: 3px solid #00874d;
+      width: 14px;
+      left: 0;
+      top: 50%;
+      margin-top: -3px; }
+  .list_vacancy .answer .btn {
+    font-size: 1.5rem;
+    height: 45px;
+    margin-top: 1.5rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem; }
 
 .popover {
   box-shadow: 0 5px 20px rgba(73, 82, 95, 0.5);

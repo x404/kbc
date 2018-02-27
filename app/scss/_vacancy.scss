@@ -1,53 +1,5 @@
-.faq-page,
-.vacancies-page
-{
-	.head{
-		p{
-			font-size: 2rem;
-			line-height: 1.5;
-			a{
-				color: $color2;
-				font-weight: 500;
-				@extend .tdu;
-			}
-		}
-		.btn{
-			$h: 50px;
-			@include transition-param(background-color);
-			@extend .flex-cv;
-			background-color: $color7;
-			border-radius: $h;
-			color: $color2;
-			font-size: 1.7rem;
-			font-weight: 500;
-			height: $h;
-			margin-left: 2rem;
-			padding-left: 55px;
-			padding-right: 26px;
-			text-decoration: none;
-			position: relative;
-			&:before{
-				@extend .before;
-				@include sprite($icon-question);
-				left: 13px;
-				top: 10px;
-			}
-			&:hover{
-				background-color: $color25;
-			}
-		}
-
-		&__left{
-			.flexbox{
-				margin-bottom: 1.8rem;
-			}
-		}
-	}
-}
-
-
-.list_faq{
-	.faq{
+.list_vacancy{
+	.vacancy{
 		&__item{
 			$color: $color26;
 			border: 2px solid $color;
@@ -55,20 +7,24 @@
 			@include transition-param(border-color);
 			&:hover{
 				border-color: $color8;
-				.faq__wrapper{
+				.vacancy__wrapper{
 					border-color: $color8
 				}
 			}
 			&-expand{
 				box-shadow: 0 5px 20px rgba(83, 99, 121, .5);
 				border: none;
-				.faq__wrapper{
+				.vacancy__wrapper{
+					background-color: $color29;
 					border: none;
 				}
-				.faq__question{
+				.vacancy__question{
 					padding-top: 3.2rem;
 					padding-left: 94px;
-					padding-bottom: 2.2rem;
+					padding-bottom: 0;
+					.price{
+						display: none;
+					}
 				}
 				.toggle{
 					left: 25px !important;
@@ -80,7 +36,8 @@
 			}
 			.name{
 				font-weight: 500;
-				font-size: 1.5rem;
+				font-size: 2rem;
+				margin-top: 1.5rem;
 				span{
 					margin-left: .2rem;
 				}
@@ -89,14 +46,16 @@
 				color: $color27;
 				font-weight: 400;
 				margin-top: .2rem;
-				padding-left: 25px;
-				left: 18px;
 			}
 			.text{
 				font-size: 1.6rem;
 				line-height: 1.6;
 				padding-top: 1.3rem;
 				padding-right: 3rem;
+				color: $color31;
+				strong{
+					color: $color1;
+				}
 			}
 			.toggle{
 				@include transition-param(background-color);
@@ -133,21 +92,20 @@
 			padding-left: 90px;
 			padding-bottom: 2rem;
 		}
+
+	}
+	.price{
+		color: $color8;
+		font-size: 2rem;
+		font-weight: 500;
+		margin-top: 1.5rem;
 	}
 	.answer{
-		display: none;
-		background-color: $color29;
+		display: none;		
 		line-height: 1.6;
-		margin-top: 1.5rem;
-		padding: 1.4rem 2rem 1.4rem 93px;
+		// margin-top: 1.5rem;
+		padding: .4rem 2rem 1.4rem 93px;
 		position: relative;
-		&:before{
-			@extend .before;
-			border-left: 4px solid $color8;
-			height: calc(100% - 80px);
-			left: 40px;
-			top: 22px;
-		}
 		&__name{
 			@extend .flex-cv;
 			font-size: 15px;
@@ -160,73 +118,35 @@
 		&__text{
 			font-size: 1.6rem;
 			line-height: 1.6;
-			margin-top: .9rem;
-			padding-top: .8rem;
+			// margin-top: .9rem;
+			// padding-top: .8rem;
 			padding-bottom: 2rem;
-		}	
-	}
-}
-
-
-
-#add-faq{
-	color: $color2;
-	.modal{
-		&-dialog{
-			width: 785px;
 		}
-		&-title{
-			font-weight: 500;
-			font-size: 2.5rem;
-			text-transform: uppercase;
+
+		ul{
+			li{
+				color: $color31;
+				position: relative;
+				padding-left: 26px;
+				&:before{
+					@extend .before;
+					border-top: 3px solid $color8;
+					width: 14px;
+					left: 0;
+					top: 50%;
+					margin-top: -3px;
+				}
+			}
 		}
-	}
 
-	.modal-text{
-		font-size: 1.6rem;
-		padding-right: 2rem;
-		margin: 2.4rem 0;
-		line-height: 1.6;
-	}
-	.modal-content{
-		background-color: $color30;	
-		padding: 5.5rem 5rem;
-	}
-
-	.flexbox{
-		justify-content: space-between;
-	}
-	.cell{
-		width: 312px;
-		.form-control{
-			width: 100%;
+		.btn{
+			@extend .btn-red;
+			$h: 45px;
+			font-size: 1.5rem;
+			height: $h;
+			margin-top: 1.5rem;
+			padding-left: 1.8rem;
+			padding-right: 1.8rem;
 		}
-	}
-	label{
-		font-size: 1.4rem;
-	}
-	.bottom{
-		margin-top: 4rem;
-		.submit{
-			background-color: #1d4436
-		}
-	}
-
-	textarea{
-		background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAeCAYAAADtlXTHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhJREFUeNpi+P//PwMTAxAMDuI/mAUQYADR4QQ3462tfwAAAABJRU5ErkJggg==') left top;
-		border: none;
-		height: 90px;
-		line-height: 30px;
-		overflow: hidden;
-		padding-top: 3px;
-		resize: none;
-		width: 100%;
-	}
-
-	.textarea-field{
-		margin-top: 3.5rem;
-		label{
-			top: 0;
-		}	
 	}
 }
