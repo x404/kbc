@@ -127,7 +127,7 @@
 }
 .selectize-input,
 .selectize-control.single .selectize-input.input-active {
-  background: #ffffff;
+  /*background: #ffffff;*/
   cursor: text;
   display: inline-block;
 }
@@ -308,14 +308,12 @@
   content: ' ';
   display: block;
   position: absolute;
-  top: 50%;
   right: 15px;
-  margin-top: -3px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 5px 5px 0 5px;
-  border-color: #808080 transparent transparent transparent;
+  width: 12px;
+  height: 7px;
+  right: 0;
+  top: 16px;
+background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHBAMAAADOnLEXAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAHlBMVEUAh00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah03///+7OFeyAAAACHRSTlMAG1oJ22ZpbtEBxs4AAAABYktHRAnx2aXsAAAAB3RJTUUH4gIbFQ0yDRTdgQAAADNJREFUCNdjYFRgYGASYDBpZWCIcGZg6whg7UhgYMhojWhjYAByQRwGhop2EMnAXsDAAADFAwgKjAL6DwAAAABJRU5ErkJggg==") no-repeat;
 }
 .selectize-control.single .selectize-input.dropdown-active:after {
   margin-top: -4px;

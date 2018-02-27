@@ -2,6 +2,16 @@
 	flex-wrap: wrap;
 }
 
+.reviews-page{
+	.neck .head{
+		padding: 3.5rem 0 1.6rem;
+		p{
+			margin-top: 1rem;
+		}
+	}
+}
+
+
 .review{
 	&__item{
 		margin-right: 35px;
@@ -89,17 +99,66 @@
 		$h: 24px;
 		.star{
 			display: inline-block;
-			background: url(../images/sprite-star.png) no-repeat left bottom;
+			background: url(../images/graduate.png) no-repeat left bottom;
 			height: $h;
 			width: 124px;
 			position: relative;
 			overflow: hidden;
 		}
 		span{
-			background: url(../images/sprite-star.png) no-repeat left top;
+			background: url(../images/graduate.png) no-repeat left top;
 			display: block;
 			height: $h;
 		}
 	}
+}
 
+
+.filter-sort{
+	padding-bottom: 4rem;
+	.flexbox{
+		background: $color36;
+		padding: 1.5rem 2.2rem;
+		align-items: center;
+	}
+	.sortbox{
+		display: flex;
+		flex-grow: 1;
+		margin-left: 7rem;
+	}
+	.filter{
+		flex: 0 0 320px;
+		padding: 0;
+		.selectize-input{
+			padding-right: 0;
+			&.full{
+				background: none;
+			}
+			&:after{
+				border: none !important;
+			}
+		}
+	}
+
+	.btn{
+		@extend .flex-cv;
+		@include transition-param(background-color);
+		$h: 5rem;
+		background: $color7;
+		border-radius: $h;
+		color: $color2;
+		font-size: 1.7rem;
+		font-weight: 500;
+		height: $h;
+		padding-left: 55px;
+		padding-right: 20px;
+		text-decoration: none;
+		&:before{
+			left: 20px;
+			top: 10px;
+		}
+		&:hover{
+			background-color: $color8;
+		}
+	}
 }

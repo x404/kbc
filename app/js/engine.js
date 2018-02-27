@@ -103,6 +103,8 @@ $(document).ready(function(){
 	});
 
 
+
+	// selectize
 	var $searchSelect = $('.j-search-select');
 
 	$('.j-search-select').selectize({
@@ -238,6 +240,18 @@ $(document).ready(function(){
 		onChange: function onChange() {
 		}
 	});
+
+
+	// reviews page
+	$('.filter-select').selectize({
+		create: true,
+		sortField: {
+			field: 'text',
+			direction: 'asc'
+		},
+		dropdownParent: 'body'
+	});
+
 
 	// mask
 	$('input.tel').inputmask({

@@ -148,6 +148,33 @@
 							</div>
 						</div>
 						<!-- =/head -->
+
+						<!-- =filter -->
+						<div class="filter-sort">
+							<div class="flexbox">
+								<div class="filter">
+									<select name="object" class="filter-select" placeholder="Выберите объект">
+										<option value="0">ЖК Стасовой</option>
+										<option value="1">ЖК Курчатова</option>
+										<option value="2">ЖК Тихие Зори</option>
+									</select>
+								</div>
+
+								<!-- =sortbox -->
+								<div class="sortbox">
+									<div class="sortbox__label">
+										Сортировать по
+									</div>
+									<a href="#" class="sortbox__option sortbox__option-up">дате</a>
+									<a href="#" class="sortbox__option sortbox__option-down">объекту</a>
+									<a href="#" class="sortbox__option sortbox__option-down">оценке</a>
+								</div>
+								<!-- =/sortbox -->
+
+								<a href="#" class="btn icon-pencil" role="button" data-toggle="modal" data-target="#add-review">Написать отзыв</a>
+							</div>
+						</div>
+						<!-- =/filter -->
 					</div>
 				</div>
 			</div>
@@ -479,7 +506,7 @@
 							</div>
 							<!-- =/pagination -->
 
-							<a href="#" class="btn-review" data-toggle="modal" data-target="#add-review"><span>Оставить отзыв</span></a>
+							<a href="#" class="btn-review" data-toggle="modal" data-target="#add-review" role="button"><span>Оставить отзыв</span></a>
 						</div>
 					</div>
 					<!-- =/main -->

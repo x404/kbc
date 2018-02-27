@@ -1398,6 +1398,17 @@ form{
 	}
 }
 
+
+.icon-pencil{
+	position: relative;
+	&:before{
+		@extend .before;
+		@include sprite($icon-pencil);
+	}
+}
+
+
+
 .carousel-image{
 	display: block;
 	transition: .3s transform ease-out;
