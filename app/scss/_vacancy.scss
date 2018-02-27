@@ -21,9 +21,6 @@
 				}
 				.vacancy__question{
 					padding: 3.2rem 0 0 94px;
-					.price{
-						display: none;
-					}
 				}
 				.toggle{
 					left: 25px !important;
@@ -31,6 +28,9 @@
 				}
 				.answer{
 					border-left: 4px solid $color29;
+				}
+				.price{
+					margin-left: 4px;
 				}
 			}
 			.name{
@@ -76,7 +76,7 @@
 				}
 				&-collapse{
 					background-color: #fff;
-					@include rotation(180deg);
+					@include rotation(-180deg);
 				}
 			}
 		}

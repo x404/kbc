@@ -370,10 +370,9 @@ $(document).on('click', '.vacancy__item .toggle', function(e){
 	e.preventDefault();
 	var $this = $(this),
 		item = $this.closest('.vacancy__item');
-	item.find('.answer').slideToggle('normal',function(){
 		$this.toggleClass('toggle-collapse');
 		item.toggleClass('vacancy__item-expand');
-	})
+		item.find('.answer').slideToggle();
 });
 
 

@@ -2735,13 +2735,13 @@ main {
       border: none; }
     .list_vacancy .vacancy__item-expand .vacancy__question {
       padding: 3.2rem 0 0 94px; }
-      .list_vacancy .vacancy__item-expand .vacancy__question .price {
-        display: none; }
     .list_vacancy .vacancy__item-expand .toggle {
       left: 25px !important;
       top: 27px !important; }
     .list_vacancy .vacancy__item-expand .answer {
       border-left: 4px solid #ebeef1; }
+    .list_vacancy .vacancy__item-expand .price {
+      margin-left: 4px; }
   .list_vacancy .vacancy__item .name {
     font-weight: 500;
     font-size: 2rem;
@@ -2780,9 +2780,9 @@ main {
       border-color: #00874d; }
     .list_vacancy .vacancy__item .toggle-collapse {
       background-color: #fff;
-      -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-      transform: rotate(180deg); }
+      -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+      transform: rotate(-180deg); }
 
 .list_vacancy .vacancy__wrapper {
   border: 2px solid rgba(255, 255, 255, 0);
