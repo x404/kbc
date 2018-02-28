@@ -359,9 +359,11 @@ $(document).on('click', '.o-menu .folder > a, .o-menu .folder > span', function(
 
 // обратный звонок
 $(document).on('click', '[data-toggle="sidemodal"]', function(e){
+	e.stopPropagation();
 	let target = this.dataset.target;
 	document.querySelector(target).classList.add('open');
-	document.querySelector('.body').classList.add('m-modal-open')
+	document.querySelector('.body').classList.add('m-modal-open');
+
 });
 
 $(document).on('click', '.close-modal', function(e){
@@ -409,6 +411,7 @@ $(document).on('click', '.extra-toggle, .showmap', function(e){
 
 // delete row from FAVORITE page
 $(document).on('click', '.delete', function(e){
+	e.stopPropagation();
 	e.preventDefault();
 	$this = $(this);
 	console.log($this.closest('table').find('tr').length);
@@ -418,6 +421,19 @@ $(document).on('click', '.delete', function(e){
 	});
 });
 
+
+$(document).on('click', '[data-link]', function(e){
+	e.preventDefault;
+	e.stopPropagation();
+	console.log($(this));
+	let url = this.dataset.link;
+	window.open(url);
+});
+
+
+$(document).on('click', '.flat a, .place a', function(e){
+	e.stopPropagation();
+})
 
 
 // sticky header
