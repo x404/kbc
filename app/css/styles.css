@@ -1553,6 +1553,19 @@ body.modal-open {
 .text-center {
   text-align: center; }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0); }
+
+.rur {
+  position: relative; }
+  .rur:after {
+    content: "\20BD";
+    font-weight: bold; }
+
 .feature .news__cell,
 .feature .about__cell,
 .topnews .news__cell,
