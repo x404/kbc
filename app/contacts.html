@@ -786,16 +786,22 @@ function init(){
 		// добавляем коллекцию в геообъект
 		myMap.geoObjects.add(myCollection);
 
-    myCollection.events
-        .add('mouseenter', function (e) {
-            // Ссылку на объект, вызвавший событие,
-            // можно получить из поля 'target'.
-             e.get('target').options.set('iconImageHref', '/images/balloon-hover.png');
-        })
-        .add('mouseleave', function (e) {
-            e.get('target').options.set('iconImageHref', '/images/balloon.png');
-        });
+		myCollection.events
+			.add('mouseenter', function (e) {
+				e.get('target').options.set('iconImageHref', '/images/balloon-hover.png');
+			})
+			.add('mouseleave', function (e) {
+				e.get('target').options.set('iconImageHref', '/images/balloon.png');
+			});
 
+		myMap.behaviors.disable('scrollZoom'); 
+		myMap.events.add('click', function onMapClick(e) {
+			if(myMap.behaviors.isEnabled('scrollZoom')) {
+				myMap.events.remove('click', onMapClick);
+			} else {
+				myMap.behaviors.enable(['scrollZoom']);
+			}
+		});
 	})
 }
 </script>
