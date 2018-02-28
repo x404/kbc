@@ -178,7 +178,7 @@
 							</div>
 							<div class="contact__plate">
 								<p class="contact__title">Офис продаж «Октябрьский»</p>
-								<p class="contact__address">Офис продаж «Октябрьский»</p>
+								<p class="contact__address">г. Красноярск, ул. Академика Киренского, 71.</p>
 								<button type="button" class="btn btn-red icon-label">Показать на карте</button>
 								
 								<p>Приемная <b>++7 (391) 217-9-217 </b></p>
@@ -191,10 +191,11 @@
 				</div>
 			</div>
 
-
-
-
-			<div id="map"></div>
+			<!-- =map -->
+			<div class="map">
+				<div id="map"></div>				
+			</div>
+			<!-- =/map -->
 
 			<!-- =workers -->	
 			<div class="container">
@@ -737,6 +738,67 @@
 <script src="/js/engine.js"></script>
 
 <!-- InstanceBeginEditable name="EditRegion4" -->
+<script src="http://api-maps.yandex.ru/2.1.60/?lang=ru_RU"></script>
+<script>
+$(document).ready(function(){
+	ymaps.ready(init);
+});
+
+function init(){
+	// https://tech.yandex.ru/maps/doc/jsapi/2.0/dg/concepts/geoobjects-docpage/
+	ymaps.ready(function() {
+		var myMap = new ymaps.Map('map', {
+			center: [55.998180, 92.844331],
+			zoom: 12
+		}),
+
+
+		// создаем коллекции и параметры меток в ней
+		myCollection = new ymaps.GeoObjectCollection({},{
+			iconLayout: 'default#image',
+			iconImageHref: '/images/balloon.png',
+			iconImageSize: [51, 61],
+			iconImageOffset: [-25, -61],
+			hideIconOnBalloonOpen: false
+		});
+
+		// создаем метки и прописываем ее свойства 
+		myCollection.add(new ymaps.Placemark(
+			[55.980180, 92.914331],
+			{
+				hintContent: 'Головной офис (660019, г. Красноярск, ул. Мусоргского, 18)'
+			}
+		));
+
+		myCollection.add(new ymaps.Placemark(
+			[56.016768, 92.875012],
+			{
+				hintContent: 'Офис продаж «Центр» (г. Красноярск, ул. Ады Лебедевой, 18)'
+			}
+		));
+
+		myCollection.add(new ymaps.Placemark(
+			[56.013663, 92.800407],
+			{
+				hintContent: 'Офис продаж «Октябрьский» (г. Красноярск, ул. Академика Киренского, 71)'
+			}
+		));
+		// добавляем коллекцию в геообъект
+		myMap.geoObjects.add(myCollection);
+
+    myCollection.events
+        .add('mouseenter', function (e) {
+            // Ссылку на объект, вызвавший событие,
+            // можно получить из поля 'target'.
+             e.get('target').options.set('iconImageHref', '/images/balloon-hover.png');
+        })
+        .add('mouseleave', function (e) {
+            e.get('target').options.set('iconImageHref', '/images/balloon.png');
+        });
+
+	})
+}
+</script>
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
