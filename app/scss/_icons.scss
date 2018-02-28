@@ -158,12 +158,30 @@
 }
 
 
+.icon-pencil-small{
+	position: relative;
+	&:before{
+		@extend .before;
+		@include sprite($icon-pencil-small);
+	}
+}
 
 .icon-label{
 	position: relative;
 	&:before{
 		@extend .before;
 		@include sprite($icon-label);
+		left: 12px;
+	}
+}
+
+
+
+.icon-house-dark{
+	position: relative;
+	&:before{
+		@extend .before;
+		@include sprite($icon-house-dark);
 		left: 12px;
 	}
 }

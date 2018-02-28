@@ -122,31 +122,31 @@
 
 .icon-people:before {
   background-image: url(../images/sprite.png);
-  background-position: -119px -134px;
+  background-position: -131px -134px;
   width: 18px;
   height: 17px; }
 
 .icon-people-gray:before {
   background-image: url(../images/sprite.png);
-  background-position: -101px -134px;
+  background-position: -113px -134px;
   width: 18px;
   height: 17px; }
 
 .icon-people-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -83px -134px;
+  background-position: -149px -134px;
   width: 18px;
   height: 17px; }
 
 .icon-tel:before {
   background-image: url(../images/sprite.png);
-  background-position: -187px -134px;
+  background-position: -217px -134px;
   width: 16px;
   height: 16px; }
 
 .icon-tel-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -171px -134px;
+  background-position: -201px -134px;
   width: 16px;
   height: 16px; }
 
@@ -170,7 +170,7 @@
   padding-left: 25px; }
   .icon-clock:before {
     background-image: url(../images/sprite.png);
-    background-position: -28px -134px;
+    background-position: -94px -134px;
     width: 19px;
     height: 19px;
     left: 0;
@@ -181,7 +181,7 @@
   position: relative; }
   .icon-darkclock:before {
     background-image: url(../images/sprite.png);
-    background-position: -47px -134px;
+    background-position: -75px -134px;
     width: 19px;
     height: 19px;
     left: 0;
@@ -189,7 +189,7 @@
 
 .icon-back:before {
   background-image: url(../images/sprite.png);
-  background-position: -66px -134px;
+  background-position: -18px -161px;
   width: 17px;
   height: 18px;
   left: 0;
@@ -197,14 +197,14 @@
 
 .icon-letter:before {
   background-image: url(../images/sprite.png);
-  background-position: -203px -134px;
+  background-position: -50px -161px;
   width: 18px;
   height: 14px;
   left: 0; }
 
 .icon-comment:before {
   background-image: url(../images/sprite.png);
-  background-position: -137px -134px;
+  background-position: -167px -134px;
   width: 17px;
   height: 17px;
   left: 0;
@@ -212,7 +212,7 @@
 
 .icon-comment-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -154px -134px;
+  background-position: -184px -134px;
   width: 17px;
   height: 17px;
   left: 0;
@@ -230,7 +230,7 @@
   position: relative; }
   .icon-attach-dark:before {
     background-image: url(../images/sprite.png);
-    background-position: -18px -161px;
+    background-position: -16px -181px;
     width: 16px;
     height: 19px; }
 
@@ -238,7 +238,7 @@
   position: relative; }
   .icon-attach-white:before {
     background-image: url(../images/sprite.png);
-    background-position: -34px -161px;
+    background-position: 0px -181px;
     width: 16px;
     height: 19px; }
 
@@ -250,13 +250,30 @@
     width: 28px;
     height: 27px; }
 
+.icon-pencil-small {
+  position: relative; }
+  .icon-pencil-small:before {
+    background-image: url(../images/sprite.png);
+    background-position: -54px -134px;
+    width: 21px;
+    height: 21px; }
+
 .icon-label {
   position: relative; }
   .icon-label:before {
     background-image: url(../images/sprite.png);
-    background-position: -50px -161px;
+    background-position: -35px -161px;
     width: 15px;
     height: 18px;
+    left: 12px; }
+
+.icon-house-dark {
+  position: relative; }
+  .icon-house-dark:before {
+    background-image: url(../images/sprite.png);
+    background-position: -28px -134px;
+    width: 26px;
+    height: 22px;
     left: 12px; }
 
 /*** reset ***********/
@@ -344,14 +361,14 @@ h3 {
 
 .tdu, .file-upload span, .modal-menu .menu a, .footer__menu a, .footer .idealpromo a, .pagination .prev,
 .pagination .next, .faq-page .head p a,
-.vacancies-page .head p a, .contact__plate .email {
+.vacancies-page .head p a, .contact__plate .email, .favorite__item table td .place a {
   text-decoration: underline; }
   .tdu:hover, .file-upload span:hover, .modal-menu .menu a:hover, .footer__menu a:hover, .footer .idealpromo a:hover, .pagination .prev:hover,
   .pagination .next:hover, .faq-page .head p a:hover,
-  .vacancies-page .head p a:hover, .contact__plate .email:hover {
+  .vacancies-page .head p a:hover, .contact__plate .email:hover, .favorite__item table td .place a:hover {
     text-decoration: none; }
 
-.before, .icon-catalog:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-label:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
+.before, .icon-catalog:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-house-dark:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
 .fixed-header .wishlist__link:before,
 .fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .callback .call:before,
 .resume .call:before, .modal-menu .menu .title:after,
@@ -382,7 +399,7 @@ input[type="submit"] {
 .flex-cv, .btn-more, .feature .news .date,
 .topnews .news .date, .feature .news .cat__link,
 .topnews .news .cat__link, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
-.vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top, .review__bottom, .filter-sort .btn, .popover-bottom {
+.vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top, .review__bottom, .filter-sort .btn, .favorite__item .object__composition .btn, .favorite__item .btn-order, .popover-bottom {
   display: flex;
   align-items: center; }
 
@@ -657,13 +674,13 @@ form .form-control {
     .header .wishlist__link:before,
     .fixed-header .wishlist__link:before {
       background-image: url(../images/sprite.png);
-      background-position: -77px -102px;
+      background-position: -118px -61px;
       width: 31px;
       height: 30px; }
     .header .wishlist__link:after,
     .fixed-header .wishlist__link:after {
       background-image: url(../images/sprite.png);
-      background-position: -118px -61px;
+      background-position: -77px -102px;
       width: 31px;
       height: 30px;
       -webkit-transition: opacity 0.2s ease-out;
@@ -1342,7 +1359,7 @@ form .form-control {
       background-color: #00874d; }
     .filter .showmap:before {
       background-image: url(../images/sprite.png);
-      background-position: -50px -161px;
+      background-position: -35px -161px;
       width: 15px;
       height: 18px;
       left: 20px;
@@ -3469,6 +3486,131 @@ main {
 
 .worker__contact {
   font-size: 1.6rem; }
+
+.favorite-page {
+  background: #f1f3f5; }
+  .favorite-page .main {
+    padding-top: 5.5rem; }
+
+.favorite__item {
+  background: #fff;
+  border-bottom: 5px solid #c20831; }
+  .favorite__item .flexbox {
+    align-items: center; }
+  .favorite__item .object__pic img {
+    vertical-align: top; }
+  .favorite__item .object__info {
+    margin-left: 3rem; }
+    .favorite__item .object__info p:not(.object__title) {
+      font-size: 1.5rem; }
+  .favorite__item .object__title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: .7rem;
+    text-transform: uppercase; }
+    .favorite__item .object__title a {
+      text-decoration: none; }
+      .favorite__item .object__title a span {
+        border-bottom-width: 3px; }
+  .favorite__item .object__composition {
+    margin-left: 2.1rem;
+    margin-right: .5rem; }
+    .favorite__item .object__composition .btn {
+      font-size: 1.5rem;
+      background: #ebeef1;
+      height: 4rem;
+      border-radius: 4rem;
+      padding-right: 22px;
+      padding-left: 47px;
+      text-decoration: none;
+      -webkit-transition: background 0.2s ease-out;
+      transition: background 0.2s ease-out; }
+      .favorite__item .object__composition .btn:hover {
+        background: #d8dde2; }
+  .favorite__item .object__address .btn {
+    padding-left: 37px;
+    font-weight: 100; }
+  .favorite__item .object__flats {
+    font-size: 1.6rem;
+    margin-left: 3rem; }
+    .favorite__item .object__flats .num {
+      color: #00874d;
+      font-weight: 500; }
+  .favorite__item .object__price {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 1.5rem; }
+  .favorite__item table {
+    border-collapse: collapse;
+    padding: 0;
+    width: 100%; }
+    .favorite__item table th {
+      background: #e6e9ec;
+      color: #5e5e5e;
+      font-weight: 100;
+      font-size: 1.4rem;
+      padding: 2.5rem 1.5rem; }
+    .favorite__item table tbody tr {
+      cursor: pointer;
+      transition: .3s; }
+      .favorite__item table tbody tr:hover {
+        box-shadow: 0 0 20px rgba(83, 99, 121, 0.4); }
+    .favorite__item table tr.remove td {
+      background-color: red; }
+    .favorite__item table td {
+      font-size: 1.7rem;
+      padding: 1.5rem;
+      font-weight: 500;
+      border-bottom: 1px solid #ebeef1; }
+      .favorite__item table td .flat a {
+        text-decoration: none; }
+        .favorite__item table td .flat a:hover {
+          color: #c20831; }
+      .favorite__item table td .place {
+        margin-top: .3rem;
+        font-size: 1.4rem;
+        font-weight: 100; }
+        .favorite__item table td .place a {
+          color: #00874d; }
+          .favorite__item table td .place a:hover {
+            color: #c20831; }
+      .favorite__item table td .address {
+        margin-top: .3rem;
+        color: #6f6f6f;
+        font-weight: 400;
+        font-size: 1.4rem; }
+  .favorite__item .btn-order {
+    background: #00874d;
+    border-radius: 40px;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    height: 40px;
+    padding-left: 44px;
+    padding-right: 18px;
+    -webkit-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out; }
+    .favorite__item .btn-order:before {
+      left: 15px;
+      top: 9px; }
+    .favorite__item .btn-order:hover {
+      background-color: #c20831; }
+  .favorite__item .delete {
+    background: none;
+    border: none; }
+    .favorite__item .delete line {
+      stroke: #c6183f;
+      stroke-width: 2; }
+    .favorite__item .delete svg {
+      -webkit-transition: transform 0.2s ease-out;
+      transition: transform 0.2s ease-out; }
+    .favorite__item .delete:hover svg {
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
+
+.favorite__top {
+  padding: 2.5rem 2.3rem; }
 
 .popover {
   box-shadow: 0 5px 20px rgba(73, 82, 95, 0.5);

@@ -1,0 +1,187 @@
+.favorite-page{
+	background: $color36;
+	.main{
+		padding-top: 5.5rem;
+	}
+}
+
+.favorite{
+	&__item{
+		background: $color2;
+		border-bottom: 5px solid $color7;
+		
+		.flexbox{
+			align-items: center;
+		}
+
+		// object
+		.object{
+			&__pic{
+				img{
+					vertical-align: top;
+				}			
+			}
+			&__info{
+				margin-left: 3rem;
+				p:not(.object__title){
+					font-size: 1.5rem;
+				}
+			}
+			&__title{
+				font-size: 3rem;
+				font-weight: 800;
+				margin-top: .7rem;
+				text-transform: uppercase;
+				a{
+					text-decoration: none;
+					span{
+						border-bottom-width: 3px;
+					}
+				}
+			}
+			&__composition{
+				margin-left: 2.1rem;
+				margin-right: .5rem;
+				.btn{
+					font-size: 1.5rem;
+					@extend .flex-cv;
+					background: #ebeef1;
+					$h: 4rem;
+					height: $h;
+					border-radius: $h;
+					padding-right: 22px;
+					padding-left: 47px;
+					text-decoration: none;
+					@include transition-param(background);
+					&:hover{
+						background: #d8dde2;
+					}
+				}
+			}
+			&__address{
+				.btn{
+					padding-left: 37px;
+					font-weight: 100;
+				}
+			}
+			&__flats{
+				font-size: 1.6rem;
+				margin-left: 3rem;
+				.num{
+					color: $color8;
+					font-weight: 500;
+				}	
+			}
+			&__price{
+				font-size: 2rem;
+				font-weight: 500;
+				margin-left: 1.5rem;
+			}
+		}
+
+
+		table{
+			border-collapse: collapse;
+			padding: 0;
+			width: 100%;
+			th{
+				background: #e6e9ec;
+				color: $color40;
+				font-weight: 100;
+				font-size: 1.4rem;
+				padding: 2.5rem 1.5rem;
+			}
+
+			tbody{
+				tr{
+					cursor: pointer;
+					transition: .3s;
+					&:hover{
+						box-shadow: 0 0 20px rgba(83,99,121,.4);
+					}
+				}
+			}
+
+			tr.remove{
+				td{
+					background-color: red;
+				}
+			}
+			td{
+				font-size: 1.7rem;
+				padding: 1.5rem;
+				font-weight: 500;
+				border-bottom: 1px solid #ebeef1;
+				.flat{
+					a{
+						text-decoration: none;
+						&:hover{
+							color: $color7;
+						}
+					}
+				}
+				.place{
+					margin-top: .3rem;
+					font-size: 1.4rem;
+					font-weight: 100;
+					a{
+						color: $color8;
+						@extend .tdu;
+						&:hover{
+							color: $color7;
+						}
+					}
+				}
+				.address{
+					margin-top: .3rem;
+					color: $color37;
+					font-weight: 400;
+					font-size: 1.4rem;
+				}
+			}
+		}
+
+		.btn-order{
+			$h: 40px;
+			background: $color8;
+			border-radius: $h;
+			border: none;
+			color: $color2;
+			font-size: 1.5rem;
+			height: $h;
+			padding-left: 44px;
+			padding-right: 18px;
+			@extend .flex-cv;
+			@include transition-param(background-color);
+			&:before{
+				left: 15px;
+				top: 9px;
+			}
+			&:hover{
+				background-color: $color7;
+			}
+		}
+
+		.delete{
+			background: none;
+			border: none;
+			line{
+				stroke: #c6183f;
+				stroke-width:2;
+			}
+			svg{
+				@include transition-param(transform)
+			}
+			&:hover{
+				svg{
+					@include rotation(90deg)					
+				}
+			}
+		}
+	}
+
+	&__top{
+		padding: 2.5rem 2.3rem;
+	}
+
+}

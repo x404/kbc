@@ -406,6 +406,19 @@ $(document).on('click', '.extra-toggle, .showmap', function(e){
 });
 
 
+// delete row from FAVORITE page
+$(document).on('click', '.delete', function(e){
+	e.preventDefault();
+	$this = $(this);
+	console.log($this.closest('table').find('tr').length);
+
+	$this.closest('tr').addClass('remove').fadeOut('slow', function(){
+		$('tr.remove').remove();
+	});
+});
+
+
+
 // sticky header
 var fh = document.querySelector('.fixed-header'),
 	headerh = document.querySelector('.header').offsetHeight;
@@ -440,3 +453,5 @@ function doRate(el, num){
 	document.querySelector('.unit-rating .current').classList.remove('current');
 	el.classList.add('current');
 }
+
+
