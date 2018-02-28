@@ -1,0 +1,102 @@
+.contacts-page{
+	.top{
+		background: #f1f3f5;
+	}
+	.main.flexbox{
+		justify-content: space-between;
+	}
+}
+.contact{
+	&__plate{
+		background: $color2;
+		color: $color39;
+		font-size: 1.7rem;
+		flex: 0 0 510px;
+		padding: 3.1rem 4.8rem 3rem 5.2rem;
+		@include transition-param(box-shadow);
+		p{
+			line-height: 1.8;
+		}
+		
+		.holiday{
+			color: $color7;
+		}
+		.email{
+			color: $color8;
+			@extend .tdu;	
+		}
+
+		.btn{
+			font-size: 1.4rem;
+			font-weight: 100;
+			margin-bottom: 1.2rem;
+			margin-top: .2rem;
+			padding-left: 37px;	
+			$h: 3.4rem;
+			height: $h;
+		}
+
+		&:hover{
+			box-shadow: 0 0 30px rgba(83,99,121,.5);
+		}
+
+		.shedule{
+			margin-top: .8rem;
+		}
+	}
+	&__title{
+		color: $color1;
+		font-size: 2.6rem;
+		font-weight: 500;
+		margin-bottom: -.5rem;
+	}
+
+}
+
+
+.workers{
+	padding: 6rem 0;
+	h1{
+		font-size: 3rem;
+		text-transform: uppercase;
+	}
+	.flexbox{
+		flex-wrap: wrap;
+	}
+}
+
+.worker{
+	&__item{
+		margin: 3.6rem 0;
+		padding-right: 6.2rem;
+		flex: 0 0 270px;
+		line-height: 1.5;
+		&:nth-child(5n){
+			padding-right: 0;
+		}
+	}
+	&__photo{
+		img{
+			margin-bottom: 3px;
+			vertical-align: top;
+		}
+		border-bottom: 4px solid $color7;
+	}
+
+
+	&__name{
+		font-size: 2rem;
+		font-weight: 500;
+		padding-top: 1.9rem;
+	}
+
+	&__post{
+		color: $color32;
+		font-size: 1.5rem;
+		margin: .6rem 0;
+	}
+
+	&__contact{
+		font-size: 1.6rem;
+	}
+}

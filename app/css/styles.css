@@ -112,6 +112,153 @@
 }
 
 */
+.icon-catalog:before {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 77px;
+  height: 65px;
+  left: 0;
+  top: 0; }
+
+.icon-people:before {
+  background-image: url(../images/sprite.png);
+  background-position: -119px -134px;
+  width: 18px;
+  height: 17px; }
+
+.icon-people-gray:before {
+  background-image: url(../images/sprite.png);
+  background-position: -101px -134px;
+  width: 18px;
+  height: 17px; }
+
+.icon-people-dark:before {
+  background-image: url(../images/sprite.png);
+  background-position: -83px -134px;
+  width: 18px;
+  height: 17px; }
+
+.icon-tel:before {
+  background-image: url(../images/sprite.png);
+  background-position: -187px -134px;
+  width: 16px;
+  height: 16px; }
+
+.icon-tel-dark:before {
+  background-image: url(../images/sprite.png);
+  background-position: -171px -134px;
+  width: 16px;
+  height: 16px; }
+
+.icon-bulldozer:before {
+  background-image: url(../images/sprite.png);
+  background-position: -151px 0px;
+  width: 84px;
+  height: 48px;
+  top: 8px;
+  left: 0; }
+
+.icon-house:before {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -65px;
+  width: 67px;
+  height: 69px;
+  top: -4px;
+  left: 0; }
+
+.icon-clock {
+  padding-left: 25px; }
+  .icon-clock:before {
+    background-image: url(../images/sprite.png);
+    background-position: -28px -134px;
+    width: 19px;
+    height: 19px;
+    left: 0;
+    top: 0; }
+
+.icon-darkclock {
+  padding-left: 25px;
+  position: relative; }
+  .icon-darkclock:before {
+    background-image: url(../images/sprite.png);
+    background-position: -47px -134px;
+    width: 19px;
+    height: 19px;
+    left: 0;
+    top: 0; }
+
+.icon-back:before {
+  background-image: url(../images/sprite.png);
+  background-position: -66px -134px;
+  width: 17px;
+  height: 18px;
+  left: 0;
+  top: 0; }
+
+.icon-letter:before {
+  background-image: url(../images/sprite.png);
+  background-position: -203px -134px;
+  width: 18px;
+  height: 14px;
+  left: 0; }
+
+.icon-comment:before {
+  background-image: url(../images/sprite.png);
+  background-position: -137px -134px;
+  width: 17px;
+  height: 17px;
+  left: 0;
+  top: 10px; }
+
+.icon-comment-dark:before {
+  background-image: url(../images/sprite.png);
+  background-position: -154px -134px;
+  width: 17px;
+  height: 17px;
+  left: 0;
+  top: 10px; }
+
+.icon-resume {
+  position: relative; }
+  .icon-resume:before {
+    background-image: url(../images/sprite.png);
+    background-position: -151px -48px;
+    width: 45px;
+    height: 46px; }
+
+.icon-attach-dark {
+  position: relative; }
+  .icon-attach-dark:before {
+    background-image: url(../images/sprite.png);
+    background-position: -18px -161px;
+    width: 16px;
+    height: 19px; }
+
+.icon-attach-white {
+  position: relative; }
+  .icon-attach-white:before {
+    background-image: url(../images/sprite.png);
+    background-position: -34px -161px;
+    width: 16px;
+    height: 19px; }
+
+.icon-pencil {
+  position: relative; }
+  .icon-pencil:before {
+    background-image: url(../images/sprite.png);
+    background-position: 0px -134px;
+    width: 28px;
+    height: 27px; }
+
+.icon-label {
+  position: relative; }
+  .icon-label:before {
+    background-image: url(../images/sprite.png);
+    background-position: -50px -161px;
+    width: 15px;
+    height: 18px;
+    left: 12px; }
+
 /*** reset ***********/
 html, body, ul, ol, li, dl, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, a, img, label, dt, dd {
   margin: 0;
@@ -197,18 +344,18 @@ h3 {
 
 .tdu, .file-upload span, .modal-menu .menu a, .footer__menu a, .footer .idealpromo a, .pagination .prev,
 .pagination .next, .faq-page .head p a,
-.vacancies-page .head p a {
+.vacancies-page .head p a, .contact__plate .email {
   text-decoration: underline; }
   .tdu:hover, .file-upload span:hover, .modal-menu .menu a:hover, .footer__menu a:hover, .footer .idealpromo a:hover, .pagination .prev:hover,
   .pagination .next:hover, .faq-page .head p a:hover,
-  .vacancies-page .head p a:hover {
+  .vacancies-page .head p a:hover, .contact__plate .email:hover {
     text-decoration: none; }
 
-.before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
+.before, .icon-catalog:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-label:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
 .fixed-header .wishlist__link:before,
 .fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .callback .call:before,
 .resume .call:before, .modal-menu .menu .title:after,
-.modal-menu .menu dt:after, .modal-menu .contacts .title:after, .modal-menu .close-modal:after, .footer__menu dt:after, .icon-catalog:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .filter .nav .btn.active:after, .filter .showflat:before, .filter .showmap:before, .installment__tooltip_content:before, .feature .news__link:before,
+.modal-menu .menu dt:after, .modal-menu .contacts .title:after, .modal-menu .close-modal:after, .footer__menu dt:after, .filter .nav .btn.active:after, .filter .showflat:before, .filter .showmap:before, .installment__tooltip_content:before, .feature .news__link:before,
 .topnews .news__link:before, .feature .promo .owl-dot:before, .feature .service__cell:first-child:before, .feature .service__link:after, .feature .service__link:before, .objects .owl-carousel .owl-prev:before, .objects .owl-carousel .owl-next:before,
 .intro__carousel .owl-carousel .owl-prev:before,
 .intro__carousel .owl-carousel .owl-next:before, .objects__info:before, .objects .owl-carousel .owl-prev:after, .objects .owl-carousel .owl-next:after, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
@@ -219,7 +366,8 @@ h3 {
   display: block;
   position: absolute; }
 
-strong {
+strong,
+b {
   font-weight: 500; }
 
 input,
@@ -1062,144 +1210,6 @@ form .form-control {
 
 /* =/footer
 ---------------------------*/
-.icon-catalog:before {
-  background-image: url(../images/sprite.png);
-  background-position: 0px 0px;
-  width: 77px;
-  height: 65px;
-  left: 0;
-  top: 0; }
-
-.icon-people:before {
-  background-image: url(../images/sprite.png);
-  background-position: -119px -134px;
-  width: 18px;
-  height: 17px; }
-
-.icon-people-gray:before {
-  background-image: url(../images/sprite.png);
-  background-position: -101px -134px;
-  width: 18px;
-  height: 17px; }
-
-.icon-people-dark:before {
-  background-image: url(../images/sprite.png);
-  background-position: -83px -134px;
-  width: 18px;
-  height: 17px; }
-
-.icon-tel:before {
-  background-image: url(../images/sprite.png);
-  background-position: -187px -134px;
-  width: 16px;
-  height: 16px; }
-
-.icon-tel-dark:before {
-  background-image: url(../images/sprite.png);
-  background-position: -171px -134px;
-  width: 16px;
-  height: 16px; }
-
-.icon-bulldozer:before {
-  background-image: url(../images/sprite.png);
-  background-position: -151px 0px;
-  width: 84px;
-  height: 48px;
-  top: 8px;
-  left: 0; }
-
-.icon-house:before {
-  background-image: url(../images/sprite.png);
-  background-position: 0px -65px;
-  width: 67px;
-  height: 69px;
-  top: -4px;
-  left: 0; }
-
-.icon-clock {
-  padding-left: 25px; }
-  .icon-clock:before {
-    background-image: url(../images/sprite.png);
-    background-position: -28px -134px;
-    width: 19px;
-    height: 19px;
-    left: 0;
-    top: 0; }
-
-.icon-darkclock {
-  padding-left: 25px;
-  position: relative; }
-  .icon-darkclock:before {
-    background-image: url(../images/sprite.png);
-    background-position: -47px -134px;
-    width: 19px;
-    height: 19px;
-    left: 0;
-    top: 0; }
-
-.icon-back:before {
-  background-image: url(../images/sprite.png);
-  background-position: -66px -134px;
-  width: 17px;
-  height: 18px;
-  left: 0;
-  top: 0; }
-
-.icon-letter:before {
-  background-image: url(../images/sprite.png);
-  background-position: -203px -134px;
-  width: 18px;
-  height: 14px;
-  left: 0; }
-
-.icon-comment:before {
-  background-image: url(../images/sprite.png);
-  background-position: -137px -134px;
-  width: 17px;
-  height: 17px;
-  left: 0;
-  top: 10px; }
-
-.icon-comment-dark:before {
-  background-image: url(../images/sprite.png);
-  background-position: -154px -134px;
-  width: 17px;
-  height: 17px;
-  left: 0;
-  top: 10px; }
-
-.icon-resume {
-  position: relative; }
-  .icon-resume:before {
-    background-image: url(../images/sprite.png);
-    background-position: -151px -48px;
-    width: 45px;
-    height: 46px; }
-
-.icon-attach-dark {
-  position: relative; }
-  .icon-attach-dark:before {
-    background-image: url(../images/sprite.png);
-    background-position: -18px -161px;
-    width: 16px;
-    height: 19px; }
-
-.icon-attach-white {
-  position: relative; }
-  .icon-attach-white:before {
-    background-image: url(../images/sprite.png);
-    background-position: -34px -161px;
-    width: 16px;
-    height: 19px; }
-
-.icon-pencil {
-  position: relative; }
-  .icon-pencil:before {
-    background-image: url(../images/sprite.png);
-    background-position: 0px -134px;
-    width: 28px;
-    height: 27px; }
-
 .carousel-image {
   display: block;
   transition: .3s transform ease-out;
@@ -3383,6 +3393,79 @@ main {
       top: 10px; }
     .filter-sort .btn:hover {
       background-color: #00874d; }
+
+.contacts-page .top {
+  background: #f1f3f5; }
+
+.contacts-page .main.flexbox {
+  justify-content: space-between; }
+
+.contact__plate {
+  background: #fff;
+  color: #2f2f2f;
+  font-size: 1.7rem;
+  flex: 0 0 510px;
+  padding: 3.1rem 4.8rem 3rem 5.2rem;
+  -webkit-transition: box-shadow 0.2s ease-out;
+  transition: box-shadow 0.2s ease-out; }
+  .contact__plate p {
+    line-height: 1.8; }
+  .contact__plate .holiday {
+    color: #c20831; }
+  .contact__plate .email {
+    color: #00874d; }
+  .contact__plate .btn {
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin-bottom: 1.2rem;
+    margin-top: .2rem;
+    padding-left: 37px;
+    height: 3.4rem; }
+  .contact__plate:hover {
+    box-shadow: 0 0 30px rgba(83, 99, 121, 0.5); }
+  .contact__plate .shedule {
+    margin-top: .8rem; }
+
+.contact__title {
+  color: #000;
+  font-size: 2.6rem;
+  font-weight: 500;
+  margin-bottom: -.5rem; }
+
+.workers {
+  padding: 6rem 0; }
+  .workers h1 {
+    font-size: 3rem;
+    text-transform: uppercase; }
+  .workers .flexbox {
+    flex-wrap: wrap; }
+
+.worker__item {
+  margin: 3.6rem 0;
+  padding-right: 6.2rem;
+  flex: 0 0 270px;
+  line-height: 1.5; }
+  .worker__item:nth-child(5n) {
+    padding-right: 0; }
+
+.worker__photo {
+  border-bottom: 4px solid #c20831; }
+  .worker__photo img {
+    margin-bottom: 3px;
+    vertical-align: top; }
+
+.worker__name {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-top: 1.9rem; }
+
+.worker__post {
+  color: #717171;
+  font-size: 1.5rem;
+  margin: .6rem 0; }
+
+.worker__contact {
+  font-size: 1.6rem; }
 
 .popover {
   box-shadow: 0 5px 20px rgba(73, 82, 95, 0.5);
