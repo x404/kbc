@@ -352,14 +352,15 @@ function startClock(sendform){
 // показываем второй  уровень меню
 $(document).on('click', '.o-menu .folder > a, .o-menu .folder > span', function(e){
 	e.preventDefault();
-	var $this = $(this);
+	let $this = $(this);
 	$this.next('.subnav').slideToggle().prev().toggleClass('open');
 })
 
 
 // обратный звонок
-$(document).on('click', '.btn-callback', function(e){
-	document.querySelector('.modal-callback').classList.add('open')
+$(document).on('click', '[data-toggle="sidemodal"]', function(e){
+	let target = this.dataset.target;
+	document.querySelector(target).classList.add('open');
 	document.querySelector('.body').classList.add('m-modal-open')
 });
 
@@ -379,7 +380,7 @@ $(document).on('click', '.close-modal', function(e){
 // faq
 $(document).on('click', '.faq__item .toggle', function(e){
 	e.preventDefault();
-	var $this = $(this),
+	let $this = $(this),
 		item = $this.closest('.faq__item');
 	item.find('.answer').slideToggle('normal',function(){
 		$this.toggleClass('toggle-collapse');

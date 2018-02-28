@@ -1475,7 +1475,7 @@ form .form-control {
       visibility: visible;
       z-index: 30; }
 
-.modal-callback {
+.sidemodal {
   background: rgba(13, 103, 64, 0.97);
   color: #fff;
   position: fixed;
@@ -1486,11 +1486,11 @@ form .form-control {
   z-index: 505;
   transform: translateX(100%);
   transition: .3s transform ease-out; }
-  .modal-callback.open {
+  .sidemodal.open {
     transform: translateX(0); }
-  .modal-callback .callback__form {
+  .sidemodal .callback__form {
     margin-top: 1.2rem; }
-  .modal-callback .inner {
+  .sidemodal .inner {
     padding: 12.5rem 0 0 3.7rem;
     position: absolute;
     width: 31rem;
@@ -1499,22 +1499,22 @@ form .form-control {
     bottom: 0;
     right: 0;
     overflow-y: auto; }
-  .modal-callback .title {
+  .sidemodal .title {
     font-weight: 500;
     font-size: 2.5rem;
     text-transform: uppercase; }
-  .modal-callback .text {
+  .sidemodal .text {
     font-size: 1.6rem;
     line-height: 1.6;
     padding-top: 2.2rem;
     padding-right: 2rem; }
-  .modal-callback .input-field {
+  .sidemodal .input-field {
     margin-top: 1.3rem; }
-    .modal-callback .input-field label {
+    .sidemodal .input-field label {
       font-size: 1.4rem; }
-  .modal-callback .submit {
+  .sidemodal .submit {
     margin-top: 4.5rem; }
-  .modal-callback .form-control {
+  .sidemodal .form-control {
     width: 100%; }
 
 .close-modal {
@@ -1528,6 +1528,9 @@ form .form-control {
   .close-modal svg {
     -webkit-transition: transform 0.2s ease-out;
     transition: transform 0.2s ease-out; }
+  .close-modal line {
+    stroke: white;
+    stroke-width: 2; }
   .close-modal:hover svg {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -3068,6 +3071,9 @@ main {
     position: absolute; }
     .modal-dialog .close svg {
       transition: .3s transform; }
+    .modal-dialog .close ling {
+      stroke: #fff;
+      stroke-width: 2; }
     .modal-dialog .close:hover svg {
       -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);

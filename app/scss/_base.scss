@@ -1578,7 +1578,7 @@ form{
 
 
 
-.modal-callback{
+.sidemodal{
 	background: rgba(13,103,64,.97);
 	color: $color2;
 	// height: 100%;
@@ -1649,6 +1649,10 @@ form{
 	z-index: 99;
 	svg{
 		@include transition-param(transform)
+	}
+	line{
+		stroke:white;
+		stroke-width:2
 	}
 	&:hover{
 		svg{

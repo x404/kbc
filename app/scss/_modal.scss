@@ -112,6 +112,10 @@
   	svg{
 		transition: .3s transform;
   	}
+  	ling{
+  		stroke:#fff;
+  		stroke-width:2;
+  	}
   	&:hover{
   		svg{
   			@include rotation(90deg)
