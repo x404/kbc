@@ -3494,7 +3494,8 @@ main {
 
 .favorite__item {
   background: #fff;
-  border-bottom: 5px solid #c20831; }
+  border-bottom: 5px solid #c20831;
+  margin-bottom: 3rem; }
   .favorite__item .flexbox {
     align-items: center; }
   .favorite__item .object__pic img {
@@ -3547,9 +3548,11 @@ main {
     .favorite__item table th {
       background: #e6e9ec;
       color: #5e5e5e;
-      font-weight: 100;
       font-size: 1.4rem;
-      padding: 2.5rem 1.5rem; }
+      font-weight: 100;
+      padding: 2.5rem 1.5rem;
+      position: relative;
+      z-index: 30; }
     .favorite__item table tbody tr {
       cursor: pointer;
       transition: .3s; }
@@ -3558,10 +3561,12 @@ main {
     .favorite__item table tr.remove td {
       background-color: red; }
     .favorite__item table td {
+      border-bottom: 1px solid #ebeef1;
       font-size: 1.7rem;
-      padding: 1.5rem;
       font-weight: 500;
-      border-bottom: 1px solid #ebeef1; }
+      padding: 1.5rem;
+      position: relative;
+      z-index: 10; }
       .favorite__item table td .flat a {
         text-decoration: none; }
         .favorite__item table td .flat a:hover {
@@ -3579,6 +3584,25 @@ main {
         color: #6f6f6f;
         font-weight: 400;
         font-size: 1.4rem; }
+      .favorite__item table td.has_plan {
+        z-index: 1; }
+        .favorite__item table td.has_plan .plan {
+          -webkit-transition: opacity 0.2s ease-out;
+          transition: opacity 0.2s ease-out;
+          box-shadow: 0 4px 20px rgba(104, 144, 187, 0.4);
+          left: 50px;
+          opacity: 0;
+          position: absolute;
+          top: 40px;
+          width: 320px;
+          z-index: -10; }
+          .favorite__item table td.has_plan .plan img {
+            max-width: 100%; }
+        .favorite__item table td.has_plan:hover {
+          z-index: 100; }
+          .favorite__item table td.has_plan:hover .plan {
+            opacity: 1;
+            z-index: 1; }
   .favorite__item .btn-order {
     background: #00874d;
     border-radius: 40px;
@@ -3610,7 +3634,9 @@ main {
       transform: rotate(90deg); }
 
 .favorite__top {
-  padding: 2.5rem 2.3rem; }
+  padding: 2.5rem 2.3rem;
+  position: relative;
+  z-index: 30; }
 
 .popover {
   box-shadow: 0 5px 20px rgba(73, 82, 95, 0.5);
