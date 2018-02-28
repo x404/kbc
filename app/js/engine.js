@@ -243,7 +243,7 @@ $(document).ready(function(){
 
 
 	// reviews page
-	$('.filter-select').selectize({
+	$('.object-select').selectize({
 		create: true,
 		sortField: {
 			field: 'text',
@@ -251,6 +251,15 @@ $(document).ready(function(){
 		},
 		dropdownParent: 'body'
 	});
+
+	$('#selectreview').selectize({
+		create: true,
+		sortField: {
+			field: 'text',
+			direction: 'asc'
+		}
+	});
+
 
 
 	// mask
@@ -424,4 +433,15 @@ function getFileName(el){
 $('#answer-vacancy').on('shown.bs.modal', function (e) {
 	var vacancy = $(e.relatedTarget).data('vacancy');
 	document.querySelector('#vacancy').val = vacancy;
+})
+
+
+function doRate(el, num){
+	document.querySelector('.unit-rating .current').classList.remove('current');
+	el.classList.add('current');
+}
+
+
+$(document).on('click', '.unit-rating li', function(e){
+	console.log(this)
 })

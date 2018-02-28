@@ -461,3 +461,80 @@
 	}
 }
 // =/sortbox
+
+
+.selectgrade{
+	margin: 1.5rem 0 -1rem;
+	.unit{
+		&-rating{
+			display: flex;
+			background: url(../images/bigstar.png) no-repeat left top;
+			cursor: pointer;
+			$h: 44px;
+			position: relative;
+			height: $h;
+			width: 246px;
+			list-style: none;
+			li{
+				text-indent: -9999em;
+				a{
+					display: block;
+					height: $h;
+					position: absolute;
+					text-decoration: none;
+					text-indent: -9999em;
+					width: 48px;
+					z-index: 17;
+					&:hover{
+						background: url(../images/bigstar.png) no-repeat left bottom;
+						left: 0;
+						top: 0;
+					}					
+					&:hover{
+						z-index: 2;
+					}
+					&.current{
+						z-index: 2;
+					}
+				}
+			}
+		}
+
+		$w: 48px;
+		&-r1{
+			&:hover,
+			&.current{
+				width: 48px;
+			}
+		}
+		&-r2{
+			left: 48px;
+			&:hover,
+			&.current{
+				width: 98px;
+			}
+		}
+		&-r3{
+			left: 98px;
+			&:hover,
+			&.current{
+				width: 148px;
+			}
+		}
+		&-r4{
+			left: 148px;
+			&:hover,
+			&.current{
+				width: 198px;
+			}
+		}
+		&-r5{
+			left: 198px;
+			&:hover,
+			&.current{
+				width: 246px;
+			}
+		}
+	}
+
+}

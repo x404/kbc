@@ -2623,6 +2623,53 @@ body.modal-open {
     .sortbox__option:hover {
       color: #00874d; }
 
+.selectgrade {
+  margin: 1.5rem 0 -1rem; }
+  .selectgrade .unit-rating {
+    display: flex;
+    background: url(../images/bigstar.png) no-repeat left top;
+    cursor: pointer;
+    position: relative;
+    height: 44px;
+    width: 246px;
+    list-style: none; }
+    .selectgrade .unit-rating li {
+      text-indent: -9999em; }
+      .selectgrade .unit-rating li a {
+        display: block;
+        height: 44px;
+        position: absolute;
+        text-decoration: none;
+        text-indent: -9999em;
+        width: 48px;
+        z-index: 17; }
+        .selectgrade .unit-rating li a:hover {
+          background: url(../images/bigstar.png) no-repeat left bottom;
+          left: 0;
+          top: 0; }
+        .selectgrade .unit-rating li a:hover {
+          z-index: 2; }
+        .selectgrade .unit-rating li a.current {
+          z-index: 2; }
+  .selectgrade .unit-r1:hover, .selectgrade .unit-r1.current {
+    width: 48px; }
+  .selectgrade .unit-r2 {
+    left: 48px; }
+    .selectgrade .unit-r2:hover, .selectgrade .unit-r2.current {
+      width: 98px; }
+  .selectgrade .unit-r3 {
+    left: 98px; }
+    .selectgrade .unit-r3:hover, .selectgrade .unit-r3.current {
+      width: 148px; }
+  .selectgrade .unit-r4 {
+    left: 148px; }
+    .selectgrade .unit-r4:hover, .selectgrade .unit-r4.current {
+      width: 198px; }
+  .selectgrade .unit-r5 {
+    left: 198px; }
+    .selectgrade .unit-r5:hover, .selectgrade .unit-r5.current {
+      width: 246px; }
+
 .category_link {
   background: #00874d;
   color: #fff;
@@ -2999,6 +3046,39 @@ main {
 
 #answer-vacancy .bottom {
   margin-top: 1.8rem; }
+
+.select-wrapper {
+  margin-top: 3rem; }
+
+#add-review label {
+  font-size: 1.4rem; }
+
+#add-review .selectize-input > input {
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.4rem; }
+  #add-review .selectize-input > input::-webkit-input-placeholder {
+    color: #fff; }
+  #add-review .selectize-input > input::-moz-placeholder {
+    color: #fff; }
+  #add-review .selectize-input > input:-ms-input-placeholder {
+    color: #fff; }
+  #add-review .selectize-input > input:focus::-webkit-input-placeholder {
+    transition: line-height 0.5s ease; }
+  #add-review .selectize-input > input:focus::-moz-placeholder {
+    transition: line-height 0.5s ease; }
+  #add-review .selectize-input > input:focus:-ms-input-placeholder {
+    transition: line-height 0.5s ease; }
+
+#add-review .selectize-input {
+  border-bottom-color: #fff; }
+  #add-review .selectize-input.full {
+    background: none;
+    color: #fff;
+    font-size: 1.4rem; }
+
+#add-review .selectize-control.single .selectize-input:after {
+  background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHCAQAAACWu2SvAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAhwMEhp729ujAAAASklEQVQI103KsQ2AQAxDURc0zMBmN8BJNAzDejfMo0AJxJIl/5+Iw5BfhkNitzAbTyx7xEmrCU55v0o1LlGq8SfiAlftLXX3r5M8LPxhOWWIfOgAAAAASUVORK5CYII="); }
 
 .vacancies-page .neck {
   padding-bottom: 2rem; }
