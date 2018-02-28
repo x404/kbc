@@ -440,8 +440,3 @@ function doRate(el, num){
 	document.querySelector('.unit-rating .current').classList.remove('current');
 	el.classList.add('current');
 }
-
-
-$(document).on('click', '.unit-rating li', function(e){
-	console.log(this)
-})

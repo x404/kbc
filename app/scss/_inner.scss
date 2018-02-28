@@ -464,17 +464,17 @@
 
 
 .selectgrade{
-	margin: 1.5rem 0 -1rem;
+	margin: 2.3rem 0 -0.5rem;
 	.unit{
 		&-rating{
-			display: flex;
+			$h: 44px;
 			background: url(../images/bigstar.png) no-repeat left top;
 			cursor: pointer;
-			$h: 44px;
-			position: relative;
+			display: flex;
 			height: $h;
-			width: 246px;
 			list-style: none;
+			position: relative;
+			width: 246px;
 			li{
 				text-indent: -9999em;
 				a{
@@ -485,7 +485,8 @@
 					text-indent: -9999em;
 					width: 48px;
 					z-index: 17;
-					&:hover{
+					&:hover,
+					&.current{
 						background: url(../images/bigstar.png) no-repeat left bottom;
 						left: 0;
 						top: 0;
@@ -493,48 +494,122 @@
 					&:hover{
 						z-index: 2;
 					}
+				}
+			}
+
+			&:hover{
+				li a.current{
+					background: none;
+					width: 48px;
+					z-index: -1;
+					&:hover{
+						background: url(../images/bigstar.png) no-repeat left bottom;
+					}
+				}
+
+
+				a{
 					&.current{
-						z-index: 2;
+						z-index: 1;
+						width: 48px;
+						&:hover{
+							left: 0;
+							z-index: 2;
+						}
+					}
+				}
+
+				.unit-r1{
+					&:hover{
+						width: 48px;
+					}
+					&.current{
+						left: 0;
+						&:hover{
+							width: 48px;
+						}
+					}
+				}
+
+				.unit-r2{
+					&:hover{
+						width: 98px;
+					}
+					&.current{
+						left: 48px;
+						&:hover{
+							width: 98px;
+						}
+					}
+				}
+				.unit-r3{
+					&:hover{
+						width: 148px;
+					}
+					&.current{
+						left: 98px;
+						&:hover{
+							width: 148px;
+						}
+					}
+				}
+				.unit-r4{
+					&:hover{
+						width: 198px;
+					}
+					&.current{
+						left: 148px;
+						&:hover{
+							width: 198px;
+						}
+					}
+				}
+				.unit-r5{
+					&:hover{
+						width: 246px;
+					}
+					&.current{
+						left: 198px;
+						&:hover{
+							width: 246px;
+						}
 					}
 				}
 			}
+
+
+
+					.unit-r1{
+						&.current{
+							width: 48px;
+						}
+					}
+					.unit-r2{
+						left: 48px;
+						&.current{
+							width: 98px;
+						}
+					}
+					.unit-r3{
+						left: 98px;
+						&.current{
+							width: 148px;
+						}
+					}
+					.unit-r4{
+						left: 148px;
+						&.current{
+							width: 198px;
+						}
+					}
+					.unit-r5{
+						left: 198px;
+						&.current{
+							width: 246px;
+						}
+					}
 		}
 
-		$w: 48px;
-		&-r1{
-			&:hover,
-			&.current{
-				width: 48px;
-			}
-		}
-		&-r2{
-			left: 48px;
-			&:hover,
-			&.current{
-				width: 98px;
-			}
-		}
-		&-r3{
-			left: 98px;
-			&:hover,
-			&.current{
-				width: 148px;
-			}
-		}
-		&-r4{
-			left: 148px;
-			&:hover,
-			&.current{
-				width: 198px;
-			}
-		}
-		&-r5{
-			left: 198px;
-			&:hover,
-			&.current{
-				width: 246px;
-			}
-		}
 	}
 
 }

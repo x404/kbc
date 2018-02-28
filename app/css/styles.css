@@ -2624,15 +2624,15 @@ body.modal-open {
       color: #00874d; }
 
 .selectgrade {
-  margin: 1.5rem 0 -1rem; }
+  margin: 2.3rem 0 -0.5rem; }
   .selectgrade .unit-rating {
-    display: flex;
     background: url(../images/bigstar.png) no-repeat left top;
     cursor: pointer;
-    position: relative;
+    display: flex;
     height: 44px;
-    width: 246px;
-    list-style: none; }
+    list-style: none;
+    position: relative;
+    width: 246px; }
     .selectgrade .unit-rating li {
       text-indent: -9999em; }
       .selectgrade .unit-rating li a {
@@ -2643,32 +2643,72 @@ body.modal-open {
         text-indent: -9999em;
         width: 48px;
         z-index: 17; }
-        .selectgrade .unit-rating li a:hover {
+        .selectgrade .unit-rating li a:hover, .selectgrade .unit-rating li a.current {
           background: url(../images/bigstar.png) no-repeat left bottom;
           left: 0;
           top: 0; }
         .selectgrade .unit-rating li a:hover {
           z-index: 2; }
-        .selectgrade .unit-rating li a.current {
-          z-index: 2; }
-  .selectgrade .unit-r1:hover, .selectgrade .unit-r1.current {
-    width: 48px; }
-  .selectgrade .unit-r2 {
-    left: 48px; }
-    .selectgrade .unit-r2:hover, .selectgrade .unit-r2.current {
+    .selectgrade .unit-rating:hover li a.current {
+      background: none;
+      width: 48px;
+      z-index: -1; }
+      .selectgrade .unit-rating:hover li a.current:hover {
+        background: url(../images/bigstar.png) no-repeat left bottom; }
+    .selectgrade .unit-rating:hover a.current {
+      z-index: 1;
+      width: 48px; }
+      .selectgrade .unit-rating:hover a.current:hover {
+        left: 0;
+        z-index: 2; }
+    .selectgrade .unit-rating:hover .unit-r1:hover {
+      width: 48px; }
+    .selectgrade .unit-rating:hover .unit-r1.current {
+      left: 0; }
+      .selectgrade .unit-rating:hover .unit-r1.current:hover {
+        width: 48px; }
+    .selectgrade .unit-rating:hover .unit-r2:hover {
       width: 98px; }
-  .selectgrade .unit-r3 {
-    left: 98px; }
-    .selectgrade .unit-r3:hover, .selectgrade .unit-r3.current {
+    .selectgrade .unit-rating:hover .unit-r2.current {
+      left: 48px; }
+      .selectgrade .unit-rating:hover .unit-r2.current:hover {
+        width: 98px; }
+    .selectgrade .unit-rating:hover .unit-r3:hover {
       width: 148px; }
-  .selectgrade .unit-r4 {
-    left: 148px; }
-    .selectgrade .unit-r4:hover, .selectgrade .unit-r4.current {
+    .selectgrade .unit-rating:hover .unit-r3.current {
+      left: 98px; }
+      .selectgrade .unit-rating:hover .unit-r3.current:hover {
+        width: 148px; }
+    .selectgrade .unit-rating:hover .unit-r4:hover {
       width: 198px; }
-  .selectgrade .unit-r5 {
-    left: 198px; }
-    .selectgrade .unit-r5:hover, .selectgrade .unit-r5.current {
+    .selectgrade .unit-rating:hover .unit-r4.current {
+      left: 148px; }
+      .selectgrade .unit-rating:hover .unit-r4.current:hover {
+        width: 198px; }
+    .selectgrade .unit-rating:hover .unit-r5:hover {
       width: 246px; }
+    .selectgrade .unit-rating:hover .unit-r5.current {
+      left: 198px; }
+      .selectgrade .unit-rating:hover .unit-r5.current:hover {
+        width: 246px; }
+    .selectgrade .unit-rating .unit-r1.current {
+      width: 48px; }
+    .selectgrade .unit-rating .unit-r2 {
+      left: 48px; }
+      .selectgrade .unit-rating .unit-r2.current {
+        width: 98px; }
+    .selectgrade .unit-rating .unit-r3 {
+      left: 98px; }
+      .selectgrade .unit-rating .unit-r3.current {
+        width: 148px; }
+    .selectgrade .unit-rating .unit-r4 {
+      left: 148px; }
+      .selectgrade .unit-rating .unit-r4.current {
+        width: 198px; }
+    .selectgrade .unit-rating .unit-r5 {
+      left: 198px; }
+      .selectgrade .unit-rating .unit-r5.current {
+        width: 246px; }
 
 .category_link {
   background: #00874d;
