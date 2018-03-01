@@ -117,8 +117,14 @@
 .gbi-catalog{
 	.main{
 		flex-wrap: wrap;
-		margin-top: 2.7rem;
-		margin-bottom: 3rem;
+		padding-top: 3.5rem;
+		padding-bottom: 3rem;
+	}
+
+	.head{
+		.flexbox{
+			width: 100%;
+		}
 	}
 }
 .catalog{
@@ -162,6 +168,138 @@
 		span{
 			transition: .3s;
 			border-bottom: 2px solid $color7;
+		}
+	}
+}
+
+
+// aside
+
+// subcatalog
+.list_product{
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 80px;
+}
+
+.product{
+	&__item{
+		background-color: $color2;
+		margin-bottom: 2.3rem;
+		margin-right: 2.4rem;
+		padding: 20px;
+		position: relative;
+		width: 282px;
+		@include transition-param(box-shadow);
+		img{
+			@include transition-param(transform);
+		}
+		&:after{
+			@extend .before;
+			@include transition-param(border);
+			border-bottom: 4px solid $color7;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+		}
+		&:nth-child(4n){
+			margin-right: 0;
+		}
+		&:hover{
+			box-shadow: 0 5px 20px rgba(83,99,121,.3);
+			&:after{
+				border-bottom-width: 8px;				
+			}
+			img{
+				transform: scale(1.15)
+			}
+		}
+	}
+
+	&__link{
+		text-decoration: none;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	&__pic{
+		overflow: hidden;
+		width: 240px;
+		height: 170px;
+		@extend .flex-center;
+		position: relative;
+		&.no-pic{
+			@include gradient-vertical(#e2e2e2, #e2e2e2);
+			&:before{
+				@extend .before;
+				width: 100%;
+				left: 0;
+				top: 0;
+				height: 100%;
+				background: url(../images/noimage.png) no-repeat center;
+			}
+		}
+	}
+
+	&__title{
+		font-size: 1.6rem;
+		font-weight: 500;
+		margin: 1rem 0;
+	}
+
+	&__desc{
+		color: $color41;
+		line-height: 1.8rem;
+		margin: 1rem 0;
+		flex-grow: 1;
+	}
+
+	&__price{
+		color: $color8;
+		font-size: 2rem;
+		font-weight: 500;
+	}
+}
+
+
+// sidebar
+.sidebar{
+	border: 2px solid #dce2e7;
+	font-size: 1.5rem;
+	a, span{
+		padding-left: 21px;
+		// height: 60px;
+		padding: 1.2rem 10px 1.2rem 21px;
+		@extend .flex-cv;
+		
+	}
+	a{
+		text-decoration: none;
+		transition: .3s;
+		&:hover{
+			background-color: $color42;
+			color: $color8;
+			padding-left: 31px;
+		}
+	}
+	.active{
+		position: relative;
+		a, span{
+			background-color: $color8;
+			color: $color2;
+			cursor: default;
+		}
+		&:after{
+			@extend .before;
+			width: 0;
+			height: 0;
+			border-top: 21px solid transparent;
+			border-left: 30px solid $color8;
+			right: -30px;
+			top: 50%;
+			margin-top: -21px;
+			border-bottom: 21px solid transparent;
 		}
 	}
 }

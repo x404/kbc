@@ -52,6 +52,12 @@
 .col-2 {
   flex: 0 0 20%; }
 
+.col-3 {
+  flex: 0 0 30%; }
+
+.col-4 {
+  flex: 0 0 40%; }
+
 .col-5 {
   flex: 0 0 50%; }
 
@@ -63,6 +69,9 @@
 
 .col-8 {
   flex: 0 0 80%; }
+
+.col-9 {
+  flex: 0 0 90%; }
 
 .offset-col-1 {
   margin-left: 10%; }
@@ -394,7 +403,7 @@ h3 {
 .intro__carousel .owl-carousel .owl-next:before, .objects__info:before, .objects .owl-carousel .owl-prev:after, .objects .owl-carousel .owl-next:after, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .big-icon:before, .neck .tabs .tab.active:after, .pagination .prev:before,
 .pagination .next:before, .picking__link span:before, .sortbox__option-up:after, .sortbox__option-down:after, .faq-page .head .btn:before,
-.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .popover-link:before {
+.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .popover-link:before {
   content: "";
   display: block;
   position: absolute; }
@@ -415,13 +424,13 @@ input[type="submit"] {
 .flex-cv, .btn-more, .feature .news .date,
 .topnews .news .date, .feature .news .cat__link,
 .topnews .news .cat__link, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
-.vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top, .review__bottom, .filter-sort .btn, .favorite__item .object__composition .btn, .favorite__item .btn-order, .catalog__pic, .popover-bottom {
+.vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top, .review__bottom, .filter-sort .btn, .favorite__item .object__composition .btn, .favorite__item .btn-order, .catalog__pic, .sidebar a, .sidebar span, .popover-bottom {
   display: flex;
   align-items: center; }
 
 .flex-center, .btn-faq, .btn-review, .modal-menu .close-modal, .feature .news .date .num,
 .topnews .news .date .num, .feature .promo .type-2 .more,
-.feature .promo .type-3 .more, .pagination, .pagination a, .pagination span, .gbi-page .menu .icon, .popover .diagram, .popover .diagram .num {
+.feature .promo .type-3 .more, .pagination, .pagination a, .pagination span, .gbi-page .menu .icon, .product__pic, .popover .diagram, .popover .diagram .num {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -2411,7 +2420,15 @@ body.modal-open {
     position: relative; }
     .neck .back:before {
       left: 9px;
-      top: 6px; }
+      top: 6px;
+      -webkit-transition: filter 0.2s ease-out;
+      transition: filter 0.2s ease-out; }
+    .neck .back:hover {
+      background-color: #fff;
+      color: #000;
+      border-color: #fff; }
+      .neck .back:hover:before {
+        filter: invert(1); }
   .neck .date {
     font-size: 1.5rem;
     margin-top: 2rem;
@@ -3748,8 +3765,11 @@ main {
 
 .gbi-catalog .main {
   flex-wrap: wrap;
-  margin-top: 2.7rem;
-  margin-bottom: 3rem; }
+  padding-top: 3.5rem;
+  padding-bottom: 3rem; }
+
+.gbi-catalog .head .flexbox {
+  width: 100%; }
 
 .catalog__item {
   -webkit-transition: box-shadow 0.2s ease-out;
@@ -3787,6 +3807,108 @@ main {
   .catalog__title span {
     transition: .3s;
     border-bottom: 2px solid #c20831; }
+
+.list_product {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 80px; }
+
+.product__item {
+  background-color: #fff;
+  margin-bottom: 2.3rem;
+  margin-right: 2.4rem;
+  padding: 20px;
+  position: relative;
+  width: 282px;
+  -webkit-transition: box-shadow 0.2s ease-out;
+  transition: box-shadow 0.2s ease-out; }
+  .product__item img {
+    -webkit-transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out; }
+  .product__item:after {
+    -webkit-transition: border 0.2s ease-out;
+    transition: border 0.2s ease-out;
+    border-bottom: 4px solid #c20831;
+    bottom: 0;
+    left: 0;
+    width: 100%; }
+  .product__item:nth-child(4n) {
+    margin-right: 0; }
+  .product__item:hover {
+    box-shadow: 0 5px 20px rgba(83, 99, 121, 0.3); }
+    .product__item:hover:after {
+      border-bottom-width: 8px; }
+    .product__item:hover img {
+      transform: scale(1.15); }
+
+.product__link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
+.product__pic {
+  overflow: hidden;
+  width: 240px;
+  height: 170px;
+  position: relative; }
+  .product__pic.no-pic {
+    background-image: -webkit-linear-gradient(top, #e2e2e2 0%, #e2e2e2 100%);
+    background-image: -o-linear-gradient(top, #e2e2e2 0%, #e2e2e2 100%);
+    background-image: linear-gradient(to bottom, #e2e2e2 0%, #e2e2e2 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFE2E2E2', endColorstr='#FFE2E2E2', GradientType=0); }
+    .product__pic.no-pic:before {
+      width: 100%;
+      left: 0;
+      top: 0;
+      height: 100%;
+      background: url(../images/noimage.png) no-repeat center; }
+
+.product__title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 1rem 0; }
+
+.product__desc {
+  color: #5b5b5b;
+  line-height: 1.8rem;
+  margin: 1rem 0;
+  flex-grow: 1; }
+
+.product__price {
+  color: #00874d;
+  font-size: 2rem;
+  font-weight: 500; }
+
+.sidebar {
+  border: 2px solid #dce2e7;
+  font-size: 1.5rem; }
+  .sidebar a, .sidebar span {
+    padding-left: 21px;
+    padding: 1.2rem 10px 1.2rem 21px; }
+  .sidebar a {
+    text-decoration: none;
+    transition: .3s; }
+    .sidebar a:hover {
+      background-color: #dce2e7;
+      color: #00874d;
+      padding-left: 31px; }
+  .sidebar .active {
+    position: relative; }
+    .sidebar .active a, .sidebar .active span {
+      background-color: #00874d;
+      color: #fff;
+      cursor: default; }
+    .sidebar .active:after {
+      width: 0;
+      height: 0;
+      border-top: 21px solid transparent;
+      border-left: 30px solid #00874d;
+      right: -30px;
+      top: 50%;
+      margin-top: -21px;
+      border-bottom: 21px solid transparent; }
 
 .popover {
   box-shadow: 0 5px 20px rgba(73, 82, 95, 0.5);
