@@ -7,6 +7,27 @@
 	}
 }
 
+
+.icon-sett{
+	&:before{
+		@extend .before;
+		@include sprite($icon-sett);
+		left: 0;
+		top: 0;
+	}
+}
+
+
+.icon-pricelist{
+	&:before{
+		@extend .before;
+		@include sprite($icon-pricelist);
+		left: 0;
+		top: 0;
+	}
+}
+
+
 .icon-people{
 	&:before{
 		@extend .before;

@@ -1,0 +1,109 @@
+.gbi-page{
+		background-color: $color36;
+	.main{
+	}
+	.neck{
+		padding-bottom: 6rem;
+		.title{
+			margin-bottom: 1.8rem;
+		}
+	}
+
+	// =menu
+	.menu{
+		position: relative;
+		z-index: 30;
+		margin-top: -7rem;
+		font-size: 2.2rem;
+		width: 100%;
+		font-weight: 500;
+		ul{
+			display: flex;
+			justify-content: space-between;
+		}
+		li{
+			background-color: $color2;
+			width: 32%;
+			@include transition-param(box-shadow);
+			&:hover{
+				box-shadow: 0 5px 20px rgba(83,99,121,.3)
+			}
+		}
+
+		@mixin left($l){
+			left: $l - 10px;
+		}
+
+		.icon{
+			@extend .flex-center;
+			height: 135px;
+			position: relative;
+			text-decoration: none;
+			&:before{
+				transition: .3s left;
+				left: 0;
+			}
+			&:hover{
+				.fill-effect:before{
+					transform: translateX(0);
+				}
+				span{
+					color: $color2;
+				}
+				&:before{
+				}
+			}			
+			&-catalog{
+				$l: 94px;
+				&:before{
+					left: $l;
+					top: 31px;
+				}
+				&:hover:before{
+					@include left($l);
+				}
+				.line{
+					margin-left: 65px;
+				}
+			}
+			&-sett{
+				$l: 94px;
+				&:before{
+					left: $l;
+					top: 31px;
+				}
+				&:hover:before{
+					@include left($l);
+				}
+				.line{
+					margin-left: 100px;
+				}
+			}
+			&-pricelist{
+				$l: 160px;
+				&:before{
+					left: $l;
+					top: 32px;
+				}
+				&:hover:before{
+					@include left($l);
+				}
+				.line{
+					margin-left: 50px;
+				}
+			}
+		}
+	}
+	// =/menu
+
+	.main{
+		.carousel{
+			margin-top: 2.8rem;
+		}
+		.content{
+			padding-left: 110px;
+			margin-top: 1.5rem;
+			flex-grow: 1;
+		}
+	}
+}
