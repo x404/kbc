@@ -414,7 +414,6 @@ $(document).on('click', '.delete', function(e){
 	e.stopPropagation();
 	e.preventDefault();
 	$this = $(this);
-	console.log($this.closest('table').find('tr').length);
 
 	$this.closest('tr').addClass('remove').fadeOut('slow', function(){
 		$('tr.remove').remove();
@@ -425,7 +424,6 @@ $(document).on('click', '.delete', function(e){
 $(document).on('click', '[data-link]', function(e){
 	e.preventDefault;
 	e.stopPropagation();
-	console.log($(this));
 	let url = this.dataset.link;
 	window.open(url);
 });
