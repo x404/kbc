@@ -261,6 +261,14 @@ $(document).ready(function(){
 	});
 
 
+	$('.select').selectize({
+		create: true,
+		sortField: {
+			field: 'text',
+			direction: 'asc'
+		}
+	});
+
 
 	// mask
 	$('input.tel').inputmask({
