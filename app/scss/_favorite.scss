@@ -17,69 +17,7 @@
 		}
 
 		// object
-		.object{
-			&__pic{
-				img{
-					vertical-align: top;
-				}			
-			}
-			&__info{
-				margin-left: 3rem;
-				p:not(.object__title){
-					font-size: 1.5rem;
-				}
-			}
-			&__title{
-				font-size: 3rem;
-				font-weight: 800;
-				margin-top: .7rem;
-				text-transform: uppercase;
-				a{
-					text-decoration: none;
-					span{
-						border-bottom-width: 3px;
-					}
-				}
-			}
-			&__composition{
-				margin-left: 2.1rem;
-				margin-right: .5rem;
-				.btn{
-					font-size: 1.5rem;
-					@extend .flex-cv;
-					background: #ebeef1;
-					$h: 4rem;
-					height: $h;
-					border-radius: $h;
-					padding-right: 22px;
-					padding-left: 47px;
-					text-decoration: none;
-					@include transition-param(background);
-					&:hover{
-						background: #d8dde2;
-					}
-				}
-			}
-			&__address{
-				.btn{
-					padding-left: 37px;
-					font-weight: 100;
-				}
-			}
-			&__flats{
-				font-size: 1.6rem;
-				margin-left: 3rem;
-				.num{
-					color: $color8;
-					font-weight: 500;
-				}	
-			}
-			&__price{
-				font-size: 2rem;
-				font-weight: 500;
-				margin-left: 1.5rem;
-			}
-		}
+
 
 		.btn-order{
 			$h: 40px;
@@ -121,11 +59,81 @@
 	}
 
 	&__top{
-		padding: 2.5rem 2.3rem;
 		position: relative;
 		z-index: 30;
 	}
+}
 
+
+.object__meta{
+	align-items: center;
+	background-color: $color2;
+	padding: 2.5rem 2.3rem;
+	position: relative;
+	z-index: 30;
+	.object{
+		&__pic{
+			img{
+				vertical-align: top;
+			}
+		}
+		&__info{
+			margin-left: 3rem;
+			p:not(.object__title){
+				font-size: 1.5rem;
+			}
+		}
+		&__title{
+			font-size: 3rem;
+			font-weight: 800;
+			margin-top: .7rem;
+			text-transform: uppercase;
+			a{
+				text-decoration: none;
+				span{
+					border-bottom-width: 3px;
+				}
+			}
+		}
+		&__composition{
+			margin-left: 2.1rem;
+			margin-right: .5rem;
+			.btn{
+				font-size: 1.5rem;
+				@extend .flex-cv;
+				background: #ebeef1;
+				$h: 4rem;
+				height: $h;
+				border-radius: $h;
+				padding-right: 22px;
+				padding-left: 47px;
+				text-decoration: none;
+				@include transition-param(background);
+				&:hover{
+					background: #d8dde2;
+				}
+			}
+		}
+		&__address{
+			.btn{
+				padding-left: 37px;
+				font-weight: 100;
+			}
+		}
+		&__flats{
+			font-size: 1.6rem;
+			margin-left: 3rem;
+			.num{
+				color: $color8;
+				font-weight: 500;
+			}	
+		}
+		&__price{
+			font-size: 2rem;
+			font-weight: 500;
+			margin-left: 1.5rem;
+		}
+	}
 }
 
 
@@ -202,8 +210,8 @@
 				opacity: 0;
 				position: absolute;
 				top: 40px;
+				visibility: hidden;
 				width: 320px;
-				z-index: -10;
 				img{
 					max-width: 100%;	
 				}
@@ -212,7 +220,7 @@
 				z-index: 100;
 				.plan{
 					opacity: 1;
-					z-index: 1;
+					visibility: visible;
 				}
 			}
 		}

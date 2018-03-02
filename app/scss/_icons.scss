@@ -232,3 +232,16 @@
 		top: -1px;
 	}
 }
+
+
+
+.icon-scheme{
+	padding-left: 30px;
+	position: relative;
+	&:before{
+		@extend .before;
+		@include sprite($icon-scheme);
+		left: 0;
+		top: -1px;
+	}
+}
