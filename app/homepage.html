@@ -300,9 +300,8 @@
 									</div>
 									<div class="installment">
 										<label class="installment__container">
-											<input type="checkbox" class="checkbox" name="special" value="" />
-											<span class="checkbox-icon"></span>
-											<span class="checkbox-label">Рассрочка 5%от <br> застройщика (ЖНК)</span>										
+											<input type="checkbox" class="checkbox" id="special" name="special" value="" />
+											<label class="checkbox-label" for="special">Рассрочка 5%от <br> застройщика (ЖНК)</label>									
 											<span class="installment__tooltip">
 												<span class="installment__tooltip_content">
 													С 1998 года фирма «Культбытстрой» освоила выпуск тротуарной плитки на немецком оборудовании фирмы «НESS». Двухбункерная система
@@ -1294,8 +1293,8 @@ function init(){
 	// https://tech.yandex.ru/maps/doc/jsapi/2.1/dg/concepts/geoobjects-docpage/#geoobject_collections
 	ymaps.ready(function() {
 		var myMap = new ymaps.Map('map', {
-			center: [56.034139, 92.796815],
-			zoom: 16
+			center: [56.029139, 92.856815],
+			zoom: 11
 		}),
 
 		MyBalloonLayout = ymaps.templateLayoutFactory.createClass(
@@ -1375,8 +1374,8 @@ function init(){
 				 */
 				applyElementOffset: function () {
 					this._$element.css({
-						left: -(this._$element[0].offsetWidth / 2 - 22),
-						top: 30
+						left: -(this._$element[0].offsetWidth / 2 ),
+						top: 15
 					});
 				},
 
@@ -1409,7 +1408,7 @@ function init(){
 					return new ymaps.shape.Rectangle(new ymaps.geometry.pixel.Rectangle([
 						[position.left, position.top], [
 							position.left + this._$element[0].offsetWidth,
-							position.top + this._$element[0].offsetHeight + this._$element.find('.arrow')[0].offsetHeight
+							position.top + this._$element[0].offsetHeight 
 						]
 					]));
 				},
@@ -1487,8 +1486,54 @@ function init(){
 			}
 		));
 
+		myCollection.add(new ymaps.Placemark(
+			[56.014295, 92.898605],
+			{
+				balloonHeader: 'ЖК Курчатова',
+				balloonPic: '/tmp/gk.jpg',
+				balloonTitle: 'Дом 2.1',
+				balloonContent: 'Контент балуна',
+				percent: '40%',
+				diagram: '/images/circle-60.png',
+				scheme: '/tmp/scheme.png',
+				link: 'http://google.com',
+				titleLink: 'Смотреть 200 квартир',
+			}
+		));
+
+		myCollection.add(new ymaps.Placemark(
+			[56.004295, 92.998605],
+			{
+				balloonHeader: 'ЖК Курчатова',
+				balloonPic: '/tmp/gk.jpg',
+				balloonTitle: 'Дом 2.1',
+				balloonContent: 'Контент балуна',
+				percent: '10%',
+				diagram: '/images/circle-60.png',
+				scheme: '/tmp/scheme.png',
+				link: 'http://google.com',
+				titleLink: 'Смотреть 200 квартир',
+			}
+		));
 		// добавляем коллекцию в геообъект
 		myMap.geoObjects.add(myCollection);
+
+		myCollection.events
+			.add('mouseenter', function (e) {
+				e.get('target').options.set('iconImageHref', '/images/balloon-hover.png');
+			})
+			.add('mouseleave', function (e) {
+				e.get('target').options.set('iconImageHref', '/images/balloon.png');
+			});
+
+		myMap.behaviors.disable('scrollZoom'); 
+		myMap.events.add('click', function onMapClick(e) {
+			if(myMap.behaviors.isEnabled('scrollZoom')) {
+				myMap.events.remove('click', onMapClick);
+			} else {
+				myMap.behaviors.enable(['scrollZoom']);
+			}
+		});
 	});	
 }
 </script>
