@@ -248,8 +248,7 @@ $(document).ready(function(){
 		sortField: {
 			field: 'text',
 			direction: 'asc'
-		},
-		dropdownParent: 'body'
+		}
 	});
 
 	$('#selectreview').selectize({

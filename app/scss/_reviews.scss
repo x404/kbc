@@ -3,6 +3,9 @@
 }
 
 .reviews-page{
+	.content{
+		width: 100%;
+	}
 	.neck .head{
 		padding: 3.5rem 0 1.6rem;
 		p{
@@ -11,6 +14,45 @@
 	}
 }
 
+
+.review,
+.list_construction .place
+{
+	&__wrapper{
+		border: 2px solid $color28;
+		transition: .3s;
+		
+		&:hover{
+			box-shadow: 0 0 25px rgba(83,99,121,.5);
+			border-color: $color2;
+		}
+		.object{
+			&__info{
+				padding-left: 1.7rem;
+			}
+			&__title{
+				font-size: 1.7rem;
+				font-weight: 500;
+				a{
+					text-decoration: none;
+					display: inline-block;
+				}
+			}
+			&__address{
+				color: $color37;
+			}
+		}		
+	}
+
+	&__top{
+		@extend .flex-cv;
+	}
+
+	&__body{
+		margin-top: 30px;
+		padding: 0 28px;
+	}
+}
 
 .review{
 	&__item{
@@ -29,21 +71,15 @@
 
 
 	&__wrapper{
-		border: 2px solid $color28;
-		transition: .3s;
 		width: 507px;
-		&:hover{
-			box-shadow: 0 0 25px rgba(83,99,121,.5);
-			border-color: $color2;
-		}
 	}
 
 	&__body{
-		padding: 2.8rem 3rem 0;		
+		padding: 2.8rem 3rem 0;
 	}
 
 	&__top{
-		@extend .flex-cv;
+		
 		.name{
 			cursor: default;
 			font-weight: 500;
@@ -67,24 +103,6 @@
 			border-radius: 50%;
 			display: block;
 		}
-
-		.object{
-			&__info{
-				padding-left: 1.7rem;
-			}
-			&__title{
-				font-size: 1.7rem;
-				font-weight: 500;
-				a{
-					text-decoration: none;
-					display: inline-block;
-				}
-			}
-			&__address{
-				color: $color37;
-			}
-		}
-
 	}
 
 	&__text{

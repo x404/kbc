@@ -1445,9 +1445,9 @@ form{
 			display: inline;
 		}
 	}
-	.selectize-dropdown .selected{
-		background-color: #5eb38f;
-		color: $color2;
+	.selectize-dropdown .selected.active{
+		// background-color: #5eb38f;
+		// color: $color2;
 	}
 	.selectize-remove-option {
 	    position: absolute;

@@ -1,0 +1,111 @@
+// see _reviews.scss
+
+
+.construction-page{
+	background: #f1f3f5;
+}
+
+
+.list_construction{
+	flex-wrap: wrap;
+	.place{
+		&__item{
+			margin-bottom: 3.4rem;
+			margin-right: 26px;
+			width: 380px;
+			&:nth-child(4n){
+				margin-right: 0;
+			}
+			&:hover{
+				.place__pic{
+					img{
+						transform: scale(1.15)
+					}
+				}
+			}
+		}
+		&__wrapper{
+			background: $color2;
+			border: none;
+			padding-bottom: 2rem;
+		}
+
+		&__top{
+			padding: 2rem 3.2rem 0;
+		}	
+
+		&__body{
+			margin-top: 32px;
+			padding-left: 3.2rem;
+			.flexbox{
+				justify-content: space-between;
+			}
+		}
+
+		&__pic{
+			margin-top: 2rem;
+			position: relative;
+			text-align: center;
+			&_wrapper{
+				display: inline-block;
+				overflow: hidden;
+			}
+			&:before,
+			&:after{
+				@extend .before;
+				background: #516376;
+				height: 240px;
+				left: 50%;
+				opacity: .2;
+			}
+			&:before{
+				margin-left: -150px;
+				top: 10px;
+				width: 300px;
+			}
+			&:after{
+				margin-left: -140px;
+				top: 20px;
+				width: 280px;
+			}
+
+			img{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				position: relative;
+				transition: .3s transform;
+				z-index: 2;
+			}
+		}
+
+		&__date{
+			font-size: 1.5rem;
+			font-weight: 500;
+		}
+
+		&__photos{
+			margin-right: .5rem;
+			a{
+				font-size: 1.5rem;
+				font-weight: 500;
+				text-decoration: none;
+				border-bottom-width: 1px;
+			}
+		}
+
+		&__text{
+			color: #434343;
+			margin: .7rem 0;
+		}
+
+		&__translation{
+			font-size: 1.5rem;
+			margin-top: 2.2rem;
+			a{
+				display: inline-block;
+				text-decoration: none;
+			}
+		}
+	}
+}

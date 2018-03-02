@@ -148,31 +148,31 @@
 
 .icon-people:before {
   background-image: url(../images/sprite.png);
-  background-position: -113px -107px;
+  background-position: -193px -112px;
   width: 18px;
   height: 17px; }
 
 .icon-people-gray:before {
   background-image: url(../images/sprite.png);
-  background-position: -95px -107px;
+  background-position: -211px -112px;
   width: 18px;
   height: 17px; }
 
 .icon-people-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -122px -88px;
+  background-position: 0px -175px;
   width: 18px;
   height: 17px; }
 
 .icon-tel:before {
   background-image: url(../images/sprite.png);
-  background-position: -49px -175px;
+  background-position: -68px -175px;
   width: 16px;
   height: 16px; }
 
 .icon-tel-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -33px -175px;
+  background-position: -52px -175px;
   width: 16px;
   height: 16px; }
 
@@ -196,7 +196,7 @@
   padding-left: 25px; }
   .icon-clock:before {
     background-image: url(../images/sprite.png);
-    background-position: -191px -112px;
+    background-position: -100px -107px;
     width: 19px;
     height: 19px;
     left: 0;
@@ -207,7 +207,7 @@
   position: relative; }
   .icon-darkclock:before {
     background-image: url(../images/sprite.png);
-    background-position: -172px -112px;
+    background-position: -122px -88px;
     width: 19px;
     height: 19px;
     left: 0;
@@ -215,7 +215,7 @@
 
 .icon-back:before {
   background-image: url(../images/sprite.png);
-  background-position: -210px -112px;
+  background-position: -119px -107px;
   width: 17px;
   height: 18px;
   left: 0;
@@ -223,14 +223,14 @@
 
 .icon-letter:before {
   background-image: url(../images/sprite.png);
-  background-position: -65px -175px;
+  background-position: -84px -175px;
   width: 18px;
   height: 14px;
   left: 0; }
 
 .icon-comment:before {
   background-image: url(../images/sprite.png);
-  background-position: -131px -107px;
+  background-position: -18px -175px;
   width: 17px;
   height: 17px;
   left: 0;
@@ -238,7 +238,7 @@
 
 .icon-comment-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -16px -175px;
+  background-position: -35px -175px;
   width: 17px;
   height: 17px;
   left: 0;
@@ -256,7 +256,7 @@
   position: relative; }
   .icon-attach-dark:before {
     background-image: url(../images/sprite.png);
-    background-position: -211px -134px;
+    background-position: 0px -192px;
     width: 16px;
     height: 19px; }
 
@@ -264,7 +264,7 @@
   position: relative; }
   .icon-attach-white:before {
     background-image: url(../images/sprite.png);
-    background-position: 0px -175px;
+    background-position: -16px -192px;
     width: 16px;
     height: 19px; }
 
@@ -288,7 +288,7 @@
   position: relative; }
   .icon-label:before {
     background-image: url(../images/sprite.png);
-    background-position: 0px -194px;
+    background-position: -136px -107px;
     width: 15px;
     height: 18px;
     left: 12px; }
@@ -301,6 +301,28 @@
     width: 26px;
     height: 22px;
     left: 12px; }
+
+.icon-camera {
+  position: relative;
+  padding-left: 33px; }
+  .icon-camera:before {
+    background-image: url(../images/sprite.png);
+    background-position: -77px -107px;
+    width: 23px;
+    height: 25px;
+    left: 0;
+    top: -2px; }
+
+.icon-photo {
+  padding-left: 30px;
+  position: relative; }
+  .icon-photo:before {
+    background-image: url(../images/sprite.png);
+    background-position: -172px -112px;
+    width: 21px;
+    height: 18px;
+    left: 0;
+    top: -1px; }
 
 /*** reset ***********/
 html, body, ul, ol, li, dl, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, a, img, label, dt, dd {
@@ -394,7 +416,7 @@ h3 {
   .vacancies-page .head p a:hover, .contact__plate .email:hover, .favorite__item table td .place a:hover {
     text-decoration: none; }
 
-.before, .icon-catalog:before, .icon-sett:before, .icon-pricelist:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-house-dark:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
+.before, .icon-catalog:before, .icon-sett:before, .icon-pricelist:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-house-dark:before, .icon-camera:before, .icon-photo:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
 .fixed-header .wishlist__link:before,
 .fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .callback .call:before,
 .resume .call:before, .modal-menu .menu .title:after,
@@ -404,7 +426,7 @@ h3 {
 .intro__carousel .owl-carousel .owl-next:before, .objects__info:before, .objects .owl-carousel .owl-prev:after, .objects .owl-carousel .owl-next:after, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .big-icon:before, .neck .tabs .tab.active:after, .pagination .prev:before,
 .pagination .next:before, .picking__link span:before, .sortbox__option-up:after, .sortbox__option-down:after, main ul li:before, .faq-page .head .btn:before,
-.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .popover-link:before {
+.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .popover-link:before {
   content: "";
   display: block;
   position: absolute; }
@@ -425,7 +447,8 @@ input[type="submit"] {
 .flex-cv, .btn-more, .feature .news .date,
 .topnews .news .date, .feature .news .cat__link,
 .topnews .news .cat__link, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
-.vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top, .review__bottom, .filter-sort .btn, .favorite__item .object__composition .btn, .favorite__item .btn-order, .catalog__pic, .sidebar a, .sidebar span, .popover-bottom {
+.vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top,
+.list_construction .place__top, .review__bottom, .filter-sort .btn, .favorite__item .object__composition .btn, .favorite__item .btn-order, .catalog__pic, .sidebar a, .sidebar span, .popover-bottom {
   display: flex;
   align-items: center; }
 
@@ -775,7 +798,7 @@ form .form-control {
       padding-left: 55px; }
       .fixed-header .qfilter a:before {
         background-image: url(../images/sprite.png);
-        background-position: -80px -134px;
+        background-position: -41px -134px;
         width: 39px;
         height: 30px;
         left: 0; }
@@ -1385,7 +1408,7 @@ form .form-control {
       background-color: #00874d; }
     .filter .showmap:before {
       background-image: url(../images/sprite.png);
-      background-position: 0px -194px;
+      background-position: -136px -107px;
       width: 15px;
       height: 18px;
       left: 20px;
@@ -1406,9 +1429,6 @@ form .form-control {
     display: none; }
     .filter .selectize-control.multi .selectize-input [data-value]:first-child {
       display: inline; }
-  .filter .selectize-dropdown .selected {
-    background-color: #5eb38f;
-    color: #fff; }
   .filter .selectize-remove-option {
     position: absolute;
     top: 0;
@@ -2020,7 +2040,7 @@ body.modal-open {
       -webkit-transition: left 0.2s ease-out;
       transition: left 0.2s ease-out;
       background-image: url(../images/sprite.png);
-      background-position: -77px -107px;
+      background-position: -211px -134px;
       width: 18px;
       height: 20px;
       left: 19px; }
@@ -2483,9 +2503,10 @@ body.modal-open {
 
 .pagination {
   font-size: 1.7rem;
-  margin-top: 5rem;
   margin-bottom: 3rem;
-  padding: 2rem 0; }
+  margin-top: 5rem;
+  padding: 2rem 0;
+  width: 100%; }
   .pagination a, .pagination span {
     text-align: center; }
   .pagination a {
@@ -2568,7 +2589,7 @@ body.modal-open {
       position: relative; }
       .picking__link span:before {
         background-image: url(../images/sprite.png);
-        background-position: -41px -134px;
+        background-position: -80px -134px;
         width: 39px;
         height: 30px;
         left: -72px;
@@ -2786,6 +2807,9 @@ body.modal-open {
       left: 198px; }
       .selectgrade .unit-rating .unit-r5.current {
         width: 246px; }
+
+.main .content {
+  flex-grow: 1; }
 
 .category_link {
   background: #00874d;
@@ -3582,10 +3606,41 @@ main {
 .list_reviews {
   flex-wrap: wrap; }
 
+.reviews-page .content {
+  width: 100%; }
+
 .reviews-page .neck .head {
   padding: 3.5rem 0 1.6rem; }
   .reviews-page .neck .head p {
     margin-top: 1rem; }
+
+.review__wrapper,
+.list_construction .place__wrapper {
+  border: 2px solid #ebeef1;
+  transition: .3s; }
+  .review__wrapper:hover,
+  .list_construction .place__wrapper:hover {
+    box-shadow: 0 0 25px rgba(83, 99, 121, 0.5);
+    border-color: #fff; }
+  .review__wrapper .object__info,
+  .list_construction .place__wrapper .object__info {
+    padding-left: 1.7rem; }
+  .review__wrapper .object__title,
+  .list_construction .place__wrapper .object__title {
+    font-size: 1.7rem;
+    font-weight: 500; }
+    .review__wrapper .object__title a,
+    .list_construction .place__wrapper .object__title a {
+      text-decoration: none;
+      display: inline-block; }
+  .review__wrapper .object__address,
+  .list_construction .place__wrapper .object__address {
+    color: #6f6f6f; }
+
+.review__body,
+.list_construction .place__body {
+  margin-top: 30px;
+  padding: 0 28px; }
 
 .review__item {
   margin-right: 35px;
@@ -3596,12 +3651,7 @@ main {
     top: -2px !important; }
 
 .review__wrapper {
-  border: 2px solid #ebeef1;
-  transition: .3s;
   width: 507px; }
-  .review__wrapper:hover {
-    box-shadow: 0 0 25px rgba(83, 99, 121, 0.5);
-    border-color: #fff; }
 
 .review__body {
   padding: 2.8rem 3rem 0; }
@@ -3624,16 +3674,6 @@ main {
   .review__bottom img {
     border-radius: 50%;
     display: block; }
-  .review__bottom .object__info {
-    padding-left: 1.7rem; }
-  .review__bottom .object__title {
-    font-size: 1.7rem;
-    font-weight: 500; }
-    .review__bottom .object__title a {
-      text-decoration: none;
-      display: inline-block; }
-  .review__bottom .object__address {
-    color: #6f6f6f; }
 
 .review__text {
   font-size: 1.5rem;
@@ -4132,6 +4172,77 @@ main {
       top: 50%;
       margin-top: -21px;
       border-bottom: 21px solid transparent; }
+
+.construction-page {
+  background: #f1f3f5; }
+
+.list_construction {
+  flex-wrap: wrap; }
+  .list_construction .place__item {
+    margin-bottom: 3.4rem;
+    margin-right: 26px;
+    width: 380px; }
+    .list_construction .place__item:nth-child(4n) {
+      margin-right: 0; }
+    .list_construction .place__item:hover .place__pic img {
+      transform: scale(1.15); }
+  .list_construction .place__wrapper {
+    background: #fff;
+    border: none;
+    padding-bottom: 2rem; }
+  .list_construction .place__top {
+    padding: 2rem 3.2rem 0; }
+  .list_construction .place__body {
+    margin-top: 32px;
+    padding-left: 3.2rem; }
+    .list_construction .place__body .flexbox {
+      justify-content: space-between; }
+  .list_construction .place__pic {
+    margin-top: 2rem;
+    position: relative;
+    text-align: center; }
+    .list_construction .place__pic_wrapper {
+      display: inline-block;
+      overflow: hidden; }
+    .list_construction .place__pic:before, .list_construction .place__pic:after {
+      background: #516376;
+      height: 240px;
+      left: 50%;
+      opacity: .2; }
+    .list_construction .place__pic:before {
+      margin-left: -150px;
+      top: 10px;
+      width: 300px; }
+    .list_construction .place__pic:after {
+      margin-left: -140px;
+      top: 20px;
+      width: 280px; }
+    .list_construction .place__pic img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      transition: .3s transform;
+      z-index: 2; }
+  .list_construction .place__date {
+    font-size: 1.5rem;
+    font-weight: 500; }
+  .list_construction .place__photos {
+    margin-right: .5rem; }
+    .list_construction .place__photos a {
+      font-size: 1.5rem;
+      font-weight: 500;
+      text-decoration: none;
+      border-bottom-width: 1px; }
+  .list_construction .place__text {
+    color: #434343;
+    margin: .7rem 0; }
+  .list_construction .place__translation {
+    font-size: 1.5rem;
+    margin-top: 2.2rem; }
+    .list_construction .place__translation a {
+      display: inline-block;
+      text-decoration: none; }
 
 .popover {
   box-shadow: 0 5px 20px rgba(73, 82, 95, 0.5);
