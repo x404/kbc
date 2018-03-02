@@ -1,11 +1,6 @@
 // see _reviews.scss
 
 
-.construction-page{
-	background: #f1f3f5;
-}
-
-
 .list_construction{
 	flex-wrap: wrap;
 	.place{
@@ -107,5 +102,16 @@
 				text-decoration: none;
 			}
 		}
+	}
+}
+
+
+.btn-fav{
+	border: none;
+	background-color: transparent;
+	@include sprite($icon-star);
+	&-in,
+	&:hover{
+		@include sprite($icon-starfill);
 	}
 }

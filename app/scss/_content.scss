@@ -110,53 +110,53 @@ main{
 
 
 	// ol
-ol{
-	counter-reset:li;
-	margin-left: 0;
-	list-style: none;
-	font-size: 1.6rem;
-	& li{
-		margin: 2rem 0;
-		position: relative;
-		padding-left: 42px;
-		&:before{
-			background: $color_1;
-			$s: 3.1rem;
-			height: $s;
-			width: $s;
-			border-radius: $s;
-			content:counter(li); /* В качестве данных используем счетчик */
-			counter-increment:li; /* Увеличиваем значение счетчика на 1 */
-			/* Позиционируем и стилизируем цифры */
-			position:absolute;
-			text-align: center;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			top:-7px;
-			left:0;
-			// width:20px;
-			color: #fff;
-			// font-size: 18px;
-		}
-		ol{
-			counter-reset:li;
-			margin-left: -10px;
-			li{
-				padding-left: 30px;
-				&:before{
-					background: none;
-					color: $color_1;
-					content: counter(li) ".";
-					display: block;
-					font-weight: 500;
-					top: 0;
+	ol{
+		counter-reset:li;
+		margin-left: 0;
+		list-style: none;
+		font-size: 1.6rem;
+		& li{
+			margin: 2rem 0;
+			position: relative;
+			padding-left: 42px;
+			&:before{
+				background: $color_1;
+				$s: 3.1rem;
+				height: $s;
+				width: $s;
+				border-radius: $s;
+				content:counter(li); /* В качестве данных используем счетчик */
+				counter-increment:li; /* Увеличиваем значение счетчика на 1 */
+				/* Позиционируем и стилизируем цифры */
+				position:absolute;
+				text-align: center;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				top:-7px;
+				left:0;
+				// width:20px;
+				color: #fff;
+				// font-size: 18px;
+			}
+			ol{
+				counter-reset:li;
+				margin-left: -10px;
+				li{
+					padding-left: 30px;
+					&:before{
+						background: none;
+						color: $color_1;
+						content: counter(li) ".";
+						display: block;
+						font-weight: 500;
+						top: 0;
 
+					}
 				}
 			}
 		}
 	}
-}
 
 	// blockquote
 

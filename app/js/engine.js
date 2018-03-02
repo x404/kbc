@@ -436,9 +436,34 @@ $(document).on('click', '[data-link]', function(e){
 });
 
 
-$(document).on('click', '.flat a, .place a', function(e){
+$(document).on('click', '.flat a, .place a, .btn-fav', function(e){
 	e.stopPropagation();
 })
+
+// в избранное
+$(document).on('click','.to-fav', function(e){
+	e.preventDefault();
+	// var $this = $(this);
+	// msg = '<div class="added-to-compare"><div class="wrapper"><p>Товар добавлен <br> <a href="#">в избранное</a></p><button type="button" class="close" data-dismiss="modal"><img src="images/close.png" alt="" /></button></div></div>';
+	// $('body').append(msg);
+
+	this.classList.remove('to-fav');
+	this.classList.add('btn-fav-in');
+
+	// var timerfav = window.setInterval(function(){
+	// 	$('.added-to-compare').fadeOut('normal',function(){
+	// 		this.remove();
+	// 	});
+	// 	window.clearInterval(timerfav);
+	// },2000);
+});
+
+// из избранного
+$(document).on('click','.btn-fav-in', function(e){
+	e.preventDefault();
+	this.classList.remove('btn-fav-in');
+	this.classList.add('to-fav');
+});
 
 
 // sticky header

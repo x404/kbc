@@ -11,7 +11,7 @@
 
 <meta name="robots" content="noindex,nofollow" />
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Избранное</title>
+<title>Квартиры список</title>
 <!-- InstanceEndEditable -->
 <link rel="stylesheet" href="/css/styles.min.css" />
 <script src="/js/libs.min.js"></script>
@@ -119,7 +119,7 @@
 		<!-- =/header -->
 		
 		<!-- InstanceBeginEditable name="EditRegion3" -->
-		<div class="favorite-page">
+		<div class="condo-page">
 			<!-- =neck -->
 			<div class="neck">
 				<div class="container">
@@ -138,7 +138,7 @@
 						<div class="head">
 							<div class="col-7 flexbox">
 								<div class="head__left">
-									<h1 class="title">В избранном 7 квартир в 2 объектах</h1>
+									<h1 class="title">Выбор квартиры</h1>
 								</div>
 							</div>
 						</div>
@@ -148,343 +148,739 @@
 			</div>
 			<!-- =/neck -->	
 
-
+			<!-- =filter -->
 			<div class="container">
 				<div class="row">
-					<div class="main">
-						<!-- =items -->
-						<div class="favorite__item">
-							<div class="favorite__top">
+					<div class="filter filter-inner flexbox">
+						<div class="nav">
+							<a href="#panel1" role="button" class="btn active" data-toggle="tab" aria-controls="panel1">Квартиры</a>
+							<a href="#panel2" role="button" class="btn" data-toggle="tab" aria-controls="panel2">Коммерческое</a>
+						</div>
+						<div class="tab-content filter__body">
+							<div role="tabpanel" class="tab-pane fade show active" id="panel1">
 								<div class="flexbox">
-									<div class="object__pic">
-										<img src="tmp/fav-object.png" alt="Жилой комплекс Курчатова" />
+									<div class="cell">
+										<div class="objects-select__wrap">
+											<select name="obj[]"
+												multiple
+												placeholder="Выберите объект"
+												data-placeholder="Объекты"
+												data-count="объекта"
+												data-count-plural="объектов"
+												data-count-single="объект"
+												class="j-search-select">
+													<option value="34">ЖК Стасовой</option>
+													<option value="57">ЖК Миручино</option>
+													<option value="39">ЖК Годенко</option>
+													<option value="76">ЖК Новониколаевский</option>
+													<option value="72">Калейдоскоп</option>
+													<option value="63">Паруса</option>
+													<option value="86">Звездный Дуэт</option>
+													<option value="36">Цивилизация</option>
+													<option value="41">София</option>
+													<option value="55">Цветной город</option>
+													<option value="78">Богемия</option>
+													<option value="60">Новая Охта</option>
+													<option value="88">Цивилизация на Неве</option>
+													<option value="61">Шуваловский</option>
+											</select>	
+										</div>
+										<div class="installment">
+											<label class="installment__container">
+												<input type="checkbox" class="checkbox" id="special" name="special" value="" />
+												<label class="checkbox-label" for="special">Рассрочка 5%от <br> застройщика (ЖНК)</label>	
+												<span class="installment__tooltip">
+													<span class="installment__tooltip_content">
+														С 1998 года фирма «Культбытстрой» освоила выпуск тротуарной плитки на немецком оборудовании фирмы «НESS». Двухбункерная система
+													</span>
+												</span>
+											</label>
+										</div>
 									</div>
-									<div class="object__info">
-										<p>Жилой комплекс</p>
-										<p class="object__title"><a href="#" class="fill-effect" title=""><span>Курчатова</span></a></p>
+									<div class="cell flex-cv">
+										<div class="room__group">
+											<div class="room__checkbox">
+												<input type="checkbox" class="checkbox" id="checkbox1" />
+												<label for="checkbox1">C</label>
+											</div>
+											<div class="room__checkbox">
+												<input type="checkbox" class="checkbox" id="checkbox2" />
+												<label for="checkbox2">1</label>
+											</div>
+											<div class="room__checkbox">
+												<input type="checkbox" class="checkbox" id="checkbox3" />
+												<label for="checkbox3">2</label>
+											</div>
+											<div class="room__checkbox">
+												<input type="checkbox" class="checkbox" id="checkbox4" />
+												<label for="checkbox4">3</label>
+											</div>
+											<div class="room__checkbox">
+												<input type="checkbox" class="checkbox" id="checkbox5" />
+												<label for="checkbox5">4</label>
+											</div>
+										</div>
 									</div>
-									<div class="object__composition">
-										<a href="#" class="btn icon-house-dark">2 дома</a>
+									<div class="cell">
+										<p class="cell__title">Стоимость</p>
+										<div class="slider">
+											<div class="slider">
+												<div id="slider-cost"></div>
+											</div>
+											<div class="slider_controls">
+												<input type="text" id="cost-from" class="param_control" placeholder="от"  /> 
+												<span class="separate"> — </span>
+												<input type="text" id="cost-to" class="param_control" placeholder="до"  />
+											</div>
+										</div>
 									</div>
-									<div class="object__address">
-										<a href="#" class="btn btn-red icon-label">ул. Елены Стасовой, д. 17 / д. 2</a>
+									<div class="cell">
+										<p class="cell__title">Площадь</p>
+										<div class="slider">
+											<div class="slider">
+												<div id="slider-area"></div>
+											</div>
+											<div class="slider_controls">
+												<input type="text" id="area-from" class="param_control" placeholder="от"  />
+												<span class="separate"> — </span>
+												<input type="text" id="area-to" class="param_control" placeholder="до"  />
+											</div>
+										</div>
 									</div>
-									<div class="object__flats"><span class="num">456</span> квартир</div>
-									<div class="object__price">От 1.8 млн <span class="rur"><span class="visually-hidden">Р</span></span></div>
+									<div class="cell">
+										<a href="#" class="showflat icon-flats">
+											Показать <br> <span id="countflat">256 квартир</span>
+										</a>
+									</div>
 								</div>
 							</div>
-							<div class="favorite__body">
-								<div class="table-responsive">
-									<table class="table-flats">
-										<thead>
-											<tr>
-												<th class="col-1">Планировка</th>
-												<th align="left">Дом, Подъезд, № квартиры</th>
-												<th class="col-1">Этаж</th>
-												<th>Площадь</th>
-												<th>Цена за м <sup>2</sup></th>
-												<th>Стоимость</th>
-												<th>ЖНК</th>
-												<th>Срок сдачи</th>
-												<th></th>
-												<th></th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr data-link="http://google.com">
-												<td align="center" class="has_plan">
-													<img src="/tmp/plan.png" alt="Планировка" />
-													<div class="plan">
-														<img src="/tmp/_920.png" alt="Планировка" />
-													</div>
-												</td>
-												<td>
-													<p class="flat"><a href="#">1-комнатная №24</a></p>
-													<p class="place"><a href="#">ЖК Курчатова</a></p>
-													<p class="address">ул. Мичурино, д.1 ст.2</p>
-												</td>
-												<td align="center">2/20</td>
-												<td align="center">40.10 м<sup>2</sup></td>
-												<td align="center">48 324</td>
-												<td align="center">1 935 000  Р</td>
-												<td align="center">Нет</td>
-												<td align="center">Дом сдан</td>
-												<td align="right">
-													<button type="button" class="btn btn-order icon-pencil-small" data-toggle="sidemodal" data-target="#add-order">Оставить заявку</button>
-												</td>
-												<td align="center">
-													<button type="button" class="btn delete" aria-label="Удалить">
-														<svg width="24" height="24">
-															<line x1="0" y1="0" x2="24" y2="24" />
-															<line x1="24" y1="0" x2="0" y2="24" />
-														</svg>
-													</button>
-												</td>
-											</tr>
-											<tr data-link="http://google.com">
-												<td align="center" class="has_plan">
-													<img src="/tmp/plan.png" alt="Планировка" />
-													<div class="plan">
-														<img src="/tmp/_920.png" alt="Планировка" />
-													</div>
-												</td>
-												<td>
-													<p class="flat"><a href="#">1-комнатная №25</a></p>
-													<p class="place"><a href="#">ЖК Курчатова</a></p>
-													<p class="address">ул. Мичурино, д.1 ст.2</p>
-												</td>
-												<td align="center">2/20</td>
-												<td align="center">40.10 м<sup>2</sup></td>
-												<td align="center">48 324</td>
-												<td align="center">1 935 000  Р</td>
-												<td align="center">Нет</td>
-												<td align="center">Дом сдан</td>
-												<td align="right">
-													<button type="button" class="btn btn-order icon-pencil-small" data-toggle="sidemodal" data-target="#add-order">Оставить заявку</button>
-												</td>
-												<td align="center">
-													<button type="button" class="btn delete" aria-label="Удалить">
-														<svg width="24" height="24">
-															<line x1="0" y1="0" x2="24" y2="24" />
-															<line x1="24" y1="0" x2="0" y2="24" />
-														</svg>
-													</button>
-												</td>
-											</tr>
-											<tr data-link="http://google.com">
-												<td align="center" class="has_plan">
-													<img src="/tmp/plan.png" alt="Планировка" />
-													<div class="plan">
-														<img src="/tmp/_857.png" alt="Планировка" />
-													</div>
-												</td>
-												<td>
-													<p class="flat"><a href="#">1-комнатная №26</a></p>
-													<p class="place"><a href="#">ЖК Курчатова</a></p>
-													<p class="address">ул. Мичурино, д.1 ст.2</p>
-												</td>
-												<td align="center">2/20</td>
-												<td align="center">40.10 м<sup>2</sup></td>
-												<td align="center">48 324</td>
-												<td align="center">1 935 000  Р</td>
-												<td align="center">Нет</td>
-												<td align="center">Дом сдан</td>
-												<td align="right">
-													<button type="button" class="btn btn-order icon-pencil-small" data-toggle="sidemodal" data-target="#add-order">Оставить заявку</button>
-												</td>
-												<td align="center">
-													<button type="button" class="btn delete" aria-label="Удалить">
-														<svg width="24" height="24">
-															<line x1="0" y1="0" x2="24" y2="24" />
-															<line x1="24" y1="0" x2="0" y2="24" />
-														</svg>
-													</button>
-												</td>
-											</tr>
-											<tr data-link="http://google.com">
-												<td align="center" class="has_plan">
-													<img src="/tmp/plan.png" alt="Планировка" />
-													<div class="plan">
-														<img src="/tmp/_920.png" alt="Планировка" />
-													</div>
-												</td>
-												<td>
-													<p class="flat"><a href="#">1-комнатная №25</a></p>
-													<p class="place"><a href="#">ЖК Курчатова</a></p>
-													<p class="address">ул. Мичурино, д.1 ст.2</p>
-												</td>
-												<td align="center">2/20</td>
-												<td align="center">40.10 м<sup>2</sup></td>
-												<td align="center">48 324</td>
-												<td align="center">1 935 000  Р</td>
-												<td align="center">Нет</td>
-												<td align="center">Дом сдан</td>
-												<td align="right">
-													<button type="button" class="btn btn-order icon-pencil-small" data-toggle="sidemodal" data-target="#add-order">Оставить заявку</button>
-												</td>
-												<td align="center">
-													<button type="button" class="btn delete" aria-label="Удалить">
-														<svg width="24" height="24">
-															<line x1="0" y1="0" x2="24" y2="24" />
-															<line x1="24" y1="0" x2="0" y2="24" />
-														</svg>
-													</button>
-												</td>
-											</tr>
-										</tbody>
-									</table>
+							<div role="tabpanel" class="tab-pane fade" id="panel2">
+								<div class="flexbox">
+									<div class="cell">
+										<div class="objects-select__wrap">
+											<select name="obj2[]"
+												multiple
+												placeholder="Выберите объект"
+												data-placeholder="Объекты"
+												data-count="объекта"
+												data-count-plural="объектов"
+												data-count-single="объект"
+												class="j-search-select">
+													<option value="34">ЖК Стасовой</option>
+													<option value="57">ЖК Миручино</option>
+													<option value="39">ЖК Годенко</option>
+													<option value="76">ЖК Новониколаевский</option>
+													<option value="72">Калейдоскоп</option>
+													<option value="63">Паруса</option>
+													<option value="86">Звездный Дуэт</option>
+													<option value="36">Цивилизация</option>
+													<option value="41">София</option>
+													<option value="55">Цветной город</option>
+													<option value="78">Богемия</option>
+													<option value="60">Новая Охта</option>
+													<option value="88">Цивилизация на Неве</option>
+													<option value="61">Шуваловский</option>
+											</select>	
+										</div>
+									</div>
+									<div class="cell">
+										<p class="cell__title">Стоимость</p>
+										<div class="slider">
+											<div class="slider">
+												<div id="slider-cost2"></div>
+											</div>
+											<div class="slider_controls">
+												<input type="text" id="cost2-from" class="param_control" placeholder="от"  /> 
+												<span class="separate"> — </span>
+												<input type="text" id="cost2-to" class="param_control" placeholder="до"  />
+											</div>
+										</div>
+									</div>
+									<div class="cell">
+										<p class="cell__title">Площадь</p>
+										<div class="slider">
+											<div class="slider">
+												<div id="slider-area2"></div>
+											</div>
+											<div class="slider_controls">
+												<input type="text" id="area2-from" class="param_control" placeholder="от"  />
+												<span class="separate"> — </span>
+												<input type="text" id="area2-to" class="param_control" placeholder="до"  />
+											</div>
+										</div>
+									</div>
+									<div class="cell">
+										<a href="#" class="showflat icon-flats">
+											Показать <br> <span id="countflat2">256 квартир</span>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
+					</div>
+					<script>
 
-						<div class="favorite__item">
-							<div class="favorite__top">
-								<div class="flexbox">
-									<div class="object__pic">
-										<img src="tmp/fav-object.png" alt="Жилой комплекс Курчатова" />
-									</div>
-									<div class="object__info">
-										<p>Жилой комплекс</p>
-										<p class="object__title"><a href="#" class="fill-effect" title=""><span>Курчатова</span></a></p>
-									</div>
-									<div class="object__composition">
-										<a href="#" class="btn icon-house-dark">2 дома</a>
-									</div>
-									<div class="object__address">
-										<a href="#" class="btn btn-red icon-label">ул. Елены Стасовой, д. 17 / д. 2</a>
-									</div>
-									<div class="object__flats"><span class="num">456</span> квартир</div>
-									<div class="object__price">От 1.8 млн <span class="rur">Р</span></div>
-								</div>
-							</div>
-							<div class="favorite__body">
-								<div class="table-responsive">
-									<table class="table-flats">
-										<thead>
-											<tr>
-												<th class="col-1">Планировка</th>
-												<th align="left">Дом, Подъезд, № квартиры</th>
-												<th class="col-1">Этаж</th>
-												<th>Площадь</th>
-												<th>Цена за м <sup>2</sup></th>
-												<th>Стоимость</th>
-												<th>ЖНК</th>
-												<th>Срок сдачи</th>
-												<th></th>
-												<th></th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr data-link="http://google.com">
-												<td align="center" class="has_plan">
-													<img src="/tmp/plan.png" alt="Планировка" />
-													<div class="plan">
-														<img src="/tmp/_920.png" alt="Планировка" />
-													</div>
-												</td>
-												<td>
-													<p class="flat"><a href="#">1-комнатная №24</a></p>
-													<p class="place"><a href="#">ЖК Курчатова</a></p>
-													<p class="address">ул. Мичурино, д.1 ст.2</p>
-												</td>
-												<td align="center">2/20</td>
-												<td align="center">40.10 м<sup>2</sup></td>
-												<td align="center">48 324</td>
-												<td align="center">1 935 000  Р</td>
-												<td align="center">Нет</td>
-												<td align="center">Дом сдан</td>
-												<td align="right">
-													<button type="button" class="btn btn-order icon-pencil-small" data-toggle="sidemodal" data-target="#add-order">Оставить заявку</button>
-												</td>
-												<td align="center">
-													<button type="button" class="btn delete" aria-label="Удалить">
-														<svg width="24" height="24">
-															<line x1="0" y1="0" x2="24" y2="24" />
-															<line x1="24" y1="0" x2="0" y2="24" />
-														</svg>
-													</button>
-												</td>
-											</tr>
-											<tr data-link="http://google.com">
-												<td align="center" class="has_plan">
-													<img src="/tmp/plan.png" alt="Планировка" />
-													<div class="plan">
-														<img src="/tmp/_920.png" alt="Планировка" />
-													</div>
-												</td>
-												<td>
-													<p class="flat"><a href="#">1-комнатная №25</a></p>
-													<p class="place"><a href="#">ЖК Курчатова</a></p>
-													<p class="address">ул. Мичурино, д.1 ст.2</p>
-												</td>
-												<td align="center">2/20</td>
-												<td align="center">40.10 м<sup>2</sup></td>
-												<td align="center">48 324</td>
-												<td align="center">1 935 000  Р</td>
-												<td align="center">Нет</td>
-												<td align="center">Дом сдан</td>
-												<td align="right">
-													<button type="button" class="btn btn-order icon-pencil-small" data-toggle="sidemodal" data-target="#add-order">Оставить заявку</button>
-												</td>
-												<td align="center">
-													<button type="button" class="btn delete" aria-label="Удалить">
-														<svg width="24" height="24">
-															<line x1="0" y1="0" x2="24" y2="24" />
-															<line x1="24" y1="0" x2="0" y2="24" />
-														</svg>
-													</button>
-												</td>
-											</tr>
-											<tr data-link="http://google.com">
-												<td align="center" class="has_plan">
-													<img src="/tmp/plan.png" alt="Планировка" />
-													<div class="plan">
-														<img src="/tmp/_857.png" alt="Планировка" />
-													</div>
-												</td>
-												<td>
-													<p class="flat"><a href="#">1-комнатная №26</a></p>
-													<p class="place"><a href="#">ЖК Курчатова</a></p>
-													<p class="address">ул. Мичурино, д.1 ст.2</p>
-												</td>
-												<td align="center">2/20</td>
-												<td align="center">40.10 м<sup>2</sup></td>
-												<td align="center">48 324</td>
-												<td align="center">1 935 000  Р</td>
-												<td align="center">Нет</td>
-												<td align="center">Дом сдан</td>
-												<td align="right">
-													<button type="button" class="btn btn-order icon-pencil-small" data-toggle="sidemodal" data-target="#add-order">Оставить заявку</button>
-												</td>
-												<td align="center">
-													<button type="button" class="btn delete" aria-label="Удалить">
-														<svg width="24" height="24">
-															<line x1="0" y1="0" x2="24" y2="24" />
-															<line x1="24" y1="0" x2="0" y2="24" />
-														</svg>
-													</button>
-												</td>
-											</tr>
-											<tr data-link="http://google.com">
-												<td align="center" class="has_plan">
-													<img src="/tmp/plan.png" alt="Планировка" />
-													<div class="plan">
-														<img src="/tmp/_920.png" alt="Планировка" />
-													</div>
-												</td>
-												<td>
-													<p class="flat"><a href="#">1-комнатная №25</a></p>
-													<p class="place"><a href="#">ЖК Курчатова</a></p>
-													<p class="address">ул. Мичурино, д.1 ст.2</p>
-												</td>
-												<td align="center">2/20</td>
-												<td align="center">40.10 м<sup>2</sup></td>
-												<td align="center">48 324</td>
-												<td align="center">1 935 000  Р</td>
-												<td align="center">Нет</td>
-												<td align="center">Дом сдан</td>
-												<td align="right">
-													<button type="button" class="btn btn-order icon-pencil-small" data-toggle="sidemodal" data-target="#add-order">Оставить заявку</button>
-												</td>
-												<td align="center">
-													<button type="button" class="btn delete" aria-label="Удалить">
-														<svg width="24" height="24">
-															<line x1="0" y1="0" x2="24" y2="24" />
-															<line x1="24" y1="0" x2="0" y2="24" />
-														</svg>
-													</button>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-						<!-- =/items -->						
+						var handlesSlider1 = document.getElementById('slider-cost'),
+							costfrom = document.getElementById('cost-from'),
+							costto = document.getElementById('cost-to');
+
+
+						var handlesSlider2 = document.getElementById('slider-area'),
+							areafrom = document.getElementById('area-from'),
+							areato = document.getElementById('area-to');
+
+
+
+						var handlesSlider3 = document.getElementById('slider-cost2'),
+							cost2from = document.getElementById('cost2-from'),
+							cost2to = document.getElementById('cost2-to');
+
+
+						var handlesSlider4 = document.getElementById('slider-area2'),
+							area2from = document.getElementById('area2-from'),
+							area2to = document.getElementById('area2-to');
+
+
+						// цена - квартиры
+						noUiSlider.create(handlesSlider1, {
+							start: [ 40, 120 ],
+							connect: true,
+							range: {
+								'min': 20,
+								'max': 150
+							}
+						});
+
+						handlesSlider1.noUiSlider.on('update', function(values, handle){
+							costfrom.value = 'от ' + parseInt(values[0]) + ' млн. руб';
+							costto.value = 'от ' + parseInt(values[1]) + ' млн. руб';
+						});
+						costfrom.addEventListener('change', function ( ) {
+							var value = this.value;
+							value = value.replace(/\D+/g,"");
+							handlesSlider1.noUiSlider.set([value, null]);
+						});
+						costto.addEventListener('change', function ( ) {
+							var value = this.value;
+							value = value.replace(/\D+/g,"");
+							handlesSlider1.noUiSlider.set([null, value]);
+						});	
+
+
+						// площадь - квартиры
+						noUiSlider.create(handlesSlider2, {
+							start: [ 40, 120 ],
+							connect: true,
+							range: {
+								'min': 25,
+								'max': 250
+							}
+						});
+						handlesSlider2.noUiSlider.on('update', function(values, handle){
+							areafrom.value = 'от ' + parseInt(values[0]) + ' м.кв.';
+							areato.value = 'от ' + parseInt(values[1]) + ' м.кв.';
+						});
+						areafrom.addEventListener('change', function ( ) {
+							var value = this.value;
+							value = value.replace(/\D+/g,"");
+							handlesSlider2.noUiSlider.set([value, null]);
+						});
+						areato.addEventListener('change', function ( ) {
+							var value = this.value;
+							value = value.replace(/\D+/g,"");
+							handlesSlider2.noUiSlider.set([null, value]);
+						});	
+
+
+
+
+						// цена - коммерческое
+						noUiSlider.create(handlesSlider3, {
+							start: [ 40, 120 ],
+							connect: true,
+							range: {
+								'min': 20,
+								'max': 150
+							}
+						});
+
+						handlesSlider3.noUiSlider.on('update', function(values, handle){
+							cost2from.value = 'от ' + parseInt(values[0]) + ' млн. руб';
+							cost2to.value = 'от ' + parseInt(values[1]) + ' млн. руб';
+						});
+						cost2from.addEventListener('change', function ( ) {
+							var value = this.value;
+							value = value.replace(/\D+/g,"");
+							handlesSlider3.noUiSlider.set([value, null]);
+						});
+						cost2to.addEventListener('change', function ( ) {
+							var value = this.value;
+							value = value.replace(/\D+/g,"");
+							handlesSlider3.noUiSlider.set([null, value]);
+						});	
+
+
+						// площадь - коммерческое
+						noUiSlider.create(handlesSlider4, {
+							start: [ 40, 120 ],
+							connect: true,
+							range: {
+								'min': 25,
+								'max': 250
+							}
+						});
+						handlesSlider4.noUiSlider.on('update', function(values, handle){
+							area2from.value = 'от ' + parseInt(values[0]) + ' м.кв.';
+							area2to.value = 'от ' + parseInt(values[1]) + ' м.кв.';
+						});
+						area2from.addEventListener('change', function ( ) {
+							var value = this.value;
+							value = value.replace(/\D+/g,"");
+							handlesSlider4.noUiSlider.set([value, null]);
+						});
+						area2to.addEventListener('change', function ( ) {
+							var value = this.value;
+							value = value.replace(/\D+/g,"");
+							handlesSlider4.noUiSlider.set([null, value]);
+						});	
+					</script>
+
+					<div class="map">
+						<div id="map"></div>
 					</div>
 				</div>
 			</div>
+			<!-- =/filter -->
 
+
+
+			<!-- =main -->
+			<div class="bg-gray">
+				<div class="container">
+					<div class="row">
+						<!-- =main -->
+						<div class="main flexbox">
+							<div class="content">
+								<p class="subtitle">В продаже 325 квартир в <a href="#" title="">ЖК Мичурино</a></p>
+
+								<div class="table-responsive bg-white">
+									<table class="table-flats">
+										<thead>
+											<tr>
+												<th class="col-1">Планировка</th>
+												<th align="left">Дом, Подъезд, № квартиры</th>
+												<th class="col-1"><a href="#" class="sort sort-desc" title="">Этаж</a></th>
+												<th><a href="#" class="sort sort-asc" title="">Площадь</a></th>
+												<th><a href="#" class="sort sort-desc" title="">Цена за м <sup>2</sup></a></th>
+												<th><a href="#" class="sort sort-desc" title="">Стоимость</a></th>
+												<th><a href="#" class="sort sort-desc" title="">ЖНК</a></th>
+												<th><a href="#" class="sort sort-desc" title="">Срок сдачи</a></th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr data-link="http://google.com">
+												<td align="center" class="has_plan">
+													<img src="/tmp/plan.png" alt="Планировка" />
+													<div class="plan">
+														<img src="/tmp/_920.png" alt="Планировка" />
+													</div>
+												</td>
+												<td>
+													<p class="flat"><a href="#">1-комнатная №23</a></p>
+													<p class="place"><a href="#">ЖК Курчатова</a></p>
+													<p class="address">ул. Мичурино, д.1 ст.2</p>
+												</td>
+												<td align="center">2/20</td>
+												<td align="center">40.10 м<sup>2</sup></td>
+												<td align="center">48 324</td>
+												<td align="center">1 935 000  Р</td>
+												<td align="center">Нет</td>
+												<td align="center">Дом сдан</td>
+												<td align="right">
+													<button class="btn-fav to-fav"></button>
+												</td>
+											</tr>
+											<tr data-link="http://google.com">
+												<td align="center" class="has_plan">
+													<img src="/tmp/plan.png" alt="Планировка" />
+													<div class="plan">
+														<img src="/tmp/_920.png" alt="Планировка" />
+													</div>
+												</td>
+												<td>
+													<p class="flat"><a href="#">1-комнатная №24</a></p>
+													<p class="place"><a href="#">ЖК Курчатова</a></p>
+													<p class="address">ул. Мичурино, д.1 ст.2</p>
+												</td>
+												<td align="center">2/20</td>
+												<td align="center">40.10 м<sup>2</sup></td>
+												<td align="center">48 324</td>
+												<td align="center">1 935 000  Р</td>
+												<td align="center">Нет</td>
+												<td align="center">Дом сдан</td>
+												<td align="right">
+													<button class="btn-fav to-fav"></button>
+												</td>
+											</tr>
+											<tr data-link="http://google.com">
+												<td align="center" class="has_plan">
+													<img src="/tmp/plan.png" alt="Планировка" />
+													<div class="plan">
+														<img src="/tmp/_920.png" alt="Планировка" />
+													</div>
+												</td>
+												<td>
+													<p class="flat"><a href="#">1-комнатная №25</a></p>
+													<p class="place"><a href="#">ЖК Курчатова</a></p>
+													<p class="address">ул. Мичурино, д.1 ст.2</p>
+												</td>
+												<td align="center">2/20</td>
+												<td align="center">40.10 м<sup>2</sup></td>
+												<td align="center">48 324</td>
+												<td align="center">1 935 000  Р</td>
+												<td align="center">Нет</td>
+												<td align="center">Дом сдан</td>
+												<td align="right">
+													<button class="btn-fav btn-fav-in"></button>
+												</td>
+											</tr>
+											<tr data-link="http://google.com">
+												<td align="center" class="has_plan">
+													<img src="/tmp/plan.png" alt="Планировка" />
+													<div class="plan">
+														<img src="/tmp/_920.png" alt="Планировка" />
+													</div>
+												</td>
+												<td>
+													<p class="flat"><a href="#">1-комнатная №23</a></p>
+													<p class="place"><a href="#">ЖК Курчатова</a></p>
+													<p class="address">ул. Мичурино, д.1 ст.2</p>
+												</td>
+												<td align="center">2/20</td>
+												<td align="center">40.10 м<sup>2</sup></td>
+												<td align="center">48 324</td>
+												<td align="center">1 935 000  Р</td>
+												<td align="center">Нет</td>
+												<td align="center">Дом сдан</td>
+												<td align="right">
+													<button class="btn-fav to-fav"></button>
+												</td>
+											</tr>
+											<tr data-link="http://google.com">
+												<td align="center" class="has_plan">
+													<img src="/tmp/plan.png" alt="Планировка" />
+													<div class="plan">
+														<img src="/tmp/_920.png" alt="Планировка" />
+													</div>
+												</td>
+												<td>
+													<p class="flat"><a href="#">1-комнатная №24</a></p>
+													<p class="place"><a href="#">ЖК Курчатова</a></p>
+													<p class="address">ул. Мичурино, д.1 ст.2</p>
+												</td>
+												<td align="center">2/20</td>
+												<td align="center">40.10 м<sup>2</sup></td>
+												<td align="center">48 324</td>
+												<td align="center">1 935 000  Р</td>
+												<td align="center">Нет</td>
+												<td align="center">Дом сдан</td>
+												<td align="right">
+													<button class="btn-fav to-fav"></button>
+												</td>
+											</tr>
+											<tr data-link="http://google.com">
+												<td align="center" class="has_plan">
+													<img src="/tmp/plan.png" alt="Планировка" />
+													<div class="plan">
+														<img src="/tmp/_920.png" alt="Планировка" />
+													</div>
+												</td>
+												<td>
+													<p class="flat"><a href="#">1-комнатная №25</a></p>
+													<p class="place"><a href="#">ЖК Курчатова</a></p>
+													<p class="address">ул. Мичурино, д.1 ст.2</p>
+												</td>
+												<td align="center">2/20</td>
+												<td align="center">40.10 м<sup>2</sup></td>
+												<td align="center">48 324</td>
+												<td align="center">1 935 000  Р</td>
+												<td align="center">Нет</td>
+												<td align="center">Дом сдан</td>
+												<td align="right">
+													<button class="btn-fav btn-fav-in"></button>
+												</td>
+											</tr>
+											<tr data-link="http://google.com">
+												<td align="center" class="has_plan">
+													<img src="/tmp/plan.png" alt="Планировка" />
+													<div class="plan">
+														<img src="/tmp/_920.png" alt="Планировка" />
+													</div>
+												</td>
+												<td>
+													<p class="flat"><a href="#">1-комнатная №23</a></p>
+													<p class="place"><a href="#">ЖК Курчатова</a></p>
+													<p class="address">ул. Мичурино, д.1 ст.2</p>
+												</td>
+												<td align="center">2/20</td>
+												<td align="center">40.10 м<sup>2</sup></td>
+												<td align="center">48 324</td>
+												<td align="center">1 935 000  Р</td>
+												<td align="center">Нет</td>
+												<td align="center">Дом сдан</td>
+												<td align="right">
+													<button class="btn-fav to-fav"></button>
+												</td>
+											</tr>
+											<tr data-link="http://google.com">
+												<td align="center" class="has_plan">
+													<img src="/tmp/plan.png" alt="Планировка" />
+													<div class="plan">
+														<img src="/tmp/_920.png" alt="Планировка" />
+													</div>
+												</td>
+												<td>
+													<p class="flat"><a href="#">1-комнатная №24</a></p>
+													<p class="place"><a href="#">ЖК Курчатова</a></p>
+													<p class="address">ул. Мичурино, д.1 ст.2</p>
+												</td>
+												<td align="center">2/20</td>
+												<td align="center">40.10 м<sup>2</sup></td>
+												<td align="center">48 324</td>
+												<td align="center">1 935 000  Р</td>
+												<td align="center">Нет</td>
+												<td align="center">Дом сдан</td>
+												<td align="right">
+													<button class="btn-fav to-fav"></button>
+												</td>
+											</tr>
+											<tr data-link="http://google.com">
+												<td align="center" class="has_plan">
+													<img src="/tmp/plan.png" alt="Планировка" />
+													<div class="plan">
+														<img src="/tmp/_920.png" alt="Планировка" />
+													</div>
+												</td>
+												<td>
+													<p class="flat"><a href="#">1-комнатная №25</a></p>
+													<p class="place"><a href="#">ЖК Курчатова</a></p>
+													<p class="address">ул. Мичурино, д.1 ст.2</p>
+												</td>
+												<td align="center">2/20</td>
+												<td align="center">40.10 м<sup>2</sup></td>
+												<td align="center">48 324</td>
+												<td align="center">1 935 000  Р</td>
+												<td align="center">Нет</td>
+												<td align="center">Дом сдан</td>
+												<td align="right">
+													<button class="btn-fav btn-fav-in"></button>
+												</td>
+											</tr>
+											<tr data-link="http://google.com">
+												<td align="center" class="has_plan">
+													<img src="/tmp/plan.png" alt="Планировка" />
+													<div class="plan">
+														<img src="/tmp/_920.png" alt="Планировка" />
+													</div>
+												</td>
+												<td>
+													<p class="flat"><a href="#">1-комнатная №23</a></p>
+													<p class="place"><a href="#">ЖК Курчатова</a></p>
+													<p class="address">ул. Мичурино, д.1 ст.2</p>
+												</td>
+												<td align="center">2/20</td>
+												<td align="center">40.10 м<sup>2</sup></td>
+												<td align="center">48 324</td>
+												<td align="center">1 935 000  Р</td>
+												<td align="center">Нет</td>
+												<td align="center">Дом сдан</td>
+												<td align="right">
+													<button class="btn-fav to-fav"></button>
+												</td>
+											</tr>
+											<tr data-link="http://google.com">
+												<td align="center" class="has_plan">
+													<img src="/tmp/plan.png" alt="Планировка" />
+													<div class="plan">
+														<img src="/tmp/_920.png" alt="Планировка" />
+													</div>
+												</td>
+												<td>
+													<p class="flat"><a href="#">1-комнатная №24</a></p>
+													<p class="place"><a href="#">ЖК Курчатова</a></p>
+													<p class="address">ул. Мичурино, д.1 ст.2</p>
+												</td>
+												<td align="center">2/20</td>
+												<td align="center">40.10 м<sup>2</sup></td>
+												<td align="center">48 324</td>
+												<td align="center">1 935 000  Р</td>
+												<td align="center">Нет</td>
+												<td align="center">Дом сдан</td>
+												<td align="right">
+													<button class="btn-fav to-fav"></button>
+												</td>
+											</tr>
+											<tr data-link="http://google.com">
+												<td align="center" class="has_plan">
+													<img src="/tmp/plan.png" alt="Планировка" />
+													<div class="plan">
+														<img src="/tmp/_920.png" alt="Планировка" />
+													</div>
+												</td>
+												<td>
+													<p class="flat"><a href="#">1-комнатная №25</a></p>
+													<p class="place"><a href="#">ЖК Курчатова</a></p>
+													<p class="address">ул. Мичурино, д.1 ст.2</p>
+												</td>
+												<td align="center">2/20</td>
+												<td align="center">40.10 м<sup>2</sup></td>
+												<td align="center">48 324</td>
+												<td align="center">1 935 000  Р</td>
+												<td align="center">Нет</td>
+												<td align="center">Дом сдан</td>
+												<td align="right">
+													<button class="btn-fav btn-fav-in"></button>
+												</td>
+											</tr>
+											<tr data-link="http://google.com">
+												<td align="center" class="has_plan">
+													<img src="/tmp/plan.png" alt="Планировка" />
+													<div class="plan">
+														<img src="/tmp/_920.png" alt="Планировка" />
+													</div>
+												</td>
+												<td>
+													<p class="flat"><a href="#">1-комнатная №23</a></p>
+													<p class="place"><a href="#">ЖК Курчатова</a></p>
+													<p class="address">ул. Мичурино, д.1 ст.2</p>
+												</td>
+												<td align="center">2/20</td>
+												<td align="center">40.10 м<sup>2</sup></td>
+												<td align="center">48 324</td>
+												<td align="center">1 935 000  Р</td>
+												<td align="center">Нет</td>
+												<td align="center">Дом сдан</td>
+												<td align="right">
+													<button class="btn-fav to-fav"></button>
+												</td>
+											</tr>
+											<tr data-link="http://google.com">
+												<td align="center" class="has_plan">
+													<img src="/tmp/plan.png" alt="Планировка" />
+													<div class="plan">
+														<img src="/tmp/_920.png" alt="Планировка" />
+													</div>
+												</td>
+												<td>
+													<p class="flat"><a href="#">1-комнатная №24</a></p>
+													<p class="place"><a href="#">ЖК Курчатова</a></p>
+													<p class="address">ул. Мичурино, д.1 ст.2</p>
+												</td>
+												<td align="center">2/20</td>
+												<td align="center">40.10 м<sup>2</sup></td>
+												<td align="center">48 324</td>
+												<td align="center">1 935 000  Р</td>
+												<td align="center">Нет</td>
+												<td align="center">Дом сдан</td>
+												<td align="right">
+													<button class="btn-fav to-fav"></button>
+												</td>
+											</tr>
+											<tr data-link="http://google.com">
+												<td align="center" class="has_plan">
+													<img src="/tmp/plan.png" alt="Планировка" />
+													<div class="plan">
+														<img src="/tmp/_920.png" alt="Планировка" />
+													</div>
+												</td>
+												<td>
+													<p class="flat"><a href="#">1-комнатная №25</a></p>
+													<p class="place"><a href="#">ЖК Курчатова</a></p>
+													<p class="address">ул. Мичурино, д.1 ст.2</p>
+												</td>
+												<td align="center">2/20</td>
+												<td align="center">40.10 м<sup>2</sup></td>
+												<td align="center">48 324</td>
+												<td align="center">1 935 000  Р</td>
+												<td align="center">Нет</td>
+												<td align="center">Дом сдан</td>
+												<td align="right">
+													<button class="btn-fav btn-fav-in"></button>
+												</td>
+											</tr>
+											<tr data-link="http://google.com">
+												<td align="center" class="has_plan">
+													<img src="/tmp/plan.png" alt="Планировка" />
+													<div class="plan">
+														<img src="/tmp/_920.png" alt="Планировка" />
+													</div>
+												</td>
+												<td>
+													<p class="flat"><a href="#">1-комнатная №23</a></p>
+													<p class="place"><a href="#">ЖК Курчатова</a></p>
+													<p class="address">ул. Мичурино, д.1 ст.2</p>
+												</td>
+												<td align="center">2/20</td>
+												<td align="center">40.10 м<sup>2</sup></td>
+												<td align="center">48 324</td>
+												<td align="center">1 935 000  Р</td>
+												<td align="center">Нет</td>
+												<td align="center">Дом сдан</td>
+												<td align="right">
+													<button class="btn-fav to-fav"></button>
+												</td>
+											</tr>
+											<tr data-link="http://google.com">
+												<td align="center" class="has_plan">
+													<img src="/tmp/plan.png" alt="Планировка" />
+													<div class="plan">
+														<img src="/tmp/_920.png" alt="Планировка" />
+													</div>
+												</td>
+												<td>
+													<p class="flat"><a href="#">1-комнатная №24</a></p>
+													<p class="place"><a href="#">ЖК Курчатова</a></p>
+													<p class="address">ул. Мичурино, д.1 ст.2</p>
+												</td>
+												<td align="center">2/20</td>
+												<td align="center">40.10 м<sup>2</sup></td>
+												<td align="center">48 324</td>
+												<td align="center">1 935 000  Р</td>
+												<td align="center">Нет</td>
+												<td align="center">Дом сдан</td>
+												<td align="right">
+													<button class="btn-fav to-fav"></button>
+												</td>
+											</tr>
+										</tbody>
+									</table>									
+								</div>
+
+
+								<!-- =pagination -->
+								<div class="pagination">
+									<a href="#" class="prev">Назад</a>
+									<span class="current">1</span>
+									<a href="#" title="">2</a>
+									<a href="#" title="">3</a>
+									<a href="#" title="">4</a>
+									<span class="separator">...</span>
+									<a href="#" title="">12</a>
+									<a href="#" title="">13</a>
+									<a href="#" title="">14</a>
+									<a href="#" title="">15</a>
+									<a href="#" class="next">Вперед</a>
+								</div>
+								<!-- =/pagination -->
+							</div>
+						</div>
+						<!-- =/main -->
+
+					</div>
+				</div>	
+			</div>
+			<!-- =main -->
 		</div>
 
 		<!-- InstanceEndEditable -->
@@ -936,37 +1332,265 @@
 <!-- =/answer-vacancy -->
 
 <!-- InstanceBeginEditable name="EditRegion5" -->
+<script src="http://api-maps.yandex.ru/2.1.60/?lang=ru_RU"></script>
+<script>
+$(document).ready(function(){
+	ymaps.ready(init);
+});
 
-<!-- =add order -->
-<div class="sidemodal" id="add-order" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="inner" role="document">
-		<p class="title">Оставить заявку</p>
-		<div class="text">Оставьте свои контактные данные и наш менеджер перезвонит Вам в течение рабочего дня</div>
-		<form action="#" method="post" class="callback__form">
-			<fieldset>
-				<div class="input-field icon-people">
-					<label for="morder_name" class="name-field">Ваше имя</label>
-					<label for="morder_name" class="helper-field helper-field-name">Ваше имя</label>
-					<input type="email" id="morder_name" name="name" class="form-control required" value="" />
-				</div>
-				<div class="input-field icon-tel">
-					<label for="morder_tel" class="name-field">Телефон</label>
-					<label for="morder_tel" class="helper-field helper-field-name">Телефон</label>
-					<input type="tel" id="morder_tel" name="tel" class="form-control tel required" value="" />
-				</div>
-				<button type="submit" class="submit btn-animate"><span>Оставить заявку</span></button>
-			</fieldset>
-		</form>
-		<button type="button" data-dismiss="modal" class="close-modal" aria-label="Закрыть">
-			<svg width="24" height="24">
-				<line x1="0" y1="0" x2="24" y2="24" />
-				<line x1="24" y1="0" x2="0" y2="24" />
-			</svg>
-		</button>
-	</div>
-</div>
-<!-- =/modal callback -->
+function init(){
+	/******* =Yandex MAP ********/
+	//http://api.yandex.ru/maps/jsbox/2.1/placemark_shape
+	//http://api.yandex.ru/maps/jsbox/2.1/placemark_balloon
+	//http://api.yandex.ru/maps/jsbox/2.1/icon_customImage
+	// https://tech.yandex.ru/maps/jsbox/2.1/geo_object_collection
+	// https://tech.yandex.ru/maps/doc/jsapi/2.1/dg/concepts/geoobjects-docpage/#geoobject_collections
+	ymaps.ready(function() {
+		var myMap = new ymaps.Map('map', {
+			center: [56.029139, 92.856815],
+			zoom: 11
+		}),
 
+		MyBalloonLayout = ymaps.templateLayoutFactory.createClass(
+			'<div class="popover bottom">' +
+				'<a class="close" href="#">&times;</a>' +
+				'<div class="arrow"></div>' +
+				'<div class="popover-inner">' +
+				'$[[options.contentLayout observeSize minWidth=235 maxWidth=430 maxHeight=350]]' +
+				'</div>' +
+				'</div>', {
+				/**
+				 * Строит экземпляр макета на основе шаблона и добавляет его в родительский HTML-элемент.
+				 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/layout.templateBased.Base.xml#build
+				 * @function
+				 * @name build
+				 */
+				build: function () {
+					this.constructor.superclass.build.call(this);
+
+					this._$element = $('.popover', this.getParentElement());
+
+					this.applyElementOffset();
+
+					this._$element.find('.close')
+						.on('click', $.proxy(this.onCloseClick, this));
+					
+						var Circle = function(sel){
+							var circles = document.querySelectorAll(sel);
+							[].forEach.call(circles,function(el){
+								var num = el.innerHTML,
+									valEl = parseFloat(num);
+
+								valEl = valEl*144/100;
+								el.innerHTML = '<svg width="56" height="56"><circle transform="rotate(-90)" r="23" cx="-28" cy="28" /><circle transform="rotate(-90)" style="stroke-dasharray:'+valEl+'px 144px;" r="23" cx="-28" cy="28" /></svg><div class="num">'+num+'</div>';
+								
+							});
+						};
+						Circle('.circle');
+				},
+
+				/**
+				 * Удаляет содержимое макета из DOM.
+				 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/layout.templateBased.Base.xml#clear
+				 * @function
+				 * @name clear
+				 */
+				clear: function () {
+					this._$element.find('.close')
+						.off('click');
+
+					this.constructor.superclass.clear.call(this);
+				},
+
+				/**
+				 * Метод будет вызван системой шаблонов АПИ при изменении размеров вложенного макета.
+				 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/IBalloonLayout.xml#event-userclose
+				 * @function
+				 * @name onSublayoutSizeChange
+				 */
+				onSublayoutSizeChange: function () {
+					MyBalloonLayout.superclass.onSublayoutSizeChange.apply(this, arguments);
+
+					if(!this._isElement(this._$element)) {
+						return;
+					}
+
+					this.applyElementOffset();
+
+					this.events.fire('shapechange');
+				},
+
+				/**
+				 * Сдвигаем балун, чтобы "хвостик" указывал на точку привязки.
+				 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/IBalloonLayout.xml#event-userclose
+				 * @function
+				 * @name applyElementOffset
+				 */
+				applyElementOffset: function () {
+					this._$element.css({
+						left: -(this._$element[0].offsetWidth / 2 ),
+						top: 15
+					});
+				},
+
+				/**
+				 * Закрывает балун при клике на крестик, кидая событие "userclose" на макете.
+				 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/IBalloonLayout.xml#event-userclose
+				 * @function
+				 * @name onCloseClick
+				 */
+				onCloseClick: function (e) {
+					e.preventDefault();
+
+					this.events.fire('userclose');
+				},
+
+				/**
+				 * Используется для автопозиционирования (balloonAutoPan).
+				 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/ILayout.xml#getClientBounds
+				 * @function
+				 * @name getClientBounds
+				 * @returns {Number[][]} Координаты левого верхнего и правого нижнего углов шаблона относительно точки привязки.
+				 */
+				getShape: function () {
+					if(!this._isElement(this._$element)) {
+						return MyBalloonLayout.superclass.getShape.call(this);
+					}
+
+					var position = this._$element.position();
+
+					return new ymaps.shape.Rectangle(new ymaps.geometry.pixel.Rectangle([
+						[position.left, position.top], [
+							position.left + this._$element[0].offsetWidth,
+							position.top + this._$element[0].offsetHeight 
+						]
+					]));
+				},
+
+				/**
+				 * Проверяем наличие элемента (в ИЕ и Опере его еще может не быть).
+				 * @function
+				 * @private
+				 * @name _isElement
+				 * @param {jQuery} [element] Элемент.
+				 * @returns {Boolean} Флаг наличия.
+				 */
+				_isElement: function (element) {
+					return element && element[0] && element.find('.arrow')[0];
+				}
+			}), 	
+
+		MyBalloonContentLayout = ymaps.templateLayoutFactory.createClass(
+			'<div class="popover-container flexbox">' + 
+				'<div class="popover-pic"><img src="$[properties.balloonPic]" /></div>' +
+				'<div class="popover-description">' +
+					'<p class="popover-title">$[properties.balloonHeader]</p>' +
+					'<div class="popover-content">' + 
+						'<div class="left"><p class="name">$[properties.balloonTitle]</p>Готов на</div>' +
+						'<div class="right"><div class="diagram circle">$[properties.percent]</div></div>' +
+					'</div>' +
+					'<div class="popover-bottom">'+
+						'<div class="popover-scheme"><img src="$[properties.scheme]" /></div>' +
+						'<div class="popover-bottom-right"><a href="$[properties.link]" class="popover-link"><span>$[properties.titleLink]</span></a></div>' +
+					'</div>' +
+				'</div>'+
+			'</div>'
+		),
+
+		// создаем коллекции и параметры меток в ней
+		myCollection = new ymaps.GeoObjectCollection({},{
+			iconLayout: 'default#image',
+			iconImageHref: '/images/balloon.png',
+			iconImageSize: [51, 61],
+			iconImageOffset: [-25, -61],
+			hideIconOnBalloonOpen: false,
+			balloonLayout: MyBalloonLayout,
+			balloonContentLayout: MyBalloonContentLayout
+		});
+
+
+		// создаем метку и прописываем ее свойства 
+		myCollection.add(new ymaps.Placemark(
+			[56.034195, 92.796605],
+			{
+				balloonHeader: 'ЖК Стасовой',
+				balloonPic: '/tmp/gk.jpg',
+				balloonTitle: 'Дом 1.1',
+				balloonContent: 'Контент балуна',
+				percent: '66%',
+				diagram: '/images/circle-60.png',
+				scheme: '/tmp/scheme.png',
+				link: 'http://google.com',
+				titleLink: 'Смотреть 523 квартиры',
+			}
+		));
+
+		myCollection.add(new ymaps.Placemark(
+			[56.034295, 92.798605],
+			{
+				balloonHeader: 'ЖК Курчатова',
+				balloonPic: '/tmp/gk.jpg',
+				balloonTitle: 'Дом 2.1',
+				balloonContent: 'Контент балуна',
+				percent: '25%',
+				diagram: '/images/circle-60.png',
+				scheme: '/tmp/scheme.png',
+				link: 'http://google.com',
+				titleLink: 'Смотреть 200 квартир',
+			}
+		));
+
+		myCollection.add(new ymaps.Placemark(
+			[56.014295, 92.898605],
+			{
+				balloonHeader: 'ЖК Курчатова',
+				balloonPic: '/tmp/gk.jpg',
+				balloonTitle: 'Дом 2.1',
+				balloonContent: 'Контент балуна',
+				percent: '40%',
+				diagram: '/images/circle-60.png',
+				scheme: '/tmp/scheme.png',
+				link: 'http://google.com',
+				titleLink: 'Смотреть 200 квартир',
+			}
+		));
+
+		myCollection.add(new ymaps.Placemark(
+			[56.004295, 92.998605],
+			{
+				balloonHeader: 'ЖК Курчатова',
+				balloonPic: '/tmp/gk.jpg',
+				balloonTitle: 'Дом 2.1',
+				balloonContent: 'Контент балуна',
+				percent: '10%',
+				diagram: '/images/circle-60.png',
+				scheme: '/tmp/scheme.png',
+				link: 'http://google.com',
+				titleLink: 'Смотреть 200 квартир',
+			}
+		));
+		// добавляем коллекцию в геообъект
+		myMap.geoObjects.add(myCollection);
+
+		myCollection.events
+			.add('mouseenter', function (e) {
+				e.get('target').options.set('iconImageHref', '/images/balloon-hover.png');
+			})
+			.add('mouseleave', function (e) {
+				e.get('target').options.set('iconImageHref', '/images/balloon.png');
+			});
+
+		myMap.behaviors.disable('scrollZoom'); 
+		myMap.events.add('click', function onMapClick(e) {
+			if(myMap.behaviors.isEnabled('scrollZoom')) {
+				myMap.events.remove('click', onMapClick);
+			} else {
+				myMap.behaviors.enable(['scrollZoom']);
+			}
+		});
+	});	
+}
+</script>
 <!-- InstanceEndEditable -->
 
 <div id="outdated"></div>
@@ -994,7 +1618,6 @@
 <script src="/js/engine.js"></script>
 
 <!-- InstanceBeginEditable name="EditRegion4" -->
-
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
