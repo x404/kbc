@@ -1448,10 +1448,18 @@ form{
 			display: inline;
 		}
 	}
+	.selectize-dropdown .selected,
 	.selectize-dropdown .selected.active{
-		// background-color: #5eb38f;
-		// color: $color2;
+		background-color: #e9ecf0;
+		color: $color1;
 	}
+
+	.selectize-dropdown .selected:hover{
+		background-color: #00874d;
+		color: $color2;
+	}
+
+
 	.selectize-remove-option {
 	    position: absolute;
 	    top: 0;

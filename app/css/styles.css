@@ -1443,6 +1443,13 @@ form .form-control {
     display: none; }
     .filter .selectize-control.multi .selectize-input [data-value]:first-child {
       display: inline; }
+  .filter .selectize-dropdown .selected,
+  .filter .selectize-dropdown .selected.active {
+    background-color: #e9ecf0;
+    color: #000; }
+  .filter .selectize-dropdown .selected:hover {
+    background-color: #00874d;
+    color: #fff; }
   .filter .selectize-remove-option {
     position: absolute;
     top: 0;
