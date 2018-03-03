@@ -74,6 +74,9 @@
 .col-9 {
   flex: 0 0 90%; }
 
+.col-10 {
+  flex: 0 0 100%; }
+
 .offset-col-1 {
   margin-left: 10%; }
 
@@ -148,31 +151,31 @@
 
 .icon-people:before {
   background-image: url(../images/sprite.png);
-  background-position: 0px -175px;
+  background-position: -36px -175px;
   width: 18px;
   height: 17px; }
 
 .icon-people-gray:before {
   background-image: url(../images/sprite.png);
-  background-position: -214px -112px;
+  background-position: -18px -175px;
   width: 18px;
   height: 17px; }
 
 .icon-people-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -196px -112px;
+  background-position: 0px -175px;
   width: 18px;
   height: 17px; }
 
 .icon-tel:before {
   background-image: url(../images/sprite.png);
-  background-position: -68px -175px;
+  background-position: -104px -175px;
   width: 16px;
   height: 16px; }
 
 .icon-tel-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -52px -175px;
+  background-position: -88px -175px;
   width: 16px;
   height: 16px; }
 
@@ -196,7 +199,7 @@
   padding-left: 25px; }
   .icon-clock:before {
     background-image: url(../images/sprite.png);
-    background-position: -122px -88px;
+    background-position: -121px -107px;
     width: 19px;
     height: 19px;
     left: 0;
@@ -207,7 +210,7 @@
   position: relative; }
   .icon-darkclock:before {
     background-image: url(../images/sprite.png);
-    background-position: -121px -107px;
+    background-position: -122px -88px;
     width: 19px;
     height: 19px;
     left: 0;
@@ -223,14 +226,14 @@
 
 .icon-letter:before {
   background-image: url(../images/sprite.png);
-  background-position: -84px -175px;
+  background-position: -120px -175px;
   width: 18px;
   height: 14px;
   left: 0; }
 
 .icon-comment:before {
   background-image: url(../images/sprite.png);
-  background-position: -18px -175px;
+  background-position: -54px -175px;
   width: 17px;
   height: 17px;
   left: 0;
@@ -238,7 +241,7 @@
 
 .icon-comment-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -35px -175px;
+  background-position: -71px -175px;
   width: 17px;
   height: 17px;
   left: 0;
@@ -318,7 +321,7 @@
   position: relative; }
   .icon-photo:before {
     background-image: url(../images/sprite.png);
-    background-position: -175px -112px;
+    background-position: -200px -112px;
     width: 21px;
     height: 18px;
     left: 0;
@@ -329,11 +332,22 @@
   position: relative; }
   .icon-scheme:before {
     background-image: url(../images/sprite.png);
-    background-position: -151px -112px;
+    background-position: -176px -112px;
     width: 24px;
     height: 19px;
     left: 0;
     top: -1px; }
+
+.icon-check {
+  padding-left: 30px;
+  position: relative; }
+  .icon-check:before {
+    background-image: url(../images/sprite.png);
+    background-position: -151px -112px;
+    width: 25px;
+    height: 21px;
+    left: 0;
+    top: 0; }
 
 /*** reset ***********/
 html, body, ul, ol, li, dl, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, a, img, label, dt, dd {
@@ -427,7 +441,7 @@ h3 {
   .vacancies-page .head p a:hover, .contact__plate .email:hover, .table-flats td .place a:hover {
     text-decoration: none; }
 
-.before, .icon-catalog:before, .icon-sett:before, .icon-pricelist:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-house-dark:before, .icon-camera:before, .icon-photo:before, .icon-scheme:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
+.before, .icon-catalog:before, .icon-sett:before, .icon-pricelist:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-house-dark:before, .icon-camera:before, .icon-photo:before, .icon-scheme:before, .icon-check:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
 .fixed-header .wishlist__link:before,
 .fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .callback .call:before,
 .resume .call:before, .modal-menu .menu .title:after,
@@ -459,7 +473,7 @@ input[type="submit"] {
 .topnews .news .date, .feature .news .cat__link,
 .topnews .news .cat__link, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
 .vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top,
-.list_construction .place__top, .review__bottom, .filter-sort .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .popover-bottom {
+.list_construction .place__top, .review__bottom, .filter-sort .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installment__left, .installment__right .variant, .popover-bottom {
   display: flex;
   align-items: center; }
 
@@ -734,13 +748,13 @@ form .form-control {
     .header .wishlist__link:before,
     .fixed-header .wishlist__link:before {
       background-image: url(../images/sprite.png);
-      background-position: -150px -134px;
+      background-position: -119px -134px;
       width: 31px;
       height: 30px; }
     .header .wishlist__link:after,
     .fixed-header .wishlist__link:after {
       background-image: url(../images/sprite.png);
-      background-position: -119px -134px;
+      background-position: -150px -134px;
       width: 31px;
       height: 30px;
       -webkit-transition: opacity 0.2s ease-out;
@@ -809,7 +823,7 @@ form .form-control {
       padding-left: 55px; }
       .fixed-header .qfilter a:before {
         background-image: url(../images/sprite.png);
-        background-position: -80px -134px;
+        background-position: -41px -134px;
         width: 39px;
         height: 30px;
         left: 0; }
@@ -1293,7 +1307,12 @@ form .form-control {
   width: 100%; }
 
 .visual {
-  margin: 7.2rem auto; }
+  margin: 7.2rem 0; }
+  .visual .title {
+    font-weight: 500;
+    font-size: 3.4rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase; }
 
 .img-responsive {
   display: block;
@@ -2502,7 +2521,7 @@ body.modal-open {
 .main {
   padding: 3rem 0 5rem;
   position: relative;
-  z-index: 20;
+  z-index: 30;
   width: 100%; }
 
 .side-inner {
@@ -2700,7 +2719,7 @@ body.modal-open {
       position: relative; }
       .picking__link span:before {
         background-image: url(../images/sprite.png);
-        background-position: -41px -134px;
+        background-position: -80px -134px;
         width: 39px;
         height: 30px;
         left: -72px;
@@ -4380,12 +4399,12 @@ main {
   border: none;
   background-color: transparent;
   background-image: url(../images/sprite.png);
-  background-position: -150px -134px;
+  background-position: -119px -134px;
   width: 31px;
   height: 30px; }
   .btn-fav-in, .btn-fav:hover {
     background-image: url(../images/sprite.png);
-    background-position: -119px -134px;
+    background-position: -150px -134px;
     width: 31px;
     height: 30px; }
 
@@ -4451,6 +4470,115 @@ main {
       .house__bottom .btn:before {
         left: 20px;
         top: 11px; }
+
+.flat-page .visual .title {
+  padding-top: 5rem; }
+
+.flat-page .visual__item {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.3rem; }
+  .flat-page .visual__item a {
+    display: block;
+    transition: .3s box-shadow; }
+    .flat-page .visual__item a img {
+      display: block;
+      max-width: 100%; }
+    .flat-page .visual__item a:hover {
+      box-shadow: 0 5px 30px rgba(83, 99, 121, 0.5); }
+
+.similar_product .title {
+  font-size: 3.4rem;
+  font-weight: 500;
+  text-transform: uppercase; }
+
+.additional_info {
+  border-top: 2px solid #ebeef1;
+  padding-top: 8rem; }
+  .additional_info .table-flats {
+    border: 2px solid #ebeef1;
+    margin-top: 1.5em; }
+    .additional_info .table-flats .name {
+      color: #5e5e5e;
+      padding-bottom: .7rem;
+      font-weight: 400;
+      font-size: 1.4rem; }
+  .additional_info td {
+    border-bottom: 2px solid #ebeef1; }
+
+.installment {
+  background-image: -webkit-linear-gradient(top, #00864d 0%, #0d6640 100%);
+  background-image: -o-linear-gradient(top, #00864d 0%, #0d6640 100%);
+  background-image: linear-gradient(to bottom, #00864d 0%, #0d6640 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF00864D', endColorstr='#FF0D6640', GradientType=0);
+  padding: 8rem 0 9.3rem; }
+  .installment__left {
+    background: url(../images/bg-2.jpg) no-repeat 85px center #fff;
+    border-bottom: 11px solid #c20831;
+    color: #50525d;
+    font-size: 1.5rem;
+    min-height: 400px;
+    padding-left: 480px; }
+    .installment__left .category {
+      color: #c20831;
+      font-size: 1.8rem;
+      font-weight: 500; }
+    .installment__left .title {
+      margin: 2rem 0;
+      color: #000;
+      font-size: 3.4rem;
+      font-weight: 500; }
+    .installment__left .btn {
+      background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAMAAAD+iNU2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAt1BMVEXCCTLCCDHCCDHCCDHCCDHCCDHCCDHCCTLCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCTLCCDHCCDHCCDHCCDHCCDHCCDHCCTLCCDHCCDHCCDHCCDHCCTLCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCTLCCTLCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCTL///+DcEUpAAAAOnRSTlMAAEqfFBfZtBECZvW2E2D2sxFc9BJX67IyMTApffy38/Lx7+389fT9NTQzMit+uRVU6bRauF61ZEugyWZY4AAAAAFiS0dEPKdqYc8AAAAHdElNRQfiAwMWDhfHtrKcAAAAkElEQVQI103P5xKCQAxG0Xy6FmTXBnZFRMQuVtTw/u8lZVy4v3ImM5kJEdIqVQGkI2Wu1bnRLNlomSxVYaDd4W6vZPQtlnbJGAx5ZIPGk7zpbL5gR9DSXeV5az+OJW2CwMpyvS2zQ7v9Iet4Ovt8CfU5XG98V9B+WPxU0H6ZHCn8bbyTrYB28k9kozA+3zAffr9dDx+5Qyd+AAAAAElFTkSuQmCC") no-repeat 14px 24px;
+      border: 2px solid #ebeef1;
+      display: inline-flex;
+      align-items: center;
+      font-size: 1.8rem;
+      font-weight: 500;
+      height: 6.6rem;
+      margin-top: .5rem;
+      padding-left: 40px;
+      padding-right: 30px;
+      text-decoration: none; }
+      .installment__left .btn:hover .fill-effect {
+        color: #fff; }
+        .installment__left .btn:hover .fill-effect:before {
+          transform: translateX(0); }
+    .installment__left .flexbox {
+      width: 700px; }
+    .installment__left .column {
+      padding-right: 20px;
+      width: 50%; }
+      .installment__left .column .point {
+        margin-bottom: 1.8rem; }
+      .installment__left .column:last-child {
+        padding-right: 0; }
+  .installment__right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 40px; }
+    .installment__right .title {
+      color: #fff;
+      padding-bottom: 1rem;
+      font-weight: 500;
+      font-size: 3rem;
+      text-transform: uppercase; }
+    .installment__right .btn {
+      display: block;
+      font-size: 2rem;
+      height: 5.8rem;
+      margin-top: 2rem;
+      padding: 0;
+      text-align: center;
+      width: 270px; }
+    .installment__right .variant {
+      color: #fff; }
+      .installment__right .variant__cifr {
+        font-size: 5rem;
+        font-weight: 500;
+        flex: 0 0 80px; }
 
 .popover {
   box-shadow: 0 5px 20px rgba(73, 82, 95, 0.5);

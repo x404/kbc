@@ -1257,7 +1257,15 @@ form{
 
 
 .visual{
-	margin: 7.2rem auto;
+	// margin: 7.2rem auto;
+	margin: 7.2rem 0;
+	.title{
+		font-weight: 500;
+		font-size: 3.4rem;
+		margin-bottom: 1.5rem;
+		text-transform: uppercase;
+	}
+
 }
 
 .img-responsive{
