@@ -208,7 +208,7 @@
 											</p>
 										</div>
 										<div class="right">
-											<button class="btn icon-pencil-dark" type="button">Оставить заявку</button>
+											<button class="btn icon-pencil-dark" type="button" data-toggle="sidemodal" data-target="#add-order" data-title="1-комнатная №25, ЖК Курчатова">Оставить заявку</button>
 										</div>
 									</div>
 								</div>
@@ -955,6 +955,37 @@
 <!-- =/answer-vacancy -->
 
 <!-- InstanceBeginEditable name="EditRegion5" -->
+<!-- =add order -->
+<div class="sidemodal" id="add-order" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="inner" role="document">
+		<p class="title">Оставить заявку</p>
+		<div class="text">Оставьте свои контактные данные и наш менеджер перезвонит Вам в течение рабочего дня</div>
+		<form action="#" method="post" class="callback__form">
+			<fieldset>
+				<div class="input-field icon-people">
+					<label for="morder_name" class="name-field">Ваше имя</label>
+					<label for="morder_name" class="helper-field helper-field-name">Ваше имя</label>
+					<input type="email" id="morder_name" name="name" class="form-control required" value="" />
+				</div>
+				<div class="input-field icon-tel">
+					<label for="morder_tel" class="name-field">Телефон</label>
+					<label for="morder_tel" class="helper-field helper-field-name">Телефон</label>
+					<input type="tel" id="morder_tel" name="tel" class="form-control tel required" value="" />
+				</div>
+				<input type="hidden" name="place" id="place" value="" />
+				<button type="submit" class="submit btn-animate"><span>Оставить заявку</span></button>
+			</fieldset>
+		</form>
+		<button type="button" data-dismiss="modal" class="close-modal" aria-label="Закрыть">
+			<svg width="24" height="24">
+				<line x1="0" y1="0" x2="24" y2="24" />
+				<line x1="24" y1="0" x2="0" y2="24" />
+			</svg>
+		</button>
+	</div>
+</div>
+<!-- =/modal order -->
+
 <!-- InstanceEndEditable -->
 
 <div id="outdated"></div>

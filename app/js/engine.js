@@ -393,10 +393,12 @@ $(document).on('click', '.o-menu .folder > a, .o-menu .folder > span', function(
 // обратный звонок
 $(document).on('click', '[data-toggle="sidemodal"]', function(e){
 	e.stopPropagation();
-	let target = this.dataset.target;
+	let target = this.dataset.target,
+		title = this.dataset.title;
 	document.querySelector(target).classList.add('open');
 	document.querySelector('.body').classList.add('m-modal-open');
 
+	document.querySelector(target + ' #place').value = title;
 });
 
 $(document).on('click', '.close-modal', function(e){
