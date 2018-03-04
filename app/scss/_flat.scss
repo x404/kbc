@@ -338,7 +338,7 @@
 .card_flat{
 	.carousel{
 		text-align: center;
-		width: 800px;
+		width: 780px;
 		.owl-carousel{
 			.owl-prev{
 				left: -10px;
@@ -368,6 +368,13 @@
 				width: 140px;
 				margin-top: -2px;
 				text-align: center;
+				cursor: pointer;
+				transition: .3s border-color, color;
+				&:hover{
+					color: $color1;
+					border-color: $color1;
+					z-index: 2;
+				}
 				&.current{
 					color: $color1;
 					border-color: $color8;
@@ -423,5 +430,11 @@
 		&-in{
 			@extend .icon-starsmallfill;
 		}
+	}
+}
+
+.card__visual{
+	.flexbox{
+		justify-content: space-between
 	}
 }

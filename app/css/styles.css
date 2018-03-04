@@ -4769,7 +4769,7 @@ main {
 
 .card_flat .carousel {
   text-align: center;
-  width: 800px; }
+  width: 780px; }
   .card_flat .carousel .owl-carousel .owl-prev {
     left: -10px; }
     .card_flat .carousel .owl-carousel .owl-prev:hover {
@@ -4789,7 +4789,13 @@ main {
       position: relative;
       width: 140px;
       margin-top: -2px;
-      text-align: center; }
+      text-align: center;
+      cursor: pointer;
+      transition: .3s border-color, color; }
+      .card_flat .carousel_tab li:hover {
+        color: #000;
+        border-color: #000;
+        z-index: 2; }
       .card_flat .carousel_tab li.current {
         color: #000;
         border-color: #00874d;
@@ -4832,6 +4838,9 @@ main {
     top: 0;
     left: 50%;
     margin-left: -13px; }
+
+.card__visual .flexbox {
+  justify-content: space-between; }
 
 .popover {
   box-shadow: 0 5px 20px rgba(73, 82, 95, 0.5);

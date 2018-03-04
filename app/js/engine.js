@@ -49,7 +49,9 @@ $(document).ready(function(){
 		stagePadding : 0
 	});
 
-	$('#scheme').owlCarousel({
+
+	var schemeowl = $('#scheme');
+	schemeowl.owlCarousel({
 		loop:false,
 		nav: true,
 		dots: false,
@@ -57,6 +59,22 @@ $(document).ready(function(){
 		navText: ["", ""],
 		stagePadding : 0
 	});
+
+
+	$('.carousel_tab li').click(function(e){
+		e.preventDefault();
+		let pos = this.dataset.pos;
+		let $this = this;
+		schemeowl.trigger('to.owl.carousel', pos);
+		document.querySelector('.carousel_tab .current').classList.remove('current');
+		$this.classList.add('current');
+	});
+
+
+	schemeowl.on('changed.owl.carousel', function(event) {
+		document.querySelector('.carousel_tab .current').classList.remove('current');
+		$('.carousel_tab li').eq(event.item.index).addClass('current');
+	})
 
 
 	// mobile-menu
