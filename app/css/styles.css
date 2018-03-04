@@ -4865,11 +4865,11 @@ main {
     padding: 4.4rem 0 0;
     width: 740px; }
   #calc-gnk .modal-body {
-    padding: 3rem 4.5rem 1rem; }
+    padding: 3rem 4.5rem 1rem 5rem; }
   #calc-gnk .modal-title {
     color: #000;
     font-size: 3.4rem;
-    padding-left: 4.5rem; }
+    padding-left: 5rem; }
   #calc-gnk .modal-footer {
     background: #f1f4f6;
     padding: 3.5rem 4.5rem 3rem; }
@@ -4911,6 +4911,21 @@ main {
       margin-top: 0;
       padding-left: 0;
       width: 13rem; }
+    #calc-gnk .row .slider {
+      margin-left: 10rem;
+      margin-top: 2.7rem;
+      position: relative;
+      width: 272px; }
+      #calc-gnk .row .slider_start {
+        left: -25px; }
+      #calc-gnk .row .slider_end {
+        left: calc(100% + 18px); }
+      #calc-gnk .row .slider_start, #calc-gnk .row .slider_end {
+        color: #3e3e3e;
+        font-size: 1.5rem;
+        position: absolute;
+        top: -7px;
+        white-space: nowrap; }
 
 .popover {
   box-shadow: 0 5px 20px rgba(73, 82, 95, 0.5);

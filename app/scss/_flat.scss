@@ -463,13 +463,13 @@
 			width: 740px;
 		}
 		&-body{
-			padding: 3rem 4.5rem 1rem;
+			padding: 3rem 4.5rem 1rem 5rem;
 		}
 
 		&-title{
 			color: $color1;
 			font-size: 3.4rem;
-			padding-left: 4.5rem;
+			padding-left: 5rem;
 		}
 
 		&-footer{
@@ -528,6 +528,27 @@
 			margin-top: 0;
 			padding-left: 0;
 			width: 13rem;
+		}
+
+		.slider{
+			margin-left: 10rem;
+			margin-top: 2.7rem;
+			position: relative;
+			width: 272px;
+			&_start{
+				left: -25px;
+			}
+			&_end{
+				left: calc(100% + 18px);
+			}
+			&_start,
+			&_end{
+				color: #3e3e3e;
+				font-size: 1.5rem;
+				position: absolute;
+				top: -7px;
+				white-space: nowrap;
+			}
 		}
 	}
 }
