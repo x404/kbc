@@ -516,7 +516,7 @@ input[type="submit"] {
 .topnews .news .date, .feature .news .cat__link,
 .topnews .news .cat__link, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
 .vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top,
-.list_construction .place__top, .review__bottom, .filter-sort .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installment__left, .installment__right .variant, .popover-bottom {
+.list_construction .place__top, .review__bottom, .filter-sort .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .popover-bottom {
   display: flex;
   align-items: center; }
 
@@ -1545,103 +1545,96 @@ form .form-control {
       margin-top: -20px;
       top: 50%; }
 
-.installment__container {
-  display: flex;
-  cursor: pointer; }
-
-.installment .checkbox {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-  margin: 10px 0 0 20px; }
-
-.installment .checkbox + label {
-  color: #363636;
-  cursor: pointer;
-  display: block;
-  font-size: 1.4rem;
-  padding: 0 0 0 35px;
-  position: relative; }
-
-.installment .checkbox + label:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 25px;
-  height: 25px;
-  background: #fff;
-  transition: .2s;
-  border: 2px solid #00874d; }
-
-.installment .checkbox + label:hover:before {
-  border-color: #c20831; }
-
-.installment .checkbox + label:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 16px;
-  height: 12px;
-  top: 0;
-  z-index: 2;
-  left: 0; }
-
-.installment .checkbox:checked + label:before {
-  background: #00874d; }
-
-.installment .checkbox:checked + label:after {
-  left: 5px;
-  top: 6px;
-  background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAQAAADB7vUKAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAwEVAiEM9h7bAAAAX0lEQVQY033QwQnAIAxG4X+GTCJ0MEdyhXotdIOu4gyvB1FLo5Lj9yAkQosJXBhacwEebMdQCHs+6opIWjESEaAnP0YiQU8c1xUtyZ7bmS1xPP5wznkERpnx95PG7Rm986n4r0p1BmsAAAAASUVORK5CYII=") no-repeat center; }
-
-.installment .checkbox:checked + label:hover:before {
-  border-color: #00874d; }
-
-.installment__tooltip {
-  border-radius: 50%;
-  border: 1px solid #5f6b79;
-  height: 20px;
-  margin-left: 18px;
-  margin-top: 10px;
-  width: 20px;
-  position: relative; }
-  .installment__tooltip:before {
-    display: block;
-    content: "?";
-    color: #5f6b79;
-    text-align: center;
-    width: 18px;
-    line-height: 20px;
-    font-size: 1.2rem; }
-  .installment__tooltip_content {
-    background: #fff;
-    box-shadow: 0 0 20px rgba(112, 121, 133, 0.25);
-    color: #3f3f3f;
-    left: calc(100% + 12px);
-    line-height: 1.5;
-    opacity: 0;
-    padding: 1.5rem;
+.installment {
+  margin-top: 1.3rem; }
+  .installment__container {
+    display: flex;
+    cursor: pointer; }
+  .installment .checkbox {
     position: absolute;
-    top: -20px;
-    transform: translateX(-10px);
-    transition: .3s all ease-out;
-    visibility: hidden;
-    width: 24.5rem;
-    z-index: 2; }
-    .installment__tooltip_content:before {
-      top: 22px;
-      left: -7px;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 7px 7px 7px 0;
-      border-color: transparent #fff transparent transparent; }
-  .installment__tooltip:hover .installment__tooltip_content {
-    opacity: 1;
-    transform: translateX(0);
-    visibility: visible;
-    z-index: 30; }
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px; }
+  .installment .checkbox + label {
+    color: #363636;
+    cursor: pointer;
+    display: block;
+    font-size: 1.4rem;
+    padding: 0 0 0 35px;
+    position: relative; }
+  .installment .checkbox + label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    transition: .2s;
+    border: 2px solid #00874d; }
+  .installment .checkbox + label:hover:before {
+    border-color: #c20831; }
+  .installment .checkbox + label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 12px;
+    top: 0;
+    z-index: 2;
+    left: 0; }
+  .installment .checkbox:checked + label:before {
+    background: #00874d; }
+  .installment .checkbox:checked + label:after {
+    left: 5px;
+    top: 6px;
+    background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAQAAADB7vUKAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAwEVAiEM9h7bAAAAX0lEQVQY033QwQnAIAxG4X+GTCJ0MEdyhXotdIOu4gyvB1FLo5Lj9yAkQosJXBhacwEebMdQCHs+6opIWjESEaAnP0YiQU8c1xUtyZ7bmS1xPP5wznkERpnx95PG7Rm986n4r0p1BmsAAAAASUVORK5CYII=") no-repeat center; }
+  .installment .checkbox:checked + label:hover:before {
+    border-color: #00874d; }
+  .installment__tooltip {
+    border-radius: 50%;
+    border: 1px solid #5f6b79;
+    height: 20px;
+    margin-left: 18px;
+    margin-top: 10px;
+    width: 20px;
+    position: relative; }
+    .installment__tooltip:before {
+      display: block;
+      content: "?";
+      color: #5f6b79;
+      text-align: center;
+      width: 18px;
+      line-height: 20px;
+      font-size: 1.2rem; }
+    .installment__tooltip_content {
+      background: #fff;
+      box-shadow: 0 0 20px rgba(112, 121, 133, 0.25);
+      color: #3f3f3f;
+      left: calc(100% + 12px);
+      line-height: 1.5;
+      opacity: 0;
+      padding: 1.5rem;
+      position: absolute;
+      top: -20px;
+      transform: translateX(-10px);
+      transition: .3s all ease-out;
+      visibility: hidden;
+      width: 24.5rem;
+      z-index: 2; }
+      .installment__tooltip_content:before {
+        top: 22px;
+        left: -7px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 7px 7px 7px 0;
+        border-color: transparent #fff transparent transparent; }
+    .installment__tooltip:hover .installment__tooltip_content {
+      opacity: 1;
+      transform: translateX(0);
+      visibility: visible;
+      z-index: 30; }
 
 .sidemodal {
   background: rgba(13, 103, 64, 0.97);
@@ -4608,6 +4601,8 @@ main {
           left: 11px;
           top: 10px;
           width: 15px; }
+        .flat-page .card__description .description__body .more:hover {
+          background-color: #00874d; }
       .flat-page .card__description .description__body .showmap {
         display: inline-block;
         font-weight: 600;
@@ -4647,7 +4642,7 @@ main {
             filter: invert(1); }
       .flat-page .card__description .description__bottom:after {
         border-bottom: 5px solid #c20831;
-        transition: .2s border-bottom;
+        transition: .3s border-bottom;
         left: 0;
         bottom: -8px;
         width: 100%; }
@@ -4701,30 +4696,30 @@ main {
   .additional_info td {
     border-bottom: 2px solid #ebeef1; }
 
-.installment {
+.installmentbox {
   background-image: -webkit-linear-gradient(top, #00864d 0%, #0d6640 100%);
   background-image: -o-linear-gradient(top, #00864d 0%, #0d6640 100%);
   background-image: linear-gradient(to bottom, #00864d 0%, #0d6640 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF00864D', endColorstr='#FF0D6640', GradientType=0);
   padding: 8rem 0 9.3rem; }
-  .installment__left {
+  .installmentbox__left {
     background: url(../images/bg-2.jpg) no-repeat 85px center #fff;
     border-bottom: 11px solid #c20831;
     color: #50525d;
     font-size: 1.5rem;
     min-height: 400px;
     padding-left: 480px; }
-    .installment__left .category {
+    .installmentbox__left .category {
       color: #c20831;
       font-size: 1.8rem;
       font-weight: 500; }
-    .installment__left .title {
+    .installmentbox__left .title {
       margin: 2rem 0;
       color: #000;
       font-size: 3.4rem;
       font-weight: 500; }
-    .installment__left .btn {
+    .installmentbox__left .btn {
       background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAMAAAD+iNU2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAt1BMVEXCCTLCCDHCCDHCCDHCCDHCCDHCCDHCCTLCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCTLCCDHCCDHCCDHCCDHCCDHCCDHCCTLCCDHCCDHCCDHCCDHCCTLCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCTLCCTLCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCTL///+DcEUpAAAAOnRSTlMAAEqfFBfZtBECZvW2E2D2sxFc9BJX67IyMTApffy38/Lx7+389fT9NTQzMit+uRVU6bRauF61ZEugyWZY4AAAAAFiS0dEPKdqYc8AAAAHdElNRQfiAwMWDhfHtrKcAAAAkElEQVQI103P5xKCQAxG0Xy6FmTXBnZFRMQuVtTw/u8lZVy4v3ImM5kJEdIqVQGkI2Wu1bnRLNlomSxVYaDd4W6vZPQtlnbJGAx5ZIPGk7zpbL5gR9DSXeV5az+OJW2CwMpyvS2zQ7v9Iet4Ovt8CfU5XG98V9B+WPxU0H6ZHCn8bbyTrYB28k9kozA+3zAffr9dDx+5Qyd+AAAAAElFTkSuQmCC") no-repeat 14px 24px;
       border: 2px solid #ebeef1;
       display: inline-flex;
@@ -4736,31 +4731,31 @@ main {
       padding-left: 40px;
       padding-right: 30px;
       text-decoration: none; }
-      .installment__left .btn:hover .fill-effect {
+      .installmentbox__left .btn:hover .fill-effect {
         color: #fff; }
-        .installment__left .btn:hover .fill-effect:before {
+        .installmentbox__left .btn:hover .fill-effect:before {
           transform: translateX(0); }
-    .installment__left .flexbox {
+    .installmentbox__left .flexbox {
       width: 700px; }
-    .installment__left .column {
+    .installmentbox__left .column {
       padding-right: 20px;
       width: 50%; }
-      .installment__left .column .point {
+      .installmentbox__left .column .point {
         margin-bottom: 2.1rem; }
-      .installment__left .column:last-child {
+      .installmentbox__left .column:last-child {
         padding-right: 0; }
-  .installment__right {
+  .installmentbox__right {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding-left: 40px; }
-    .installment__right .title {
+    .installmentbox__right .title {
       color: #fff;
       font-size: 3rem;
       font-weight: 500;
       padding-bottom: 1.7rem;
       text-transform: uppercase; }
-    .installment__right .btn {
+    .installmentbox__right .btn {
       display: block;
       font-size: 2rem;
       height: 5.8rem;
@@ -4768,9 +4763,9 @@ main {
       padding: 0;
       text-align: center;
       width: 270px; }
-    .installment__right .variant {
+    .installmentbox__right .variant {
       color: #fff; }
-      .installment__right .variant__cifr {
+      .installmentbox__right .variant__cifr {
         font-size: 5rem;
         font-weight: 500;
         flex: 0 0 80px; }

@@ -87,6 +87,9 @@
 						top: 10px;
 						width: 15px;
 					}
+					&:hover{
+						background-color: $color8
+					}
 				}
 
 				.showmap{
@@ -146,7 +149,7 @@
 				&:after{
 					@extend .before;
 					border-bottom: 5px solid $color7;
-					transition: .2s border-bottom;
+					transition: .3s border-bottom;
 					left: 0;
 					bottom: -8px;
 					width: 100%;
@@ -240,7 +243,7 @@
 
 
 
-.installment{
+.installmentbox{
 	@include gradient-vertical(#00864d, #0d6640);
 	padding: 8rem 0 9.3rem;
 	&__left{
