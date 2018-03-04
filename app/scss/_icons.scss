@@ -196,6 +196,15 @@
 	}
 }
 
+.icon-labelred{
+	position: relative;
+	&:before{
+		@extend .before;
+		@include sprite($icon-labelred);
+		left: 0;
+	}
+}
+
 
 
 .icon-house-dark{
@@ -253,6 +262,39 @@
 	&:before{
 		@extend .before;
 		@include sprite($icon-check);
+		left: 0;
+		top: 0;
+	}
+}
+
+
+.icon-starsmall{
+	position: relative;
+	&:before{
+		@extend .before;
+		@include sprite($icon-starsmall);
+		left: 0;
+		top: 0;
+	}
+}
+
+.icon-starsmallfill{
+	position: relative;
+	&:before{
+		@extend .before;
+		@include sprite($icon-starsmallfill);
+		left: 0;
+		top: 0;
+	}
+}
+
+
+
+.icon-pencil-dark{
+	position: relative;
+	&:before{
+		@extend .before;
+		@include sprite($icon-pencil-dark);
 		left: 0;
 		top: 0;
 	}

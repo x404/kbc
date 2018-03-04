@@ -403,6 +403,7 @@ form{
 	display: block;
 	position: relative;
 	overflow: hidden;
+	text-decoration: none;
 	&:before{
 		@extend .before;
 		top: 0;
@@ -1520,10 +1521,10 @@ form{
 }
 
 .installment{
-	margin-top: 1.1rem;
+	// margin-top: 1.1rem;
 	&__container{
-	display: flex;
-	cursor: pointer;
+		display: flex;
+		cursor: pointer;
 	}
 
 	$color_1: #00874d;

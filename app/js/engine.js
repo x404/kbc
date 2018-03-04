@@ -49,6 +49,14 @@ $(document).ready(function(){
 		stagePadding : 0
 	});
 
+	$('#scheme').owlCarousel({
+		loop:false,
+		nav: true,
+		dots: false,
+		items:1,
+		navText: ["", ""],
+		stagePadding : 0
+	});
 
 
 	// mobile-menu
@@ -441,6 +449,9 @@ $(document).on('click', '.flat a, .place a, .btn-fav', function(e){
 })
 
 // в избранное
+var favto = 'В избранное',
+	favin = 'В избранном';
+
 $(document).on('click','.to-fav', function(e){
 	e.preventDefault();
 	// var $this = $(this);
@@ -449,6 +460,10 @@ $(document).on('click','.to-fav', function(e){
 
 	this.classList.remove('to-fav');
 	this.classList.add('btn-fav-in');
+
+	// $(this).find('span').text(favin);
+
+	this.querySelector('span').textContent = favin;
 
 	// var timerfav = window.setInterval(function(){
 	// 	$('.added-to-compare').fadeOut('normal',function(){
@@ -463,6 +478,7 @@ $(document).on('click','.btn-fav-in', function(e){
 	e.preventDefault();
 	this.classList.remove('btn-fav-in');
 	this.classList.add('to-fav');
+	this.querySelector('span').textContent = favto;
 });
 
 

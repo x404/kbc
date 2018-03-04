@@ -537,6 +537,7 @@
 }
 
 
+.card_flat .carousel,
 .objects,
 .intro__carousel{
 	.owl-carousel{
@@ -567,6 +568,69 @@
 	}
 }
 
+
+.card_flat .carousel,
+.objects{
+	.owl-carousel{
+		margin-top: 4.2rem;
+		.owl{
+			&-nav{
+				margin-top: -45px;
+				position: absolute;
+				top: 50%;
+				width: 100%;
+			}
+			&-prev,
+			&-next
+			{
+				height: 90px;
+				position: absolute;
+				top: 0;
+				width: 50px;
+				&:before{
+					left: 50%;
+					margin-top: -12px;
+					top: 50%;
+					z-index: 2;
+				}
+				&:after{
+					@extend .before;
+					background: white;
+					height: 90px;
+					top: 0;
+					width: 40px;
+				}
+
+			}
+			&-prev{
+				left: -50px;
+				@include transition-param(left);
+				&:before{
+					margin-left: -6px;
+				}
+				&:after{
+					right: 0;
+				}
+				&:hover{
+					left: -40px;
+				}
+			}
+			&-next{
+				@include transition-param(right);
+				right: -30px;
+				&:before{
+					left: 10px;
+				}
+				&:after{
+					right: 10px;
+				}
+				&:hover{
+					right: -20px;
+				}
+			}
+		}
+	}	
+}
 
 .objects{
 	width: 1185px;
@@ -610,66 +674,6 @@
 			height: 28px;
 			left: 0;
 			top: 4px;			
-		}
-	}
-
-	.owl-carousel{
-		margin-top: 4.2rem;
-		.owl{
-			&-nav{
-				margin-top: -45px;
-				position: absolute;
-				top: 50%;
-				width: 100%;
-			}
-			&-prev,
-			&-next
-			{				
-				height: 90px;
-				position: absolute;
-				top: 0;
-				width: 50px;
-				&:before{
-					left: 50%;
-					margin-top: -12px;
-					top: 50%;
-					z-index: 2;
-				}
-				&:after{
-					@extend .before;
-					background: white;
-					height: 90px;					
-					top: 0;
-					width: 40px;
-				}
-
-			}
-			&-prev{
-				left: -50px;
-				@include transition-param(left);
-				&:before{
-					margin-left: -6px;
-				}
-				&:after{
-					right: 0;
-				}
-				&:hover{
-					left: -40px;
-				}
-			}
-			&-next{
-				@include transition-param(right);
-				right: -30px;
-				&:before{
-					left: 10px;
-				}
-				&:after{
-					right: 10px;
-				}
-				&:hover{
-					right: -20px;
-				}
-			}
 		}
 	}
 }
