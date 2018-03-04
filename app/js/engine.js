@@ -398,7 +398,8 @@ $(document).on('click', '[data-toggle="sidemodal"]', function(e){
 	document.querySelector(target).classList.add('open');
 	document.querySelector('.body').classList.add('m-modal-open');
 
-	document.querySelector(target + ' #place').value = title;
+// console.log(title);
+	if (title != undefined) document.querySelector(target + ' #place').value = title;
 });
 
 $(document).on('click', '.close-modal', function(e){

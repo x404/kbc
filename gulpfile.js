@@ -225,12 +225,15 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 	// переносим css файлы
 	var buildCss = gulp.src([ // Переносим CSS стили в продакшен
 		config.templateDir + '/css/styles.min.css',
-		config.templateDir + '/css/tiny.css',
+		config.templateDir + '/css/selectize.css',
+		config.templateDir + '/css/nouislider.css',
+		config.templateDir + '/css/perfect-scrollbar.css',
+		config.templateDir + '/css/jquery.fancybox.min.css',
 		config.templateDir + '/css/owl.carousel.css'
 	])
 	.pipe(gulp.dest(config.destDir + '/css'));
 
-	var buildFavicon = gulp.src('app/the_favicon/*.*').pipe(gulp.dest(config.destDir + '/the_favicon'));
+	// var buildFavicon = gulp.src('app/the_favicon/*.*').pipe(gulp.dest(config.destDir + '/the_favicon'));
 	var buildHtml = gulp.src('app/*.html').pipe(gulp.dest(config.destDir + '/'));
 	var buildHtaccess = gulp.src('app/.htaccess').pipe(gulp.dest(config.destDir));
 	var buildrobots = gulp.src('app/robots.txt').pipe(gulp.dest(config.destDir));
