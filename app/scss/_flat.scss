@@ -433,7 +433,7 @@
 		&:before{
 			top: 0;
 			left: 50%;
-			margin-left: -13px;			
+			margin-left: -13px;
 		}
 		&-in{
 			@extend .icon-starsmallfill;
@@ -444,5 +444,90 @@
 .card__visual{
 	.flexbox{
 		justify-content: space-between
+	}
+}
+
+
+// modal calc
+#calc-gnk{
+	color: $color1;
+	line{
+		stroke: #929292;
+		stroke-width:2;
+	}
+	.modal{
+		&-content{
+			background: $color2;
+			box-shadow: 0 5px 30px rgba(0,0,0,.5);
+			padding: 4.4rem 0 0 ;
+			width: 740px;
+		}
+		&-body{
+			padding: 3rem 4.5rem 1rem;
+		}
+
+		&-title{
+			color: $color1;
+			font-size: 3.4rem;
+			padding-left: 4.5rem;
+		}
+
+		&-footer{
+			background: #f1f4f6;
+			padding: 3.5rem 4.5rem 3rem;
+			.flexbox{
+				align-items: center;
+			}
+			p{
+				font-size: 2.4rem;
+				font-weight: 600;
+			}
+			.cifr{
+				color: $color8;
+				font-size: 3rem;
+				font-weight: 500;
+				margin-top: 1rem;
+			}
+			.btn{
+				$h: 6rem;
+				border-radius: $h;
+				font-size: 2rem;
+				height: $h;
+				padding: 0 2.8rem;
+			}
+		}
+	}
+
+	.close{
+		right: 37px;
+		top: 48px;
+	}
+
+	.row{
+		display: block;
+		margin: 0 0 3rem;
+		.title{
+			font-size: 2rem;
+			font-weight: 500;
+			padding-bottom: .6rem;
+		}
+		.flexbox{
+			justify-content: flex-start;
+		}
+
+		.radio+label{
+			margin-top: 1rem;
+			margin-right: 3.7rem;
+		}
+
+		.form-control{
+			border: none;
+			border-bottom: 2px solid $color8;
+			color: $color45;
+			font-size: 1.5rem;
+			margin-top: 0;
+			padding-left: 0;
+			width: 13rem;
+		}
 	}
 }
