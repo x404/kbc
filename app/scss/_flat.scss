@@ -1,14 +1,19 @@
 .flat-page{
-	background: #ebeef1;
 
 	// main
 	.main{
+	background: #ebeef1;
 		padding: 5.5rem 0;
 	}
 
-	// visual
-	.visual{
+	// mortgate
+	.mortgage{
+		padding-bottom: 7.3rem;
 		.title{
+			font-size: 3.4rem;
+			font-weight: 500;
+			text-transform: uppercase;
+			padding-bottom: 1.5rem;
 			padding-top: 5rem;
 		}
 		&__item{
@@ -35,12 +40,10 @@
 			position: relative;
 			&__body{
 				background: $color2;
-				padding: 4rem 4.5rem;
+				padding: 3.4rem 4.5rem 3.2rem;
 
-				.flexbox{
-				}
 				.title{
-					margin-bottom: 3rem;
+					margin-bottom: 2.7rem;
 					font-size: 4rem;
 					font-weight: 500;
 					text-transform: uppercase;
@@ -48,7 +51,7 @@
 
 				.object{
 					display: flex;
-					margin-bottom: 1.5rem;
+					margin-bottom: 2.2rem;
 				}
 
 				.info{
@@ -97,7 +100,7 @@
 			&__bottom{
 				background: $color8;
 				color: $color2;
-				padding: 2.2rem 4.5rem;
+				padding: 2.2rem 4.5rem 2.2rem 5.5rem;
 				&:hover{
 					&:after{
 						border-bottom: 112px solid $color7;
@@ -151,12 +154,17 @@
 			}
 		}
 	}
+
+	.visual{
+		// margin: 0rem 0;
+	}
 }
 
 
 // characteristic
 .characteristic{
 	display: flex;
+	margin-top: 1rem;
 	width: 100%;
 	&__column{
 		flex-grow: 1;
@@ -183,16 +191,16 @@
 
 // =offer
 .offer{
-	padding-top: 2.5rem;
+	padding-top: 3.2rem;
 	align-items: center;
 	.title{
-		font-size: 2.5rem;
+		font-size: 2.2rem;
 		font-weight: 500;
 		padding-bottom: .5rem;
 	}
 
 	&__left{
-		padding-right: 110px;
+		padding-right: 12.5rem;
 	}
 
 	a{
@@ -212,7 +220,7 @@
 
 .additional_info{
 	border-top: 2px solid $color28;
-	padding-top: 8rem;
+	padding-top: 8.5rem;
 	.table-flats{
 		border: 2px solid $color28;
 		margin-top: 1.5em;
@@ -285,7 +293,7 @@
 			padding-right: 20px;
 			width: 50%;
 			.point{
-				margin-bottom: 1.8rem;
+				margin-bottom: 2.1rem;
 			}
 			&:last-child{
 				padding-right: 0;
@@ -301,9 +309,9 @@
 
 		.title{
 			color: $color2;
-			padding-bottom: 1rem;
-			font-weight: 500;
 			font-size: 3rem;
+			font-weight: 500;
+			padding-bottom: 1.7rem;
 			text-transform: uppercase;
 		}
 
@@ -311,23 +319,19 @@
 			display: block;
 			font-size: 2rem;
 			height: 5.8rem;
-			margin-top: 2rem;
+			margin-top: 1rem;
 			padding: 0;
 			text-align: center;
 			width: 270px;
 		}
 
 		.variant{
-			color: $color2;
-			// margin: 1rem 0 ;
 			@extend .flex-cv;
+			color: $color2;
 			&__cifr{
 				font-size: 5rem;
 				font-weight: 500;
 				flex: 0 0 80px;
-			}
-			&__text{
-
 			}
 		}
 	}
@@ -394,16 +398,17 @@
 	}
 	.additional{
 		width: 160px;
+		margin-top: .4rem;
 	}
 	.documents{
 		font-size: 1.3rem;
-		margin-top: 3.5rem;
+		margin-top: 3.7rem;
 		text-align: center;
 		a[href$=".pdf"]{
 			background: url(../images/pdf.png) no-repeat center top;
 			display: inline-block;
 			line-height: 1.5;
-			padding-top: 36px;
+			padding-top: 40px;
 			text-decoration: none;
 			&:hover{
 				color: $color25;
@@ -416,8 +421,8 @@
 		color: $color8;
 		display: inline-block;
 		font-size: 1.3rem;
-		margin-top: 2.5rem;
-		padding-top: 35px;
+		margin-top: 2.8rem;
+		padding-top: 33px;
 		text-align: center;
 		text-decoration: none;
 		width: auto;
