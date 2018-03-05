@@ -87,8 +87,7 @@ $(document).ready(function(){
 		stagePadding : 0,
 		navContainer: '.manage .owl-nav',
 		onInitialized : function(e){
-			console.log(e);
-			document.querySelector('#countphoto').textContent = e.item.count + ' фото';
+			// document.querySelector('#countphoto').textContent = e.item.count + ' фото';
 		}
 	});
 

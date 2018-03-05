@@ -128,14 +128,14 @@
 			<div class="subnav">
 				<div class="container">
 					<ul>
-						<li><a href="#" title="">Об объекте</a></li>
-						<li><a href="#" title="">Квартиры</a></li>
-						<li><a href="#" title="">Ход строительства</a></li>
-						<li><a href="#" title="">Инфраструктура</a></li>
-						<li><a href="#" title="">Ипотека</a></li>
-						<li><a href="#" title="">ЖНК</a></li>
+						<li><a href="#about" title="">Об объекте</a></li>
+						<li><a href="#flats" title="">Квартиры</a></li>
+						<li><a href="#building" title="">Ход строительства</a></li>
+						<li><a href="#infrastructure" title="">Инфраструктура</a></li>
+						<li><a href="#mortgage" title="">Ипотека</a></li>
+						<li><a href="#gnk" title="">ЖНК</a></li>
 						<li><a href="#" title="">Документы</a></li>
-						<li><a href="#" title="">Отзывы</a></li>
+						<li><a href="#reviews" title="">Отзывы</a></li>
 					</ul>
 				</div>
 			</div>
@@ -198,7 +198,8 @@
 					</div>
 					<!-- =/params -->
 
-					<div class="main">
+					<!-- =main -->
+					<div class="main" id="about">
 						<div class="flexbox">
 							<main class="col-4">
 								<p class="title">БЕЗУПРЕЧНЫЙ ЖИЛОЙ КОМПЛЕКС</p>
@@ -280,12 +281,28 @@
 
 									<div class="manage">
 										<div class="owl-nav"></div>
-										<p class="icon-photo"><a href="#" class="fill-effect"><span id="countphoto"></span></a></p>
+										<p class="icon-photo"><a href="tmp/1.jpg" class="fill-effect" data-fancybox="gallery11"><span id="countphoto">10 фото</span></a></p>
+										<a data-fancybox="gallery11" href="tmp/6.jpg" class="visually-hidden"></a>
+										<a data-fancybox="gallery11" href="tmp/7.jpg" class="visually-hidden"></a>
+										<a data-fancybox="gallery11" href="tmp/8.jpg" class="visually-hidden"></a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<!-- =/main -->
+
+					<!-- = -->
+					<div class="houses">
+						<p class="title">Выберите дом в котором хотите посмотреть квартиру</p>
+						<div class="flexbox">
+							<div class="house__item">
+								<div class="house__pic"></div>
+								<div class="house__desc"></div>
+							</div>
+						</div>
+					</div>
+					<!-- = -->
 				</div>
 			</div>
 
@@ -1149,6 +1166,8 @@
 <script src="/js/engine.js"></script>
 
 <!-- InstanceBeginEditable name="EditRegion4" -->
+<script src="/js/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" property="stylesheet" href="css/jquery.fancybox.min.css">
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
