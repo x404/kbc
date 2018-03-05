@@ -132,6 +132,33 @@
 }
 
 
+.filter-sort,
+.complex-page .list_reviews
+{
+	.btn{
+		@extend .flex-cv;
+		@include transition-param(background-color);
+		$h: 5rem;
+		border: none;
+		background: $color7;
+		border-radius: $h;
+		color: $color2;
+		font-size: 1.7rem;
+		font-weight: 500;
+		height: $h;
+		padding-left: 55px;
+		padding-right: 20px;
+		text-decoration: none;
+		&:before{
+			left: 20px;
+			top: 10px;
+		}
+		&:hover{
+			background-color: $color8;
+		}
+	}
+}
+
 .filter-sort{
 	padding-bottom: 4rem;
 	.flexbox{
@@ -158,25 +185,4 @@
 		}
 	}
 
-	.btn{
-		@extend .flex-cv;
-		@include transition-param(background-color);
-		$h: 5rem;
-		background: $color7;
-		border-radius: $h;
-		color: $color2;
-		font-size: 1.7rem;
-		font-weight: 500;
-		height: $h;
-		padding-left: 55px;
-		padding-right: 20px;
-		text-decoration: none;
-		&:before{
-			left: 20px;
-			top: 10px;
-		}
-		&:hover{
-			background-color: $color8;
-		}
-	}
 }

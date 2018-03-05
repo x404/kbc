@@ -464,4 +464,41 @@
 			}
 		}
  	}
+
+
+ 	// list_reviews
+ 	.list_reviews{
+ 		padding-top: 6rem;
+ 		header{
+ 			display: flex;
+ 			justify-content: space-between;
+ 			padding-bottom: 1.6rem;
+ 			.left{
+ 				flex-grow: 1;
+ 			}
+ 			.right{
+ 				padding-top: 1rem;
+ 			}
+ 			.sortbox{
+ 				display: flex;
+ 			}
+ 			.more{
+ 				font-weight: 500;
+ 				font-size: 1.5rem;
+ 			}
+ 			.btn{
+ 				margin-top: 2rem;
+ 			}
+ 		}
+
+ 		.review{
+ 			&__body{
+	 			padding-top: 0;
+	 			margin-top: 2.7rem;
+	 		}
+	 		&__item{
+	 			margin-bottom: 5.3rem;
+	 		}
+ 		}
+ 	}
  }

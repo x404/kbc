@@ -541,7 +541,8 @@ input[type="submit"] {
 .topnews .news .date, .feature .news .cat__link,
 .topnews .news .cat__link, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
 .vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top,
-.list_construction .place__top, .review__bottom, .filter-sort .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .complex-page .subnav a, .complex-page .main .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .popover-bottom {
+.list_construction .place__top, .review__bottom, .filter-sort .btn,
+.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .complex-page .subnav a, .complex-page .main .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .popover-bottom {
   display: flex;
   align-items: center; }
 
@@ -3953,6 +3954,28 @@ main {
     display: block;
     height: 24px; }
 
+.filter-sort .btn,
+.complex-page .list_reviews .btn {
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  border: none;
+  background: #c20831;
+  border-radius: 5rem;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 500;
+  height: 5rem;
+  padding-left: 55px;
+  padding-right: 20px;
+  text-decoration: none; }
+  .filter-sort .btn:before,
+  .complex-page .list_reviews .btn:before {
+    left: 20px;
+    top: 10px; }
+  .filter-sort .btn:hover,
+  .complex-page .list_reviews .btn:hover {
+    background-color: #00874d; }
+
 .filter-sort {
   padding-bottom: 4rem; }
   .filter-sort .flexbox {
@@ -3972,23 +3995,6 @@ main {
         background: none; }
       .filter-sort .filter .selectize-input:after {
         border: none !important; }
-  .filter-sort .btn {
-    -webkit-transition: background-color 0.2s ease-out;
-    transition: background-color 0.2s ease-out;
-    background: #c20831;
-    border-radius: 5rem;
-    color: #fff;
-    font-size: 1.7rem;
-    font-weight: 500;
-    height: 5rem;
-    padding-left: 55px;
-    padding-right: 20px;
-    text-decoration: none; }
-    .filter-sort .btn:before {
-      left: 20px;
-      top: 10px; }
-    .filter-sort .btn:hover {
-      background-color: #00874d; }
 
 .contacts-page .top {
   background: #f1f3f5; }
@@ -5331,6 +5337,29 @@ main {
     margin-top: 2.7rem; }
     .complex-page .list_construction .tab-content .owl-carousel {
       margin-top: 2.7rem; }
+
+.complex-page .list_reviews {
+  padding-top: 6rem; }
+  .complex-page .list_reviews header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.6rem; }
+    .complex-page .list_reviews header .left {
+      flex-grow: 1; }
+    .complex-page .list_reviews header .right {
+      padding-top: 1rem; }
+    .complex-page .list_reviews header .sortbox {
+      display: flex; }
+    .complex-page .list_reviews header .more {
+      font-weight: 500;
+      font-size: 1.5rem; }
+    .complex-page .list_reviews header .btn {
+      margin-top: 2rem; }
+  .complex-page .list_reviews .review__body {
+    padding-top: 0;
+    margin-top: 2.7rem; }
+  .complex-page .list_reviews .review__item {
+    margin-bottom: 5.3rem; }
 
 .popover {
   box-shadow: 0 5px 20px rgba(73, 82, 95, 0.5);
