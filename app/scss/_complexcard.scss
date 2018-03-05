@@ -93,6 +93,10 @@
 			position: relative;
 			width: 800px;
 
+			.item{
+				position: relative;
+			}
+
 			&:before,
 			&:after{
 				@extend .before;
@@ -112,14 +116,12 @@
 				width: 798px;
 			}
 
- 			.manage{
+			.manage{
 				@extend .flex-cv;
 				background-color: $color2;
 				bottom: 0;
 				height: 60px;
 				left: 0;
-				// padding-left: 20px;
-				// padding-right: 30px;
 				position: absolute;
 				width: 235px;
 				z-index: 2;
@@ -162,6 +164,84 @@
 						&:hover{
 							right: 8px;
 						}
+					}
+				}
+			}
+
+
+			.label{
+				$h: 43px;
+				@extend .flex-center;
+				border-radius: 50%;
+				border: 2px solid $color2;
+				color: $color2;
+				font-size: 1.5rem;
+				font-weight: 500;
+				height: $h;
+				position: absolute;
+				width: $h;
+				z-index: 50;
+				&-red{
+					background-color: #e20c3c;
+				}
+				&-green{
+					background-color: #00874d;
+				}
+
+				&:hover{
+ 					.popover{
+ 						opacity: 1;
+ 						visibility: visible;
+						top: calc(100%);
+ 					}
+ 				}
+ 			}
+
+ 			.popover{
+ 				box-shadow: none;
+				transition: .3s ;
+				left: -78px;
+				padding-top: 22px;
+				width: 195px;
+				background-color: transparent;
+				opacity: 0;
+				visibility: hidden;
+				top: 15px;
+				.arrow{
+					top: 11px;
+					z-index: 10;
+				}
+ 			}
+
+ 			.popover-container{
+ 				box-shadow: 0 5px 15px rgba(0,0,0,.75);
+				color: $color1;
+				position: absolute;
+				width: 195px;
+				.left{
+ 					color: #575757;
+ 					font-size: 1.4rem;
+ 					font-weight: 400;
+ 					margin-right: 1.4rem;
+ 					.name{
+ 						font-weight: 500;
+ 						font-size: 2rem;
+ 						color: $color1;
+ 					}
+				}
+				.popover-bottom-right{
+					.popover-link{
+						display: inline;
+ 						font-size: 1.4rem;
+ 						&:before{
+ 							display: none;
+ 						}
+ 						span{
+ 							white-space: normal;
+ 						}
+ 						&:hover{
+ 							background-color: $color7;
+ 						}
 					}
 				}
  			}

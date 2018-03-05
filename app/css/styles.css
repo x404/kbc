@@ -522,7 +522,7 @@ input[type="submit"] {
 
 .flex-center, .btn-faq, .btn-review, .modal-menu .close-modal, .feature .news .date .num,
 .topnews .news .date .num, .feature .promo .type-2 .more,
-.feature .promo .type-3 .more, .pagination, .pagination a, .pagination span, .gbi-page .menu .icon, .product__pic, .popover .diagram, .popover .diagram .num {
+.feature .promo .type-3 .more, .pagination, .pagination a, .pagination span, .gbi-page .menu .icon, .product__pic, .complex-page .main .carousel .label, .popover .diagram, .popover .diagram .num {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -4994,6 +4994,8 @@ main {
   .complex-page .main .carousel {
     position: relative;
     width: 800px; }
+    .complex-page .main .carousel .item {
+      position: relative; }
     .complex-page .main .carousel:before, .complex-page .main .carousel:after {
       background-color: rgba(91, 123, 146, 0.1); }
     .complex-page .main .carousel:before {
@@ -5044,6 +5046,60 @@ main {
         right: 18px; }
         .complex-page .main .carousel .manage .owl-next:hover {
           right: 8px; }
+    .complex-page .main .carousel .label {
+      border-radius: 50%;
+      border: 2px solid #fff;
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 500;
+      height: 43px;
+      position: absolute;
+      width: 43px;
+      z-index: 50; }
+      .complex-page .main .carousel .label-red {
+        background-color: #e20c3c; }
+      .complex-page .main .carousel .label-green {
+        background-color: #00874d; }
+      .complex-page .main .carousel .label:hover .popover {
+        opacity: 1;
+        visibility: visible;
+        top: calc(100%); }
+    .complex-page .main .carousel .popover {
+      box-shadow: none;
+      transition: .3s;
+      left: -78px;
+      padding-top: 22px;
+      width: 195px;
+      background-color: transparent;
+      opacity: 0;
+      visibility: hidden;
+      top: 15px; }
+      .complex-page .main .carousel .popover .arrow {
+        top: 11px;
+        z-index: 10; }
+    .complex-page .main .carousel .popover-container {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.75);
+      color: #000;
+      position: absolute;
+      width: 195px; }
+      .complex-page .main .carousel .popover-container .left {
+        color: #575757;
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-right: 1.4rem; }
+        .complex-page .main .carousel .popover-container .left .name {
+          font-weight: 500;
+          font-size: 2rem;
+          color: #000; }
+      .complex-page .main .carousel .popover-container .popover-bottom-right .popover-link {
+        display: inline;
+        font-size: 1.4rem; }
+        .complex-page .main .carousel .popover-container .popover-bottom-right .popover-link:before {
+          display: none; }
+        .complex-page .main .carousel .popover-container .popover-bottom-right .popover-link span {
+          white-space: normal; }
+        .complex-page .main .carousel .popover-container .popover-bottom-right .popover-link:hover {
+          background-color: #c20831; }
 
 .popover {
   box-shadow: 0 5px 20px rgba(73, 82, 95, 0.5);

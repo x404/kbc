@@ -210,16 +210,77 @@
 								<div class="carousel">
 									<div class="owl-carousel" id="complex">
 										<div class="item">
-											<img src="tmp/complex-1.jpg" alt="">
+											<img src="tmp/complex-1.jpg" alt="" />
+											<div class="label label-red" style="left:208px; top:187px;">
+												1.1
+												<div class="popover bottom">
+													<div class="arrow"></div>
+													<div class="popover-container">
+														<div class="popover-description">
+															<div class="popover-content">
+																<div class="left">
+																	<p class="name">Дом 2.1</p>
+																	Готов на
+																</div>
+																<div class="right">
+																	<div class="diagram circle">95</div>
+																</div>
+															</div>
+															<div class="popover-bottom">
+																<div class="popover-scheme">
+																	<img src="/tmp/scheme.png">
+																</div>
+																<div class="popover-bottom-right">
+																	<a href="http://google.com" class="popover-link">
+																		<span>Смотреть 523 квартиры</span>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="label label-green" style="left:475px; top:270px ;">
+												1.6
+												<div class="popover bottom">
+													<div class="arrow"></div>
+													<div class="popover-container">
+														<div class="popover-description">
+															<div class="popover-content">
+																<div class="left">
+																	<p class="name">Дом 1.1</p>
+																	Готов на
+																</div>
+																<div class="right">
+																	<div class="diagram circle">35</div>
+																</div>
+															</div>
+															<div class="popover-bottom">
+																<div class="popover-scheme">
+																	<img src="/tmp/scheme.png">
+																</div>
+																<div class="popover-bottom-right">
+																	<a href="http://google.com" class="popover-link">
+																		<span>Смотреть 12 квартир</span>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 										<div class="item">
 											<img src="tmp/complex-2.jpg" alt="">
+										</div>
+										<div class="item">
+											<img src="tmp/complex-3.jpg" alt="">
 										</div>
 									</div>
 
 									<div class="manage">
 										<div class="owl-nav"></div>
-										<p class="icon-photo"><a href="#" class="fill-effect"><span>10 фото</span></a></p>
+										<p class="icon-photo"><a href="#" class="fill-effect"><span id="countphoto"></span></a></p>
 									</div>
 								</div>
 							</div>
@@ -1044,6 +1105,20 @@
 				}
 			});
 
+
+
+		var Circle = function(sel){
+			var circles = document.querySelectorAll(sel);
+			[].forEach.call(circles,function(el){
+				var num = el.innerHTML,
+					valEl = parseFloat(num);
+
+				valEl = valEl*144/100;
+				el.innerHTML = '<svg width="56" height="56"><circle transform="rotate(-90)" r="23" cx="-28" cy="28" /><circle transform="rotate(-90)" style="stroke-dasharray:'+valEl+'px 144px;" r="23" cx="-28" cy="28" /></svg><div class="num">'+num+'</div>';
+				
+			});
+		};
+		Circle('.circle');
 		</script>
 </div>
 <!-- =/calculator gnk -->

@@ -85,7 +85,11 @@ $(document).ready(function(){
 		items:1,
 		navText: ["", ""],
 		stagePadding : 0,
-		navContainer: '.manage .owl-nav'
+		navContainer: '.manage .owl-nav',
+		onInitialized : function(e){
+			console.log(e);
+			document.querySelector('#countphoto').textContent = e.item.count + ' фото';
+		}
 	});
 
 
