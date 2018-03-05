@@ -5272,6 +5272,7 @@ main {
   .complex-page .list_construction .place__pic {
     margin-top: 0; }
   .complex-page .list_construction .construction__meta {
+    margin-top: -8px;
     display: flex;
     font-size: 1.5rem;
     font-weight: 500; }
@@ -5328,6 +5329,8 @@ main {
     font-size: 1.4rem; }
   .complex-page .list_construction .tab-content {
     margin-top: 2.7rem; }
+    .complex-page .list_construction .tab-content .owl-carousel {
+      margin-top: 2.7rem; }
 
 .popover {
   box-shadow: 0 5px 20px rgba(73, 82, 95, 0.5);

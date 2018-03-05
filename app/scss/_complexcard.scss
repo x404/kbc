@@ -392,6 +392,7 @@
 		}
 
 		.construction__meta{
+			margin-top: -8px;
 			display: flex;
 			font-size: 1.5rem;
 			font-weight: 500;
@@ -458,6 +459,9 @@
 		}
 		.tab-content{
 			margin-top: 2.7rem;
+			.owl-carousel{
+				margin-top: 2.7rem;
+			}
 		}
  	}
  }
