@@ -92,7 +92,6 @@ $(document).ready(function(){
 	});
 
 
-
 	// mobile-menu
 	$('#navbar').each(function(){
 		let $this = $(this),
@@ -303,11 +302,7 @@ $(document).ready(function(){
 
 
 	$('.select').selectize({
-		create: true,
-		sortField: {
-			field: 'text',
-			direction: 'asc'
-		}
+		create: true
 	});
 
 

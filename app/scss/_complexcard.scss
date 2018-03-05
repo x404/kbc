@@ -245,10 +245,10 @@
 				}
  			}
  		}
- 	}
+	}
 
  	// houses
- 	.houses{
+	.houses{
  		margin: 4.5rem 0 9.5rem;
  		width: 100%;
  		.flexbox{
@@ -367,5 +367,97 @@
  				}
  			}
  		}
+	}
+
+
+ 	// list_construction
+	.list_construction{
+		background-color: $color28;
+		padding: 7.5rem 0 8.8rem;
+		.place{
+ 			&__item{
+	 			background: $color2;
+	 			margin-bottom: 0;
+	 		}
+	 		&__wrapper{
+	 			padding-top: 3rem;
+	 			margin-bottom: 0;
+	 			min-height: 420px;
+	 			margin-bottom: 2rem;
+	 		}
+
+	 		&__pic{
+	 			margin-top: 0;
+	 		}
+		}
+
+		.construction__meta{
+			display: flex;
+			font-size: 1.5rem;
+			font-weight: 500;
+			.nav{
+ 				display: flex;
+ 				margin-left: 2.5rem;
+ 				.btn{
+	 				@extend .flex-cv;
+ 					border: 2px solid #c8d1dc;
+ 					color: $color48;
+ 					height: 50px;
+ 					margin-left: -2px;
+ 					padding: 0 2.5rem;
+ 					text-decoration: none;
+ 					&.active{
+ 						border-color: $color8;
+ 						color: $color1;
+ 						position: relative;
+ 						z-index: 2;
+ 						&:after{
+ 							@extend .before;
+							background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAALBAMAAACAOcA3AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJ1BMVEUAh003n3TW5eLr7vFbr43Y5uMpmWoGiVGezLugzb2jzr+r0sX///+Bkpf0AAAAAWJLR0QMgbNRYwAAAAd0SU1FB+IDBREyCvdn7uMAAABOSURBVAjXY2BUNgYDBwYGITDDhIEhDCLoUMFgmgASNGFvZjAGCzpUGjMYgwRN2CcDWSBBoBCIZZogAhQCsYzDGKqMISzT9MVQlnE0iAAATVkVWQW9mX0AAAAASUVORK5CYII=") no-repeat;
+							bottom: -11px;
+							height: 11px;
+							left: 50%;
+							margin-left: -9px;
+							width: 18px;
+ 						}
+ 					}
+ 				}
+			}
+
+			.month-select.selectize-control {
+				margin-left: 47px;
+				width: 215px;
+				input{
+					@include placeholder($color1)
+				}
+				.selectize-input.full{
+					background: transparent;
+				}
+				.selectize-input:after{
+					right: 6px;
+				}
+			}
+
+			.left{
+				@extend .flex-cv;
+				flex-grow: 1;
+			}
+		}
+
+		.translation{
+			&__link{
+				display: inline-block;
+				font-size: 2.4rem;
+				text-decoration: none;
+			}
+			.text{
+				color: $color41;
+				font-weight: 400;
+				font-size: 1.4rem;
+			}
+		}
+		.tab-content{
+			margin-top: 2.7rem;
+		}
  	}
  }

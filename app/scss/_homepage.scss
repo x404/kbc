@@ -539,7 +539,9 @@
 
 .card_flat .carousel,
 .objects,
-.intro__carousel{
+.intro__carousel,
+.list_construction .tab-content
+{
 	.owl-carousel{
 		.owl{
 			&-prev,
@@ -570,7 +572,9 @@
 
 
 .card_flat .carousel,
-.objects{
+.objects,
+.list_construction .tab-content
+{
 	.owl-carousel{
 		margin-top: 4.2rem;
 		.owl{

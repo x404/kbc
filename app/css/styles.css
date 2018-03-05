@@ -151,19 +151,19 @@
 
 .icon-people:before {
   background-image: url(../images/sprite.png);
-  background-position: -125px -175px;
+  background-position: -119px -112px;
   width: 18px;
   height: 17px; }
 
 .icon-people-gray:before {
   background-image: url(../images/sprite.png);
-  background-position: -107px -175px;
+  background-position: -150px -180px;
   width: 18px;
   height: 17px; }
 
 .icon-people-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -89px -175px;
+  background-position: -168px -180px;
   width: 18px;
   height: 17px; }
 
@@ -199,7 +199,7 @@
   padding-left: 25px; }
   .icon-clock:before {
     background-image: url(../images/sprite.png);
-    background-position: -51px -175px;
+    background-position: -131px -180px;
     width: 19px;
     height: 19px;
     left: 0;
@@ -210,7 +210,7 @@
   position: relative; }
   .icon-darkclock:before {
     background-image: url(../images/sprite.png);
-    background-position: -70px -175px;
+    background-position: -112px -180px;
     width: 19px;
     height: 19px;
     left: 0;
@@ -218,7 +218,7 @@
 
 .icon-back:before {
   background-image: url(../images/sprite.png);
-  background-position: -18px -205px;
+  background-position: -18px -210px;
   width: 17px;
   height: 18px;
   left: 0;
@@ -226,14 +226,14 @@
 
 .icon-letter:before {
   background-image: url(../images/sprite.png);
-  background-position: -177px -175px;
+  background-position: -35px -210px;
   width: 18px;
   height: 14px;
   left: 0; }
 
 .icon-comment:before {
   background-image: url(../images/sprite.png);
-  background-position: -143px -175px;
+  background-position: -186px -180px;
   width: 17px;
   height: 17px;
   left: 0;
@@ -241,7 +241,7 @@
 
 .icon-comment-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -160px -175px;
+  background-position: -203px -180px;
   width: 17px;
   height: 17px;
   left: 0;
@@ -251,7 +251,7 @@
   position: relative; }
   .icon-resume:before {
     background-image: url(../images/sprite.png);
-    background-position: -77px -61px;
+    background-position: 0px -134px;
     width: 45px;
     height: 46px; }
 
@@ -259,7 +259,7 @@
   position: relative; }
   .icon-attach-dark:before {
     background-image: url(../images/sprite.png);
-    background-position: -235px 0px;
+    background-position: -235px -19px;
     width: 16px;
     height: 19px; }
 
@@ -267,7 +267,7 @@
   position: relative; }
   .icon-attach-white:before {
     background-image: url(../images/sprite.png);
-    background-position: -235px -19px;
+    background-position: -235px 0px;
     width: 16px;
     height: 19px; }
 
@@ -275,7 +275,7 @@
   position: relative; }
   .icon-pencil:before {
     background-image: url(../images/sprite.png);
-    background-position: -122px -61px;
+    background-position: -61px -180px;
     width: 28px;
     height: 27px; }
 
@@ -283,7 +283,7 @@
   position: relative; }
   .icon-pencil-small:before {
     background-image: url(../images/sprite.png);
-    background-position: -30px -175px;
+    background-position: -77px -112px;
     width: 21px;
     height: 21px; }
 
@@ -319,9 +319,20 @@
   padding-left: 33px; }
   .icon-camera:before {
     background-image: url(../images/sprite.png);
-    background-position: -103px -107px;
+    background-position: -89px -180px;
     width: 23px;
     height: 25px;
+    left: 0;
+    top: -2px; }
+
+.icon-camerabig {
+  position: relative;
+  padding-left: 64px; }
+  .icon-camerabig:before {
+    background-image: url(../images/sprite.png);
+    background-position: -77px -61px;
+    width: 47px;
+    height: 51px;
     left: 0;
     top: -2px; }
 
@@ -330,7 +341,7 @@
   position: relative; }
   .icon-photo:before {
     background-image: url(../images/sprite.png);
-    background-position: -122px -88px;
+    background-position: -98px -112px;
     width: 21px;
     height: 18px;
     left: 0;
@@ -372,7 +383,7 @@
   position: relative; }
   .icon-starsmallfill:before, .card_flat .btn-fav-in:before {
     background-image: url(../images/sprite.png);
-    background-position: -126px -107px;
+    background-position: -124px -88px;
     width: 24px;
     height: 23px;
     left: 0;
@@ -382,7 +393,7 @@
   position: relative; }
   .icon-pencil-dark:before {
     background-image: url(../images/sprite.png);
-    background-position: -77px -107px;
+    background-position: -124px -61px;
     width: 26px;
     height: 27px;
     left: 0;
@@ -392,7 +403,7 @@
   position: relative; }
   .icon-scheme-green:before {
     background-image: url(../images/sprite.png);
-    background-position: -41px -134px;
+    background-position: -86px -134px;
     width: 40px;
     height: 32px;
     left: 0;
@@ -490,7 +501,7 @@ h3 {
   .vacancies-page .head p a:hover, .contact__plate .email:hover, .table-flats td .place a:hover, .complex-page .houses .house__body .table td a:hover {
     text-decoration: none; }
 
-.before, .icon-catalog:before, .icon-sett:before, .icon-pricelist:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-labelred:before, .icon-house-dark:before, .icon-camera:before, .icon-photo:before, .icon-scheme:before, .icon-check:before, .icon-starsmall:before, .card_flat .btn-fav:before, .icon-starsmallfill:before, .card_flat .btn-fav-in:before, .icon-pencil-dark:before, .icon-scheme-green:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
+.before, .icon-catalog:before, .icon-sett:before, .icon-pricelist:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-labelred:before, .icon-house-dark:before, .icon-camera:before, .icon-camerabig:before, .icon-photo:before, .icon-scheme:before, .icon-check:before, .icon-starsmall:before, .card_flat .btn-fav:before, .icon-starsmallfill:before, .card_flat .btn-fav-in:before, .icon-pencil-dark:before, .icon-scheme-green:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
 .fixed-header .wishlist__link:before,
 .fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .callback .call:before,
 .resume .call:before, .modal-menu .menu .title:after,
@@ -499,12 +510,16 @@ h3 {
 .objects .owl-carousel .owl-prev:before,
 .objects .owl-carousel .owl-next:before,
 .intro__carousel .owl-carousel .owl-prev:before,
-.intro__carousel .owl-carousel .owl-next:before, .card_flat .carousel .owl-carousel .owl-prev:after, .card_flat .carousel .owl-carousel .owl-next:after,
+.intro__carousel .owl-carousel .owl-next:before,
+.list_construction .tab-content .owl-carousel .owl-prev:before,
+.list_construction .tab-content .owl-carousel .owl-next:before, .card_flat .carousel .owl-carousel .owl-prev:after, .card_flat .carousel .owl-carousel .owl-next:after,
 .objects .owl-carousel .owl-prev:after,
-.objects .owl-carousel .owl-next:after, .objects__info:before, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
+.objects .owl-carousel .owl-next:after,
+.list_construction .tab-content .owl-carousel .owl-prev:after,
+.list_construction .tab-content .owl-carousel .owl-next:after, .objects__info:before, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .big-icon:before, .neck .tabs .tab.active:after, .pagination .prev:before,
 .pagination .next:before, .picking__link span:before, .sortbox__option-up:after, .sortbox__option-down:after, main ul li:before, .faq-page .head .btn:before,
-.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, .complex-page .main main .head:after, .complex-page .main .carousel:before, .complex-page .main .carousel:after, .popover-link:before {
+.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, .complex-page .main main .head:after, .complex-page .main .carousel:before, .complex-page .main .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before {
   content: "";
   display: block;
   position: absolute; }
@@ -526,7 +541,7 @@ input[type="submit"] {
 .topnews .news .date, .feature .news .cat__link,
 .topnews .news .cat__link, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
 .vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top,
-.list_construction .place__top, .review__bottom, .filter-sort .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .complex-page .subnav a, .complex-page .main .carousel .manage, .popover-bottom {
+.list_construction .place__top, .review__bottom, .filter-sort .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .complex-page .subnav a, .complex-page .main .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .popover-bottom {
   display: flex;
   align-items: center; }
 
@@ -613,13 +628,13 @@ button {
 
 .btn-faq span:before {
   background-image: url(../images/sprite.png);
-  background-position: 0px -175px;
+  background-position: -31px -180px;
   width: 30px;
   height: 30px; }
 
 .btn-review span:before {
   background-image: url(../images/sprite.png);
-  background-position: -122px -61px;
+  background-position: -61px -180px;
   width: 28px;
   height: 27px; }
 
@@ -802,13 +817,13 @@ form .form-control {
     .header .wishlist__link:before,
     .fixed-header .wishlist__link:before {
       background-image: url(../images/sprite.png);
-      background-position: -159px -134px;
+      background-position: -204px -134px;
       width: 31px;
       height: 30px; }
     .header .wishlist__link:after,
     .fixed-header .wishlist__link:after {
       background-image: url(../images/sprite.png);
-      background-position: -190px -134px;
+      background-position: 0px -180px;
       width: 31px;
       height: 30px;
       -webkit-transition: opacity 0.2s ease-out;
@@ -877,7 +892,7 @@ form .form-control {
       padding-left: 55px; }
       .fixed-header .qfilter a:before {
         background-image: url(../images/sprite.png);
-        background-position: -120px -134px;
+        background-position: -165px -134px;
         width: 39px;
         height: 30px;
         left: 0; }
@@ -1048,7 +1063,7 @@ form .form-control {
     .callback .call:before,
     .resume .call:before {
       background-image: url(../images/sprite.png);
-      background-position: 0px -134px;
+      background-position: -45px -134px;
       width: 41px;
       height: 41px; }
   .callback__form,
@@ -2192,7 +2207,9 @@ body.modal-open {
 .objects .owl-carousel .owl-prev:before,
 .objects .owl-carousel .owl-next:before,
 .intro__carousel .owl-carousel .owl-prev:before,
-.intro__carousel .owl-carousel .owl-next:before {
+.intro__carousel .owl-carousel .owl-next:before,
+.list_construction .tab-content .owl-carousel .owl-prev:before,
+.list_construction .tab-content .owl-carousel .owl-next:before {
   transition: .3s all ease-out;
   background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAYCAMAAAAmopZHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAqFBMVEUAh00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah03////LzDCzAAAANnRSTlMAYyZ50Sx4/LEGd+NFAeQ9/t873jziesojAv3Nlp6PZvdn9gN9z5uklHzJIXvhOdzdOELULiiNp6GjAAAAAWJLR0Q3MLi4RwAAAAd0SU1FB+ICFxEtB4P8KmQAAACiSURBVCjPdZFHFsIwDERFh4AoCTGdUEIJxHR0/6Mhr/KMlNl5Rv7jAlCoUgVNNao3FLvZImp3hB2w3e2hhBD1BxIyJBqFKiQaq5WxhASOLacNsyfTf3dm5jy+WK48rSFh1yW+NrAlTTvYp4ynw/Hk6cwNGfuXq3wwzDmwN+UpDd/LhkqQ84nu2g7X8XiWdMRlKPtCGRj9HwFTen8UEGDyLRY/EnAekAPc1nQAAAAASUVORK5CYII=") no-repeat center;
   filter: grayscale(1);
@@ -2203,73 +2220,92 @@ body.modal-open {
 .objects .owl-carousel .owl-prev:hover:before,
 .objects .owl-carousel .owl-next:hover:before,
 .intro__carousel .owl-carousel .owl-prev:hover:before,
-.intro__carousel .owl-carousel .owl-next:hover:before {
+.intro__carousel .owl-carousel .owl-next:hover:before,
+.list_construction .tab-content .owl-carousel .owl-prev:hover:before,
+.list_construction .tab-content .owl-carousel .owl-next:hover:before {
   filter: grayscale(0); }
 
 .card_flat .carousel .owl-carousel .owl-next:before,
 .objects .owl-carousel .owl-next:before,
-.intro__carousel .owl-carousel .owl-next:before {
+.intro__carousel .owl-carousel .owl-next:before,
+.list_construction .tab-content .owl-carousel .owl-next:before {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .card_flat .carousel .owl-carousel,
-.objects .owl-carousel {
+.objects .owl-carousel,
+.list_construction .tab-content .owl-carousel {
   margin-top: 4.2rem; }
   .card_flat .carousel .owl-carousel .owl-nav,
-  .objects .owl-carousel .owl-nav {
+  .objects .owl-carousel .owl-nav,
+  .list_construction .tab-content .owl-carousel .owl-nav {
     margin-top: -45px;
     position: absolute;
     top: 50%;
     width: 100%; }
   .card_flat .carousel .owl-carousel .owl-prev, .card_flat .carousel .owl-carousel .owl-next,
   .objects .owl-carousel .owl-prev,
-  .objects .owl-carousel .owl-next {
+  .objects .owl-carousel .owl-next,
+  .list_construction .tab-content .owl-carousel .owl-prev,
+  .list_construction .tab-content .owl-carousel .owl-next {
     height: 90px;
     position: absolute;
     top: 0;
     width: 50px; }
     .card_flat .carousel .owl-carousel .owl-prev:before, .card_flat .carousel .owl-carousel .owl-next:before,
     .objects .owl-carousel .owl-prev:before,
-    .objects .owl-carousel .owl-next:before {
+    .objects .owl-carousel .owl-next:before,
+    .list_construction .tab-content .owl-carousel .owl-prev:before,
+    .list_construction .tab-content .owl-carousel .owl-next:before {
       left: 50%;
       margin-top: -12px;
       top: 50%;
       z-index: 2; }
     .card_flat .carousel .owl-carousel .owl-prev:after, .card_flat .carousel .owl-carousel .owl-next:after,
     .objects .owl-carousel .owl-prev:after,
-    .objects .owl-carousel .owl-next:after {
+    .objects .owl-carousel .owl-next:after,
+    .list_construction .tab-content .owl-carousel .owl-prev:after,
+    .list_construction .tab-content .owl-carousel .owl-next:after {
       background: white;
       height: 90px;
       top: 0;
       width: 40px; }
   .card_flat .carousel .owl-carousel .owl-prev,
-  .objects .owl-carousel .owl-prev {
+  .objects .owl-carousel .owl-prev,
+  .list_construction .tab-content .owl-carousel .owl-prev {
     left: -50px;
     -webkit-transition: left 0.2s ease-out;
     transition: left 0.2s ease-out; }
     .card_flat .carousel .owl-carousel .owl-prev:before,
-    .objects .owl-carousel .owl-prev:before {
+    .objects .owl-carousel .owl-prev:before,
+    .list_construction .tab-content .owl-carousel .owl-prev:before {
       margin-left: -6px; }
     .card_flat .carousel .owl-carousel .owl-prev:after,
-    .objects .owl-carousel .owl-prev:after {
+    .objects .owl-carousel .owl-prev:after,
+    .list_construction .tab-content .owl-carousel .owl-prev:after {
       right: 0; }
     .card_flat .carousel .owl-carousel .owl-prev:hover,
-    .objects .owl-carousel .owl-prev:hover {
+    .objects .owl-carousel .owl-prev:hover,
+    .list_construction .tab-content .owl-carousel .owl-prev:hover {
       left: -40px; }
   .card_flat .carousel .owl-carousel .owl-next,
-  .objects .owl-carousel .owl-next {
+  .objects .owl-carousel .owl-next,
+  .list_construction .tab-content .owl-carousel .owl-next {
     -webkit-transition: right 0.2s ease-out;
     transition: right 0.2s ease-out;
     right: -30px; }
     .card_flat .carousel .owl-carousel .owl-next:before,
-    .objects .owl-carousel .owl-next:before {
+    .objects .owl-carousel .owl-next:before,
+    .list_construction .tab-content .owl-carousel .owl-next:before {
       left: 10px; }
     .card_flat .carousel .owl-carousel .owl-next:after,
-    .objects .owl-carousel .owl-next:after {
+    .objects .owl-carousel .owl-next:after,
+    .list_construction .tab-content .owl-carousel .owl-next:after {
       right: 10px; }
     .card_flat .carousel .owl-carousel .owl-next:hover,
-    .objects .owl-carousel .owl-next:hover {
+    .objects .owl-carousel .owl-next:hover,
+    .list_construction .tab-content .owl-carousel .owl-next:hover {
       right: -20px; }
 
 .objects {
@@ -2284,7 +2320,7 @@ body.modal-open {
       -webkit-transition: left 0.2s ease-out;
       transition: left 0.2s ease-out;
       background-image: url(../images/sprite.png);
-      background-position: 0px -205px;
+      background-position: 0px -210px;
       width: 18px;
       height: 20px;
       left: 19px; }
@@ -2795,7 +2831,7 @@ body.modal-open {
       position: relative; }
       .picking__link span:before {
         background-image: url(../images/sprite.png);
-        background-position: -81px -134px;
+        background-position: -126px -134px;
         width: 39px;
         height: 30px;
         left: -72px;
@@ -3388,7 +3424,7 @@ main {
   .faq-page .head .btn:before,
   .vacancies-page .head .btn:before {
     background-image: url(../images/sprite.png);
-    background-position: 0px -175px;
+    background-position: -31px -180px;
     width: 30px;
     height: 30px;
     left: 13px;
@@ -4491,12 +4527,12 @@ main {
   border: none;
   background-color: transparent;
   background-image: url(../images/sprite.png);
-  background-position: -159px -134px;
+  background-position: -204px -134px;
   width: 31px;
   height: 30px; }
   .btn-fav-in, .btn-fav:hover {
     background-image: url(../images/sprite.png);
-    background-position: -190px -134px;
+    background-position: 0px -180px;
     width: 31px;
     height: 30px; }
 
@@ -4569,7 +4605,7 @@ main {
   .mortgage .heading {
     padding-bottom: 1.2rem; }
   .mortgage__item {
-    margin-bottom: 1rem;
+    margin-bottom: 2.8rem;
     padding-left: 1.5rem;
     padding-right: 1.3rem; }
     .mortgage__item a {
@@ -5221,6 +5257,77 @@ main {
       color: #fff;
       font-weight: 600;
       width: 30px; }
+
+.complex-page .list_construction {
+  background-color: #ebeef1;
+  padding: 7.5rem 0 8.8rem; }
+  .complex-page .list_construction .place__item {
+    background: #fff;
+    margin-bottom: 0; }
+  .complex-page .list_construction .place__wrapper {
+    padding-top: 3rem;
+    margin-bottom: 0;
+    min-height: 420px;
+    margin-bottom: 2rem; }
+  .complex-page .list_construction .place__pic {
+    margin-top: 0; }
+  .complex-page .list_construction .construction__meta {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 500; }
+    .complex-page .list_construction .construction__meta .nav {
+      display: flex;
+      margin-left: 2.5rem; }
+      .complex-page .list_construction .construction__meta .nav .btn {
+        border: 2px solid #c8d1dc;
+        color: #616f7f;
+        height: 50px;
+        margin-left: -2px;
+        padding: 0 2.5rem;
+        text-decoration: none; }
+        .complex-page .list_construction .construction__meta .nav .btn.active {
+          border-color: #00874d;
+          color: #000;
+          position: relative;
+          z-index: 2; }
+          .complex-page .list_construction .construction__meta .nav .btn.active:after {
+            background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAALBAMAAACAOcA3AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJ1BMVEUAh003n3TW5eLr7vFbr43Y5uMpmWoGiVGezLugzb2jzr+r0sX///+Bkpf0AAAAAWJLR0QMgbNRYwAAAAd0SU1FB+IDBREyCvdn7uMAAABOSURBVAjXY2BUNgYDBwYGITDDhIEhDCLoUMFgmgASNGFvZjAGCzpUGjMYgwRN2CcDWSBBoBCIZZogAhQCsYzDGKqMISzT9MVQlnE0iAAATVkVWQW9mX0AAAAASUVORK5CYII=") no-repeat;
+            bottom: -11px;
+            height: 11px;
+            left: 50%;
+            margin-left: -9px;
+            width: 18px; }
+    .complex-page .list_construction .construction__meta .month-select.selectize-control {
+      margin-left: 47px;
+      width: 215px; }
+      .complex-page .list_construction .construction__meta .month-select.selectize-control input::-webkit-input-placeholder {
+        color: #000; }
+      .complex-page .list_construction .construction__meta .month-select.selectize-control input::-moz-placeholder {
+        color: #000; }
+      .complex-page .list_construction .construction__meta .month-select.selectize-control input:-ms-input-placeholder {
+        color: #000; }
+      .complex-page .list_construction .construction__meta .month-select.selectize-control input:focus::-webkit-input-placeholder {
+        transition: line-height 0.5s ease; }
+      .complex-page .list_construction .construction__meta .month-select.selectize-control input:focus::-moz-placeholder {
+        transition: line-height 0.5s ease; }
+      .complex-page .list_construction .construction__meta .month-select.selectize-control input:focus:-ms-input-placeholder {
+        transition: line-height 0.5s ease; }
+      .complex-page .list_construction .construction__meta .month-select.selectize-control .selectize-input.full {
+        background: transparent; }
+      .complex-page .list_construction .construction__meta .month-select.selectize-control .selectize-input:after {
+        right: 6px; }
+    .complex-page .list_construction .construction__meta .left {
+      flex-grow: 1; }
+  .complex-page .list_construction .translation__link {
+    display: inline-block;
+    font-size: 2.4rem;
+    text-decoration: none; }
+  .complex-page .list_construction .translation .text {
+    color: #5b5b5b;
+    font-weight: 400;
+    font-size: 1.4rem; }
+  .complex-page .list_construction .tab-content {
+    margin-top: 2.7rem; }
 
 .popover {
   box-shadow: 0 5px 20px rgba(73, 82, 95, 0.5);
