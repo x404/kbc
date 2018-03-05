@@ -4563,30 +4563,27 @@ main {
         left: 20px;
         top: 11px; }
 
-.flat-page .main {
-  background: #ebeef1;
-  padding: 5.5rem 0; }
-
-.flat-page .mortgage {
-  padding-bottom: 7.3rem; }
-  .flat-page .mortgage .title {
-    font-size: 3.4rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding-bottom: 1.5rem;
-    padding-top: 5rem; }
-  .flat-page .mortgage__item {
+.mortgage {
+  padding-bottom: 7.3rem;
+  padding-top: 5rem; }
+  .mortgage .heading {
+    padding-bottom: 1.2rem; }
+  .mortgage__item {
     margin-bottom: 1rem;
     padding-left: 1.5rem;
     padding-right: 1.3rem; }
-    .flat-page .mortgage__item a {
+    .mortgage__item a {
       display: block;
       transition: .3s box-shadow; }
-      .flat-page .mortgage__item a img {
+      .mortgage__item a img {
         display: block;
         max-width: 100%; }
-      .flat-page .mortgage__item a:hover {
+      .mortgage__item a:hover {
         box-shadow: 0 5px 30px rgba(83, 99, 121, 0.5); }
+
+.flat-page .main {
+  background: #ebeef1;
+  padding: 5.5rem 0; }
 
 .flat-page .card__description {
   padding-left: 88px; }
@@ -4711,6 +4708,8 @@ main {
 .additional_info {
   border-top: 2px solid #ebeef1;
   padding-top: 8.5rem; }
+  .additional_info .heading {
+    padding-bottom: 0; }
   .additional_info .table-flats {
     border: 2px solid #ebeef1;
     margin-top: 1.5em; }
@@ -4757,12 +4756,15 @@ main {
       padding-left: 40px;
       padding-right: 30px;
       position: relative;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: .3s; }
       .installmentbox__left .btn span {
-        border-bottom: 2px solid #c20831; }
+        border-bottom: 2px solid #c20831;
+        transition: .3s border-bottom; }
       .installmentbox__left .btn:hover {
         color: #fff;
-        background-color: #00874d; }
+        background-color: #00874d;
+        border-color: #00874d; }
         .installmentbox__left .btn:hover span {
           border-bottom-color: transparent; }
         .installmentbox__left .btn:hover:before {
@@ -4770,9 +4772,9 @@ main {
       .installmentbox__left .btn.more:before {
         background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAMAAAD+iNU2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAt1BMVEXCCTLCCDHCCDHCCDHCCDHCCDHCCDHCCTLCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCTLCCDHCCDHCCDHCCDHCCDHCCDHCCTLCCDHCCDHCCDHCCDHCCTLCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCTLCCTLCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCTL///+DcEUpAAAAOnRSTlMAAEqfFBfZtBECZvW2E2D2sxFc9BJX67IyMTApffy38/Lx7+389fT9NTQzMit+uRVU6bRauF61ZEugyWZY4AAAAAFiS0dEPKdqYc8AAAAHdElNRQfiAwMWDhfHtrKcAAAAkElEQVQI103P5xKCQAxG0Xy6FmTXBnZFRMQuVtTw/u8lZVy4v3ImM5kJEdIqVQGkI2Wu1bnRLNlomSxVYaDd4W6vZPQtlnbJGAx5ZIPGk7zpbL5gR9DSXeV5az+OJW2CwMpyvS2zQ7v9Iet4Ovt8CfU5XG98V9B+WPxU0H6ZHCn8bbyTrYB28k9kozA+3zAffr9dDx+5Qyd+AAAAAElFTkSuQmCC") no-repeat;
         height: 16px;
-        width: 15px;
         left: 14px;
         top: 22px;
+        width: 15px;
         z-index: 2; }
       .installmentbox__left .btn.icon-scheme-green {
         padding-left: 70px; }
