@@ -299,3 +299,14 @@
 		top: 0;
 	}
 }
+
+
+.icon-scheme-green{
+	position: relative;
+	&:before{
+		@extend .before;
+		@include sprite($icon-scheme-green);
+		left: 0;
+		top: 0;
+	}
+}
