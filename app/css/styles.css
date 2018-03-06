@@ -519,7 +519,7 @@ h3 {
 .list_construction .tab-content .owl-carousel .owl-next:after, .objects__info:before, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .big-icon:before, .neck .tabs .tab.active:after, .pagination .prev:before,
 .pagination .next:before, .picking__link span:before, .sortbox__option-up:after, .sortbox__option-down:after, main ul li:before, .faq-page .head .btn:before,
-.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, .complex-page .complex__left:before, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before {
+.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, .complex-page .complex__left:before, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a:before, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before {
   content: "";
   display: block;
   position: absolute; }
@@ -548,7 +548,7 @@ input[type="submit"] {
 
 .flex-center, .btn-faq, .btn-review, .modal-menu .close-modal, .feature .news .date .num,
 .topnews .news .date .num, .feature .promo .type-2 .more,
-.feature .promo .type-3 .more, .pagination, .pagination a, .pagination span, .gbi-page .menu .icon, .product__pic, .complex-page .about .carousel .label, .complex-page .houses .house__top .right .diagram .num, .complex-page .house__body .table .num, .popover .diagram, .popover .diagram .num {
+.feature .promo .type-3 .more, .pagination, .pagination a, .pagination span, .gbi-page .menu .icon, .product__pic, .complex-page .about .carousel .label, .complex-page .houses .house__top .right .diagram .num, .complex-page .house__body .table .num, .popover .diagram, .popover .diagram .num, .circlebig .num {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -5023,6 +5023,69 @@ main {
     right: 0;
     top: 0; }
 
+.complex-page .complex__panel {
+  border-top: 10px solid #fff;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 23.2rem;
+  padding-right: 10px; }
+  .complex-page .complex__panel .video {
+    font-size: 1.8rem;
+    position: relative; }
+    .complex-page .complex__panel .video a {
+      display: block;
+      color: #fff;
+      text-decoration: none; }
+      .complex-page .complex__panel .video a:before {
+        background: url(../images/play.png) no-repeat center;
+        width: 80px;
+        height: 80px;
+        z-index: 2;
+        left: 50%;
+        top: 50%;
+        margin-left: -40px;
+        margin-top: -60px; }
+      .complex-page .complex__panel .video a:after {
+        background: rgba(0, 0, 0, 0.5);
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0; }
+      .complex-page .complex__panel .video a span {
+        bottom: 60px;
+        display: block;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 2; }
+    .complex-page .complex__panel .video img {
+      display: block;
+      height: auto;
+      width: 100%; }
+  .complex-page .complex__panel .house {
+    color: #000;
+    width: 160px;
+    font-size: 1.5rem;
+    padding-top: 1rem; }
+    .complex-page .complex__panel .house__title {
+      font-weight: 500;
+      font-size: 1.7rem; }
+    .complex-page .complex__panel .house .diagram {
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
+    .complex-page .complex__panel .house .circle {
+      float: none; }
+      .complex-page .complex__panel .house .circle .num {
+        position: absolute; }
+    .complex-page .complex__panel .house .final {
+      font-weight: 500;
+      font-size: 1.4rem; }
+      .complex-page .complex__panel .house .final span {
+        color: #00874d;
+        font-weight: 400; }
+
 .complex-page .complex__place {
   display: flex;
   font-size: 1.8rem;
@@ -5631,6 +5694,23 @@ circle:nth-child(2n) {
   fill: transparent;
   stroke: #b7da50;
   stroke-width: 10; }
+
+.circlebig {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 83px; }
+  .circlebig circle {
+    stroke-width: 16;
+    stroke-dasharray: 213px 213px; }
+  .circlebig .num {
+    font-size: 2rem;
+    font-weight: 500;
+    height: 83px;
+    position: absolute;
+    top: 0;
+    width: 83px; }
 
 .fade {
   opacity: 0;

@@ -126,7 +126,6 @@
 					<div class="row">
 						<div class="complex flexbox">
 							<div class="complex__left" style="background-image: url(tmp/complex.jpg);">
-
 								<!-- =meta -->
 								<div class="object__meta flexbox">
 									<div class="object__info">
@@ -160,6 +159,31 @@
 								<div class="complex__text">
 									<p>Современный жилой квартал СТАСОВО от Фирмы "Культбытстрой"! Комфортные квартиры с грамотной планировкой и действительно удобным расположением! Рядом Метро и Октябрьский мост. </p>
 								</div>
+
+								<!-- =panel -->
+								<div class="complex__panel flexbox">
+									<div class="video">
+										<a href="https://www.youtube.com/watch?v=4aEi1p36rDE" data-fancybox>
+											<img src="tmp/video.jpg" alt="" />
+											<span>Видео об объекте</span>
+										</a>
+									</div>
+									<div class="complex__grouphouse flexbox">
+										<div class="house text-center">
+											<p class="house__title">Дом 1.1</p>
+											<p>готов на</p>
+											<div class="diagram circlebig">66%</div>
+											<p class="final">Сдача дома <br> <span>I квартал <br>  2018 года</span></p>
+										</div>
+										<div class="house text-center">
+											<p class="house__title">Дом 1.2</p>
+											<p>готов на</p>
+											<div class="diagram circlebig">32%</div>
+											<p class="final">Сдача дома <br> <span>II квартал <br>  2018 года</span></p>
+										</div>
+									</div>
+								</div>
+								<!-- =/panel -->
 							</div>
 							<div class="complex__right">
 								<!-- =map -->
@@ -1620,6 +1644,20 @@ var Circle = function(sel){
 	});
 };
 Circle('.circle');
+
+
+var CircleBig = function(sel){
+	var circles = document.querySelectorAll(sel);
+	[].forEach.call(circles,function(el){
+		var num = el.innerHTML,
+			valEl = parseFloat(num);
+
+		valEl = valEl*214/100;
+		el.innerHTML = '<svg width="83" height="83"><circle transform="rotate(-90)" r="34" cx="-41" cy="41" /><circle transform="rotate(-90)" style="stroke-dasharray:'+valEl+'px 213px;" r="34" cx="-41" cy="41" /></svg><div class="num">'+num+'</div>';
+		
+	});
+};
+CircleBig('.circlebig');
 </script>
 <!-- InstanceEndEditable -->
 </body>

@@ -152,13 +152,36 @@
     float: left;
 }
 circle {
-  fill: rgba(0,0,0,0);
-  stroke: #eee;
-  stroke-width: 10;
-  stroke-dasharray: 144px 144px;
+	fill: rgba(0,0,0,0);
+	stroke: #eee;
+	stroke-width: 10;
+	stroke-dasharray: 144px 144px;
 }
 circle:nth-child(2n) {
-  fill: rgba(0,0,0,0);
-  stroke: #b7da50;
-  stroke-width: 10;
+	fill: rgba(0,0,0,0);
+	stroke: #b7da50;
+	stroke-width: 10;
+}
+
+
+
+.circlebig{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 83px;
+	circle{
+		stroke-width: 16;
+		stroke-dasharray: 213px 213px;		
+	}
+	.num{
+		@extend .flex-center;
+		font-size: 2rem;
+		font-weight: 500;
+		height: 83px;
+		position: absolute;
+		top: 0;
+		width: 83px;
+	}
 }

@@ -19,6 +19,90 @@
 				top: 0;
 			}
 		}
+		
+		&__panel{
+			border-top: 10px solid $color2;
+			background: $color2;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 23.2rem;
+			padding-right: 10px;
+			.video{
+				font-size: 1.8rem;
+				position: relative;
+				a{
+					display: block;
+					color: $color2;
+					text-decoration: none;
+					&:after,
+					&:before{
+						@extend .before;
+					}
+
+					&:before{
+						background: url(../images/play.png) no-repeat center;
+						width: 80px;
+						height: 80px;
+						z-index: 2;
+						left: 50%;
+						top: 50%;
+						margin-left: -40px;
+						margin-top: -60px;
+					}
+					&:after{
+						background: rgba(0,0,0,.5);
+						bottom: 0;
+						left: 0;
+						right: 0;
+						top: 0;
+					}
+					span{
+						bottom: 60px;
+						display: block;
+						position: absolute;
+						text-align: center;
+						width: 100%;
+						z-index: 2;
+					}
+				}
+
+				img{
+					display: block;
+					height: auto;
+					width: 100%;
+				}
+			}
+
+			.house{
+				color: $color1;
+				width: 160px;
+				font-size: 1.5rem;
+				padding-top: 1rem;
+				&__title{
+					font-weight: 500;
+					font-size: 1.7rem;
+				}
+				.diagram{
+					margin-top: 1rem;
+					margin-bottom: 1rem;
+				}
+				.circle{
+					float: none;
+					.num{
+						position: absolute;
+					}
+				}
+				.final{
+					font-weight: 500;
+					font-size: 1.4rem;
+					span{
+						color: $color8;
+						font-weight: 400;
+					}
+				}
+			}
+		}
 
 		&__place{
 			display: flex;
