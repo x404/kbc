@@ -826,11 +826,21 @@
  	background-color: $color7;
 	position: fixed;
 	left: 0;
-	top: 70px;
+	// top: 70px;
+	top: 0;
 	width: 100%;
+	transform: translateY(-140%);
+	transition: .55s;
+	z-index: -10;
 	.subnav{
 		a{
 			height: 6rem;			
 		}
+	}
+
+	&.sticky{
+		transform: translateY(70px);
+		// top: 70px;
+		z-index: 99;
 	}
  }

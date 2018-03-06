@@ -529,14 +529,17 @@ $(document).on('click','.btn-fav-in', function(e){
 
 // sticky header
 var fh = document.querySelector('.fixed-header'),
-	headerh = document.querySelector('.header').offsetHeight;
+	headerh = document.querySelector('.header').offsetHeight,
+	fnavbar = document.querySelector('.fixed-navbar');
 
 window.onscroll = function(){
 	if (window.pageYOffset  > 200 ) {
 		fh.classList.add('sticky');
+		fnavbar.classList.add('sticky');
 	} else {
 		if (window.pageYOffset  < 400) {
 			fh.classList.remove('sticky');
+			fnavbar.classList.remove('sticky');
 		}
 	}
 };
