@@ -563,3 +563,24 @@ function doRate(el, num){
 }
 
 
+
+
+$(document).on('click', '[data-targetscroll], .subnav a', function(e){
+	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		var target = $(this.hash);
+		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		if (target.length) {
+			$('html,body').animate({
+				scrollTop: target.offset().top-250
+			}, 1000);
+			return false;
+		}
+	}
+})
+
+
+
+	// // scroll page
+	// $('.mainmenu a[href*=\\#]:not([href=\\#]), .graduate_info_box-experts a, .neck_card .graduate_info_box-users .title a').click(function() {
+
+	// });	

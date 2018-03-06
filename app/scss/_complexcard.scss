@@ -7,6 +7,7 @@
 	.complex{
 		&__left{
 			color: $color2;
+			min-height: 635px;
 			position: relative;
 			padding-left: 160px;
 			padding-right: 160px;
@@ -45,13 +46,13 @@
 
 					&:before{
 						background: url(../images/play.png) no-repeat center;
-						width: 80px;
 						height: 80px;
-						z-index: 2;
 						left: 50%;
+						margin-left: -36px;
+						margin-top: -54px;
 						top: 50%;
-						margin-left: -40px;
-						margin-top: -60px;
+						width: 80px;
+						z-index: 2;
 					}
 					&:after{
 						background: rgba(0,0,0,.5);
@@ -61,7 +62,7 @@
 						top: 0;
 					}
 					span{
-						bottom: 60px;
+						bottom: 53px;
 						display: block;
 						position: absolute;
 						text-align: center;
@@ -77,10 +78,6 @@
 				}
 			}
 
-			.slick-list{
-				// border-right: 10px solid $color2;
-			}
-			
 			.slick-track{
 				background: $color2;
 				border-top: 10px solid $color2;
@@ -108,7 +105,7 @@
 				}
 				.diagram{
 					margin-top: 1rem;
-					margin-bottom: 1rem;
+					margin-bottom: .2rem;
 				}
 				.circle{
 					float: none;
@@ -158,8 +155,7 @@
 				background: none;
 				border-bottom: 2px solid rgba(255,255,255,.3);
 				align-items: flex-end;
-				padding: 9rem 0 2rem;
-
+				padding: 9.5rem 0 2rem;
 			}
 			&__info{
 				margin-left: 0;
@@ -215,11 +211,17 @@
 			.tab-content{
 				padding-left: 3rem;
 				padding-right: 3rem;
+				padding-bottom: 1.5rem;
 				table{
 					border-top: none;
+					th{
+						padding-bottom: 1.2rem;
+					}
 					td{
 						border-top: none;
 						border-bottom: 2px solid #eaedf1;
+						padding-top: .9rem;
+						padding-bottom: .9rem;
 					}
 
 					tr:last-child td{
@@ -227,10 +229,6 @@
 					}
 				}
 			}
-		}
-
-		.tab-content{
-			padding-bottom: 2rem;
 		}
 	}
 	// =/main
@@ -489,7 +487,7 @@
 
  	// houses
 	.houses{
-		margin: 4.5rem 0 9.5rem;
+		margin: 9rem 0 9.5rem;
 		width: 100%;
 		.flexbox{
 			justify-content: space-between;

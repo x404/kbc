@@ -133,10 +133,10 @@
 										<p class="object__title">Стасовой</p>
 									</div>
 									<div class="object__composition">
-										<a href="#" class="btn icon-house-dark">2 дома</a>
+										<a href="#houses" class="btn icon-house-dark" data-targetscroll>2 дома</a>
 									</div>
 									<div class="object__address">
-										<a href="#" class="btn btn-red icon-label">ул. Елены Стасовой, д. 17 / д. 2</a>
+										<a href="#map" class="btn btn-red icon-label" data-targetscroll>ул. Елены Стасовой, д. 17 / д. 2</a>
 									</div>
 								</div>
 								<!-- =/meta -->
@@ -191,7 +191,7 @@
 								<!-- =map -->
 								<div class="complex__map">
 									<img src="tmp/map.jpg" alt="" />
-									<a href="#" class="btn btn-red icon-label">Перейти на большую карту</a>
+									<a href="#map" class="btn btn-red icon-label" data-targetscroll>Перейти на большую карту</a>
 								</div>
 								<!-- =/map -->
 
@@ -288,12 +288,12 @@
 				<div class="container">
 					<ul>
 						<li><a href="#about" title="">Об объекте</a></li>
-						<li><a href="#flats" title="">Квартиры</a></li>
-						<li><a href="#building" title="">Ход строительства</a></li>
-						<li><a href="#infrastructure" title="">Инфраструктура</a></li>
+						<li><a href="#houses" title="">Квартиры</a></li>
+						<li><a href="#construction" title="">Ход строительства</a></li>
+						<li><a href="#map" title="">Инфраструктура</a></li>
 						<li><a href="#mortgage" title="">Ипотека</a></li>
 						<li><a href="#gnk" title="">ЖНК</a></li>
-						<li><a href="#" title="">Документы</a></li>
+						<li><a href="docs.pdf" title="">Документы</a></li>
 						<li><a href="#reviews" title="">Отзывы</a></li>
 					</ul>
 				</div>
@@ -452,7 +452,7 @@
 					<!-- =/about -->
 
 					<!-- =houses -->
-					<div class="houses">
+					<div class="houses" id="houses">
 						<p class="heading">Выберите дом в котором хотите посмотреть квартиру</p>
 						<div class="flexbox">
 							<div class="house__item">
@@ -557,7 +557,7 @@
 
 
 			<!-- =installmentbox -->
-			<div class="installmentbox">
+			<div class="installmentbox" id="gnk">
 				<div class="container">
 					<div class="row">
 						<div class="col-8 installmentbox__left">
@@ -608,7 +608,7 @@
 			<!-- =mortgage -->
 			<div class="container">
 				<div class="row">
-					<div class="mortgage">
+					<div class="mortgage" id="mortgage">
 						<p class="heading">Ипотека</p>
 						<div class="row">
 							<div class="mortgage__item">
@@ -956,7 +956,7 @@
 			<div class="container">
 				<div class="row">
 					<!-- =reviews -->
-					<section class="list_reviews">
+					<section class="list_reviews" id="reviews">
 						<header>
 							<div class="left">
 								<h1 class="heading">Отзывы</h1>

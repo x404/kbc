@@ -5086,6 +5086,7 @@ main {
 
 .complex-page .complex__left {
   color: #fff;
+  min-height: 635px;
   position: relative;
   padding-left: 160px;
   padding-right: 160px; }
@@ -5113,13 +5114,13 @@ main {
       text-decoration: none; }
       .complex-page .complex__panel .video a:before {
         background: url(../images/play.png) no-repeat center;
-        width: 80px;
         height: 80px;
-        z-index: 2;
         left: 50%;
+        margin-left: -36px;
+        margin-top: -54px;
         top: 50%;
-        margin-left: -40px;
-        margin-top: -60px; }
+        width: 80px;
+        z-index: 2; }
       .complex-page .complex__panel .video a:after {
         background: rgba(0, 0, 0, 0.5);
         bottom: 0;
@@ -5127,7 +5128,7 @@ main {
         right: 0;
         top: 0; }
       .complex-page .complex__panel .video a span {
-        bottom: 60px;
+        bottom: 53px;
         display: block;
         position: absolute;
         text-align: center;
@@ -5156,7 +5157,7 @@ main {
       font-size: 1.7rem; }
     .complex-page .complex__panel .house .diagram {
       margin-top: 1rem;
-      margin-bottom: 1rem; }
+      margin-bottom: .2rem; }
     .complex-page .complex__panel .house .circle {
       float: none; }
       .complex-page .complex__panel .house .circle .num {
@@ -5193,7 +5194,7 @@ main {
   background: none;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
   align-items: flex-end;
-  padding: 9rem 0 2rem; }
+  padding: 9.5rem 0 2rem; }
 
 .complex-page .complex .object__info {
   margin-left: 0; }
@@ -5235,17 +5236,19 @@ main {
 
 .complex-page .complex__right .tab-content {
   padding-left: 3rem;
-  padding-right: 3rem; }
+  padding-right: 3rem;
+  padding-bottom: 1.5rem; }
   .complex-page .complex__right .tab-content table {
     border-top: none; }
+    .complex-page .complex__right .tab-content table th {
+      padding-bottom: 1.2rem; }
     .complex-page .complex__right .tab-content table td {
       border-top: none;
-      border-bottom: 2px solid #eaedf1; }
+      border-bottom: 2px solid #eaedf1;
+      padding-top: .9rem;
+      padding-bottom: .9rem; }
     .complex-page .complex__right .tab-content table tr:last-child td {
       border-bottom: none; }
-
-.complex-page .complex .tab-content {
-  padding-bottom: 2rem; }
 
 .complex-page .subnav .container {
   padding-left: 0;
@@ -5422,7 +5425,7 @@ main {
           background-color: #c20831; }
 
 .complex-page .houses {
-  margin: 4.5rem 0 9.5rem;
+  margin: 9rem 0 9.5rem;
   width: 100%; }
   .complex-page .houses .flexbox {
     justify-content: space-between; }
