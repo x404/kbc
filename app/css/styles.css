@@ -5081,16 +5081,11 @@ main {
         top: -7px;
         white-space: nowrap; }
 
-.subnav .container {
-  padding-left: 0;
-  padding-right: 0; }
-
 .subnav a {
   transition: .2s background-color;
   color: #fff;
   font-size: 1.8rem;
   text-decoration: none;
-  height: 9rem;
   padding: 0 2rem; }
   .subnav a:hover {
     background-color: #e20c3c; }
@@ -5272,6 +5267,13 @@ main {
       padding-bottom: .9rem; }
     .complex-page .complex__right .tab-content table tr:last-child td {
       border-bottom: none; }
+
+.complex-page .subnav .container {
+  padding-left: 0;
+  padding-right: 0; }
+
+.complex-page .subnav a {
+  height: 9rem; }
 
 .complex-page .params {
   border: 2px solid #ebeef1;
@@ -5662,6 +5664,15 @@ main {
     text-align: center;
     top: 21px;
     width: 58px; }
+
+.fixed-navbar {
+  background-color: #c20831;
+  position: fixed;
+  left: 0;
+  top: 70px;
+  width: 100%; }
+  .fixed-navbar .subnav a {
+    height: 6rem; }
 
 .popover {
   box-shadow: 0 5px 20px rgba(73, 82, 95, 0.5);

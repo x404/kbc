@@ -571,7 +571,7 @@ $(document).on('click', '[data-targetscroll], .subnav a', function(e){
 		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 		if (target.length) {
 			$('html,body').animate({
-				scrollTop: target.offset().top-250
+				scrollTop: target.offset().top-240
 			}, 1000);
 			return false;
 		}

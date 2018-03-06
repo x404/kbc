@@ -1,41 +1,30 @@
- 	// =subnav
-	.subnav{
-		// background-color: $color7;
-
-
-		// position: fixed;
-		// top: 150px;
-		// left: 0;
-		// z-index: 100;
-		// width: 100%;
-
-		.container{
-			padding-left: 0;
-			padding-right: 0;
+	// =subnav
+.subnav{
+	a{
+		@extend .flex-cv;
+		transition: .2s background-color;
+		color: $color2;
+		font-size: 1.8rem;
+		text-decoration: none;
+		padding: 0 2rem;
+		&:hover{
+			background-color: $color25;
 		}
-		a{
-			@extend .flex-cv;
-			transition: .2s background-color;
-			color: $color2;
-			font-size: 1.8rem;
-			text-decoration: none;
-			height: 9rem;
-			padding: 0 2rem;
-			&:hover{
-				background-color: $color25;
-			}
-			&.active{
-				background-color: $color25;
-			}
-		}
-		ul{
-			background-color: $color7;			
-			display: flex;
-			li{
-				margin-right: 2rem;
-			}
+		&.active{
+			background-color: $color25;
 		}
 	}
+	ul{
+		background-color: $color7;
+		display: flex;
+		li{
+			margin-right: 2rem;
+		}
+	}
+}
+// =/subnav
+
+
 
 
 .complex-page{
@@ -274,8 +263,17 @@
 	// =/main
 
 
-
-
+ 	// =subnav
+	.subnav{
+		.container{
+			padding-left: 0;
+			padding-right: 0;
+		}
+		a{
+			height: 9rem;
+		}
+	}
+	// =/subnav
 
  	// params
 	.params{
@@ -819,5 +817,20 @@
 			top: 21px;
 			width: $w;
 		}
- 	}
+	}
+}
+
+
+
+ .fixed-navbar{
+ 	background-color: $color7;
+	position: fixed;
+	left: 0;
+	top: 70px;
+	width: 100%;
+	.subnav{
+		a{
+			height: 6rem;			
+		}
+	}
  }
