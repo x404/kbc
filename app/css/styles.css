@@ -494,11 +494,11 @@ h3 {
 
 .tdu, .file-upload span, .modal-menu .menu a, .footer__menu a, .footer .idealpromo a, .pagination .prev,
 .pagination .next, .faq-page .head p a,
-.vacancies-page .head p a, .contact__plate .email, .table-flats td .place a, .complex-page .houses .house__body .table td a {
+.vacancies-page .head p a, .contact__plate .email, .table-flats td .place a, .complex-page .house__body .table td a {
   text-decoration: underline; }
   .tdu:hover, .file-upload span:hover, .modal-menu .menu a:hover, .footer__menu a:hover, .footer .idealpromo a:hover, .pagination .prev:hover,
   .pagination .next:hover, .faq-page .head p a:hover,
-  .vacancies-page .head p a:hover, .contact__plate .email:hover, .table-flats td .place a:hover, .complex-page .houses .house__body .table td a:hover {
+  .vacancies-page .head p a:hover, .contact__plate .email:hover, .table-flats td .place a:hover, .complex-page .house__body .table td a:hover {
     text-decoration: none; }
 
 .before, .icon-catalog:before, .icon-sett:before, .icon-pricelist:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-labelred:before, .icon-house-dark:before, .icon-camera:before, .icon-camerabig:before, .icon-photo:before, .icon-scheme:before, .icon-check:before, .icon-starsmall:before, .card_flat .btn-fav:before, .icon-starsmallfill:before, .card_flat .btn-fav-in:before, .icon-pencil-dark:before, .icon-scheme-green:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
@@ -519,7 +519,7 @@ h3 {
 .list_construction .tab-content .owl-carousel .owl-next:after, .objects__info:before, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .big-icon:before, .neck .tabs .tab.active:after, .pagination .prev:before,
 .pagination .next:before, .picking__link span:before, .sortbox__option-up:after, .sortbox__option-down:after, main ul li:before, .faq-page .head .btn:before,
-.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, .complex-page .main main .head:after, .complex-page .main .carousel:before, .complex-page .main .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before {
+.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, .complex-page .complex__left:before, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before {
   content: "";
   display: block;
   position: absolute; }
@@ -542,13 +542,13 @@ input[type="submit"] {
 .topnews .news .cat__link, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
 .vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top,
 .list_construction .place__top, .review__bottom, .filter-sort .btn,
-.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .complex-page .subnav a, .complex-page .main .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom {
+.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .complex-page .complex__place .cell, .complex-page .complex__navhouses, .complex-page .complex__navhouses .nav .btn, .complex-page .subnav a, .complex-page .about .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom {
   display: flex;
   align-items: center; }
 
 .flex-center, .btn-faq, .btn-review, .modal-menu .close-modal, .feature .news .date .num,
 .topnews .news .date .num, .feature .promo .type-2 .more,
-.feature .promo .type-3 .more, .pagination, .pagination a, .pagination span, .gbi-page .menu .icon, .product__pic, .complex-page .main .carousel .label, .complex-page .houses .house__top .right .diagram .num, .complex-page .houses .house__body .table .num, .popover .diagram, .popover .diagram .num {
+.feature .promo .type-3 .more, .pagination, .pagination a, .pagination span, .gbi-page .menu .icon, .product__pic, .complex-page .about .carousel .label, .complex-page .houses .house__top .right .diagram .num, .complex-page .house__body .table .num, .popover .diagram, .popover .diagram .num {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -5007,6 +5007,101 @@ main {
         top: -7px;
         white-space: nowrap; }
 
+.complex-page .main {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.complex-page .complex__left {
+  color: #fff;
+  position: relative;
+  padding-left: 160px;
+  padding-right: 160px; }
+  .complex-page .complex__left:before {
+    background-color: rgba(0, 116, 66, 0.9);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0; }
+
+.complex-page .complex__place {
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 600;
+  position: relative;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3); }
+  .complex-page .complex__place .cell {
+    height: 6rem;
+    margin: 1.8rem 0;
+    padding-right: 35px;
+    width: 250px; }
+    .complex-page .complex__place .cell img {
+      margin-right: 1rem; }
+
+.complex-page .complex__text {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  margin-top: 2.5rem;
+  position: relative; }
+
+.complex-page .complex .object__meta {
+  background: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  align-items: flex-end;
+  padding: 9rem 0 2rem; }
+
+.complex-page .complex .object__info {
+  margin-left: 0; }
+
+.complex-page .complex .object__title {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1; }
+
+.complex-page .complex__map {
+  position: relative; }
+  .complex-page .complex__map img {
+    display: block; }
+  .complex-page .complex__map .btn {
+    bottom: 30px;
+    font-weight: 400;
+    left: 28px;
+    padding-left: 40px;
+    position: absolute;
+    z-index: 2; }
+
+.complex-page .complex__navhouses {
+  background: #ebeef1;
+  font-size: 1.5rem;
+  font-weight: 500;
+  height: 6rem;
+  padding-left: 3rem; }
+  .complex-page .complex__navhouses .nav {
+    display: flex;
+    margin-left: 2rem; }
+    .complex-page .complex__navhouses .nav .btn {
+      color: #79838e;
+      padding: 0 1.5rem;
+      height: 6rem;
+      text-decoration: none; }
+      .complex-page .complex__navhouses .nav .btn.active {
+        background-color: #fff;
+        color: #000; }
+
+.complex-page .complex__right .tab-content {
+  padding-left: 3rem;
+  padding-right: 3rem; }
+  .complex-page .complex__right .tab-content table {
+    border-top: none; }
+    .complex-page .complex__right .tab-content table td {
+      border-top: none;
+      border-bottom: 2px solid #eaedf1; }
+    .complex-page .complex__right .tab-content table tr:last-child td {
+      border-bottom: none; }
+
+.complex-page .complex .tab-content {
+  padding-bottom: 2rem; }
+
 .complex-page .subnav .container {
   padding-left: 0;
   padding-right: 0; }
@@ -5055,35 +5150,37 @@ main {
     font-weight: 500;
     padding-top: .5rem; }
 
-.complex-page .main {
-  margin-top: 4.9rem; }
-  .complex-page .main main .head {
+.complex-page .about {
+  margin-top: 4.9rem;
+  margin-bottom: 0;
+  padding-bottom: 0; }
+  .complex-page .about main .head {
     margin-bottom: 4rem; }
-    .complex-page .main main .head:after {
+    .complex-page .about main .head:after {
       border-top: 4px solid #c20831;
       left: 0;
       bottom: 0;
       width: 97px; }
-  .complex-page .main main p {
+  .complex-page .about main p {
     font-size: 1.7rem; }
-  .complex-page .main .carousel {
+  .complex-page .about .carousel {
     position: relative;
     width: 800px; }
-    .complex-page .main .carousel .item {
+    .complex-page .about .carousel .item {
       position: relative; }
-    .complex-page .main .carousel:before, .complex-page .main .carousel:after {
+    .complex-page .about .carousel:before, .complex-page .about .carousel:after {
       background-color: rgba(91, 123, 146, 0.1); }
-    .complex-page .main .carousel:before {
+    .complex-page .about .carousel:before {
       left: -10px;
       top: 10px;
       height: 581px;
       width: 798px; }
-    .complex-page .main .carousel:after {
+    .complex-page .about .carousel:after {
       left: -20px;
       top: 20px;
       height: 562px;
       width: 798px; }
-    .complex-page .main .carousel .manage {
+    .complex-page .about .carousel .manage {
       background-color: #fff;
       bottom: 0;
       height: 60px;
@@ -5091,18 +5188,18 @@ main {
       position: absolute;
       width: 235px;
       z-index: 2; }
-      .complex-page .main .carousel .manage .photos {
+      .complex-page .about .carousel .manage .photos {
         margin-top: 3px; }
-        .complex-page .main .carousel .manage .photos a {
+        .complex-page .about .carousel .manage .photos a {
           border-bottom-width: 1px;
           font-weight: 600;
           text-decoration: none; }
-      .complex-page .main .carousel .manage .owl-nav {
+      .complex-page .about .carousel .manage .owl-nav {
         height: 24px;
         margin-right: 14px;
         position: relative;
         width: 115px; }
-      .complex-page .main .carousel .manage .owl-prev, .complex-page .main .carousel .manage .owl-next {
+      .complex-page .about .carousel .manage .owl-prev, .complex-page .about .carousel .manage .owl-next {
         background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAYCAMAAAAmopZHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAtFBMVEUAh00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah03///8pTrJRAAAAOnRSTlMAJWIDHcWFCCDEUR7BoxQbv6QNHMIPH6ELvgz6jCHGqpuePcD+PiPJ+66gw4qfCscOohNSyIkJJ2UEC85ViQAAAAFiS0dEOzkO9GwAAAAHdElNRQfiAwUMNBhGeggOAAAAsElEQVQoz22RyRaCMAxF44CiiIqiIoiI4oTzrPn/D7PpQg9N3qY996WZCvBXqVwBQVULa3WO7QYiNhl2Wgq7bRN3ugp7PRP3fcIDEw8pt8uiHYoeBSzJmHDIsOokmrAG46mKjpJZWhDMF4hZhqZg6aMkgNVaHZtt7hVE+9qp/HthkXo1acANPe7hyI34RIb0wqKRz8JnUY1LyA39XflVqEH7uAnt2nd8PAUOr/fnd/8CZlUhG2xnrrkAAAAASUVORK5CYII=") no-repeat left top;
         cursor: pointer;
         filter: grayscale(1) brightness(1.5);
@@ -5111,20 +5208,20 @@ main {
         top: 4px;
         width: 33px;
         transition: .3s; }
-        .complex-page .main .carousel .manage .owl-prev:hover, .complex-page .main .carousel .manage .owl-next:hover {
+        .complex-page .about .carousel .manage .owl-prev:hover, .complex-page .about .carousel .manage .owl-next:hover {
           filter: grayscale(0) brightness(1); }
-      .complex-page .main .carousel .manage .owl-prev {
+      .complex-page .about .carousel .manage .owl-prev {
         left: 15px; }
-        .complex-page .main .carousel .manage .owl-prev:hover {
+        .complex-page .about .carousel .manage .owl-prev:hover {
           left: 5px; }
-      .complex-page .main .carousel .manage .owl-next {
+      .complex-page .about .carousel .manage .owl-next {
         -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
         transform: rotate(180deg);
         right: 18px; }
-        .complex-page .main .carousel .manage .owl-next:hover {
+        .complex-page .about .carousel .manage .owl-next:hover {
           right: 8px; }
-    .complex-page .main .carousel .label {
+    .complex-page .about .carousel .label {
       border-radius: 50%;
       border: 2px solid #fff;
       color: #fff;
@@ -5134,15 +5231,15 @@ main {
       position: absolute;
       width: 43px;
       z-index: 50; }
-      .complex-page .main .carousel .label-red {
+      .complex-page .about .carousel .label-red {
         background-color: #e20c3c; }
-      .complex-page .main .carousel .label-green {
+      .complex-page .about .carousel .label-green {
         background-color: #00874d; }
-      .complex-page .main .carousel .label:hover .popover {
+      .complex-page .about .carousel .label:hover .popover {
         opacity: 1;
         visibility: visible;
         top: calc(100%); }
-    .complex-page .main .carousel .popover {
+    .complex-page .about .carousel .popover {
       box-shadow: none;
       transition: .3s;
       left: -78px;
@@ -5152,31 +5249,31 @@ main {
       opacity: 0;
       visibility: hidden;
       top: 15px; }
-      .complex-page .main .carousel .popover .arrow {
+      .complex-page .about .carousel .popover .arrow {
         top: 11px;
         z-index: 10; }
-    .complex-page .main .carousel .popover-container {
+    .complex-page .about .carousel .popover-container {
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.75);
       color: #000;
       position: absolute;
       width: 195px; }
-      .complex-page .main .carousel .popover-container .left {
+      .complex-page .about .carousel .popover-container .left {
         color: #575757;
         font-size: 1.4rem;
         font-weight: 400;
         margin-right: 1.4rem; }
-        .complex-page .main .carousel .popover-container .left .name {
+        .complex-page .about .carousel .popover-container .left .name {
           font-weight: 500;
           font-size: 2rem;
           color: #000; }
-      .complex-page .main .carousel .popover-container .popover-bottom-right .popover-link {
+      .complex-page .about .carousel .popover-container .popover-bottom-right .popover-link {
         display: inline;
         font-size: 1.4rem; }
-        .complex-page .main .carousel .popover-container .popover-bottom-right .popover-link:before {
+        .complex-page .about .carousel .popover-container .popover-bottom-right .popover-link:before {
           display: none; }
-        .complex-page .main .carousel .popover-container .popover-bottom-right .popover-link span {
+        .complex-page .about .carousel .popover-container .popover-bottom-right .popover-link span {
           white-space: normal; }
-        .complex-page .main .carousel .popover-container .popover-bottom-right .popover-link:hover {
+        .complex-page .about .carousel .popover-container .popover-bottom-right .popover-link:hover {
           background-color: #c20831; }
 
 .complex-page .houses {
@@ -5243,26 +5340,32 @@ main {
           right: 0;
           bottom: 0;
           text-align: center; }
-  .complex-page .houses .house__body .table {
-    border-top: 2px solid #eaedf1;
-    border-collapse: collapse;
-    margin-top: 1.5rem;
-    width: 100%;
-    font-size: 1.5rem; }
-    .complex-page .houses .house__body .table td {
-      border-top: 1px solid #eaedf1;
-      padding-top: 5px;
-      padding-bottom: 5px; }
-      .complex-page .houses .house__body .table td a {
-        font-size: 1.4rem;
-        text-decoration-color: #c20831; }
-    .complex-page .houses .house__body .table .num {
-      height: 30px;
-      background-color: #00874d;
-      border-radius: 50%;
-      color: #fff;
-      font-weight: 600;
-      width: 30px; }
+
+.complex-page .house__body .table {
+  border-top: 2px solid #eaedf1;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  width: 100%;
+  font-size: 1.5rem; }
+  .complex-page .house__body .table th {
+    font-weight: normal;
+    text-align: left; }
+    .complex-page .house__body .table th td {
+      border-top: none; }
+  .complex-page .house__body .table td {
+    border-top: 1px solid #eaedf1;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+    .complex-page .house__body .table td a {
+      font-size: 1.4rem;
+      text-decoration-color: #c20831; }
+  .complex-page .house__body .table .num {
+    height: 30px;
+    background-color: #00874d;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 600;
+    width: 30px; }
 
 .complex-page .list_construction {
   background-color: #ebeef1;

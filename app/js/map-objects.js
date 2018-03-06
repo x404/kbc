@@ -4,6 +4,8 @@ $(document).ready(function(){
 
 function init(){
 	// https://tech.yandex.ru/maps/doc/jsapi/2.0/dg/concepts/geoobjects-docpage/
+	// https://jsfiddle.net/r2prk693/
+	// https://tech.yandex.ru/maps/doc/jsapi/2.1/dg/concepts/layouts-docpage/
 	ymaps.ready(function() {
 		var myMap = new ymaps.Map('map', {
 			center: [55.998180, 92.844331],
