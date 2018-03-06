@@ -542,7 +542,7 @@ input[type="submit"] {
 .topnews .news .cat__link, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
 .vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top,
 .list_construction .place__top, .review__bottom, .filter-sort .btn,
-.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .complex-page .subnav a, .complex-page .main .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .popover-bottom {
+.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .complex-page .subnav a, .complex-page .main .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom {
   display: flex;
   align-items: center; }
 
@@ -5360,6 +5360,54 @@ main {
     margin-top: 2.7rem; }
   .complex-page .list_reviews .review__item {
     margin-bottom: 5.3rem; }
+
+.complex-page #map {
+  height: 635px; }
+
+.complex-page .map {
+  position: relative; }
+  .complex-page .map__info {
+    background: #fff;
+    border-bottom: 6px solid #c20831;
+    font-size: 1.7rem;
+    left: 160px;
+    padding: 3.5rem 3.5rem 2.2rem;
+    position: absolute;
+    top: 60px;
+    width: 320px; }
+    .complex-page .map__info img {
+      position: absolute;
+      left: -54px;
+      top: 5px; }
+    .complex-page .map__info ul {
+      padding-left: 54px;
+      padding-top: 1.6rem; }
+    .complex-page .map__info li {
+      border-bottom: 1px solid #e0e3e6;
+      position: relative;
+      height: 5rem; }
+      .complex-page .map__info li:last-child {
+        border-bottom: none; }
+  .complex-page .map .title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-transform: uppercase; }
+  .complex-page .map .myicon {
+    width: 58px;
+    height: 60px;
+    position: absolute;
+    top: -60px;
+    left: -29px; }
+    .complex-page .map .myicon img {
+      display: block; }
+  .complex-page .map .iconcontent {
+    font-size: 1.5rem;
+    font-weight: 500;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 21px;
+    width: 58px; }
 
 .popover {
   box-shadow: 0 5px 20px rgba(73, 82, 95, 0.5);

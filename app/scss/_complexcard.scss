@@ -501,4 +501,64 @@
 	 		}
  		}
  	}
+
+	#map{
+		height: 635px;
+	}
+	.map{
+		position: relative;
+		&__info{
+			background: $color2;
+			border-bottom: 6px solid #c20831;
+			font-size: 1.7rem;
+			left: 160px;
+			padding: 3.5rem 3.5rem 2.2rem;
+			position: absolute;
+			top: 60px;
+			width: 320px;
+			img{
+				position: absolute;
+				left: -54px;
+				top: 5px;
+			}
+			ul{
+				padding-left: 54px;
+				padding-top: 1.6rem;
+			}
+			li{
+				border-bottom: 1px solid #e0e3e6;
+				position: relative;
+				height: 5rem;
+				@extend .flex-cv;
+				&:last-child{
+					border-bottom: none;
+				}
+			}
+		}
+		.title{
+			font-size: 2.4rem;
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+		$w: 58px;
+		.myicon{
+			width: $w;
+			height: 60px;
+			position: absolute;
+			top: -60px;
+			left: -$w/2;
+			img{
+				display: block;
+			}
+		}
+		.iconcontent{
+			font-size: 1.5rem;
+			font-weight: 500;
+			left: 0;
+			position: absolute;
+			text-align: center;
+			top: 21px;
+			width: $w;
+		}
+ 	}
  }
