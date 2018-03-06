@@ -25,6 +25,7 @@ html {
 
 
 body{
+	position: relative;
 	font-family: 'proxima', Arial;
 	font-weight: 400;
 	@include font-size(1.4);
@@ -37,6 +38,7 @@ body{
 	@include flexbox;
 	flex-flow: column;
 	height: 100vh;	
+	// position: relative;
 }
 
 html, body, .body{

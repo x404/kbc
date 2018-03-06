@@ -27,7 +27,7 @@
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 </head>
-<body>
+<body data-spy="scroll" data-target=".subnav" data-offset="150">
 
 <div class="body">
 	<div class="outerwrapper">
@@ -284,17 +284,17 @@
 			<!-- =/main -->
 
 			<!-- =subnav -->
-			<div class="subnav">
+			<div class="subnav" id="subnav">
 				<div class="container">
-					<ul>
-						<li><a href="#about" title="">Об объекте</a></li>
-						<li><a href="#houses" title="">Квартиры</a></li>
-						<li><a href="#construction" title="">Ход строительства</a></li>
-						<li><a href="#map" title="">Инфраструктура</a></li>
-						<li><a href="#mortgage" title="">Ипотека</a></li>
-						<li><a href="#gnk" title="">ЖНК</a></li>
+					<ul class="nav" role="tablist">
+						<li><a href="#about" class="nav-link" title="">Об объекте</a></li>
+						<li><a href="#houses" class="nav-link" title="">Квартиры</a></li>
+						<li><a href="#construction" class="nav-link" title="">Ход строительства</a></li>
+						<li><a href="#map" class="nav-link" title="">Инфраструктура</a></li>
+						<li><a href="#mortgage" class="nav-link" title="">Ипотека</a></li>
+						<li><a href="#gnk" class="nav-link" title="">ЖНК</a></li>
 						<li><a href="docs.pdf" title="">Документы</a></li>
-						<li><a href="#reviews" title="">Отзывы</a></li>
+						<li><a href="#reviews" class="nav-link" title="">Отзывы</a></li>
 					</ul>
 				</div>
 			</div>
@@ -1631,8 +1631,6 @@
 <link rel="stylesheet" property="stylesheet" href="css/jquery.fancybox.min.css">
 <script type="text/javascript" src="/js/slick.min.js"></script>
 
-
-
 <script src="http://api-maps.yandex.ru/2.1.60/?lang=ru_RU"></script>
 <script src="/js/map-objects.js"></script>
 
@@ -1669,6 +1667,7 @@ $('#grouphouse').slick({
 	slidesToShow: 5,
 	slidesToScroll: 3
 });
+
 </script>
 <!-- InstanceEndEditable -->
 </body>

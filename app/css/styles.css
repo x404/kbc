@@ -509,6 +509,7 @@ html {
   font-size: 62.5%; }
 
 body {
+  position: relative;
   font-family: 'proxima', Arial;
   font-weight: 400;
   font-size: 14px;
@@ -615,7 +616,7 @@ input[type="submit"] {
 .topnews .news .cat__link, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
 .vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top,
 .list_construction .place__top, .review__bottom, .filter-sort .btn,
-.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .complex-page .complex__place .cell, .complex-page .complex__navhouses, .complex-page .complex__navhouses .nav .btn, .complex-page .subnav a, .complex-page .about .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom {
+.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .subnav a, .complex-page .complex__place .cell, .complex-page .complex__navhouses, .complex-page .complex__navhouses .nav .btn, .complex-page .about .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom {
   display: flex;
   align-items: center; }
 
@@ -5080,6 +5081,28 @@ main {
         top: -7px;
         white-space: nowrap; }
 
+.subnav .container {
+  padding-left: 0;
+  padding-right: 0; }
+
+.subnav a {
+  transition: .2s background-color;
+  color: #fff;
+  font-size: 1.8rem;
+  text-decoration: none;
+  height: 9rem;
+  padding: 0 2rem; }
+  .subnav a:hover {
+    background-color: #e20c3c; }
+  .subnav a.active {
+    background-color: #e20c3c; }
+
+.subnav ul {
+  background-color: #c20831;
+  display: flex; }
+  .subnav ul li {
+    margin-right: 2rem; }
+
 .complex-page .main {
   padding-top: 0;
   padding-bottom: 0; }
@@ -5249,26 +5272,6 @@ main {
       padding-bottom: .9rem; }
     .complex-page .complex__right .tab-content table tr:last-child td {
       border-bottom: none; }
-
-.complex-page .subnav .container {
-  padding-left: 0;
-  padding-right: 0; }
-
-.complex-page .subnav a {
-  transition: .2s background-color;
-  color: #fff;
-  font-size: 1.8rem;
-  text-decoration: none;
-  height: 9rem;
-  padding: 0 2rem; }
-  .complex-page .subnav a:hover {
-    background-color: #e20c3c; }
-
-.complex-page .subnav ul {
-  background-color: #c20831;
-  display: flex; }
-  .complex-page .subnav ul li {
-    margin-right: 2rem; }
 
 .complex-page .params {
   border: 2px solid #ebeef1;
