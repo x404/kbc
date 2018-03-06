@@ -92,6 +92,19 @@ $(document).ready(function(){
 	});
 
 
+	// // card-complex.html
+	// $('#grouphouse').owlCarousel({
+	// 	loop:false,
+	// 	nav:true,
+	// 	dots: false,
+	// 	items:1,
+	// 	navText: ["", ""],
+	// 	stagePadding : 0
+	// 	// navContainer: '.manage .owl-nav'
+	// });
+
+
+
 	// mobile-menu
 	$('#navbar').each(function(){
 		let $this = $(this),

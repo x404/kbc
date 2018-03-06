@@ -20,17 +20,20 @@
 			}
 		}
 		
+
+		// panel
 		&__panel{
-			border-top: 10px solid $color2;
-			background: $color2;
+			// background: $color2;
 			position: absolute;
 			left: 0;
 			bottom: 0;
 			height: 23.2rem;
 			padding-right: 10px;
 			.video{
+				border-top: 10px solid $color2;
 				font-size: 1.8rem;
 				position: relative;
+				width: 320px;
 				a{
 					display: block;
 					color: $color2;
@@ -74,11 +77,31 @@
 				}
 			}
 
+			.slick-list{
+				// border-right: 10px solid $color2;
+			}
+			
+			.slick-track{
+				background: $color2;
+				border-top: 10px solid $color2;
+			}
+
+			.slick-arrow{
+				position: absolute;
+			}
+
+
+			.complex__grouphouse{
+				width: 790px;
+			}
+
 			.house{
 				color: $color1;
-				width: 160px;
 				font-size: 1.5rem;
+				margin-bottom: 0;
+				height: 222px;
 				padding-top: 1rem;
+				width: 160px;
 				&__title{
 					font-weight: 500;
 					font-size: 1.7rem;

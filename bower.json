@@ -20,5 +20,8 @@
     "jquery-validation": "^1.17.0",
     "nouislider": "^11.0.3",
     "fancybox": "^3.2.5"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
   }
 }

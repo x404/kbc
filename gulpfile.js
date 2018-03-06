@@ -45,7 +45,8 @@ gulp.task('css-libs', ['scss'],  function(){
 
 
 gulp.task('js-libs', function(){
-	var countdown = gulp.src(config.libsDir + '/nouislider/distribute/nouislider.min.js').pipe(gulp.dest(config.templateDir + '/js/'));
+	var nouislider = gulp.src(config.libsDir + '/nouislider/distribute/nouislider.min.js').pipe(gulp.dest(config.templateDir + '/js/'));
+	var slick = gulp.src(config.libsDir + '/slick-carousel/slick/slick.min.js').pipe(gulp.dest(config.templateDir + '/js/'));
 });
 
 

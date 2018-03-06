@@ -168,18 +168,20 @@
 											<span>Видео об объекте</span>
 										</a>
 									</div>
-									<div class="complex__grouphouse flexbox">
-										<div class="house text-center">
-											<p class="house__title">Дом 1.1</p>
-											<p>готов на</p>
-											<div class="diagram circlebig">66%</div>
-											<p class="final">Сдача дома <br> <span>I квартал <br>  2018 года</span></p>
-										</div>
-										<div class="house text-center">
-											<p class="house__title">Дом 1.2</p>
-											<p>готов на</p>
-											<div class="diagram circlebig">32%</div>
-											<p class="final">Сдача дома <br> <span>II квартал <br>  2018 года</span></p>
+									<div class="complex__grouphouse text-center">
+										<div class="" id="grouphouse">
+											<div class="house">
+												<p class="house__title">Дом 1.1</p>
+												<p>готов на</p>
+												<div class="diagram circlebig">66%</div>
+												<p class="final">Сдача дома <br> <span>I квартал <br>  2018 года</span></p>
+											</div>
+											<div class="house">
+												<p class="house__title">Дом 1.2</p>
+												<p>готов на</p>
+												<div class="diagram circlebig">32%</div>
+												<p class="final">Сдача дома <br> <span>II квартал <br>  2018 года</span></p>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -1627,6 +1629,9 @@
 <!-- InstanceBeginEditable name="EditRegion4" -->
 <script src="/js/jquery.fancybox.min.js"></script>
 <link rel="stylesheet" property="stylesheet" href="css/jquery.fancybox.min.css">
+<script type="text/javascript" src="/js/slick.min.js"></script>
+
+
 
 <script src="http://api-maps.yandex.ru/2.1.60/?lang=ru_RU"></script>
 <script src="/js/map-objects.js"></script>
@@ -1658,6 +1663,12 @@ var CircleBig = function(sel){
 	});
 };
 CircleBig('.circlebig');
+
+
+$('#grouphouse').slick({
+	slidesToShow: 5,
+	slidesToScroll: 3
+});
 </script>
 <!-- InstanceEndEditable -->
 </body>
