@@ -6005,6 +6005,9 @@ circle:nth-child(2n) {
   .about-page .filter .objects-select__wrap {
     width: 25.5rem; }
 
+.about-page #map {
+  height: 610px; }
+
 .fade {
   opacity: 0;
   transition: opacity .15s linear; }
