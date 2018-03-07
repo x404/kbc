@@ -151,31 +151,31 @@
 
 .icon-people:before {
   background-image: url(../images/sprite.png);
-  background-position: -119px -112px;
+  background-position: -235px -20px;
   width: 18px;
   height: 17px; }
 
 .icon-people-gray:before {
   background-image: url(../images/sprite.png);
-  background-position: -150px -180px;
+  background-position: -235px -37px;
   width: 18px;
   height: 17px; }
 
 .icon-people-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -168px -180px;
+  background-position: -235px -54px;
   width: 18px;
   height: 17px; }
 
 .icon-tel:before {
   background-image: url(../images/sprite.png);
-  background-position: -235px -90px;
+  background-position: -119px -112px;
   width: 16px;
   height: 16px; }
 
 .icon-tel-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -235px -74px;
+  background-position: -235px -197px;
   width: 16px;
   height: 16px; }
 
@@ -199,7 +199,7 @@
   padding-left: 25px; }
   .icon-clock:before {
     background-image: url(../images/sprite.png);
-    background-position: -131px -180px;
+    background-position: -143px -180px;
     width: 19px;
     height: 19px;
     left: 0;
@@ -210,7 +210,7 @@
   position: relative; }
   .icon-darkclock:before {
     background-image: url(../images/sprite.png);
-    background-position: -112px -180px;
+    background-position: -162px -180px;
     width: 19px;
     height: 19px;
     left: 0;
@@ -218,7 +218,7 @@
 
 .icon-back:before {
   background-image: url(../images/sprite.png);
-  background-position: -18px -210px;
+  background-position: -235px -71px;
   width: 17px;
   height: 18px;
   left: 0;
@@ -226,14 +226,14 @@
 
 .icon-letter:before {
   background-image: url(../images/sprite.png);
-  background-position: -35px -210px;
+  background-position: -181px -180px;
   width: 18px;
   height: 14px;
   left: 0; }
 
 .icon-comment:before {
   background-image: url(../images/sprite.png);
-  background-position: -186px -180px;
+  background-position: -235px -127px;
   width: 17px;
   height: 17px;
   left: 0;
@@ -241,7 +241,7 @@
 
 .icon-comment-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -203px -180px;
+  background-position: -235px -144px;
   width: 17px;
   height: 17px;
   left: 0;
@@ -259,7 +259,7 @@
   position: relative; }
   .icon-attach-dark:before {
     background-image: url(../images/sprite.png);
-    background-position: -235px -19px;
+    background-position: -235px -108px;
     width: 16px;
     height: 19px; }
 
@@ -267,7 +267,7 @@
   position: relative; }
   .icon-attach-white:before {
     background-image: url(../images/sprite.png);
-    background-position: -235px 0px;
+    background-position: -235px -89px;
     width: 16px;
     height: 19px; }
 
@@ -275,7 +275,7 @@
   position: relative; }
   .icon-pencil:before {
     background-image: url(../images/sprite.png);
-    background-position: -61px -180px;
+    background-position: -92px -180px;
     width: 28px;
     height: 27px; }
 
@@ -291,7 +291,7 @@
   position: relative; }
   .icon-label:before {
     background-image: url(../images/sprite.png);
-    background-position: -235px -56px;
+    background-position: -235px -179px;
     width: 15px;
     height: 18px;
     left: 12px; }
@@ -300,7 +300,7 @@
   position: relative; }
   .icon-labelred:before {
     background-image: url(../images/sprite.png);
-    background-position: -235px -38px;
+    background-position: -235px -161px;
     width: 15px;
     height: 18px;
     left: 0; }
@@ -319,7 +319,7 @@
   padding-left: 33px; }
   .icon-camera:before {
     background-image: url(../images/sprite.png);
-    background-position: -89px -180px;
+    background-position: -120px -180px;
     width: 23px;
     height: 25px;
     left: 0;
@@ -408,6 +408,20 @@
     height: 32px;
     left: 0;
     top: 0; }
+
+.icon-doc, .about-page .documents .doclist__item a {
+  padding-left: 57px;
+  position: relative; }
+  .icon-doc:before, .about-page .documents .doclist__item a:before {
+    background-image: url(../images/sprite.png);
+    background-position: 0px -180px;
+    width: 31px;
+    height: 42px;
+    left: 0;
+    top: 0;
+    transition: .3s left; }
+  .icon-doc:hover:before, .about-page .documents .doclist__item a:hover:before {
+    left: -5px; }
 
 /* Slider */
 .slick-slider {
@@ -568,14 +582,14 @@ h3 {
 
 .tdu, .file-upload span, .modal-menu .menu a, .footer__menu a, .footer .idealpromo a, .pagination .prev,
 .pagination .next, .faq-page .head p a,
-.vacancies-page .head p a, .contact__plate .email, .table-flats td .place a, .complex-page .house__body .table td a {
+.vacancies-page .head p a, .contact__plate .email, .table-flats td .place a, .complex-page .house__body .table td a, .about-page .documents__content a {
   text-decoration: underline; }
   .tdu:hover, .file-upload span:hover, .modal-menu .menu a:hover, .footer__menu a:hover, .footer .idealpromo a:hover, .pagination .prev:hover,
   .pagination .next:hover, .faq-page .head p a:hover,
-  .vacancies-page .head p a:hover, .contact__plate .email:hover, .table-flats td .place a:hover, .complex-page .house__body .table td a:hover {
+  .vacancies-page .head p a:hover, .contact__plate .email:hover, .table-flats td .place a:hover, .complex-page .house__body .table td a:hover, .about-page .documents__content a:hover {
     text-decoration: none; }
 
-.before, .icon-catalog:before, .icon-sett:before, .icon-pricelist:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-labelred:before, .icon-house-dark:before, .icon-camera:before, .icon-camerabig:before, .icon-photo:before, .icon-scheme:before, .icon-check:before, .icon-starsmall:before, .card_flat .btn-fav:before, .icon-starsmallfill:before, .card_flat .btn-fav-in:before, .icon-pencil-dark:before, .icon-scheme-green:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
+.before, .icon-catalog:before, .icon-sett:before, .icon-pricelist:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-labelred:before, .icon-house-dark:before, .icon-camera:before, .icon-camerabig:before, .icon-photo:before, .icon-scheme:before, .icon-check:before, .icon-starsmall:before, .card_flat .btn-fav:before, .icon-starsmallfill:before, .card_flat .btn-fav-in:before, .icon-pencil-dark:before, .icon-scheme-green:before, .icon-doc:before, .about-page .documents .doclist__item a:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
 .fixed-header .wishlist__link:before,
 .fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .callback .call:before,
 .resume .call:before, .modal-menu .menu .title:after,
@@ -704,13 +718,13 @@ button {
 
 .btn-faq span:before {
   background-image: url(../images/sprite.png);
-  background-position: -31px -180px;
+  background-position: -62px -180px;
   width: 30px;
   height: 30px; }
 
 .btn-review span:before {
   background-image: url(../images/sprite.png);
-  background-position: -61px -180px;
+  background-position: -92px -180px;
   width: 28px;
   height: 27px; }
 
@@ -893,13 +907,13 @@ form .form-control {
     .header .wishlist__link:before,
     .fixed-header .wishlist__link:before {
       background-image: url(../images/sprite.png);
-      background-position: -204px -134px;
+      background-position: -31px -180px;
       width: 31px;
       height: 30px; }
     .header .wishlist__link:after,
     .fixed-header .wishlist__link:after {
       background-image: url(../images/sprite.png);
-      background-position: 0px -180px;
+      background-position: -204px -134px;
       width: 31px;
       height: 30px;
       -webkit-transition: opacity 0.2s ease-out;
@@ -968,7 +982,7 @@ form .form-control {
       padding-left: 55px; }
       .fixed-header .qfilter a:before {
         background-image: url(../images/sprite.png);
-        background-position: -165px -134px;
+        background-position: -126px -134px;
         width: 39px;
         height: 30px;
         left: 0; }
@@ -1108,9 +1122,10 @@ form .form-control {
 .callback,
 .resume {
   background-color: #038650;
+  color: #fff;
+  flex-shrink: 0;
   padding: 3.5rem 4rem;
-  width: 32rem;
-  color: #fff; }
+  width: 32rem; }
   .callback__title,
   .resume__title {
     font-size: 2.5rem;
@@ -1586,7 +1601,7 @@ form .form-control {
       background-color: #00874d; }
     .filter .showmap:before {
       background-image: url(../images/sprite.png);
-      background-position: -235px -56px;
+      background-position: -235px -179px;
       width: 15px;
       height: 18px;
       left: 20px;
@@ -2426,7 +2441,7 @@ body.modal-open {
       -webkit-transition: left 0.2s ease-out;
       transition: left 0.2s ease-out;
       background-image: url(../images/sprite.png);
-      background-position: 0px -210px;
+      background-position: -235px 0px;
       width: 18px;
       height: 20px;
       left: 19px; }
@@ -2937,7 +2952,7 @@ body.modal-open {
       position: relative; }
       .picking__link span:before {
         background-image: url(../images/sprite.png);
-        background-position: -126px -134px;
+        background-position: -165px -134px;
         width: 39px;
         height: 30px;
         left: -72px;
@@ -3530,7 +3545,7 @@ main {
   .faq-page .head .btn:before,
   .vacancies-page .head .btn:before {
     background-image: url(../images/sprite.png);
-    background-position: -31px -180px;
+    background-position: -62px -180px;
     width: 30px;
     height: 30px;
     left: 13px;
@@ -4638,12 +4653,12 @@ main {
   border: none;
   background-color: transparent;
   background-image: url(../images/sprite.png);
-  background-position: -204px -134px;
+  background-position: -31px -180px;
   width: 31px;
   height: 30px; }
   .btn-fav-in, .btn-fav:hover {
     background-image: url(../images/sprite.png);
-    background-position: 0px -180px;
+    background-position: -204px -134px;
     width: 31px;
     height: 30px; }
 
@@ -6024,6 +6039,43 @@ circle:nth-child(2n) {
   padding: 7.5rem 0 7rem; }
   .about-page .report .list_construction {
     margin-top: 3.5rem; }
+
+.about-page .documents {
+  color: #434343;
+  font-size: 1.7rem;
+  padding: 8rem 0 10rem; }
+  .about-page .documents .heading {
+    padding-bottom: 4.5rem; }
+  .about-page .documents .row {
+    flex-wrap: nowrap; }
+  .about-page .documents__content {
+    line-height: 1.5;
+    flex-grow: 1;
+    padding-right: 16rem; }
+    .about-page .documents__content a {
+      line-height: normal;
+      color: #0a8651; }
+  .about-page .documents .doclist {
+    display: flex;
+    margin-bottom: 4rem; }
+    .about-page .documents .doclist .column {
+      flex: 0 0 50%; }
+  .about-page .documents .doclist__item a {
+    color: #4c4c4c;
+    display: block;
+    font-size: 1.8rem;
+    margin-bottom: 2.6rem;
+    min-height: 42px;
+    position: relative;
+    text-decoration: none; }
+    .about-page .documents .doclist__item a .meta {
+      color: #7e7e7e;
+      font-size: 1.3rem;
+      margin-top: .8rem; }
+    .about-page .documents .doclist__item a:hover {
+      color: #c20831; }
+  .about-page .documents .callback {
+    align-self: flex-start; }
 
 .fade {
   opacity: 0;

@@ -761,9 +761,10 @@ form{
 .resume{
 	@extend .green-gradient;
 	background-color: $color14;
+	color: $color2;
+	flex-shrink: 0;
 	padding: 3.5rem 4rem;
 	width: 32rem;
-	color: $color2;
 	&__title{
 		font-size: 2.5rem;
 		font-weight: 500;

@@ -319,3 +319,23 @@
 		top: 0;
 	}
 }
+
+
+
+
+.icon-doc{
+	padding-left: 57px;
+	position: relative;
+	&:before{
+		@extend .before;
+		@include sprite($icon-doc);
+		left: 0;
+		top: 0;
+		transition: .3s left;
+	}
+	&:hover{
+		&:before{
+			left: -5px;
+		}
+	}
+}
