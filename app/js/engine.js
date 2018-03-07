@@ -104,6 +104,19 @@ $(document).ready(function(){
 	// });
 
 
+	// карусель
+	$('#foo1').owlCarousel({
+		loop:false,
+		nav:true,
+		dots: true,
+		items:1,
+		navText: ["", ""],
+		stagePadding : 0,
+		dotsContainer: '.owl-dots',
+		navContainer: '.owl-nav',
+		animateOut: 'fadeOut'
+	});
+
 
 	// mobile-menu
 	$('#navbar').each(function(){
@@ -535,11 +548,15 @@ var fh = document.querySelector('.fixed-header'),
 window.onscroll = function(){
 	if (window.pageYOffset  > 200 ) {
 		fh.classList.add('sticky');
-		fnavbar.classList.add('sticky');
+		try{
+			fnavbar.classList.add('sticky');
+		} catch(e){};
 	} else {
 		if (window.pageYOffset  < 400) {
 			fh.classList.remove('sticky');
-			fnavbar.classList.remove('sticky');
+			try{
+				fnavbar.classList.remove('sticky');
+			} catch(e){};
 		}
 	}
 };
