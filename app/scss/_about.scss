@@ -204,4 +204,29 @@
 			}
 		}
 	}
+
+	.filter{
+		padding-top: 5.3rem;
+		.flexbox{
+			justify-content: space-between;
+			align-items: center;
+		}
+		.title{
+			font-size: 3.6rem;
+			font-weight: 500;
+			padding-bottom: 3.5rem;
+			text-transform: uppercase;
+		}
+		.showflat{
+			padding-left: 73px;
+			height: 95px;
+			&:before{
+				left: 27px;
+				top: 30px;
+			}
+		}
+		.objects-select__wrap{
+			width: 25.5rem;
+		}
+	}
 }

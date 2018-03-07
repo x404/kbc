@@ -5986,6 +5986,25 @@ circle:nth-child(2n) {
     .about-page .scheme .step p {
       margin-left: 3.5rem; }
 
+.about-page .filter {
+  padding-top: 5.3rem; }
+  .about-page .filter .flexbox {
+    justify-content: space-between;
+    align-items: center; }
+  .about-page .filter .title {
+    font-size: 3.6rem;
+    font-weight: 500;
+    padding-bottom: 3.5rem;
+    text-transform: uppercase; }
+  .about-page .filter .showflat {
+    padding-left: 73px;
+    height: 95px; }
+    .about-page .filter .showflat:before {
+      left: 27px;
+      top: 30px; }
+  .about-page .filter .objects-select__wrap {
+    width: 25.5rem; }
+
 .fade {
   opacity: 0;
   transition: opacity .15s linear; }
