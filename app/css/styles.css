@@ -6020,6 +6020,11 @@ circle:nth-child(2n) {
     .about-page .calculator .calc-bottom .right {
       margin-left: 6.5rem; }
 
+.about-page .report {
+  padding: 7.5rem 0 7rem; }
+  .about-page .report .list_construction {
+    margin-top: 3.5rem; }
+
 .fade {
   opacity: 0;
   transition: opacity .15s linear; }
