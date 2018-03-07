@@ -39,7 +39,7 @@
 
 	// about
 	.about{
-		background: url(../images/about-bg.jpg) no-repeat right bottom;
+		background: url(../images/about-bg.jpg) no-repeat right 72px bottom;
 		font-size: 1.7rem;
 		margin-top: 7rem;
 		min-height: 650px;
@@ -142,6 +142,65 @@
 						padding-top: 2.8rem;
 					}
 				}
+			}
+		}
+	}
+
+
+	// scheme
+	.scheme{
+		background:#086e42 url(../images/bg-3.jpg) no-repeat center top / cover;
+		color: $color2;
+		font-size: 1.7rem;
+		padding: 11.3rem 8rem;
+		line-height: 1.5;
+		.title{
+			font-size: 3.6rem;
+			font-weight: 500;
+			padding-bottom: 2.5rem;
+			text-transform: uppercase;
+		}
+
+		.steps{
+			font-size: 2rem;
+			font-weight: 500;
+			justify-content: center;
+			margin-top: 5rem;
+			text-align: left;
+		}
+		.step{
+			@extend .flex-cv;
+			padding-right: 130px;
+			position: relative;
+			&:before,
+			&:after{
+				@extend .before;
+			}
+			&:after{
+				background: url(../images/dots.png) no-repeat right top;
+				height: 12px;
+				width: 52px;
+				top: 44%;
+				right: 35px;
+			}
+
+			&:before{
+				background: url(../images/arrow.png) no-repeat right top;
+				bottom: -35px;
+				height: 80px;
+				right: -60px;
+				width: 204px;
+			}
+
+			&:last-child{
+				&:after,
+				&:before
+				{
+					display: none;
+				}
+			}
+			p{
+				margin-left: 3.5rem;
 			}
 		}
 	}

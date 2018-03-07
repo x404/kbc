@@ -594,7 +594,7 @@ h3 {
 .list_construction .tab-content .owl-carousel .owl-next:after, .objects__info:before, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .big-icon:before, .neck .tabs .tab.active:after, .pagination .prev:before,
 .pagination .next:before, .picking__link span:before, .sortbox__option-up:after, .sortbox__option-down:after, main ul li:before, .faq-page .head .btn:before,
-.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, .complex-page .complex__left:before, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a:before, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after {
+.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, .complex-page .complex__left:before, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a:before, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after {
   content: "";
   display: block;
   position: absolute; }
@@ -617,7 +617,7 @@ input[type="submit"] {
 .topnews .news .cat__link, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
 .vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top,
 .list_construction .place__top, .review__bottom, .filter-sort .btn,
-.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .subnav a, .complex-page .complex__place .cell, .complex-page .complex__navhouses, .complex-page .complex__navhouses .nav .btn, .complex-page .about .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom {
+.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .subnav a, .complex-page .complex__place .cell, .complex-page .complex__navhouses, .complex-page .complex__navhouses .nav .btn, .complex-page .about .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom, .about-page .scheme .step {
   display: flex;
   align-items: center; }
 
@@ -5878,7 +5878,7 @@ circle:nth-child(2n) {
       padding-top: 3rem; }
 
 .about-page .about {
-  background: url(../images/about-bg.jpg) no-repeat right bottom;
+  background: url(../images/about-bg.jpg) no-repeat right 72px bottom;
   font-size: 1.7rem;
   margin-top: 7rem;
   min-height: 650px;
@@ -5948,6 +5948,43 @@ circle:nth-child(2n) {
           opacity: 1; }
       .about-page .about__video .video__link .title {
         padding-top: 2.8rem; }
+
+.about-page .scheme {
+  background: #086e42 url(../images/bg-3.jpg) no-repeat center top/cover;
+  color: #fff;
+  font-size: 1.7rem;
+  padding: 11.3rem 8rem;
+  line-height: 1.5; }
+  .about-page .scheme .title {
+    font-size: 3.6rem;
+    font-weight: 500;
+    padding-bottom: 2.5rem;
+    text-transform: uppercase; }
+  .about-page .scheme .steps {
+    font-size: 2rem;
+    font-weight: 500;
+    justify-content: center;
+    margin-top: 5rem;
+    text-align: left; }
+  .about-page .scheme .step {
+    padding-right: 130px;
+    position: relative; }
+    .about-page .scheme .step:after {
+      background: url(../images/dots.png) no-repeat right top;
+      height: 12px;
+      width: 52px;
+      top: 44%;
+      right: 35px; }
+    .about-page .scheme .step:before {
+      background: url(../images/arrow.png) no-repeat right top;
+      bottom: -35px;
+      height: 80px;
+      right: -60px;
+      width: 204px; }
+    .about-page .scheme .step:last-child:after, .about-page .scheme .step:last-child:before {
+      display: none; }
+    .about-page .scheme .step p {
+      margin-left: 3.5rem; }
 
 .fade {
   opacity: 0;
