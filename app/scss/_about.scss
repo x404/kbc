@@ -233,4 +233,16 @@
 	#map{
 		height: 610px;
 	}
+
+	.calculator{
+		background: url(../images/calculator.png) no-repeat 180px center;
+		padding: 10rem 0 10rem 748px;
+		flex-grow: 1;
+		.calc-bottom{
+			margin-top: 7px;
+			.right{
+				margin-left: 6.5rem;
+			}
+		}
+	}
 }

@@ -432,6 +432,96 @@
 			</div>
 			<!-- =/map -->
 
+
+			<div class="container">
+				<div class="row">
+					<div class="calculator">
+						<p class="heading">Калькулятор ЖНК</p>
+
+						<div class="modal-body">
+							<form action="#" method="post" id="calc-gnk-form">
+								<fieldset>
+									<div class="row">
+										<p class="title">Стоимость квартиры</p>
+										<div class="flexbox">
+											<input type="text" class="form-control currency" name="costflat" value="3 650 000" id="costflat" data-inputmask="'alias': 'numeric', 'groupSeparator': ' ', 'autoGroup': true, 'digits': 0, 'digitsOptional': false, 'suffix': ' Р', 'placeholder': '0'" />
+											<div class="slider">
+												<div id="slider-costflat"></div>
+												<p class="slider_start">0</p>
+												<p class="slider_end">25 000 000 Р</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<p class="title">Срок кредита</p>
+										<div class="flexbox">
+											<input type="radio" class="radio" id="radio1" name="radio" value="5" checked="checked" />
+											<label for="radio1">3 года (под 5% годовых)</label>
+
+											<input type="radio" class="radio" id="radio2" name="radio" value="8" />
+											<label for="radio2">5 лет (под 8% годовых)</label>
+										</div>
+									</div>
+									<div class="row">
+										<p class="title">Первоначальный взнос</p>
+										<div class="flexbox">
+											<input type="text" class="form-control" name="first-payment" value="1 250 000" id="first-payment" data-inputmask="'alias': 'numeric', 'groupSeparator': ' ', 'autoGroup': true, 'digits': 0, 'digitsOptional': false, 'suffix': ' Р', 'placeholder': '0'"/>
+											<div class="slider">
+												<div id="slider-firstpayment"></div>
+												<p class="slider_start">0</p>
+												<p class="slider_end">25 000 000 Р</p>
+											</div>
+										</div>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<div class="calc-bottom flexbox">
+							<div class="left">
+								<p>Ежемесячный платеж</p>
+								<p class="cifr">24 460 Р/Мес</p>
+							</div>
+							<div class="right">
+								<button type="button" class="btn btn-red">Получить консультацию</button>
+							</div>
+						</div>
+
+<script>
+			var calcSlider1 = document.getElementById('slider-costflat');
+				// costfrom = document.getElementById('cost-from'),
+				// costto = document.getElementById('cost-to');
+
+
+			var calcSlider2 = document.getElementById('slider-firstpayment');
+				// areafrom = document.getElementById('area-from'),
+				// areato = document.getElementById('area-to');
+
+
+			// цена - квартиры
+			noUiSlider.create(calcSlider1, {
+				start: [ 1500000, 18000000 ],
+				connect: true,
+				range: {
+					'min': 500000,
+					'max': 25000000
+				}
+			});
+
+
+			// площадь - квартиры
+			noUiSlider.create(calcSlider2, {
+				start: [ 1500000, 20000000 ],
+				connect: true,
+				range: {
+					'min': 500000,
+					'max': 25000000
+				}
+			});
+</script>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
 		<!-- InstanceEndEditable -->
@@ -1169,6 +1259,7 @@ function init(){
 <script src="/js/engine.js"></script>
 
 <!-- InstanceBeginEditable name="EditRegion4" -->
+<script src="/js/inputmask/inputmask.binding.js"></script>
 <script src="/js/jquery.fancybox.min.js"></script>
 <link rel="stylesheet" property="stylesheet" href="css/jquery.fancybox.min.css">
 <!-- InstanceEndEditable -->

@@ -5039,6 +5039,62 @@ main {
 .card__visual .flexbox {
   justify-content: space-between; }
 
+.calc-bottom {
+  background: #f1f4f6;
+  padding: 3.5rem 4.5rem 3rem; }
+  .calc-bottom .flexbox {
+    align-items: center; }
+  .calc-bottom p {
+    font-size: 2.4rem;
+    font-weight: 600; }
+  .calc-bottom .cifr {
+    color: #00874d;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 1rem; }
+  .calc-bottom .btn {
+    border-radius: 6rem;
+    font-size: 2rem;
+    height: 6rem;
+    padding: 0 2.8rem; }
+
+#calc-gnk-form .row {
+  display: block;
+  margin: 0 0 3rem; }
+  #calc-gnk-form .row .title {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: .6rem; }
+  #calc-gnk-form .row .flexbox {
+    justify-content: flex-start; }
+  #calc-gnk-form .row .radio + label {
+    margin-top: 1rem;
+    margin-right: 3.7rem; }
+  #calc-gnk-form .row .form-control {
+    border: none;
+    border-bottom: 2px solid #00874d;
+    color: #3e3e3e;
+    font-size: 1.5rem;
+    margin-top: 0;
+    padding-left: 0;
+    width: 13rem;
+    text-align: left !important; }
+  #calc-gnk-form .row .slider {
+    margin-left: 10rem;
+    margin-top: 2.7rem;
+    position: relative;
+    width: 272px; }
+    #calc-gnk-form .row .slider_start {
+      left: -25px; }
+    #calc-gnk-form .row .slider_end {
+      left: calc(100% + 18px); }
+    #calc-gnk-form .row .slider_start, #calc-gnk-form .row .slider_end {
+      color: #3e3e3e;
+      font-size: 1.5rem;
+      position: absolute;
+      top: -7px;
+      white-space: nowrap; }
+
 #calc-gnk {
   color: #000; }
   #calc-gnk line {
@@ -5055,62 +5111,9 @@ main {
     color: #000;
     font-size: 3.4rem;
     padding-left: 5rem; }
-  #calc-gnk .modal-footer {
-    background: #f1f4f6;
-    padding: 3.5rem 4.5rem 3rem; }
-    #calc-gnk .modal-footer .flexbox {
-      align-items: center; }
-    #calc-gnk .modal-footer p {
-      font-size: 2.4rem;
-      font-weight: 600; }
-    #calc-gnk .modal-footer .cifr {
-      color: #00874d;
-      font-size: 3rem;
-      font-weight: 500;
-      margin-top: 1rem; }
-    #calc-gnk .modal-footer .btn {
-      border-radius: 6rem;
-      font-size: 2rem;
-      height: 6rem;
-      padding: 0 2.8rem; }
   #calc-gnk .close {
     right: 37px;
     top: 48px; }
-  #calc-gnk .row {
-    display: block;
-    margin: 0 0 3rem; }
-    #calc-gnk .row .title {
-      font-size: 2rem;
-      font-weight: 500;
-      padding-bottom: .6rem; }
-    #calc-gnk .row .flexbox {
-      justify-content: flex-start; }
-    #calc-gnk .row .radio + label {
-      margin-top: 1rem;
-      margin-right: 3.7rem; }
-    #calc-gnk .row .form-control {
-      border: none;
-      border-bottom: 2px solid #00874d;
-      color: #3e3e3e;
-      font-size: 1.5rem;
-      margin-top: 0;
-      padding-left: 0;
-      width: 13rem; }
-    #calc-gnk .row .slider {
-      margin-left: 10rem;
-      margin-top: 2.7rem;
-      position: relative;
-      width: 272px; }
-      #calc-gnk .row .slider_start {
-        left: -25px; }
-      #calc-gnk .row .slider_end {
-        left: calc(100% + 18px); }
-      #calc-gnk .row .slider_start, #calc-gnk .row .slider_end {
-        color: #3e3e3e;
-        font-size: 1.5rem;
-        position: absolute;
-        top: -7px;
-        white-space: nowrap; }
 
 .subnav a {
   transition: .2s background-color;
@@ -6007,6 +6010,15 @@ circle:nth-child(2n) {
 
 .about-page #map {
   height: 610px; }
+
+.about-page .calculator {
+  background: url(../images/calculator.png) no-repeat 180px center;
+  padding: 10rem 0 10rem 748px;
+  flex-grow: 1; }
+  .about-page .calculator .calc-bottom {
+    margin-top: 7px; }
+    .about-page .calculator .calc-bottom .right {
+      margin-left: 6.5rem; }
 
 .fade {
   opacity: 0;

@@ -477,60 +477,34 @@
 
 
 // modal calc
-#calc-gnk{
-	color: $color1;
-	line{
-		stroke: #929292;
-		stroke-width:2;
+.calc-bottom{
+	background: #f1f4f6;
+	padding: 3.5rem 4.5rem 3rem;
+	.flexbox{
+		align-items: center;
 	}
-	.modal{
-		&-content{
-			background: $color2;
-			box-shadow: 0 5px 30px rgba(0,0,0,.5);
-			padding: 4.4rem 0 0 ;
-			width: 740px;
-		}
-		&-body{
-			padding: 3rem 4.5rem 1rem 5rem;
-		}
-
-		&-title{
-			color: $color1;
-			font-size: 3.4rem;
-			padding-left: 5rem;
-		}
-
-		&-footer{
-			background: #f1f4f6;
-			padding: 3.5rem 4.5rem 3rem;
-			.flexbox{
-				align-items: center;
-			}
-			p{
-				font-size: 2.4rem;
-				font-weight: 600;
-			}
-			.cifr{
-				color: $color8;
-				font-size: 3rem;
-				font-weight: 500;
-				margin-top: 1rem;
-			}
-			.btn{
-				$h: 6rem;
-				border-radius: $h;
-				font-size: 2rem;
-				height: $h;
-				padding: 0 2.8rem;
-			}
-		}
+	p{
+		font-size: 2.4rem;
+		font-weight: 600;
 	}
-
-	.close{
-		right: 37px;
-		top: 48px;
+	.cifr{
+		color: $color8;
+		font-size: 3rem;
+		font-weight: 500;
+		margin-top: 1rem;
 	}
+	.btn{
+		$h: 6rem;
+		border-radius: $h;
+		font-size: 2rem;
+		height: $h;
+		padding: 0 2.8rem;
+	}
+}
 
+
+#calc-gnk-form
+{
 	.row{
 		display: block;
 		margin: 0 0 3rem;
@@ -556,6 +530,7 @@
 			margin-top: 0;
 			padding-left: 0;
 			width: 13rem;
+			text-align: left !important;
 		}
 
 		.slider{
@@ -578,5 +553,37 @@
 				white-space: nowrap;
 			}
 		}
+	}
+}
+
+#calc-gnk{
+	color: $color1;
+	line{
+		stroke: #929292;
+		stroke-width:2;
+	}
+	.modal{
+		&-content{
+			background: $color2;
+			box-shadow: 0 5px 30px rgba(0,0,0,.5);
+			padding: 4.4rem 0 0 ;
+			width: 740px;
+		}
+		&-body{
+			padding: 3rem 4.5rem 1rem 5rem;
+		}
+
+		&-title{
+			color: $color1;
+			font-size: 3.4rem;
+			padding-left: 5rem;
+		}
+
+
+	}
+
+	.close{
+		right: 37px;
+		top: 48px;
 	}
 }
