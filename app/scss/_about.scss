@@ -1,6 +1,7 @@
 .about-page{
 	.carousel{
 		margin-top: 2rem;
+		position: relative;
 		.item{
 			position: relative;
 			&:before{
@@ -31,6 +32,116 @@
 				font-size: 1.7rem;
 				line-height: 1.5;
 				padding-top: 3rem;
+			}
+		}
+	}
+
+
+	// about
+	.about{
+		background: url(../images/about-bg.jpg) no-repeat right bottom;
+		font-size: 1.7rem;
+		margin-top: 7rem;
+		min-height: 650px;
+		color: $color20;
+		padding-right: 700px;
+		.heading{
+			padding-bottom: 1.8rem;
+		}
+		p{
+			line-height: 1.5;
+		}
+
+		.advantages{
+			border: 5px solid #e8eff2;
+			font-size: 1.5rem;
+			margin-top: 2rem;
+			padding: 2.3rem 2.8rem 0;
+			.point{
+				margin-bottom: 2rem;
+			}
+			.column{
+				&:first-child{
+					width: 350px;					
+				}
+			}
+		}
+
+		&__video{
+			margin-top: 3.5rem;
+			font-size: 1.7rem;
+			font-weight: 500;
+			color: $color1;
+			justify-content: space-between;
+			width: 100%;
+			.video{
+				&__item{
+					width: 251px;
+					img{
+						transition: .2s;
+						display: block;
+						position: relative;
+						z-index: 2;
+					}
+				}
+				&__link{
+					display: block;
+					text-decoration: none;
+					.pic{
+						position: relative;
+						&:before,
+						&:after
+						{
+							background: url(../images/play.png) no-repeat;
+							@extend .before;
+							$s: 80px;
+							height: $s;
+							width: $s;
+							z-index: 3;
+							left: 50%;
+							top: 50%;
+							margin-left: -$s/2;
+							margin-top: -$s/2;
+						}
+						
+						&:before{
+							background-position: left top;
+						}
+
+						&:after{
+							background-position: left bottom;
+							opacity: 0;
+							@include transition-param;
+						}
+
+
+						&__wrapper{
+							overflow: hidden;
+							&:after{
+								@extend .before;
+								background: #e6e9ea;
+								bottom: -10px;
+								height: 186px;
+								right: -10px;
+								width: 250px;
+							}
+						}
+					}
+					&:hover{
+						color: $color7;
+						img{
+							transform: scale(1.2)
+						}
+						.pic{
+							&:after{
+								opacity: 1;
+							}	
+						}
+					}
+					.title{
+						padding-top: 2.8rem;
+					}
+				}
 			}
 		}
 	}

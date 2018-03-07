@@ -594,7 +594,7 @@ h3 {
 .list_construction .tab-content .owl-carousel .owl-next:after, .objects__info:before, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .big-icon:before, .neck .tabs .tab.active:after, .pagination .prev:before,
 .pagination .next:before, .picking__link span:before, .sortbox__option-up:after, .sortbox__option-down:after, main ul li:before, .faq-page .head .btn:before,
-.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, .complex-page .complex__left:before, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a:before, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item:before {
+.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, .complex-page .complex__left:before, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a:before, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after {
   content: "";
   display: block;
   position: absolute; }
@@ -5849,7 +5849,8 @@ circle:nth-child(2n) {
     width: 83px; }
 
 .about-page .carousel {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  position: relative; }
   .about-page .carousel .item {
     position: relative; }
     .about-page .carousel .item:before {
@@ -5875,6 +5876,78 @@ circle:nth-child(2n) {
       font-size: 1.7rem;
       line-height: 1.5;
       padding-top: 3rem; }
+
+.about-page .about {
+  background: url(../images/about-bg.jpg) no-repeat right bottom;
+  font-size: 1.7rem;
+  margin-top: 7rem;
+  min-height: 650px;
+  color: #3b3b3b;
+  padding-right: 700px; }
+  .about-page .about .heading {
+    padding-bottom: 1.8rem; }
+  .about-page .about p {
+    line-height: 1.5; }
+  .about-page .about .advantages {
+    border: 5px solid #e8eff2;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    padding: 2.3rem 2.8rem 0; }
+    .about-page .about .advantages .point {
+      margin-bottom: 2rem; }
+    .about-page .about .advantages .column:first-child {
+      width: 350px; }
+  .about-page .about__video {
+    margin-top: 3.5rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #000;
+    justify-content: space-between;
+    width: 100%; }
+    .about-page .about__video .video__item {
+      width: 251px; }
+      .about-page .about__video .video__item img {
+        transition: .2s;
+        display: block;
+        position: relative;
+        z-index: 2; }
+    .about-page .about__video .video__link {
+      display: block;
+      text-decoration: none; }
+      .about-page .about__video .video__link .pic {
+        position: relative; }
+        .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after {
+          background: url(../images/play.png) no-repeat;
+          height: 80px;
+          width: 80px;
+          z-index: 3;
+          left: 50%;
+          top: 50%;
+          margin-left: -40px;
+          margin-top: -40px; }
+        .about-page .about__video .video__link .pic:before {
+          background-position: left top; }
+        .about-page .about__video .video__link .pic:after {
+          background-position: left bottom;
+          opacity: 0;
+          -webkit-transition: opacity 0.2s ease-out;
+          transition: opacity 0.2s ease-out; }
+        .about-page .about__video .video__link .pic__wrapper {
+          overflow: hidden; }
+          .about-page .about__video .video__link .pic__wrapper:after {
+            background: #e6e9ea;
+            bottom: -10px;
+            height: 186px;
+            right: -10px;
+            width: 250px; }
+      .about-page .about__video .video__link:hover {
+        color: #c20831; }
+        .about-page .about__video .video__link:hover img {
+          transform: scale(1.2); }
+        .about-page .about__video .video__link:hover .pic:after {
+          opacity: 1; }
+      .about-page .about__video .video__link .title {
+        padding-top: 2.8rem; }
 
 .fade {
   opacity: 0;
