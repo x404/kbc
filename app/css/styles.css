@@ -608,7 +608,7 @@ h3 {
 .list_construction .tab-content .owl-carousel .owl-next:after, .objects__info:before, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .big-icon:before, .neck .tabs .tab.active:after, .pagination .prev:before,
 .pagination .next:before, .picking__link span:before, .sortbox__option-up:after, .sortbox__option-down:after, main ul li:before, .faq-page .head .btn:before,
-.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, .complex-page .complex__left:before, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a:before, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after {
+.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, .complex-page .complex__left:before, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a:before, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .listgk-page .main .complex__item:after {
   content: "";
   display: block;
   position: absolute; }
@@ -631,7 +631,7 @@ input[type="submit"] {
 .topnews .news .cat__link, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
 .vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top,
 .list_construction .place__top, .review__bottom, .filter-sort .btn,
-.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .subnav a, .complex-page .complex__place .cell, .complex-page .complex__navhouses, .complex-page .complex__navhouses .nav .btn, .complex-page .about .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom, .about-page .scheme .step {
+.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .subnav a, .complex-page .complex__place .cell, .complex-page .complex__navhouses, .complex-page .complex__navhouses .nav .btn, .complex-page .about .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom, .about-page .scheme .step, .listgk-page .main .wrapper .panel {
   display: flex;
   align-items: center; }
 
@@ -6076,6 +6076,58 @@ circle:nth-child(2n) {
       color: #c20831; }
   .about-page .documents .callback {
     align-self: flex-start; }
+
+.listgk-page .main {
+  background: url(../tmp/map-bg.jpg) no-repeat center top/cover;
+  padding-top: 0;
+  padding-bottom: 0; }
+  .listgk-page .main .wrapper {
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.2);
+    width: 75%; }
+    .listgk-page .main .wrapper .panel {
+      background: #fff;
+      height: 85px;
+      padding-left: 155px;
+      padding-right: 92px; }
+    .listgk-page .main .wrapper .listgk {
+      overflow: hidden;
+      padding-left: 155px;
+      padding-right: 92px; }
+  .listgk-page .main .complex__pic img {
+    display: block; }
+  .listgk-page .main .complex__item {
+    margin-top: 3rem;
+    position: relative; }
+    .listgk-page .main .complex__item:after {
+      width: 100%;
+      left: 0;
+      bottom: -8px;
+      border-bottom: 5px solid #c20831; }
+    .listgk-page .main .complex__item .str {
+      border-top: 1px solid #ebeef1;
+      font-size: 1.5rem;
+      padding: 1.4rem 0; }
+      .listgk-page .main .complex__item .str .color {
+        color: #00874d; }
+  .listgk-page .main .complex__text {
+    color: #404040;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding: 1.8rem 0; }
+  .listgk-page .main .complex__description {
+    background: #fff;
+    display: flex;
+    flex-direction: column; }
+    .listgk-page .main .complex__description .object__info {
+      margin-left: 0; }
+    .listgk-page .main .complex__description .object__meta {
+      padding-left: 0; }
+  .listgk-page .main .complex__body {
+    padding-left: 32px;
+    flex-grow: 1; }
+  .listgk-page .main .complex__bottom {
+    background: #d7dde2;
+    padding: 2rem 0 2rem 32px; }
 
 .fade {
   opacity: 0;

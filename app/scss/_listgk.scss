@@ -1,0 +1,91 @@
+.listgk-page{
+	.main{
+		background: url(../tmp/map-bg.jpg) no-repeat center top / cover;
+		padding-top: 0;
+		padding-bottom: 0;
+		.wrapper{
+			box-shadow: 10px 0 20px rgba(0,0,0,.2);
+			// width: 1440px;	
+			width: 75%;	
+
+			$pl: 155px;
+			$pr: 92px;
+			.panel{
+				@extend .flex-cv;
+				background: $color2;
+				height: 85px;
+				padding-left: $pl;
+				padding-right: $pr;
+			}
+			.listgk{
+				overflow: hidden;
+				padding-left: $pl;
+				padding-right: $pr;
+			}
+		}	
+
+		.complex{
+			$pl: 32px;
+			&__pic{
+				img{
+					display: block;
+				}
+			}
+			&__item{
+				margin-top: 3rem;
+				position: relative;
+				&:after{
+					@extend .before;
+					width: 100%;
+					left: 0;
+					bottom: -8px;
+					border-bottom: 5px solid $color7;
+				}
+
+
+
+				.str{
+					border-top: 1px solid $color28;
+					font-size: 1.5rem;
+					padding: 1.4rem 0;
+					.color{
+						color: $color8;
+					}
+				}
+			}
+
+			&__text{
+				color: $color53;
+				font-size: 1.6rem;
+				line-height: 1.5;
+				padding: 1.8rem 0;
+			}
+
+			&__description{
+				background: $color2;
+				display: flex;
+				flex-direction: column;
+				.object{
+					&__info{
+						margin-left: 0;
+					}
+					&__meta{
+						padding-left: 0;
+					}
+				}
+			}
+
+			&__body{
+				padding-left: $pl;
+				flex-grow: 1;
+			}
+
+			&__bottom{
+				background: #d7dde2;
+				padding: 2rem 0 2rem $pl;
+			}
+
+
+		}	
+	}
+}
