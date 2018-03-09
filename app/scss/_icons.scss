@@ -265,6 +265,17 @@
 }
 
 
+.icon-schemebig{
+	padding-left: 30px;
+	position: relative;
+	&:before{
+		@extend .before;
+		@include sprite($icon-schemebig);
+		left: 0;
+		top: -1px;
+	}
+}
+
 .icon-check{
 	padding-left: 30px;
 	position: relative;

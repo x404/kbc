@@ -5,7 +5,6 @@
 		padding-bottom: 0;
 		.wrapper{
 			box-shadow: 10px 0 20px rgba(0,0,0,.2);
-			// width: 1440px;	
 			width: 75%;	
 
 			$pl: 155px;
@@ -27,22 +26,49 @@
 		.complex{
 			$pl: 32px;
 			&__pic{
+				position: relative;
 				img{
 					display: block;
 				}
+				.object__labels{
+					left: 25px;
+					position: absolute;
+					top: 23px;
+					width: 100%;
+					img{
+						display: inline-block;
+					}
+				}
+			}
+
+			&__link{
+				display: block;
+				overflow: hidden;
+				img{
+					transition: .3s transform;
+				}
 			}
 			&__item{
-				margin-top: 3rem;
+				display: flex;
+				margin-top: 3.8rem;
 				position: relative;
+				transition: .3s box-shadow;
 				&:after{
 					@extend .before;
-					width: 100%;
-					left: 0;
-					bottom: -8px;
 					border-bottom: 5px solid $color7;
+					bottom: -8px;
+					left: 0;
+					width: 100%;
 				}
 
-
+				&:hover{
+					box-shadow: 2px 5px 30px rgba(83,99,121,.5);
+					.complex__link{
+						img{
+							transform: scale(1.15)
+						}
+					}
+				}
 
 				.str{
 					border-top: 1px solid $color28;
@@ -58,7 +84,7 @@
 				color: $color53;
 				font-size: 1.6rem;
 				line-height: 1.5;
-				padding: 1.8rem 0;
+				padding-bottom: 1.8rem;
 			}
 
 			&__description{
@@ -71,6 +97,7 @@
 					}
 					&__meta{
 						padding-left: 0;
+						padding-top: 33px;
 					}
 				}
 			}
@@ -81,11 +108,49 @@
 			}
 
 			&__bottom{
+				@extend .flex-cv;
 				background: #d7dde2;
-				padding: 2rem 0 2rem $pl;
+				padding: 1.9rem 0 1.9rem $pl;
+				.left{
+					.flats{
+						// color: $color1;
+						font-size: 1.6rem;
+						.num{
+							color: $color8;
+							font-weight: 500;
+						}
+					}
+					.price{
+						font-size: 2rem;
+						font-weight: 500;
+						padding-top: .5rem;
+					}
+				}
+				.right{
+					margin-left: 4.6rem;
+					.btn{
+						$h: 50px;
+						@extend .flex-cv;
+						background: $color8;
+						border-radius: $h;
+						color: $color2;
+						font-size: 1.7rem;
+						font-weight: 600;
+						height: $h;
+						padding-left: 63px;
+						padding-right: 25px;
+						text-decoration: none;
+						transition: .3s background-color;
+						&:before{
+							left: 20px;
+							top: 12px;
+						}
+						&:hover{
+							background-color: $color7;
+						}
+					}
+				}
 			}
-
-
 		}	
 	}
 }
