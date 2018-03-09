@@ -637,12 +637,13 @@ textarea {
 input[type="submit"] {
   cursor: pointer; }
 
-.flex-cv, .btn-more, .feature .news .date,
+.flex-cv, .btn-more, .installment .checkbox + label,
+.panel .checkbox + label, .feature .news .date,
 .topnews .news .date, .feature .news .cat__link,
 .topnews .news .cat__link, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
 .vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top,
 .list_construction .place__top, .review__bottom, .filter-sort .btn,
-.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .subnav a, .complex-page .complex__place .cell, .complex-page .complex__navhouses, .complex-page .complex__navhouses .nav .btn, .complex-page .about .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom, .about-page .scheme .step, .listgk-page .main .wrapper .panel, .listgk-page .main .complex__bottom, .listgk-page .main .complex__bottom .right .btn {
+.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .subnav a, .complex-page .complex__place .cell, .complex-page .complex__navhouses, .complex-page .complex__navhouses .nav .btn, .complex-page .about .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom, .about-page .scheme .step, .listgk-page .main .wrapper .panel, .listgk-page .main .wrapper .panel__left, .listgk-page .main .complex__bottom, .listgk-page .main .complex__bottom .right .btn {
   display: flex;
   align-items: center; }
 
@@ -1677,47 +1678,6 @@ form .form-control {
   .installment__container {
     display: flex;
     cursor: pointer; }
-  .installment .checkbox {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-    margin: 10px 0 0 20px; }
-  .installment .checkbox + label {
-    color: #363636;
-    cursor: pointer;
-    display: block;
-    font-size: 1.4rem;
-    padding: 0 0 0 35px;
-    position: relative; }
-  .installment .checkbox + label:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 25px;
-    height: 25px;
-    background: #fff;
-    transition: .2s;
-    border: 2px solid #00874d; }
-  .installment .checkbox + label:hover:before {
-    border-color: #c20831; }
-  .installment .checkbox + label:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 16px;
-    height: 12px;
-    top: 0;
-    z-index: 2;
-    left: 0; }
-  .installment .checkbox:checked + label:before {
-    background: #00874d; }
-  .installment .checkbox:checked + label:after {
-    left: 5px;
-    top: 6px;
-    background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAQAAADB7vUKAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAwEVAiEM9h7bAAAAX0lEQVQY033QwQnAIAxG4X+GTCJ0MEdyhXotdIOu4gyvB1FLo5Lj9yAkQosJXBhacwEebMdQCHs+6opIWjESEaAnP0YiQU8c1xUtyZ7bmS1xPP5wznkERpnx95PG7Rm986n4r0p1BmsAAAAASUVORK5CYII=") no-repeat center; }
-  .installment .checkbox:checked + label:hover:before {
-    border-color: #00874d; }
   .installment__tooltip {
     border-radius: 50%;
     border: 1px solid #5f6b79;
@@ -1762,6 +1722,63 @@ form .form-control {
       transform: translateX(0);
       visibility: visible;
       z-index: 30; }
+
+.installment .checkbox,
+.panel .checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px; }
+
+.installment .checkbox + label,
+.panel .checkbox + label {
+  color: #363636;
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding: 0 0 0 35px;
+  position: relative;
+  min-height: 25px; }
+
+.installment .checkbox + label:before,
+.panel .checkbox + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  transition: .2s;
+  border: 2px solid #00874d; }
+
+.installment .checkbox + label:hover:before,
+.panel .checkbox + label:hover:before {
+  border-color: #c20831; }
+
+.installment .checkbox + label:after,
+.panel .checkbox + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 12px;
+  top: 0;
+  z-index: 2;
+  left: 0; }
+
+.installment .checkbox:checked + label:before,
+.panel .checkbox:checked + label:before {
+  background: #00874d; }
+
+.installment .checkbox:checked + label:after,
+.panel .checkbox:checked + label:after {
+  left: 5px;
+  top: 6px;
+  background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAQAAADB7vUKAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAwEVAiEM9h7bAAAAX0lEQVQY033QwQnAIAxG4X+GTCJ0MEdyhXotdIOu4gyvB1FLo5Lj9yAkQosJXBhacwEebMdQCHs+6opIWjESEaAnP0YiQU8c1xUtyZ7bmS1xPP5wznkERpnx95PG7Rm986n4r0p1BmsAAAAASUVORK5CYII=") no-repeat center; }
+
+.installment .checkbox:checked + label:hover:before,
+.panel .checkbox:checked + label:hover:before {
+  border-color: #00874d; }
 
 .sidemodal {
   background: rgba(13, 103, 64, 0.97);
@@ -6096,10 +6113,30 @@ circle:nth-child(2n) {
     box-shadow: 10px 0 20px rgba(0, 0, 0, 0.2);
     width: 75%; }
     .listgk-page .main .wrapper .panel {
+      font-size: 1.5rem;
       background: #fff;
       height: 85px;
       padding-left: 155px;
       padding-right: 92px; }
+      .listgk-page .main .wrapper .panel__left {
+        flex-grow: 1; }
+    .listgk-page .main .wrapper .area-select__wrap {
+      margin-left: 1.5rem;
+      width: 215px; }
+      .listgk-page .main .wrapper .area-select__wrap .not-full input {
+        color: #000; }
+        .listgk-page .main .wrapper .area-select__wrap .not-full input::-webkit-input-placeholder {
+          color: #000; }
+        .listgk-page .main .wrapper .area-select__wrap .not-full input::-moz-placeholder {
+          color: #000; }
+        .listgk-page .main .wrapper .area-select__wrap .not-full input:-ms-input-placeholder {
+          color: #000; }
+        .listgk-page .main .wrapper .area-select__wrap .not-full input:focus::-webkit-input-placeholder {
+          transition: line-height 0.5s ease; }
+        .listgk-page .main .wrapper .area-select__wrap .not-full input:focus::-moz-placeholder {
+          transition: line-height 0.5s ease; }
+        .listgk-page .main .wrapper .area-select__wrap .not-full input:focus:-ms-input-placeholder {
+          transition: line-height 0.5s ease; }
     .listgk-page .main .wrapper .listgk {
       overflow: hidden;
       padding-left: 155px;
@@ -6153,10 +6190,11 @@ circle:nth-child(2n) {
       margin-left: 0; }
     .listgk-page .main .complex__description .object__meta {
       padding-left: 0;
-      padding-top: 33px; }
+      padding-top: 33px;
+      z-index: 1; }
   .listgk-page .main .complex__body {
-    padding-left: 32px;
-    flex-grow: 1; }
+    flex-grow: 1;
+    padding-left: 32px; }
   .listgk-page .main .complex__bottom {
     background: #d7dde2;
     padding: 1.9rem 0 1.9rem 32px; }

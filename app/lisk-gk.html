@@ -153,9 +153,38 @@
 			<!-- =main -->
 			<div class="main">
 				<div class="wrapper">
+					<!-- =panel -->
 					<div class="panel">
-						Сдано в эксплуатацию более &nbsp;<strong> 300 объектов</strong>
+						<div class="panel__left">
+							Сдано в эксплуатацию более &nbsp;<strong> 300 объектов</strong>
+
+							<div class="area-select__wrap">
+								<select name="area[]"
+									class="select">
+										<option value="">Выберите район</option>
+										<option value="34">ЖК Стасовой</option>
+										<option value="57">ЖК Миручино</option>
+										<option value="39">ЖК Годенко</option>
+										<option value="76">ЖК Новониколаевский</option>
+										<option value="72">Калейдоскоп</option>
+										<option value="63">Паруса</option>
+										<option value="86">Звездный Дуэт</option>
+										<option value="36">Цивилизация</option>
+										<option value="41">София</option>
+										<option value="55">Цветной город</option>
+										<option value="78">Богемия</option>
+										<option value="60">Новая Охта</option>
+										<option value="88">Цивилизация на Неве</option>
+										<option value="61">Шуваловский</option>
+								</select>	
+							</div>
+						</div>
+						<div class="panel__right">
+							<input type="checkbox" class="checkbox" id="archive" name="archive" value="" checked="checked" />
+							<label class="checkbox-label" for="archive">Показать архивные объекты</label>
+						</div>
 					</div>
+					<!-- =/panel -->
 
 					<!-- =listgk -->
 					<div class="listgk bg-gray">

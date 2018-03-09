@@ -10,11 +10,26 @@
 			$pl: 155px;
 			$pr: 92px;
 			.panel{
+				font-size: 1.5rem;
 				@extend .flex-cv;
 				background: $color2;
 				height: 85px;
 				padding-left: $pl;
 				padding-right: $pr;
+				&__left{
+					@extend .flex-cv;
+					flex-grow: 1;
+				}
+			}
+			.area-select__wrap{
+				margin-left: 1.5rem;
+				width: 215px;
+				.not-full{
+					input{
+						color: $color1;
+						@include placeholder($color1);
+					}
+				}
 			}
 			.listgk{
 				overflow: hidden;
@@ -98,13 +113,14 @@
 					&__meta{
 						padding-left: 0;
 						padding-top: 33px;
+						z-index: 1;
 					}
 				}
 			}
 
 			&__body{
-				padding-left: $pl;
 				flex-grow: 1;
+				padding-left: $pl;
 			}
 
 			&__bottom{
@@ -151,6 +167,7 @@
 					}
 				}
 			}
-		}	
+		}
+
 	}
 }
