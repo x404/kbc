@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 <html lang="ru"><!-- InstanceBegin template="/Templates/homepage.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -215,7 +215,7 @@
 											<a href="#" class="btn icon-house-dark">2 дома</a>
 										</div>
 										<div class="object__address">
-											<a href="#" class="btn btn-red icon-label">ул. Елены Стасовой, д. 17 / д. 2</a>
+											<a href="#" class="btn btn-red icon-label" data-placemark="1">ул. Елены Стасовой, д. 17 / д. 2</a>
 										</div>										
 									</div>
 									<!-- =/meta -->
@@ -265,7 +265,7 @@
 											<a href="#" class="btn icon-house-dark">2 дома</a>
 										</div>
 										<div class="object__address">
-											<a href="#" class="btn btn-red icon-label">ул. Елены Стасовой, д. 17 / д. 2</a>
+											<a href="#" class="btn btn-red icon-label" data-placemark="2">ул. Елены Стасовой, д. 17 / д. 2</a>
 										</div>										
 									</div>
 									<!-- =/meta -->
@@ -315,7 +315,7 @@
 											<a href="#" class="btn icon-house-dark">2 дома</a>
 										</div>
 										<div class="object__address">
-											<a href="#" class="btn btn-red icon-label">ул. Елены Стасовой, д. 17 / д. 2</a>
+											<a href="#" class="btn btn-red icon-label" data-placemark="3">ул. Елены Стасовой, д. 17 / д. 2</a>
 										</div>										
 									</div>
 									<!-- =/meta -->
@@ -365,7 +365,7 @@
 											<a href="#" class="btn icon-house-dark">2 дома</a>
 										</div>
 										<div class="object__address">
-											<a href="#" class="btn btn-red icon-label">ул. Елены Стасовой, д. 17 / д. 2</a>
+											<a href="#" class="btn btn-red icon-label" data-placemark="4">ул. Елены Стасовой, д. 17 / д. 2</a>
 										</div>										
 									</div>
 									<!-- =/meta -->
@@ -415,7 +415,7 @@
 											<a href="#" class="btn icon-house-dark">2 дома</a>
 										</div>
 										<div class="object__address">
-											<a href="#" class="btn btn-red icon-label">ул. Елены Стасовой, д. 17 / д. 2</a>
+											<a href="#" class="btn btn-red icon-label" data-placemark="1">ул. Елены Стасовой, д. 17 / д. 2</a>
 										</div>										
 									</div>
 									<!-- =/meta -->
@@ -465,7 +465,7 @@
 											<a href="#" class="btn icon-house-dark">2 дома</a>
 										</div>
 										<div class="object__address">
-											<a href="#" class="btn btn-red icon-label">ул. Елены Стасовой, д. 17 / д. 2</a>
+											<a href="#" class="btn btn-red icon-label" data-placemark="2">ул. Елены Стасовой, д. 17 / д. 2</a>
 										</div>										
 									</div>
 									<!-- =/meta -->
@@ -512,10 +512,12 @@
 					</div>
 					<!-- =/listgk -->
 				</div>
+				<div class="map">
+					<div id="map"></div>
+				</div>
 			</div>	
 			<!-- =/main -->	
 		</div>
-
 		<!-- InstanceEndEditable -->
 	</div>
 
@@ -992,6 +994,291 @@
 <script src="/js/engine.js"></script>
 
 <!-- InstanceBeginEditable name="EditRegion4" -->
+<script src="http://api-maps.yandex.ru/2.1.60/?lang=ru_RU"></script>
+<script>
+$(document).ready(function(){
+	ymaps.ready(init);
+});
+
+var myMap, myPlacemark, coords;
+function init(){
+	/******* =Yandex MAP ********/
+	//http://api.yandex.ru/maps/jsbox/2.1/placemark_shape
+	//http://api.yandex.ru/maps/jsbox/2.1/placemark_balloon
+	//http://api.yandex.ru/maps/jsbox/2.1/icon_customImage
+	// https://tech.yandex.ru/maps/jsbox/2.1/geo_object_collection
+	// https://tech.yandex.ru/maps/doc/jsapi/2.1/dg/concepts/geoobjects-docpage/#geoobject_collections
+
+	// https://tech.yandex.ru/maps/jsbox/2.1/object_manager
+	// https://yandex.ru/blog/mapsapi/44417
+	// https://jsfiddle.net/salofun/6qzhmLLz/25/
+	ymaps.ready(function() {
+		myMap = new ymaps.Map('map', {
+			center: [56.039906, 92.855598],
+			zoom: 13
+		}),
+
+		MyBalloonLayout = ymaps.templateLayoutFactory.createClass(
+			'<div class="popover bottom">' +
+				'<a class="close" href="#">&times;</a>' +
+				'<div class="arrow"></div>' +
+				'<div class="popover-inner">' +
+				'$[[options.contentLayout observeSize minWidth=235 maxWidth=430 maxHeight=350]]' +
+				'</div>' +
+				'</div>', {
+				/**
+				 * Строит экземпляр макета на основе шаблона и добавляет его в родительский HTML-элемент.
+				 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/layout.templateBased.Base.xml#build
+				 * @function
+				 * @name build
+				 */
+				build: function () {
+					this.constructor.superclass.build.call(this);
+
+					this._$element = $('.popover', this.getParentElement());
+
+					this.applyElementOffset();
+
+					this._$element.find('.close')
+						.on('click', $.proxy(this.onCloseClick, this));
+					
+						var Circle = function(sel){
+							var circles = document.querySelectorAll(sel);
+							[].forEach.call(circles,function(el){
+								var num = el.innerHTML,
+									valEl = parseFloat(num);
+
+								valEl = valEl*144/100;
+								el.innerHTML = '<svg width="56" height="56"><circle transform="rotate(-90)" r="23" cx="-28" cy="28" /><circle transform="rotate(-90)" style="stroke-dasharray:'+valEl+'px 144px;" r="23" cx="-28" cy="28" /></svg><div class="num">'+num+'</div>';
+								
+							});
+						};
+						Circle('.circle');
+				},
+
+				/**
+				 * Удаляет содержимое макета из DOM.
+				 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/layout.templateBased.Base.xml#clear
+				 * @function
+				 * @name clear
+				 */
+				clear: function () {
+					this._$element.find('.close')
+						.off('click');
+
+					this.constructor.superclass.clear.call(this);
+				},
+
+				/**
+				 * Метод будет вызван системой шаблонов АПИ при изменении размеров вложенного макета.
+				 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/IBalloonLayout.xml#event-userclose
+				 * @function
+				 * @name onSublayoutSizeChange
+				 */
+				onSublayoutSizeChange: function () {
+					MyBalloonLayout.superclass.onSublayoutSizeChange.apply(this, arguments);
+
+					if(!this._isElement(this._$element)) {
+						return;
+					}
+
+					this.applyElementOffset();
+
+					this.events.fire('shapechange');
+				},
+
+				/**
+				 * Сдвигаем балун, чтобы "хвостик" указывал на точку привязки.
+				 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/IBalloonLayout.xml#event-userclose
+				 * @function
+				 * @name applyElementOffset
+				 */
+				applyElementOffset: function () {
+					this._$element.css({
+						left: -(this._$element[0].offsetWidth / 2 ),
+						top: 15
+					});
+				},
+
+				/**
+				 * Закрывает балун при клике на крестик, кидая событие "userclose" на макете.
+				 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/IBalloonLayout.xml#event-userclose
+				 * @function
+				 * @name onCloseClick
+				 */
+				onCloseClick: function (e) {
+					e.preventDefault();
+
+					this.events.fire('userclose');
+				},
+
+				/**
+				 * Используется для автопозиционирования (balloonAutoPan).
+				 * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/ILayout.xml#getClientBounds
+				 * @function
+				 * @name getClientBounds
+				 * @returns {Number[][]} Координаты левого верхнего и правого нижнего углов шаблона относительно точки привязки.
+				 */
+				getShape: function () {
+					if(!this._isElement(this._$element)) {
+						return MyBalloonLayout.superclass.getShape.call(this);
+					}
+
+					var position = this._$element.position();
+
+					return new ymaps.shape.Rectangle(new ymaps.geometry.pixel.Rectangle([
+						[position.left, position.top], [
+							position.left + this._$element[0].offsetWidth,
+							position.top + this._$element[0].offsetHeight 
+						]
+					]));
+				},
+
+				/**
+				 * Проверяем наличие элемента (в ИЕ и Опере его еще может не быть).
+				 * @function
+				 * @private
+				 * @name _isElement
+				 * @param {jQuery} [element] Элемент.
+				 * @returns {Boolean} Флаг наличия.
+				 */
+				_isElement: function (element) {
+					return element && element[0] && element.find('.arrow')[0];
+				}
+			}), 	
+
+		MyBalloonContentLayout = ymaps.templateLayoutFactory.createClass(
+			'<div class="popover-container flexbox">' + 
+				'<div class="popover-pic"><img src="$[properties.balloonPic]" /></div>' +
+				'<div class="popover-description">' +
+					'<p class="popover-title">$[properties.balloonHeader]</p>' +
+					'<div class="popover-content">' + 
+						'<div class="left"><p class="name">$[properties.balloonTitle]</p>Готов на</div>' +
+						'<div class="right"><div class="diagram circle">$[properties.percent]</div></div>' +
+					'</div>' +
+					'<div class="popover-bottom">'+
+						'<div class="popover-scheme"><img src="$[properties.scheme]" /></div>' +
+						'<div class="popover-bottom-right"><a href="$[properties.link]" class="popover-link"><span>$[properties.titleLink]</span></a></div>' +
+					'</div>' +
+				'</div>'+
+			'</div>'
+		),
+
+		// создаем коллекции и параметры меток в ней
+		myCollection = new ymaps.GeoObjectCollection({},{
+			iconLayout: 'default#image',
+			iconImageHref: '/images/balloon.png',
+			iconImageSize: [51, 61],
+			iconImageOffset: [-25, -61],
+			hideIconOnBalloonOpen: false,
+			balloonLayout: MyBalloonLayout,
+			balloonContentLayout: MyBalloonContentLayout
+		});
+
+
+
+	myPlacemark = new Array();
+
+	coords = [{
+		coord: [56.039906,92.855598],
+		properties :{
+			balloonHeader: 'ЖК Стасовой',
+			balloonPic: '/tmp/gk.jpg',
+			balloonTitle: 'Дом 11.1',
+			balloonContent: 'Контент балуна',
+			percent: '66%',
+			diagram: '/images/circle-60.png',
+			scheme: '/tmp/scheme.png',
+			link: 'http://google.com',
+			titleLink: 'Смотреть 523 квартиры'			
+		}
+	},
+	{
+		coord: [56.065075, 92.851306],
+		properties: {
+			// id: 2,
+			balloonHeader: 'ЖК Курчатова',
+			balloonPic: '/tmp/gk.jpg',
+			balloonTitle: 'Дом 2.1',
+			balloonContent: 'Контент балуна',
+			percent: '25%',
+			diagram: '/images/circle-60.png',
+			scheme: '/tmp/scheme.png',
+			link: 'http://google.com',
+			titleLink: 'Смотреть 200 квартир'
+		}
+	},
+	{
+		coord: [56.051820, 92.860919],
+		properties: {
+			balloonHeader: 'ЖК Курчатова',
+			balloonPic: '/tmp/gk.jpg',
+			balloonTitle: 'Дом 2.1',
+			balloonContent: 'Контент балуна',
+			percent: '40%',
+			diagram: '/images/circle-60.png',
+			scheme: '/tmp/scheme.png',
+			link: 'http://google.com',
+			titleLink: 'Смотреть 200 квартир'
+		}
+	},
+	{
+		coord: [56.039618, 92.882034],
+		properties: {
+				balloonHeader: 'ЖК Курчатова',
+				balloonPic: '/tmp/gk.jpg',
+				balloonTitle: 'Дом 2.1',
+				balloonContent: 'Контент балуна',
+				percent: '10%',
+				diagram: '/images/circle-60.png',
+				scheme: '/tmp/scheme.png',
+				link: 'http://google.com',
+				titleLink: 'Смотреть 200 квартир'
+		}
+	}
+];
+
+	for (var i = 0; i < coords.length; i++) {
+		myPlacemark[i] = new ymaps.Placemark(coords[i].coord, coords[i].properties);
+		myCollection.add(myPlacemark[i])
+	}
+
+		// добавляем коллекцию в геообъект
+		myMap.geoObjects.add(myCollection);
+
+		myCollection.events
+			.add('mouseenter', function (e) {
+				e.get('target').options.set('iconImageHref', '/images/balloon-hover.png');
+			})
+			.add('mouseleave', function (e) {
+				e.get('target').options.set('iconImageHref', '/images/balloon.png');
+			});
+
+		// myMap.behaviors.disable('scrollZoom'); 
+		myMap.events.add('click', function onMapClick(e) {
+			if(myMap.behaviors.isEnabled('scrollZoom')) {
+				myMap.events.remove('click', onMapClick);
+			} else {
+				myMap.behaviors.enable(['scrollZoom']);
+			}
+		});
+	});	
+}
+
+
+$(document).ready(function(){
+	$('body').on('click','[data-placemark]', function(e) {
+		e.preventDefault();
+		let i = $(this).data('placemark');
+
+		console.log(coords[i].coord);
+		// myMap.setCenter([lat, lon], 13);
+		myPlacemark[i].balloon.open()
+	});
+});
+
+
+</script>
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
