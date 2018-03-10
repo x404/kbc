@@ -178,7 +178,8 @@
 					display: flex;
 					margin: 2.5rem 0 0 3.5rem;
 					.column{
-						margin-right: 7rem;
+						min-width: 23rem;
+						margin-right: 5rem;
 						p{
 							margin-bottom: 1rem;
 						}

@@ -6398,7 +6398,8 @@ circle:nth-child(2n) {
         display: flex;
         margin: 2.5rem 0 0 3.5rem; }
         .calculator-page .main .content .scheme .params .column {
-          margin-right: 7rem; }
+          min-width: 23rem;
+          margin-right: 5rem; }
           .calculator-page .main .content .scheme .params .column p {
             margin-bottom: 1rem; }
       .calculator-page .main .content .scheme .download {

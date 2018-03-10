@@ -152,7 +152,7 @@
 			</div>
 			<!-- =/neck -->	
 
-			<div class="main">
+			<div class="main" id="main">
 				<div class="container">
 					<div class="row">					
 						<aside class="col-2">
@@ -223,11 +223,11 @@
 								<p class="title">Укажите необходимые <br>размеры в метрах</p>
 								<div class="params__row">
 									<label for="length">Длина дорожки <span class="abbr">(A)</span></label>
-									<input type="text" class="form-control" id="length" value="20" />
+									<input type="text" class="form-control" id="length" value="20" v-model.number="lengthA" />
 								</div>
 								<div class="params__row">
 									<label for="width">Ширина дорожки <span class="abbr">(B)</span></label>
-									<input type="text" class="form-control" id="width" value="5" />
+									<input type="text" class="form-control" id="width" value="5" v-model.number="widthB" />
 								</div>
 								<div class="params__row">
 									<label for="count">Кол-во плитки на 1м<sup>2</sup> <span class="abbr">(С)</span></label>
@@ -265,13 +265,13 @@
 
 										<div class="params">
 											<div class="column">
-												<p><strong>Длина дорожки:</strong> 20 метров</p>
-												<p><strong>Ширина дорожки:</strong> 5 метров</p>
-												<p><strong>Площадь дорожки:</strong> 100 м<sup>2</sup></p>
+												<p><strong>Длина дорожки:</strong> {{lengthA}} метров</p>
+												<p><strong>Ширина дорожки:</strong> {{widthB}} метров</p>
+												<p><strong>Площадь дорожки:</strong> {{areaC}} м<sup>2</sup></p>
 											</div>
 											<div class="column">
-												<p><strong>Площадь одной плитки: </strong> 0.16 м<sup>2</sup></p>
-												<p><strong>Количество плиток:</strong> 38 штук</p>
+												<p><strong>Площадь одной плитки: </strong> {{areatile}} м<sup>2</sup></p>
+												<p><strong>Количество плиток:</strong> {{counts}} штук</p>
 												<p><strong>Объем подсыпки:</strong> 1.2 м<sup>3</sup></p>
 											</div>
 										</div>
@@ -939,6 +939,12 @@
 <script src="/js/inputmask/inputmask.binding.js"></script>
 <script src="/js/jquery.fancybox.min.js"></script>
 <link rel="stylesheet" property="stylesheet" href="css/jquery.fancybox.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue2-filters/dist/vue2-filters.min.js"></script>
+
+<script src="/js/app.js"></script>
+
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
