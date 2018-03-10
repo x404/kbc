@@ -612,14 +612,18 @@ h3 {
 .intro__carousel .owl-carousel .owl-prev:before,
 .intro__carousel .owl-carousel .owl-next:before,
 .list_construction .tab-content .owl-carousel .owl-prev:before,
-.list_construction .tab-content .owl-carousel .owl-next:before, .card_flat .carousel .owl-carousel .owl-prev:after, .card_flat .carousel .owl-carousel .owl-next:after,
+.list_construction .tab-content .owl-carousel .owl-next:before,
+.related .carousel .owl-carousel .owl-prev:before,
+.related .carousel .owl-carousel .owl-next:before, .card_flat .carousel .owl-carousel .owl-prev:after, .card_flat .carousel .owl-carousel .owl-next:after,
 .objects .owl-carousel .owl-prev:after,
 .objects .owl-carousel .owl-next:after,
 .list_construction .tab-content .owl-carousel .owl-prev:after,
-.list_construction .tab-content .owl-carousel .owl-next:after, .objects__info:before, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
+.list_construction .tab-content .owl-carousel .owl-next:after,
+.related .carousel .owl-carousel .owl-prev:after,
+.related .carousel .owl-carousel .owl-next:after, .objects__info:before, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .big-icon:before, .neck .tabs .tab.active:after, .pagination .prev:before,
 .pagination .next:before, .picking__link span:before, .sortbox__option-up:after, .sortbox__option-down:after, main ul li:before, .faq-page .head .btn:before,
-.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, .complex-page .complex__left:before, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a:before, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .listgk-page .main .complex__item:after {
+.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, .complex-page .complex__left:before, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a:before, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .example__pic a:after, .calculator-page .example__pic a:before, .calculator-page .example__pic:after, .calculator-page .example__pic:before, .calculator-page .related__item:after {
   content: "";
   display: block;
   position: absolute; }
@@ -2358,7 +2362,9 @@ body.modal-open {
 .intro__carousel .owl-carousel .owl-prev:before,
 .intro__carousel .owl-carousel .owl-next:before,
 .list_construction .tab-content .owl-carousel .owl-prev:before,
-.list_construction .tab-content .owl-carousel .owl-next:before {
+.list_construction .tab-content .owl-carousel .owl-next:before,
+.related .carousel .owl-carousel .owl-prev:before,
+.related .carousel .owl-carousel .owl-next:before {
   transition: .3s all ease-out;
   background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAYCAMAAAAmopZHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAqFBMVEUAh00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah03////LzDCzAAAANnRSTlMAYyZ50Sx4/LEGd+NFAeQ9/t873jziesojAv3Nlp6PZvdn9gN9z5uklHzJIXvhOdzdOELULiiNp6GjAAAAAWJLR0Q3MLi4RwAAAAd0SU1FB+ICFxEtB4P8KmQAAACiSURBVCjPdZFHFsIwDERFh4AoCTGdUEIJxHR0/6Mhr/KMlNl5Rv7jAlCoUgVNNao3FLvZImp3hB2w3e2hhBD1BxIyJBqFKiQaq5WxhASOLacNsyfTf3dm5jy+WK48rSFh1yW+NrAlTTvYp4ynw/Hk6cwNGfuXq3wwzDmwN+UpDd/LhkqQ84nu2g7X8XiWdMRlKPtCGRj9HwFTen8UEGDyLRY/EnAekAPc1nQAAAAASUVORK5CYII=") no-repeat center;
   filter: grayscale(1);
@@ -2371,24 +2377,29 @@ body.modal-open {
 .intro__carousel .owl-carousel .owl-prev:hover:before,
 .intro__carousel .owl-carousel .owl-next:hover:before,
 .list_construction .tab-content .owl-carousel .owl-prev:hover:before,
-.list_construction .tab-content .owl-carousel .owl-next:hover:before {
+.list_construction .tab-content .owl-carousel .owl-next:hover:before,
+.related .carousel .owl-carousel .owl-prev:hover:before,
+.related .carousel .owl-carousel .owl-next:hover:before {
   filter: grayscale(0); }
 
 .card_flat .carousel .owl-carousel .owl-next:before,
 .objects .owl-carousel .owl-next:before,
 .intro__carousel .owl-carousel .owl-next:before,
-.list_construction .tab-content .owl-carousel .owl-next:before {
+.list_construction .tab-content .owl-carousel .owl-next:before,
+.related .carousel .owl-carousel .owl-next:before {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .card_flat .carousel .owl-carousel,
 .objects .owl-carousel,
-.list_construction .tab-content .owl-carousel {
+.list_construction .tab-content .owl-carousel,
+.related .carousel .owl-carousel {
   margin-top: 4.2rem; }
   .card_flat .carousel .owl-carousel .owl-nav,
   .objects .owl-carousel .owl-nav,
-  .list_construction .tab-content .owl-carousel .owl-nav {
+  .list_construction .tab-content .owl-carousel .owl-nav,
+  .related .carousel .owl-carousel .owl-nav {
     margin-top: -45px;
     position: absolute;
     top: 50%;
@@ -2397,7 +2408,9 @@ body.modal-open {
   .objects .owl-carousel .owl-prev,
   .objects .owl-carousel .owl-next,
   .list_construction .tab-content .owl-carousel .owl-prev,
-  .list_construction .tab-content .owl-carousel .owl-next {
+  .list_construction .tab-content .owl-carousel .owl-next,
+  .related .carousel .owl-carousel .owl-prev,
+  .related .carousel .owl-carousel .owl-next {
     height: 90px;
     position: absolute;
     top: 0;
@@ -2406,7 +2419,9 @@ body.modal-open {
     .objects .owl-carousel .owl-prev:before,
     .objects .owl-carousel .owl-next:before,
     .list_construction .tab-content .owl-carousel .owl-prev:before,
-    .list_construction .tab-content .owl-carousel .owl-next:before {
+    .list_construction .tab-content .owl-carousel .owl-next:before,
+    .related .carousel .owl-carousel .owl-prev:before,
+    .related .carousel .owl-carousel .owl-next:before {
       left: 50%;
       margin-top: -12px;
       top: 50%;
@@ -2415,46 +2430,56 @@ body.modal-open {
     .objects .owl-carousel .owl-prev:after,
     .objects .owl-carousel .owl-next:after,
     .list_construction .tab-content .owl-carousel .owl-prev:after,
-    .list_construction .tab-content .owl-carousel .owl-next:after {
+    .list_construction .tab-content .owl-carousel .owl-next:after,
+    .related .carousel .owl-carousel .owl-prev:after,
+    .related .carousel .owl-carousel .owl-next:after {
       background: white;
       height: 90px;
       top: 0;
       width: 40px; }
   .card_flat .carousel .owl-carousel .owl-prev,
   .objects .owl-carousel .owl-prev,
-  .list_construction .tab-content .owl-carousel .owl-prev {
+  .list_construction .tab-content .owl-carousel .owl-prev,
+  .related .carousel .owl-carousel .owl-prev {
     left: -50px;
     -webkit-transition: left 0.2s ease-out;
     transition: left 0.2s ease-out; }
     .card_flat .carousel .owl-carousel .owl-prev:before,
     .objects .owl-carousel .owl-prev:before,
-    .list_construction .tab-content .owl-carousel .owl-prev:before {
+    .list_construction .tab-content .owl-carousel .owl-prev:before,
+    .related .carousel .owl-carousel .owl-prev:before {
       margin-left: -6px; }
     .card_flat .carousel .owl-carousel .owl-prev:after,
     .objects .owl-carousel .owl-prev:after,
-    .list_construction .tab-content .owl-carousel .owl-prev:after {
+    .list_construction .tab-content .owl-carousel .owl-prev:after,
+    .related .carousel .owl-carousel .owl-prev:after {
       right: 0; }
     .card_flat .carousel .owl-carousel .owl-prev:hover,
     .objects .owl-carousel .owl-prev:hover,
-    .list_construction .tab-content .owl-carousel .owl-prev:hover {
+    .list_construction .tab-content .owl-carousel .owl-prev:hover,
+    .related .carousel .owl-carousel .owl-prev:hover {
       left: -40px; }
   .card_flat .carousel .owl-carousel .owl-next,
   .objects .owl-carousel .owl-next,
-  .list_construction .tab-content .owl-carousel .owl-next {
+  .list_construction .tab-content .owl-carousel .owl-next,
+  .related .carousel .owl-carousel .owl-next {
     -webkit-transition: right 0.2s ease-out;
     transition: right 0.2s ease-out;
     right: -30px; }
     .card_flat .carousel .owl-carousel .owl-next:before,
     .objects .owl-carousel .owl-next:before,
-    .list_construction .tab-content .owl-carousel .owl-next:before {
+    .list_construction .tab-content .owl-carousel .owl-next:before,
+    .related .carousel .owl-carousel .owl-next:before {
       left: 10px; }
     .card_flat .carousel .owl-carousel .owl-next:after,
     .objects .owl-carousel .owl-next:after,
-    .list_construction .tab-content .owl-carousel .owl-next:after {
+    .list_construction .tab-content .owl-carousel .owl-next:after,
+    .related .carousel .owl-carousel .owl-next:after {
       right: 10px; }
     .card_flat .carousel .owl-carousel .owl-next:hover,
     .objects .owl-carousel .owl-next:hover,
-    .list_construction .tab-content .owl-carousel .owl-next:hover {
+    .list_construction .tab-content .owl-carousel .owl-next:hover,
+    .related .carousel .owl-carousel .owl-next:hover {
       right: -20px; }
 
 .objects {
@@ -6243,6 +6268,128 @@ circle:nth-child(2n) {
       top: 0;
       left: 0;
       margin-top: -1000px; }
+
+.calculator-page .prompt {
+  margin-top: 2.5rem;
+  padding-left: 105px;
+  position: relative; }
+  .calculator-page .prompt p {
+    font-size: 1.6rem; }
+  .calculator-page .prompt:before {
+    background: url(../images/tile.png) no-repeat;
+    height: 61px;
+    left: 0;
+    top: 5px;
+    width: 74px; }
+
+.calculator-page .main {
+  background: linear-gradient(to right, #fff 0, #fff 50%, #f1f3f5 50%, #f1f3f5 100%);
+  padding: 0; }
+  .calculator-page .main .row {
+    flex-wrap: nowrap; }
+  .calculator-page .main aside {
+    padding-top: 3rem; }
+  .calculator-page .main .content {
+    background-color: #f1f3f5;
+    padding: 5rem 0 8.5rem; }
+    .calculator-page .main .content .heading {
+      font-size: 3rem; }
+    .calculator-page .main .content .scheme {
+      padding-left: 6.6rem; }
+
+.calculator-page .example {
+  width: 320px;
+  margin-left: 160px; }
+  .calculator-page .example__pic {
+    margin-bottom: 3rem;
+    position: relative; }
+    .calculator-page .example__pic a {
+      overflow: hidden;
+      display: block;
+      position: relative;
+      z-index: 2; }
+      .calculator-page .example__pic a img {
+        display: block;
+        transition: .3s transform; }
+      .calculator-page .example__pic a:hover img {
+        transform: scale(1.15); }
+      .calculator-page .example__pic a:hover:after, .calculator-page .example__pic a:hover:before {
+        opacity: 1; }
+      .calculator-page .example__pic a:after, .calculator-page .example__pic a:before {
+        opacity: 0;
+        transition: .3s;
+        z-index: 3; }
+      .calculator-page .example__pic a:before {
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 135, 77, 0.75); }
+      .calculator-page .example__pic a:after {
+        background: url(../images/zoom.png) no-repeat;
+        height: 97px;
+        width: 96px;
+        top: 50%;
+        left: 50%;
+        margin-left: -48px;
+        margin-top: -48px; }
+    .calculator-page .example__pic:after, .calculator-page .example__pic:before {
+      background-color: rgba(0, 0, 0, 0.1);
+      width: 260px; }
+    .calculator-page .example__pic:before {
+      height: 178px;
+      top: 15px;
+      right: -5px; }
+    .calculator-page .example__pic:after {
+      height: 158px;
+      top: 25px;
+      right: -10px; }
+
+.calculator-page .related {
+  margin-top: 8.5rem;
+  padding-left: 6.6rem;
+  width: 1280px; }
+  .calculator-page .related .carousel {
+    display: block; }
+  .calculator-page .related__item {
+    background-color: #fff;
+    padding: 2rem;
+    width: 284px;
+    position: relative;
+    transition: .3s box-shadow; }
+    .calculator-page .related__item:after {
+      left: 0;
+      bottom: 0;
+      border-bottom: 4px solid #c20831;
+      width: 100%;
+      transition: .3s border-bottom; }
+    .calculator-page .related__item:hover {
+      box-shadow: 0 5px 20px rgba(83, 99, 121, 0.5); }
+      .calculator-page .related__item:hover:after {
+        border-bottom-width: 8px; }
+      .calculator-page .related__item:hover .related__pic img {
+        transform: scale(1.15); }
+    .calculator-page .related__item a {
+      text-decoration: none; }
+  .calculator-page .related__pic {
+    overflow: hidden; }
+    .calculator-page .related__pic img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      transition: .3s transform; }
+  .calculator-page .related__title {
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-top: 1.5rem; }
+  .calculator-page .related__desc {
+    color: #5b5b5b;
+    margin-top: 1rem; }
+  .calculator-page .related .price {
+    color: #00874d;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-top: .5rem; }
 
 .fade {
   opacity: 0;

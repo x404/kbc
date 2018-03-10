@@ -118,6 +118,17 @@ $(document).ready(function(){
 	});
 
 
+
+	$('#related').owlCarousel({
+		loop:false,
+		nav:true,
+		dots: false,
+		items:4,
+		navText: ["", ""],
+		stagePadding : 0
+	});
+
+
 	// mobile-menu
 	$('#navbar').each(function(){
 		let $this = $(this),
