@@ -23,16 +23,146 @@
 			flex-wrap: nowrap;
 		}
 		aside{
+			font-size: 1.5rem;
 			padding-top: 3rem;
+			.box{
+				margin-bottom: 3rem;
+				.title{
+					line-height: 1.5;
+					font-size: 1.7rem;
+					font-weight: 500;
+				}
+			}
+
+			// scale	
+			.scale{
+				.controls{
+					display: flex;
+					margin-top: 1rem;
+
+					.radio + label{
+						$s: 40px;
+						height: $s;
+						@extend .flex-center;
+						margin-right: .5rem;
+						padding-left: 0;
+						width: $s;
+						font-weight: 500;
+						border-radius: 50%;
+						border: 2px solid $color44;
+						transition: .3s;
+						&:before,
+						&:after{
+							display: none;
+						}
+
+						&:hover{
+							background-color: $color44;								
+						}
+					}
+
+					.radio:checked + label{
+						color: $color2;
+						border-color: $color8;
+						background-color: $color8;
+					}
+				}
+			}
+
+			// tiles
+			.tiles{
+				width: 280px;
+				.flexbox{
+					flex-wrap: wrap;
+					font-size: 1.4rem;
+					line-height: 1;
+					justify-content: space-between;
+					a{
+						@extend .tdn;
+						margin-top: 1.8rem;
+						text-align: center;
+						width: 33.3%;
+						&:hover,
+						&.active{
+							color: $color8;
+							text-decoration: underline;
+							img{
+								filter: grayscale(0) brightness(1);
+							}
+						}
+					}
+
+					.pic{
+						height: 50px;
+						margin-bottom: -5px;
+					}
+					img{
+						vertical-align: top;
+						filter: grayscale(1) brightness(0);
+					}
+				}				
+			}
+
+
+			// params
+			.params{
+				.title{
+					padding-bottom: 0;
+				}
+				&__row{
+					margin-top: 2rem;
+					label{
+						width: 190px;
+						display: inline-block;
+						.abbr{
+							color: $color7;
+						}
+					}
+					.form-control{
+						border: none;
+						width: 6rem;
+						padding-left: .3rem;
+						border-bottom: 2px solid $color8;
+					}
+				}
+			}
+
+
+			// cost
+			.cost{
+				font-size: 1.7rem;
+				font-weight: 500;
+				#sum{
+					color: $color8;
+				}
+			}
+
+			.btn{
+				background-color: $color7;
+				color: $color2;
+				border: none;
+				font-size: 1.5rem;
+				font-weight: 400;
+				height: 4.5rem;
+				border-radius: 4.5rem;
+				padding-right: 3.5rem;
+				padding-left: 5.2rem;
+				transition: .3s background-color;
+				&:before{
+					left: 14px;
+					top: 10px;
+				}
+				&:hover{
+					background-color: $color8;
+				}
+			}
 		}
 		.content{
-			// flex-shrink: 0;
-			// flex-grow: 0;
 			background-color: #f1f3f5;
 			padding: 5rem 0 8.5rem;
 
 			.heading{
-				font-size: 3rem;
+				font-size: 3rem !important;
 			}
 
 			.scheme{
@@ -41,8 +171,9 @@
 		}
 	}
 	.example{
-		width: 320px;
 		margin-left: 160px;
+		margin-right: 25px;
+		width: 320px;
 
 		&__pic{
 			margin-bottom: 3rem;
@@ -110,12 +241,11 @@
 	}
 
 	.related{
-		margin-top: 8.5rem;
+		margin-top: 5rem;
 		padding-left: 6.6rem;
 		width: 1280px;
 		.carousel{
 			display: block;
-			// overflow: hidden;
 		}
 		&__item{
 			background-color: $color2;

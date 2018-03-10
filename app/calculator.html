@@ -156,7 +156,7 @@
 				<div class="container">
 					<div class="row">					
 						<aside class="col-2">
-							<div class="scale">
+							<div class="box scale">
 								<p>Масштаб чертежа</p>
 
 								<div class="controls">
@@ -177,59 +177,73 @@
 								</div>
 							</div>
 
-							<div class="tiles">
-								<p>Выберите тип брусчатки</p>
-								<a href="#" title="">
-									<img src="images/tiles/tile-1.png" alt="">
-									Омега
-								</a>
-								<a href="#" class="active" title="">
-									<img src="images/tiles/tile-2.png" alt="">
-									Домино
-								</a>
-								<a href="#" title="">
-									<img src="images/tiles/tile-3.png" alt="">
-									Катушка
-								</a>
-								<a href="#" title="">
-									<img src="images/tiles/tile-4.png" alt="">
-									Волна
-								</a>
-								<a href="#" title="">
-									<img src="images/tiles/tile-5.png" alt="">
-									Многоугольник
-								</a>
-								<a href="#" title="">
-									<img src="images/tiles/tile-6.png" alt="">
-									Крета
-								</a>
+							<div class="box tiles">
+								<p class="title">Выберите тип брусчатки</p>
+								<div class="flexbox">
+									<a href="#" title="">
+										<div class="pic">
+											<img src="images/tiles/tile-1.png" alt="" />
+										</div>
+										Омега
+									</a>
+									<a href="#" class="active" title="">
+										<div class="pic">
+											<img src="images/tiles/tile-2.png" alt="" />
+										</div>
+										Домино
+									</a>
+									<a href="#" title="">
+										<div class="pic">
+											<img src="images/tiles/tile-3.png" alt="" />
+										</div>
+										Катушка
+									</a>
+									<a href="#" title="">
+										<div class="pic">
+											<img src="images/tiles/tile-4.png" alt="" />
+										</div>
+										Волна
+									</a>
+									<a href="#" title="">
+										<div class="pic">
+											<img src="images/tiles/tile-5.png" alt="" />
+										</div>
+										Многоугольник
+									</a>
+									<a href="#" title="">
+										<div class="pic">
+											<img src="images/tiles/tile-6.png" alt="" />
+										</div>
+										Крета
+									</a>
+								</div>
 							</div>
 
-							<div class="params">
-								<p>Укажите необходимые <br>размеры в метрах</p>
+							<div class="box params">
+								<p class="title">Укажите необходимые <br>размеры в метрах</p>
 								<div class="params__row">
-									<label for="">Длина дорожки <span>(A)</span></label>
+									<label for="length">Длина дорожки <span class="abbr">(A)</span></label>
 									<input type="text" class="form-control" id="length" value="20" />
 								</div>
 								<div class="params__row">
-									<label for="">Ширина дорожки <span>(B)</span></label>
+									<label for="width">Ширина дорожки <span class="abbr">(B)</span></label>
 									<input type="text" class="form-control" id="width" value="5" />
 								</div>
 								<div class="params__row">
-									<label for="">Кол-во плитки на 1м<sup>2</sup> <span>(С)</span></label>
+									<label for="count">Кол-во плитки на 1м<sup>2</sup> <span class="abbr">(С)</span></label>
 									<input type="text" class="form-control" id="count" value="6.25" />
 								</div>
 								<div class="params__row">
-									<label for="">Глубина отсыпки <span>(H)</span></label>
-									<input type="text" class="form-control" id="depth" value="" />
+									<label for="depth">Глубина отсыпки <span class="abbr">(H)</span></label>
+									<input type="text" class="form-control" id="depth" value="0.2" />
 								</div>
 							</div>
 
-							<div class="cost">
+							<div class="box cost">
 								Стоимость работ за 1 м<sup>2</sup> — <span id="sum">400 Р</span>
 							</div>
 
-							<div class="colors">
+							<div class="box colors">
 								<input type="radio" class="radio" id="color1" name="color" />
 								<label for="color1">В цвете</label>
 
@@ -237,7 +251,7 @@
 								<label for="color2">Ч.б. чертеж</label>	
 							</div>
 
-							<button type="button" class="btn btn-red submit">Рассчитать</button>
+							<button type="button" class="btn submit icon-ruller">Рассчитать</button>
 						</aside>
 						<div class="col-8">
 							<div class="content">

@@ -151,31 +151,31 @@
 
 .icon-people:before {
   background-image: url(../images/sprite.png);
-  background-position: -206px -112px;
+  background-position: -208px -112px;
   width: 18px;
   height: 17px; }
 
 .icon-people-gray:before {
   background-image: url(../images/sprite.png);
-  background-position: -124px -81px;
+  background-position: -190px -112px;
   width: 18px;
   height: 17px; }
 
 .icon-people-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -77px -112px;
+  background-position: -172px -112px;
   width: 18px;
   height: 17px; }
 
 .icon-tel:before {
   background-image: url(../images/sprite.png);
-  background-position: -186px -180px;
+  background-position: -202px -180px;
   width: 16px;
   height: 16px; }
 
 .icon-tel-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -129px -112px;
+  background-position: -186px -180px;
   width: 16px;
   height: 16px; }
 
@@ -199,7 +199,7 @@
   padding-left: 25px; }
   .icon-clock:before {
     background-image: url(../images/sprite.png);
-    background-position: -151px -112px;
+    background-position: -124px -80px;
     width: 19px;
     height: 19px;
     left: 0;
@@ -210,7 +210,7 @@
   position: relative; }
   .icon-darkclock:before {
     background-image: url(../images/sprite.png);
-    background-position: -170px -112px;
+    background-position: -124px -61px;
     width: 19px;
     height: 19px;
     left: 0;
@@ -218,7 +218,7 @@
 
 .icon-back:before {
   background-image: url(../images/sprite.png);
-  background-position: -189px -112px;
+  background-position: -95px -112px;
   width: 17px;
   height: 18px;
   left: 0;
@@ -226,14 +226,14 @@
 
 .icon-letter:before {
   background-image: url(../images/sprite.png);
-  background-position: -235px -208px;
+  background-position: 0px -222px;
   width: 18px;
   height: 14px;
   left: 0; }
 
 .icon-comment:before {
   background-image: url(../images/sprite.png);
-  background-position: -95px -112px;
+  background-position: -112px -112px;
   width: 17px;
   height: 17px;
   left: 0;
@@ -241,7 +241,7 @@
 
 .icon-comment-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -112px -112px;
+  background-position: -129px -112px;
   width: 17px;
   height: 17px;
   left: 0;
@@ -283,7 +283,7 @@
   position: relative; }
   .icon-pencil-small:before {
     background-image: url(../images/sprite.png);
-    background-position: -235px -187px;
+    background-position: -200px -88px;
     width: 21px;
     height: 21px; }
 
@@ -319,7 +319,7 @@
   padding-left: 33px; }
   .icon-camera:before {
     background-image: url(../images/sprite.png);
-    background-position: -235px -54px;
+    background-position: -235px -77px;
     width: 23px;
     height: 25px;
     left: 0;
@@ -341,7 +341,7 @@
   position: relative; }
   .icon-photo:before {
     background-image: url(../images/sprite.png);
-    background-position: -200px -88px;
+    background-position: -151px -112px;
     width: 21px;
     height: 18px;
     left: 0;
@@ -352,7 +352,7 @@
   position: relative; }
   .icon-scheme:before {
     background-image: url(../images/sprite.png);
-    background-position: -235px -168px;
+    background-position: -235px -190px;
     width: 24px;
     height: 19px;
     left: 0;
@@ -384,7 +384,7 @@
   position: relative; }
   .icon-starsmall:before, .card_flat .btn-fav:before {
     background-image: url(../images/sprite.png);
-    background-position: -235px -79px;
+    background-position: -235px -54px;
     width: 25px;
     height: 23px;
     left: 0;
@@ -417,6 +417,16 @@
     background-position: -86px -134px;
     width: 40px;
     height: 32px;
+    left: 0;
+    top: 0; }
+
+.icon-ruller {
+  position: relative; }
+  .icon-ruller:before {
+    background-image: url(../images/sprite.png);
+    background-position: -235px -168px;
+    width: 22px;
+    height: 22px;
     left: 0;
     top: 0; }
 
@@ -586,9 +596,9 @@ h2 {
 h3 {
   font-size: 1.6rem; }
 
-.tdn, .neck p a, .breadcrumbs ul li a {
+.tdn, .neck p a, .breadcrumbs ul li a, .calculator-page .main aside .tiles .flexbox a {
   text-decoration: none; }
-  .tdn:hover, .neck p a:hover, .breadcrumbs ul li a:hover {
+  .tdn:hover, .neck p a:hover, .breadcrumbs ul li a:hover, .calculator-page .main aside .tiles .flexbox a:hover {
     text-decoration: underline; }
 
 .tdu, .file-upload span, .modal-menu .menu a, .footer__menu a, .footer .idealpromo a, .pagination .prev,
@@ -600,7 +610,7 @@ h3 {
   .vacancies-page .head p a:hover, .contact__plate .email:hover, .table-flats td .place a:hover, .complex-page .house__body .table td a:hover, .about-page .documents__content a:hover {
     text-decoration: none; }
 
-.before, .icon-catalog:before, .icon-sett:before, .icon-pricelist:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-labelred:before, .icon-house-dark:before, .icon-camera:before, .icon-camerabig:before, .icon-photo:before, .icon-scheme:before, .icon-schemebig:before, .icon-check:before, .icon-starsmall:before, .card_flat .btn-fav:before, .icon-starsmallfill:before, .card_flat .btn-fav-in:before, .icon-pencil-dark:before, .icon-scheme-green:before, .icon-doc:before, .about-page .documents .doclist__item a:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
+.before, .icon-catalog:before, .icon-sett:before, .icon-pricelist:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-labelred:before, .icon-house-dark:before, .icon-camera:before, .icon-camerabig:before, .icon-photo:before, .icon-scheme:before, .icon-schemebig:before, .icon-check:before, .icon-starsmall:before, .card_flat .btn-fav:before, .icon-starsmallfill:before, .card_flat .btn-fav-in:before, .icon-pencil-dark:before, .icon-scheme-green:before, .icon-ruller:before, .icon-doc:before, .about-page .documents .doclist__item a:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
 .fixed-header .wishlist__link:before,
 .fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .callback .call:before,
 .resume .call:before, .modal-menu .menu .title:after,
@@ -653,7 +663,7 @@ input[type="submit"] {
 
 .flex-center, .btn-faq, .btn-review, .modal-menu .close-modal, .feature .news .date .num,
 .topnews .news .date .num, .feature .promo .type-2 .more,
-.feature .promo .type-3 .more, .pagination, .pagination a, .pagination span, .gbi-page .menu .icon, .product__pic, .complex-page .about .carousel .label, .complex-page .houses .house__top .right .diagram .num, .complex-page .house__body .table .num, .popover .diagram, .popover .diagram .num, .circlebig .num {
+.feature .promo .type-3 .more, .pagination, .pagination a, .pagination span, .gbi-page .menu .icon, .product__pic, .complex-page .about .carousel .label, .complex-page .houses .house__top .right .diagram .num, .complex-page .house__body .table .num, .popover .diagram, .popover .diagram .num, .circlebig .num, .calculator-page .main aside .scale .controls .radio + label {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -923,13 +933,13 @@ form .form-control {
     .header .wishlist__link:before,
     .fixed-header .wishlist__link:before {
       background-image: url(../images/sprite.png);
-      background-position: -31px -180px;
+      background-position: -204px -134px;
       width: 31px;
       height: 30px; }
     .header .wishlist__link:after,
     .fixed-header .wishlist__link:after {
       background-image: url(../images/sprite.png);
-      background-position: -204px -134px;
+      background-position: -31px -180px;
       width: 31px;
       height: 30px;
       -webkit-transition: opacity 0.2s ease-out;
@@ -2494,7 +2504,7 @@ body.modal-open {
       -webkit-transition: left 0.2s ease-out;
       transition: left 0.2s ease-out;
       background-image: url(../images/sprite.png);
-      background-position: -124px -61px;
+      background-position: -77px -112px;
       width: 18px;
       height: 20px;
       left: 19px; }
@@ -4706,12 +4716,12 @@ main {
   border: none;
   background-color: transparent;
   background-image: url(../images/sprite.png);
-  background-position: -31px -180px;
+  background-position: -204px -134px;
   width: 31px;
   height: 30px; }
   .btn-fav-in, .btn-fav:hover {
     background-image: url(../images/sprite.png);
-    background-position: -204px -134px;
+    background-position: -31px -180px;
     width: 31px;
     height: 30px; }
 
@@ -6288,18 +6298,103 @@ circle:nth-child(2n) {
   .calculator-page .main .row {
     flex-wrap: nowrap; }
   .calculator-page .main aside {
+    font-size: 1.5rem;
     padding-top: 3rem; }
+    .calculator-page .main aside .box {
+      margin-bottom: 3rem; }
+      .calculator-page .main aside .box .title {
+        line-height: 1.5;
+        font-size: 1.7rem;
+        font-weight: 500; }
+    .calculator-page .main aside .scale .controls {
+      display: flex;
+      margin-top: 1rem; }
+      .calculator-page .main aside .scale .controls .radio + label {
+        height: 40px;
+        margin-right: .5rem;
+        padding-left: 0;
+        width: 40px;
+        font-weight: 500;
+        border-radius: 50%;
+        border: 2px solid #c8d1dc;
+        transition: .3s; }
+        .calculator-page .main aside .scale .controls .radio + label:before, .calculator-page .main aside .scale .controls .radio + label:after {
+          display: none; }
+        .calculator-page .main aside .scale .controls .radio + label:hover {
+          background-color: #c8d1dc; }
+      .calculator-page .main aside .scale .controls .radio:checked + label {
+        color: #fff;
+        border-color: #00874d;
+        background-color: #00874d; }
+    .calculator-page .main aside .tiles {
+      width: 280px; }
+      .calculator-page .main aside .tiles .flexbox {
+        flex-wrap: wrap;
+        font-size: 1.4rem;
+        line-height: 1;
+        justify-content: space-between; }
+        .calculator-page .main aside .tiles .flexbox a {
+          margin-top: 1.8rem;
+          text-align: center;
+          width: 33.3%; }
+          .calculator-page .main aside .tiles .flexbox a:hover, .calculator-page .main aside .tiles .flexbox a.active {
+            color: #00874d;
+            text-decoration: underline; }
+            .calculator-page .main aside .tiles .flexbox a:hover img, .calculator-page .main aside .tiles .flexbox a.active img {
+              filter: grayscale(0) brightness(1); }
+        .calculator-page .main aside .tiles .flexbox .pic {
+          height: 50px;
+          margin-bottom: -5px; }
+        .calculator-page .main aside .tiles .flexbox img {
+          vertical-align: top;
+          filter: grayscale(1) brightness(0); }
+    .calculator-page .main aside .params .title {
+      padding-bottom: 0; }
+    .calculator-page .main aside .params__row {
+      margin-top: 2rem; }
+      .calculator-page .main aside .params__row label {
+        width: 190px;
+        display: inline-block; }
+        .calculator-page .main aside .params__row label .abbr {
+          color: #c20831; }
+      .calculator-page .main aside .params__row .form-control {
+        border: none;
+        width: 6rem;
+        padding-left: .3rem;
+        border-bottom: 2px solid #00874d; }
+    .calculator-page .main aside .cost {
+      font-size: 1.7rem;
+      font-weight: 500; }
+      .calculator-page .main aside .cost #sum {
+        color: #00874d; }
+    .calculator-page .main aside .btn {
+      background-color: #c20831;
+      color: #fff;
+      border: none;
+      font-size: 1.5rem;
+      font-weight: 400;
+      height: 4.5rem;
+      border-radius: 4.5rem;
+      padding-right: 3.5rem;
+      padding-left: 5.2rem;
+      transition: .3s background-color; }
+      .calculator-page .main aside .btn:before {
+        left: 14px;
+        top: 10px; }
+      .calculator-page .main aside .btn:hover {
+        background-color: #00874d; }
   .calculator-page .main .content {
     background-color: #f1f3f5;
     padding: 5rem 0 8.5rem; }
     .calculator-page .main .content .heading {
-      font-size: 3rem; }
+      font-size: 3rem !important; }
     .calculator-page .main .content .scheme {
       padding-left: 6.6rem; }
 
 .calculator-page .example {
-  width: 320px;
-  margin-left: 160px; }
+  margin-left: 160px;
+  margin-right: 25px;
+  width: 320px; }
   .calculator-page .example__pic {
     margin-bottom: 3rem;
     position: relative; }
@@ -6346,7 +6441,7 @@ circle:nth-child(2n) {
       right: -10px; }
 
 .calculator-page .related {
-  margin-top: 8.5rem;
+  margin-top: 5rem;
   padding-left: 6.6rem;
   width: 1280px; }
   .calculator-page .related .carousel {

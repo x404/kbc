@@ -332,6 +332,17 @@
 }
 
 
+.icon-ruller{
+	position: relative;
+	&:before{
+		@extend .before;
+		@include sprite($icon-ruller);
+		left: 0;
+		top: 0;
+	}
+}
+
+
 
 
 .icon-doc{
