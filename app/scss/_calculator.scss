@@ -94,7 +94,7 @@
 
 					.pic{
 						height: 50px;
-						margin-bottom: -5px;
+						margin-bottom: -2px;
 					}
 					img{
 						vertical-align: top;
@@ -167,17 +167,54 @@
 
 			.scheme{
 				padding-left: 6.6rem;
+				flex-grow: 1;
+				font-size: 1.5rem;
+
+				#area{
+					margin-top: 2rem;
+				}
+
+				.params{
+					display: flex;
+					margin: 2.5rem 0 0 3.5rem;
+					.column{
+						margin-right: 7rem;
+						p{
+							margin-bottom: 1rem;
+						}
+					}
+				}
+
+				.download{
+					margin: 2.5rem 0 0 3.5rem;
+					a{
+						@extend .tdu;
+						color: $color8;
+						display: inline-block;
+						font-size: 1.3rem;
+						line-height: 1.5;
+						padding-left: 37px;
+						&:hover{
+							color: $color25;
+						}						
+					}
+
+					a[href$=".pdf"]{
+						background: url(../images/pdf.png) no-repeat left 3px;
+					}
+				}
 			}
 		}
 	}
 	.example{
-		margin-left: 160px;
-		margin-right: 25px;
-		width: 320px;
+		// margin-left: 160px;
+		// margin-right: 25px;
+		width: 280px;
 
 		&__pic{
 			margin-bottom: 3rem;
 			position: relative;
+			width: 260px;
 			a{
 				overflow: hidden;
 				display: block;

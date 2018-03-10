@@ -603,11 +603,11 @@ h3 {
 
 .tdu, .file-upload span, .modal-menu .menu a, .footer__menu a, .footer .idealpromo a, .pagination .prev,
 .pagination .next, .faq-page .head p a,
-.vacancies-page .head p a, .contact__plate .email, .table-flats td .place a, .complex-page .house__body .table td a, .about-page .documents__content a {
+.vacancies-page .head p a, .contact__plate .email, .table-flats td .place a, .complex-page .house__body .table td a, .about-page .documents__content a, .calculator-page .main .content .scheme .download a {
   text-decoration: underline; }
   .tdu:hover, .file-upload span:hover, .modal-menu .menu a:hover, .footer__menu a:hover, .footer .idealpromo a:hover, .pagination .prev:hover,
   .pagination .next:hover, .faq-page .head p a:hover,
-  .vacancies-page .head p a:hover, .contact__plate .email:hover, .table-flats td .place a:hover, .complex-page .house__body .table td a:hover, .about-page .documents__content a:hover {
+  .vacancies-page .head p a:hover, .contact__plate .email:hover, .table-flats td .place a:hover, .complex-page .house__body .table td a:hover, .about-page .documents__content a:hover, .calculator-page .main .content .scheme .download a:hover {
     text-decoration: none; }
 
 .before, .icon-catalog:before, .icon-sett:before, .icon-pricelist:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-labelred:before, .icon-house-dark:before, .icon-camera:before, .icon-camerabig:before, .icon-photo:before, .icon-scheme:before, .icon-schemebig:before, .icon-check:before, .icon-starsmall:before, .card_flat .btn-fav:before, .icon-starsmallfill:before, .card_flat .btn-fav-in:before, .icon-pencil-dark:before, .icon-scheme-green:before, .icon-ruller:before, .icon-doc:before, .about-page .documents .doclist__item a:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
@@ -6344,7 +6344,7 @@ circle:nth-child(2n) {
               filter: grayscale(0) brightness(1); }
         .calculator-page .main aside .tiles .flexbox .pic {
           height: 50px;
-          margin-bottom: -5px; }
+          margin-bottom: -2px; }
         .calculator-page .main aside .tiles .flexbox img {
           vertical-align: top;
           filter: grayscale(1) brightness(0); }
@@ -6389,15 +6389,37 @@ circle:nth-child(2n) {
     .calculator-page .main .content .heading {
       font-size: 3rem !important; }
     .calculator-page .main .content .scheme {
-      padding-left: 6.6rem; }
+      padding-left: 6.6rem;
+      flex-grow: 1;
+      font-size: 1.5rem; }
+      .calculator-page .main .content .scheme #area {
+        margin-top: 2rem; }
+      .calculator-page .main .content .scheme .params {
+        display: flex;
+        margin: 2.5rem 0 0 3.5rem; }
+        .calculator-page .main .content .scheme .params .column {
+          margin-right: 7rem; }
+          .calculator-page .main .content .scheme .params .column p {
+            margin-bottom: 1rem; }
+      .calculator-page .main .content .scheme .download {
+        margin: 2.5rem 0 0 3.5rem; }
+        .calculator-page .main .content .scheme .download a {
+          color: #00874d;
+          display: inline-block;
+          font-size: 1.3rem;
+          line-height: 1.5;
+          padding-left: 37px; }
+          .calculator-page .main .content .scheme .download a:hover {
+            color: #e20c3c; }
+        .calculator-page .main .content .scheme .download a[href$=".pdf"] {
+          background: url(../images/pdf.png) no-repeat left 3px; }
 
 .calculator-page .example {
-  margin-left: 160px;
-  margin-right: 25px;
-  width: 320px; }
+  width: 280px; }
   .calculator-page .example__pic {
     margin-bottom: 3rem;
-    position: relative; }
+    position: relative;
+    width: 260px; }
     .calculator-page .example__pic a {
       overflow: hidden;
       display: block;
