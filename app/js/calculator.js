@@ -3,18 +3,31 @@
 
 var calcapp = new Vue({
 	el: "#calcapp",
-	data: {
-		price : document.querySelector('#costflat').value,
-		nal : document.querySelector('#first-payment').value,
-		procent : document.querySelector('[name="radio"]:checked').value
+	data () {
+		return {
+			// price : document.querySelector('#costflat').value,
+			// nal : document.querySelector('#first-payment').value,
+			price: 3650000,
+			nal: 365000,
+			procent : document.querySelector('[name="radio"]:checked').value,
+			money: {
+				decimal: ',',
+				thousands: ' ',
+				prefix: '',
+				suffix: ' Р',
+				precision: 0,
+				masked: false
+			}
+		}
 	},
+
 	computed: {
 		payment: function(){
 			price = this.price;
 			nal = this.nal;
 			procent = this.procent;
-			console.log (price);
-			console.log (nal);
+			// console.log (price);
+			// console.log (nal);
 			// console.log (procent);
 
 			if (nal<price*0.1) {

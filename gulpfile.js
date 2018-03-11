@@ -48,6 +48,7 @@ gulp.task('js-libs', function(){
 	var nouislider = gulp.src(config.libsDir + '/nouislider/distribute/nouislider.min.js').pipe(gulp.dest(config.templateDir + '/js/'));
 	var slick = gulp.src(config.libsDir + '/slick-carousel/slick/slick.min.js').pipe(gulp.dest(config.templateDir + '/js/'));
 	var vue = gulp.src(config.libsDir + '/vue/dist/vue.min.js').pipe(gulp.dest(config.templateDir + '/js/'));
+	var vueuislider = gulp.src(config.libsDir + '/vue-nouislider/src/nouislider.vue.js').pipe(gulp.dest(config.templateDir + '/js/'));
 });
 
 
