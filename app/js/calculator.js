@@ -32,7 +32,7 @@ var calcapp = new Vue({
 
 			if (nal<price*0.1) {
 				console.log ('Первоначальный взнос должен быть не менее 10% от стоимости квартиры. Нажмите F5 или обновите окно в браузере');
-				output = '-'
+				output = ''
 			} 
 			if(nal>=price*0.3 && procent=='3'){
 				console.log('Сумма ежемесячного платежа составит: ' + Math.round(getPay()+getPlata()) + ' рублей.' + ' Из них сумма членского взноса (%): ' + Math.round(getPlata()));// 3года 5%
@@ -46,7 +46,7 @@ var calcapp = new Vue({
 
 			if(nal<price*0.3 && procent=='5'){
 				console.log('При первоначальном взносе менее 30% рассрочка предоставляется только на 3-и года! Повторите расчет закрыв это окно и обновив страницу');
-				output = '-';
+				output = '';
 			}
 
 			if(nal>=price*0.3 && procent=='5'){
@@ -56,7 +56,7 @@ var calcapp = new Vue({
 
 			else if(procent!='3' && procent!='5'){
 				console.log('Вы ввели неверное количество лет, нужно ввести 3 или 5 - попробуйте снова')
-				output = '-';
+				output = '';
 			} 
 
 			return output;
