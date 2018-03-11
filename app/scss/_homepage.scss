@@ -273,6 +273,7 @@
 
 	// =carousel
 	.promo{
+		height: 562px;
 		position: relative;
 		.description{
 			display: flex;
@@ -367,7 +368,9 @@
 	.news,
 	.about{
 		&__cell{
-			flex-basis: 50%;
+			// flex-basis: 50%;
+			width: 320px;
+			// flex-shrink: 0;
 		}
 	}
 
@@ -469,7 +472,8 @@
 		// display: flex;
 		&__cell{
 			display: flex;
-			flex-basis: 50%;
+			// flex-basis: 50%;
+			// flex-basis: 320px;
 			img{
 				display: block;
 				height: 100%;

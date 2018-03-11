@@ -6,12 +6,15 @@
 	.content{
 		width: 100%;
 	}
-	.neck .head{
-		padding: 3.5rem 0 1.6rem;
-		p{
-			margin-top: 1rem;
+	.neck{
+		z-index: 32;
+		.head{
+			padding: 3.5rem 0 1.6rem;
+			p{
+				margin-top: 1rem;
+			}
 		}
-	}
+	} 
 }
 
 

@@ -435,6 +435,9 @@ form{
 /* =header
 ---------------------------*/
 .header{
+	background: $color2;
+	// position: relative;
+	// z-index: 2;
 	.flexbox{
 		height: 10rem;
 	}

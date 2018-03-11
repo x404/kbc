@@ -201,6 +201,11 @@
 	}
 	.form-control{
 	}
+
+	.select-wrapper{
+		position: relative;
+		z-index: 100;
+	}
 	.selectize-input > input{
 		color: $color2;
 		@include placeholder(#fff);

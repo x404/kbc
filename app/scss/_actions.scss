@@ -23,6 +23,11 @@
 .action{
 	&__item{
 		margin: 3rem 0;
+		&:hover{
+			.action__item_pic img{
+				transform: scale(1.15);
+			}
+		}
 	}
 
 	&__wrapper{

@@ -135,6 +135,7 @@
 		margin-right: 20px;
 		width: 384px;
 		img{
+			@extend .loader;
 			display: flex;
 			margin-left: auto;
 			margin-right: auto;
@@ -184,15 +185,16 @@
 
 .product{
 	&__item{
+		@include transition-param(box-shadow);
 		background-color: $color2;
 		margin-bottom: 2.3rem;
 		margin-right: 2.4rem;
 		padding: 20px;
 		position: relative;
 		width: 282px;
-		@include transition-param(box-shadow);
 		img{
 			@include transition-param(transform);
+			@extend .loader;
 		}
 		&:after{
 			@extend .before;
@@ -224,11 +226,11 @@
 	}
 
 	&__pic{
-		overflow: hidden;
-		width: 240px;
-		height: 170px;
 		@extend .flex-center;
+		height: 170px;
+		overflow: hidden;
 		position: relative;
+		width: 240px;
 		&.no-pic{
 			@include gradient-vertical(#e2e2e2, #e2e2e2);
 			&:before{

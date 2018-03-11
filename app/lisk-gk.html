@@ -1257,7 +1257,7 @@ function init(){
 				e.get('target').options.set('iconImageHref', '/images/balloon.png');
 			});
 
-		// myMap.behaviors.disable('scrollZoom'); 
+		myMap.behaviors.disable('scrollZoom'); 
 		myMap.events.add('click', function onMapClick(e) {
 			if(myMap.behaviors.isEnabled('scrollZoom')) {
 				myMap.events.remove('click', onMapClick);

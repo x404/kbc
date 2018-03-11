@@ -631,6 +631,9 @@
 	.list_construction{
 		background-color: $color28;
 		padding: 7.5rem 0 8.8rem;
+		.container{
+			padding: 0;
+		}
 		.place{
 			&__item{
 				background: $color2;
@@ -700,6 +703,10 @@
 				@extend .flex-cv;
 				flex-grow: 1;
 			}
+
+			.right{
+				margin-right: 3rem;
+			}
 		}
 
 		.translation{
@@ -716,6 +723,8 @@
 		}
 		.tab-content{
 			margin-top: 2.7rem;
+			// padding-left: 15px;
+			// padding-right: 15px;
 			.owl-carousel{
 				margin-top: 2.7rem;
 			}
