@@ -991,7 +991,7 @@
 <!-- =calculator gnk -->
 <div class="modal fade" id="calc-gnk" tabindex="-1" role="dialog" aria-labelledby="calc-gnkLabel">
 	<div class="modal-dialog" role="document">
-		<div class="modal-content">
+		<div class="modal-content" id="calcapp">
 			<div class="modal-title" id="calc-gnkLabel">Калькулятор ЖНК</div>
 			<div class="modal-body">
 				<form action="#" method="post" id="calc-gnk-form">
@@ -999,7 +999,7 @@
 						<div class="row">
 							<p class="title">Стоимость квартиры</p>
 							<div class="flexbox">
-								<input type="text" class="form-control" name="costflat" value="3 650 000" id="costflat" />
+								<input type="text" class="form-control" name="costflat" v-model="price" v-bind="money" value="3650000" id="costflat" />
 								<div class="slider">
 									<div id="slider-costflat"></div>
 									<p class="slider_start">0</p>
@@ -1010,17 +1010,17 @@
 						<div class="row">
 							<p class="title">Срок кредита</p>
 							<div class="flexbox">
-								<input type="radio" class="radio" id="radio1" name="radio" value="5" checked="checked" />
+								<input type="radio" class="radio" id="radio1" name="radio" v-model="procent" value="3" checked="checked" />
 								<label for="radio1">3 года (под 5% годовых)</label>
 
-								<input type="radio" class="radio" id="radio2" name="radio" value="8" />
+								<input type="radio" class="radio" id="radio2" name="radio" v-model="procent" value="5" />
 								<label for="radio2">5 лет (под 8% годовых)</label>
 							</div>
 						</div>
 						<div class="row">
 							<p class="title">Первоначальный взнос</p>
 							<div class="flexbox">
-								<input type="text" class="form-control" name="first-payment" value="3 650 000" id="first-payment" />
+								<input type="text" class="form-control" name="first-payment" v-model.number="nal" value="365000" id="first-payment" />
 								<div class="slider">
 									<div id="slider-firstpayment"></div>
 									<p class="slider_start">0</p>
@@ -1035,7 +1035,8 @@
 				<div class="calc-bottom flexbox">
 					<div class="left">
 						<p>Ежемесячный платеж</p>
-						<p class="cifr">24 460 Р/Мес</p>
+						<p class="cifr">{{payment | currency(' Р/Мес', 0, { thousandsSeparator: ' ', symbolOnLeft: false })}}</p>
+						
 					</div>
 					<div class="right">
 						<button type="button" class="btn btn-red">Получить консультацию</button>
@@ -1113,6 +1114,11 @@
 <script src="/js/engine.js"></script>
 
 <!-- InstanceBeginEditable name="EditRegion4" -->
+<script src="js/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue2-filters/dist/vue2-filters.min.js"></script>
+<script src="/js/v-money.js"></script>
+
+<script src="/js/calculator.js"></script>
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>

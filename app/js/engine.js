@@ -349,6 +349,8 @@ $(document).ready(function(){
 		showMaskOnHover : false
 	});
 
+	 // $('[data-inputmask]').inputmask();
+
 	// #mask
 
 });
