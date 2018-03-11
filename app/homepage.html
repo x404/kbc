@@ -1455,10 +1455,13 @@ function init(){
 		});
 
 
-		// создаем метку и прописываем ее свойства 
-		myCollection.add(new ymaps.Placemark(
-			[56.034195, 92.796605],
-			{
+	myPlacemark = new Array();
+
+	// создаем массив меток и прописываем им свойства 
+	obj = [
+		{
+			coord: [56.036195, 92.946605],
+			properties :{
 				balloonHeader: 'ЖК Стасовой',
 				balloonPic: '/tmp/gk.jpg',
 				balloonTitle: 'Дом 1.1',
@@ -1467,13 +1470,12 @@ function init(){
 				diagram: '/images/circle-60.png',
 				scheme: '/tmp/scheme.png',
 				link: 'http://google.com',
-				titleLink: 'Смотреть 523 квартиры',
+				titleLink: 'Смотреть 523 квартиры'
 			}
-		));
-
-		myCollection.add(new ymaps.Placemark(
-			[56.034295, 92.798605],
-			{
+		},
+		{
+			coord: [56.034795, 92.798605],
+			properties: {
 				balloonHeader: 'ЖК Курчатова',
 				balloonPic: '/tmp/gk.jpg',
 				balloonTitle: 'Дом 2.1',
@@ -1482,13 +1484,12 @@ function init(){
 				diagram: '/images/circle-60.png',
 				scheme: '/tmp/scheme.png',
 				link: 'http://google.com',
-				titleLink: 'Смотреть 200 квартир',
+				titleLink: 'Смотреть 200 квартир'
 			}
-		));
-
-		myCollection.add(new ymaps.Placemark(
-			[56.014295, 92.898605],
-			{
+		},
+		{
+			coord: [56.014295, 92.898605],
+			properties: {
 				balloonHeader: 'ЖК Курчатова',
 				balloonPic: '/tmp/gk.jpg',
 				balloonTitle: 'Дом 2.1',
@@ -1497,13 +1498,12 @@ function init(){
 				diagram: '/images/circle-60.png',
 				scheme: '/tmp/scheme.png',
 				link: 'http://google.com',
-				titleLink: 'Смотреть 200 квартир',
+				titleLink: 'Смотреть 200 квартир'
 			}
-		));
-
-		myCollection.add(new ymaps.Placemark(
-			[56.004295, 92.998605],
-			{
+		},
+		{
+			coord: [56.004295, 92.998605],
+			properties: {
 				balloonHeader: 'ЖК Курчатова',
 				balloonPic: '/tmp/gk.jpg',
 				balloonTitle: 'Дом 2.1',
@@ -1512,9 +1512,17 @@ function init(){
 				diagram: '/images/circle-60.png',
 				scheme: '/tmp/scheme.png',
 				link: 'http://google.com',
-				titleLink: 'Смотреть 200 квартир',
+				titleLink: 'Смотреть 200 квартир'
 			}
-		));
+		}
+	];
+
+	for (var i = 0; i < obj.length; i++) {
+		myPlacemark[i] = new ymaps.Placemark(obj[i].coord, obj[i].properties);
+		myCollection.add(myPlacemark[i])
+	}
+
+
 		// добавляем коллекцию в геообъект
 		myMap.geoObjects.add(myCollection);
 
