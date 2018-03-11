@@ -596,6 +596,14 @@ function doRate(el, num){
 
 
 
+$(document).on('click', '.contact__plate .btn', function(e){
+	e.preventDefault();
+	$('html,body').animate({
+		scrollTop: $('#map').offset().top-200
+	}, 1000);	
+})
+
+
 
 $(document).on('click', '[data-targetscroll], .subnav a', function(e){
 	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

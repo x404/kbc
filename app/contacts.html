@@ -159,7 +159,7 @@
 							<div class="contact__plate">
 								<p class="contact__title">Головной офис</p>
 								<p class="contact__address">660019, г. Красноярск, ул. Мусоргского, 18. </p>
-								<button type="button" class="btn btn-red icon-label">Показать на карте</button>
+								<button type="button" class="btn btn-red icon-label" data-id="1">Показать на карте</button>
 								
 								<p>Приемная <b>+7 (391) 201-60-40</b></p>
 								<p>Инвестиционный отдел <b> +7 (391) 217-9-217</b></p>
@@ -170,7 +170,7 @@
 							<div class="contact__plate">
 								<p class="contact__title">Офис продаж «Центр»</p>
 								<p class="contact__address">г. Красноярск, ул. Ады Лебедевой, 18.</p>
-								<button type="button" class="btn btn-red icon-label">Показать на карте</button>
+								<button type="button" class="btn btn-red icon-label" data-id="2">Показать на карте</button>
 								
 								<p>Приемная <b>++7 (391) 217-9-217 </b></p>
 								<p><a href="mailto:firmakbs@mail.ru" class="email">firmakbs@mail.ru</a></p>
@@ -179,7 +179,7 @@
 							<div class="contact__plate">
 								<p class="contact__title">Офис продаж «Октябрьский»</p>
 								<p class="contact__address">г. Красноярск, ул. Академика Киренского, 71.</p>
-								<button type="button" class="btn btn-red icon-label">Показать на карте</button>
+								<button type="button" class="btn btn-red icon-label" data-id="3">Показать на карте</button>
 								
 								<p>Приемная <b>++7 (391) 217-9-217 </b></p>
 								<p><a href="mailto:firmakbs@mail.ru" class="email">firmakbs@mail.ru</a></p>
@@ -759,32 +759,46 @@ function init(){
 			iconImageHref: '/images/balloon.png',
 			iconImageSize: [51, 61],
 			iconImageOffset: [-25, -61],
-			hideIconOnBalloonOpen: false
+			hideIconOnBalloonOpen: true
 		});
 
-		// создаем метки и прописываем ее свойства 
-		myCollection.add(new ymaps.Placemark(
-			[55.980180, 92.914331],
-			{
-				hintContent: 'Головной офис (660019, г. Красноярск, ул. Мусоргского, 18)'
-			}
-		));
+	myPlacemark = new Array();
 
-		myCollection.add(new ymaps.Placemark(
-			[56.016768, 92.875012],
-			{
-				hintContent: 'Офис продаж «Центр» (г. Красноярск, ул. Ады Лебедевой, 18)'
-			}
-		));
+	obj = [{
+		coord: [55.980180, 92.914331],
+		properties :{
+			id: 1,
+			hintContent: 'Головной офис (660019, г. Красноярск, ул. Мусоргского, 18)',
+			balloonContent: 'Контент балуна1'
+		}
+	},
+	{
+		coord: [56.016768, 92.875012],
+		properties: {
+			id: 2,
+			hintContent: 'Офис продаж «Центр» (г. Красноярск, ул. Ады Лебедевой, 18)',
+			balloonContent: 'Контент балуна2'
+		}
+	},
+	{
+		coord: [56.013663, 92.800407],
+		properties: {
+			id: 3,
+			hintContent: 'Офис продаж «Октябрьский» (г. Красноярск, ул. Академика Киренского, 71)',
+			balloonContent: 'Контент балуна3'
+		}
+	}
+];
 
-		myCollection.add(new ymaps.Placemark(
-			[56.013663, 92.800407],
-			{
-				hintContent: 'Офис продаж «Октябрьский» (г. Красноярск, ул. Академика Киренского, 71)'
-			}
-		));
+
+	for (var i = 0; i < obj.length; i++) {
+		myPlacemark[i] = new ymaps.Placemark(obj[i].coord, obj[i].properties);
+		myCollection.add(myPlacemark[i])
+	}
+
 		// добавляем коллекцию в геообъект
 		myMap.geoObjects.add(myCollection);
+
 
 		myCollection.events
 			.add('mouseenter', function (e) {
@@ -803,8 +817,28 @@ function init(){
 			}
 		});
 	})
-}
+};
+
+
+
+$(document).ready(function(){
+	$('body').on('click','[data-id]', function(e) {
+		e.preventDefault();
+		let id = $(this).data('id');
+
+		for (var i = 0; i < obj.length; i++) {
+			if (obj[i].properties.id == id) {
+				break;
+			}
+		};
+
+		myPlacemark[i].balloon.open()
+	});
+});
+
 </script>
+
+
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
