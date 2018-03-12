@@ -6371,7 +6371,9 @@ circle:nth-child(2n) {
               filter: grayscale(0) brightness(1); }
         .calculator-page .main aside .tiles .flexbox .pic {
           height: 50px;
-          margin-bottom: -2px; }
+          margin-bottom: -2px;
+          position: relative;
+          z-index: -1; }
         .calculator-page .main aside .tiles .flexbox img {
           vertical-align: top;
           filter: grayscale(1) brightness(0); }

@@ -95,6 +95,8 @@
 					.pic{
 						height: 50px;
 						margin-bottom: -2px;
+						position: relative;
+						z-index: -1;
 					}
 					img{
 						vertical-align: top;
