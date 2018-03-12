@@ -633,7 +633,7 @@ h3 {
 .related .carousel .owl-carousel .owl-next:after, .objects__info:before, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .big-icon:before, .neck .tabs .tab.active:after, .pagination .prev:before,
 .pagination .next:before, .picking__link span:before, .sortbox__option-up:after, .sortbox__option-down:after, main ul li:before, .faq-page .head .btn:before,
-.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, .complex-page .complex__left:before, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a:before, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .example__pic a:after, .calculator-page .example__pic a:before, .calculator-page .example__pic:after, .calculator-page .example__pic:before, .calculator-page .related__item:after {
+.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, .complex-page .complex__left:before, .complex-page .complex__panel .video .bg:before, .complex-page .complex__panel .video .bg:after, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a span:after, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .example__pic a:after, .calculator-page .example__pic a:before, .calculator-page .example__pic:after, .calculator-page .example__pic:before, .calculator-page .related__item:after {
   content: "";
   display: block;
   position: absolute; }
@@ -5260,19 +5260,24 @@ main {
     font-size: 1.8rem;
     position: relative;
     width: 320px; }
+    .complex-page .complex__panel .video .bg:before, .complex-page .complex__panel .video .bg:after {
+      -webkit-transition: opacity 0.2s ease-out;
+      transition: opacity 0.2s ease-out;
+      background: url(../images/play.png) no-repeat left top;
+      height: 80px;
+      left: 50%;
+      margin-left: -36px;
+      margin-top: -54px;
+      top: 50%;
+      width: 80px;
+      z-index: 2; }
+    .complex-page .complex__panel .video .bg:after {
+      background-position: left bottom;
+      opacity: 0; }
     .complex-page .complex__panel .video a {
       display: block;
       color: #fff;
       text-decoration: none; }
-      .complex-page .complex__panel .video a:before {
-        background: url(../images/play.png) no-repeat center;
-        height: 80px;
-        left: 50%;
-        margin-left: -36px;
-        margin-top: -54px;
-        top: 50%;
-        width: 80px;
-        z-index: 2; }
       .complex-page .complex__panel .video a:after {
         background: rgba(0, 0, 0, 0.5);
         bottom: 0;
@@ -5286,6 +5291,12 @@ main {
         text-align: center;
         width: 100%;
         z-index: 2; }
+      .complex-page .complex__panel .video a:hover:before {
+        background-position: left bottom; }
+      .complex-page .complex__panel .video a:hover .bg:before {
+        opacity: 0; }
+      .complex-page .complex__panel .video a:hover .bg:after {
+        opacity: 1; }
     .complex-page .complex__panel .video img {
       display: block;
       height: auto;

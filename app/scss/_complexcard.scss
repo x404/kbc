@@ -64,17 +64,13 @@
 				font-size: 1.8rem;
 				position: relative;
 				width: 320px;
-				a{
-					display: block;
-					color: $color2;
-					text-decoration: none;
-					&:after,
-					&:before{
-						@extend .before;
-					}
 
-					&:before{
-						background: url(../images/play.png) no-repeat center;
+				.bg{
+					&:before,
+					&:after{
+						@extend .before;
+						@include transition-param;
+						background: url(../images/play.png) no-repeat left top;
 						height: 80px;
 						left: 50%;
 						margin-left: -36px;
@@ -82,6 +78,21 @@
 						top: 50%;
 						width: 80px;
 						z-index: 2;
+					}
+
+					&:after{
+						background-position: left bottom;
+						opacity: 0;
+					}
+				}
+
+
+				a{
+					display: block;
+					color: $color2;
+					text-decoration: none;
+					&:after{
+						@extend .before;
 					}
 					&:after{
 						background: rgba(0,0,0,.5);
@@ -97,6 +108,25 @@
 						text-align: center;
 						width: 100%;
 						z-index: 2;
+						&:after{
+							@extend .before;
+
+						}
+					}
+
+					&:hover{
+						&:before{
+							background-position: left bottom;
+						}
+
+						.bg{
+							&:before{
+								opacity: 0;
+							}
+							&:after{
+								opacity: 1;
+							}
+						}
 					}
 				}
 
