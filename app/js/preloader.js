@@ -4,7 +4,7 @@ $(document).ready(function() {
 		percent = 100 / imagesCount,
 		progress  = 0, 
 		loadedImg = 0,
-		i = 0;
+		o = 0;
 
 		console.log (imagesCount);
 
@@ -17,21 +17,20 @@ $(document).ready(function() {
 			img_copy.onload = img_load;
 			img_copy.onerror = img_load;
 		}
+
 		function img_load () {
 			progress += percent;
-
-			(i <= 1) ? i = 1.5 * Math.ceil(progress)/100 : i =1 ;
-			document.querySelector('.body').style.opacity = i;
+			(o <= 1) ? o = 1.5 * Math.ceil(progress)/100 : o = 1 ;
+			document.querySelector('.body').style.opacity = o;
 
 			loadedImg++;
-			console.log(loadedImg);
-			NProgress.set(Math.ceil(progress)/100); 
-			if (progress >= 100 || loadedImg == imagesCount) {
-				NProgress.done();
-			}
+			// console.log(Math.ceil(progress)/120);
+			NProgress.set(Math.ceil(progress)/120); 
+			// if (progress >= 100 || loadedImg == imagesCount) {				
+			// }
 		}
 	}
 	else{
-		NProgress.done();
+		// NProgress.done();
 	}
 });

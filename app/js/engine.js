@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
 	$.fn.ForceNumericOnly =
 	function(){
 		return this.each(function()	{
@@ -639,7 +638,7 @@ $(document).on('click', '[data-targetscroll], .subnav a', function(e){
 			return false;
 		}
 	}
-})
+});
 
 
 
@@ -647,3 +646,8 @@ $(document).on('click', '[data-targetscroll], .subnav a', function(e){
 	// $('.mainmenu a[href*=\\#]:not([href=\\#]), .graduate_info_box-experts a, .neck_card .graduate_info_box-users .title a').click(function() {
 
 	// });	
+
+
+$(window).on('load', function(){
+	NProgress.set(1);
+});
