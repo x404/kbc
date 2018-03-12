@@ -29,6 +29,7 @@
     "pump": "^1.0.2"
   },
   "dependencies": {
+    "nprogress": "^0.2.0",
     "vue-nouislider": "^1.0.1"
   }
 }

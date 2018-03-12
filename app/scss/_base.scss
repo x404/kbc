@@ -38,6 +38,7 @@ body{
 	@include flexbox;
 	flex-flow: column;
 	height: 100vh;	
+	opacity: 0;
 	// position: relative;
 }
 
@@ -436,8 +437,6 @@ form{
 ---------------------------*/
 .header{
 	background: $color2;
-	// position: relative;
-	// z-index: 2;
 	.flexbox{
 		height: 10rem;
 	}
@@ -457,10 +456,10 @@ form{
 	}
 	.wishlist{
 		display: flex;
+		justify-content: center;
 		margin-left: 2.2rem;
 		padding-top: 1rem;
 		width: 65px;
-		justify-content: center;
 		i{
 			font-style: normal;
 			@include transition-param(color);
