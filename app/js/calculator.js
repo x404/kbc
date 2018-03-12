@@ -1,6 +1,3 @@
-// import money from 'v-money';
-
-
 var calcapp = new Vue({
 	el: "#calcapp",
 	data () {
