@@ -15,7 +15,7 @@ Vue.component('slider', {
         }
     },
     mounted: function () {
-    	console.log(this.sliderValue);
+    	// console.log(this.sliderValue);
         var slider = document.getElementById(this.sliderId);
         noUiSlider.create(slider, {
             start: this.sliderValue,
