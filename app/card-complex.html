@@ -1937,7 +1937,7 @@
 <!-- =calculator gnk -->
 <div class="modal fade" id="calc-gnk" tabindex="-1" role="dialog" aria-labelledby="calc-gnkLabel">
 	<div class="modal-dialog" role="document">
-		<div class="modal-content">
+		<div class="modal-content" id="calcapp">
 			<div class="modal-title" id="calc-gnkLabel">Калькулятор ЖНК</div>
 			<div class="modal-body">
 				<form action="#" method="post" id="calc-gnk-form">
@@ -1945,9 +1945,9 @@
 						<div class="row">
 							<p class="title">Стоимость квартиры</p>
 							<div class="flexbox">
-								<input type="text" class="form-control" name="costflat" value="3 650 000" id="costflat" />
+								<money v-model="price" v-bind="money" name="costflat" class="form-control" id="costflat" ></money>
 								<div class="slider">
-									<div id="slider-costflat"></div>
+									<slider :slider-value="[ 1500000, 18000000 ]" :slider-min="500000" :slider-max="25000000" :slider-step="1000"></slider>
 									<p class="slider_start">0</p>
 									<p class="slider_end">25 000 000 Р</p>
 								</div>
@@ -1956,19 +1956,22 @@
 						<div class="row">
 							<p class="title">Срок кредита</p>
 							<div class="flexbox">
-								<input type="radio" class="radio" id="radio1" name="radio" value="5" checked="checked" />
+								<input type="radio" class="radio" id="radio1" name="radio" v-model="procent" value="3" checked="checked" />
 								<label for="radio1">3 года (под 5% годовых)</label>
 
-								<input type="radio" class="radio" id="radio2" name="radio" value="8" />
+								<input type="radio" class="radio" id="radio2" name="radio" v-model="procent" value="5" />
 								<label for="radio2">5 лет (под 8% годовых)</label>
 							</div>
 						</div>
 						<div class="row">
 							<p class="title">Первоначальный взнос</p>
 							<div class="flexbox">
-								<input type="text" class="form-control" name="first-payment" value="3 650 000" id="first-payment" />
+								<!-- <input type="text" class="form-control" name="first-payment" v-model.number="nal" value="365000" id="first-payment" /> -->
+								<money v-model="nal" v-bind="money" name="first-payment" class="form-control" id="first-payment" ></money>
+
 								<div class="slider">
-									<div id="slider-firstpayment"></div>
+									<slider :slider-value="[ 1500000, 18000000 ]" :slider-min="500000" :slider-max="25000000" :slider-step="1000"></slider>
+									<!-- <div id="slider-firstpayment"></div> -->
 									<p class="slider_start">0</p>
 									<p class="slider_end">25 000 000 Р</p>
 								</div>
@@ -1978,10 +1981,10 @@
 				</form>
 			</div>
 			<div class="modal-footer">
-				<div class="flexbox">
+				<div class="calc-bottom flexbox">
 					<div class="left">
 						<p>Ежемесячный платеж</p>
-						<p class="cifr">24 460 Р/Мес</p>
+						<p class="cifr">{{payment | currency(' Р/Мес', 0, { thousandsSeparator: ' ', symbolOnLeft: false })}}</p>
 					</div>
 					<div class="right">
 						<button type="button" class="btn btn-red">Получить консультацию</button>
@@ -1996,42 +1999,6 @@
 			</button>
 		</div>
 	</div>
-		<script>
-
-			var handlesSlider1 = document.getElementById('slider-costflat');
-				// costfrom = document.getElementById('cost-from'),
-				// costto = document.getElementById('cost-to');
-
-
-			var handlesSlider2 = document.getElementById('slider-firstpayment');
-				// areafrom = document.getElementById('area-from'),
-				// areato = document.getElementById('area-to');
-
-
-			// цена - квартиры
-			noUiSlider.create(handlesSlider1, {
-				start: [ 1500000, 18000000 ],
-				connect: true,
-				range: {
-					'min': 500000,
-					'max': 25000000
-				}
-			});
-
-
-
-
-			// площадь - квартиры
-			noUiSlider.create(handlesSlider2, {
-				start: [ 1500000, 20000000 ],
-				connect: true,
-				range: {
-					'min': 500000,
-					'max': 25000000
-				}
-			});
-
-		</script>
 </div>
 <!-- =/calculator gnk -->
 
@@ -2065,6 +2032,12 @@
 <script src="/js/jquery.fancybox.min.js"></script>
 <link rel="stylesheet" property="stylesheet" href="css/jquery.fancybox.min.css">
 <script type="text/javascript" src="/js/slick.min.js"></script>
+
+<script src="js/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue2-filters/dist/vue2-filters.min.js"></script>
+<script src="/js/v-money.js"></script>
+<script src="/js/nouislider.vue.js"></script>
+<script src="/js/calculator.js"></script>
 
 <script src="http://api-maps.yandex.ru/2.1.60/?lang=ru_RU"></script>
 <script src="/js/map-objects.js"></script>
@@ -2104,6 +2077,8 @@ $('#grouphouse').slick({
 });
 
 </script>
+
+
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
