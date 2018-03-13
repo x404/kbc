@@ -891,6 +891,26 @@ form .form-control {
     position: relative;
     z-index: 2; }
 
+.fade-1 {
+  opacity: 0;
+  transition: 1.5s opacity; }
+
+.fade-2 {
+  opacity: 0;
+  transition: 1.5s opacity; }
+
+.fade-3 {
+  opacity: 0;
+  transition: 1.5s opacity; }
+
+.fade-4 {
+  opacity: 0;
+  transition: 1.5s opacity; }
+
+.fade-5 {
+  opacity: 0;
+  transition: 1.5s opacity; }
+
 /* =header
 ---------------------------*/
 .header {

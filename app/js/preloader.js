@@ -24,6 +24,12 @@ $(document).ready(function() {
 			document.querySelector('.body').style.opacity = o;
 
 			loadedImg++;
+
+			(progress > 30) ? document.querySelector('.fade-1').style.opacity = 1 : '';
+			(progress > 50) ? document.querySelector('.fade-2').style.opacity = 1 : '';
+			(progress > 60) ? document.querySelector('.fade-3').style.opacity = 1 : '';
+			(progress > 75) ? document.querySelector('.fade-4').style.opacity = 1 : '';
+			(progress > 90) ? document.querySelector('.fade-5').style.opacity = 1 : '';
 			// console.log(Math.ceil(progress)/120);
 			NProgress.set(Math.ceil(progress)/120); 
 			// if (progress >= 100 || loadedImg == imagesCount) {				

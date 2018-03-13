@@ -433,6 +433,13 @@ form{
 }
 
 
+@for $i from 1 to 6 {
+	.fade-#{$i}{
+		opacity: 0;
+		transition: 1.5s opacity;
+	}
+}	
+
 /* =header
 ---------------------------*/
 .header{

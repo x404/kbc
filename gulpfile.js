@@ -73,7 +73,6 @@ gulp.task('compress', function(){
 				config.templateDir + '/js/tab.js',
 				config.templateDir + '/js/scrollspy.js',
 				config.templateDir + '/js/modal.js'
-				// config.templateDir + '/js/nanobar.min.js'
 			]),
 			concat('libs.min.js'), // Собираем их в кучу в новом файле libs.min.js
 			uglify(), // Сжимаем JS файл
@@ -236,7 +235,8 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 		config.templateDir + '/css/nouislider.css',
 		config.templateDir + '/css/perfect-scrollbar.css',
 		config.templateDir + '/css/jquery.fancybox.min.css',
-		config.templateDir + '/css/owl.carousel.css'
+		config.templateDir + '/css/owl.carousel.css',
+		config.templateDir + '/css/nprogress.css'
 	])
 	.pipe(gulp.dest(config.destDir + '/css'));
 
