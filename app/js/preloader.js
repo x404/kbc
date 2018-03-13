@@ -5,7 +5,6 @@ $(document).ready(function() {
 		progress  = 0, 
 		loadedImg = 0,
 		o = 0;
-
 		console.log (imagesCount);
 
 	if(imagesCount > 0){
@@ -25,12 +24,11 @@ $(document).ready(function() {
 
 			loadedImg++;
 
-			(progress > 30) ? document.querySelector('.fade-1').style.opacity = 1 : '';
-			(progress > 50) ? document.querySelector('.fade-2').style.opacity = 1 : '';
-			(progress > 60) ? document.querySelector('.fade-3').style.opacity = 1 : '';
-			(progress > 75) ? document.querySelector('.fade-4').style.opacity = 1 : '';
-			(progress > 90) ? document.querySelector('.fade-5').style.opacity = 1 : '';
-			// console.log(Math.ceil(progress)/120);
+			(progress > 30 && document.querySelectorAll('.fade-1').length > 0) ? document.querySelector('.fade-1').style.opacity = 1 : '';
+			(progress > 50 && document.querySelectorAll('.fade-2').length > 0) ? document.querySelector('.fade-2').style.opacity = 1 : '';
+			(progress > 60 && document.querySelectorAll('.fade-3').length > 0) ? document.querySelector('.fade-3').style.opacity = 1 : '';
+			(progress > 75 && document.querySelectorAll('.fade-4').length > 0) ? document.querySelector('.fade-4').style.opacity = 1 : '';
+			(progress > 90 && document.querySelectorAll('.fade-5').length > 0) ? document.querySelector('.fade-5').style.opacity = 1 : '';
 			NProgress.set(Math.ceil(progress)/120); 
 			// if (progress >= 100 || loadedImg == imagesCount) {				
 			// }
