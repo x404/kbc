@@ -29,7 +29,7 @@
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
 </head>
-<body>
+<body data-spy="scroll" data-target=".subnav" data-offset="240">
 
 <div class="body">
 	<div class="outerwrapper">
