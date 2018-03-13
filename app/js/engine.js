@@ -468,22 +468,22 @@ $(document).on('click', '[data-toggle="sidemodal"]', function(e){
 		title = this.dataset.title;
 	document.querySelector(target).classList.add('open');
 	document.querySelector('.body').classList.add('m-modal-open');
-
-// console.log(title);
 	if (title != undefined) document.querySelector(target + ' #place').value = title;
 });
 
-$(document).on('click', '.close-modal', function(e){
-	$(this).closest('.open').removeClass('open');
-	document.querySelector('.body').classList.remove('m-modal-open')
-});
-
-
 
 $(document).on('click', '.close-modal', function(e){
 	$(this).closest('.open').removeClass('open');
 	document.querySelector('.body').classList.remove('m-modal-open')
 });
+
+
+$('body').keyup(function(e){
+	if(e.keyCode == 27 && $('.sidemodal').hasClass('open')){
+		$('.close-modal').trigger('click');
+	}
+});
+
 
 
 // faq
