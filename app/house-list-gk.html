@@ -1021,7 +1021,7 @@
 			</div>
 
 			<div class="qfilter">
-				<a href="#" class="line-animate"><span><i>Поиск недвижимости</i></span></a>
+				<a href="#" class="line-animate" data-toggle="modal" data-target="#filter"><span><i>Поиск недвижимости</i></span></a>
 			</div>
 
 			<button type="button" class="btn-callback" data-toggle="sidemodal" data-target="#modal-callback">Обратный звонок</button>
@@ -1331,6 +1331,308 @@
 </div>
 <!-- =/answer-vacancy -->
 
+<!-- =filter-->
+<div class="modal fade" id="filter" tabindex="-1" role="dialog" aria-labelledby="filterLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="filter flexbox">
+				<div class="nav">
+					<a href="#fpanel1" role="button" class="btn active" data-toggle="tab" aria-controls="fpanel1">Квартиры</a>
+					<a href="#fpanel2" role="button" class="btn" data-toggle="tab" aria-controls="fpanel2">Коммерческое</a>
+				</div>
+				<div class="tab-content filter__body">
+					<div role="tabpanel" class="tab-pane fade show active" id="fpanel1">
+						<div class="flexbox">
+							<div class="cell">
+								<div class="objects-select__wrap">
+									<select name="obj[]"
+										multiple
+										placeholder="Выберите объект"
+										data-placeholder="Объекты"
+										data-count="объекта"
+										data-count-plural="объектов"
+										data-count-single="объект"
+										class="j-search-select">
+											<option value="34">ЖК Стасовой</option>
+											<option value="57">ЖК Миручино</option>
+											<option value="39">ЖК Годенко</option>
+											<option value="76">ЖК Новониколаевский</option>
+											<option value="72">Калейдоскоп</option>
+											<option value="63">Паруса</option>
+											<option value="86">Звездный Дуэт</option>
+											<option value="36">Цивилизация</option>
+											<option value="41">София</option>
+											<option value="55">Цветной город</option>
+											<option value="78">Богемия</option>
+											<option value="60">Новая Охта</option>
+											<option value="88">Цивилизация на Неве</option>
+											<option value="61">Шуваловский</option>
+									</select>	
+								</div>
+								<div class="installment">
+									<div class="installment__container">
+										<input type="checkbox" class="checkbox" id="fspecial" name="special" value="" />
+										<label class="checkbox-label" for="fspecial">Рассрочка 5%от <br> застройщика (ЖНК)</label>		
+										<span class="installment__tooltip">
+											<span class="installment__tooltip_content">
+												С 1998 года фирма «Культбытстрой» освоила выпуск тротуарной плитки на немецком оборудовании фирмы «НESS». Двухбункерная система
+											</span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="cell flex-cv">
+								<div class="room__group">
+									<div class="room__checkbox">
+										<input type="checkbox" class="checkbox" id="fcheckbox1" />
+										<label for="fcheckbox1">C</label>
+									</div>
+									<div class="room__checkbox">
+										<input type="checkbox" class="checkbox" id="fcheckbox2" />
+										<label for="fcheckbox2">1</label>
+									</div>
+									<div class="room__checkbox">
+										<input type="checkbox" class="checkbox" id="fcheckbox3" />
+										<label for="fcheckbox3">2</label>
+									</div>
+									<div class="room__checkbox">
+										<input type="checkbox" class="checkbox" id="fcheckbox4" />
+										<label for="fcheckbox4">3</label>
+									</div>
+									<div class="room__checkbox">
+										<input type="checkbox" class="checkbox" id="fcheckbox5" />
+										<label for="fcheckbox5">4</label>
+									</div>
+								</div>
+							</div>
+							<div class="cell">
+								<p class="cell__title">Стоимость</p>
+								<div class="slider">
+									<div class="slider">
+										<div id="fslider-cost"></div>
+									</div>
+									<div class="slider_controls">
+										<input type="text" id="fcost-from" class="param_control" placeholder="от"  /> 
+										<span class="separate"> — </span>
+										<input type="text" id="fcost-to" class="param_control" placeholder="до"  />
+									</div>
+								</div>
+							</div>
+							<div class="cell">
+								<p class="cell__title">Площадь</p>
+								<div class="slider">
+									<div class="slider">
+										<div id="fslider-area"></div>
+									</div>
+									<div class="slider_controls">
+										<input type="text" id="farea-from" class="param_control" placeholder="от"  />
+										<span class="separate"> — </span>
+										<input type="text" id="farea-to" class="param_control" placeholder="до"  />
+									</div>
+								</div>
+							</div>
+							<div class="cell">
+								<a href="#" class="showflat icon-flats">
+									Показать <br> <span id="fcountflat">256 квартир</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="fpanel2">
+						<div class="flexbox">
+							<div class="cell">
+								<div class="objects-select__wrap">
+									<select name="obj2[]"
+										multiple
+										placeholder="Выберите объект"
+										data-placeholder="Объекты"
+										data-count="объекта"
+										data-count-plural="объектов"
+										data-count-single="объект"
+										class="j-search-select">
+											<option value="34">ЖК Стасовой</option>
+											<option value="57">ЖК Миручино</option>
+											<option value="39">ЖК Годенко</option>
+											<option value="76">ЖК Новониколаевский</option>
+											<option value="72">Калейдоскоп</option>
+											<option value="63">Паруса</option>
+											<option value="86">Звездный Дуэт</option>
+											<option value="36">Цивилизация</option>
+											<option value="41">София</option>
+											<option value="55">Цветной город</option>
+											<option value="78">Богемия</option>
+											<option value="60">Новая Охта</option>
+											<option value="88">Цивилизация на Неве</option>
+											<option value="61">Шуваловский</option>
+									</select>	
+								</div>
+							</div>
+							<div class="cell">
+								<p class="cell__title">Стоимость</p>
+								<div class="slider">
+									<div class="slider">
+										<div id="fslider-cost2"></div>
+									</div>
+									<div class="slider_controls">
+										<input type="text" id="fcost2-from" class="param_control" placeholder="от"  /> 
+										<span class="separate"> — </span>
+										<input type="text" id="fcost2-to" class="param_control" placeholder="до"  />
+									</div>
+								</div>
+							</div>
+							<div class="cell">
+								<p class="cell__title">Площадь</p>
+								<div class="slider">
+									<div class="slider">
+										<div id="fslider-area2"></div>
+									</div>
+									<div class="slider_controls">
+										<input type="text" id="farea2-from" class="param_control" placeholder="от"  />
+										<span class="separate"> — </span>
+										<input type="text" id="farea2-to" class="param_control" placeholder="до"  />
+									</div>
+								</div>
+							</div>
+							<div class="cell">
+								<a href="#" class="showflat icon-flats">
+									Показать <br> <span id="fcountflat2">256 квартир</span>
+								</a>
+								<button type="button" class="showmap icon-label">Карта объектов</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<script>
+
+			var filterSlider1 = document.getElementById('fslider-cost'),
+				fcostfrom = document.getElementById('fcost-from'),
+				fcostto = document.getElementById('fcost-to');
+
+
+			var filterSlider2 = document.getElementById('fslider-area'),
+				fareafrom = document.getElementById('farea-from'),
+				fareato = document.getElementById('farea-to');
+
+
+
+			var filterSlider3 = document.getElementById('fslider-cost2'),
+				fcost2from = document.getElementById('fcost2-from'),
+				fcost2to = document.getElementById('fcost2-to');
+
+
+			var filterSlider4 = document.getElementById('fslider-area2'),
+				farea2from = document.getElementById('farea2-from'),
+				farea2to = document.getElementById('farea2-to');
+
+
+			// цена - квартиры
+			noUiSlider.create(filterSlider1, {
+				start: [ 40, 120 ],
+				connect: true,
+				range: {
+					'min': 20,
+					'max': 150
+				}
+			});
+
+			filterSlider1.noUiSlider.on('update', function(values, handle){
+				fcostfrom.value = 'от ' + parseInt(values[0]) + ' млн. руб';
+				fcostto.value = 'от ' + parseInt(values[1]) + ' млн. руб';
+			});
+			fcostfrom.addEventListener('change', function ( ) {
+				var value = this.value;
+				value = value.replace(/\D+/g,"");
+				filterSlider1.noUiSlider.set([value, null]);
+			});
+			fcostto.addEventListener('change', function ( ) {
+				var value = this.value;
+				value = value.replace(/\D+/g,"");
+				filterSlider1.noUiSlider.set([null, value]);
+			});	
+
+
+			// площадь - квартиры
+			noUiSlider.create(filterSlider2, {
+				start: [ 40, 120 ],
+				connect: true,
+				range: {
+					'min': 25,
+					'max': 250
+				}
+			});
+			filterSlider2.noUiSlider.on('update', function(values, handle){
+				fareafrom.value = 'от ' + parseInt(values[0]) + ' м.кв.';
+				fareato.value = 'от ' + parseInt(values[1]) + ' м.кв.';
+			});
+			fareafrom.addEventListener('change', function ( ) {
+				var value = this.value;
+				value = value.replace(/\D+/g,"");
+				filterSlider2.noUiSlider.set([value, null]);
+			});
+			fareato.addEventListener('change', function ( ) {
+				var value = this.value;
+				value = value.replace(/\D+/g,"");
+				filterSlider2.noUiSlider.set([null, value]);
+			});	
+
+
+
+
+			// цена - коммерческое
+			noUiSlider.create(filterSlider3, {
+				start: [ 40, 120 ],
+				connect: true,
+				range: {
+					'min': 20,
+					'max': 150
+				}
+			});
+
+			filterSlider3.noUiSlider.on('update', function(values, handle){
+				fcost2from.value = 'от ' + parseInt(values[0]) + ' млн. руб';
+				fcost2to.value = 'от ' + parseInt(values[1]) + ' млн. руб';
+			});
+			fcost2from.addEventListener('change', function ( ) {
+				var value = this.value;
+				value = value.replace(/\D+/g,"");
+				filterSlider3.noUiSlider.set([value, null]);
+			});
+			fcost2to.addEventListener('change', function ( ) {
+				var value = this.value;
+				value = value.replace(/\D+/g,"");
+				filterSlider3.noUiSlider.set([null, value]);
+			});	
+
+
+			// площадь - коммерческое
+			noUiSlider.create(filterSlider4, {
+				start: [ 40, 120 ],
+				connect: true,
+				range: {
+					'min': 25,
+					'max': 250
+				}
+			});
+			filterSlider4.noUiSlider.on('update', function(values, handle){
+				farea2from.value = 'от ' + parseInt(values[0]) + ' м.кв.';
+				farea2to.value = 'от ' + parseInt(values[1]) + ' м.кв.';
+			});
+			farea2from.addEventListener('change', function ( ) {
+				var value = this.value;
+				value = value.replace(/\D+/g,"");
+				filterSlider4.noUiSlider.set([value, null]);
+			});
+			farea2to.addEventListener('change', function ( ) {
+				var value = this.value;
+				value = value.replace(/\D+/g,"");
+				filterSlider4.noUiSlider.set([null, value]);
+			});	
+		</script>
+		</div>
+	</div>
+</div>
+<!-- =/filter -->
 <!-- InstanceBeginEditable name="EditRegion5" -->
 <script src="http://api-maps.yandex.ru/2.1.60/?lang=ru_RU"></script>
 <script>

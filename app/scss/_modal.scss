@@ -227,7 +227,18 @@
 	}
 }
 
-#calc-gnk{
-	// opacity: 1 !important;
-	// display: block;
+#filter{
+	.modal-dialog{
+		width: 1600px;
+	}
+
+	.modal-content{
+		background: $color2;
+		box-shadow: 0 0 30px rgba(0,0,0,.8);
+		margin-left: 7px;
+	}
+
+	.cell{
+		width: auto;
+	}
 }

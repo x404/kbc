@@ -1307,7 +1307,9 @@ form{
 	flex-grow: 1;
 	position: relative;
 	z-index: 20;
+	color: $color1;
 	.nav{
+		flex-shrink: 0;
 		width: 160px;
 		.btn{
 			display: block;
@@ -1775,7 +1777,8 @@ body.modal-open {
 	overflow: hidden;
 	width: 100%;
 	.outerwrapper,
-	footer{
+	footer,
+	.fixed-header{
 		filter: blur(3px);
 	}
 }

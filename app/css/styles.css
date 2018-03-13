@@ -1534,8 +1534,10 @@ form .form-control {
   padding: 3.5rem 0 3.2rem;
   flex-grow: 1;
   position: relative;
-  z-index: 20; }
+  z-index: 20;
+  color: #000; }
   .filter .nav {
+    flex-shrink: 0;
     width: 160px; }
     .filter .nav .btn {
       display: block;
@@ -1891,7 +1893,8 @@ body.modal-open {
   overflow: hidden;
   width: 100%; }
   body.modal-open .outerwrapper,
-  body.modal-open footer {
+  body.modal-open footer,
+  body.modal-open .fixed-header {
     filter: blur(3px); }
 
 .text-center {
@@ -3931,6 +3934,17 @@ main {
 
 #add-review .selectize-control.single .selectize-input:after {
   background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHCAQAAACWu2SvAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAhwMEhp729ujAAAASklEQVQI103KsQ2AQAxDURc0zMBmN8BJNAzDejfMo0AJxJIl/5+Iw5BfhkNitzAbTyx7xEmrCU55v0o1LlGq8SfiAlftLXX3r5M8LPxhOWWIfOgAAAAASUVORK5CYII="); }
+
+#filter .modal-dialog {
+  width: 1600px; }
+
+#filter .modal-content {
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  margin-left: 7px; }
+
+#filter .cell {
+  width: auto; }
 
 .vacancies-page .neck {
   padding-bottom: 2rem; }

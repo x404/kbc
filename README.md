@@ -40,3 +40,4 @@ __Используемые в проекте js плагины__
 * Slick слайдер [https://github.com/kenwheeler/slick](https://github.com/kenwheeler/slick)
 * Маска ввода для vue [https://vuejs-tips.github.io/vue-the-mask/](https://vuejs-tips.github.io/vue-the-mask/)
 * Маска ввода для vue [https://github.com/vuejs-tips/v-money](https://github.com/vuejs-tips/v-money)
+* Прелоадер NProgress [https://github.com/rstacruz/nprogress] (https://github.com/rstacruz/nprogress)
