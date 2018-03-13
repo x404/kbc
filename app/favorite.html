@@ -823,8 +823,8 @@
 				</div>
 				<button type="button" data-dismiss="modal" class="close-modal" aria-label="Закрыть">
 					<svg width="24" height="24">
-						<line x1="0" y1="0" x2="24" y2="24" style="stroke:black;stroke-width:2" />
-						<line x1="24" y1="0" x2="0" y2="24" style="stroke:black;stroke-width:2" />
+						<line x1="0" y1="0" x2="24" y2="24" />
+						<line x1="24" y1="0" x2="0" y2="24" />
 					</svg>
 				</button>
 			</div>
@@ -1108,132 +1108,138 @@
 					</div>
 				</div>
 			</div>
-		<script>
+			<script>
 
-			var filterSlider1 = document.getElementById('fslider-cost'),
-				fcostfrom = document.getElementById('fcost-from'),
-				fcostto = document.getElementById('fcost-to');
-
-
-			var filterSlider2 = document.getElementById('fslider-area'),
-				fareafrom = document.getElementById('farea-from'),
-				fareato = document.getElementById('farea-to');
+				var filterSlider1 = document.getElementById('fslider-cost'),
+					fcostfrom = document.getElementById('fcost-from'),
+					fcostto = document.getElementById('fcost-to');
 
 
-
-			var filterSlider3 = document.getElementById('fslider-cost2'),
-				fcost2from = document.getElementById('fcost2-from'),
-				fcost2to = document.getElementById('fcost2-to');
-
-
-			var filterSlider4 = document.getElementById('fslider-area2'),
-				farea2from = document.getElementById('farea2-from'),
-				farea2to = document.getElementById('farea2-to');
-
-
-			// цена - квартиры
-			noUiSlider.create(filterSlider1, {
-				start: [ 40, 120 ],
-				connect: true,
-				range: {
-					'min': 20,
-					'max': 150
-				}
-			});
-
-			filterSlider1.noUiSlider.on('update', function(values, handle){
-				fcostfrom.value = 'от ' + parseInt(values[0]) + ' млн. руб';
-				fcostto.value = 'от ' + parseInt(values[1]) + ' млн. руб';
-			});
-			fcostfrom.addEventListener('change', function ( ) {
-				var value = this.value;
-				value = value.replace(/\D+/g,"");
-				filterSlider1.noUiSlider.set([value, null]);
-			});
-			fcostto.addEventListener('change', function ( ) {
-				var value = this.value;
-				value = value.replace(/\D+/g,"");
-				filterSlider1.noUiSlider.set([null, value]);
-			});	
-
-
-			// площадь - квартиры
-			noUiSlider.create(filterSlider2, {
-				start: [ 40, 120 ],
-				connect: true,
-				range: {
-					'min': 25,
-					'max': 250
-				}
-			});
-			filterSlider2.noUiSlider.on('update', function(values, handle){
-				fareafrom.value = 'от ' + parseInt(values[0]) + ' м.кв.';
-				fareato.value = 'от ' + parseInt(values[1]) + ' м.кв.';
-			});
-			fareafrom.addEventListener('change', function ( ) {
-				var value = this.value;
-				value = value.replace(/\D+/g,"");
-				filterSlider2.noUiSlider.set([value, null]);
-			});
-			fareato.addEventListener('change', function ( ) {
-				var value = this.value;
-				value = value.replace(/\D+/g,"");
-				filterSlider2.noUiSlider.set([null, value]);
-			});	
+				var filterSlider2 = document.getElementById('fslider-area'),
+					fareafrom = document.getElementById('farea-from'),
+					fareato = document.getElementById('farea-to');
 
 
 
-
-			// цена - коммерческое
-			noUiSlider.create(filterSlider3, {
-				start: [ 40, 120 ],
-				connect: true,
-				range: {
-					'min': 20,
-					'max': 150
-				}
-			});
-
-			filterSlider3.noUiSlider.on('update', function(values, handle){
-				fcost2from.value = 'от ' + parseInt(values[0]) + ' млн. руб';
-				fcost2to.value = 'от ' + parseInt(values[1]) + ' млн. руб';
-			});
-			fcost2from.addEventListener('change', function ( ) {
-				var value = this.value;
-				value = value.replace(/\D+/g,"");
-				filterSlider3.noUiSlider.set([value, null]);
-			});
-			fcost2to.addEventListener('change', function ( ) {
-				var value = this.value;
-				value = value.replace(/\D+/g,"");
-				filterSlider3.noUiSlider.set([null, value]);
-			});	
+				var filterSlider3 = document.getElementById('fslider-cost2'),
+					fcost2from = document.getElementById('fcost2-from'),
+					fcost2to = document.getElementById('fcost2-to');
 
 
-			// площадь - коммерческое
-			noUiSlider.create(filterSlider4, {
-				start: [ 40, 120 ],
-				connect: true,
-				range: {
-					'min': 25,
-					'max': 250
-				}
-			});
-			filterSlider4.noUiSlider.on('update', function(values, handle){
-				farea2from.value = 'от ' + parseInt(values[0]) + ' м.кв.';
-				farea2to.value = 'от ' + parseInt(values[1]) + ' м.кв.';
-			});
-			farea2from.addEventListener('change', function ( ) {
-				var value = this.value;
-				value = value.replace(/\D+/g,"");
-				filterSlider4.noUiSlider.set([value, null]);
-			});
-			farea2to.addEventListener('change', function ( ) {
-				var value = this.value;
-				value = value.replace(/\D+/g,"");
-				filterSlider4.noUiSlider.set([null, value]);
-			});	
-		</script>
+				var filterSlider4 = document.getElementById('fslider-area2'),
+					farea2from = document.getElementById('farea2-from'),
+					farea2to = document.getElementById('farea2-to');
+
+
+				// цена - квартиры
+				noUiSlider.create(filterSlider1, {
+					start: [ 40, 120 ],
+					connect: true,
+					range: {
+						'min': 20,
+						'max': 150
+					}
+				});
+
+				filterSlider1.noUiSlider.on('update', function(values, handle){
+					fcostfrom.value = 'от ' + parseInt(values[0]) + ' млн. руб';
+					fcostto.value = 'от ' + parseInt(values[1]) + ' млн. руб';
+				});
+				fcostfrom.addEventListener('change', function ( ) {
+					var value = this.value;
+					value = value.replace(/\D+/g,"");
+					filterSlider1.noUiSlider.set([value, null]);
+				});
+				fcostto.addEventListener('change', function ( ) {
+					var value = this.value;
+					value = value.replace(/\D+/g,"");
+					filterSlider1.noUiSlider.set([null, value]);
+				});	
+
+
+				// площадь - квартиры
+				noUiSlider.create(filterSlider2, {
+					start: [ 40, 120 ],
+					connect: true,
+					range: {
+						'min': 25,
+						'max': 250
+					}
+				});
+				filterSlider2.noUiSlider.on('update', function(values, handle){
+					fareafrom.value = 'от ' + parseInt(values[0]) + ' м.кв.';
+					fareato.value = 'от ' + parseInt(values[1]) + ' м.кв.';
+				});
+				fareafrom.addEventListener('change', function ( ) {
+					var value = this.value;
+					value = value.replace(/\D+/g,"");
+					filterSlider2.noUiSlider.set([value, null]);
+				});
+				fareato.addEventListener('change', function ( ) {
+					var value = this.value;
+					value = value.replace(/\D+/g,"");
+					filterSlider2.noUiSlider.set([null, value]);
+				});	
+
+
+
+
+				// цена - коммерческое
+				noUiSlider.create(filterSlider3, {
+					start: [ 40, 120 ],
+					connect: true,
+					range: {
+						'min': 20,
+						'max': 150
+					}
+				});
+
+				filterSlider3.noUiSlider.on('update', function(values, handle){
+					fcost2from.value = 'от ' + parseInt(values[0]) + ' млн. руб';
+					fcost2to.value = 'от ' + parseInt(values[1]) + ' млн. руб';
+				});
+				fcost2from.addEventListener('change', function ( ) {
+					var value = this.value;
+					value = value.replace(/\D+/g,"");
+					filterSlider3.noUiSlider.set([value, null]);
+				});
+				fcost2to.addEventListener('change', function ( ) {
+					var value = this.value;
+					value = value.replace(/\D+/g,"");
+					filterSlider3.noUiSlider.set([null, value]);
+				});	
+
+
+				// площадь - коммерческое
+				noUiSlider.create(filterSlider4, {
+					start: [ 40, 120 ],
+					connect: true,
+					range: {
+						'min': 25,
+						'max': 250
+					}
+				});
+				filterSlider4.noUiSlider.on('update', function(values, handle){
+					farea2from.value = 'от ' + parseInt(values[0]) + ' м.кв.';
+					farea2to.value = 'от ' + parseInt(values[1]) + ' м.кв.';
+				});
+				farea2from.addEventListener('change', function ( ) {
+					var value = this.value;
+					value = value.replace(/\D+/g,"");
+					filterSlider4.noUiSlider.set([value, null]);
+				});
+				farea2to.addEventListener('change', function ( ) {
+					var value = this.value;
+					value = value.replace(/\D+/g,"");
+					filterSlider4.noUiSlider.set([null, value]);
+				});	
+			</script>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+				<svg width="24" height="24">
+					<line x1="0" y1="0" x2="24" y2="24"></line>
+					<line x1="24" y1="0" x2="0" y2="24"></line>
+				</svg>
+			</button>
 		</div>
 	</div>
 </div>

@@ -1437,6 +1437,9 @@ form .form-control {
       -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
       transform: rotate(90deg); }
+    .modal-menu .close-modal line {
+      stroke: black;
+      stroke-width: 2; }
   .modal-menu.open {
     transform: translateY(0);
     opacity: 1; }
@@ -2840,6 +2843,8 @@ body.modal-open {
   .modal-map .close-modal {
     right: 35px;
     top: 43px; }
+  .modal-map .close line {
+    stroke: #000; }
 
 .main {
   padding: 3rem 0 5rem;
@@ -3937,6 +3942,12 @@ main {
 #add-review .selectize-control.single .selectize-input:after {
   background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHCAQAAACWu2SvAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAhwMEhp729ujAAAASklEQVQI103KsQ2AQAxDURc0zMBmN8BJNAzDejfMo0AJxJIl/5+Iw5BfhkNitzAbTyx7xEmrCU55v0o1LlGq8SfiAlftLXX3r5M8LPxhOWWIfOgAAAAASUVORK5CYII="); }
 
+.modal-content .close {
+  height: 28px; }
+  .modal-content .close line {
+    stroke: #fff;
+    stroke-width: 2; }
+
 #filter .modal-dialog {
   width: 1600px; }
 
@@ -3950,6 +3961,14 @@ main {
 
 #filter .showflat {
   height: 80px; }
+
+#filter .close {
+  right: 47px;
+  top: 25px;
+  position: absolute; }
+  #filter .close line {
+    stroke: #000;
+    stroke-width: 2; }
 
 .vacancies-page .neck {
   padding-bottom: 2rem; }

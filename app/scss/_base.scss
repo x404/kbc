@@ -1139,6 +1139,11 @@ form{
 				@include rotation(90deg);	
 			}
 		}
+
+		line{
+			stroke:black;
+			stroke-width:2
+		}
 	}
 
 

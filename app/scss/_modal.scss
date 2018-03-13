@@ -227,6 +227,14 @@
 	}
 }
 
+.modal-content .close{
+	height: 28px;
+	line{
+		stroke:#fff;
+		stroke-width:2
+	}
+}
+
 #filter{
 	.modal-dialog{
 		width: 1600px;
@@ -244,5 +252,15 @@
 
 	.showflat{
 		height: 80px;
+	}
+
+	.close{
+		right: 47px;
+		top: 25px;
+		position: absolute;
+		line{
+			stroke:$color1;
+			stroke-width:2			
+		}
 	}
 }
