@@ -446,12 +446,14 @@ form{
 	background: $color2;
 	.flexbox{
 		height: 10rem;
+		flex-wrap: nowrap;
 	}
 
 	.btn-callback{
 		margin-left: 1.5rem;
 		margin-top: .4rem;
 	}
+
 }
 
 .header,
@@ -688,6 +690,7 @@ form{
 	flex-grow: 1;
 	display: flex;
 	margin-left: 2.8rem;
+	width: 600px;
 	.nav{
 		// padding-top: .6rem;
 	}

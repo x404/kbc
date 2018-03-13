@@ -916,7 +916,8 @@ form .form-control {
 .header {
   background: #fff; }
   .header .flexbox {
-    height: 10rem; }
+    height: 10rem;
+    flex-wrap: nowrap; }
   .header .btn-callback {
     margin-left: 1.5rem;
     margin-top: .4rem; }
@@ -1107,7 +1108,8 @@ form .form-control {
 .mainnav {
   flex-grow: 1;
   display: flex;
-  margin-left: 2.8rem; }
+  margin-left: 2.8rem;
+  width: 600px; }
   .mainnav a {
     display: block;
     text-decoration: none; }
@@ -3945,6 +3947,9 @@ main {
 
 #filter .cell {
   width: auto; }
+
+#filter .showflat {
+  height: 80px; }
 
 .vacancies-page .neck {
   padding-bottom: 2rem; }
