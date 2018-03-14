@@ -436,96 +436,54 @@
 
 			<div class="container">
 				<div class="row">
-					<div class="calculator" id="calcapp">
+					<div class="calculator">
 						<p class="heading">Калькулятор ЖНК</p>
-
-						<div class="modal-body">
-							<form action="#" method="post" id="calc-gnk-form">
-								<fieldset>
-									<div class="row">
-										<p class="title">Стоимость квартиры</p>
-										<div class="flexbox">
-											<!-- <input type="text" class="form-control currency" name="costflat" value="3 650 000" id="costflat" data-inputmask="'alias': 'numeric', 'groupSeparator': ' ', 'autoGroup': true, 'digits': 0, 'digitsOptional': false, 'suffix': ' Р', 'placeholder': '0'" /> -->
-
-											<money v-model="price" v-bind="money" name="costflat" class="form-control" id="costflat" v-on:change.native="updateSlider(this)"  ></money>
-
-
-											<div class="slider slider-1">
-												<slider :slider-value="3650000" :slider-min="500000" :slider-max="25000000" :slider-step="1000"></slider>
-												<!-- <div id="slider-costflat"></div> -->
-												<p class="slider_start">0</p>
-												<p class="slider_end">25 000 000 Р</p>
-											</div>
+						<form action="#" method="post" id="calc-gnk-form">
+							<fieldset>
+								<div class="row">
+									<label class="title" for="costflat">Стоимость квартиры</label>
+									<div class="flexbox">
+										<input type="tel" class="form-control currency" name="costflat" value="3 650 000" id="costflat" />	
+										<div class="slider slider-1">
+											<div id="slider-costflat"></div>
+											<p class="slider_start">0</p>
+											<p class="slider_end">25 000 000 Р</p>
 										</div>
 									</div>
-									<div class="row">
-										<p class="title">Срок кредита</p>
-										<div class="flexbox">
-											<input type="radio" class="radio" id="radio1" name="radio" v-model="procent" value="3" checked="checked" />
-											<label for="radio1">3 года (под 5% годовых)</label>
-
-											<input type="radio" class="radio" id="radio2" name="radio" v-model="procent" value="5" />
-											<label for="radio2">5 лет (под 8% годовых)</label>
+								</div>
+								<div class="row">
+									<label class="title" for="radio1">Срок кредита</label>
+									<div class="flexbox">
+										<input type="radio" class="radio" id="radio1" name="radio" value="3" checked="checked" />
+										<label for="radio1">3 года (под 5% годовых)</label>
+						
+										<input type="radio" class="radio" id="radio2" name="radio" value="5" />
+										<label for="radio2">5 лет (под 8% годовых)</label>
+									</div>
+								</div>
+								<div class="row row-payment">
+									<label class="title" for="first-payment">Первоначальный взнос</label>
+									<div class="flexbox">
+										<input type="text" class="form-control" name="first-payment" value="1 250 000" id="first-payment" />
+										<div class="slider slider-payment">
+											<div id="slider-firstpayment"></div>
+											<p class="slider_start">0</p>
+											<p class="slider_end">25 000 000 Р</p>
 										</div>
 									</div>
-									<div class="row">
-										<p class="title">Первоначальный взнос</p>
-										<div class="flexbox">
-											<!-- <input type="text" class="form-control" name="first-payment" value="1 250 000" id="first-payment" data-inputmask="'alias': 'numeric', 'groupSeparator': ' ', 'autoGroup': true, 'digits': 0, 'digitsOptional': false, 'suffix': ' Р', 'placeholder': '0'"/> -->
-											<money v-model="nal" v-bind="money" name="first-payment" class="form-control" id="first-payment" ></money>
-											<div class="slider slider-payment">
-												<!-- <div id="slider-firstpayment"></div> -->
-												<slider :slider-value="1250000" :slider-min="500000" :slider-max="25000000" :slider-step="1000"></slider>
-												<p class="slider_start">0</p>
-												<p class="slider_end">25 000 000 Р</p>
-											</div>
-										</div>
-									</div>
-								</fieldset>
-							</form>
-						</div>
+									<div class="alert"></div>
+								</div>
+							</fieldset>
+						</form>
 						<div class="calc-bottom flexbox">
 							<div class="left">
 								<p>Ежемесячный платеж</p>
-								<p class="cifr">{{payment | currency(' Р/Мес', 0, { thousandsSeparator: ' ', symbolOnLeft: false })}}</p>
+								<p class="cifr" id="calcpayment"></p>
 							</div>
 							<div class="right">
 								<button type="button" class="btn btn-red">Получить консультацию</button>
 							</div>
 						</div>
-						<script>
-							/*
-							var calcSlider1 = document.getElementById('slider-costflat');
-								// costfrom = document.getElementById('cost-from'),
-								// costto = document.getElementById('cost-to');
-
-
-							var calcSlider2 = document.getElementById('slider-firstpayment');
-								// areafrom = document.getElementById('area-from'),
-								// areato = document.getElementById('area-to');
-
-
-							// цена - квартиры
-							noUiSlider.create(calcSlider1, {
-								start: [ 1500000, 18000000 ],
-								connect: true,
-								range: {
-									'min': 500000,
-									'max': 25000000
-								}
-							});
-
-
-							// площадь - квартиры
-							noUiSlider.create(calcSlider2, {
-								start: [ 1500000, 20000000 ],
-								connect: true,
-								range: {
-									'min': 500000,
-									'max': 25000000
-								}
-							});*/
-						</script>
 					</div>
 				</div>
 			</div>
@@ -1539,10 +1497,6 @@
 <!-- InstanceBeginEditable name="EditRegion5" -->
 
 <script src="js/wNumb.js"></script>
-<script src="js/vue.min.js"></script>
-<script src="js/vue2-filters.min.js"></script>
-<script src="/js/v-money.js"></script>
-<script src="/js/nouislider.vue.js"></script>
 <script src="/js/calculator.js"></script>
 
 <script src="http://api-maps.yandex.ru/2.1.60/?lang=ru_RU"></script>

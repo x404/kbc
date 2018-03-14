@@ -634,7 +634,7 @@ h3 {
 .related .carousel .owl-carousel .owl-next:after, .objects__info:before, .object__item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .big-icon:before, .neck .tabs .tab.active:after, .pagination .prev:before,
 .pagination .next:before, .picking__link span:before, .sortbox__option-up:after, .sortbox__option-down:after, main ul li:before, .faq-page .head .btn:before,
-.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, .complex-page .complex__left:before, .complex-page .complex__panel .video .bg:before, .complex-page .complex__panel .video .bg:after, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a span:after, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .example__pic a:after, .calculator-page .example__pic a:before, .calculator-page .example__pic:after, .calculator-page .example__pic:before, .calculator-page .related__item:after {
+.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, #calc-gnk-form .alert:before, .complex-page .complex__left:before, .complex-page .complex__panel .video .bg:before, .complex-page .complex__panel .video .bg:after, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a span:after, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .example__pic a:after, .calculator-page .example__pic a:before, .calculator-page .example__pic:after, .calculator-page .example__pic:before, .calculator-page .related__item:after {
   content: "";
   display: block;
   position: absolute; }
@@ -5219,7 +5219,8 @@ main {
 
 #calc-gnk-form .row {
   display: block;
-  margin: 0 0 3rem; }
+  margin: 0 0 3rem;
+  position: relative; }
   #calc-gnk-form .row .title {
     font-size: 2rem;
     font-weight: 500;
@@ -5253,6 +5254,32 @@ main {
       position: absolute;
       top: -7px;
       white-space: nowrap; }
+
+#calc-gnk-form .alert {
+  background: #fff;
+  box-shadow: 0 5px 30px rgba(112, 121, 133, 0.25);
+  color: #3f3f3f;
+  font-size: 1.4rem;
+  left: 150px;
+  line-height: 1.5;
+  opacity: 0;
+  padding: 1.5rem;
+  position: absolute;
+  top: 20px;
+  width: 27rem;
+  z-index: 0;
+  transition: .3s opacity; }
+  #calc-gnk-form .alert:before {
+    top: 22px;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 7px 7px 0;
+    border-color: transparent #fff transparent transparent; }
+  #calc-gnk-form .alert.show {
+    opacity: 1;
+    z-index: 10; }
 
 #calc-gnk {
   color: #000; }

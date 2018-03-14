@@ -369,10 +369,6 @@ $(document).ready(function(){
 		showMaskOnHover : false
 	});
 
-	 // $('[data-inputmask]').inputmask();
-
-	// #mask
-
 });
 
 // =заглушка для IE
