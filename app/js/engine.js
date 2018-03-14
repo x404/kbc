@@ -369,9 +369,6 @@ $(document).ready(function(){
 		showMaskOnHover : false
 	});
 
-
-	///////////////////// calculator
-
 });
 
 // =заглушка для IE

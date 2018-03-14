@@ -1295,49 +1295,46 @@
 </div>
 <!-- =/add order -->
 
-
 <!-- =calculator gnk -->
 <div class="modal fade" id="calc-gnk" tabindex="-1" role="dialog" aria-labelledby="calc-gnkLabel">
 	<div class="modal-dialog" role="document">
-		<div class="modal-content" id="calcapp">
+		<div class="modal-content">
 			<div class="modal-title" id="calc-gnkLabel">Калькулятор ЖНК</div>
 			<div class="modal-body">
 				<form action="#" method="post" id="calc-gnk-form">
 					<fieldset>
 						<div class="row">
-							<p class="title">Стоимость квартиры</p>
+							<label class="title" for="costflat">Стоимость квартиры</label>
 							<div class="flexbox">
-								<money v-model="price" v-bind="money" name="costflat" class="form-control" id="costflat" ></money>
-								<div class="slider">
-									<slider :slider-value="[ 1500000, 18000000 ]" :slider-min="500000" :slider-max="25000000" :slider-step="1000"></slider>
+								<input type="tel" class="form-control currency" name="costflat" value="3 650 000" id="costflat" />	
+								<div class="slider slider-1">
+									<div id="slider-costflat"></div>
 									<p class="slider_start">0</p>
 									<p class="slider_end">25 000 000 Р</p>
 								</div>
 							</div>
 						</div>
 						<div class="row">
-							<p class="title">Срок кредита</p>
+							<label class="title" for="radio1">Срок кредита</label>
 							<div class="flexbox">
-								<input type="radio" class="radio" id="radio1" name="radio" v-model="procent" value="3" checked="checked" />
+								<input type="radio" class="radio" id="radio1" name="radio" value="3" checked="checked" />
 								<label for="radio1">3 года (под 5% годовых)</label>
-
-								<input type="radio" class="radio" id="radio2" name="radio" v-model="procent" value="5" />
+				
+								<input type="radio" class="radio" id="radio2" name="radio" value="5" />
 								<label for="radio2">5 лет (под 8% годовых)</label>
 							</div>
 						</div>
-						<div class="row">
-							<p class="title">Первоначальный взнос</p>
+						<div class="row row-payment">
+							<label class="title" for="first-payment">Первоначальный взнос</label>
 							<div class="flexbox">
-								<!-- <input type="text" class="form-control" name="first-payment" v-model.number="nal" value="365000" id="first-payment" /> -->
-								<money v-model="nal" v-bind="money" name="first-payment" class="form-control" id="first-payment" ></money>
-
-								<div class="slider">
-									<slider :slider-value="[ 1500000, 18000000 ]" :slider-min="500000" :slider-max="25000000" :slider-step="1000"></slider>
-									<!-- <div id="slider-firstpayment"></div> -->
+								<input type="text" class="form-control" name="first-payment" value="1 250 000" id="first-payment" />
+								<div class="slider slider-payment">
+									<div id="slider-firstpayment"></div>
 									<p class="slider_start">0</p>
 									<p class="slider_end">25 000 000 Р</p>
 								</div>
 							</div>
+							<div class="alert"></div>
 						</div>
 					</fieldset>
 				</form>
@@ -1346,7 +1343,7 @@
 				<div class="calc-bottom flexbox">
 					<div class="left">
 						<p>Ежемесячный платеж</p>
-						<p class="cifr">{{payment | currency(' Р/Мес', 0, { thousandsSeparator: ' ', symbolOnLeft: false })}}</p>
+						<p class="cifr" id="calcpayment"></p>
 					</div>
 					<div class="right">
 						<button type="button" class="btn btn-red">Получить консультацию</button>
@@ -1363,6 +1360,7 @@
 	</div>
 </div>
 <!-- =/calculator gnk -->
+
 <!-- InstanceEndEditable -->
 
 <div id="outdated"></div>
@@ -1390,10 +1388,7 @@
 <script src="/js/engine.js"></script>
 
 <!-- InstanceBeginEditable name="EditRegion4" -->
-<script src="js/vue.min.js"></script>
-<script src="js/vue2-filters.min.js"></script>
-<script src="/js/v-money.js"></script>
-<script src="/js/nouislider.vue.js"></script>
+<script src="js/wNumb.js"></script>
 <script src="/js/calculator.js"></script>
 <!-- InstanceEndEditable -->
 </body>

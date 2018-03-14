@@ -32,7 +32,7 @@ noUiSlider.create(calcSlider1, {
 	}
 });
 
-// площадь - квартиры
+// первоначальный взнос
 noUiSlider.create(calcSlider2, {
 	start: 1250000,
 	connect: [true, false],
@@ -54,8 +54,7 @@ costflat.addEventListener('input', function ( ) {
 
 
 $(document).ready(function(){
-
-	$('.calculator #costflat').inputmask({
+	$('#calc-gnk-form #costflat').inputmask({
 		alias : 'numeric',
 		groupSeparator: ' ',
 		autoGroup: true,
@@ -70,7 +69,7 @@ $(document).ready(function(){
 	});
 
 
-	$('.calculator #first-payment').inputmask({
+	$('#calc-gnk-form #first-payment').inputmask({
 		alias : 'numeric',
 		groupSeparator: ' ',
 		autoGroup: true,
@@ -97,26 +96,24 @@ $(document).ready(function(){
 });
 
 
-$(document).on('click', '.calculator input[type="radio"]', function(e){
+$(document).on('click', '#calc-gnk-form input[type="radio"]', function(e){
 	calc();
 })
 
 var price = document.getElementById('costflat').value.replace(/\D+/g,""),
 	nal = document.getElementById('first-payment').value.replace(/\D+/g,""),
-	procent = document.querySelector('.calculator input[type="radio"]:checked').value;
+	procent = document.querySelector('#calc-gnk-form input[type="radio"]:checked').value;
 
 function calc(){
 	var msg = '',
 		price0 = 0;;
 	price = document.getElementById('costflat').value.replace(/\D+/g,"");
 	nal = document.getElementById('first-payment').value.replace(/\D+/g,"");
-	procent = document.querySelector('.calculator input[type="radio"]:checked').value;	
+	procent = document.querySelector('#calc-gnk-form input[type="radio"]:checked').value;	
 
 	if (nal<price*0.1) {
 		price0 = price * 0.1;
-		console.log(price0);
 		msg = 'Минимальный первоначальный взнос для данного срока <br/> ' + payFormat.to(price0) + declOfNum(price0, [' рубль', ' рубля', ' рублей']);
-		console.log(msg);
 		output = 0;
 	} 
 	if(nal>=price*0.3 && procent=='3'){
@@ -141,7 +138,6 @@ function calc(){
 
 	else if(procent!='3' && procent!='5'){
 		console.log('Вы ввели неверное количество лет, нужно ввести 3 или 5 - попробуйте снова')
-		output = 0;
 	} 
 
 	(output > 0) ? output = moneyFormat.to(output) : output = '';
