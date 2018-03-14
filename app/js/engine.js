@@ -371,16 +371,6 @@ $(document).ready(function(){
 
 
 	///////////////////// calculator
-	$('.calculator #costflat, .calculator #first-payment').inputmask({
-		alias : 'numeric',
-		groupSeparator: ' ',
-		autoGroup: true,
-		digits: 0,
-		digitsOptional: false,
-		suffix: ' Р',
-		placeholder: '0'
-	});
-
 
 });
 

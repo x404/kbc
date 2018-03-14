@@ -439,45 +439,44 @@
 					<div class="calculator" id="calcapp">
 						<p class="heading">Калькулятор ЖНК</p>
 
-						<div class="modal-body">
-							<form action="#" method="post" id="calc-gnk-form">
-								<fieldset>
-									<div class="row">
-										<label class="title" for="costflat">Стоимость квартиры</label>
-										<div class="flexbox">
-											<input type="tel" class="form-control currency" name="costflat" value="3 650 000" id="costflat" />
-	
-											<div class="slider slider-1">
-												<div id="slider-costflat"></div>
-												<p class="slider_start">0</p>
-												<p class="slider_end">25 000 000 Р</p>
-											</div>
+						<form action="#" method="post" id="calc-gnk-form">
+							<fieldset>
+								<div class="row">
+									<label class="title" for="costflat">Стоимость квартиры</label>
+									<div class="flexbox">
+										<input type="tel" class="form-control currency" name="costflat" value="3 650 000" id="costflat" />
+							
+										<div class="slider slider-1">
+											<div id="slider-costflat"></div>
+											<p class="slider_start">0</p>
+											<p class="slider_end">25 000 000 Р</p>
 										</div>
 									</div>
-									<div class="row">
-										<label class="title" for="radio1">Срок кредита</label>
-										<div class="flexbox">
-											<input type="radio" class="radio" id="radio1" name="radio" value="3" checked="checked" />
-											<label for="radio1">3 года (под 5% годовых)</label>
-
-											<input type="radio" class="radio" id="radio2" name="radio" value="5" />
-											<label for="radio2">5 лет (под 8% годовых)</label>
+								</div>
+								<div class="row">
+									<label class="title" for="radio1">Срок кредита</label>
+									<div class="flexbox">
+										<input type="radio" class="radio" id="radio1" name="radio" value="3" checked="checked" />
+										<label for="radio1">3 года (под 5% годовых)</label>
+						
+										<input type="radio" class="radio" id="radio2" name="radio" value="5" />
+										<label for="radio2">5 лет (под 8% годовых)</label>
+									</div>
+								</div>
+								<div class="row row-payment">
+									<label class="title" for="first-payment">Первоначальный взнос</label>
+									<div class="flexbox">
+										<input type="text" class="form-control" name="first-payment" value="1 250 000" id="first-payment" />
+										<div class="slider slider-payment">
+											<div id="slider-firstpayment"></div>
+											<p class="slider_start">0</p>
+											<p class="slider_end">25 000 000 Р</p>
 										</div>
 									</div>
-									<div class="row">
-										<label class="title" for="first-payment">Первоначальный взнос</label>
-										<div class="flexbox">
-											<input type="text" class="form-control" name="first-payment" value="1 250 000" id="first-payment" />
-											<div class="slider slider-payment">
-												<div id="slider-firstpayment"></div>
-												<p class="slider_start">0</p>
-												<p class="slider_end">25 000 000 Р</p>
-											</div>
-										</div>
-									</div>
-								</fieldset>
-							</form>
-						</div>
+									<div class="alert"></div>
+								</div>
+							</fieldset>
+						</form>
 						<div class="calc-bottom flexbox">
 							<div class="left">
 								<p>Ежемесячный платеж</p>
@@ -488,36 +487,6 @@
 							</div>
 						</div>
 						<script>
-							var calcSlider1 = document.getElementById('slider-costflat'),
-								costflat = document.getElementById('costflat'),
-								calcSlider2 = document.getElementById('slider-firstpayment'),
-								first_payment = document.getElementById('first-payment');
-
-
-							// стоимость квартиры
-							noUiSlider.create(calcSlider1, {
-								start: 3650000,
-								connect: [true, false],
-								behaviour: 'snap',
-								step: 5000, 
-								range: {
-									'min': 500000,
-									'max': 25000000
-								}
-							});
-
-
-							// площадь - квартиры
-							noUiSlider.create(calcSlider2, {
-								start: 1250000,
-								connect: [true, false],
-								behaviour: 'snap',
-								step: 5000, 
-								range: {
-									'min': 1000,
-									'max': 25000000
-								}
-							});
 						</script>
 					</div>
 				</div>
