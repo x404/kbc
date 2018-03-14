@@ -369,9 +369,18 @@ $(document).ready(function(){
 		showMaskOnHover : false
 	});
 
-	 // $('[data-inputmask]').inputmask();
 
-	// #mask
+	///////////////////// calculator
+	$('.calculator #costflat, .calculator #first-payment').inputmask({
+		alias : 'numeric',
+		groupSeparator: ' ',
+		autoGroup: true,
+		digits: 0,
+		digitsOptional: false,
+		suffix: ' Р',
+		placeholder: '0'
+	});
+
 
 });
 

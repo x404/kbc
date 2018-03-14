@@ -1,4 +1,32 @@
-var calcapp = new Vue({
+$(document).ready(function(){
+	var costflat = document.getElementById('slider-costflat'),
+		first_payment = document.getElementById('slider-firstpayment')
+
+
+	calcSlider1.noUiSlider.on('update', function(values, handle){
+		costflat.value =parseInt(values[0]) ;
+		calc();
+	});
+	calcSlider2.noUiSlider.on('update', function(values, handle){
+		first_payment.value =parseInt(values[0]) ;
+		calc();
+	});
+
+	$('.calculator #costflat').on("input", function () {
+		var value = this.value;
+		value = value.replace(/\D+/g,"");
+		costflat.noUiSlider.set(value);
+	});
+
+	$('.calculator #first-payment').on("input", function () {
+		var value = this.value;
+		value = value.replace(/\D+/g,"");
+		first_payment.noUiSlider.set(value);
+		// calc();
+	});
+})
+
+/*var calcapp = new Vue({
 	el: "#calcapp",
 	data () {
 		return {
@@ -74,6 +102,67 @@ function updateSlider(price){
 	// var slider = document.querySelector('.slider-1 > div');
 		// slider.noUiSlider.set(price);
 }
+*/
+
+var moneyFormat = wNumb({
+	mark: '.',
+	thousand: ' ',
+	prefix: '',
+	suffix: ' Р/Мес',
+	decimals: '0'
+});
+
+
+$(document).on('click', '.calculator input[type="radio"]', function(e){
+	calc();
+})
+
+
+var price = document.getElementById('costflat').value.replace(/\D+/g,""),
+	nal = document.getElementById('first-payment').value.replace(/\D+/g,""),
+	procent = document.querySelector('.calculator input[type="radio"]:checked').value;
+
+calc();
+
+function calc(){
+	price = document.getElementById('costflat').value.replace(/\D+/g,"");
+	nal = document.getElementById('first-payment').value.replace(/\D+/g,"");
+	procent = document.querySelector('.calculator input[type="radio"]:checked').value;	
+
+	if (nal<price*0.1) {
+		console.log ('Первоначальный взнос должен быть не менее 10% от стоимости квартиры. Нажмите F5 или обновите окно в браузере');
+		output = ''
+	} 
+	if(nal>=price*0.3 && procent=='3'){
+		console.log('Сумма ежемесячного платежа составит: ' + Math.round(getPay()+getPlata()) + ' рублей.' + ' Из них сумма членского взноса (%): ' + Math.round(getPlata()));// 3года 5%
+		output = Math.round(getPay()+getPlata());
+	}
+
+	if(nal>=price*0.1 && nal<price*0.3 && procent=='3'){
+		console.log('Сумма ежемесячного платежа составит: ' +  + ' рублей.' + ' Из них сумма членского взноса (%): ' + Math.round(getPlata2()) + ' Членский взнос 15%');// 3 года 15%
+		output = Math.round(getPay2()+getPlata2());
+	}
+
+	if(nal<price*0.3 && procent=='5'){
+		console.log('При первоначальном взносе менее 30% рассрочка предоставляется только на 3-и года! Повторите расчет закрыв это окно и обновив страницу');
+		output = '';
+	}
+
+	if(nal>=price*0.3 && procent=='5'){
+		console.log('Сумма ежемесячного платежа составит: ' + Math.round(getPay1()+getPlata1())+ ' рублей.' + ' Из них сумма членского взноса (%): ' + Math.round(getPlata1())); //5 лет 8%
+		output = Math.round(getPay1()+getPlata1());
+	}
+
+	else if(procent!='3' && procent!='5'){
+		console.log('Вы ввели неверное количество лет, нужно ввести 3 или 5 - попробуйте снова')
+		output = '';
+	} 
+
+	(output > 0) : output = moneyFormat.to(output) : '';
+	$('#calcpayment').text(output);
+}
+
+
 
 //сумма процентов за месяц при 5%
 function getPlata(){
