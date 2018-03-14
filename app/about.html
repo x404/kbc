@@ -447,11 +447,11 @@
 										<div class="flexbox">
 											<!-- <input type="text" class="form-control currency" name="costflat" value="3 650 000" id="costflat" data-inputmask="'alias': 'numeric', 'groupSeparator': ' ', 'autoGroup': true, 'digits': 0, 'digitsOptional': false, 'suffix': ' Р', 'placeholder': '0'" /> -->
 
-											<money v-model="price" v-bind="money" name="costflat" class="form-control" id="costflat" ></money>
+											<money v-model="price" v-bind="money" name="costflat" class="form-control" id="costflat" v-on:change.native="updateSlider(this)"  ></money>
 
 
-											<div class="slider">
-												<slider :slider-value="[ 1500000, 18000000 ]" :slider-min="500000" :slider-max="25000000" :slider-step="1000"></slider>
+											<div class="slider slider-1">
+												<slider :slider-value="3650000" :slider-min="500000" :slider-max="25000000" :slider-step="1000"></slider>
 												<!-- <div id="slider-costflat"></div> -->
 												<p class="slider_start">0</p>
 												<p class="slider_end">25 000 000 Р</p>
@@ -473,9 +473,9 @@
 										<div class="flexbox">
 											<!-- <input type="text" class="form-control" name="first-payment" value="1 250 000" id="first-payment" data-inputmask="'alias': 'numeric', 'groupSeparator': ' ', 'autoGroup': true, 'digits': 0, 'digitsOptional': false, 'suffix': ' Р', 'placeholder': '0'"/> -->
 											<money v-model="nal" v-bind="money" name="first-payment" class="form-control" id="first-payment" ></money>
-											<div class="slider">
+											<div class="slider slider-payment">
 												<!-- <div id="slider-firstpayment"></div> -->
-												<slider :slider-value="[ 1500000, 18000000 ]" :slider-min="500000" :slider-max="25000000" :slider-step="1000"></slider>
+												<slider :slider-value="1250000" :slider-min="500000" :slider-max="25000000" :slider-step="1000"></slider>
 												<p class="slider_start">0</p>
 												<p class="slider_end">25 000 000 Р</p>
 											</div>
@@ -1537,6 +1537,8 @@
 </div>
 <!-- =/filter -->
 <!-- InstanceBeginEditable name="EditRegion5" -->
+
+<script src="js/wNumb.js"></script>
 <script src="js/vue.min.js"></script>
 <script src="js/vue2-filters.min.js"></script>
 <script src="/js/v-money.js"></script>

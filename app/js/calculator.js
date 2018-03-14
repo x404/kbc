@@ -5,7 +5,7 @@ var calcapp = new Vue({
 			// price : document.querySelector('#costflat').value,
 			// nal : document.querySelector('#first-payment').value,
 			price: 3650000,
-			nal: 365000,
+			nal: 1250000,
 			procent : document.querySelector('[name="radio"]:checked').value,
 			money: {
 				decimal: ',',
@@ -20,6 +20,8 @@ var calcapp = new Vue({
 
 	computed: {
 		payment: function(){
+			// bus.$emit('id-selected', 1)
+
 			price = this.price;
 			nal = this.nal;
 			procent = this.procent;
@@ -58,8 +60,20 @@ var calcapp = new Vue({
 
 			return output;
 		}
+	},
+	methods: {
+		upd: function(){
+			updateSlider(this.price);
+		}
 	}
-})
+});
+
+
+function updateSlider(price){
+	console.log(price);
+	// var slider = document.querySelector('.slider-1 > div');
+		// slider.noUiSlider.set(price);
+}
 
 //сумма процентов за месяц при 5%
 function getPlata(){
