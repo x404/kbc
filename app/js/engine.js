@@ -31,6 +31,9 @@ $(document).ready(function(){
 		dotsContainer: '.owl-dots',
 		navContainer: '.owl-nav',
 		animateOut: 'fadeOut',
+		autoplay: true,
+		autoplayTimeout: 5000, 
+		loop: true, 
 		onChanged: function (event) {
 			changeclass(event);
 		},
