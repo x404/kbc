@@ -48,7 +48,7 @@ gulp.task('js-libs', function(){
 	var nouislider = gulp.src(config.libsDir + '/nouislider/distribute/nouislider.min.js').pipe(gulp.dest(config.templateDir + '/js/'));
 	var slick = gulp.src(config.libsDir + '/slick-carousel/slick/slick.min.js').pipe(gulp.dest(config.templateDir + '/js/'));
 	var vue = gulp.src(config.libsDir + '/vue/dist/vue.min.js').pipe(gulp.dest(config.templateDir + '/js/'));
-	var nprogress = gulp.src('node_modules/nprogress/nprogress.js').pipe(gulp.dest(config.templateDir + '/js/'));
+	// var nprogress = gulp.src('node_modules/nprogress/nprogress.js').pipe(gulp.dest(config.templateDir + '/js/'));
 	// var vueuislider = gulp.src(config.libsDir + '/vue-nouislider/src/nouislider.vue.js').pipe(gulp.dest(config.templateDir + '/js/'));
 });
 
@@ -66,7 +66,7 @@ gulp.task('compress', function(){
 	pump([
 			gulp.src([  // Берем все необходимые библиотеки
 				config.libsDir + '/jquery/dist/jquery.js',
-				config.templateDir + '/js/nprogress.js',
+				'node_modules/nprogress/nprogress.js',
 				config.libsDir + '/jquery-validation/dist/jquery.validate.js',
 				config.templateDir + '/js/util.js',
 				config.templateDir + '/js/popper.min.js',
