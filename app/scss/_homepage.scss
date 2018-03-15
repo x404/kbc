@@ -78,6 +78,7 @@
 				$s: 4rem;
 				border: 2px solid $color2;
 				font-size: 2.2rem;
+				font-weight: 900;
 				height: $s;
 				width: $s;
 			}
@@ -253,9 +254,9 @@
 
 
 .feature{
+	overflow: hidden;
 	position: relative;
 	z-index: 20;
-	overflow: hidden;
 
 	.row{
 		flex-wrap: nowrap;
@@ -290,27 +291,31 @@
 		.type-1{
 			.title{
 				font-size: 3.2rem;
-				font-weight: 500;
+				font-weight: 900;
 				color: $color2;
+				line-height: 1.6;
 				text-transform: uppercase;
 				padding-bottom: 1rem;
 			}
 
 			.statistic{
 				color: $color2;
-				margin-top: 3rem;
+				margin-top: 1rem;
 				&__cell{
 					background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAxCAMAAACvdQotAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABR1BMVEX///9OilVMjVWqR0utR0ymR0qNMDmTLTpLjVVJj1b4DUT3DkT6D0X2DkS7AC2VEy2ULjrrF0XsF0XuGEavCTCbACeXFy/vF0awCTCaBCihASjvGEaZBCifBSruF0axCTDrFkWZAyjrF0SaAyixCjCZFC6IQD9iZEaKPD5ba0dkYUVMjVWbUk2uREumTE34D0RLjVWjTkzvFkWoS0ztF0VKjlWmTUypS0z0E0buF0buF0bvF0btF0WVLTrJETqYAyifBSqeBSqeBCqiACePIjKRMzuKIjFkYEWMIjF+Rz/vF0aMIDBiY0X0GUiMIjFdaUbNEzqZBCibAiidAymgASiNHzBfZ0b6D0X4EEXxFUb0E0bwFkbuF0bvF0bwF0f0Gkj0GUjMEzuZBCibAimcAymiACaZAyibAiidAymiACfNEzqgASj///+2DBrDAAAAV3RSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWYBlt8IutnQ1gOMjPn089bVAfjW1tbX3poxziLmRvPzN/bBGufz8/PzvxhXRenpAAAAAWJLR0QAiAUdSAAAAAd0SU1FB+IDDw0QAiSPmoEAAAF0SURBVEjHldNXW4MwFIDhuLc2QYUaCW7r3qvuvfeqFrTWrf//3tBSrZCEw7l/ny+HEIRQSenQ8EgZbMorKqsQQtU1o2O1daCpb2hsivHG+MTtJCaAwRpubmmN8cZU6m4aIohOjHgbJzOz92kbRCg22k2XzKVs24EQhq24mSPzaRihHQYXObJggwhvdJoeSYKI14hANHfzSEQvNMCEYstrQIlOrEIDSPjmvw0Yyd9gFML/kmIBIL4GgPgb4YQVfV0YYYFGGKHY8DdCiPsGzUhE2FAS1mV1m5EIxaJTqQiTCSnRxXsoCCOWTEiI/FQyQrG8ISa6qiEklBiKhojIblBOqPpUAsJIj7oRIHpow080rN48SMTvQ0UopPGPMOWdi0jYDQbJIrDxRx6WIJvnSe+yS5zHldW1ddBsbG5tc+JknrLPL7B53dntQ0ku3t4/YPO5t9+fQAeZryxUfB8eDQwm0HGExskpbyB0dn5xCZur6xu3gX4Adi1dAwG4I8sAAAAASUVORK5CYII=") no-repeat left bottom;
-					padding-left: 28px;
-					padding-bottom: 10px;
-					margin-right: 4rem;
+					padding-left: 22px;
+					padding-bottom: 16px;
+					margin-right: 2.6rem;
 					p:not(.num){
+						line-height: 1.5;
+						@extend .flex-cv;
+						height: 4rem;
 						font-size: 1.5rem;
 						text-transform: uppercase;
 						padding-bottom: 5px;
 					}
 					.num{
-						font-weight: 700;
+						font-weight: 100;
 						font-size: 45px;
 					}
 				}
@@ -342,7 +347,7 @@
 		.type-2{
 			.title{
 				font-size: 4.5rem;
-				font-weight: 700;
+				font-weight: 900;
 				text-transform: uppercase;
 				color: $color8;
 			}
@@ -368,9 +373,7 @@
 	.news,
 	.about{
 		&__cell{
-			// flex-basis: 50%;
 			width: 320px;
-			// flex-shrink: 0;
 		}
 	}
 
@@ -402,6 +405,9 @@
 					top: 50%;
 					margin-top: -35px;
 					right: 0;
+				}
+				img{
+					margin-top: -37px;
 				}
 			}
 		}
@@ -459,6 +465,7 @@
 		&__title{
 			font-size: 2.4rem;
 			font-weight: 500;
+			margin-top: .6rem;
 			&-middle{
 				font-size: 2rem;
 			}
@@ -469,11 +476,9 @@
 	// =about
 	.about{
 		flex-grow: 1;
-		// display: flex;
 		&__cell{
+
 			display: flex;
-			// flex-basis: 50%;
-			// flex-basis: 320px;
 			img{
 				display: block;
 				height: 100%;
@@ -484,10 +489,10 @@
 			}
 			.title{
 				font-size: 2.4rem;
-				font-weight: 500;
+				font-weight: 700;
 				line-height: 1.4;
 				padding-bottom: 2rem;
-				padding-right: 7rem;
+				padding-right: 6rem;
 				text-decoration: none;
 			}
 			&-right{
@@ -501,7 +506,7 @@
 		}
 		.tocat{
 			font-size: 2rem;
-			font-weight: 500;
+			font-weight: 700;
 		}
 		&__meta{
 			top: 4rem;

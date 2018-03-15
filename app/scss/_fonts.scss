@@ -1,4 +1,50 @@
 @font-face {
+    font-family: 'museo_sans_cyrl';
+    src: url('../fonts/museosanscyrl-100.woff2') format('woff2'),
+         url('../fonts/museosanscyrl-100.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'museo_sans_cyrl';
+    src: url('../fonts/museosanscyrl-300.woff2') format('woff2'),
+         url('../fonts/museosanscyrl-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'museo_sans_cyrl';
+    src: url('../fonts/museosanscyrl-500.woff2') format('woff2'),
+         url('../fonts/museosanscyrl-500.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'museo_sans_cyrl';
+    src: url('../fonts/museosanscyrl-700.woff2') format('woff2'),
+         url('../fonts/museosanscyrl-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'museo_sans_cyrl';
+    src: url('../fonts/museosanscyrl-900.woff2') format('woff2'),
+         url('../fonts/museosanscyrl-900.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+@font-face {
     font-family: 'proxima';
     src: url('../fonts/proxima_nova_extrabold.woff2') format('woff2'),
          url('../fonts/proxima_nova_extrabold.woff') format('woff');

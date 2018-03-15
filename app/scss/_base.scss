@@ -26,8 +26,8 @@ html {
 
 body{
 	position: relative;
-	font-family: 'proxima', Arial;
-	font-weight: 400;
+	font-family: 'museo_sans_cyrl', Arial;
+	font-weight: 300;
 	@include font-size(1.4);
 	font-display: swap;
 	height: 100vh;
@@ -110,7 +110,7 @@ b{
 input,
 button,
 textarea{
-	font-family: 'proxima';
+	font-family: 'museo_sans_cyrl';
 }
 
 
@@ -450,10 +450,13 @@ form{
 	}
 
 	.btn-callback{
-		margin-left: 1.5rem;
+		// margin-left: 1.5rem;
 		margin-top: .4rem;
 	}
 
+	.logo{
+		padding-top: 2.4rem;
+	}
 }
 
 .header,
@@ -524,7 +527,7 @@ form{
 			color: $color10;
 			margin-left: 2rem;
 			a{
-				font-weight: 700;
+				font-weight: 900;
 				color: $color1;
 			}
 			span{
@@ -687,28 +690,26 @@ form{
 }
 
 .mainnav{
-	flex-grow: 1;
 	display: flex;
+	flex-grow: 1;
 	margin-left: 2.8rem;
+	padding-top: .8rem;
 	width: 600px;
-	.nav{
-		// padding-top: .6rem;
-	}
 	a{
 		display: block;
 		text-decoration: none;		
 	}
 	& > ul > li{
-		font-weight: 600;
+		font-weight: 500;
 		height: 100%;
 		position: relative;
 		& > a{
-			height: 100%;
-			padding-left: 1.2rem;
-			padding-right: 1.2rem;
-			font-size: 1.6rem;
-			display: flex;
 			align-items: center;
+			display: flex;
+			font-size: 1.6rem;
+			height: 100%;
+			padding-left: 1.3rem;
+			padding-right: 1.3rem;
 			transition: .3s background-color ease-out;
 			span{
 				border-bottom: 3px solid $color7;
@@ -1322,7 +1323,7 @@ form{
 		.btn{
 			display: block;
 			font-size: 1.7rem;
-			font-weight: 500;
+			font-weight: 700;
 			height: 50px;
 			text-decoration: none;
 			padding-left: 1.8rem;
@@ -1361,7 +1362,6 @@ form{
 		padding-left: 6.5rem;
 		.flexbox{
 			justify-content: space-between;
-		// flex-grow: 1;
 			width: 100%;
 		}
 	}
@@ -1388,11 +1388,11 @@ form{
 			.checkbox + label {
 				background: #fff;
 				border-radius: 50%;
-				border:2px solid $color16;
+				border:2px solid #c8d1dc;
 				cursor: pointer;
 				display: block;
 				font-size: 1.7rem;
-				font-weight: 500;
+				font-weight: 700;
 				height: 40px;
 				position: relative;
 				transition: .2s;
@@ -1404,8 +1404,8 @@ form{
 
 
 			.checkbox:checked + label {
-				border-color: $color8;
-				background: $color8;
+				border-color: $color8new;
+				background: $color8new;
 				color: $color2;
 			}
 		}
@@ -1415,7 +1415,7 @@ form{
 	.cell{
 		&__title{
 			font-size: 1.6rem;
-			font-weight: 600;
+			font-weight: 700;
 		}
 	}
 
@@ -1426,19 +1426,19 @@ form{
 	}
 
 	.showflat{
-		transition: .3s background-color ease-out;
-		background: $color8;
+		background: $color8new;
 		color: $color2;
 		display: flex;
-		flex-grow: 1;
 		flex-direction: column;
+		flex-grow: 1;
 		font-weight: 500;
 		height: 60px;
 		justify-content: center;
 		padding-left: 55px;
-		text-decoration: none;
-		width: 180px;
 		position: relative;
+		text-decoration: none;
+		transition: .3s background-color ease-out;
+		width: 180px;
 		&:hover{
 			background-color: $color7;
 		}
@@ -1527,6 +1527,7 @@ form{
 	}
 	.param_control{
 		border: none;
+		color: $color45;
 		border-bottom: 2px solid #00874d;
 		height: 4rem;
 	}
