@@ -1,4 +1,20 @@
 .about-page{
+	.neck{
+		background: url(../images/neck-bg.png) no-repeat center top /cover;
+		height: 184px;
+		&:after{
+			@extend .before;
+			border-bottom: 7px solid #c40f39;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+		}
+	}
+	.breadcrumbs{
+		margin-right: 116px;
+		border-bottom-color: rgba(255,255,255,.3);
+	}
+
 	.carousel{
 		margin-top: 2rem;
 		position: relative;
@@ -53,7 +69,9 @@
 		}
 
 		.advantages{
-			border: 5px solid #e8eff2;
+			// border: 5px solid #e8eff2;
+			@include perspective(7px, #dcdcde, #bdbec1);
+			background: $color59;
 			font-size: 1.5rem;
 			margin-top: 2rem;
 			padding: 2.3rem 2.8rem 0;
@@ -139,6 +157,7 @@
 						}
 					}
 					.title{
+						font-weight: 700;
 						padding-top: 2.8rem;
 					}
 				}
@@ -163,7 +182,7 @@
 
 		.steps{
 			font-size: 2rem;
-			font-weight: 500;
+			font-weight: 700;
 			justify-content: center;
 			margin-top: 5rem;
 			text-align: left;
@@ -213,7 +232,7 @@
 		}
 		.title{
 			font-size: 3.6rem;
-			font-weight: 500;
+			font-weight: 700;
 			padding-bottom: 3.5rem;
 			text-transform: uppercase;
 		}
@@ -239,6 +258,7 @@
 		padding: 10rem 0 10rem 748px;
 		flex-grow: 1;
 		.calc-bottom{
+			@include perspective(7px, $color57, $color58);
 			margin-top: 7px;
 			.right{
 				margin-left: 6.5rem;
