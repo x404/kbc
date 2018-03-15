@@ -619,7 +619,7 @@ a {
 
 h1 {
   font-size: 4rem;
-  font-weight: 500; }
+  font-weight: 700; }
 
 h2 {
   font-size: 2.4rem; }
@@ -704,7 +704,7 @@ input[type="submit"] {
   transition: .3s background-color, color ease-out; }
 
 .form-control {
-  border: 1px solid #052517;
+  border: 1px solid #032919;
   border-radius: 0;
   margin-top: 0.6rem;
   font-size: 16px; }
@@ -739,6 +739,7 @@ button {
   color: #fff;
   display: inline-flex;
   font-weight: 500;
+  font-size: 1.5rem;
   height: 4rem;
   padding: 0 1.8rem 0 4.6rem;
   text-decoration: none;
@@ -835,10 +836,8 @@ form .input-field {
     bottom: 15px; }
   form .input-field label {
     -moz-user-select: none;
-    font-size: 16px;
-    font-size: 1.6rem;
     color: #fff;
-    font-weight: normal;
+    font-weight: 300;
     cursor: text;
     opacity: 1;
     overflow: hidden;
@@ -1192,7 +1191,7 @@ form .form-control {
 /* =header
 ---------------------------*/
 .green-gradient, .btn-faq, .btn-review, .callback,
-.resume, .modal-menu, .about-partners .partners {
+.resume, .modal-menu {
   background-image: -webkit-linear-gradient(top, #008e54 0%, #0d6640 100%);
   background-image: -o-linear-gradient(top, #008e54 0%, #0d6640 100%);
   background-image: linear-gradient(to bottom, #008e54 0%, #0d6640 100%);
@@ -1211,7 +1210,7 @@ form .form-control {
   .callback__title,
   .resume__title {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase; }
   .callback__text,
   .resume__text {
@@ -1226,12 +1225,12 @@ form .form-control {
     .callback .call a,
     .resume .call a {
       color: inherit;
+      display: inline-block;
       font-size: 2rem;
-      font-weight: 500;
-      padding-left: 48px;
+      font-weight: 700;
       height: 41px;
       line-height: 41px;
-      display: inline-block;
+      padding-left: 48px;
       text-decoration: none; }
     .callback .call:before,
     .resume .call:before {
@@ -1479,20 +1478,28 @@ form .form-control {
 /* =footer
 ---------------------------*/
 .footer {
-  background: #052517;
-  margin-top: auto;
+  background: #032919 url(../images/footer-bg.png) no-repeat right top;
   color: #adb4be;
+  line-height: 1.4;
+  margin-top: auto;
+  min-height: 543px;
   padding: 5rem 0; }
+  .footer img {
+    vertical-align: top; }
   .footer .ao {
     color: #fff; }
+  .footer__logo {
+    margin-top: .5rem; }
   .footer__content {
     padding-left: 78px;
     padding-right: 78px; }
   .footer__contacts {
     padding-bottom: 3rem;
-    border-bottom: 3px solid #253628; }
+    border-bottom: 3px solid #075233; }
   .footer .contacts__cell {
     margin-right: 8rem; }
+    .footer .contacts__cell p {
+      margin-bottom: .1rem; }
   .footer__menu {
     padding-top: 3.5rem;
     justify-content: space-between; }
@@ -1507,11 +1514,12 @@ form .form-control {
       .footer__menu dd a:hover {
         color: #fff; }
     .footer__menu dt {
-      font-size: 1.6rem;
       color: #fff;
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-bottom: 1.8rem;
       padding-bottom: 1.5rem;
-      position: relative;
-      margin-bottom: 1.8rem; }
+      position: relative; }
       .footer__menu dt:after {
         border-bottom: 3px solid #c40f39;
         width: 42px;
@@ -1520,7 +1528,7 @@ form .form-control {
     .footer__menu dd {
       margin: 1rem 0; }
   .footer .copyright p {
-    margin: 2.5rem 0; }
+    margin: 2.5rem 0 1.3rem; }
   .footer .idealpromo {
     line-height: 1.5; }
     .footer .idealpromo a {
@@ -1528,13 +1536,14 @@ form .form-control {
       background: url(../images/idealpromo.png) no-repeat left 5px;
       padding-left: 30px; }
   .footer .subscribe {
-    width: 90%; }
+    color: #fff;
+    margin-top: .7rem; }
     .footer .subscribe .title {
-      color: #fff;
       font-size: 2.4rem;
       font-weight: 500; }
     .footer .subscribe p:not(.title) {
-      padding: 2.5rem 0; }
+      font-size: 1.5rem;
+      padding: 2.5rem 0 0.5rem; }
     .footer .subscribe .form-control {
       position: relative;
       width: 24rem; }
@@ -2432,9 +2441,9 @@ body.modal-open {
 
 .objects-intro {
   background: url(../images/bg-1.jpg) no-repeat center #ebeef1/cover;
-  padding: 3.5rem 0 8rem; }
+  padding: 7.5rem 0 8rem; }
   .objects-intro .intro {
-    padding-top: 11.7rem; }
+    padding-top: 11rem; }
 
 .card_flat .carousel .owl-carousel .owl-prev:before, .card_flat .carousel .owl-carousel .owl-next:before,
 .objects .owl-carousel .owl-prev:before,
@@ -2563,12 +2572,12 @@ body.modal-open {
       right: -20px; }
 
 .objects {
-  width: 1185px; }
+  width: 1230px; }
   .objects .flexbox {
     align-items: center; }
   .objects .more {
     flex-grow: 1;
-    margin-right: 50px;
+    margin-right: 60px;
     text-align: right; }
     .objects .more__link:before {
       -webkit-transition: left 0.2s ease-out;
@@ -2581,21 +2590,22 @@ body.modal-open {
     .objects .more__link:hover:before {
       left: 24px; }
   .objects__carousel {
-    width: 1185px;
+    width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: -15px; }
   .objects__info {
     font-size: 1.5rem;
     font-weight: 100;
-    margin-left: 3rem;
+    margin-left: 2.5rem;
     padding-left: 3rem;
-    position: relative; }
+    position: relative;
+    line-height: 1.4; }
     .objects__info:before {
       border-left: 5px solid #00874d;
       height: 28px;
       left: 0;
-      top: 4px; }
+      top: 7px; }
 
 .object__item {
   padding-bottom: 8px;
@@ -2639,7 +2649,7 @@ body.modal-open {
     font-weight: 100; }
   .object__top .name {
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 900;
     padding-bottom: 3px;
     position: relative;
     text-transform: uppercase; }
@@ -2661,7 +2671,7 @@ body.modal-open {
   .object__bottom .price {
     padding-top: .5rem;
     font-size: 2rem;
-    font-weight: 500; }
+    font-weight: 700; }
   .object__bottom .btn-more {
     align-items: center;
     background: white;
@@ -2669,7 +2679,7 @@ body.modal-open {
     color: #010101;
     display: inline-flex;
     font-size: 1.5rem !important;
-    font-weight: 600;
+    font-weight: 500;
     height: 44px;
     padding: 0 1.8rem;
     transition: .3s background-color, color ease-out; }
@@ -2680,8 +2690,9 @@ body.modal-open {
 .intro .link_groups,
 .about-partners .link_groups {
   display: flex;
-  margin-top: 4rem;
-  font-size: 2.4rem; }
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-top: 4rem; }
   .intro .link_groups a,
   .about-partners .link_groups a {
     padding-left: 97px;
@@ -2701,6 +2712,12 @@ body.modal-open {
     .intro .link_groups a:hover span,
     .about-partners .link_groups a:hover span {
       border-bottom: none; }
+  .intro .link_groups .big-icon:before,
+  .about-partners .link_groups .big-icon:before {
+    top: 8px; }
+  .intro .link_groups .icon-catalog:before,
+  .about-partners .link_groups .icon-catalog:before {
+    top: 3px; }
 
 .intro {
   align-items: center; }
@@ -2777,10 +2794,11 @@ body.modal-open {
   .about-partners .partners {
     flex: 1 0 50%; }
   .about-partners .about {
-    padding-right: 70px; }
+    padding-right: 70px;
+    padding-top: 3rem; }
     .about-partners .about__left p {
       font-size: 3rem;
-      font-weight: 500;
+      font-weight: 700;
       margin-top: 2rem; }
     .about-partners .about__right {
       padding-left: 5rem; }
@@ -2790,7 +2808,8 @@ body.modal-open {
         text-transform: uppercase; }
       .about-partners .about__right .title {
         font-size: 4rem;
-        font-weight: 500;
+        font-weight: 700;
+        line-height: 1.2;
         padding-top: 10px;
         text-transform: uppercase;
         position: relative; }
@@ -2802,25 +2821,26 @@ body.modal-open {
         color: #3d4044;
         font-size: 1.7rem;
         margin-top: 4.5rem;
-        line-height: 1.5; }
+        line-height: 1.6; }
     .about-partners .about .more__link {
       background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAQAAABjX+2PAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAhcUKhROyD+WAAAAtklEQVQY022RQQqCUBCG/5ftIzW6R9AlapkQhEWL6Bh1lDpDqUk36QjRMg3c+LXQ4CVvhreZj3kzfCNk5YwToV2x4ZgHkDB04x57SiAjcGEhtnyA6++HLhYxBZDhu7FY8gIu+MgwEbIDVYp0lKdca8O7GWJFrVoDeZJuffU6UDLtk4xh2ulGlRY6yNNdsWu1iCeQELg2X1EAeaOmCzeUQPrz9i9113aGLqnNSdLGl0vqnDMju/IFTrboTx+TTc8AAAAASUVORK5CYII=");
       background-position: 18px center;
       background-repeat: no-repeat;
       font-size: 1.6rem;
-      font-weight: 100;
+      font-weight: 500;
       height: 5rem;
       margin-top: 3.5rem;
       transition: .3s background ease-out; }
       .about-partners .about .more__link:hover {
         background-position: 23px center; }
   .about-partners .partners {
+    background-color: #00874d;
     color: #fff;
     padding: 4.5rem 4rem;
     font-size: 1.7rem; }
     .about-partners .partners .title {
       font-size: 4rem;
-      font-weight: 500;
+      font-weight: 700;
       text-transform: uppercase; }
     .about-partners .partners .text {
       line-height: 1.6;
@@ -2831,7 +2851,7 @@ body.modal-open {
       font-size: 2.4rem; }
   .about-partners .link_groups {
     margin-top: 3.5rem;
-    font-weight: 400; }
+    font-weight: 500; }
     .about-partners .link_groups a {
       margin-right: 7rem; }
       .about-partners .link_groups a:hover:before {
