@@ -450,7 +450,6 @@ form{
 	}
 
 	.btn-callback{
-		// margin-left: 1.5rem;
 		margin-top: .4rem;
 	}
 
@@ -479,7 +478,6 @@ form{
 		&__link{
 			height: 31px;
 			font-size: 1.5rem;
-			font-weight: 400;
 			display: block;
 			padding-left: 34px;
 			position: relative;
@@ -517,8 +515,7 @@ form{
 		}
 		.count{
 			border-bottom: 2px solid $color7;
-			padding-left: 2px;
-			padding-right: 2px;
+			padding: 2px 2px 0;
 			text-align: center;
 		}
 	}
@@ -768,16 +765,45 @@ form{
 	@include gradient-vertical(#008e54, #0d6640);	
 }
 
+
+.perspective{
+	position: relative;
+	&:after,
+	&:before
+	{
+		@extend .before;
+	}
+	&:after{
+		background: #00a664;
+		height: 100%;
+		right: -12px;
+		top: 6px;
+		transform: skewY(45deg);
+		width: 12px;
+	}
+	&:before{
+		background: #007948;
+		bottom: -12px;
+		height: 12px;
+		left: 6px;
+		transform: skewX(45deg);
+		width: 100%;
+	}
+}
+
 /* =callback
 ---------------------------*/
 .callback,
 .resume{
-	@extend .green-gradient;
-	background-color: $color14;
+	background-color: $color8new;
 	color: $color2;
 	flex-shrink: 0;
 	padding: 3.5rem 4rem;
-	width: 32rem;
+	width: 30.4rem;
+	position: relative;
+	
+	// @extend .perspective;
+
 	&__title{
 		font-size: 2.5rem;
 		font-weight: 700;

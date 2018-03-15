@@ -1,17 +1,17 @@
 .popover {
-	box-shadow: 0 5px 20px rgba(73,82,95,.5);
 	$w: 430px;
+	background: #fff;
+	box-shadow: 0 5px 20px rgba(73,82,95,.5);
+	display: block;
+	position: absolute;
 	width: $w;
-    display: block;
-    background: #fff;
-    position: absolute;
-    img{
-    	display: block;
-    }
+	img{
+		display: block;
+	}
 	.close {
-	    position: absolute;
-	    right: 5px;
-	    top: 1px;
+		position: absolute;
+		right: 5px;
+		top: 1px;
 	}
 	&-inner{
 		width: $w;
@@ -28,7 +28,7 @@
 
 	&-title{
 		font-size: 19px;
-		font-weight: 500;
+		font-weight: 700;
 		margin-bottom: 7px;
 	}
 
@@ -124,12 +124,12 @@
 } 
 
 .popover .arrow, .popover .arrow:after {
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
+	border-color: transparent;
+	border-style: solid;
+	display: block;
+	height: 0;
+	position: absolute;
+	width: 0;
 }
 
 
@@ -138,11 +138,11 @@
 }
 
 .popover.bottom .arrow {
-    top: -11px;
-    left: 50%;
-    margin-left: -11px;
-    border-bottom-color: #fff;
-    border-top-width: 0;
+	top: -11px;
+	left: 50%;
+	margin-left: -11px;
+	border-bottom-color: #fff;
+	border-top-width: 0;
 }
 
 
@@ -173,12 +173,12 @@ circle:nth-child(2n) {
 	width: 83px;
 	circle{
 		stroke-width: 16;
-		stroke-dasharray: 213px 213px;		
+		stroke-dasharray: 213px 213px;
 	}
 	.num{
 		@extend .flex-center;
 		font-size: 2rem;
-		font-weight: 500;
+		font-weight: 700;
 		height: 83px;
 		position: absolute;
 		top: 0;

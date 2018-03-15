@@ -31,7 +31,7 @@ $(document).ready(function(){
 		dotsContainer: '.owl-dots',
 		navContainer: '.owl-nav',
 		animateOut: 'fadeOut',
-		autoplay: false,
+		autoplay: true,
 		autoplayTimeout: 5000, 
 		loop: true, 
 		onChanged: function (event) {
