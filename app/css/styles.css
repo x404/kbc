@@ -132,29 +132,6 @@
   ---------------------------------------------------
     A set of useful SCSS mixins
   ---------------------------------------------------*/
-/*
-.columns(@colwidth: 250px, @colcount: 0, @colgap: 50px, @columnRuleColor: #EEE, @columnRuleStyle: solid, @columnRuleWidth: 1px) {
-  -moz-column-width: @colwidth;
-  -moz-column-count: @colcount;
-  -moz-column-gap: @colgap;
-  -moz-column-rule-color: @columnRuleColor;
-  -moz-column-rule-style: @columnRuleStyle;
-  -moz-column-rule-width: @columnRuleWidth;
-  -webkit-column-width: @colwidth;
-  -webkit-column-count: @colcount;
-  -webkit-column-gap: @colgap;
-  -webkit-column-rule-color: @columnRuleColor;
-  -webkit-column-rule-style: @columnRuleStyle;
-  -webkit-column-rule-width: @columnRuleWidth;
-  column-width: @colwidth;
-  column-count: @colcount;
-  column-gap: @colgap;
-  column-rule-color: @columnRuleColor;
-  column-rule-style: @columnRuleStyle;
-  column-rule-width: @columnRuleWidth;
-}
-
-*/
 .icon-catalog:before {
   background-image: url(../images/sprite.png);
   background-position: 0px 0px;
@@ -664,14 +641,14 @@ h3 {
 .related .carousel .owl-carousel .owl-next:after, .objects__info:before, .objects .owl-item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .about-partners .partners:after, .big-icon:before, .neck .tabs .tab.active:after, .pagination .prev:before,
 .pagination .next:before, .picking__link span:before, .sortbox__option-up:after, .sortbox__option-down:after, main ul li:before, .faq-page .head .btn:before,
-.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, #calc-gnk-form .alert:before, .complex-page .complex__left:before, .complex-page .complex__panel .video .bg:before, .complex-page .complex__panel .video .bg:after, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a span:after, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .example__pic a:after, .calculator-page .example__pic a:before, .calculator-page .example__pic:after, .calculator-page .example__pic:before, .calculator-page .related__item:after {
+.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__inner:after, .flat-page .card__description .description__inner:before, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .flat-page .card__description .description__bottom:before, .flat-page .card__description .description__bottom:hover:after, .flat-page .card__description .description__bottom:hover:before, .flat-page .card__description .description:after, .installmentbox__left:after, .installmentbox__left:before, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, #calc-gnk-form .alert:before, .complex-page .complex__left:before, .complex-page .complex__panel .video .bg:before, .complex-page .complex__panel .video .bg:after, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a span:after, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .example__pic a:after, .calculator-page .example__pic a:before, .calculator-page .example__pic:after, .calculator-page .example__pic:before, .calculator-page .related__item:after {
   content: "";
   display: block;
   position: absolute; }
 
 strong,
 b {
-  font-weight: 500; }
+  font-weight: 900; }
 
 input,
 button,
@@ -1137,7 +1114,6 @@ form .form-control {
   display: flex;
   flex-grow: 1;
   margin-left: 2.8rem;
-  padding-top: .8rem;
   width: 600px; }
   .mainnav a {
     display: block;
@@ -1188,7 +1164,7 @@ form .form-control {
 
 /* =header
 ---------------------------*/
-.green-gradient, .btn-faq, .btn-review, .modal-menu {
+.green-gradient, .btn-faq, .btn-review {
   background-image: -webkit-linear-gradient(top, #008e54 0%, #0d6640 100%);
   background-image: -o-linear-gradient(top, #008e54 0%, #0d6640 100%);
   background-image: linear-gradient(to bottom, #008e54 0%, #0d6640 100%);
@@ -1282,7 +1258,7 @@ form .form-control {
       font-weight: 500; }
 
 .callback {
-  height: calc(100% - 14px); }
+  height: 535px; }
 
 /* =/callback
 ---------------------------*/
@@ -1371,6 +1347,7 @@ form .form-control {
       border-color: #00874d; }
 
 .modal-menu {
+  background: #007948;
   left: 0;
   position: fixed;
   top: 0;
@@ -1884,7 +1861,7 @@ form .form-control {
   border-color: #00874d; }
 
 .sidemodal {
-  background: rgba(13, 103, 64, 0.97);
+  background: rgba(0, 121, 72, 0.97);
   color: #fff;
   position: fixed;
   right: 0;
@@ -1908,7 +1885,7 @@ form .form-control {
     right: 0;
     overflow-y: auto; }
   .sidemodal .title {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 2.5rem;
     text-transform: uppercase; }
   .sidemodal .text {
@@ -3382,7 +3359,7 @@ body.modal-open {
 
 .heading {
   color: #000;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 3.4rem !important;
   padding-bottom: 25px;
   position: relative;
@@ -3887,7 +3864,7 @@ main {
   .modal-dialog {
     width: 785px; }
   .modal-title {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 2.5rem;
     text-transform: uppercase; }
   .modal .flexbox {
@@ -4562,10 +4539,12 @@ main {
     padding: 1.5rem;
     position: relative;
     z-index: 10; }
-    .table-flats td .flat a {
-      text-decoration: none; }
-      .table-flats td .flat a:hover {
-        color: #c40f39; }
+    .table-flats td .flat {
+      font-weight: 900; }
+      .table-flats td .flat a {
+        text-decoration: none; }
+        .table-flats td .flat a:hover {
+          color: #c40f39; }
     .table-flats td .place {
       margin-top: .3rem;
       font-size: 1.4rem;
@@ -4975,7 +4954,7 @@ main {
         top: 11px; }
 
 .mortgage {
-  padding-bottom: 7.3rem;
+  padding-bottom: 5.6rem;
   padding-top: 5rem; }
   .mortgage .heading {
     padding-bottom: 1.2rem; }
@@ -4993,20 +4972,39 @@ main {
         box-shadow: 0 5px 30px rgba(83, 99, 121, 0.5); }
 
 .flat-page .main {
-  background: #ebeef1;
+  background: #f3f3f4;
   padding: 5.5rem 0; }
 
 .flat-page .card__description {
   padding-left: 88px; }
   .flat-page .card__description .description {
     position: relative; }
+    .flat-page .card__description .description__inner {
+      position: relative; }
+      .flat-page .card__description .description__inner:after, .flat-page .card__description .description__inner:before {
+        transition: .3s; }
+      .flat-page .card__description .description__inner:after {
+        background: #dcdcde;
+        height: 100%;
+        right: -10px;
+        top: 5px;
+        transform: skewY(45deg);
+        width: 10px; }
+      .flat-page .card__description .description__inner:before {
+        background: #007948;
+        bottom: -10px;
+        height: 10px;
+        left: 5px;
+        transform: skewX(45deg);
+        width: 100%; }
     .flat-page .card__description .description__body {
       background: #fff;
+      height: 335px;
       padding: 3.4rem 4.5rem 3.2rem; }
       .flat-page .card__description .description__body .title {
-        margin-bottom: 2.7rem;
+        margin-bottom: 3rem;
         font-size: 4rem;
-        font-weight: 500;
+        font-weight: 700;
         text-transform: uppercase; }
       .flat-page .card__description .description__body .object {
         display: flex;
@@ -5016,15 +5014,17 @@ main {
         padding-right: 20px; }
       .flat-page .card__description .description__body .place {
         font-size: 2rem;
-        font-weight: 500; }
+        font-weight: 700;
+        padding-bottom: .4rem; }
       .flat-page .card__description .description__body .address {
         color: #6f6f6f; }
       .flat-page .card__description .description__body .more {
         background: #c40f39;
         margin-top: .3rem;
         color: #fff;
-        font-weight: 600;
+        font-weight: 500;
         height: 35px;
+        font-size: 1.4rem;
         line-height: 35px;
         padding-left: 35px;
         padding-right: 27px;
@@ -5039,15 +5039,53 @@ main {
           background-color: #00874d; }
       .flat-page .card__description .description__body .showmap {
         display: inline-block;
-        font-weight: 600;
         padding-left: 24px;
         text-decoration: none; }
     .flat-page .card__description .description__bottom {
       background: #00874d;
       color: #fff;
-      padding: 2.2rem 4.5rem 2.2rem 5.5rem; }
-      .flat-page .card__description .description__bottom:hover:after {
-        border-bottom: 112px solid #c40f39; }
+      padding: 2.2rem 4.5rem 2.2rem 5.5rem;
+      transition: .3s;
+      position: relative; }
+      .flat-page .card__description .description__bottom:after, .flat-page .card__description .description__bottom:before {
+        transition: .3s; }
+      .flat-page .card__description .description__bottom:after {
+        background: #00a664;
+        height: 100%;
+        right: -10px;
+        top: 5px;
+        transform: skewY(45deg);
+        width: 10px; }
+      .flat-page .card__description .description__bottom:before {
+        background: #007948;
+        bottom: -10px;
+        height: 10px;
+        left: 5px;
+        transform: skewX(45deg);
+        width: 100%; }
+      .flat-page .card__description .description__bottom:before, .flat-page .card__description .description__bottom:after {
+        z-index: 10; }
+      .flat-page .card__description .description__bottom:hover {
+        background: #c40f39;
+        position: relative; }
+        .flat-page .card__description .description__bottom:hover:after, .flat-page .card__description .description__bottom:hover:before {
+          transition: .3s; }
+        .flat-page .card__description .description__bottom:hover:after {
+          background: #c40f39;
+          height: 100%;
+          right: -10px;
+          top: 5px;
+          transform: skewY(45deg);
+          width: 10px; }
+        .flat-page .card__description .description__bottom:hover:before {
+          background: #c40f39;
+          bottom: -10px;
+          height: 10px;
+          left: 5px;
+          transform: skewX(45deg);
+          width: 100%; }
+        .flat-page .card__description .description__bottom:hover:after {
+          z-index: 10; }
       .flat-page .card__description .description__bottom .flexbox {
         align-items: center;
         justify-content: space-between;
@@ -5055,14 +5093,15 @@ main {
         z-index: 20; }
       .flat-page .card__description .description__bottom .left .price {
         font-size: 3rem;
-        font-weight: 500; }
+        font-weight: 700; }
       .flat-page .card__description .description__bottom .right .btn {
         border: none;
         background: #fff;
         font-size: 1.7rem;
+        font-weight: 500;
         height: 60px;
         border-radius: 60px;
-        padding-right: 40px;
+        padding-right: 24px;
         padding-left: 53px;
         transition: .3s; }
         .flat-page .card__description .description__bottom .right .btn:before {
@@ -5074,16 +5113,16 @@ main {
           color: #fff; }
           .flat-page .card__description .description__bottom .right .btn:hover:before {
             filter: invert(1); }
-      .flat-page .card__description .description__bottom:after {
-        border-bottom: 5px solid #c40f39;
-        transition: .3s border-bottom;
-        left: 0;
-        bottom: -8px;
-        width: 100%; }
+    .flat-page .card__description .description:after {
+      border-bottom: 5px solid #c40f39;
+      bottom: -18px;
+      left: 10px;
+      transition: .3s border-bottom;
+      width: 100%; }
 
 .characteristic {
   display: flex;
-  margin-top: 1rem;
+  margin-top: 1.3rem;
   width: 100%; }
   .characteristic__column {
     flex-grow: 1; }
@@ -5091,12 +5130,12 @@ main {
       flex: 0 0 180px; }
   .characteristic__row {
     display: flex;
-    margin: 1rem 0; }
+    margin: 1.1rem 0; }
   .characteristic__title {
     color: #5e5e5e;
     flex-basis: 80px; }
   .characteristic__field {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.5rem; }
 
 .offer {
@@ -5109,6 +5148,7 @@ main {
   .offer__left {
     padding-right: 12.5rem; }
   .offer a {
+    border-bottom-width: 1px;
     display: inline-block; }
 
 .similar_product .title {
@@ -5133,28 +5173,40 @@ main {
     border-bottom: 2px solid #ebeef1; }
 
 .installmentbox {
-  background-image: -webkit-linear-gradient(top, #00864d 0%, #0d6640 100%);
-  background-image: -o-linear-gradient(top, #00864d 0%, #0d6640 100%);
-  background-image: linear-gradient(to bottom, #00864d 0%, #0d6640 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF00864D', endColorstr='#FF0D6640', GradientType=0);
+  background: url(../images/bg-4.png) no-repeat left -5px top, url(../images/bg-5.png) no-repeat right top 40% #007948;
   padding: 8rem 0 9.3rem; }
   .installmentbox__left {
     background: url(../images/bg-2.jpg) no-repeat 85px center #fff;
-    border-bottom: 11px solid #c40f39;
+    position: relative;
     color: #50525d;
     font-size: 1.5rem;
     min-height: 400px;
     padding-left: 480px; }
+    .installmentbox__left:after, .installmentbox__left:before {
+      transition: .3s; }
+    .installmentbox__left:after {
+      background: #dcdcde;
+      height: 100%;
+      right: -12px;
+      top: 6px;
+      transform: skewY(45deg);
+      width: 12px; }
+    .installmentbox__left:before {
+      background: #bbb;
+      bottom: -12px;
+      height: 12px;
+      left: 6px;
+      transform: skewX(45deg);
+      width: 100%; }
     .installmentbox__left .category {
       color: #c40f39;
       font-size: 1.8rem;
       font-weight: 500; }
     .installmentbox__left .title {
-      margin: 2rem 0;
+      margin: 2rem 0 3rem;
       color: #000;
       font-size: 3.4rem;
-      font-weight: 500; }
+      font-weight: 700; }
     .installmentbox__left .btn {
       align-items: center;
       border: 2px solid #ebeef1;
@@ -5225,18 +5277,26 @@ main {
       color: #fff; }
       .installmentbox__right .variant__cifr {
         font-size: 5rem;
-        font-weight: 500;
+        font-weight: 900;
         flex: 0 0 80px; }
+      .installmentbox__right .variant__text {
+        color: #a8e4ca; }
+        .installmentbox__right .variant__text strong {
+          color: #fff; }
 
 .card_flat .carousel {
   text-align: center;
   width: 780px; }
   .card_flat .carousel .owl-carousel .owl-prev {
     left: -10px; }
+    .card_flat .carousel .owl-carousel .owl-prev:before {
+      filter: grayscale(1) brightness(1.5); }
     .card_flat .carousel .owl-carousel .owl-prev:hover {
       left: 0; }
   .card_flat .carousel .owl-carousel .owl-next {
     right: -10px; }
+    .card_flat .carousel .owl-carousel .owl-next:before {
+      filter: grayscale(1) brightness(1.5); }
     .card_flat .carousel .owl-carousel .owl-next:hover {
       right: 0; }
   .card_flat .carousel_tab {
@@ -5311,11 +5371,11 @@ main {
     align-items: center; }
   .calc-bottom p {
     font-size: 2.4rem;
-    font-weight: 600; }
+    font-weight: 700; }
   .calc-bottom .cifr {
     color: #00874d;
     font-size: 3rem;
-    font-weight: 500;
+    font-weight: 700;
     margin-top: 1rem; }
   .calc-bottom .btn {
     border-radius: 6rem;
@@ -5331,7 +5391,7 @@ main {
   position: relative; }
   #calc-gnk-form .row .title {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 700;
     padding-bottom: .6rem; }
   #calc-gnk-form .row .flexbox {
     justify-content: flex-start; }

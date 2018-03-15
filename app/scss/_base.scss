@@ -104,7 +104,7 @@ h3{font-size:1.6rem}
 
 strong,
 b{
-	font-weight: 500
+	font-weight: 900
 }
 
 input,
@@ -690,7 +690,7 @@ form{
 	display: flex;
 	flex-grow: 1;
 	margin-left: 2.8rem;
-	padding-top: .8rem;
+	// padding-top: .8rem;
 	width: 600px;
 	a{
 		display: block;
@@ -869,7 +869,8 @@ form{
 }
 
 .callback{
-	height: calc(100% - 14px);
+	// height: calc(100% - 14px);
+	height: 535px;
 }
 /* =/callback
 ---------------------------*/
@@ -1003,7 +1004,8 @@ form{
 
 
 .modal-menu{
-	@extend .green-gradient;
+	background: $color55;
+	// @extend .green-gradient;
 	left: 0;
 	position: fixed;
 	top: 0;
@@ -1720,7 +1722,7 @@ form{
 
 
 .sidemodal{
-	background: rgba(13,103,64,.97);
+	background: rgba(0,121,72,.97);
 	color: $color2;
 	position: fixed;
 	right: 0;
@@ -1750,7 +1752,7 @@ form{
 		overflow-y: auto;
 	}
 	.title{
-		font-weight: 500;
+		font-weight: 700;
 		font-size: 2.5rem;
 		text-transform: uppercase;
 	}

@@ -1,6 +1,6 @@
 // mortgate
 .mortgage{
-	padding-bottom: 7.3rem;
+	padding-bottom: 5.6rem;
 	padding-top: 5rem;
 	.heading{
 		padding-bottom: 1.2rem;
@@ -26,7 +26,7 @@
 .flat-page{
 	// main
 	.main{
-	background: #ebeef1;
+		background: #f3f3f4;
 		padding: 5.5rem 0;
 	}
 
@@ -34,14 +34,17 @@
 		padding-left: 88px;
 		.description{
 			position: relative;
+			&__inner{
+				@include perspective(10px, $color57, $color55);
+			}
 			&__body{
 				background: $color2;
+				height: 335px;
 				padding: 3.4rem 4.5rem 3.2rem;
-
 				.title{
-					margin-bottom: 2.7rem;
+					margin-bottom: 3rem;
 					font-size: 4rem;
-					font-weight: 500;
+					font-weight: 700;
 					text-transform: uppercase;
 				}
 
@@ -57,7 +60,8 @@
 
 				.place{
 					font-size: 2rem;
-					font-weight: 500;
+					font-weight: 700;
+					padding-bottom: .4rem;
 				}
 
 				.address{
@@ -69,8 +73,9 @@
 					background: $color7;
 					margin-top: .3rem;
 					color: $color2;
-					font-weight: 600;
+					font-weight: 500;
 					height: $h;
+					font-size: 1.4rem;
 					line-height: $h;
 					padding-left: 35px;
 					padding-right: 27px;
@@ -90,19 +95,29 @@
 
 				.showmap{
 					display: inline-block;
-					font-weight: 600;
 					padding-left: 24px;
 					text-decoration: none;
 				}
-
 			}
 			&__bottom{
 				background: $color8;
 				color: $color2;
 				padding: 2.2rem 4.5rem 2.2rem 5.5rem;
+				transition: .3s;
+				@include perspective(10px, #00a664, #007948);
+
+				&:before,
+				&:after{
+					z-index: 10;
+				}
+
+
 				&:hover{
+					background: $color7;
+					@include perspective(10px, $color7, $color7);			
 					&:after{
-						border-bottom: 112px solid $color7;
+						z-index: 10;
+						// border-bottom: 112px solid $color7;
 					}
 				}
 				.flexbox{
@@ -114,7 +129,7 @@
 				.left{
 					.price{
 						font-size: 3rem;
-						font-weight: 500;
+						font-weight: 700;
 					}
 				}
 				.right{
@@ -123,9 +138,10 @@
 						border: none;
 						background: $color2;
 						font-size: 1.7rem;
+						font-weight: 500;
 						height: $h;
 						border-radius: $h;
-						padding-right: 40px;
+						padding-right: 24px;
 						padding-left: 53px;
 						transition: .3s;
 						&:before{
@@ -142,28 +158,26 @@
 						}
 					}
 				}
-				&:after{
-					@extend .before;
-					border-bottom: 5px solid $color7;
-					transition: .3s border-bottom;
-					left: 0;
-					bottom: -8px;
-					width: 100%;
-				}
+			}
+
+			&:after{
+				@extend .before;
+				border-bottom: 5px solid $color7;
+				bottom: -18px;
+				left: 10px;
+				transition: .3s border-bottom;
+				width: 100%;
 			}
 		}
 	}
 
-	.visual{
-		// margin: 0rem 0;
-	}
 }
 
 
 // characteristic
 .characteristic{
 	display: flex;
-	margin-top: 1rem;
+	margin-top: 1.3rem;
 	width: 100%;
 	&__column{
 		flex-grow: 1;
@@ -173,14 +187,14 @@
 	}
 	&__row{
 		display: flex;
-		margin: 1rem 0;
+		margin: 1.1rem 0;
 	}
 	&__title{
 		color: $color40;
 		flex-basis: 80px;
 	}
 	&__field{
-		font-weight: 500;
+		font-weight: 700;
 		font-size: 1.5rem;
 	}
 }
@@ -203,6 +217,7 @@
 	}
 
 	a{
+		border-bottom-width: 1px;
 		display: inline-block;
 	}
 }
@@ -243,12 +258,12 @@
 
 
 .installmentbox{
-	@include gradient-vertical(#00864d, #0d6640);
+	background: url(../images/bg-4.png) no-repeat left -5px top, url(../images/bg-5.png) no-repeat right top 40% $color55;
 	padding: 8rem 0 9.3rem;
 	&__left{
 		@extend .flex-cv;
 		background: url(../images/bg-2.jpg) no-repeat 85px center $color2;
-		border-bottom: 11px solid $color7;
+		@include perspective(12px, #dcdcde, #bbb);
 		color: #50525d;
 		font-size: 1.5rem;
 		min-height: 400px;
@@ -259,10 +274,10 @@
 			font-weight: 500;
 		}
 		.title{
-			margin: 2rem 0;
+			margin: 2rem 0 3rem;
 			color: $color1;
 			font-size: 3.4rem;
-			font-weight: 500;
+			font-weight: 700;
 		}
 
 		.btn{
@@ -317,7 +332,6 @@
 			}
 		}
 		
-
 		.flexbox{
 			width: 700px;
 		}
@@ -362,8 +376,14 @@
 			color: $color2;
 			&__cifr{
 				font-size: 5rem;
-				font-weight: 500;
+				font-weight: 900;
 				flex: 0 0 80px;
+			}
+			&__text{
+				color: $color56;
+				strong{
+					color: $color2;
+				}
 			}
 		}
 	}
@@ -377,6 +397,9 @@
 		width: 780px;
 		.owl-carousel{
 			.owl-prev{
+				&:before{
+					filter: grayscale(1) brightness(1.5)
+				}
 				left: -10px;
 				&:hover{
 					left: 0;
@@ -384,6 +407,9 @@
 			}
 			.owl-next{
 				right: -10px;
+				&:before{
+					filter: grayscale(1) brightness(1.5)
+				}
 				&:hover{
 					right: 0;
 				}
@@ -474,6 +500,7 @@
 	.flexbox{
 		justify-content: space-between
 	}
+
 }
 
 
@@ -486,12 +513,12 @@
 	}
 	p{
 		font-size: 2.4rem;
-		font-weight: 600;
+		font-weight: 700;
 	}
 	.cifr{
 		color: $color8;
 		font-size: 3rem;
-		font-weight: 500;
+		font-weight: 700;
 		margin-top: 1rem;
 	}
 	.btn{
@@ -515,7 +542,7 @@
 		position: relative;
 		.title{
 			font-size: 2rem;
-			font-weight: 500;
+			font-weight: 700;
 			padding-bottom: .6rem;
 		}
 		.flexbox{
