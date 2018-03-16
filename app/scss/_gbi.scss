@@ -271,7 +271,6 @@
 	font-size: 1.5rem;
 	a, span{
 		padding-left: 21px;
-		// height: 60px;
 		padding: 1.2rem 10px 1.2rem 21px;
 		@extend .flex-cv;
 		
@@ -281,27 +280,26 @@
 		transition: .3s;
 		&:hover{
 			background-color: $color42;
-			color: $color8;
+			color: $color8new;
 			padding-left: 31px;
 		}
 	}
 	.active{
 		position: relative;
 		a, span{
-			background-color: $color8;
+			background-color: $color8new;
 			color: $color2;
 			cursor: default;
 		}
 		&:after{
 			@extend .before;
-			width: 0;
-			height: 0;
-			border-top: 21px solid transparent;
-			border-left: 30px solid $color8;
+			background-color: $color8new;
+			height: 100%;
 			right: -30px;
-			top: 50%;
-			margin-top: -21px;
-			border-bottom: 21px solid transparent;
+			top: 0;
+			width: 30px;
+			-webkit-clip-path: polygon(0 0, 0 100%, 100% 50%);
+			clip-path: polygon(0 0, 0 100%, 100% 50%);
 		}
 	}
 }

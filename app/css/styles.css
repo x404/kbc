@@ -868,7 +868,7 @@ form .form-control {
 .contacts__cell a {
   color: #fff;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
   margin-left: .2rem; }
   .contacts__cell a .code {
@@ -1422,16 +1422,17 @@ form .form-control {
     .modal-menu .contacts__cell {
       margin-bottom: 2rem; }
       .modal-menu .contacts__cell p {
-        font-size: 1.8rem; }
+        font-size: 1.8rem;
+        font-weight: 500; }
     .modal-menu .contacts .title {
       font-size: 1.8rem;
       font-weight: 500;
-      margin: 1.8rem 0 1.4rem;
+      margin: 1.8rem 0;
       position: relative; }
       .modal-menu .contacts .title:after {
         border-bottom: 2px solid #c40f39;
-        width: 30px;
-        bottom: -5px; }
+        bottom: -8px;
+        width: 30px; }
   .modal-menu .social {
     margin-top: 2.6rem; }
     .modal-menu .social a {
@@ -1442,7 +1443,10 @@ form .form-control {
     color: #fff;
     margin-top: .8rem; }
   .modal-menu .address {
+    line-height: 1.4;
     margin-top: 3.3rem; }
+    .modal-menu .address b, .modal-menu .address strong {
+      font-weight: 700; }
   .modal-menu .close-modal {
     background: #fff;
     border: none;
@@ -2583,23 +2587,24 @@ body.modal-open {
       background-position: -77px -112px;
       width: 18px;
       height: 20px;
-      left: 19px; }
+      left: 19px;
+      top: 10px; }
     .objects .more__link:hover:before {
       left: 24px; }
   .objects__carousel {
-    width: 1230px;
+    margin-left: -15px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: -15px; }
+    width: 1230px; }
     .objects__carousel .owl-carousel .owl-nav {
       width: calc(100% - 8px); }
   .objects__info {
     font-size: 1.5rem;
     font-weight: 100;
+    line-height: 1.4;
     margin-left: 2.5rem;
     padding-left: 3rem;
-    position: relative;
-    line-height: 1.4; }
+    position: relative; }
     .objects__info:before {
       border-left: 5px solid #00874d;
       height: 28px;
@@ -4791,23 +4796,22 @@ main {
     transition: .3s; }
     .sidebar a:hover {
       background-color: #dce2e7;
-      color: #00874d;
+      color: #009259;
       padding-left: 31px; }
   .sidebar .active {
     position: relative; }
     .sidebar .active a, .sidebar .active span {
-      background-color: #00874d;
+      background-color: #009259;
       color: #fff;
       cursor: default; }
     .sidebar .active:after {
-      width: 0;
-      height: 0;
-      border-top: 21px solid transparent;
-      border-left: 30px solid #00874d;
+      background-color: #009259;
+      height: 100%;
       right: -30px;
-      top: 50%;
-      margin-top: -21px;
-      border-bottom: 21px solid transparent; }
+      top: 0;
+      width: 30px;
+      -webkit-clip-path: polygon(0 0, 0 100%, 100% 50%);
+      clip-path: polygon(0 0, 0 100%, 100% 50%); }
 
 .list_construction {
   flex-wrap: wrap; }

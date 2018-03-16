@@ -665,6 +665,7 @@
 				@include transition-param(left);
 				@include sprite($icon-list);
 				left: 19px;
+				top: 10px;
 			}
 			&:hover{
 				&:before{
@@ -675,11 +676,10 @@
 	}
 
 	&__carousel{
-		// width: 1185px;
-		width: 1230px;
+		margin-left: -15px;
 		padding-left: 15px;
 		padding-right: 15px;
-		margin-left: -15px;
+		width: 1230px;
 		.owl-carousel .owl-nav{
 			width: calc(100% - 8px);
 		}
@@ -689,10 +689,10 @@
 	&__info{
 		font-size: 1.5rem;
 		font-weight: 100;
+		line-height: 1.4;
 		margin-left: 2.5rem;
 		padding-left: 3rem;
 		position: relative;
-		line-height: 1.4;
 		&:before{
 			@extend .before;
 			border-left: 5px solid $color8;
@@ -765,13 +765,9 @@
 				background-color: $color7;
 				color: $color2;
 			}
-
-
-
 		}
 	}
 	&__link{
-
 		display: block;
 		overflow: hidden;
 		position: relative;
