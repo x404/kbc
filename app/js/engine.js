@@ -143,6 +143,16 @@ $(document).ready(function(){
 	});
 
 
+	$('#navhouses2').owlCarousel({
+		loop:false,
+		nav:false,
+		dots: false,
+		items:2,
+		navText: ["", ""],
+		stagePadding : 50
+	});
+
+
 	// mobile-menu
 	$('#navbar').each(function(){
 		let $this = $(this),

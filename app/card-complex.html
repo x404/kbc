@@ -239,18 +239,18 @@
 								<div class="complex__navhouses">
 									<p class="title">Выберите дом</p>
 									<div class="nav">
-										<div id="navhouses">
-											<div class="tab" style="width: 160px">
+										<div id="navhouses" class="owl-carousel2">
+											<div>
 												<a href="#house1" role="button" class="btn active" data-toggle="tab" aria-controls="house1">Дом 1.1</a>
 											</div>
-											<div class="tab" style="width: 160px">
+											<div>
 												<a href="#house2" role="button" class="btn" data-toggle="tab" aria-controls="house2">Дом 1.6</a>
 											</div>
-											<div class="tab" style="width: 160px">
-												<a href="#house3" role="button" class="btn" data-toggle="tab" aria-controls="house3">Дом 1.6</a>
+											<div>
+												<a href="#house3" role="button" class="btn" data-toggle="tab" aria-controls="house3">Дом 1.7</a>
 											</div>
-											<div class="tab" style="width: 160px">
-												<a href="#house4" role="button" class="btn" data-toggle="tab" aria-controls="house4">Дом 1.6</a>
+											<div>
+												<a href="#house4" role="button" class="btn" data-toggle="tab" aria-controls="house4">Дом 1.8</a>
 											</div>
 										</div>
 									</div>
@@ -301,7 +301,7 @@
 												</tr>
 												<tr>
 													<td><div class="num">2</div></td>
-													<td><a href="#">15 квартир</a></td>
+													<td><a href="#">151 квартир</a></td>
 													<td><b>59.6 - 81.3 м<sup>2</sup></b></td>
 													<td><b>от 4.0 млн Р</b></td>
 												</tr>
@@ -326,6 +326,76 @@
 											</table>
 										</div>
 									</div>
+									<div role="tabpanel" class="tab-pane fade" id="house3">
+										<div class="house__body">
+											<table class="table">
+												<tr>
+													<th colspan="2">Квартиры</th>
+													<th>Площадь</th>
+													<th>Стоимость</th>
+												</tr>
+												<tr>
+													<td><div class="num">2</div></td>
+													<td><a href="#">152 квартир</a></td>
+													<td><b>59.6 - 81.3 м<sup>2</sup></b></td>
+													<td><b>от 4.0 млн Р</b></td>
+												</tr>
+												<tr>
+													<td><div class="num">1</div></td>
+													<td><a href="#">23 квартиры</a></td>
+													<td><b>40,1 - 53,8 м <sup>2</sup></b></td>
+													<td><b>от 1,9 млн Р</b></td>
+												</tr>
+												<tr>
+													<td><div class="num">3</div></td>
+													<td><a href="#">8 квартир</a></td>
+													<td><b>40,1 - 53,8 м <sup>2</sup></b></td>
+													<td><b>от 7.8 млн Р</b></td>
+												</tr>
+												<tr>
+													<td><div class="num">4</div></td>
+													<td><a href="#">5 квартир</a></td>
+													<td><b>104.3 - 136.7 м <sup>2</sup></b></td>
+													<td><b>от 10.7 млн Р</b></td>
+												</tr>
+											</table>
+										</div>
+									</div>
+									<div role="tabpanel" class="tab-pane fade" id="house4">
+										<div class="house__body">
+											<table class="table">
+												<tr>
+													<th colspan="2">Квартиры</th>
+													<th>Площадь</th>
+													<th>Стоимость</th>
+												</tr>
+												<tr>
+													<td><div class="num">2</div></td>
+													<td><a href="#">155 квартир</a></td>
+													<td><b>59.6 - 81.3 м<sup>2</sup></b></td>
+													<td><b>от 4.0 млн Р</b></td>
+												</tr>
+												<tr>
+													<td><div class="num">1</div></td>
+													<td><a href="#">23 квартиры</a></td>
+													<td><b>40,1 - 53,8 м <sup>2</sup></b></td>
+													<td><b>от 1,9 млн Р</b></td>
+												</tr>
+												<tr>
+													<td><div class="num">3</div></td>
+													<td><a href="#">8 квартир</a></td>
+													<td><b>40,1 - 53,8 м <sup>2</sup></b></td>
+													<td><b>от 7.8 млн Р</b></td>
+												</tr>
+												<tr>
+													<td><div class="num">4</div></td>
+													<td><a href="#">5 квартир</a></td>
+													<td><b>104.3 - 136.7 м <sup>2</sup></b></td>
+													<td><b>от 10.7 млн Р</b></td>
+												</tr>
+											</table>
+										</div>
+									</div>									
 								</div>
 								<!-- =/nav -->
 							</div>
@@ -2088,51 +2158,56 @@
 <script src="/js/map-objects.js"></script>
 
 <script>
-var Circle = function(sel){
-	var circles = document.querySelectorAll(sel);
-	[].forEach.call(circles,function(el){
-		var num = el.innerHTML,
-			valEl = parseFloat(num);
+	var Circle = function(sel){
+		var circles = document.querySelectorAll(sel);
+		[].forEach.call(circles,function(el){
+			var num = el.innerHTML,
+				valEl = parseFloat(num);
 
-		valEl = valEl*144/100;
-		el.innerHTML = '<svg width="56" height="56"><circle transform="rotate(-90)" r="23" cx="-28" cy="28" /><circle transform="rotate(-90)" style="stroke-dasharray:'+valEl+'px 144px;" r="23" cx="-28" cy="28" /></svg><div class="num">'+num+'</div>';
-		
+			valEl = valEl*144/100;
+			el.innerHTML = '<svg width="56" height="56"><circle transform="rotate(-90)" r="23" cx="-28" cy="28" /><circle transform="rotate(-90)" style="stroke-dasharray:'+valEl+'px 144px;" r="23" cx="-28" cy="28" /></svg><div class="num">'+num+'</div>';
+			
+		});
+	};
+	Circle('.circle');
+
+
+	var CircleBig = function(sel){
+		var circles = document.querySelectorAll(sel);
+		[].forEach.call(circles,function(el){
+			var num = el.innerHTML,
+				valEl = parseFloat(num);
+
+			valEl = valEl*214/100;
+			el.innerHTML = '<svg width="83" height="83"><circle transform="rotate(-90)" r="34" cx="-41" cy="41" /><circle transform="rotate(-90)" style="stroke-dasharray:'+valEl+'px 213px;" r="34" cx="-41" cy="41" /></svg><div class="num">'+num+'</div>';
+			
+		});
+	};
+	CircleBig('.circlebig');
+
+
+	$('#grouphouse').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="Назад"></button>',
+		nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Вперед"></button>'
 	});
-};
-Circle('.circle');
 
-
-var CircleBig = function(sel){
-	var circles = document.querySelectorAll(sel);
-	[].forEach.call(circles,function(el){
-		var num = el.innerHTML,
-			valEl = parseFloat(num);
-
-		valEl = valEl*214/100;
-		el.innerHTML = '<svg width="83" height="83"><circle transform="rotate(-90)" r="34" cx="-41" cy="41" /><circle transform="rotate(-90)" style="stroke-dasharray:'+valEl+'px 213px;" r="34" cx="-41" cy="41" /></svg><div class="num">'+num+'</div>';
-		
+	$('#navhouses').slick({
+		centerMode: true,
+		slidesToShow: 3,
+		infinite: false,
+		variableWidth: true,
+		initialSlide: 1,
+		focusOnSelect: true,
+		prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="Назад"></button>',
+		nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Вперед"></button>'
 	});
-};
-CircleBig('.circlebig');
 
-
-$('#grouphouse').slick({
-	slidesToShow: 4,
-	slidesToScroll: 1,
-	prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="Назад"></button>',
-	nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Вперед"></button>'
-});
-
-$('#navhouses').slick({
-	slidesToShow: 3,
-	slidesToScroll: 1,
-	infinite: false,
-	centerMode: true,
-	prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="Назад"></button>',
-	nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Вперед"></button>'
-});
-
-
+	    
+	$('#navhouses a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+		$('#navhouses a.btn').removeClass('active show');
+	});
 </script>
 
 

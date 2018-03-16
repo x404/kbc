@@ -315,21 +315,46 @@
 			.nav{
 				// display: flex;
 				// margin-left: 2rem;
-				width: 320px;
+				width: 290px;
 				.btn{
-					@extend .flex-cv;
+					@extend .flex-center;
 					color: $color49;
-					padding: 0 1.5rem;
 					height: 6rem;
 					text-decoration: none;
+					text-align: center;
+					width: 80px;
 					&.active{
 						background-color: $color2;
 						color: $color1;
 						font-weight: 700;
 					}
+					&:hover{
+						color: $color7;
+					}
 				}
 				.tab{
 					width: 160px;
+				}
+
+				.slick{
+					&-arrow{
+						background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAPBAMAAAArJJMAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAHlBMVEWOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqD///87587zAAAACHRSTlMAJGb8WmmUp2FVeAkAAAABYktHRAnx2aXsAAAAB3RJTUUH4gMQEQcqCf+rMAAAACxJREFUCNdjYGBgEABiJhMgodEKZHQEIDEigAyGjAIGKAssBpZFYYL0MggAAFigCTsH+MK7AAAAAElFTkSuQmCC") no-repeat left top;
+						border: none;
+						height: 15px;
+						margin-top: -7px;
+						position: absolute;
+						top: 50%;
+						width: 8px;
+					}
+
+					&-prev{
+						left: -10px;
+					}
+
+					&-next{
+						transform: rotate(180deg);
+						right: -20px;
+					}
 				}
 			}
 		}

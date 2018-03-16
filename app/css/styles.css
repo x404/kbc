@@ -665,13 +665,13 @@ input[type="submit"] {
 .topnews .news .cat__link, .feature .promo .type-1 .statistic__cell p:not(.num), .object__bottom, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
 .vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top,
 .list_construction .place__top, .review__bottom, .filter-sort .btn,
-.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .subnav a, .complex-page .complex__place .cell, .complex-page .complex__navhouses, .complex-page .complex__navhouses .nav .btn, .complex-page .about .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom, .about-page .scheme .step, .listgk-page .main .wrapper .panel, .listgk-page .main .wrapper .panel__left, .listgk-page .main .complex__bottom, .listgk-page .main .complex__bottom .right .btn {
+.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .subnav a, .complex-page .complex__place .cell, .complex-page .complex__navhouses, .complex-page .about .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom, .about-page .scheme .step, .listgk-page .main .wrapper .panel, .listgk-page .main .wrapper .panel__left, .listgk-page .main .complex__bottom, .listgk-page .main .complex__bottom .right .btn {
   display: flex;
   align-items: center; }
 
 .flex-center, .btn-faq, .btn-review, .modal-menu .close-modal, .feature .news .date .num,
 .topnews .news .date .num, .feature .promo .type-2 .more,
-.feature .promo .type-3 .more, .pagination, .pagination a, .pagination span, .gbi-page .menu .icon, .product__pic, .complex-page .about .carousel .label, .complex-page .houses .house__top .right .diagram .num, .complex-page .house__body .table .num, .popover .diagram, .popover .diagram .num, .circlebig .num, .calculator-page .main aside .scale .controls .radio + label {
+.feature .promo .type-3 .more, .pagination, .pagination a, .pagination span, .gbi-page .menu .icon, .product__pic, .complex-page .complex__navhouses .nav .btn, .complex-page .about .carousel .label, .complex-page .houses .house__top .right .diagram .num, .complex-page .house__body .table .num, .popover .diagram, .popover .diagram .num, .circlebig .num, .calculator-page .main aside .scale .controls .radio + label {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -5685,18 +5685,34 @@ main {
     width: 160px;
     text-align: center; }
   .complex-page .complex__navhouses .nav {
-    width: 320px; }
+    width: 290px; }
     .complex-page .complex__navhouses .nav .btn {
       color: #79838e;
-      padding: 0 1.5rem;
       height: 6rem;
-      text-decoration: none; }
+      text-decoration: none;
+      text-align: center;
+      width: 80px; }
       .complex-page .complex__navhouses .nav .btn.active {
         background-color: #fff;
         color: #000;
         font-weight: 700; }
+      .complex-page .complex__navhouses .nav .btn:hover {
+        color: #c40f39; }
     .complex-page .complex__navhouses .nav .tab {
       width: 160px; }
+    .complex-page .complex__navhouses .nav .slick-arrow {
+      background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAPBAMAAAArJJMAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAHlBMVEWOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqD///87587zAAAACHRSTlMAJGb8WmmUp2FVeAkAAAABYktHRAnx2aXsAAAAB3RJTUUH4gMQEQcqCf+rMAAAACxJREFUCNdjYGBgEABiJhMgodEKZHQEIDEigAyGjAIGKAssBpZFYYL0MggAAFigCTsH+MK7AAAAAElFTkSuQmCC") no-repeat left top;
+      border: none;
+      height: 15px;
+      margin-top: -7px;
+      position: absolute;
+      top: 50%;
+      width: 8px; }
+    .complex-page .complex__navhouses .nav .slick-prev {
+      left: -10px; }
+    .complex-page .complex__navhouses .nav .slick-next {
+      transform: rotate(180deg);
+      right: -20px; }
 
 .complex-page .subnav .container {
   padding-left: 0;
