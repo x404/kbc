@@ -143,16 +143,6 @@ $(document).ready(function(){
 	});
 
 
-	$('#navhouses2').owlCarousel({
-		loop:false,
-		nav:false,
-		dots: false,
-		items:2,
-		navText: ["", ""],
-		stagePadding : 50
-	});
-
-
 	// mobile-menu
 	$('#navbar').each(function(){
 		let $this = $(this),
@@ -582,16 +572,22 @@ var fh = document.querySelector('.fixed-header'),
 window.onscroll = function(){
 	if (window.pageYOffset  > 200 ) {
 		fh.classList.add('sticky');
+
+	} else {
+		if (window.pageYOffset  < 400) {
+			fh.classList.remove('sticky');
+
+		}
+	}
+
+	if (window.pageYOffset > 850 ) {
 		try{
 			fnavbar.classList.add('sticky');
 		} catch(e){};
 	} else {
-		if (window.pageYOffset  < 400) {
-			fh.classList.remove('sticky');
-			try{
-				fnavbar.classList.remove('sticky');
-			} catch(e){};
-		}
+		try{
+			fnavbar.classList.remove('sticky');
+		} catch(e){};
 	}
 };
 
