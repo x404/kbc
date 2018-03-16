@@ -5496,13 +5496,34 @@ main {
   min-height: 635px;
   position: relative;
   padding-left: 160px;
-  padding-right: 160px; }
+  padding-right: 160px;
+  width: 1120px; }
   .complex-page .complex__left:before {
     background-color: rgba(0, 116, 66, 0.9);
     bottom: 0;
     left: 0;
     right: 0;
     top: 0; }
+
+.complex-page .complex__right {
+  width: 480px; }
+  .complex-page .complex__right .tab-content {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1.5rem; }
+    .complex-page .complex__right .tab-content table {
+      border-top: none; }
+      .complex-page .complex__right .tab-content table th {
+        padding-bottom: 1.2rem; }
+      .complex-page .complex__right .tab-content table td {
+        border-top: none;
+        border-bottom: 2px solid #eaedf1;
+        padding-top: .9rem;
+        padding-bottom: .9rem; }
+      .complex-page .complex__right .tab-content table b, .complex-page .complex__right .tab-content table strong {
+        font-weight: 700; }
+      .complex-page .complex__right .tab-content table tr:last-child td {
+        border-bottom: none; }
 
 .complex-page .complex__panel {
   position: absolute;
@@ -5657,14 +5678,14 @@ main {
 .complex-page .complex__navhouses {
   background: #ebeef1;
   font-size: 1.5rem;
-  font-weight: 500;
   height: 6rem;
-  padding-left: 3rem; }
+  font-weight: 700; }
   .complex-page .complex__navhouses .title {
-    font-weight: 700; }
+    flex-shrink: 0;
+    width: 160px;
+    text-align: center; }
   .complex-page .complex__navhouses .nav {
-    display: flex;
-    margin-left: 2rem; }
+    width: 320px; }
     .complex-page .complex__navhouses .nav .btn {
       color: #79838e;
       padding: 0 1.5rem;
@@ -5674,24 +5695,8 @@ main {
         background-color: #fff;
         color: #000;
         font-weight: 700; }
-
-.complex-page .complex__right .tab-content {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-bottom: 1.5rem; }
-  .complex-page .complex__right .tab-content table {
-    border-top: none; }
-    .complex-page .complex__right .tab-content table th {
-      padding-bottom: 1.2rem; }
-    .complex-page .complex__right .tab-content table td {
-      border-top: none;
-      border-bottom: 2px solid #eaedf1;
-      padding-top: .9rem;
-      padding-bottom: .9rem; }
-    .complex-page .complex__right .tab-content table b, .complex-page .complex__right .tab-content table strong {
-      font-weight: 700; }
-    .complex-page .complex__right .tab-content table tr:last-child td {
-      border-bottom: none; }
+    .complex-page .complex__navhouses .nav .tab {
+      width: 160px; }
 
 .complex-page .subnav .container {
   padding-left: 0;
