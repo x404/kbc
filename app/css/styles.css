@@ -3209,7 +3209,7 @@ body.modal-open {
 
 .material__title {
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 700;
   padding-top: 2rem; }
   .material__title a, .material__title span {
     border-bottom: 2px solid #c40f39;
@@ -3409,7 +3409,7 @@ body.modal-open {
 
 .action__title {
   font-size: 2.4rem;
-  font-weight: 500; }
+  font-weight: 700; }
   .action__title a {
     border-bottom: 2px solid #c40f39;
     text-decoration: none; }
@@ -3442,7 +3442,7 @@ main {
   color: #383838; }
   main h1, main h2, main h3, main h4, main h5, main h6 {
     color: #000;
-    font-weight: 500;
+    font-weight: 700;
     margin: 1.5rem 0; }
   main h1 {
     font-size: 4rem; }
@@ -3713,7 +3713,7 @@ main {
   .faq-page .head p a,
   .vacancies-page .head p a {
     color: #fff;
-    font-weight: 500; }
+    font-weight: 700; }
 
 .faq-page .head .btn,
 .vacancies-page .head .btn {
@@ -3723,7 +3723,7 @@ main {
   border-radius: 50px;
   color: #fff;
   font-size: 1.7rem;
-  font-weight: 500;
+  font-weight: 700;
   height: 50px;
   margin-left: 2rem;
   padding-left: 55px;
@@ -3770,7 +3770,7 @@ main {
     .list_faq .faq__item-expand .answer {
       border-left: 4px solid #ebeef1; }
   .list_faq .faq__item .name {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.5rem; }
     .list_faq .faq__item .name span {
       margin-left: .2rem; }
@@ -3834,7 +3834,7 @@ main {
     top: 22px; }
   .list_faq .answer__name {
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 700;
     margin-top: 1rem; }
     .list_faq .answer__name img {
       margin-right: 12px; }
@@ -4084,14 +4084,14 @@ main {
     .list_vacancy .vacancy__item-expand .price {
       margin-left: 4px; }
   .list_vacancy .vacancy__item .name {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 2rem;
     margin-top: 1.5rem; }
     .list_vacancy .vacancy__item .name span {
       margin-left: .2rem; }
   .list_vacancy .vacancy__item .date {
     color: #7d7d7d;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: .2rem; }
   .list_vacancy .vacancy__item .text {
     font-size: 1.6rem;
@@ -4139,7 +4139,7 @@ main {
 .list_vacancy .price {
   color: #00874d;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 1.5rem;
   padding-left: 90px; }
 
@@ -4150,7 +4150,7 @@ main {
   position: relative; }
   .list_vacancy .answer__name {
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 700;
     margin-top: 1rem; }
     .list_vacancy .answer__name img {
       margin-right: 12px; }
@@ -4380,7 +4380,7 @@ main {
 .contact__title {
   color: #000;
   font-size: 2.6rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: -.5rem; }
 
 .workers {
@@ -4407,7 +4407,7 @@ main {
 
 .worker__name {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
   padding-top: 1.9rem; }
 
 .worker__post {
@@ -4510,7 +4510,7 @@ main {
       font-weight: 500; }
   .object__meta .object__price {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 700;
     margin-left: 1.5rem; }
 
 .table-flats {
@@ -4700,7 +4700,7 @@ main {
 
 .catalog__title {
   font-size: 2.4rem;
-  font-weight: 500;
+  font-weight: 700;
   padding-left: 3.7rem;
   padding-right: 3.7rem; }
   .catalog__title span {
@@ -4766,7 +4766,7 @@ main {
 
 .product__title {
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 700;
   margin: 1rem 0; }
 
 .product__desc {
@@ -4778,7 +4778,7 @@ main {
 .product__price {
   color: #00874d;
   font-size: 2rem;
-  font-weight: 500; }
+  font-weight: 700; }
 
 .sidebar {
   border: 2px solid #dce2e7;
@@ -4896,7 +4896,7 @@ main {
 
 .condo-page .subtitle {
   font-size: 2.4rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 2rem; }
   .condo-page .subtitle a {
     color: #00874d; }
@@ -6661,10 +6661,10 @@ circle:nth-child(2n) {
         font-size: 1.6rem; }
         .listgk-page .main .complex__bottom .left .flats .num {
           color: #00874d;
-          font-weight: 500; }
+          font-weight: 700; }
       .listgk-page .main .complex__bottom .left .price {
         font-size: 2rem;
-        font-weight: 500;
+        font-weight: 700;
         padding-top: .5rem; }
       .listgk-page .main .complex__bottom .right {
         margin-left: 4.6rem; }
@@ -6673,7 +6673,7 @@ circle:nth-child(2n) {
           border-radius: 50px;
           color: #fff;
           font-size: 1.7rem;
-          font-weight: 600;
+          font-weight: 700;
           height: 50px;
           padding-left: 63px;
           padding-right: 25px;
@@ -6723,7 +6723,7 @@ circle:nth-child(2n) {
       .calculator-page .main aside .box .title {
         line-height: 1.5;
         font-size: 1.7rem;
-        font-weight: 500; }
+        font-weight: 700; }
     .calculator-page .main aside .scale .controls {
       display: flex;
       margin-top: 1rem; }
@@ -6732,7 +6732,7 @@ circle:nth-child(2n) {
         margin-right: .5rem;
         padding-left: 0;
         width: 40px;
-        font-weight: 500;
+        font-weight: 700;
         border-radius: 50%;
         border: 2px solid #c8d1dc;
         transition: .3s; }
@@ -6784,7 +6784,7 @@ circle:nth-child(2n) {
         border-bottom: 2px solid #00874d; }
     .calculator-page .main aside .cost {
       font-size: 1.7rem;
-      font-weight: 500; }
+      font-weight: 700; }
       .calculator-page .main aside .cost #sum {
         color: #00874d; }
     .calculator-page .main aside .btn {
@@ -6792,7 +6792,7 @@ circle:nth-child(2n) {
       color: #fff;
       border: none;
       font-size: 1.5rem;
-      font-weight: 400;
+      font-weight: 500;
       height: 4.5rem;
       border-radius: 4.5rem;
       padding-right: 3.5rem;
@@ -6892,9 +6892,9 @@ circle:nth-child(2n) {
   .calculator-page .related__item {
     background-color: #fff;
     padding: 2rem;
-    width: 284px;
     position: relative;
-    transition: .3s box-shadow; }
+    transition: .3s box-shadow;
+    width: 284px; }
     .calculator-page .related__item:after {
       left: 0;
       bottom: 0;
@@ -6917,15 +6917,16 @@ circle:nth-child(2n) {
       margin-right: auto;
       transition: .3s transform; }
   .calculator-page .related__title {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.6rem;
     margin-top: 1.5rem; }
   .calculator-page .related__desc {
     color: #5b5b5b;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    line-height: 1.3; }
   .calculator-page .related .price {
     color: #00874d;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 2rem;
     margin-top: .5rem; }
 

@@ -7,7 +7,7 @@
 			line-height: 1.5;
 			a{
 				color: $color2;
-				font-weight: 500;
+				font-weight: 700;
 				@extend .tdu;
 			}
 		}
@@ -19,7 +19,7 @@
 			border-radius: $h;
 			color: $color2;
 			font-size: 1.7rem;
-			font-weight: 500;
+			font-weight: 700;
 			height: $h;
 			margin-left: 2rem;
 			padding-left: 55px;
@@ -79,7 +79,7 @@
 				}
 			}
 			.name{
-				font-weight: 500;
+				font-weight: 700;
 				font-size: 1.5rem;
 				span{
 					margin-left: .2rem;
@@ -151,7 +151,7 @@
 		&__name{
 			@extend .flex-cv;
 			font-size: 15px;
-			font-weight: 500;
+			font-weight: 700;
 			margin-top: 1rem;
 			img{
 				margin-right: 12px;
@@ -165,11 +165,4 @@
 			padding-bottom: 2rem;
 		}	
 	}
-}
-
-
-
-#add-faq{
-	
-
 }
