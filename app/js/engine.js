@@ -137,7 +137,10 @@ $(document).ready(function(){
 		stagePadding : 0,
 		dotsContainer: '.owl-dots',
 		navContainer: '.owl-nav',
-		animateOut: 'fadeOut'
+		animateOut: 'fadeOut',
+		autoplay: true,
+		autoplayTimeout: 5000, 
+		loop: true
 	});
 
 
