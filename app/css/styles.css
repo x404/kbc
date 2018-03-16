@@ -641,7 +641,7 @@ h3 {
 .related .carousel .owl-carousel .owl-next:after, .objects__info:before, .objects .owl-item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .about-partners .partners:after, .big-icon:before, .neck .tabs .tab.active:after, .pagination .prev:before,
 .pagination .next:before, .picking__link span:before, .sortbox__option-up:after, .sortbox__option-down:after, main ul li:before, .faq-page .head .btn:before,
-.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__inner:after, .flat-page .card__description .description__inner:before, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .flat-page .card__description .description__bottom:before, .flat-page .card__description .description__bottom:hover:after, .flat-page .card__description .description__bottom:hover:before, .flat-page .card__description .description:after, .installmentbox__left:after, .installmentbox__left:before, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, #calc-gnk-form .alert:before, .complex-page .complex__left:before, .complex-page .complex__panel .video .bg:before, .complex-page .complex__panel .video .bg:after, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a span:after, .complex-page .about main .heading:after, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .neck:after, .about-page .carousel .item__body:after, .about-page .carousel .item__body:before, .about-page .about .advantages:after, .about-page .about .advantages:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .about-page .calculator .calc-bottom:after, .about-page .calculator .calc-bottom:before, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .example__pic a:after, .calculator-page .example__pic a:before, .calculator-page .example__pic:after, .calculator-page .example__pic:before, .calculator-page .related__item:after {
+.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__inner:after, .flat-page .card__description .description__inner:before, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .flat-page .card__description .description__bottom:before, .flat-page .card__description .description__bottom:hover:after, .flat-page .card__description .description__bottom:hover:before, .flat-page .card__description .description:after, .installmentbox__left:after, .installmentbox__left:before, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, #calc-gnk-form .alert:before, .complex-page .complex__left:before, .complex-page .complex__panel .video .bg:before, .complex-page .complex__panel .video .bg:after, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a span:after, .complex-page .complex__panel .house:after, .complex-page .about main .heading:after, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .neck:after, .about-page .carousel .item__body:after, .about-page .carousel .item__body:before, .about-page .about .advantages:after, .about-page .about .advantages:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .about-page .calculator .calc-bottom:after, .about-page .calculator .calc-bottom:before, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .example__pic a:after, .calculator-page .example__pic a:before, .calculator-page .example__pic:after, .calculator-page .example__pic:before, .calculator-page .related__item:after {
   content: "";
   display: block;
   position: absolute; }
@@ -5562,14 +5562,29 @@ main {
   .complex-page .complex__panel .slick-arrow {
     position: absolute; }
   .complex-page .complex__panel .complex__grouphouse {
-    width: 790px; }
+    width: 640px; }
+    .complex-page .complex__panel .complex__grouphouse .slick-arrow {
+      background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAYCAMAAAAS21dbAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAn1BMVEWOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqCOlqD///+dbN54AAAAM3RSTlMAYyZ50Sx4/K0Cd94V3xP+2hLZ3XrFC/35P2b3TmfnIQN95Bt8tAQBe8kHCMbKCZ7ULigGZ8R1AAAAAWJLR0Q0qbHp/QAAAAd0SU1FB+IDEA4UMfUPxwMAAACTSURBVBjTXZDXFsIwDEPNpmUWUkaZZaUJG/3/v2EeqN34TfaVohMimVqd9DTQbCnZ7gDdqJQxy15fwcBgKPAIGCcVeJJUoqYCxz+vXA1709lfRWYOLJblNWN4tZZaG9bbneh9zvbDURU/MXG+iLYFL5xXhOE+7qoWBb+Z+iDj5oOMe2hxjyD0aZUlx+ut/9dmH6Iv2XISX36tdF4AAAAASUVORK5CYII=") no-repeat left top;
+      border: none;
+      height: 24px;
+      position: absolute;
+      top: 50%;
+      margin-top: -12px;
+      width: 15px;
+      z-index: 10; }
+    .complex-page .complex__panel .complex__grouphouse .slick-prev {
+      left: 12px; }
+    .complex-page .complex__panel .complex__grouphouse .slick-next {
+      right: 12px;
+      transform: rotate(180deg); }
   .complex-page .complex__panel .house {
     color: #000;
     font-size: 1.5rem;
     margin-bottom: 0;
     height: 222px;
     padding-top: 1rem;
-    width: 160px; }
+    width: 160px;
+    position: relative; }
     .complex-page .complex__panel .house__title {
       font-weight: 700;
       font-size: 1.7rem; }
@@ -5586,6 +5601,11 @@ main {
       .complex-page .complex__panel .house .final span {
         color: #00874d;
         font-weight: 400; }
+    .complex-page .complex__panel .house:after {
+      border-right: 1px solid #d7dce1;
+      height: 188px;
+      top: 10px;
+      right: 0; }
 
 .complex-page .complex__place {
   display: flex;

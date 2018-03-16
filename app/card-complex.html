@@ -173,7 +173,7 @@
 										</a>
 									</div>
 									<div class="complex__grouphouse text-center">
-										<div class="" id="grouphouse">
+										<div id="grouphouse">
 											<div class="house">
 												<p class="house__title">Дом 1.1</p>
 												<p>готов на</p>
@@ -185,6 +185,42 @@
 												<p>готов на</p>
 												<div class="diagram circlebig">32%</div>
 												<p class="final">Сдача дома <br> <span>II квартал <br>  2018 года</span></p>
+											</div>
+											<div class="house">
+												<p class="house__title">Дом 1.1</p>
+												<p>готов на</p>
+												<div class="diagram circlebig">66%</div>
+												<p class="final">Сдача дома <br> <span>I квартал <br>  2018 года</span></p>
+											</div>
+											<div class="house">
+												<p class="house__title">Дом 1.2</p>
+												<p>готов на</p>
+												<div class="diagram circlebig">32%</div>
+												<p class="final">Сдача дома <br> <span>II квартал <br>  2018 года</span></p>
+											</div>
+											<div class="house">
+												<p class="house__title">Дом 1.1</p>
+												<p>готов на</p>
+												<div class="diagram circlebig">66%</div>
+												<p class="final">Сдача дома <br> <span>I квартал <br>  2018 года</span></p>
+											</div>
+											<div class="house">
+												<p class="house__title">Дом 1.2</p>
+												<p>готов на</p>
+												<div class="diagram circlebig">32%</div>
+												<p class="final">Сдача дома <br> <span>II квартал <br>  2018 года</span></p>
+											</div>
+											<div class="house">
+												<p class="house__title">Дом 1.2</p>
+												<p>готов на</p>
+												<div class="diagram circlebig">32%</div>
+												<p class="final">Сдача дома <br> <span>II квартал <br>  2018 года</span></p>
+											</div>
+											<div class="house">
+												<p class="house__title">Дом 1.1</p>
+												<p>готов на</p>
+												<div class="diagram circlebig">66%</div>
+												<p class="final">Сдача дома <br> <span>I квартал <br>  2018 года</span></p>
 											</div>
 										</div>
 									</div>
@@ -2069,8 +2105,10 @@ CircleBig('.circlebig');
 
 
 $('#grouphouse').slick({
-	slidesToShow: 5,
-	slidesToScroll: 3
+	slidesToShow: 4,
+	slidesToScroll: 1,
+	prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="Назад"></button>',
+	nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Вперед"></button>'
 });
 
 </script>
