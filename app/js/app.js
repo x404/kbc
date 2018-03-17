@@ -19,11 +19,11 @@ var app = new Vue({
 		changeTile: function(e){
 			this.areatile = e.target.dataset.areatile;
 		},
-		loadData(){
+		loadData: function(){
 			this.areatile = document.querySelector('.tiles .active').dataset.areatile;
 		}
 	},
-	mounted(){
+	mounted: function(){
 		this.loadData()
 	}
 })
