@@ -115,15 +115,36 @@
     padding-left: 15px;
     padding-right: 15px; } }
 
+@media (min-width: 600px) {
+  .container {
+    width: 100%; } }
+
+@media (max-width: 767px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0; } }
+
 @media (min-width: 768px) {
   .container {
-    width: 730px; } }
+    width: 740px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .container {
-    width: 1140px; } }
+    width: 940px; } }
 
-@media (min-width: 1700px) {
+@media (min-width: 1150px) {
+  .container {
+    width: 1120px; } }
+
+@media (min-width: 1281px) {
+  .container {
+    width: 1250px; } }
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1350px; } }
+
+@media (min-width: 1650px) {
   .container {
     width: 1600px; } }
 
@@ -659,7 +680,7 @@ textarea {
 input[type="submit"] {
   cursor: pointer; }
 
-.flex-cv, .btn-more, .installment .checkbox + label,
+.flex-cv, .btn-more, .header__top .row, .installment .checkbox + label,
 .panel .checkbox + label, .feature .news .date,
 .topnews .news .date, .feature .news .cat__link,
 .topnews .news .cat__link, .feature .promo .type-1 .statistic__cell p:not(.num), .object__bottom, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
@@ -928,6 +949,26 @@ form .form-control {
     margin-top: .4rem; }
   .header .logo {
     padding-top: 2.4rem; }
+  .header .wishlist-button {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end; }
+  .header__top {
+    display: none;
+    background: #ececec; }
+    .header__top .row {
+      height: 5rem;
+      justify-content: space-between; }
+      .header__top .row .left {
+        display: flex;
+        flex-grow: 1; }
+      .header__top .row .contacts__cell:first-child {
+        margin-right: 6rem; }
+      .header__top .row .contacts__cell a {
+        font-size: 1.8rem; }
+    .header__top .btn-callback {
+      font-size: 1.4rem;
+      height: 3.5rem; }
 
 .header .flexbox,
 .fixed-header .flexbox {
@@ -1258,7 +1299,8 @@ form .form-control {
       font-weight: 500; }
 
 .callback {
-  height: 535px; }
+  height: 535px;
+  margin-right: 0; }
 
 /* =/callback
 ---------------------------*/
@@ -6978,14 +7020,11 @@ tbody.collapse.show {
 
 /* =/mobile-menu
 ---------------------------*/
-@media (max-width: 767px) {
-  .show-sm {
-    display: block; }
+@media (max-width: 76px) {
   .navbar-toggle {
     background-color: #0563bf;
     border: none;
     cursor: pointer;
-    display: block;
     height: 70px;
     left: 0;
     position: fixed;
@@ -7243,3 +7282,51 @@ tbody.collapse.show {
     margin-right: 3%; }
   .contacts-page .flexbox.main {
     display: block; } }
+
+@media (max-width: 1650px) {
+  .header .contacts__cell,
+  .header .btn-callback {
+    display: none; }
+  .header__top {
+    display: block; }
+    .header__top .contacts__cell,
+    .header__top .btn-callback {
+      display: block; }
+  .mainnav {
+    justify-content: center;
+    width: auto; }
+    .mainnav .nav {
+      flex-basis: 90%; } }
+
+@media (max-width: 1280px) {
+  .mainnav {
+    margin-left: 0; }
+    .mainnav .nav {
+      width: 95%;
+      flex-basis: 95%; } }
+
+@media (max-width: 1149px) {
+  .header .wishlist {
+    margin-left: 0; }
+  .header__top .row .contacts__cell:first-child {
+    margin-right: 4.5rem; }
+  .mainnav > ul > li > a {
+    font-size: 1.4rem;
+    padding-left: .8rem;
+    padding-right: .8rem; } }
+
+@media (max-width: 991px) {
+  .header__top {
+    display: none; }
+  .header .mainnav {
+    display: none; }
+  .header .contacts__cell {
+    display: block; }
+    .header .contacts__cell p {
+      font-size: 1.4rem; }
+    .header .contacts__cell a {
+      font-size: 1.7rem; } }
+
+@media (max-width: 768px) {
+  .header .contacts__cell-2 {
+    display: none; } }

@@ -456,6 +456,38 @@ form{
 	.logo{
 		padding-top: 2.4rem;
 	}
+
+	.wishlist-button{
+		display: flex;
+		flex-grow: 1;
+		justify-content: flex-end;
+	}
+
+	&__top{
+		display: none;
+		background: #ececec;
+		.row{
+			@extend .flex-cv;			
+			height: 5rem;
+			justify-content: space-between;
+			.left{
+				display: flex;
+				flex-grow: 1;
+			}
+			.contacts__cell{
+				&:first-child{
+					margin-right: 6rem;					
+				}
+				a{
+					font-size: 1.8rem;
+				}
+			}
+		}
+		.btn-callback{
+			font-size: 1.4rem;
+			height: 3.5rem;
+		}
+	}
 }
 
 .header,
@@ -869,8 +901,9 @@ form{
 }
 
 .callback{
-	// height: calc(100% - 14px);
 	height: 535px;
+	margin-right: 0;
+	// width: 100%;
 }
 /* =/callback
 ---------------------------*/

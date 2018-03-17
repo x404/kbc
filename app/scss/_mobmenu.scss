@@ -25,15 +25,15 @@ $color_2: #0563bf;
 
 
 
-@media (max-width: 767px){
+@media (max-width: 76px){
 	.show-sm{
-		display: block;
+		// display: block;
 	}
 	.navbar-toggle{
 		background-color:$color_2;
 		border: none;
 		cursor: pointer;
-		display: block;
+		// display: block;
 		height: 70px;
 		left: 0;
 		position: fixed;
