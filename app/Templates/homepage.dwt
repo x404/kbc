@@ -35,6 +35,25 @@
 	<div class="outerwrapper">
 		<!-- =header -->
 		<header class="header fade-1">
+			<div class="header__top show-md">
+				<div class="container">
+					<div class="row">
+						<!-- =contacts -->
+						<div class="left">
+							<div class="contacts__cell">
+								Недвижимость
+								<a href="tel:+73912179217" title="" class="tel"><span class="code">+7 (391)</span> 217-9-217</a>
+							</div>
+							<div class="contacts__cell">
+								ЖБИ брусчатка
+								<a href="tel:+73912016092" title="" class="tel"><span class="code">+7 (391)</span> 201-60-92</a>
+							</div>
+						</div>
+						<!-- =/contacts -->	
+						<button type="button" class="btn-callback" data-toggle="sidemodal" data-target="#modal-callback">Обратный звонок</button>
+					</div>
+				</div>
+			</div>
 			<div class="container">
 				<div class="row flexbox">
 					<div class="logo">
@@ -45,15 +64,15 @@
 					<nav id="navbar" class="mainnav">
 						<ul class="nav nav-tabs flexbox" role="tablist">
 							<li class="folder"> 
-								<a href="../about.html"><span>О компании</span></a>
+								<a href="about.html"><span>О компании</span></a>
 								<ul>
 									<li><a href="#" title="">История компании</a></li>
-									<li><a href="../reviews.html" title="">Отзывы</a></li>
+									<li><a href="reviews.html" title="">Отзывы</a></li>
 									<li><a href="#" title="">Тендеры</a></li>
 									<li><a href="#" title="">Разрешения на ввод</a></li>
-									<li><a href="../news.html" title="">Новости и статьи</a></li>
-									<li><a href="../actions.html" title="">Акции</a></li>
-									<li><a href="../contacts.html" title="">Контакты</a></li>
+									<li><a href="news.html" title="">Новости и статьи</a></li>
+									<li><a href="actions.html" title="">Акции</a></li>
+									<li><a href="contacts.html" title="">Контакты</a></li>
 								</ul>
 							</li>
 							<li class="folder">
@@ -61,7 +80,7 @@
 							</li>
 							<li><a href="#"><span>Покупателю</span></a></li>
 							<li><a href="#"><span>Кооператив</span></a></li>
-							<li><a href="../gbi.html"><span>ЖБИ</span></a></li>
+							<li><a href="gbi.html"><span>ЖБИ</span></a></li>
 							<li><a href="#"><span>Партнерам</span></a></li>
 						</ul>
 						<div class="show-sm">
@@ -75,30 +94,31 @@
 
 
 					<!-- =contacts -->
-					<div class="contacts__cell">
+					<div class="contacts__cell contacts__cell-1">
 						<p>Недвижимость</p>
 						<a href="tel:+73912179217" title="" class="tel"><span class="code">+7 (391)</span> 217-9-217</a>
 					</div>
-					<div class="contacts__cell">
+					<div class="contacts__cell contacts__cell-2">
 						<p>ЖБИ брусчатка</p>
 						<a href="tel:+73912016092" title="" class="tel"><span class="code">+7 (391)</span> 201-60-92</a>
 					</div>
 					<!-- =/contacts -->
 
+					<div class="wishlist-button">
+						<!-- =wishlist -->
+						<div class="wishlist">
+							<a href="#" class="wishlist__link"><span class="count fill-effect"><i>1</i></span></a>
+						</div>
+						<!-- =/wishlist -->
 
-					<!-- =wishlist -->
-					<div class="wishlist">
-						<a href="#" class="wishlist__link"><span class="count fill-effect"><i>1</i></span></a>
+						<!-- =extra menu -->
+						<button type="button" class="extra-toggle btn-animate" data-popup="modal-menu">
+							<span class="icon-bar icon-bar-full"></span>
+							<span class="icon-bar icon-bar-left"></span>
+							<span class="icon-bar icon-bar-right"></span>
+						</button>
+						<!-- =/extra menu -->
 					</div>
-					<!-- =/wishlist -->
-
-					<!-- =extra menu -->
-					<button type="button" class="extra-toggle btn-animate" data-popup="modal-menu">
-						<span class="icon-bar icon-bar-full"></span>
-						<span class="icon-bar icon-bar-left"></span>
-						<span class="icon-bar icon-bar-right"></span>
-					</button>
-					<!-- =/extra menu -->
 
 					<!-- =mobilenav -->
 					<button type="button" class="navbar-toggle">
@@ -266,11 +286,11 @@
 			<button type="button" class="btn-callback" data-toggle="sidemodal" data-target="#modal-callback">Обратный звонок</button>
 
 			<!-- =contacts -->
-			<div class="contacts__cell">
+			<div class="contacts__cell contacts__cell-1">
 				<p>Недвижимость</p>
 				<a href="tel:+73912179217" title="" class="tel"><span class="code">+7 (391)</span> 217-9-217</a>
 			</div>
-			<div class="contacts__cell">
+			<div class="contacts__cell contacts__cell-2">
 				<p>ЖБИ брусчатка</p>
 				<a href="tel:+73912016092" title="" class="tel"><span class="code">+7 (391)</span> 201-60-92</a>
 			</div>

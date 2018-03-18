@@ -457,6 +457,10 @@ form{
 		padding-top: 2.4rem;
 	}
 
+	.wishlist{
+		margin-left: 0;
+	}
+
 	.wishlist-button{
 		display: flex;
 		flex-grow: 1;
@@ -500,7 +504,7 @@ form{
 	.wishlist{
 		display: flex;
 		justify-content: center;
-		margin-left: 2.2rem;
+		
 		padding-top: 1rem;
 		width: 65px;
 		i{
@@ -567,11 +571,6 @@ form{
 }
 
 
-.fixed-subnav{
-
-}
-
-
 .fixed-header{
 	background: $color2;
 	box-shadow: 0 10px 10px rgba(0,0,0,.2);
@@ -622,6 +621,10 @@ form{
 				border-bottom: 2px solid $color7;
 			}
 		}
+	}
+
+	.wishlist{
+		margin-left: 2.2rem;
 	}
 
 	&.sticky{

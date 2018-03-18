@@ -949,6 +949,8 @@ form .form-control {
     margin-top: .4rem; }
   .header .logo {
     padding-top: 2.4rem; }
+  .header .wishlist {
+    margin-left: 0; }
   .header .wishlist-button {
     display: flex;
     flex-grow: 1;
@@ -979,7 +981,6 @@ form .form-control {
 .fixed-header .wishlist {
   display: flex;
   justify-content: center;
-  margin-left: 2.2rem;
   padding-top: 1rem;
   width: 65px; }
   .header .wishlist i,
@@ -1083,6 +1084,8 @@ form .form-control {
         left: 0; }
       .fixed-header .qfilter a span {
         border-bottom: 2px solid #c40f39; }
+  .fixed-header .wishlist {
+    margin-left: 2.2rem; }
   .fixed-header.sticky {
     transform: translateY(0);
     z-index: 99; }
@@ -7298,18 +7301,41 @@ tbody.collapse.show {
     .mainnav .nav {
       flex-basis: 90%; } }
 
+@media (max-width: 1650px) {
+  .header .logo {
+    padding-top: 0; }
+  .header__top .contacts__cell {
+    margin-left: 0; }
+  .fixed-header .row {
+    flex-wrap: nowrap; }
+  .fixed-header .contacts__cell p {
+    display: block; } }
+
 @media (max-width: 1280px) {
   .mainnav {
     margin-left: 0; }
     .mainnav .nav {
       width: 95%;
-      flex-basis: 95%; } }
+      flex-basis: 95%; }
+  .fixed-header .qfilter {
+    padding-left: 2rem; }
+  .fixed-header .contacts__cell {
+    margin-left: 2rem; }
+    .fixed-header .contacts__cell a {
+      font-size: 1.7rem; } }
 
 @media (max-width: 1149px) {
   .header .wishlist {
     margin-left: 0; }
   .header__top .row .contacts__cell:first-child {
     margin-right: 4.5rem; }
+  .fixed-header .btn-callback {
+    font-size: 1.4rem;
+    height: 3rem;
+    padding-left: .5rem;
+    padding-right: .5rem; }
+  .fixed-header .contacts__cell-2 {
+    display: none; }
   .mainnav > ul > li > a {
     font-size: 1.4rem;
     padding-left: .8rem;
@@ -7325,8 +7351,56 @@ tbody.collapse.show {
     .header .contacts__cell p {
       font-size: 1.4rem; }
     .header .contacts__cell a {
-      font-size: 1.7rem; } }
+      font-size: 1.7rem; }
+  .fixed-header .btn-callback {
+    display: none; }
+  .fixed-header .qfilter a {
+    padding-left: 0; }
+    .fixed-header .qfilter a:before {
+      display: none; } }
 
 @media (max-width: 768px) {
   .header .contacts__cell-2 {
+    display: none; }
+  .fixed-header .logo {
+    width: 180px; }
+    .fixed-header .logo img {
+      max-width: 100%; }
+  .fixed-header .wishlist {
+    margin-left: .5rem; } }
+
+@media (max-width: 710px) {
+  .fixed-header .logo {
+    overflow: hidden;
+    width: 50px; }
+    .fixed-header .logo img {
+      max-width: none;
+      height: 40px;
+      width: auto; } }
+
+@media (max-width: 590px) {
+  .header .logo {
+    overflow: hidden;
+    width: 75px; }
+  .fixed-header .contacts__cell {
+    margin-left: 1rem;
     display: none; } }
+
+@media (max-width: 420px) {
+  .header .logo {
+    width: 50px; }
+    .header .logo img {
+      height: 40px; }
+  .header .contacts__cell {
+    margin-left: 1rem; }
+    .header .contacts__cell a {
+      margin-left: 0; }
+  .header .wishlist {
+    display: none; }
+  .fixed-header .wishlist {
+    display: none; } }
+
+@media (max-width: 350px) {
+  .fixed-header .qfilter {
+    padding-left: 1rem;
+    font-size: 1.3rem; } }
