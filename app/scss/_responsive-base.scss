@@ -39,12 +39,13 @@
 		.row{
 			flex-wrap: nowrap;
 		}
-		.qfilter{
-			// padding-left: 2rem;
-		}
 		.contacts__cell p{
 			display: block;
 		}
+	}
+
+	.modal-menu .menu{
+		padding-right: 80px;
 	}
 }
 
@@ -67,6 +68,17 @@
 			a{
 				font-size: 1.7rem;
 			}
+		}
+	}
+
+
+	.modal-menu{
+		.menu{
+			padding-right: 0;
+			width: 100%;
+		}
+		.contacts{
+			display: none;
 		}
 	}
 }
@@ -135,6 +147,24 @@
 			}
 		}
 	}
+
+
+	.modal-menu{
+		.menu__top .cell{
+			padding-right: 1rem;
+			.flexbox {
+				display: block;
+			}
+		}
+		.menu__bottom{
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			.cell{
+				margin-bottom: 2rem;
+				width: 33.3%;
+			}
+		}
+	}
 }
 
 @media (max-width: 768px){
@@ -153,6 +183,33 @@
 		}
 		.wishlist{
 			margin-left: .5rem;
+		}
+	}
+
+	.modal-menu{
+		.menu__bottom,
+		.menu__top{
+			.flexbox{
+				flex-wrap: wrap;
+			}
+			.cell{
+				margin-bottom: 2rem;
+				width: 50%;
+				&-flat{
+					order: 0
+				}
+				&-others{
+					order: 1;
+				}
+
+				&-commerce{
+					order: 3;
+				}
+			}
+		}
+
+		.close-modal{
+			right: 15px;
 		}
 	}
 }
@@ -185,6 +242,39 @@
 		.contacts__cell{
 			margin-left: 1rem;
 			display: none;
+		}
+	}
+
+	.modal-menu{
+		height: 100%;
+		.container{
+			padding-top: 3rem;
+		}
+		.menu__bottom,
+		.menu__top{
+			text-align: center;
+			.flexbox{
+				flex-wrap: wrap;
+				display: block;
+			}
+			.cell{
+				margin-bottom: 2rem;
+				width: 100%;
+				&-flat{
+					order: 0
+				}
+				&-commerce{
+					order: 3;
+				}
+				&-others{
+					order: 1;
+				}
+			}
+		}
+		.menu .title:after, 
+		.menu dt:after{
+			left: 50%;
+			margin-left: -22px;
 		}
 	}
 }

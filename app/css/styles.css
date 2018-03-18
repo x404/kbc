@@ -1394,14 +1394,23 @@ form .form-control {
 .modal-menu {
   background: #007948;
   left: 0;
+  opacity: 0;
+  padding: 0 0 10rem;
   position: fixed;
   top: 0;
-  width: 100%;
-  padding: 0 0 10rem;
-  z-index: 9999;
   transform: translateY(-100%);
-  opacity: 0;
-  transition: .5s all; }
+  transition: .5s all;
+  width: 100%;
+  z-index: 9999;
+  height: 82%; }
+  .modal-menu .inner {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0; }
   .modal-menu .container {
     padding-top: 9.6rem;
     position: relative; }
@@ -1463,7 +1472,9 @@ form .form-control {
     background: rgba(0, 0, 0, 0.2);
     color: #fff;
     padding: 3rem 3.4rem;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    width: 320px;
+    flex-shrink: 0; }
     .modal-menu .contacts__cell {
       margin-bottom: 2rem; }
       .modal-menu .contacts__cell p {
@@ -7309,7 +7320,9 @@ tbody.collapse.show {
   .fixed-header .row {
     flex-wrap: nowrap; }
   .fixed-header .contacts__cell p {
-    display: block; } }
+    display: block; }
+  .modal-menu .menu {
+    padding-right: 80px; } }
 
 @media (max-width: 1280px) {
   .mainnav {
@@ -7322,7 +7335,12 @@ tbody.collapse.show {
   .fixed-header .contacts__cell {
     margin-left: 2rem; }
     .fixed-header .contacts__cell a {
-      font-size: 1.7rem; } }
+      font-size: 1.7rem; }
+  .modal-menu .menu {
+    padding-right: 0;
+    width: 100%; }
+  .modal-menu .contacts {
+    display: none; } }
 
 @media (max-width: 1149px) {
   .header .wishlist {
@@ -7357,7 +7375,17 @@ tbody.collapse.show {
   .fixed-header .qfilter a {
     padding-left: 0; }
     .fixed-header .qfilter a:before {
-      display: none; } }
+      display: none; }
+  .modal-menu .menu__top .cell {
+    padding-right: 1rem; }
+    .modal-menu .menu__top .cell .flexbox {
+      display: block; }
+  .modal-menu .menu__bottom {
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    .modal-menu .menu__bottom .cell {
+      margin-bottom: 2rem;
+      width: 33.3%; } }
 
 @media (max-width: 768px) {
   .header .contacts__cell-2 {
@@ -7367,7 +7395,25 @@ tbody.collapse.show {
     .fixed-header .logo img {
       max-width: 100%; }
   .fixed-header .wishlist {
-    margin-left: .5rem; } }
+    margin-left: .5rem; }
+  .modal-menu .menu__bottom .flexbox,
+  .modal-menu .menu__top .flexbox {
+    flex-wrap: wrap; }
+  .modal-menu .menu__bottom .cell,
+  .modal-menu .menu__top .cell {
+    margin-bottom: 2rem;
+    width: 50%; }
+    .modal-menu .menu__bottom .cell-flat,
+    .modal-menu .menu__top .cell-flat {
+      order: 0; }
+    .modal-menu .menu__bottom .cell-others,
+    .modal-menu .menu__top .cell-others {
+      order: 1; }
+    .modal-menu .menu__bottom .cell-commerce,
+    .modal-menu .menu__top .cell-commerce {
+      order: 3; }
+  .modal-menu .close-modal {
+    right: 15px; } }
 
 @media (max-width: 710px) {
   .fixed-header .logo {
@@ -7384,7 +7430,35 @@ tbody.collapse.show {
     width: 75px; }
   .fixed-header .contacts__cell {
     margin-left: 1rem;
-    display: none; } }
+    display: none; }
+  .modal-menu {
+    height: 100%; }
+    .modal-menu .container {
+      padding-top: 3rem; }
+    .modal-menu .menu__bottom,
+    .modal-menu .menu__top {
+      text-align: center; }
+      .modal-menu .menu__bottom .flexbox,
+      .modal-menu .menu__top .flexbox {
+        flex-wrap: wrap;
+        display: block; }
+      .modal-menu .menu__bottom .cell,
+      .modal-menu .menu__top .cell {
+        margin-bottom: 2rem;
+        width: 100%; }
+        .modal-menu .menu__bottom .cell-flat,
+        .modal-menu .menu__top .cell-flat {
+          order: 0; }
+        .modal-menu .menu__bottom .cell-commerce,
+        .modal-menu .menu__top .cell-commerce {
+          order: 3; }
+        .modal-menu .menu__bottom .cell-others,
+        .modal-menu .menu__top .cell-others {
+          order: 1; }
+    .modal-menu .menu .title:after,
+    .modal-menu .menu dt:after {
+      left: 50%;
+      margin-left: -22px; } }
 
 @media (max-width: 420px) {
   .header .logo {

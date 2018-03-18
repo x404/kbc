@@ -464,7 +464,8 @@ $(document).on('click', '[data-toggle="sidemodal"]', function(e){
 
 $(document).on('click', '.close-modal', function(e){
 	$(this).closest('.open').removeClass('open');
-	document.querySelector('.body').classList.remove('m-modal-open')
+	document.querySelector('.body').classList.remove('m-modal-open');
+	document.querySelector('body').classList.remove('modal-open');
 });
 
 
@@ -502,7 +503,8 @@ $(document).on('click', '.vacancy__item .toggle', function(e){
 // меню по иконке, карта
 $(document).on('click', '.extra-toggle, .showmap', function(e){
 	var modal = $(this).data('popup');
-	$('#' + modal).addClass('open')
+	$('#' + modal).addClass('open');
+	document.querySelector('body').classList.add('modal-open')
 });
 
 

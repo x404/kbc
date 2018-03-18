@@ -1043,14 +1043,27 @@ form{
 	background: $color55;
 	// @extend .green-gradient;
 	left: 0;
+	opacity: 0;
+	padding: 0 0 10rem;
 	position: fixed;
 	top: 0;
-	width: 100%;
-	padding: 0 0 10rem;
-	z-index: 9999;
 	transform: translateY(-100%);
-	opacity: 0;
 	transition: .5s all;
+	width: 100%;
+	z-index: 9999;
+
+	height: 82%;
+	// min-height: 765px;
+	.inner{
+		bottom: 0;
+		height: 100%;
+		left: 0;
+		overflow: auto;
+		position: fixed;
+		right: 0;
+		top: 0;
+	}
+
 	.container{
 		padding-top: 9.6rem;
 		position: relative;
@@ -1146,6 +1159,8 @@ form{
 		color: $color2;
 		padding: 3rem 3.4rem;
 		font-size: 1.5rem;
+		width: 320px;
+		flex-shrink: 0;
 		&__cell{
 			margin-bottom: 2rem;
 			p{
