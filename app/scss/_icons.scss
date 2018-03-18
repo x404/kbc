@@ -4,6 +4,10 @@
 		@include sprite($icon-catalog);
 		left: 0;
 		top: 0;
+		@media (max-width: 1650px){
+			@include sprite($icon-catalog-sm);
+			top: 7px;
+		}
 	}
 }
 

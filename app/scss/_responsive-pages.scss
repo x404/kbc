@@ -1,2 +1,321 @@
-@media (max-width: 1024px){
+@media (max-width: 1650px){
+	.feature,
+	.topnews{
+		.news{
+			&__meta{
+				bottom: 40px;
+			}
+			&__title{
+				font-size: 1.6rem;
+			}
+		}
+	}
+
+	// homepage
+	.feature{
+		$h: 666px;
+		height: $h;
+		&__left{
+			width: 810px;
+		}
+		&__right{
+			flex-basis: 440px;
+			width: 540px;
+			height: $h;
+		}
+
+		.promo{
+			height: auto;
+			.type-1 .statistic__cell .num{
+				font-size: 3.2rem;
+			}
+		}
+		
+		.service{
+			&__cell{
+				height: 98px;
+				img{
+					margin-top: -20px;
+				}
+				&:first-child(){
+					img{
+						margin-top: -25px;
+					}
+				}
+			}
+			&__link{
+				p{
+					padding-right: 1.5rem;
+				}
+				&-gnk{
+					img{
+						width: 45px;
+					}
+				}
+				&-calc{
+					img{
+						width: 45px;
+					}
+				}
+			}
+			&__title{
+				font-size: 2rem;
+			}
+		}
+
+		.news,
+		.about{
+			&__cell{
+				width: 50%;
+			}
+			$pl: 2.2rem;
+			&__meta{
+				margin-left: $pl;
+				margin-right: $pl;
+			}
+			&__top{
+				padding-left: $pl;
+				padding-right: $pl;
+			}
+		}
+
+		.about{
+			&__cell{
+				z-index: 2;
+				.title{
+					font-size: 2rem;
+				}
+			}
+			.tocat{
+				font-size: 1.7rem;
+			}
+		}
+
+		.news{
+			&__desc{
+				top: 100%;
+			}
+		}
+	}
+}
+
+
+
+@media (max-width: 1399px){
+	.feature{
+		$h: 666px;
+		height: $h;
+		&__left{
+			width: 750px;
+		}
+		&__right{
+			flex-basis: 440px;
+			width: 500px;
+			height: $h;
+		}
+
+		.service{
+			&__cell{
+				height: 98px;
+				img{
+					margin-top: -20px;
+				}
+				&:first-child(){
+					img{
+						margin-top: -25px;
+					}
+				}
+			}
+			&__link{
+				p{
+					padding-right: 1.5rem;
+				}
+				&-gnk{
+					img{
+						width: 45px;
+					}
+				}
+				&-calc{
+					img{
+						width: 45px;
+					}
+				}
+			}
+			&__title{
+				font-size: 1.6rem;
+			}
+		}
+
+		.news,
+		.about{
+			&__cell{
+				width: 50%;
+			}
+			$pl: 2.2rem;
+			&__meta{
+				margin-left: $pl;
+				margin-right: $pl;
+			}
+			&__top{
+				padding-left: $pl;
+				padding-right: $pl;
+			}
+		}
+
+		.about{
+			&__cell{
+				z-index: 2;
+				.title{
+					font-size: 1.8rem;
+				}
+				p{
+					font-size: 1.4rem;
+				}
+			}
+			.tocat{
+				font-size: 1.6rem;
+				padding-left: 67px;
+			}
+		}
+	}	
+}
+
+@media (max-width: 1280px){
+	// homepage
+	.feature{
+		$h: auto;
+		height: $h;
+		&__left{
+			width: 700px;
+		}
+		&__right{
+			height: $h;
+			flex-basis: 450px;
+		}
+
+		.promo{
+			height: 412px;
+			img{
+				height: 412px;
+			}
+			.description{
+				padding-right: 5%;
+			}
+		}
+
+		.news,
+		.about{
+			&__cell{
+				height: 248px;
+				width: 225px;
+				img{
+					max-width: 100%;
+					height: 100%;
+				}
+			}
+			$pl: 1.8rem;
+			&__meta{
+				bottom: 20px;
+				margin-left: $pl;
+				margin-right: $pl;
+			}
+			&__top{
+				padding-left: $pl;
+				padding-right: $pl;
+			}
+
+			&__link{
+				height: 100%;
+			}
+		}
+
+		.news{
+			&__top{
+				padding-top: 1.5rem;
+			}
+			&__title{
+				font-size: 1.5rem;
+			}
+			&__desc{
+				font-size: 1.4rem;
+				top: 100%;
+			}
+		}
+
+		.about{
+			&__cell{
+				.title{
+					padding-right: 2rem;
+					padding-bottom: 0;
+				}
+			}
+			&__meta{
+				top: 1.5rem;
+			}
+			.more{
+				font-size: 1.4rem;
+				height: 35px;
+				padding: 0 1.5rem;
+			}
+		}
+
+		.news,
+		.about{
+			&__cell{
+				width: 237px;
+				img{
+					max-width: auto;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1149px){
+	 .feature .news__cell{
+	 	&:last-child{
+		 	display: none;
+	 	}
+	 }
+
+	.feature,
+	.topnews{
+		.news .date .my{
+			font-size: 1.2rem;
+		}
+	}
+
+	 .feature {
+	 	&__right{
+	 		flex-basis: 237px;
+	 		width: 237px;
+	 	}
+	 	.about{
+	 		display: block;
+	 		&__meta{
+	 			margin-right: 0;
+	 			width: 90%;
+	 		}
+	 		&__cell{
+				height: 133px;
+				&:last-child{
+					height: 134px;
+				}
+				.title{
+					font-size: 1.7rem;
+					padding-right: 0;
+				}
+	 		}
+			.short{
+				display: inline;
+			}
+			.long{
+				display: none;
+			}
+	 	}
+	 	.about__text{
+	 		display: none;
+	 	}
+	 }
 }

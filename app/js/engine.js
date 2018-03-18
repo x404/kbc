@@ -28,10 +28,13 @@ $(document).ready(function(){
 		items:1,
 		navText: ["", ""],
 		stagePadding : 0,
+		responsiveClass:true,
+		autoWidth: true,
+		autoHeight: true,
 		dotsContainer: '.owl-dots',
 		navContainer: '.owl-nav',
 		animateOut: 'fadeOut',
-		autoplay: true,
+		autoplay: false,
 		autoplayTimeout: 5000, 
 		loop: true, 
 		onChanged: function (event) {
@@ -39,6 +42,12 @@ $(document).ready(function(){
 		},
 		onInitialized: function (event) {
 			changeclass(event);
+		},
+		responsive:{
+			1280:{
+				autoHeight: false,
+				autoWidth: false
+			}
 		}
 	});
 	function changeclass(event){

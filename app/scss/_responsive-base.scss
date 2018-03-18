@@ -1,8 +1,17 @@
 .show-vsm{
 	display: none;
 }
+
 @media (max-width: 1650px){
 	.header{
+		.logo{
+			padding-top: 0;
+		}
+		&__top{
+			.contacts__cell{
+				margin-left: 0;
+			}
+		}
 		.contacts__cell,
 		.btn-callback{
 			display: none;
@@ -16,27 +25,6 @@
 		}
 	}
 
-	.mainnav{
-		justify-content: center;
-		width: auto;
-		.nav{
-			flex-basis: 90%;
-		}
-	}
-}
-
-
-@media (max-width: 1650px){
-	.header{
-		.logo{
-			padding-top: 0;
-		}
-		&__top{
-			.contacts__cell{
-				margin-left: 0;
-			}
-		}
-	}
 
 	.fixed-header{
 		.row{
@@ -47,10 +35,20 @@
 		}
 	}
 
+
+	.mainnav{
+		justify-content: center;
+		width: auto;
+		.nav{
+			flex-basis: 90%;
+		}
+	}
+
 	.modal-menu .menu{
 		padding-right: 80px;
 	}
 
+	// footer
 	.footer{
 		min-height: auto;
 		.col-7{
@@ -101,6 +99,29 @@
 			}
 		}
 	}
+
+
+	// filter
+	.filter{
+		.slider{
+			width: 200px;
+		}
+		.param_control{
+			width: 83px;
+		}
+		.room{
+			&__checkbox{
+				$s: 35px;
+				width: $s;
+				.checkbox+label{
+					font-size: 1.5rem;
+					line-height: $s;
+					height: $s;
+					width: $s;
+				}
+			}
+		}
+	}
 }
 
 
@@ -139,6 +160,52 @@
 	.footer .subscribe p:not(.title){
 		width: 300px;
 	}
+
+
+	// filter
+	.filter{
+		.tab-pane{
+			.flexbox{
+				flex-wrap: wrap;
+			}
+		}
+		.buttons{
+			display: flex;
+			flex-basis: 100%;
+			margin-left: -224px;
+			margin-top: 1.8rem;
+			flex-grow: 1;
+			.showmap{
+				background: #d2d2d2;
+				color: $color1;
+				font-weight: 700;
+				order: 0;
+				height: 60px;
+				margin-top: 0;
+				&:before{
+					@include sprite($icon-labelred);
+					top: 20px;
+				}
+				span{
+					border-bottom: 2px solid $color7;
+				}
+			}
+			.showflat{
+				br{
+					display: none;
+				}
+				align-items: center;
+				flex-direction: row;
+				font-size: 1.4rem;
+				justify-content: flex-start;
+				order: 1;
+				width: 260px;
+				span{
+					margin-left: .5rem;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 1149px){
@@ -168,7 +235,8 @@
 			padding-right: .8rem;
 		}
 	}
-
+	
+	// footer
 	.footer{
 		&__logo{
 			margin-top: 0;
@@ -213,6 +281,48 @@
 			}
 		}
 	}
+
+	// 
+	.filter{
+		.buttons{
+			margin-left: -152px;
+		}
+		 .nav{
+		 	width: 112px;
+		 	.btn{
+			 	font-size: 1.3rem;
+			 	padding-left: .7rem;
+			 }
+		 }
+
+		.tab-content{
+		 	padding-left: 4rem;
+		}
+		.room{
+			&__group{
+				flex-wrap: wrap;
+				width: 125px;
+			}
+			&__checkbox{
+				margin-bottom: 4px;
+			}
+		}
+
+		.selectize-dropdown, .selectize-input, .selectize-input input{
+			font-size: 15px;
+		}
+
+		.cell__title{
+			font-size: 1.5rem;
+		}
+	}
+
+	.installment, .panel{
+		.checkbox+label	{
+			font-size: 1.3rem;
+		}
+	}
+
 }
 
 @media (max-width: 1024px){

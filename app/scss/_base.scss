@@ -1410,23 +1410,23 @@ form{
 
 // filter
 .filter{
-	padding: 3.5rem 0 3.2rem;
+	color: $color1;
 	flex-grow: 1;
+	padding: 3.5rem 0 3.2rem;
 	position: relative;
 	z-index: 20;
-	color: $color1;
 	.nav{
 		flex-shrink: 0;
 		width: 160px;
 		.btn{
+			border: 2px solid #c8d1dc;
 			display: block;
 			font-size: 1.7rem;
 			font-weight: 700;
 			height: 50px;
-			text-decoration: none;
-			padding-left: 1.8rem;
 			line-height: 50px;
-			border: 2px solid #c8d1dc;
+			padding-left: 1.8rem;
+			text-decoration: none;
 			@include transition-param(border);
 			&:hover:not(.active){
 				border-color: $color1;
