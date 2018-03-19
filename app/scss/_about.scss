@@ -1,11 +1,4 @@
 .about-page{
-	.neck{
-
-	}
-	.breadcrumbs{		
-		// border-bottom-color: rgba(255,255,255,.3);
-	}
-
 	.carousel{
 		margin-top: 2rem;
 		position: relative;
@@ -254,10 +247,13 @@
 		padding: 10rem 0 10rem 748px;
 		flex-grow: 1;
 		.calc-bottom{
+			@extend .flex-cv;
 			@include perspective(7px, $color57, $color58);
+			justify-content: space-between;
 			margin-top: 7px;
+			width: 685px;
 			.right{
-				margin-left: 6.5rem;
+				// margin-left: 6.5rem;
 			}
 		}
 	}

@@ -17,6 +17,7 @@
 	}
 	.main{
 		background: linear-gradient(to right,#fff 0,#fff 50%,#f1f3f5 50%,#f1f3f5 100%);
+		margin-top: 13px;
 		padding: 0;
 		.row{
 			flex-wrap: nowrap;
@@ -288,17 +289,22 @@
 		}
 		&__item{
 			background-color: $color2;
-			padding: 2rem;
-			position: relative;
+			// position: relative;
 			transition: .3s box-shadow;
 			width: 284px;
+			margin-bottom: 8px;
+			@include perspective(7px, $color57, $color58);				
+			padding: 2rem;
+			&-inner{
+			}
+
 			&:after{
-				@extend .before;
-				left: 0;
-				bottom: 0;
-				border-bottom: 4px solid $color7;
-				width: 100%;
-				transition: .3s border-bottom;
+				// @extend .before;
+				// left: 0;
+				// bottom: 0;
+				// border-bottom: 4px solid $color7;
+				// width: 284px;
+				// transition: .3s border-bottom;
 			}
 			&:hover{
 				box-shadow: 0 5px 20px rgba(83, 99, 121, .5);
@@ -332,8 +338,8 @@
 		}
 		&__desc{
 			color: $color41;
-			margin-top: 1rem;
 			line-height: 1.3;
+			margin-top: 1rem;
 		}
 
 		.price{

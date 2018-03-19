@@ -648,7 +648,7 @@ h3 {
 
 .before, .icon-catalog:before, .icon-sett:before, .icon-pricelist:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-labelred:before, .icon-house-dark:before, .icon-camera:before, .icon-camerabig:before, .icon-photo:before, .icon-scheme:before, .icon-schemebig:before, .icon-check:before, .icon-starsmall:before, .card_flat .btn-fav:before, .icon-starsmallfill:before, .card_flat .btn-fav-in:before, .icon-pencil-dark:before, .icon-scheme-green:before, .icon-ruller:before, .icon-doc:before, .about-page .documents .doclist__item a:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
 .fixed-header .wishlist__link:before,
-.fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .perspective:after, .perspective-gray:after, .object__item:after, .perspective:before, .perspective-gray:before, .object__item:before, .callback .call:before,
+.fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .perspective:after, .perspective-gray:after, .listgk-page .main .complex__item-inner:after, .object__item:after, .perspective:before, .perspective-gray:before, .listgk-page .main .complex__item-inner:before, .object__item:before, .callback .call:before,
 .resume .call:before, .modal-menu .menu .title:after,
 .modal-menu .menu dt:after, .modal-menu .contacts .title:after, .modal-menu .close-modal:after, .footer__menu dt:after, .filter .nav .btn.active:after, .filter .showflat:before, .filter .showmap:before, .installment__tooltip_content:before, .feature .news__link:before,
 .topnews .news__link:before, .feature .promo .owl-dot:before,
@@ -669,7 +669,7 @@ h3 {
 .related .carousel .owl-carousel .owl-next:after, .objects__info:before, .objects .owl-item:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .about-partners .partners:after, .big-icon:before, .neck:before, .neck:after, .neck .tabs .tab.active:after, .pagination .prev:before,
 .pagination .next:before, .picking:after, .picking:before, .picking__inner:before, .picking__link span:before, .content-bottom .subscribe:after, .content-bottom .subscribe:before, .sortbox__option-up:after, .sortbox__option-down:after, main ul li:before, .faq-page .head .btn:before,
-.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .favorite__item:after, .table-flats .sort:after, .catalog__item:after, .catalog__item:before, .product__item-inner:after, .product__item-inner:before, .product__item:after, .product__item:hover .product__item-inner:after, .product__item:hover .product__item-inner:before, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__inner:after, .flat-page .card__description .description__inner:before, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .flat-page .card__description .description__bottom:before, .flat-page .card__description .description__bottom:hover:after, .flat-page .card__description .description__bottom:hover:before, .flat-page .card__description .description:after, .installmentbox__left:after, .installmentbox__left:before, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, #calc-gnk-form .alert:before, .complex-page .complex__left:before, .complex-page .complex__panel .video .bg:before, .complex-page .complex__panel .video .bg:after, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a span:after, .complex-page .complex__panel .house:after, .complex-page .about main .heading:after, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item__body:after, .about-page .carousel .item__body:before, .about-page .about .advantages:after, .about-page .about .advantages:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .about-page .calculator .calc-bottom:after, .about-page .calculator .calc-bottom:before, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .example__pic a:after, .calculator-page .example__pic a:before, .calculator-page .example__pic:after, .calculator-page .example__pic:before, .calculator-page .related__item:after {
+.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .favorite__item:after, .table-flats .sort:after, .catalog__item:after, .catalog__item:before, .product__item-inner:after, .product__item-inner:before, .product__item:after, .product__item:hover .product__item-inner:after, .product__item:hover .product__item-inner:before, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .house:after, .flat-page .card__description .description__inner:after, .flat-page .card__description .description__inner:before, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .flat-page .card__description .description__bottom:before, .flat-page .card__description .description__bottom:hover:after, .flat-page .card__description .description__bottom:hover:before, .flat-page .card__description .description:after, .installmentbox__left:after, .installmentbox__left:before, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, #calc-gnk-form .alert:before, .complex-page .complex__left:before, .complex-page .complex__panel .video .bg:before, .complex-page .complex__panel .video .bg:after, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a span:after, .complex-page .complex__panel .house:after, .complex-page .about main .heading:after, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item__body:after, .about-page .carousel .item__body:before, .about-page .about .advantages:after, .about-page .about .advantages:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .about-page .calculator .calc-bottom:after, .about-page .calculator .calc-bottom:before, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .example__pic a:after, .calculator-page .example__pic a:before, .calculator-page .example__pic:after, .calculator-page .example__pic:before, .calculator-page .related__item:after, .calculator-page .related__item:before {
   content: "";
   display: block;
   position: absolute; }
@@ -693,7 +693,7 @@ input[type="submit"] {
 .topnews .news .cat__link, .feature .promo .type-1 .statistic__cell p:not(.num), .object__bottom, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
 .vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top,
 .list_construction .place__top, .review__bottom, .filter-sort .btn,
-.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .subnav a, .complex-page .complex__place .cell, .complex-page .complex__navhouses, .complex-page .about .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom, .about-page .scheme .step, .listgk-page .main .wrapper .panel, .listgk-page .main .wrapper .panel__left, .listgk-page .main .complex__bottom, .listgk-page .main .complex__bottom .right .btn {
+.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .subnav a, .complex-page .complex__place .cell, .complex-page .complex__navhouses, .complex-page .about .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom, .about-page .scheme .step, .about-page .calculator .calc-bottom, .listgk-page .main .wrapper .panel, .listgk-page .main .wrapper .panel__left, .listgk-page .main .complex__bottom, .listgk-page .main .complex__bottom .right .btn {
   display: flex;
   align-items: center; }
 
@@ -1223,16 +1223,16 @@ form .form-control {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF008E54', endColorstr='#FF0D6640', GradientType=0); }
 
-.perspective, .perspective-gray, .object__item {
+.perspective, .perspective-gray, .listgk-page .main .complex__item-inner, .object__item {
   position: relative; }
-  .perspective:after, .perspective-gray:after, .object__item:after {
+  .perspective:after, .perspective-gray:after, .listgk-page .main .complex__item-inner:after, .object__item:after {
     background: #00a664;
     height: 100%;
     right: -12px;
     top: 6px;
     transform: skewY(45deg);
     width: 12px; }
-  .perspective:before, .perspective-gray:before, .object__item:before {
+  .perspective:before, .perspective-gray:before, .listgk-page .main .complex__item-inner:before, .object__item:before {
     background: #007948;
     bottom: -12px;
     height: 12px;
@@ -1240,10 +1240,10 @@ form .form-control {
     transform: skewX(45deg);
     width: 100%; }
 
-.perspective-gray:after {
+.perspective-gray:after, .listgk-page .main .complex__item-inner:after {
   background: #dcdcde; }
 
-.perspective-gray:before {
+.perspective-gray:before, .listgk-page .main .complex__item-inner:before {
   background: #bdbec1; }
 
 /* =callback
@@ -3049,7 +3049,7 @@ body.modal-open {
     flex-wrap: nowrap;
     display: block; }
   .neck .title {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
     text-transform: uppercase; }
     .neck .title-sm {
@@ -5104,8 +5104,17 @@ main {
     width: 31px;
     height: 30px; }
 
+.condo-page .main {
+  padding-top: 4.5rem; }
+
 .condo-page .row {
   display: block; }
+
+.condo-page .filter {
+  padding-top: 4.2rem; }
+
+.condo-page .perspective-gray, .condo-page .listgk-page .main .complex__item-inner, .listgk-page .main .condo-page .complex__item-inner {
+  width: calc(100% - 12px); }
 
 .condo-page .subtitle {
   font-size: 2.4rem;
@@ -5139,10 +5148,15 @@ main {
   padding-bottom: 0; }
 
 .house {
-  margin-bottom: 3rem; }
+  margin-bottom: 4rem;
+  position: relative; }
+  .house:after {
+    border-bottom: 5px solid #c40f39;
+    bottom: -17px;
+    left: 12px;
+    width: calc(100% - 12px); }
   .house__bottom {
     background-color: #e6e9ec;
-    border-bottom: 5px solid #c40f39;
     padding: 1.4rem 2.6rem 1.1rem;
     position: relative;
     z-index: 20; }
@@ -6696,7 +6710,9 @@ circle:nth-child(2n) {
   flex-grow: 1; }
   .about-page .calculator .calc-bottom {
     position: relative;
-    margin-top: 7px; }
+    justify-content: space-between;
+    margin-top: 7px;
+    width: 685px; }
     .about-page .calculator .calc-bottom:after, .about-page .calculator .calc-bottom:before {
       transition: .3s; }
     .about-page .calculator .calc-bottom:after {
@@ -6713,8 +6729,6 @@ circle:nth-child(2n) {
       left: 3.5px;
       transform: skewX(45deg);
       width: 100%; }
-    .about-page .calculator .calc-bottom .right {
-      margin-left: 6.5rem; }
 
 .about-page .report {
   padding: 7.5rem 0 7rem; }
@@ -6773,13 +6787,16 @@ circle:nth-child(2n) {
       position: relative;
       z-index: 2; }
       .listgk-page .main .wrapper .panel {
-        font-size: 1.5rem;
         background: #fff;
-        height: 85px;
+        font-size: 1.5rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
         padding-left: 155px;
         padding-right: 92px; }
         .listgk-page .main .wrapper .panel__left {
           flex-grow: 1; }
+          .listgk-page .main .wrapper .panel__left b, .listgk-page .main .wrapper .panel__left strong {
+            font-weight: 700; }
       .listgk-page .main .wrapper .area-select__wrap {
         margin-left: 1.5rem;
         width: 215px; }
@@ -6818,14 +6835,15 @@ circle:nth-child(2n) {
       .listgk-page .main .complex__link img {
         transition: .3s transform; }
     .listgk-page .main .complex__item {
-      display: flex;
-      margin-top: 3.8rem;
+      margin-top: 4.8rem;
       position: relative;
       transition: .3s box-shadow; }
+      .listgk-page .main .complex__item-inner {
+        display: flex; }
       .listgk-page .main .complex__item:after {
         border-bottom: 5px solid #c40f39;
-        bottom: -8px;
-        left: 0;
+        bottom: -17px;
+        left: 12px;
         width: 100%; }
       .listgk-page .main .complex__item:hover {
         box-shadow: 2px 5px 30px rgba(83, 99, 121, 0.5); }
@@ -6913,6 +6931,7 @@ circle:nth-child(2n) {
 
 .calculator-page .main {
   background: linear-gradient(to right, #fff 0, #fff 50%, #f1f3f5 50%, #f1f3f5 100%);
+  margin-top: 13px;
   padding: 0; }
   .calculator-page .main .row {
     flex-wrap: nowrap; }
@@ -7092,16 +7111,27 @@ circle:nth-child(2n) {
     display: block; }
   .calculator-page .related__item {
     background-color: #fff;
-    padding: 2rem;
-    position: relative;
     transition: .3s box-shadow;
-    width: 284px; }
+    width: 284px;
+    margin-bottom: 8px;
+    position: relative;
+    padding: 2rem; }
+    .calculator-page .related__item:after, .calculator-page .related__item:before {
+      transition: .3s; }
     .calculator-page .related__item:after {
-      left: 0;
-      bottom: 0;
-      border-bottom: 4px solid #c40f39;
-      width: 100%;
-      transition: .3s border-bottom; }
+      background: #dcdcde;
+      height: 100%;
+      right: -7px;
+      top: 3.5px;
+      transform: skewY(45deg);
+      width: 7px; }
+    .calculator-page .related__item:before {
+      background: #bdbec1;
+      bottom: -7px;
+      height: 7px;
+      left: 3.5px;
+      transform: skewX(45deg);
+      width: 100%; }
     .calculator-page .related__item:hover {
       box-shadow: 0 5px 20px rgba(83, 99, 121, 0.5); }
       .calculator-page .related__item:hover:after {
@@ -7123,8 +7153,8 @@ circle:nth-child(2n) {
     margin-top: 1.5rem; }
   .calculator-page .related__desc {
     color: #5b5b5b;
-    margin-top: 1rem;
-    line-height: 1.3; }
+    line-height: 1.3;
+    margin-top: 1rem; }
   .calculator-page .related .price {
     color: #00874d;
     font-weight: 700;

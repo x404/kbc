@@ -1,6 +1,18 @@
 .condo-page{
+	.main{
+		padding-top: 4.5rem;
+	}
+
 	.row{
 		display: block;
+	}
+
+	.filter{
+		padding-top: 4.2rem;
+	}
+
+	.perspective-gray{
+		width: calc(100% - 12px);
 	}
 
 	.subtitle{
@@ -48,10 +60,20 @@
 
 
 .house{
-	margin-bottom: 3rem;
+	margin-bottom: 4rem;
+	position: relative;
+	&:after{
+		@extend .before;
+		border-bottom: 5px solid $color7;
+		bottom: -17px;
+		left: 12px;
+		width: calc(100% - 12px);
+	}
+	&__inner{
+		// position: relative;
+	}
 	&__bottom{
 		background-color: $color21;
-		border-bottom: 5px solid $color7;
 		padding: 1.4rem 2.6rem 1.1rem;
 		position: relative;
 		z-index: 20;
