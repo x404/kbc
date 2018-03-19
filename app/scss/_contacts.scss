@@ -3,6 +3,7 @@
 		background: #f1f3f5;
 	}
 	.main.flexbox{
+		padding-right: 12px;
 		justify-content: space-between;
 	}
 
@@ -15,7 +16,7 @@
 		background: $color2;
 		color: $color39;
 		font-size: 1.7rem;
-		flex: 0 0 510px;
+		flex: 0 0 498px;
 		padding: 3.1rem 4.8rem 3rem 5.2rem;
 		@include transition-param(box-shadow);
 		p{

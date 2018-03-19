@@ -19,16 +19,30 @@
 
 // =neck
 .neck{
-	// z-index: 31;
-	background:#007948 url(../images/neck-bg.png) no-repeat center top /cover;
+	background-color: #007948;
 	color: $color2;
-	min-height: 184px;
+	padding-bottom: 13px;
 	position: relative;
 	z-index: 21;
+
+	&__inner{
+		background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAOCAQAAABESr7XAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAxMNBhY4AhMMAAAAI0lEQVQI12Ng0Gdi+M/E8JuJ4TcTwx8k9BdG/mVi+MvAwAQA/BsMH4jbHgcAAAAASUVORK5CYII=") repeat-x left top;		
+	}
+
+	&:before{
+		@extend .before;		
+		background: url(../images/neck-square.png) no-repeat right top;
+		height: calc(100% + 13px);
+		right: 75px;
+		top: 0;
+		width: 730px;
+		z-index: -1;
+	}
+
 	&:after{
 		@extend .before;
 		border-bottom: 7px solid #c40f39;
-		bottom: 0;
+		bottom: -13px;
 		left: 0;
 		width: 100%;
 	}

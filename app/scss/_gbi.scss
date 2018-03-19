@@ -27,7 +27,7 @@
 		}
 		li{
 			background-color: $color2;
-			width: 32%;
+			width: 31%;
 			@include transition-param(box-shadow);
 			&:hover{
 				box-shadow: 0 5px 20px rgba(83,99,121,.3)
@@ -67,7 +67,7 @@
 					@include left($l);
 				}
 				.line{
-					margin-left: 65px;
+					margin-left: 75px;
 				}
 			}
 			&-sett{
@@ -80,7 +80,7 @@
 					@include left($l);
 				}
 				.line{
-					margin-left: 100px;
+					margin-left: 110px;
 				}
 			}
 			&-pricelist{
@@ -93,7 +93,7 @@
 					@include left($l);
 				}
 				.line{
-					margin-left: 50px;
+					margin-left: 60px;
 				}
 			}
 		}
@@ -122,6 +122,9 @@
 	}
 
 	.head{
+		h1{
+			font-size: 4rem;
+		}
 		.flexbox{
 			width: 100%;
 		}
@@ -130,10 +133,11 @@
 .catalog{
 	&__item{
 		@include transition-param(box-shadow);
+		@include perspective(8px, #dcdcde, #bdbec1);
 		background-color: $color2;
-		margin-bottom: 2.4rem;
-		margin-right: 20px;
-		width: 384px;
+		margin-bottom: 3rem;
+		margin-right: 30px;
+		width: 375px;
 		img{
 			@extend .loader;
 			display: flex;
@@ -188,10 +192,14 @@
 		@include transition-param(box-shadow);
 		background-color: $color2;
 		margin-bottom: 2.3rem;
-		margin-right: 2.4rem;
-		padding: 20px;
+		margin-right: 2.1rem;
 		position: relative;
 		width: 282px;
+		&-inner{
+			@include perspective(7px, $color57, $color58);
+			height: 100%;
+			padding: 20px;
+		}
 		img{
 			@include transition-param(transform);
 			@extend .loader;
@@ -200,8 +208,8 @@
 			@extend .before;
 			@include transition-param(border);
 			border-bottom: 4px solid $color7;
-			bottom: 0;
-			left: 0;
+			bottom: -11px;
+			left: 7px;
 			width: 100%;
 		}
 		&:nth-child(4n){
@@ -210,7 +218,11 @@
 		&:hover{
 			box-shadow: 0 5px 20px rgba(83,99,121,.3);
 			&:after{
-				border-bottom-width: 8px;				
+				border-bottom: none;
+				// border-bottom-width: 0;
+			}
+			.product__item-inner{
+				@include perspective(7px, $color7, $color7);
 			}
 			img{
 				transform: scale(1.15)

@@ -1,16 +1,21 @@
-
 .favorite-page{
 	background: $color36;
 	.main{
 		padding-top: 5.5rem;
+	}
+	.head{
+		.title{
+			font-size: 4rem;
+		}
 	}
 }
 
 .favorite{
 	&__item{
 		background: $color2;
-		border-bottom: 5px solid $color7;
-		margin-bottom: 3rem;
+		margin-bottom: 4.5rem;
+		position: relative;
+		width: calc(100% - 12px);
 		
 		.flexbox{
 			align-items: center;
@@ -55,6 +60,15 @@
 					@include rotation(90deg)					
 				}
 			}
+		}
+
+		&:after{
+			@extend .before;
+			border-bottom: 5px solid $color7;
+			bottom: 0;
+			left: 12px;
+			width: 100%;
+			bottom: -17px;
 		}
 	}
 
@@ -125,7 +139,7 @@
 			margin-left: 3rem;
 			.num{
 				color: $color8;
-				font-weight: 500;
+				font-weight: 700;
 			}	
 		}
 		&__price{
@@ -145,7 +159,7 @@
 		background: #e6e9ec;
 		color: $color40;
 		font-size: 1.4rem;
-		font-weight: 100;
+		font-weight: 300;
 		padding: 2.5rem 1.5rem;
 		position: relative;
 		z-index: 30;
@@ -174,8 +188,10 @@
 		padding: 1.5rem;
 		position: relative;
 		z-index: 10;
+		strong, b{
+			font-weight: 700;			
+		}
 		.flat{
-			font-weight: 900;
 			a{
 				text-decoration: none;
 				&:hover{

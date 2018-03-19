@@ -1,5 +1,6 @@
 .list_reviews{
 	flex-wrap: wrap;
+	padding-top: 2.5rem;
 }
 
 .reviews-page{
@@ -7,8 +8,8 @@
 		width: 100%;
 	}
 	.neck{
-		background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAOCAQAAABESr7XAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAxMNBhY4AhMMAAAAI0lEQVQI12Ng0Gdi+M/E8JuJ4TcTwx8k9BdG/mVi+MvAwAQA/BsMH4jbHgcAAAAASUVORK5CYII=") repeat-x left top, url(../images/neck-bg.png) no-repeat center top / cover #007948;
-		background-size: auto;
+		// background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAOCAQAAABESr7XAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAxMNBhY4AhMMAAAAI0lEQVQI12Ng0Gdi+M/E8JuJ4TcTwx8k9BdG/mVi+MvAwAQA/BsMH4jbHgcAAAAASUVORK5CYII=") repeat-x left top, url(../images/neck-bg.png) no-repeat center top / cover #007948;
+		// background-size: auto;
 		// background-color: #007948;
 		z-index: 32;
 		.head{
@@ -169,7 +170,7 @@
 }
 
 .filter-sort{
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 	width: calc(100% - 12px);
 	.flexbox{
 		background: $color36;
