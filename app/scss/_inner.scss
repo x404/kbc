@@ -15,6 +15,21 @@
 	.resume{
 		margin-top: -10rem;
 	}
+
+	&__map{
+		margin-bottom: 4.5rem;
+		width: 30.4rem;
+		// margin-top: -17rem;
+		.title{
+			background: $color2;
+			@extend .flex-cv;
+			font-size: 2.5rem;
+			font-weight: 700;
+			height: 8.5rem;
+			padding-left: 3.8rem;
+			text-transform: uppercase;
+		}
+	}
 }
 
 // =neck

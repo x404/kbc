@@ -475,6 +475,7 @@ $(document).on('click', '.close-modal', function(e){
 	$(this).closest('.open').removeClass('open');
 	document.querySelector('.body').classList.remove('m-modal-open');
 	document.querySelector('body').classList.remove('modal-open');
+	document.querySelector('body').classList.remove('modal-open-my');
 });
 
 
@@ -513,7 +514,8 @@ $(document).on('click', '.vacancy__item .toggle', function(e){
 $(document).on('click', '.extra-toggle, .showmap', function(e){
 	var modal = $(this).data('popup');
 	$('#' + modal).addClass('open');
-	document.querySelector('body').classList.add('modal-open')
+	// document.querySelector('body').classList.add('modal-open')
+	document.querySelector('body').classList.add('modal-open-my')
 });
 
 

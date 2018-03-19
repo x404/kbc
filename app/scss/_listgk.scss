@@ -1,53 +1,50 @@
 .listgk-page{
 	position: relative;
-	.neck{
-		position: relative;
-		z-index: 32;
-	}
 	.main{
 		padding-top: 0;
 		padding-bottom: 0;
-		display: flex;
 		.wrapper{
-			box-shadow: 10px 0 20px rgba(0,0,0,.2);
-			width: 75%;	
 			position: relative;
 			z-index: 2;
-			$pl: 155px;
-			$pr: 92px;
-			.panel{
-				@extend .flex-cv;
-				background: $color2;
-				font-size: 1.5rem;
-				// height: 85px;
-				padding-top: 3rem;
-				padding-bottom: 2rem;
-				padding-left: $pl;
-				padding-right: $pr;
-				&__left{
-					@extend .flex-cv;
-					flex-grow: 1;
-					b, strong{
-						font-weight: 700;
-					}
-				}
-			}
-			.area-select__wrap{
-				margin-left: 1.5rem;
-				width: 215px;
-				.not-full{
-					input{
-						color: $color1;
-						@include placeholder($color1);
-					}
-				}
-			}
-			.listgk{
-				overflow: hidden;
-				padding-left: $pl;
-				padding-right: $pr;
-			}
 		}	
+
+		.panel{
+			@extend .flex-cv;
+			background: $color2;
+			font-size: 1.5rem;
+			// height: 85px;
+			margin-top: 1.3rem;
+			padding: 1.7rem 0 2rem;
+			.flexbox{
+				align-items: center;
+			}
+			&__left{
+				@extend .flex-cv;
+				flex-grow: 1;
+				b, strong{
+					font-weight: 700;
+				}
+			}
+		}
+		.area-select__wrap{
+			margin-left: 2.5rem;
+			width: 215px;
+			.not-full{
+				input{
+					color: $color1;
+					@include placeholder($color1);
+				}
+			}
+		}
+		.listgk{
+			// overflow: hidden;
+			// padding-left: $pl;
+			// padding-right: $pr;
+			.side{
+				margin-top: -17rem;
+			}
+		}
+
 
 		.complex{
 			$pl: 32px;
@@ -76,6 +73,7 @@
 			}
 			&__item{
 				margin-top: 4.8rem;
+				margin-right: 105px;
 				position: relative;
 				transition: .3s box-shadow;
 

@@ -690,10 +690,10 @@ input[type="submit"] {
 .flex-cv, .btn-more, .header__top .row, .installment .checkbox + label,
 .panel .checkbox + label, .feature .news .date,
 .topnews .news .date, .feature .news .cat__link,
-.topnews .news .cat__link, .feature .promo .type-1 .statistic__cell p:not(.num), .object__bottom, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
+.topnews .news .cat__link, .feature .promo .type-1 .statistic__cell p:not(.num), .object__bottom, .side__map .title, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
 .vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top,
 .list_construction .place__top, .review__bottom, .filter-sort .btn,
-.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .subnav a, .complex-page .complex__place .cell, .complex-page .complex__navhouses, .complex-page .about .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom, .about-page .scheme .step, .about-page .calculator .calc-bottom, .listgk-page .main .wrapper .panel, .listgk-page .main .wrapper .panel__left, .listgk-page .main .complex__bottom, .listgk-page .main .complex__bottom .right .btn {
+.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .subnav a, .complex-page .complex__place .cell, .complex-page .complex__navhouses, .complex-page .about .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom, .about-page .scheme .step, .about-page .calculator .calc-bottom, .listgk-page .main .panel, .listgk-page .main .panel__left, .listgk-page .main .complex__bottom, .listgk-page .main .complex__bottom .right .btn {
   display: flex;
   align-items: center; }
 
@@ -2005,12 +2005,16 @@ form .form-control {
 .tab-content > .active {
   display: block; }
 
-body.modal-open {
+body.modal-open,
+.modal-open-my {
   overflow: hidden;
   width: 100%; }
   body.modal-open .outerwrapper,
   body.modal-open footer,
-  body.modal-open .fixed-header {
+  body.modal-open .fixed-header,
+  .modal-open-my .outerwrapper,
+  .modal-open-my footer,
+  .modal-open-my .fixed-header {
     filter: blur(3px); }
 
 .text-center {
@@ -2973,7 +2977,6 @@ body.modal-open {
     border-bottom: none; }
 
 .modal-map {
-  background: #fff;
   left: 0;
   position: absolute;
   top: 10rem;
@@ -2984,8 +2987,10 @@ body.modal-open {
   .modal-map.open {
     display: block;
     opacity: 1;
-    z-index: 10; }
+    z-index: 100;
+    position: fixed; }
   .modal-map .container {
+    background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding-left: 0;
     padding-right: 0;
@@ -3018,6 +3023,17 @@ body.modal-open {
 
 .side .resume {
   margin-top: -10rem; }
+
+.side__map {
+  margin-bottom: 4.5rem;
+  width: 30.4rem; }
+  .side__map .title {
+    background: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 8.5rem;
+    padding-left: 3.8rem;
+    text-transform: uppercase; }
 
 .neck {
   background-color: #007948;
@@ -6774,50 +6790,42 @@ circle:nth-child(2n) {
 
 .listgk-page {
   position: relative; }
-  .listgk-page .neck {
-    position: relative;
-    z-index: 32; }
   .listgk-page .main {
     padding-top: 0;
-    padding-bottom: 0;
-    display: flex; }
+    padding-bottom: 0; }
     .listgk-page .main .wrapper {
-      box-shadow: 10px 0 20px rgba(0, 0, 0, 0.2);
-      width: 75%;
       position: relative;
       z-index: 2; }
-      .listgk-page .main .wrapper .panel {
-        background: #fff;
-        font-size: 1.5rem;
-        padding-top: 3rem;
-        padding-bottom: 2rem;
-        padding-left: 155px;
-        padding-right: 92px; }
-        .listgk-page .main .wrapper .panel__left {
-          flex-grow: 1; }
-          .listgk-page .main .wrapper .panel__left b, .listgk-page .main .wrapper .panel__left strong {
-            font-weight: 700; }
-      .listgk-page .main .wrapper .area-select__wrap {
-        margin-left: 1.5rem;
-        width: 215px; }
-        .listgk-page .main .wrapper .area-select__wrap .not-full input {
+    .listgk-page .main .panel {
+      background: #fff;
+      font-size: 1.5rem;
+      margin-top: 1.3rem;
+      padding: 1.7rem 0 2rem; }
+      .listgk-page .main .panel .flexbox {
+        align-items: center; }
+      .listgk-page .main .panel__left {
+        flex-grow: 1; }
+        .listgk-page .main .panel__left b, .listgk-page .main .panel__left strong {
+          font-weight: 700; }
+    .listgk-page .main .area-select__wrap {
+      margin-left: 2.5rem;
+      width: 215px; }
+      .listgk-page .main .area-select__wrap .not-full input {
+        color: #000; }
+        .listgk-page .main .area-select__wrap .not-full input::-webkit-input-placeholder {
           color: #000; }
-          .listgk-page .main .wrapper .area-select__wrap .not-full input::-webkit-input-placeholder {
-            color: #000; }
-          .listgk-page .main .wrapper .area-select__wrap .not-full input::-moz-placeholder {
-            color: #000; }
-          .listgk-page .main .wrapper .area-select__wrap .not-full input:-ms-input-placeholder {
-            color: #000; }
-          .listgk-page .main .wrapper .area-select__wrap .not-full input:focus::-webkit-input-placeholder {
-            transition: line-height 0.5s ease; }
-          .listgk-page .main .wrapper .area-select__wrap .not-full input:focus::-moz-placeholder {
-            transition: line-height 0.5s ease; }
-          .listgk-page .main .wrapper .area-select__wrap .not-full input:focus:-ms-input-placeholder {
-            transition: line-height 0.5s ease; }
-      .listgk-page .main .wrapper .listgk {
-        overflow: hidden;
-        padding-left: 155px;
-        padding-right: 92px; }
+        .listgk-page .main .area-select__wrap .not-full input::-moz-placeholder {
+          color: #000; }
+        .listgk-page .main .area-select__wrap .not-full input:-ms-input-placeholder {
+          color: #000; }
+        .listgk-page .main .area-select__wrap .not-full input:focus::-webkit-input-placeholder {
+          transition: line-height 0.5s ease; }
+        .listgk-page .main .area-select__wrap .not-full input:focus::-moz-placeholder {
+          transition: line-height 0.5s ease; }
+        .listgk-page .main .area-select__wrap .not-full input:focus:-ms-input-placeholder {
+          transition: line-height 0.5s ease; }
+    .listgk-page .main .listgk .side {
+      margin-top: -17rem; }
     .listgk-page .main .complex__pic {
       position: relative; }
       .listgk-page .main .complex__pic img {
@@ -6836,6 +6844,7 @@ circle:nth-child(2n) {
         transition: .3s transform; }
     .listgk-page .main .complex__item {
       margin-top: 4.8rem;
+      margin-right: 105px;
       position: relative;
       transition: .3s box-shadow; }
       .listgk-page .main .complex__item-inner {
