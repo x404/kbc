@@ -648,7 +648,7 @@ h3 {
 
 .before, .icon-catalog:before, .icon-sett:before, .icon-pricelist:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-labelred:before, .icon-house-dark:before, .icon-camera:before, .icon-camerabig:before, .icon-photo:before, .icon-scheme:before, .icon-schemebig:before, .icon-check:before, .icon-starsmall:before, .card_flat .btn-fav:before, .icon-starsmallfill:before, .card_flat .btn-fav-in:before, .icon-pencil-dark:before, .icon-scheme-green:before, .icon-ruller:before, .icon-doc:before, .about-page .documents .doclist__item a:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
 .fixed-header .wishlist__link:before,
-.fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .perspective:after, .object__item:after, .perspective:before, .object__item:before, .callback .call:before,
+.fixed-header .wishlist__link:after, .fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .perspective:after, .perspective-gray:after, .object__item:after, .perspective:before, .perspective-gray:before, .object__item:before, .callback .call:before,
 .resume .call:before, .modal-menu .menu .title:after,
 .modal-menu .menu dt:after, .modal-menu .contacts .title:after, .modal-menu .close-modal:after, .footer__menu dt:after, .filter .nav .btn.active:after, .filter .showflat:before, .filter .showmap:before, .installment__tooltip_content:before, .feature .news__link:before,
 .topnews .news__link:before, .feature .promo .owl-dot:before,
@@ -667,9 +667,9 @@ h3 {
 .list_construction .tab-content .owl-carousel .owl-next:after,
 .related .carousel .owl-carousel .owl-prev:after,
 .related .carousel .owl-carousel .owl-next:after, .objects__info:before, .objects .owl-item:after, .object__top .name:after, .intro .link_groups a:before,
-.about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .about-partners .partners:after, .big-icon:before, .neck .tabs .tab.active:after, .pagination .prev:before,
-.pagination .next:before, .picking__link span:before, .sortbox__option-up:after, .sortbox__option-down:after, main ul li:before, .faq-page .head .btn:before,
-.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__inner:after, .flat-page .card__description .description__inner:before, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .flat-page .card__description .description__bottom:before, .flat-page .card__description .description__bottom:hover:after, .flat-page .card__description .description__bottom:hover:before, .flat-page .card__description .description:after, .installmentbox__left:after, .installmentbox__left:before, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, #calc-gnk-form .alert:before, .complex-page .complex__left:before, .complex-page .complex__panel .video .bg:before, .complex-page .complex__panel .video .bg:after, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a span:after, .complex-page .complex__panel .house:after, .complex-page .about main .heading:after, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .neck:after, .about-page .carousel .item__body:after, .about-page .carousel .item__body:before, .about-page .about .advantages:after, .about-page .about .advantages:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .about-page .calculator .calc-bottom:after, .about-page .calculator .calc-bottom:before, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .example__pic a:after, .calculator-page .example__pic a:before, .calculator-page .example__pic:after, .calculator-page .example__pic:before, .calculator-page .related__item:after {
+.about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .about-partners .partners:after, .big-icon:before, .neck:after, .neck .tabs .tab.active:after, .pagination .prev:before,
+.pagination .next:before, .picking:after, .picking:before, .picking__inner:before, .picking__link span:before, .content-bottom .subscribe:after, .content-bottom .subscribe:before, .sortbox__option-up:after, .sortbox__option-down:after, main ul li:before, .faq-page .head .btn:before,
+.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .table-flats .sort:after, .product__item:after, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .flat-page .card__description .description__inner:after, .flat-page .card__description .description__inner:before, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .flat-page .card__description .description__bottom:before, .flat-page .card__description .description__bottom:hover:after, .flat-page .card__description .description__bottom:hover:before, .flat-page .card__description .description:after, .installmentbox__left:after, .installmentbox__left:before, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, #calc-gnk-form .alert:before, .complex-page .complex__left:before, .complex-page .complex__panel .video .bg:before, .complex-page .complex__panel .video .bg:after, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a span:after, .complex-page .complex__panel .house:after, .complex-page .about main .heading:after, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item__body:after, .about-page .carousel .item__body:before, .about-page .about .advantages:after, .about-page .about .advantages:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .about-page .calculator .calc-bottom:after, .about-page .calculator .calc-bottom:before, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .example__pic a:after, .calculator-page .example__pic a:before, .calculator-page .example__pic:after, .calculator-page .example__pic:before, .calculator-page .related__item:after {
   content: "";
   display: block;
   position: absolute; }
@@ -755,6 +755,7 @@ button {
     color: #fff; }
 
 .btn-faq, .btn-review {
+  background: #009259;
   color: #fff;
   font-size: 2rem;
   font-weight: 600;
@@ -1215,29 +1216,35 @@ form .form-control {
 
 /* =header
 ---------------------------*/
-.green-gradient, .btn-faq, .btn-review {
+.green-gradient {
   background-image: -webkit-linear-gradient(top, #008e54 0%, #0d6640 100%);
   background-image: -o-linear-gradient(top, #008e54 0%, #0d6640 100%);
   background-image: linear-gradient(to bottom, #008e54 0%, #0d6640 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF008E54', endColorstr='#FF0D6640', GradientType=0); }
 
-.perspective, .object__item {
+.perspective, .perspective-gray, .object__item {
   position: relative; }
-  .perspective:after, .object__item:after {
+  .perspective:after, .perspective-gray:after, .object__item:after {
     background: #00a664;
     height: 100%;
     right: -12px;
     top: 6px;
     transform: skewY(45deg);
     width: 12px; }
-  .perspective:before, .object__item:before {
+  .perspective:before, .perspective-gray:before, .object__item:before {
     background: #007948;
     bottom: -12px;
     height: 12px;
     left: 6px;
     transform: skewX(45deg);
     width: 100%; }
+
+.perspective-gray:after {
+  background: #dcdcde; }
+
+.perspective-gray:before {
+  background: #bdbec1; }
 
 /* =callback
 ---------------------------*/
@@ -3013,10 +3020,16 @@ body.modal-open {
   margin-top: -10rem; }
 
 .neck {
-  background: #0a6a41 url(../images/neck-bg.jpg) no-repeat center/cover;
+  background: #007948 url(../images/neck-bg.png) no-repeat center top/cover;
   color: #fff;
+  min-height: 184px;
   position: relative;
   z-index: 21; }
+  .neck:after {
+    border-bottom: 7px solid #c40f39;
+    bottom: 0;
+    left: 0;
+    width: 100%; }
   .neck p {
     font-size: 2rem;
     line-height: 1.6; }
@@ -3027,7 +3040,7 @@ body.modal-open {
     flex-wrap: nowrap;
     display: block; }
   .neck .title {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase; }
     .neck .title-sm {
@@ -3061,7 +3074,7 @@ body.modal-open {
     margin-top: 2rem;
     position: relative; }
   .neck .tabs {
-    margin-left: 3.5rem;
+    margin-left: 7.5rem;
     font-size: 1.7rem;
     font-weight: 500;
     display: flex; }
@@ -3088,8 +3101,8 @@ body.modal-open {
         .neck .tabs .tab.active:after {
           border-left: 9px solid transparent;
           border-right: 9px solid transparent;
-          border-top: 8px solid #fff;
-          bottom: -8px;
+          border-top: 9px solid #fff;
+          bottom: -10px;
           height: 0;
           left: 50%;
           margin-left: -5px;
@@ -3099,10 +3112,11 @@ body.modal-open {
         z-index: 2; }
 
 .breadcrumbs {
-  border-bottom: 1px solid #085634;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   color: #afccc0;
   font-size: 1.3rem;
-  height: 48px; }
+  height: 48px;
+  margin-right: 116px; }
   .breadcrumbs ul li {
     display: inline-block; }
     .breadcrumbs ul li a {
@@ -3113,7 +3127,7 @@ body.modal-open {
   margin-bottom: 3rem;
   margin-top: 5rem;
   padding: 2rem 0;
-  width: 100%; }
+  width: calc(100% - 12px); }
   .pagination a, .pagination span {
     text-align: center; }
   .pagination a,
@@ -3127,7 +3141,7 @@ body.modal-open {
     border-radius: 50%;
     color: #7c8896;
     height: 40px;
-    transition: .3s color, background-color;
+    transition: .3s;
     width: 40px; }
   .pagination a:not([class]):hover {
     color: #fff;
@@ -3176,30 +3190,57 @@ body.modal-open {
       -ms-transform: rotate(180deg);
       transform: rotate(180deg); }
   .pagination-gray {
-    background: #e6e9ec; }
+    background: #f3f3f4; }
 
 .picking {
+  background: #c40f39;
   margin-top: 3.7rem;
-  overflow-y: hidden;
-  overflow: hidden;
   position: relative;
   transition: .3s all;
-  width: 320px; }
+  width: 308px;
+  position: relative; }
+  .picking:after, .picking:before {
+    transition: .3s; }
+  .picking:after {
+    background: #ee1746;
+    height: 100%;
+    right: -12px;
+    top: 6px;
+    transform: skewY(45deg);
+    width: 12px; }
+  .picking:before {
+    background: #9d0329;
+    bottom: -12px;
+    height: 12px;
+    left: 6px;
+    transform: skewX(45deg);
+    width: 100%; }
+  .picking:before {
+    background: linear-gradient(to right, #007948 0, #007948 75px, #9d0329 75px, #9d0329); }
+  .picking__inner {
+    overflow: hidden;
+    position: relative; }
+    .picking__inner:before {
+      background: #00874d;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 75px; }
   .picking img {
     -webkit-transition: transform 0.2s ease-out;
     transition: transform 0.2s ease-out;
     display: block;
     position: absolute;
-    left: 0;
-    top: 0;
+    right: 0;
+    bottom: 0;
     z-index: 1; }
   .picking__link {
     color: #fff;
     font-size: 1.7rem;
     height: 135px;
     padding-left: 9rem;
-    text-decoration: none;
     position: relative;
+    text-decoration: none;
     z-index: 2; }
     .picking__link span {
       position: relative; }
@@ -3218,19 +3259,35 @@ body.modal-open {
       text-decoration: underline; }
 
 .content-bottom {
-  background: #f1f3f5;
   padding: 0.01rem 0 6.5rem; }
   .content-bottom .row {
     display: block; }
   .content-bottom .subscribe {
-    margin-top: 5rem;
-    width: 100%;
+    position: relative;
     background: #fff;
-    padding: 4rem 5.5rem; }
+    margin-top: 5rem;
+    padding: 4rem 5.5rem;
+    width: calc(100% - 12px); }
+    .content-bottom .subscribe:after, .content-bottom .subscribe:before {
+      transition: .3s; }
+    .content-bottom .subscribe:after {
+      background: #dcdcde;
+      height: 100%;
+      right: -12px;
+      top: 6px;
+      transform: skewY(45deg);
+      width: 12px; }
+    .content-bottom .subscribe:before {
+      background: #bdbec1;
+      bottom: -12px;
+      height: 12px;
+      left: 6px;
+      transform: skewX(45deg);
+      width: 100%; }
     .content-bottom .subscribe__text {
       line-height: 1.5;
       font-size: 2.2rem;
-      padding-right: 120px; }
+      padding-right: 100px; }
     .content-bottom .subscribe .color {
       color: #00874d; }
     .content-bottom .subscribe__form {
@@ -3505,6 +3562,9 @@ body.modal-open {
   margin-top: 2rem;
   margin-bottom: 3rem; }
 
+.actions-page .callback {
+  width: 30.8rem; }
+
 .action-page .head {
   padding: 5rem 0 4.5rem; }
   .action-page .head .flexbox {
@@ -3535,7 +3595,7 @@ main {
   main strong {
     color: #000; }
   main a {
-    color: #00874d; }
+    color: #009259; }
     main a:hover {
       color: #c20831;
       text-decoration: none; }
@@ -3601,7 +3661,7 @@ main {
       position: relative;
       padding-left: 42px; }
       main ol li:before {
-        background: #00874d;
+        background: #009259;
         height: 3.1rem;
         width: 3.1rem;
         border-radius: 3.1rem;
@@ -3625,13 +3685,13 @@ main {
           padding-left: 30px; }
           main ol li ol li:before {
             background: none;
-            color: #00874d;
+            color: #009259;
             content: counter(li) ".";
             display: block;
             font-weight: 500;
             top: 0; }
   main blockquote {
-    background: #0a6f44;
+    background: #009259;
     color: #fff;
     font-size: 1.7rem;
     line-height: 1.6;
@@ -3651,7 +3711,7 @@ main {
   main table {
     border-collapse: collapse; }
     main table th {
-      background: #0a6f44;
+      background: #009259;
       color: #fff;
       font-size: 1.5rem;
       font-weight: 500;
@@ -3673,7 +3733,7 @@ main {
   main .form-control {
     background: none;
     border: none;
-    border-bottom: 2px solid #00874d;
+    border-bottom: 2px solid #009259;
     font-size: 1.4rem;
     height: 40px;
     min-width: 260px;
@@ -3710,7 +3770,7 @@ main {
     height: 25px;
     background: #fff;
     transition: .2s;
-    border: 2px solid #00874d; }
+    border: 2px solid #009259; }
   main .checkbox + label:hover:before {
     border-color: #c20831; }
   main .checkbox + label:after {
@@ -3723,13 +3783,13 @@ main {
     z-index: 2;
     left: 0; }
   main .checkbox:checked + label:before {
-    background: #00874d; }
+    background: #009259; }
   main .checkbox:checked + label:after {
     left: 5px;
     top: 6px;
     background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAQAAADB7vUKAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAwEVAiEM9h7bAAAAX0lEQVQY033QwQnAIAxG4X+GTCJ0MEdyhXotdIOu4gyvB1FLo5Lj9yAkQosJXBhacwEebMdQCHs+6opIWjESEaAnP0YiQU8c1xUtyZ7bmS1xPP5wznkERpnx95PG7Rm986n4r0p1BmsAAAAASUVORK5CYII=") no-repeat center; }
   main .checkbox:checked + label:hover:before {
-    border-color: #00874d; }
+    border-color: #009259; }
 
 .radio {
   position: absolute;
@@ -3786,7 +3846,7 @@ main {
   .faq-page .head p a,
   .vacancies-page .head p a {
     color: #fff;
-    font-weight: 700; }
+    font-weight: 300; }
 
 .faq-page .head .btn,
 .vacancies-page .head .btn {
@@ -3817,6 +3877,7 @@ main {
 
 .faq-page .head__left .flexbox,
 .vacancies-page .head__left .flexbox {
+  align-items: center;
   margin-bottom: 1.8rem; }
 
 .list_faq .faq__item {
@@ -4286,11 +4347,15 @@ main {
   width: 100%; }
 
 .reviews-page .neck {
+  background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAOCAQAAABESr7XAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAxMNBhY4AhMMAAAAI0lEQVQI12Ng0Gdi+M/E8JuJ4TcTwx8k9BdG/mVi+MvAwAQA/BsMH4jbHgcAAAAASUVORK5CYII=") repeat-x left top, url(../images/neck-bg.png) no-repeat center top/cover #007948;
+  background-size: auto;
   z-index: 32; }
   .reviews-page .neck .head {
     padding: 3.5rem 0 1.6rem; }
     .reviews-page .neck .head p {
       margin-top: 1rem; }
+  .reviews-page .neck .title {
+    font-size: 4rem; }
 
 .review__wrapper,
 .list_construction .place__wrapper {
@@ -4396,7 +4461,8 @@ main {
     background-color: #00874d; }
 
 .filter-sort {
-  padding-bottom: 4rem; }
+  margin-bottom: 4rem;
+  width: calc(100% - 12px); }
   .filter-sort .flexbox {
     background: #f1f3f5;
     padding: 1.5rem 2.2rem;
@@ -6349,19 +6415,6 @@ circle:nth-child(2n) {
     position: absolute;
     top: 0;
     width: 83px; }
-
-.about-page .neck {
-  background: url(../images/neck-bg.png) no-repeat center top/cover;
-  min-height: 184px; }
-  .about-page .neck:after {
-    border-bottom: 7px solid #c40f39;
-    bottom: 0;
-    left: 0;
-    width: 100%; }
-
-.about-page .breadcrumbs {
-  margin-right: 116px;
-  border-bottom-color: rgba(255, 255, 255, 0.3); }
 
 .about-page .carousel {
   margin-top: 2rem;

@@ -7,12 +7,19 @@
 		width: 100%;
 	}
 	.neck{
+		background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAOCAQAAABESr7XAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAxMNBhY4AhMMAAAAI0lEQVQI12Ng0Gdi+M/E8JuJ4TcTwx8k9BdG/mVi+MvAwAQA/BsMH4jbHgcAAAAASUVORK5CYII=") repeat-x left top, url(../images/neck-bg.png) no-repeat center top / cover #007948;
+		background-size: auto;
+		// background-color: #007948;
 		z-index: 32;
 		.head{
 			padding: 3.5rem 0 1.6rem;
 			p{
 				margin-top: 1rem;
 			}
+		}
+
+		.title{
+			font-size: 4rem;
 		}
 	} 
 }
@@ -162,7 +169,8 @@
 }
 
 .filter-sort{
-	padding-bottom: 4rem;
+	margin-bottom: 4rem;
+	width: calc(100% - 12px);
 	.flexbox{
 		background: $color36;
 		padding: 1.5rem 2.2rem;

@@ -19,11 +19,19 @@
 
 // =neck
 .neck{
-	background: #0a6a41 url(../images/neck-bg.jpg) no-repeat center / cover;
+	// z-index: 31;
+	background:#007948 url(../images/neck-bg.png) no-repeat center top /cover;
 	color: $color2;
+	min-height: 184px;
 	position: relative;
 	z-index: 21;
-	// z-index: 31;
+	&:after{
+		@extend .before;
+		border-bottom: 7px solid #c40f39;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
 
 	p{
 		font-size: 2rem;
@@ -40,7 +48,8 @@
 	}
 
 	.title{
-		font-size: 4rem;
+		// font-size: 4rem;
+		font-size: 3rem;
 		font-weight: 700;
 		text-transform: uppercase;
 		&-sm{
@@ -87,7 +96,8 @@
 	}
 
 	.tabs{
-		margin-left: 3.5rem;
+		// margin-left: 3.5rem;
+		margin-left: 7.5rem;
 		font-size: 1.7rem;
 		font-weight: 500;
 		display: flex;
@@ -118,8 +128,8 @@
 					@extend .before;
 					border-left: 9px solid transparent;
 					border-right: 9px solid transparent;
-					border-top: 8px solid $color2;
-					bottom: -8px;
+					border-top: 9px solid $color2;
+					bottom: -10px;
 					height: 0;
 					left: 50%;
 					margin-left: -5px;
@@ -138,11 +148,12 @@
 // =breadcrumbs
 .breadcrumbs{
 	@extend .flex-cv;
-	border-bottom: 1px solid $color17;
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
 	// color: $color18;
 	color: $color60;
 	font-size: 1.3rem;
 	height: 48px;
+	margin-right: 116px;
 	ul{
 		li{
 			display: inline-block;
@@ -164,7 +175,7 @@
 	margin-bottom: 3rem;
 	margin-top: 5rem;
 	padding: 2rem 0;
-	width: 100%;
+	width: calc(100% - 12px);
 	a, span{
 		@extend .flex-center;
 		text-align: center;
@@ -181,7 +192,7 @@
 		border-radius: 50%;
 		color: $color22;
 		height: $s;
-		transition: .3s color, background-color;
+		transition: .3s;
 		width: $s;
 	}
 
@@ -246,25 +257,40 @@
 	}
 
 	&-gray{
-		background: $color21;
+		background: $color59;
 	}
 }
 // =/pagination
 
 // =picking
 .picking{
+	background: $color7;
 	margin-top: 3.7rem;
-	overflow-y: hidden;
-	overflow: hidden;
 	position: relative;
 	transition: .3s all;
-	width: 320px;
+	width: 308px;
+	@include perspective(12px, #ee1746, $color61);
+	&:before{
+		background: linear-gradient(to right, #007948 0, #007948 75px, $color61 75px, $color61);
+	}
+	&__inner{
+		overflow: hidden;
+		position: relative;
+		&:before{
+			@extend .before;
+			background: $color8;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 75px;
+		}
+	}
 	img{
 		@include transition-param(transform);
 		display: block;
 		position: absolute;
-		left: 0;
-		top: 0;
+		right: 0;
+		bottom: 0;
 		z-index: 1;
 	}
 	&__link{
@@ -273,8 +299,8 @@
 		font-size: 1.7rem;
 		height: 135px;
 		padding-left: 9rem;
-		text-decoration: none;
 		position: relative;
+		text-decoration: none;
 		z-index: 2;
 		span{
 			position: relative;
@@ -300,21 +326,22 @@
 
 
 .content-bottom{
-	background: #f1f3f5;
+	// background: #f1f3f5;
 	padding: 0.01rem 0 6.5rem;
 	.row{
 		display: block;
 	}
 	.subscribe{
-		margin-top: 5rem;
-		width: 100%;
+		@include perspective(12px, #dcdcde, #bdbec1);
 		background: $color2;
+		margin-top: 5rem;
 		padding: 4rem 5.5rem;
+		width: calc(100% - 12px);
 
 		&__text{
 			line-height: 1.5;
 			font-size: 2.2rem;
-			padding-right: 120px;
+			padding-right: 100px;
 		}
 		.color{
 			color: $color8;

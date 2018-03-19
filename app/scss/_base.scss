@@ -198,7 +198,8 @@ button{
 
 	&-faq,
 	&-review{
-		@extend .green-gradient;
+		// @extend .green-gradient;
+		background: $color8new;
 		@extend .flex-center;
 		color: $color2;
 		font-size: 2rem;
@@ -823,6 +824,16 @@ form{
 		left: 6px;
 		transform: skewX(45deg);
 		width: 100%;
+	}
+}
+
+.perspective-gray{
+	@extend .perspective;
+	&:after{
+		background: #dcdcde;
+	}
+	&:before{
+		background: #bdbec1;
 	}
 }
 

@@ -1,18 +1,9 @@
 .about-page{
 	.neck{
-		background: url(../images/neck-bg.png) no-repeat center top /cover;
-		min-height: 184px;
-		&:after{
-			@extend .before;
-			border-bottom: 7px solid #c40f39;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-		}
+
 	}
-	.breadcrumbs{
-		margin-right: 116px;
-		border-bottom-color: rgba(255,255,255,.3);
+	.breadcrumbs{		
+		// border-bottom-color: rgba(255,255,255,.3);
 	}
 
 	.carousel{
