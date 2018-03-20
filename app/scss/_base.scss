@@ -1431,6 +1431,7 @@ form{
 		width: 160px;
 		.btn{
 			border: 2px solid #c8d1dc;
+			color: $color62;
 			display: block;
 			font-size: 1.7rem;
 			font-weight: 700;
@@ -1449,6 +1450,7 @@ form{
 			&.active{
 				border-color: $color8;
 				border-right: none;
+				color: $color1;
 				position: relative;
 				&:after{
 					@extend .before;

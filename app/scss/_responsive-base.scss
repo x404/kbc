@@ -103,7 +103,7 @@
 
 	// filter
 	.filter{
-		.slider{
+		.slider__wrapper{
 			width: 200px;
 		}
 		.param_control{
@@ -169,7 +169,7 @@
 				flex-wrap: wrap;
 			}
 		}
-		.buttons{
+		.cell-buttons{
 			display: flex;
 			flex-basis: 100%;
 			margin-left: -224px;
@@ -194,6 +194,7 @@
 				br{
 					display: none;
 				}
+				flex-shrink: 0;
 				align-items: center;
 				flex-direction: row;
 				font-size: 1.4rem;
@@ -202,6 +203,15 @@
 				width: 260px;
 				span{
 					margin-left: .5rem;
+				}
+			}
+		}
+
+		#panel2{
+			.cell{
+				&-select{
+					display: flex;
+					// flex-basis: 100%;
 				}
 			}
 		}
@@ -284,7 +294,7 @@
 
 	// 
 	.filter{
-		.buttons{
+		.cell-buttons{
 			margin-left: -152px;
 		}
 		 .nav{
@@ -387,6 +397,106 @@
 			display: block;
 		}
 	}
+
+
+	// filter
+	.filter{
+		display: block;
+		.tab-content{
+			padding-left: 0;
+		}
+		.nav{
+			width: auto;
+			display: flex;
+			.btn{
+				text-align: center;
+				padding-left: 0;
+				padding-right: 0;
+				width: 11rem;
+				margin-top: 0 !important;
+				margin-right: -2px;
+				&.active{
+					border: 2px solid $color8;
+					&:after{
+						display: none;
+					}
+				}
+			}
+		}
+
+		.tab-pane{
+		}
+		.room__group{
+			width: 200px;
+		}
+
+		.cell{
+			&-select{
+				flex-basis: 66.6%;
+				display: flex;
+				display: contents;
+				justify-content: space-between;
+				order: 0;
+			}
+			&-checkbox{
+				order: 1;
+			}
+			.installment{
+				order: 2;
+			}
+			&-slider{
+				flex-basis: 50%;
+				margin-top: 1.5rem;
+				order: 5;
+				&-area{
+					padding-left: 3rem;
+				}
+			}
+			&__wrapper{
+				display: flex;
+				width: 100%;
+			}
+
+			&-buttons{
+				order: 6;
+				margin-left: 0;
+			}
+		}
+
+		.slider{
+			width: 145px;
+			&_controls{
+				padding-top: 0;
+				padding-left: 2rem;
+				.separate{
+					padding: 0 .2rem;
+				}
+			}
+		}
+
+		.param_control{
+			font-size: 1.2rem;
+			width: 75px;
+		}
+	}
+
+
+	.installment__tooltip_content{
+		left: auto;
+		right: 35px;
+		&:before{
+			border-top: 7px solid transparent;
+			border-left: 7px solid $color2;
+			border-bottom: 7px solid transparent;
+			border-right: none;
+			left: auto;
+			right: -7px;
+		}
+	}
+
+	.installment__tooltip:hover .installment__tooltip_content{
+		transform: translateX(0);
+	}
 }
 
 @media (max-width: 768px){
@@ -446,10 +556,59 @@
 			border-bottom: none;
 		}
 	}
+
+	// filter
+	.container-filter{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.filter{
+		.cell-buttons{
+			margin-left: -2rem;
+			margin-right: -2rem;
+		}
+		.cell-slider-area{
+			padding-left: 1.2rem;
+		}
+	}
+}
+
+
+@media (max-width: 760px){
+	// filter
+	.filter{
+		.cell-slider{
+			margin-top: 0;
+			flex-basis: 100%;
+			&-area{
+				padding-left: 0;
+			}
+		}
+
+		.cell__title{
+			position: relative;
+			top: 20px;
+		}
+
+		.slider{
+			flex-shrink: 0;
+			margin-top: 3.6rem;
+			width: 50%;
+			&_controls{
+				flex-grow: 1;
+				width: 100%;
+				.param_control{
+					width: calc(50% - 12px);
+				}
+			}
+		}
+	}
 }
 
 
 @media (max-width: 750px){
+	// footer
 	.footer{
 		&__contacts{
 			flex-wrap: wrap;
@@ -497,6 +656,8 @@
 			}
 		}
 	}
+
+
 }
 
 @media (max-width: 710px){
@@ -512,6 +673,20 @@
 		}
 	}
 }
+
+
+@media (max-width: 670px){
+	.filter{
+		.cell-select{
+			flex-basis: 100%;
+		}
+		.objects-select__wrap{
+			margin-bottom: 1.5rem;
+			width: 100%;
+		}
+	}
+}
+
 
 
 @media (max-width: 590px){
@@ -587,6 +762,16 @@
 	}
 }
 
+@media (max-width: 480px){
+	.filter .cell-buttons{
+		.showmap,
+		.showflat{
+			width: 50%;
+		}
+	}
+}
+
+
 @media (max-width: 460px){
 	.footer{
 		background-image: none;
@@ -622,6 +807,27 @@
 			img{
 				width: 70px;
 			}
+		}
+	}
+
+	// filter
+	.filter{
+		.cell .installment{
+			flex-basis: 100%;
+			br{
+				display: none;
+			}
+			&__tooltip{
+				margin-top: 2px;
+			}
+		}
+		.cell-buttons .showflat{
+			display: block;
+			padding-top: 18px;
+		}
+
+		.nav .btn{
+			width: 50%;
 		}
 	}
 }
@@ -701,5 +907,44 @@
 		}
 	}
 
+
+	.container-filter{
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+
+	.filter{
+		padding-top: 2.5rem;
+		.slider_controls .separate{
+			font-size: .8rem;
+		}
+
+	
+		.slider_controls .param_control{
+			width: calc(50% - 9px);
+		}
+
+		.cell-buttons{
+			margin-left: -1.5rem;
+			margin-right: -1.5rem;
+			.showflat{
+				br{
+					display: block;
+				}
+				span{
+					margin-left: 0;
+				}
+			}
+		}
+		.cell-slider-area{
+			// padding-left: 1.2rem;
+		}
+		.showmap{
+			padding-left: 40px;
+			&:before{
+				left: 15px;
+			}
+		}
+	}
 	
 }

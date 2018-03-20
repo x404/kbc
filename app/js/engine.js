@@ -29,8 +29,6 @@ $(document).ready(function(){
 		navText: ["", ""],
 		stagePadding : 0,
 		responsiveClass:true,
-		autoWidth: true,
-		autoHeight: true,
 		dotsContainer: '.owl-dots',
 		navContainer: '.owl-nav',
 		animateOut: 'fadeOut',
