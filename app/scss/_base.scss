@@ -495,17 +495,17 @@ form{
 	}
 }
 
+.wishlist{
+
+}
+
 .header,
-.fixed-header
+.fixed-header,
+.apanel
 {
-	.flexbox{
-		align-items: center;
-		justify-content: space-between;
-	}
 	.wishlist{
 		display: flex;
-		justify-content: center;
-		
+		justify-content: center;		
 		padding-top: 1rem;
 		width: 65px;
 		i{
@@ -525,11 +525,8 @@ form{
 				left: 0;
 				top: -5px;
 			}
-			&:before{
-				@include sprite($icon-star);
-			}
+
 			&:after{
-				@include sprite($icon-starfill);
 				@include transition-param();
 				opacity: 0;
 			}
@@ -555,6 +552,25 @@ form{
 			padding: 2px 2px 0;
 			text-align: center;
 		}
+	}
+}
+
+
+.header,
+.fixed-header{
+	.wishlist{
+		&__link{
+			&:before{
+				@include sprite($icon-star);
+			}
+			&:after{
+				@include sprite($icon-starfill);
+			}			
+		}
+	}
+	.flexbox{
+		align-items: center;
+		justify-content: space-between;
 	}
 	.contacts{
 		&__cell{
@@ -1050,7 +1066,45 @@ form{
 }
 
 
-.modal-menu{
+.modal-menu,
+.apanel{
+	.close-modal,
+	.close-menu
+	{
+		background: #fff;
+		border: none;
+		height: 50px;
+		position: absolute;
+		right: 0;
+		top: 20px;
+		width: 50px;
+		@extend .flex-center;
+		svg{
+			@include transition-param(transform);			
+		}
+		&:after{
+			@extend .before;
+			bottom: -7px;
+			width: 100%;
+			left: 0;
+			border-bottom: 5px solid #c20831;
+		}
+		&:hover{
+			svg{
+				@include rotation(90deg);	
+			}
+		}
+
+		line{
+			stroke:black;
+			stroke-width:2
+		}
+	}
+}
+
+
+.modal-menu
+{
 	background: $color55;
 	// @extend .green-gradient;
 	left: 0;
@@ -1213,37 +1267,6 @@ form{
 
 		b, strong{
 			font-weight: 700;
-		}
-	}
-
-	.close-modal{
-		background: #fff;
-		border: none;
-		height: 50px;
-		position: absolute;
-		right: 0;
-		top: 20px;
-		width: 50px;
-		@extend .flex-center;
-		svg{
-			@include transition-param(transform);			
-		}
-		&:after{
-			@extend .before;
-			bottom: -7px;
-			width: 100%;
-			left: 0;
-			border-bottom: 5px solid #c20831;
-		}
-		&:hover{
-			svg{
-				@include rotation(90deg);	
-			}
-		}
-
-		line{
-			stroke:black;
-			stroke-width:2
 		}
 	}
 
@@ -1991,4 +2014,9 @@ body.modal-open,
 	.checkbox:checked + label:hover:before {
 		border-color: #00874d;
 	}
+}
+
+
+.hide{
+	display: none;
 }

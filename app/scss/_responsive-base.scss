@@ -757,6 +757,10 @@
 }
 
 @media (max-width: 500px){
+	.header{
+		height: 8rem;
+	}
+	
 	.footer .subscribe p:not(.title){
 		width: auto;
 	}
