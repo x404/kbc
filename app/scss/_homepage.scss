@@ -388,6 +388,9 @@
 		background-color: #a7092c;
 		align-items: center;
 		margin-top: 5px;
+		.short{
+			display: none;
+		}
 		&__cell{
 			flex: 1 0 50%;
 			height: 127px;

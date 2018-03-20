@@ -209,6 +209,17 @@
 			height: 392px;
 		}
 
+		.service{
+			.long{
+				display: none;
+			}
+			&__subtitle{
+				.short{
+					display: block;
+				}
+			}
+		}
+
 		.promo{
 			height: 392px;
 			img{
@@ -286,6 +297,8 @@
 			}
 		}
 	}
+
+
 }
 
 @media (max-width: 1149px){
@@ -435,7 +448,7 @@
 @media (max-width: 670px){
 	.feature{
 		.service__subtitle{
-			display: none;
+			// display: none;
 		}
 		.promo{
 			// height: 280px;
@@ -684,9 +697,25 @@
 		.service{
 			&__link{
 				padding-left: 81px;
+				p{
+					padding-left: 1rem;
+					padding-right: 1rem;					
+				}
 			}
 			&__cell img{
 				left: 20px;
+			}
+			&__subtitle{
+				.short{
+					display: none;
+				}
+			}
+			&__title{
+				font-size: 1.4rem;
+
+				.short{
+					display: inline;
+				}
 			}
 		}
 	}
@@ -754,7 +783,7 @@
 				padding-left: 0;
 				text-align: center;
 				p{
-					padding: 0 1.5rem;
+					// padding: 0 1.5rem;
 				}
 			}
 			&__cell{
