@@ -513,11 +513,16 @@ $(document).on('click', '.vacancy__item .toggle', function(e){
 
 
 // меню по иконке, карта
-$(document).on('click', '.extra-toggle, .showmap', function(e){
-	var modal = $(this).data('popup');
-	$('#' + modal).addClass('open');
-	// document.querySelector('body').classList.add('modal-open')
-	document.querySelector('body').classList.add('modal-open-my')
+// $(document).on('click', '.extra-toggle, .showmap', function(e){
+
+$(document).on('click', '.extra-toggle', function(e){
+	if ($('body').width() > 640) {
+		var modal = $(this).data('popup');
+		$('#' + modal).addClass('open');
+		document.querySelector('body').classList.add('modal-open-my')
+	} else{
+		document.querySelector('.apanel').classList.add('open');
+	}
 });
 
 
@@ -662,3 +667,10 @@ $(document).on('click', '[data-targetscroll], .subnav a', function(e){
 $(window).on('load', function(){
 	NProgress.set(1);
 });
+
+
+
+// mobile menu
+document.querySelector('.apanel .close-menu').addEventListener("click", function(){
+	document.querySelector('.apanel.open').classList.remove('open');
+}, false);

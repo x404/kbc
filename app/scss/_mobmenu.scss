@@ -344,12 +344,30 @@ $color_2: #0563bf;
 }
 
 .apanel{
-	position: absolute;
+	// transform: translateX(320px);
+	$r: -320px;
+	&__inner{
+		right: $r;		
+		transition: .3s;
+	}
+	&.open{
+		$r: 0;
+		right: $r;		
+		.apanel__inner{
+			right: $r;		
+		}
+		// transform: translateX(0);
+	}
+}
+
+.apanel{
+	transition: .3s;
+	position: fixed;
 	// display: flex;
 	@extend .panelbase;
 	color: $color2;
 	// flex-flow: column;
-	right: 0;
+	// right: 0;
 	width: 320px;
 	max-width: 100%;
 	z-index: 500;
@@ -361,11 +379,12 @@ $color_2: #0563bf;
 	&__inner{
 		position: fixed;
 		background: $color55;
-		right: 0;
+		// right: 0;
 		top: 0;
 		bottom: 0;
 		overflow: auto;
 		width: 320px;
+		height: 100%;
 	}
 
 
@@ -383,12 +402,9 @@ $color_2: #0563bf;
 			top: 0;
 			bottom: 0;
 			right: 0;
-
-			display: block;
 		}
 	}
 	
-
 	&__top,
 	&__body
 	{
@@ -506,7 +522,7 @@ $color_2: #0563bf;
 
 // subnav
 .asubnav{
-	will-change: left;
+	will-change: right;
 	// background-color: $color2;
 	// .transition-param(left, .6s, cubic-bezier(.45,.035,.045,.95));
 	// .transition-param(left, .6s, linear);
@@ -559,7 +575,7 @@ $color_2: #0563bf;
 
 	&_content{
 		left: 0;
-		// opacity: 0;
+		opacity: 0;
 		&.subnav_content-active{
 			opacity: 1;
 			z-index: 10;
@@ -569,19 +585,16 @@ $color_2: #0563bf;
 
 // показываем меню при наведении
 .l-with-subnav1{
-	.subnav{
+	.asubnav{
 		opacity: 1;
 		&-lev1{
-			left: 24rem;
-		}
-		&-lev2{
 			left: 24rem;
 		}
 	}
 
 	.home .main,
 	.home .home_bg{
-		will-change: left;
+		will-change: right;
 		left: 26.8rem;
 	}
 
