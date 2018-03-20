@@ -45,6 +45,10 @@ $(document).ready(function(){
 			1280:{
 				autoHeight: false,
 				autoWidth: false
+			},
+			1250:{
+				autoHeight: true,
+				autoWidth: true
 			}
 		}
 	});
