@@ -516,7 +516,8 @@ $(document).on('click', '.vacancy__item .toggle', function(e){
 // $(document).on('click', '.extra-toggle, .showmap', function(e){
 
 $(document).on('click', '.extra-toggle', function(e){
-	if ($('body').width() > 640) {
+	console.log(window.innerWidth);
+	if (window.innerWidth > 480) {
 		var modal = $(this).data('popup');
 		$('#' + modal).addClass('open');
 		document.querySelector('body').classList.add('modal-open-my')
@@ -674,3 +675,19 @@ $(window).on('load', function(){
 document.querySelector('.apanel .close-menu').addEventListener("click", function(){
 	document.querySelector('.apanel.open').classList.remove('open');
 }, false);
+
+document.querySelector('.asubnav .back_btn').addEventListener("click", function(){
+	document.querySelector('.page-asubnav.open').classList.remove('open');
+}, false);
+
+
+$(document).on('click', '.apanel .folder span', function(e){
+	e.preventDefault();
+	let $this = $(this),
+		menuItem = $this.data('name');
+
+	document.querySelector('.page-asubnav').classList.add('open');
+
+	$('.apanel .subnav_content-active').removeClass('subnav_content-active');
+	$('.apanel .subnav_content-' + menuItem).addClass('subnav_content-active');
+});

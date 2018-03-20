@@ -760,13 +760,26 @@
 	.header{
 		height: 8rem;
 	}
-	
+
 	.footer .subscribe p:not(.title){
 		width: auto;
 	}
 }
 
 @media (max-width: 480px){
+	.modal-open-my .fixed-header, 
+	.modal-open-my .outerwrapper,
+	.modal-open-my footer,
+	body.modal-open .fixed-header,
+	body.modal-open .outerwrapper,
+	body.modal-open footer{
+		filter: blur(0)
+	}
+
+
+	.modal-menu{
+		display: none !important;
+	}
 	.filter .cell-buttons{
 		.showmap,
 		.showflat{
@@ -951,4 +964,11 @@
 		}
 	}
 	
+}
+
+
+@media (min-width: 481px){
+	.apanel{
+		display: none !important;
+	}
 }
