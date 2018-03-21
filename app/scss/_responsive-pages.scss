@@ -418,6 +418,20 @@
 }
 
 @media (max-width: 1280px){
+	.modal-map{
+		top: 6rem;
+		.head{
+			line-height: 80px;
+			height: 80px;
+		}
+		#map{
+			height: 55vh;
+		}
+
+		.close-modal{
+			top: 25px;
+		}
+	}
 	// homepage
 	.feature{
 		$h: auto;
@@ -2070,6 +2084,14 @@
 
 
 @media (max-width: 420px){
+	.modal-map{
+		top: 6rem;
+		.head{
+			font-size: 2.4rem;
+			padding-left: 1rem;
+		}
+	}
+
 	.feature{
 		.promo{
 			.type-1{

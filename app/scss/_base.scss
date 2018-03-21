@@ -34,7 +34,6 @@ body{
 }
 
 .body{
-	perspective: 1000px;
 	@include flexbox;
 	flex-flow: column;
 	height: 100vh;	
@@ -47,6 +46,12 @@ html, body, .body{
 }
 
 
+
+@media (min-width: 1280px){
+	.body{
+		perspective: 1000px;
+	}	
+}
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	//ie11
@@ -940,8 +945,7 @@ form{
 
 
 /* =resume
----------------------------*/
-.resume{
+---------------------------*/.resume{
 	background-color: $color28;
 	background-image: none;
 	padding-left: 3.2rem;

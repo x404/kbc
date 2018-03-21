@@ -32,7 +32,7 @@ $(document).ready(function(){
 		dotsContainer: '.owl-dots',
 		navContainer: '.owl-nav',
 		animateOut: 'fadeOut',
-		autoplay: false,
+		autoplay: true,
 		autoplayTimeout: 5000, 
 		loop: true, 
 		onChanged: function (event) {
@@ -534,10 +534,15 @@ $(document).on('click', '.vacancy__item .toggle', function(e){
 
 
 // меню по иконке, карта
-// $(document).on('click', '.extra-toggle, .showmap', function(e){
+
+$(document).on('click', '.showmap', function(e){
+	var modal = $(this).data('popup');
+	$('#' + modal).addClass('open');
+	document.querySelector('body').classList.add('modal-open-my')
+});
+
 
 $(document).on('click', '.extra-toggle', function(e){
-	console.log(window.innerWidth);
 	if (window.innerWidth > 480) {
 		var modal = $(this).data('popup');
 		$('#' + modal).addClass('open');

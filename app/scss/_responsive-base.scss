@@ -754,6 +754,17 @@
 			}
 		}
 	}
+
+	.sidemodal{
+		width: 90%;
+		.inner{
+			width: 100%;
+			padding-right: 3rem;
+		}
+		.close-modal{
+			right: 20px;
+		}
+	}
 }
 
 @media (max-width: 500px){
@@ -852,6 +863,18 @@
 }
 
 @media (max-width: 420px){
+	.sidemodal{
+		.inner{
+			padding-left: 2rem;
+			padding-right: 2rem;
+			padding-top: 8rem;
+		}
+		.text{
+			padding-right: 0;
+			font-size: 1.4rem;
+		}
+	}
+
 	.header{
 		.logo{
 			width: 50px;
