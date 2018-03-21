@@ -69,9 +69,30 @@ $(document).ready(function(){
 		loop:false,
 		nav:true,
 		dots: false,
-		items:3,
+		items:2,
 		navText: ["", ""],
-		stagePadding : 0
+		stagePadding : 0,
+		responsive:{
+			991:{
+				items: 3
+			},
+			500:{
+				items: 2,
+				stagePadding : 0
+			},
+			420: {
+				items: 1,
+				stagePadding : 80
+			},
+			380: {
+				items: 1,
+				stagePadding : 55
+			},
+			320: {
+				items: 1,
+				stagePadding : 35
+			}
+		}
 	});
 
 	$('#intro').owlCarousel({

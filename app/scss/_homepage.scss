@@ -539,7 +539,7 @@
 
 // =objects
 .objects-callback{
-	width: 100%;
+	width: calc(100% - 12px);
 	.side{
 		flex-grow: 1;
 		display: flex;
@@ -680,6 +680,9 @@
 				}
 			}
 		}
+		&-hide{
+			display: none;
+		}
 	}
 
 	&__carousel{
@@ -711,42 +714,15 @@
 
 	.owl-item{
 		padding-bottom: 15px;
-
-		&:after{
-			@extend .before;
-			border-bottom: 5px solid $color7;
-			bottom: 0;
-			left: 7px;
-			z-index: 10;
-			width: 365px;
-			transition: .2s border-bottom ease-out;
-		}
-
-		&:hover{
-			&:after{
-				border-bottom-width: 8px;
-			}
-		}
 	}
 }
 
 .object{
 	&__item{
 		$d: 8px;
-		padding-bottom: 0;
-		position: relative;
-		width: 365px;
-
-		// &:after{
-		// 	@extend .before;
-		// 	border-bottom: 5px solid $color7;
-		// 	bottom: 0;
-		// 	z-index: 10;
-		// 	width: 100%;
-		// 	transition: .2s border-bottom ease-out;
-		// }
-
+		// padding-bottom: 0;
 		@extend .perspective;
+		
 		&:after{
 			background-image: linear-gradient(to bottom, #bdbec1 0, #bdbec1 351px, #00a664 352px, #00a664 100%);
 			height: calc(100% + 1px);
@@ -763,7 +739,6 @@
 			width: 100%;
 		}
 
-
 		&:hover{
 			.carousel-image{
 				transform: scale(1.15);
@@ -773,7 +748,30 @@
 				color: $color2;
 			}
 		}
+
+		&-outer{
+			padding-bottom: 15px;
+			position: relative;	
+			width: 365px;
+			&:after{
+				@extend .before;
+				border-bottom: 5px solid $color7;
+				bottom: 0;
+				left: 7px;
+				z-index: 10;
+				width: 100%;
+				transition: .2s border-bottom ease-out;
+			}
+			&:hover{
+				&:after{
+					border-bottom-width: 8px;
+				}
+			}
+		}
 	}
+
+
+
 	&__link{
 		display: block;
 		overflow: hidden;

@@ -566,7 +566,7 @@
 	.filter{
 		.cell-buttons{
 			margin-left: -2rem;
-			margin-right: -2rem;
+			margin-right: -1rem;
 		}
 		.cell-slider-area{
 			padding-left: 1.2rem;
@@ -758,7 +758,9 @@
 
 @media (max-width: 500px){
 	.header{
-		height: 8rem;
+		.flexbox{
+			height: 8rem;			
+		}
 	}
 
 	.footer .subscribe p:not(.title){

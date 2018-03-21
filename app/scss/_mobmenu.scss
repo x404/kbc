@@ -47,7 +47,8 @@ $color_2: #0563bf;
 
 	&.open{
 		$r: 0;
-		right: $r;		
+		right: $r;
+		z-index: 500;
 		.apanel__inner{
 			right: $r;		
 		}
@@ -61,7 +62,8 @@ $color_2: #0563bf;
 	position: fixed;
 	transition: .3s;
 	width: 320px;
-	z-index: 500;
+	// z-index: 500;
+	z-index: -1;
 	a{
 		color: $color2;
 		text-decoration: none;
