@@ -77,9 +77,12 @@
 .icon-bulldozer{
 	&:before{
 		@extend .before;
+		left: 0;
 		@include sprite($icon-bulldozer);
 		top: 8px;
-		left: 0;
+		@media (max-width: 1280px){
+			@include sprite($icon-bulldozer-sm);
+		}
 	}
 }
 
@@ -89,6 +92,9 @@
 		@include sprite($icon-house);
 		top: -4px;
 		left: 0;
+		@media (max-width: 1280px){
+			@include sprite($icon-house-sm);
+		}
 	}
 }
 

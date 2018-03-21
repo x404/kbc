@@ -807,6 +807,7 @@
 			font-weight: 100;
 		}
 		.name{
+			display: inline-block;
 			font-size: 30px;
 			font-weight: 900;
 			padding-bottom: 3px;
@@ -815,16 +816,15 @@
 			&:after{
 				@extend .before;
 				border-bottom: 3px solid $color7;
-				width: 180px;
+				width: 100%;
 				bottom: 0;
 			}
 		}
 	}
 	&__bottom{
-		// background: url(../images/object-bg.png) no-repeat left top;
+		@extend .flex-cv;
 		background: rgba(0, 146, 89, .9);
 		color: $color2;
-		@extend .flex-cv;		
 		height: 95px;
 		justify-content: space-between;
 		padding: 0 40px 0 55px;
@@ -833,9 +833,9 @@
 			font-weight: 100;
 		}
 		.price{
-			padding-top: .5rem;
 			font-size: 2rem;
 			font-weight: 700;
+			padding-top: .5rem;
 		}
 		.btn-more{
 			$h: 44px;
@@ -869,11 +869,11 @@
 		font-weight: 500;
 		margin-top: 4rem;
 		a{
+			line-height: 1.4;
+			margin-right: 7.5rem;
 			padding-left: 97px;
 			position: relative;
-			margin-right: 7.5rem;
 			text-decoration: none;
-			line-height: 1.4;
 			span{
 				border-bottom: 2px solid $color7;
 			}
@@ -1015,7 +1015,8 @@
 	padding-bottom: 117px;
 	.about,
 	.partners{
-		flex: 1 0 50%;
+		// flex: 1 0 50%;
+		flex-basis: 50%
 	}
 	.about{
 		padding-right: 70px;
@@ -1070,10 +1071,10 @@
 		}
 	}
 	.partners{
-		background-color: $color8;
 		color: $color2;
 		font-size: 1.7rem;
 		position: relative;
+		align-self: flex-start;
 		&:after{
 			@extend .before;
 			border-bottom: 10px solid $color7;
@@ -1083,6 +1084,7 @@
 		}
 
 		&__inner{
+			background-color: $color8;
 			padding: 4.5rem 4rem;			
 		}
 		.title{
