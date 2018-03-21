@@ -4,14 +4,14 @@
 		@include sprite($icon-catalog);
 		left: 0;
 		top: 0;
-		@media (max-width: 1650px){
-			@include sprite($icon-catalog-sm);
-			top: 7px;
-		}
-		@media (max-width: 991px){
-			@include sprite($icon-catalog-xsm);
-			top: 0;
-		}
+		// @media (max-width: 1650px){
+		// 	@include sprite($icon-catalog-sm);
+		// 	top: 7px;
+		// }
+		// @media (max-width: 991px){
+		// 	@include sprite($icon-catalog-xsm);
+		// 	top: 0;
+		// }
 	}
 }
 
