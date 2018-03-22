@@ -4490,6 +4490,9 @@ main {
   .reviews-page .neck .title {
     font-size: 4rem; }
 
+.reviews-page .review__body {
+  margin-top: 0; }
+
 .review__wrapper,
 .list_construction .place__wrapper {
   border: 2px solid #ebeef1;
@@ -8389,7 +8392,11 @@ tbody.collapse.show {
     margin-left: 0; }
   .list_vacancy .vacancy__item,
   .list_faq .faq__item {
-    width: 90%; } }
+    width: 90%; }
+  .review__item {
+    width: calc(33.3% - 23px); }
+  .review__wrapper {
+    width: 100%; } }
 
 @media (max-width: 1500px) {
   .intro__right {
@@ -8965,7 +8972,25 @@ tbody.collapse.show {
       padding-left: 37px; }
     .object__meta .object__flats {
       flex-grow: 1;
-      text-align: right; } }
+      text-align: right; }
+  .review__item {
+    width: calc(50% - 18px); }
+    .review__item:nth-child(3n) {
+      margin-right: auto; }
+    .review__item:nth-child(even) {
+      margin-right: 0; }
+  .reviews-page .col-7 {
+    flex-basis: 100%; }
+  .filter-sort .filter {
+    flex-basis: 220px; }
+  .filter-sort .sortbox {
+    font-size: 1.4rem;
+    margin-left: 3rem; }
+  .filter-sort .btn {
+    font-size: 1.5rem;
+    height: 4.5rem; }
+    .filter-sort .btn:before {
+      top: 7px; } }
 
 @media (max-width: 1050px) {
   .vacancies-page .side,
@@ -9127,7 +9152,18 @@ tbody.collapse.show {
   .object__meta .object__flats {
     text-align: center; }
   .vacancies-page .neck .col-7 {
-    flex-basis: 60%; } }
+    flex-basis: 60%; }
+  .review__text {
+    font-size: 1.4rem; }
+  .filter-sort .flexbox {
+    flex-wrap: wrap; }
+  .filter-sort .sortbox {
+    justify-content: center;
+    margin-left: 0; }
+  .filter-sort .btn {
+    margin: 2rem auto 0;
+    justify-content: center;
+    width: 230px; } }
 
 @media (max-width: 920px) {
   .vacancies-page .main,
@@ -9303,7 +9339,19 @@ tbody.collapse.show {
   .object__item:after {
     background-image: linear-gradient(to bottom, #bdbec1 0, #bdbec1 235px, #00a664 235px, #00a664 100%); }
   .object__labels img {
-    width: 65px; } }
+    width: 65px; }
+  .list_reviews {
+    display: block; }
+  .review__item {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 90%;
+    max-width: 500px; }
+  .filter-sort .filter {
+    flex-basis: 100%; }
+  .filter-sort .sortbox {
+    margin-top: 2rem;
+    flex-basis: 100%; } }
 
 @media (max-width: 720px) {
   .objects-callback .side .callback {
@@ -9769,7 +9817,13 @@ tbody.collapse.show {
     .object__meta .object__title {
       font-size: 2.5rem; }
     .object__meta .btn {
-      font-size: 1.4rem; } }
+      font-size: 1.4rem; }
+  .sortbox {
+    flex-wrap: wrap; }
+    .sortbox__label {
+      flex-basis: 100%;
+      text-align: center;
+      margin-bottom: 1rem; } }
 
 @media (max-width: 460px) {
   .filter-inner .cell-buttons .showflat {
@@ -9924,7 +9978,11 @@ tbody.collapse.show {
   .list_vacancy .btn {
     padding-left: .7rem;
     padding-right: .7rem;
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+  .review__body,
+  .review__bottom {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; } }
 
 @media (max-width: 350px) {
   .intro__left {
