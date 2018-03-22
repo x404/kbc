@@ -8201,7 +8201,12 @@ tbody.collapse.show {
       display: block;
       max-width: 90%; }
   .catalog__title {
-    font-size: 2.1rem; } }
+    font-size: 2.1rem; }
+  .contact__plate {
+    font-size: 1.5rem;
+    flex-basis: 31%;
+    padding-left: 4rem;
+    padding-right: 4rem; } }
 
 @media (max-width: 1500px) {
   .intro__right {
@@ -8320,7 +8325,12 @@ tbody.collapse.show {
         width: 490px;
         height: 330px; }
   .about-partners .partners {
-    margin-left: -1rem; } }
+    margin-left: -1rem; }
+  .contact__title {
+    font-size: 2.2rem; }
+  .contact__plate {
+    font-size: 1.4rem;
+    padding-top: 2rem; } }
 
 @media (max-width: 1280px) {
   .modal-map {
@@ -8715,7 +8725,16 @@ tbody.collapse.show {
   .gbi-catalog .head h1 {
     font-size: 3rem; }
   .catalog__title {
-    font-size: 1.8rem; } }
+    font-size: 1.8rem; }
+  .contact__title {
+    line-height: 1.3 !important;
+    font-size: 2.2rem; }
+  .contact__plate {
+    padding: 2rem; }
+  .contacts-page #map {
+    height: 400px; }
+  .worker__item {
+    padding-right: 4rem; } }
 
 @media (max-width: 991px) {
   .feature .promo {
@@ -8823,7 +8842,17 @@ tbody.collapse.show {
     width: calc(50% - 30px);
     margin-right: 0 !important; }
   .catalog__title {
-    font-size: 1.8rem; } }
+    font-size: 1.8rem; }
+  .contacts-page .main.flexbox {
+    display: block; }
+  .contact__plate {
+    margin-bottom: 3.5rem; }
+  .workers header {
+    text-align: center; }
+  .workers .flexbox {
+    justify-content: center; }
+  .worker__item:nth-child(even) {
+    padding-right: 0; } }
 
 @media (max-width: 850px) {
   .objects-intro {
@@ -9153,7 +9182,23 @@ tbody.collapse.show {
     padding-bottom: 4rem; }
   .catalog__link {
     height: auto;
-    padding-bottom: 3rem; } }
+    padding-bottom: 3rem; }
+  .workers .flexbox {
+    justify-content: space-between; }
+  .worker__item {
+    flex-basis: 250px;
+    padding-right: 0; } }
+
+@media (max-width: 600px) {
+  .workers {
+    width: 100%; }
+    .workers .flexbox {
+      display: block; }
+  .worker__item {
+    margin-left: auto;
+    margin-right: auto;
+    width: 270px;
+    text-align: center; } }
 
 @media (max-width: 550px) {
   .objects header {
@@ -9291,7 +9336,10 @@ tbody.collapse.show {
     .about-partners .partners__inner {
       text-align: center; }
     .about-partners .partners .title {
-      font-size: 2.6rem; } }
+      font-size: 2.6rem; }
+  .contact__title {
+    font-size: 2rem;
+    padding-bottom: .5rem; } }
 
 @media (max-width: 450px) {
   .about-partners {

@@ -229,6 +229,19 @@
 		}
 	}
 	// =/GBI CATALOG
+
+
+
+	// =CONTACTS
+	.contact{
+		&__plate{
+			font-size: 1.5rem;
+			flex-basis: 31%;
+			padding-left: 4rem;
+			padding-right: 4rem;
+		}
+	}
+	// =/CONTACTS
 }
 
 
@@ -435,6 +448,20 @@
 	.about-partners .partners{
 		margin-left: -1rem;	
 	}
+
+
+	// =CONTACTS
+	.contact{
+		&__title{
+			font-size: 2.2rem;
+		}
+		&__plate{
+			font-size: 1.4rem;
+			padding-top: 2rem;
+		}
+	}
+	// =/CONTACTS
+
 }
 
 @media (max-width: 1280px){
@@ -1104,6 +1131,26 @@
 	}
 	// =/GBI CATALOG
 
+
+
+	// =CONTACTS
+	.contact{
+		&__title{
+			line-height: 1.3 !important;
+			font-size: 2.2rem;
+		}
+		&__plate{
+			padding: 2rem;
+		}
+	}
+	.contacts-page #map{
+		height: 400px;
+	}
+	.worker__item{
+		padding-right: 4rem;
+	}
+	// =/CONTACTS
+
 }
 
 
@@ -1301,6 +1348,26 @@
 		&__title{
 			font-size: 1.8rem;
 		}
+	}
+
+
+	// contacts
+	.contacts-page .main.flexbox{
+		display: block;
+	}
+	.contact__plate{
+		margin-bottom: 3.5rem;
+	}
+	.workers{
+		header{
+			text-align: center;
+		}
+		.flexbox{
+			justify-content: center;
+		}
+	}
+	.worker__item:nth-child(even){
+		padding-right: 0;
 	}
 }
 
@@ -1898,6 +1965,33 @@
 			padding-bottom: 3rem;
 		}
 	}
+
+	// contacts
+	.workers .flexbox{
+		justify-content: space-between;
+	}
+	.worker__item{
+		flex-basis: 250px;
+		padding-right: 0;
+	}
+}
+
+
+@media (max-width: 600px){
+	.workers{
+		width: 100%;
+		.flexbox{
+			display: block;
+		}
+	}
+	.worker{
+		&__item{
+			margin-left: auto;
+			margin-right: auto;
+			width: 270px;
+			text-align: center;
+		}
+	}
 }
 
 
@@ -2139,6 +2233,11 @@
 				font-size: 2.6rem;
 			}
 		}
+	}
+
+	.contact__title{
+		font-size: 2rem;
+		padding-bottom: .5rem;
 	}
 }
 
