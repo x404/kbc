@@ -15,7 +15,7 @@
 		}
 	}
 
-	// HOMEPAGE
+	// =HOMEPAGE
 	.feature{
 		$h: 666px;
 		height: $h;
@@ -106,7 +106,6 @@
 			}
 		}
 	}
-
 
 	.objects-callback{
 		.callback{
@@ -213,9 +212,29 @@
 	.intro__right{
 		padding-right: 0;
 	}
+	// =/HOMEPAGE
+
+
+	// =GBI CATALOG
+	.catalog{
+		&__item{
+			width: calc(25% - 30px);
+			img{
+				display: block;
+				max-width: 90%;
+			}
+		}
+		&__title{
+			font-size: 2.1rem;
+		}
+	}
+	// =/GBI CATALOG
 }
 
+
+
 @media (max-width: 1500px){
+	// =HOMEPAGE
 	.intro__right{
 		padding-left: 80px;
 	}
@@ -224,6 +243,7 @@
 		width: 220px;
 		flex-shrink: 0;
 	}
+	// =/HOMEPAGE
 }
 
 
@@ -796,6 +816,21 @@
 			}
 		}
 	}
+
+
+	// =GBI CATALOG
+	.catalog{
+		&__item{
+			width: calc(33% - 17px);
+			&:nth-child(4n){
+				margin-right: 30px;
+			}
+			&:nth-child(3n){
+				margin-right: 0;
+			}
+		}
+	}
+	// =/GBI CATALOG
 }
 
 
@@ -1057,6 +1092,18 @@
 		}
 	}
 
+
+	// =GBI CATALOG
+	.gbi-catalog .head h1{
+		font-size: 3rem;
+	}
+	.catalog{
+		&__title{
+			font-size: 1.8rem;
+		}
+	}
+	// =/GBI CATALOG
+
 }
 
 
@@ -1240,6 +1287,21 @@
 	.about-partners .partners:after{
 		bottom: -20px;
 	}
+
+
+	// catalog
+	.gbi-catalog .main{
+		justify-content: space-between;
+	}
+	.catalog{
+		&__item{
+			width: calc(50% - 30px);
+			margin-right: 0 !important;
+		}
+		&__title{
+			font-size: 1.8rem;
+		}
+	}
 }
 
 
@@ -1301,22 +1363,6 @@
 		.more{
 			margin-right: 30px;
 		}
-	}
-
-	.object{
-		&__item{
-			&-outer{
-				width: 300px;
-			}
-			&:after{
-				background-image: linear-gradient(to bottom,#bdbec1 0,#bdbec1 272px,#00a664 272px,#00a664 100%);
-			}
-		}
-	}
-
-
-
-	.objects{
 		h1{
 			white-space: nowrap;
 		}
@@ -1350,12 +1396,33 @@
 		}
 	}
 
+	.object{
+		&__item{
+			&-outer{
+				width: 300px;
+			}
+			&:after{
+				background-image: linear-gradient(to bottom,#bdbec1 0,#bdbec1 272px,#00a664 272px,#00a664 100%);
+			}
+		}
+	}
+
 	.about-partners .about__right{
 		.subtitle{
 			font-size: 1.4rem;
 		}
 		.title{
 			font-size: 3rem;
+		}
+	}
+
+	// catalog
+	.catalog{
+		&__link{
+			height: 350px;
+		}
+		&__pic{
+			height: 270px;
 		}
 	}
 }
@@ -1772,6 +1839,11 @@
 			}
 		}
 	}
+
+	.gbi-catalog .head .flexbox{
+		display: block;
+		flex-basis: 100%;
+	}
 }
 
 
@@ -1800,6 +1872,30 @@
 					display: none;
 				}
 			}
+		}
+	}
+
+	// catalog
+	.gbi-catalog .main{
+		display: block;
+	}
+	.catalog{
+		&__item{
+			margin-left: auto;
+			margin-right: auto !important;
+			width: 300px;
+		}
+		&__title{
+			text-align: center;
+		}
+		&__pic{
+			height: auto;
+			padding-top: 6rem;
+			padding-bottom: 4rem;
+		}
+		&__link{
+			height: auto;
+			padding-bottom: 3rem;
 		}
 	}
 }
@@ -2281,5 +2377,12 @@
 	}
 	.visual{
 		margin: 2.2rem 0;
+	}
+
+	// catalog
+	.catalog{
+		&__item{
+			width: 95%;
+		}
 	}
 }
