@@ -17,10 +17,6 @@
 		position: relative;
 		width: calc(100% - 12px);
 		
-		.flexbox{
-			align-items: center;
-		}
-
 		// object
 
 
@@ -86,7 +82,11 @@
 	padding: 2.5rem 2.3rem;
 	position: relative;
 	z-index: 30;
+
 	.object{
+		&__section {
+			align-items: center;
+		}
 		&__pic{
 			img{
 				vertical-align: top;

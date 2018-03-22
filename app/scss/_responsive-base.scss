@@ -181,11 +181,11 @@
 			margin-top: 1.8rem;
 			flex-grow: 1;
 			.showmap{
+				height: 60px;
 				background: #d2d2d2;
 				color: $color1;
 				font-weight: 700;
 				order: 0;
-				height: 60px;
 				margin-top: 0;
 				&:before{
 					@include sprite($icon-labelred);
@@ -199,6 +199,7 @@
 				br{
 					display: none;
 				}
+				height: 60px;
 				flex-shrink: 0;
 				align-items: center;
 				flex-direction: row;
@@ -259,6 +260,10 @@
 		}
 	}
 	
+	.main .content{
+		width: 100%;
+	}
+
 	// footer
 	.footer{
 		&__logo{
@@ -619,6 +624,11 @@
 		.cell-slider-area{
 			padding-left: 1.2rem;
 		}
+		&-inner{
+			.cell-buttons{
+				margin-right: -.5rem;
+			}
+		}
 	}
 
 
@@ -721,6 +731,21 @@
 		}
 	}
 
+	// pagination
+	.pagination{
+		font-size: 1.5rem;
+		$s: 36px;
+		a:not([class]),
+		span:not(.separator){
+			height: $s;
+			width: $s;
+		}
+		a,
+		span{
+			margin-left: 3px;
+			margin-right: 3px;
+		}
+	}
 
 }
 
@@ -756,6 +781,19 @@
 	}
 	.neck .title{
 		font-size: 2.9rem !important;
+	}
+
+	.pagination{
+		display: block;
+		text-align: center;
+		a, span{
+			display: inline-flex;
+		}
+		.prev,
+		.next{
+			display: none;
+			// flex-grow: 1;
+		}
 	}
 }
 

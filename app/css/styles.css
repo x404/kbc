@@ -4703,8 +4703,6 @@ main {
   margin-bottom: 4.5rem;
   position: relative;
   width: calc(100% - 12px); }
-  .favorite__item .flexbox {
-    align-items: center; }
   .favorite__item .btn-order {
     background: #00874d;
     border-radius: 40px;
@@ -4751,6 +4749,8 @@ main {
   padding: 2.5rem 2.3rem;
   position: relative;
   z-index: 30; }
+  .object__meta .object__section {
+    align-items: center; }
   .object__meta .object__pic img {
     vertical-align: top; }
   .object__meta .object__info {
@@ -7660,11 +7660,11 @@ tbody.collapse.show {
     margin-top: 1.8rem;
     flex-grow: 1; }
     .filter .cell-buttons .showmap {
+      height: 60px;
       background: #d2d2d2;
       color: #000;
       font-weight: 700;
       order: 0;
-      height: 60px;
       margin-top: 0; }
       .filter .cell-buttons .showmap:before {
         background-image: url(../images/sprite.png);
@@ -7675,6 +7675,7 @@ tbody.collapse.show {
       .filter .cell-buttons .showmap span {
         border-bottom: 2px solid #c40f39; }
     .filter .cell-buttons .showflat {
+      height: 60px;
       flex-shrink: 0;
       align-items: center;
       flex-direction: row;
@@ -7707,6 +7708,8 @@ tbody.collapse.show {
     font-size: 1.4rem;
     padding-left: .8rem;
     padding-right: .8rem; }
+  .main .content {
+    width: 100%; }
   .footer__logo {
     margin-top: 0; }
   .footer .col-1 {
@@ -7914,6 +7917,8 @@ tbody.collapse.show {
     margin-right: -1rem; }
   .filter .cell-slider-area {
     padding-left: 1.2rem; }
+  .filter-inner .cell-buttons {
+    margin-right: -.5rem; }
   .neck:before {
     display: none; }
   main h1 {
@@ -7978,7 +7983,17 @@ tbody.collapse.show {
   .footer .subscribe {
     justify-content: center; }
     .footer .subscribe .form-control {
-      width: 30rem; } }
+      width: 30rem; }
+  .pagination {
+    font-size: 1.5rem; }
+    .pagination a:not([class]),
+    .pagination span:not(.separator) {
+      height: 36px;
+      width: 36px; }
+    .pagination a,
+    .pagination span {
+      margin-left: 3px;
+      margin-right: 3px; } }
 
 @media (max-width: 710px) {
   .fixed-header .logo {
@@ -7998,7 +8013,15 @@ tbody.collapse.show {
   .breadcrumbs {
     margin-right: 0; }
   .neck .title {
-    font-size: 2.9rem !important; } }
+    font-size: 2.9rem !important; }
+  .pagination {
+    display: block;
+    text-align: center; }
+    .pagination a, .pagination span {
+      display: inline-flex; }
+    .pagination .prev,
+    .pagination .next {
+      display: none; } }
 
 @media (max-width: 590px) {
   .header .logo {
@@ -8695,7 +8718,11 @@ tbody.collapse.show {
   .gbi-page .menu .icon-catalog .line {
     margin-left: 30px; }
   .gbi-page .menu .icon-sett .line {
-    margin-left: 40px; } }
+    margin-left: 40px; }
+  .condo-page .perspective-gray, .condo-page .listgk-page .main .complex__item-inner, .listgk-page .main .condo-page .complex__item-inner {
+    width: 100%; }
+    .condo-page .perspective-gray:before, .condo-page .listgk-page .main .complex__item-inner:before, .listgk-page .main .condo-page .complex__item-inner:before, .condo-page .perspective-gray:after, .condo-page .listgk-page .main .complex__item-inner:after, .listgk-page .main .condo-page .complex__item-inner:after {
+      display: none; } }
 
 @media (max-width: 1170px) {
   .about-partners .partners {
@@ -9436,7 +9463,11 @@ tbody.collapse.show {
     margin-left: auto;
     margin-right: auto;
     width: 270px;
-    text-align: center; } }
+    text-align: center; }
+  .condo-page .subtitle {
+    font-size: 2.2rem; }
+  .condo-page .main {
+    padding-top: 2rem; } }
 
 @media (max-width: 550px) {
   .objects header {
@@ -9506,7 +9537,10 @@ tbody.collapse.show {
       left: 0;
       transform: rotate(180deg); }
     .objects__carousel .owl-carousel .owl-nav {
-      z-index: 3; } }
+      z-index: 3; }
+  .condo-page .subtitle {
+    display: block;
+    font-size: 1.8rem; } }
 
 @media (max-width: 480px) {
   .feature .promo .type-1 .title {
@@ -9585,6 +9619,11 @@ tbody.collapse.show {
       font-size: 2.5rem; }
     .object__meta .btn {
       font-size: 1.4rem; } }
+
+@media (max-width: 460px) {
+  .filter-inner .cell-buttons .showflat {
+    display: flex;
+    padding-top: 0; } }
 
 @media (max-width: 450px) {
   .about-partners {
@@ -9726,7 +9765,9 @@ tbody.collapse.show {
     padding: 1rem 1.2rem;
     height: auto; }
   .object__meta .object__address .icon-label:before {
-    display: none; } }
+    display: none; }
+  .condo-page .subtitle {
+    font-size: 1.5rem; } }
 
 @media (max-width: 350px) {
   .intro__left {
