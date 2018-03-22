@@ -8164,8 +8164,9 @@ tbody.collapse.show {
     width: 90%; }
   .modal .modal-text {
     padding-right: 0; }
-  .modal .submit {
-    font-size: 1.5rem; } }
+  .modal .bottom .submit {
+    font-size: 1.5rem;
+    width: 100%; } }
 
 @media (max-width: 420px) {
   .sidemodal .inner {
@@ -8383,9 +8384,11 @@ tbody.collapse.show {
     flex-basis: 31%;
     padding-left: 4rem;
     padding-right: 4rem; }
-  .vacancies-page .offset-col-1 {
+  .vacancies-page .offset-col-1,
+  .faq-page .offset-col-1 {
     margin-left: 0; }
-  .list_vacancy .vacancy__item {
+  .list_vacancy .vacancy__item,
+  .list_faq .faq__item {
     width: 90%; } }
 
 @media (max-width: 1500px) {
@@ -8799,34 +8802,34 @@ tbody.collapse.show {
     display: none; }
   .objects-callback {
     display: block; }
-  .side {
-    display: block;
-    padding-top: 2.5rem; }
-    .side .callback {
+    .objects-callback .callback {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 2rem;
       width: 100%; }
-      .side .callback .call {
+      .objects-callback .callback .call {
         margin-left: 3rem;
         margin-top: 0;
         flex-grow: 1; }
-      .side .callback__top {
+      .objects-callback .callback__top {
         flex-basis: 250px;
         flex-shrink: 0; }
-      .side .callback__form-inner {
+      .objects-callback .callback__form-inner {
         display: flex;
         align-items: center; }
-        .side .callback__form-inner .submit {
+        .objects-callback .callback__form-inner .submit {
           margin-left: 2.8rem;
           margin-top: 1.5rem; }
-      .side .callback__form .input-field {
+      .objects-callback .callback__form .input-field {
         margin-top: 0;
         width: 180px; }
-      .side .callback .submit {
+      .objects-callback .callback .submit {
         height: 4.5rem;
         width: 155px; }
+  .side {
+    display: block;
+    padding-top: 2.5rem; }
   .objects {
     width: 100%; }
     .objects__carousel {
@@ -8965,7 +8968,8 @@ tbody.collapse.show {
       text-align: right; } }
 
 @media (max-width: 1050px) {
-  .vacancies-page .side {
+  .vacancies-page .side,
+  .faq-page .side {
     margin-left: -24px; }
   .list_vacancy .vacancy__question {
     padding-left: 70px; }
@@ -9022,32 +9026,32 @@ tbody.collapse.show {
     background-image: linear-gradient(to bottom, #bdbec1 0, #bdbec1 321px, #00a664 321px, #00a664 100%); }
   .object__labels img {
     width: 80px; }
-  .side {
+  .objects-callback .side {
     padding-top: 1rem; }
-    .side .callback {
+    .objects-callback .side .callback {
       flex-wrap: wrap; }
-      .side .callback__top {
+      .objects-callback .side .callback__top {
         display: flex;
         flex-grow: 1; }
-      .side .callback__text {
+      .objects-callback .side .callback__text {
         flex: 0 0 250px;
         margin-left: 5rem;
         margin-top: 0; }
-      .side .callback .call {
+      .objects-callback .side .callback .call {
         flex-grow: 0; }
-      .side .callback__form {
+      .objects-callback .side .callback__form {
         flex-grow: 1;
         margin-top: 1.5rem; }
-        .side .callback__form-inner {
+        .objects-callback .side .callback__form-inner {
           justify-content: space-between; }
-        .side .callback__form .inputs {
+        .objects-callback .side .callback__form .inputs {
           justify-content: space-between;
           display: flex;
           display: contents;
           margin-right: 2rem; }
-        .side .callback__form .input-field {
+        .objects-callback .side .callback__form .input-field {
           width: 225px; }
-        .side .callback__form .submit {
+        .objects-callback .side .callback__form .submit {
           margin-left: 0; }
   .intro__carousel {
     width: 315px; }
@@ -9126,12 +9130,15 @@ tbody.collapse.show {
     flex-basis: 60%; } }
 
 @media (max-width: 920px) {
-  .vacancies-page .main {
+  .vacancies-page .main,
+  .faq-page .main {
     display: block; }
-  .vacancies-page .side {
+  .vacancies-page .side,
+  .faq-page .side {
     display: flex;
     margin-left: 0; }
-  .vacancies-page .secondary {
+  .vacancies-page .secondary,
+  .faq-page .secondary {
     margin-left: 4rem; }
   .list_vacancy .vacancy__item {
     width: 100%; }
@@ -9139,8 +9146,15 @@ tbody.collapse.show {
     margin-top: 0; }
     .side-inner .resume {
       margin-top: 2rem; }
-  .vacancies-page .neck .col-7 {
-    flex-basis: 100%; } }
+  .vacancies-page .neck .col-7,
+  .faq-page .neck .col-7 {
+    flex-basis: 100%; }
+  .faq-page .side {
+    margin-top: 3rem; }
+  .faq-page .secondary .picking {
+    margin-top: 0; }
+  .list_faq .faq__item {
+    width: 100%; } }
 
 @media (max-width: 850px) {
   .objects-intro {
@@ -9282,44 +9296,58 @@ tbody.collapse.show {
     text-align: center; }
   .objects-callback .objects .flexbox {
     justify-content: space-between; }
+  .objects-callback .side .callback__form .input-field {
+    width: 33%; }
   .object__item-outer {
     width: 270px; }
   .object__item:after {
     background-image: linear-gradient(to bottom, #bdbec1 0, #bdbec1 235px, #00a664 235px, #00a664 100%); }
   .object__labels img {
-    width: 65px; }
-  .side .callback__form .input-field {
-    width: 33%; } }
+    width: 65px; } }
 
 @media (max-width: 720px) {
-  .side .callback {
+  .objects-callback .side .callback {
     display: block; }
-    .side .callback__top {
+    .objects-callback .side .callback__top {
       text-align: center;
       display: block; }
-    .side .callback__text {
+    .objects-callback .side .callback__text {
       margin-left: 0;
       margin-top: .5rem; }
-    .side .callback .call {
+    .objects-callback .side .callback .call {
       display: flex;
       justify-content: center;
       margin-left: 0;
       margin-top: 8px; }
-      .side .callback .call:before {
+      .objects-callback .side .callback .call:before {
         margin-left: -70px; }
-    .side .callback__form {
+    .objects-callback .side .callback__form {
       margin-top: .5rem; }
-      .side .callback__form-inner {
+      .objects-callback .side .callback__form-inner {
         flex-direction: column; }
-      .side .callback__form .inputs {
+      .objects-callback .side .callback__form .inputs {
         display: flex; }
-      .side .callback__form .input-field {
+      .objects-callback .side .callback__form .input-field {
         width: 46%; }
-  .vacancies-page .side {
+  .side-inner .callback {
+    height: auto;
+    margin-bottom: 3.5rem; }
+    .side-inner .callback .submit {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto; }
+  .vacancies-page .side,
+  .faq-page .side {
     flex-direction: column;
     align-items: center; }
-  .vacancies-page .secondary {
-    margin-left: 0; } }
+  .vacancies-page .secondary,
+  .faq-page .secondary {
+    margin-left: 0; }
+  .resume .submit {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; } }
 
 @media (max-width: 670px) {
   .feature .promo {
@@ -9617,25 +9645,53 @@ tbody.collapse.show {
   .condo-page .subtitle {
     display: block;
     font-size: 1.8rem; }
+  .list_vacancy .toggle,
+  .list_faq .toggle {
+    height: 40px !important;
+    left: 5px !important;
+    width: 40px !important; }
+  .list_vacancy .text,
+  .list_faq .text {
+    font-size: 1.4rem !important;
+    padding-right: 2rem !important; }
+  .list_vacancy .answer,
+  .list_faq .answer {
+    padding-left: 50px; }
+  .list_vacancy .answer__text,
+  .list_faq .answer__text {
+    font-size: 1.4rem; }
   .list_vacancy .vacancy__question {
     padding-left: 55px; }
-  .list_vacancy .vacancy__item .toggle {
-    height: 40px;
-    left: 5px !important;
-    width: 40px; }
   .list_vacancy .vacancy__item .name {
     font-size: 1.5rem; }
-  .list_vacancy .vacancy__item .text {
-    font-size: 1.4rem;
-    padding-right: 2rem; }
   .list_vacancy .vacancy__item .price {
     padding-left: 70px; }
   .list_vacancy .vacancy__item-expand .vacancy__question {
     padding-left: 50px; }
-  .list_vacancy .vacancy__item .answer {
-    padding-left: 50px; }
-  .list_vacancy .answer__text {
-    font-size: 1.4rem; } }
+  .list_faq .faq__question {
+    padding-left: 55px; }
+  .list_faq .faq__item-expand .faq__question {
+    padding-left: 55px; }
+  .list_faq .faq__item-expand .toggle {
+    left: 5px !important; }
+  .list_faq .answer:before {
+    left: 20px; }
+  .list_faq .faq__item .name span {
+    display: block;
+    margin-left: -20px;
+    margin-top: .8rem; }
+  .faq-page .neck .col-7 {
+    flex-basis: 100%; }
+  .faq-page .neck .head__left {
+    text-align: center;
+    width: 100%; }
+    .faq-page .neck .head__left .flexbox {
+      display: block; }
+    .faq-page .neck .head__left .btn {
+      margin-top: 1.5rem;
+      margin-left: auto;
+      margin-right: auto;
+      width: 210px; } }
 
 @media (max-width: 480px) {
   .feature .promo .type-1 .title {
@@ -9834,11 +9890,11 @@ tbody.collapse.show {
       margin-left: -14px; }
   .object__item-outer {
     width: 215px; }
-  .side .callback__form .inputs {
-    display: block;
-    margin-right: 0; }
-  .side .callback__form .input-field {
-    width: 100%; }
+  .side .callback__form-inner .inputs {
+    display: block !important;
+    margin-right: 0 !important; }
+  .side .callback__form-inner .input-field {
+    width: 100% !important; }
   .intro__right {
     padding-left: 15px;
     padding-right: 15px; }
@@ -9897,4 +9953,12 @@ tbody.collapse.show {
   .resume .submit {
     width: 100%; }
   .picking {
-    width: calc(100% - 12px); } }
+    width: calc(100% - 12px); }
+  .list_faq .faq__item .text {
+    padding-right: 1rem !important; }
+  .side-inner .callback {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: calc(100% - 14px); }
+    .side-inner .callback .call a {
+      font-size: 1.8rem; } }

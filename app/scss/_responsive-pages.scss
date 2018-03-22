@@ -276,13 +276,15 @@
 	// =/CONTACTS
 
 
-	.vacancies-page{
+	.vacancies-page,
+	.faq-page{
 		.offset-col-1{
 			margin-left: 0;
 		}
 	}
 
-	.list_vacancy .vacancy__item{
+	.list_vacancy .vacancy__item,
+	.list_faq .faq__item{
 		width: 90%;
 	}
 }
@@ -1019,10 +1021,6 @@
 	// OBJECTS
 	.objects-callback{
 		display: block;
-	}
-	.side{
-		display: block;
-		padding-top: 2.5rem;
 		.callback{
 			display: flex;
 			justify-content: space-between;
@@ -1056,6 +1054,15 @@
 			.submit{
 				height: 4.5rem;
 				width: 155px;
+			}
+		}
+	}
+	.side{
+		display: block;
+		padding-top: 2.5rem;
+		&-inner{
+			.callback{
+				// display: block;
 			}
 		}
 	}
@@ -1282,11 +1289,6 @@
 
 	// =FAVORITES
 
-	.favorite{
-		&__top{
-
-		}
-	}
 
 	.object__meta{
 		flex-wrap: wrap;
@@ -1312,7 +1314,9 @@
 
 
 @media (max-width: 1050px){
-	.vacancies-page .side{
+	.vacancies-page .side,
+	.faq-page .side,
+	{
 		margin-left: -24px;
 	}
 
@@ -1426,7 +1430,7 @@
 	}
 
 
-	.side{
+	.objects-callback .side{
 		padding-top: 1rem;
 		.callback{
 			flex-wrap: wrap;
@@ -1631,7 +1635,9 @@
 
 
 @media (max-width: 920px){
-	.vacancies-page{
+	.vacancies-page,
+	.faq-page
+	{
 		.main{
 			display: block;
 		}
@@ -1657,8 +1663,30 @@
 		}
 	}
 
-	.vacancies-page .neck .col-7{
-		flex-basis: 100%;
+	.vacancies-page,
+	.faq-page
+	{
+		.neck .col-7{
+			flex-basis: 100%;
+		}
+	}
+
+	.faq-page{
+		.side{
+			margin-top: 3rem;
+		}
+		.secondary{
+			// margin-top: 2rem;
+			.picking{
+				margin-top: 0;
+			}
+		}
+	}
+
+	.list_faq{
+		.faq__item{
+			width: 100%;
+		}
 	}
 }
 
@@ -1927,6 +1955,9 @@
 		.objects .flexbox{
 			justify-content: space-between;
 		}
+		.side .callback__form .input-field{
+			width: 33%;
+		}
 	}
 
 	.object{
@@ -1945,14 +1976,12 @@
 		}
 	}
 
-	.side .callback__form .input-field{
-		width: 33%;
-	}
+
 }
 
 
 @media (max-width: 720px){
-	.side{
+	.objects-callback .side{
 		.callback{
 			display: block;
 			&__top{
@@ -1989,7 +2018,22 @@
 		}
 	}
 
-	.vacancies-page{
+
+	.side-inner{
+		.callback{
+			height: auto;
+			margin-bottom: 3.5rem;
+			.submit{
+				width: 90%;
+				margin-left: auto;
+				margin-right: auto;					
+			}
+		}
+	}
+
+	.vacancies-page,
+	.faq-page
+	{
 		.side{
 			flex-direction: column;
 			align-items: center;
@@ -1997,6 +2041,13 @@
 		.secondary{
 			margin-left: 0;
 		}
+	}
+
+	.resume .submit{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
 	}
 }
 
@@ -2516,22 +2567,34 @@
 		}
 	}
 
+	.list_vacancy,
+	.list_faq
+	{
+		.toggle{
+			height: 40px !important;
+			left: 5px !important;
+			width: 40px !important;
+		}
+		.text{
+			font-size: 1.4rem !important;
+			padding-right: 2rem !important;
+		}
+		.answer{
+			padding-left: 50px;
+		}
+		.answer__text{
+			font-size: 1.4rem;
+		}
+	}
+
+
 	.list_vacancy{
 		.vacancy__question{
 			padding-left: 55px;
 		}
 		.vacancy__item{
-			.toggle{
-				height: 40px;
-				left: 5px !important;
-				width: 40px;
-			}
 			.name{
 				font-size: 1.5rem;
-			}
-			.text{
-				font-size: 1.4rem;
-				padding-right: 2rem;
 			}
 			.price{
 				padding-left: 70px;
@@ -2540,16 +2603,54 @@
 			&-expand .vacancy__question{
 				padding-left: 50px;
 			}
-			.answer{
-				padding-left: 50px;
-			}
 		}
-		.answer__text{
-			font-size: 1.4rem;
-		}
+
 	}
 
-
+	.list_faq{
+		.faq__question{
+			padding-left: 55px;
+		}
+		.faq__item-expand{
+			.faq__question{
+				padding-left: 55px;
+			}
+			.toggle{
+				left: 5px !important;
+			}
+		}
+		.answer:before{
+			left: 20px;
+		}
+		.faq__item .name{
+			span{
+				display: block;
+				margin-left: -20px;
+				margin-top: .8rem;
+			}
+		}
+	}
+	
+	.faq-page{
+		.neck{
+			.col-7{
+				flex-basis: 100%;
+			}
+			.head__left{
+				text-align: center;
+				width: 100%;
+				.flexbox{
+					display: block;					
+				}
+				.btn{
+					margin-top: 1.5rem;
+					margin-left: auto;
+					margin-right: auto;
+					width: 210px;
+				}
+			}
+		}
+	}	
 }
 
 
@@ -2872,13 +2973,13 @@
 	}
 
 	.side{
-		.callback__form{
+		.callback__form-inner{
 			.inputs{
-				display: block;
-				margin-right: 0;
+				display: block !important;
+				margin-right: 0 !important;
 			}
 			.input-field{
-				width: 100%;
+				width: 100% !important;
 			}
 		}
 	}
@@ -3003,5 +3104,22 @@
 
 	.picking{
 		width: calc(100% - 12px)
+	}
+
+	.list_faq{
+		.faq__item .text{
+			padding-right: 1rem !important;
+		}
+	}
+
+	.side-inner .callback{
+		padding-left: 2rem;
+		padding-right: 2rem;
+		width: calc(100% - 14px);
+		.call{
+			a{
+				font-size: 1.8rem;
+			}
+		}
 	}
 }
