@@ -33,7 +33,8 @@
 			font-size: 1.5rem;
 			height: $h;
 			padding-left: 44px;
-			padding-right: 18px;
+			// padding-right: 18px;
+			width: 180px;
 			@extend .flex-cv;
 			@include transition-param(background-color);
 			&:before{

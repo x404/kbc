@@ -99,3 +99,30 @@
 		width: 1600px;
 	}
 }
+
+
+
+.table-responsive {
+}
+
+
+@media screen and (max-width: 1149px) {
+	.table-responsive {
+		overflow-x: auto;
+		min-height: 0.01%;
+		width: 100%;
+		overflow-y: hidden;
+		-webkit-overflow-scrolling: touch;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+		border: 1px solid #dddddd;
+		& > table{
+			margin-bottom: 15px;
+			tr{
+				th, td{
+					white-space: nowrap;
+					
+				}
+			}
+		}
+	}
+}

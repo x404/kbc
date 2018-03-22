@@ -148,6 +148,20 @@
   .container {
     width: 1600px; } }
 
+@media screen and (max-width: 1149px) {
+  .table-responsive {
+    overflow-x: auto;
+    min-height: 0.01%;
+    width: 100%;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #dddddd; }
+    .table-responsive > table {
+      margin-bottom: 15px; }
+      .table-responsive > table tr th, .table-responsive > table tr td {
+        white-space: nowrap; } }
+
 /*---------------------------------------------------
     SCSS Elements 0.1
   ---------------------------------------------------
@@ -4699,7 +4713,7 @@ main {
     font-size: 1.5rem;
     height: 40px;
     padding-left: 44px;
-    padding-right: 18px;
+    width: 180px;
     -webkit-transition: background-color 0.2s ease-out;
     transition: background-color 0.2s ease-out; }
     .favorite__item .btn-order:before {
@@ -7673,7 +7687,9 @@ tbody.collapse.show {
       .filter .cell-buttons .showflat span {
         margin-left: .5rem; }
   .filter #panel2 .cell-select {
-    display: flex; } }
+    display: flex; }
+  .favorite-page .neck .col-7 {
+    flex-basis: 100%; } }
 
 @media (max-width: 1149px) {
   .header .wishlist {
@@ -7749,6 +7765,8 @@ tbody.collapse.show {
     font-size: 3.2rem; }
   .neck p {
     font-size: 1.5rem; }
+  .favorite-page .head .title {
+    font-size: 3.2rem; }
   .header__top {
     display: none; }
   .header .mainnav {
@@ -8440,6 +8458,12 @@ tbody.collapse.show {
   .gbi-page .main .content {
     padding-left: 50px; } }
 
+@media (max-width: 1350px) {
+  .table-flats td {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem; } }
+
 @media (max-width: 1280px) {
   .modal-map {
     top: 6rem; }
@@ -8864,7 +8888,18 @@ tbody.collapse.show {
   .gbi-page .menu .icon-pricelist:hover:before {
     left: 35px; }
   .gbi-page .menu .icon-pricelist .line {
-    margin-left: 30px; } }
+    margin-left: 30px; }
+  .object__meta {
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .object__meta .object__composition {
+      margin-left: 7rem;
+      margin-right: 5rem; }
+    .object__meta .object__address .btn {
+      padding-left: 37px; }
+    .object__meta .object__flats {
+      flex-grow: 1;
+      text-align: right; } }
 
 @media (max-width: 991px) {
   .feature .promo {
@@ -9004,7 +9039,13 @@ tbody.collapse.show {
     .gbi-page .menu .icon-pricelist:hover:before {
       left: 35px; }
     .gbi-page .menu .icon-pricelist .line {
-      margin-left: 30px; } }
+      margin-left: 30px; }
+  .object__meta .object__section {
+    margin-bottom: 1em; }
+  .object__meta .object__composition {
+    margin-right: 0; }
+  .object__meta .object__flats {
+    text-align: center; } }
 
 @media (max-width: 850px) {
   .objects-intro {
@@ -9368,7 +9409,23 @@ tbody.collapse.show {
     justify-content: space-between; }
   .worker__item {
     flex-basis: 250px;
-    padding-right: 0; } }
+    padding-right: 0; }
+  .object__meta {
+    flex-wrap: nowrap;
+    flex-direction: column; }
+    .object__meta .object__section {
+      flex-grow: 1;
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center; }
+    .object__meta .object__composition {
+      margin-left: 0;
+      margin-bottom: 1.5rem; }
+      .object__meta .object__composition .btn {
+        display: inline-flex; }
+    .object__meta .object__flats {
+      margin-top: 2rem;
+      margin-bottom: 1rem; } }
 
 @media (max-width: 600px) {
   .workers {
@@ -9520,7 +9577,14 @@ tbody.collapse.show {
       font-size: 2.6rem; }
   .contact__title {
     font-size: 2rem;
-    padding-bottom: .5rem; } }
+    padding-bottom: .5rem; }
+  .object__meta {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    .object__meta .object__title {
+      font-size: 2.5rem; }
+    .object__meta .btn {
+      font-size: 1.4rem; } }
 
 @media (max-width: 450px) {
   .about-partners {
@@ -9651,7 +9715,18 @@ tbody.collapse.show {
       flex-direction: column;
       padding-top: 0; }
       .intro__right .link_groups a {
-        margin-top: 1.5rem; } }
+        margin-top: 1.5rem; }
+  .object__meta .object__section {
+    flex-direction: column; }
+  .object__meta .object__info {
+    margin-left: 0;
+    margin-top: 1rem;
+    text-align: center; }
+  .object__meta .object__address .btn {
+    padding: 1rem 1.2rem;
+    height: auto; }
+  .object__meta .object__address .icon-label:before {
+    display: none; } }
 
 @media (max-width: 350px) {
   .intro__left {

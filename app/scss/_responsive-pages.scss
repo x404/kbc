@@ -504,6 +504,14 @@
 
 }
 
+@media (max-width: 1350px){
+	.table-flats td{
+		font-size: 1.5rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
 @media (max-width: 1280px){
 	.modal-map{
 		top: 6rem;
@@ -1244,6 +1252,36 @@
 		}
 	}
 	// =/GBI
+
+
+	// =FAVORITES
+
+.favorite{
+	&__top{
+
+	}
+}
+
+	.object__meta{
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.object{
+			&__composition{
+				margin-left: 7rem;
+				margin-right: 5rem;
+			}
+			&__address{
+				.btn{
+					padding-left: 37px;
+				}
+			}
+			&__flats{
+				flex-grow: 1;
+				text-align: right;
+			}
+		}
+	}
+	// =/FAVORITES
 }
 
 
@@ -1507,6 +1545,29 @@
 		}
 	}
 	// =/GBI
+
+
+	.object__meta{
+		.object__section{
+			margin-bottom: 1em;
+		}
+		.object{
+			&__composition{
+				margin-right: 0;
+				// margin-left: 7rem;
+				// margin-right: 5rem;
+			}
+			&__address{
+				.btn{
+					// padding-left: 37px;
+				}
+			}
+			&__flats{
+				text-align: center;
+			}
+		}
+	}
+
 }
 
 
@@ -1842,11 +1903,7 @@
 
 @media (max-width: 670px){
 	.feature{
-		.service__subtitle{
-			// display: none;
-		}
 		.promo{
-			// height: 280px;
 			height: auto;
 			img{
 				height: 280px;
@@ -2165,6 +2222,30 @@
 		flex-basis: 250px;
 		padding-right: 0;
 	}
+
+	.object__meta{
+		flex-wrap: nowrap;
+		flex-direction: column;
+		.object{
+			&__section{
+				flex-grow: 1;
+				flex-basis: 100%;
+				display: flex;
+				justify-content: center;
+			}
+			&__composition{
+				margin-left: 0;
+				margin-bottom: 1.5rem;
+				.btn{
+					display: inline-flex;
+				}
+			}
+			&__flats{
+				margin-top: 2rem;
+				margin-bottom: 1rem;
+			}
+		}
+	}
 }
 
 
@@ -2430,6 +2511,18 @@
 		font-size: 2rem;
 		padding-bottom: .5rem;
 	}
+
+
+	.object__meta{
+		padding-left: 1rem;
+		padding-right: 1rem;
+		.object__title{
+			font-size: 2.5rem;
+		}
+		.btn{
+			font-size: 1.4rem;
+		}
+	}
 }
 
 
@@ -2640,6 +2733,34 @@
 				padding-top: 0;
 				a{
 					margin-top: 1.5rem;
+				}
+			}
+		}
+	}
+
+
+	// FEATURE
+	.object__meta{
+		.object{
+			&__section{
+				flex-direction: column;
+			}
+			&__info{
+				margin-left: 0;
+				margin-top: 1rem;
+				text-align: center;
+			}
+			&__address{
+				.btn{
+					// padding-top: 30px;
+					padding: 1rem 1.2rem;
+					height: auto;
+					// padding-bottom: 10px;
+				}
+				.icon-label{
+					&:before{
+						display: none;
+					}
 				}
 			}
 		}
