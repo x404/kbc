@@ -124,6 +124,11 @@
 	}
 }
 
+@media (max-width: 1399px){
+	.neck p{
+		font-size: 1.7rem;
+	}
+}
 
 @media (max-width: 1280px){
 	.mainnav{
@@ -345,6 +350,15 @@
 }
 
 @media (max-width: 991px){
+	.neck{
+		.title{
+			font-size: 3.2rem;
+		}
+		p{
+			font-size: 1.5rem;
+		}
+	}
+
 	.header{
 		&__top{
 			display: none;
@@ -503,6 +517,21 @@
 	.installment__tooltip:hover .installment__tooltip_content{
 		transform: translateX(0);
 	}
+
+	.gbi-page .neck{
+		.head{
+			display: block;
+			.col-7{
+				flex-basis: 100%
+			}
+			&__tel{
+				display: block;
+				margin-left: 50px;
+				margin-top: 2rem;
+				margin-bottom: 1rem;
+			}
+		}
+	}
 }
 
 @media (max-width: 768px){
@@ -584,6 +613,16 @@
 	// neck
 	.neck:before{
 		display: none;
+	}
+
+
+	main{
+		h1{font-size: 3.8rem;}
+		h2{font-size: 3.4rem;}
+		h3{font-size: 3rem;}
+		h4{font-size: 2.6rem;}
+		h5{font-size: 2.4rem;}
+		h6{font-size: 2.2rem;}
 	}
 }
 
@@ -887,8 +926,14 @@
 	}
 
 	// catalog
-	.neck .title{
-		font-size: 2.5rem !important;
+	.neck{
+		text-align: center;
+		.title{
+			font-size: 2.5rem !important;
+		}
+		.head__tel a{
+			font-size: 2.2rem;
+		}
 	}
 }
 

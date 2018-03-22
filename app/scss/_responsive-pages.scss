@@ -215,6 +215,36 @@
 	// =/HOMEPAGE
 
 
+	// =GBI
+	.gbi-page{
+		.main .content{
+			flex-shrink: 1;
+		}
+		.menu{
+			.icon{
+				&-catalog,
+				&-sett{
+					&:before{
+						left: 35px;
+					}
+					&:hover:before{
+						left: 25px;
+					}
+				}
+				&-pricelist{
+					&:before{
+						left: 105px;
+					}
+					&:hover:before{
+						left: 95px;
+					}
+				}
+			}
+		}
+	}
+	// =/GBI
+
+
 	// =GBI CATALOG
 	.catalog{
 		&__item{
@@ -229,6 +259,8 @@
 		}
 	}
 	// =/GBI CATALOG
+
+
 
 
 
@@ -430,18 +462,21 @@
 	}
 
 
-	.intro__left{
+	.intro__left
+	{
+		align-self: flex-start;
 		flex-basis: 500px;
-		.intro__carousel{
+	}
+
+	.intro__carousel{
+		width: 490px;
+		&:before{
 			width: 490px;
-			&:before{
-				width: 490px;
-				height: 350px;
-			}
-			&:after{
-				width: 490px;
-				height: 330px;
-			}
+			height: 350px;
+		}
+		&:after{
+			width: 490px;
+			height: 330px;
 		}
 	}
 
@@ -461,6 +496,11 @@
 		}
 	}
 	// =/CONTACTS
+
+
+	.gbi-page .main .content{
+		padding-left: 50px;
+	}
 
 }
 
@@ -708,30 +748,26 @@
 		}
 	}
 
+	.intro__carousel{
+		width: 470px;
+		&:before{
+			width: 470px;
+			height: 333px;
+		}
+		&:after{
+			width: 470px;
+			height: 313px;
+		}
+	}
 	.intro{
 		&__left{
 			flex-basis: 480px;
-			.intro__carousel{
-				width: 470px;
-				&:before{
-					width: 470px;
-					height: 333px;
-				}
-				&:after{
-					width: 470px;
-					height: 313px;
-				}
-			}
 		}
 
 		&__right{
 			font-size: 1.5rem;
 			h1{
 				font-size: 3.4rem;
-			}
-
-			.tocat{
-
 			}
 		}
 
@@ -858,6 +894,25 @@
 		}
 	}
 	// =/GBI CATALOG
+
+
+	.gbi-page .menu{
+		font-size: 1.7rem;
+		.icon{
+			height: 110px;
+		}
+	}
+
+	.gbi-page{
+		.menu .icon{
+			&-catalog .line{
+				margin-left: 30px;
+			}
+			&-sett .line{
+				margin-left: 40px;
+			}
+		}
+	}
 }
 
 
@@ -1001,19 +1056,21 @@
 	// =/OBJECTS
 
 	// =intro
+	.intro__carousel{
+		width: 415px;
+		&:before{
+			height: 293px;
+			width: 412px;
+		}
+		&:after{
+			width: 409px;
+			height: 275px;
+		}
+	}
 	.intro{
 		&__left{
 			flex-basis: 425px;
 			.intro__carousel{
-				width: 415px;
-				&:before{
-					width: 415px;
-					height: 333px;
-				}
-				&:after{
-					width: 415px;
-					height: 313px;
-				}
 			}
 		}
 
@@ -1151,6 +1208,42 @@
 	}
 	// =/CONTACTS
 
+
+	// =GBI
+	.gbi-page{
+		.menu{
+			.icon{
+				&-catalog{
+					.line{
+						margin-left: 80px;
+					}
+				}
+				&-sett{
+					&:before{
+						left: 25px;
+					}
+					&:hover:before{
+						left: 15px;
+					}
+					.line{
+						margin-left: 85px;
+					}
+				}
+				&-pricelist{
+					&:before{
+						left: 45px;
+					}
+					&:hover:before{
+						left: 35px;
+					}
+					.line{
+						margin-left: 30px;
+					}
+				}
+			}
+		}
+	}
+	// =/GBI
 }
 
 
@@ -1287,25 +1380,25 @@
 	}
 
 	// =intro
+	.intro__carousel{
+		width: 315px;
+		&:before{
+			width: 310px;
+			height: 225px;
+		}
+		&:after{
+			width: 305px;
+			height: 208px;
+		}
+
+		.carousel-image{
+			height: 240px;
+		}
+	}
 	.intro{
 		align-items: flex-start;
 		&__left{
 			flex: 0 0 325px;
-			.intro__carousel{
-				width: 315px;
-				&:before{
-					width: 310px;
-					height: 225px;
-				}
-				&:after{
-					width: 305px;
-					height: 208px;
-				}
-
-				.carousel-image{
-					height: 240px;
-				}
-			}
 		}
 
 		&__right{
@@ -1369,6 +1462,51 @@
 	.worker__item:nth-child(even){
 		padding-right: 0;
 	}
+
+
+	// =GBI
+	.gbi-page{
+		.menu{
+			font-size: 1.5rem;
+			.icon{
+				&-catalog{
+					.line{
+						margin-left: 50px;
+					}
+					&:before{
+						left: 8px;
+					}
+					&:hover:before{
+						left: 1px;
+					}
+				}
+				&-sett{
+						padding-right: 1rem;
+					&:before{
+						left: 8px;
+					}
+					&:hover:before{
+						left: 1px;
+					}
+					.line{
+						margin-left: 75px;
+					}
+				}
+				&-pricelist{
+					&:before{
+						left: 45px;
+					}
+					&:hover:before{
+						left: 35px;
+					}
+					.line{
+						margin-left: 30px;
+					}
+				}
+			}
+		}
+	}
+	// =/GBI
 }
 
 
@@ -1390,6 +1528,10 @@
 				font-size: 1.4rem;
 			}
 		}
+	}
+
+	.gbi-page .menu{
+		width: calc(100% - 15px);
 	}
 }
 
@@ -1490,6 +1632,55 @@
 		}
 		&__pic{
 			height: 270px;
+		}
+	}
+
+
+	// GBI
+	.gbi-page{
+		.main{
+			display: block;
+			.intro__carousel{
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 2rem;
+			}
+			.content{
+				padding-left: 0;
+				text-align: justify;
+				main{
+					font-size: 1.4rem;
+					line-height: 1.2;					
+				}
+			}
+		}
+	}
+	// =/GBI
+
+	.gbi-page .menu ul{
+		// display: block;
+		flex-direction: column;
+		li{
+			display: flex;
+			justify-content: center;
+			margin-bottom: 3rem;
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+		}
+		.icon{
+			// display: inline-flex;
+			height: 60px;
+			&-sett{
+				&:before{
+					left: 30px;
+				}
+			}
+			&-pricelist{
+				&:before{
+					left: 0;
+				}
+			}
 		}
 	}
 }

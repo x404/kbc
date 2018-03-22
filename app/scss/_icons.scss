@@ -58,6 +58,16 @@
 	}
 }
 
+.icon-telbig{
+	// padding-left: 50px;
+	position: relative;
+	&:before{
+		@extend .before;
+		@include sprite($icon-tel);
+		top: -5px;
+		left: -50px;
+	}
+}
 
 .icon-tel{
 	&:before{

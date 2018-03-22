@@ -69,6 +69,16 @@
 				.line{
 					margin-left: 75px;
 				}
+				&:before{
+					@media (max-width: 1280px){
+						@include sprite($icon-catalog-sm);
+						top: 35px;
+					}
+					@media (max-width: 768px){
+						@include sprite($icon-catalog-xsm);
+						top: 20px;
+					}
+				}
 			}
 			&-sett{
 				$l: 94px;
@@ -82,6 +92,18 @@
 				.line{
 					margin-left: 110px;
 				}
+
+				&:before{
+					@media (max-width: 1280px){
+						@include sprite($icon-sett-sm);
+						top: 35px;
+					}
+					@media (max-width: 768px){
+						@include sprite($icon-sett-xsm);
+						top: 20px;
+					}
+				}
+
 			}
 			&-pricelist{
 				$l: 160px;
@@ -94,6 +116,16 @@
 				}
 				.line{
 					margin-left: 60px;
+				}
+				&:before{
+					@media (max-width: 1280px){
+						@include sprite($icon-pricelist-sm);
+						top: 35px;
+					}
+					@media (max-width: 768px){
+						@include sprite($icon-pricelist-xsm);
+						top: 20px;
+					}
 				}
 			}
 		}
