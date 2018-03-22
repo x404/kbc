@@ -274,6 +274,17 @@
 		}
 	}
 	// =/CONTACTS
+
+
+	.vacancies-page{
+		.offset-col-1{
+			margin-left: 0;
+		}
+	}
+
+	.list_vacancy .vacancy__item{
+		width: 90%;
+	}
 }
 
 
@@ -500,6 +511,11 @@
 
 	.gbi-page .main .content{
 		padding-left: 50px;
+	}
+
+
+	.faq-page .head p, .vacancies-page .head p{
+		font-size: 1.5rem;
 	}
 
 }
@@ -1266,11 +1282,11 @@
 
 	// =FAVORITES
 
-.favorite{
-	&__top{
+	.favorite{
+		&__top{
 
+		}
 	}
-}
 
 	.object__meta{
 		flex-wrap: wrap;
@@ -1295,8 +1311,31 @@
 }
 
 
-@media (max-width: 1010px){
+@media (max-width: 1050px){
+	.vacancies-page .side{
+		margin-left: -24px;
+	}
 
+	.list_vacancy{
+		.vacancy{
+			&__question{
+				padding-left: 70px;
+			}
+			&__item{
+				.name{
+					font-size: 1.8rem;
+					margin-top: 1.3rem;
+				}
+				.text{
+					line-height: 1.4;
+				}
+
+				.toggle{
+					left: 12px;
+				}
+			}
+		}
+	}
 }
 
 
@@ -1578,8 +1617,50 @@
 		}
 	}
 
+
+	// vacancies-page
+	.vacancies-page{
+		.neck{
+			.col-7{
+				flex-basis: 60%;
+			}
+		}
+	}
 }
 
+
+
+@media (max-width: 920px){
+	.vacancies-page{
+		.main{
+			display: block;
+		}
+		.side{
+			display: flex;
+			margin-left: 0;
+		}
+		.secondary{
+			margin-left: 4rem;
+		}
+	}
+
+	.list_vacancy{
+		.vacancy__item{
+			width: 100%;
+		}
+	}
+
+	.side-inner{
+		margin-top: 0;
+		.resume{
+			margin-top: 2rem;
+		}
+	}
+
+	.vacancies-page .neck .col-7{
+		flex-basis: 100%;
+	}
+}
 
 
 @media (max-width: 850px){
@@ -1907,6 +1988,16 @@
 			}
 		}
 	}
+
+	.vacancies-page{
+		.side{
+			flex-direction: column;
+			align-items: center;
+		}
+		.secondary{
+			margin-left: 0;
+		}
+	}
 }
 
 
@@ -2168,6 +2259,11 @@
 		display: block;
 		flex-basis: 100%;
 	}
+
+	.faq-page .head p, 
+	.vacancies-page .head p{
+		font-size: 1.4rem;
+	}
 }
 
 
@@ -2419,6 +2515,41 @@
 			font-size: 1.8rem;
 		}
 	}
+
+	.list_vacancy{
+		.vacancy__question{
+			padding-left: 55px;
+		}
+		.vacancy__item{
+			.toggle{
+				height: 40px;
+				left: 5px !important;
+				width: 40px;
+			}
+			.name{
+				font-size: 1.5rem;
+			}
+			.text{
+				font-size: 1.4rem;
+				padding-right: 2rem;
+			}
+			.price{
+				padding-left: 70px;
+			}
+
+			&-expand .vacancy__question{
+				padding-left: 50px;
+			}
+			.answer{
+				padding-left: 50px;
+			}
+		}
+		.answer__text{
+			font-size: 1.4rem;
+		}
+	}
+
+
 }
 
 
@@ -2804,6 +2935,18 @@
 			font-size: 1.5rem;
 		}
 	}
+
+
+	.list_vacancy{
+		.answer{
+			padding-right: .5rem;
+		}
+		.btn{
+			padding-left: .7rem;
+			padding-right: .7rem;
+			font-size: 1.4rem;
+		}
+	}
 }
 
 
@@ -2834,5 +2977,31 @@
 		&__item{
 			width: 95%;
 		}
+	}
+
+	.side-inner{
+		.secondary{
+			width: 100%;
+		}
+		.resume{
+			width: 95%;
+			&__title{
+				padding-left: 0;
+				&:before{
+					display: none;
+				}
+			}
+			&__text{
+				font-size: 1.5rem;
+			}
+		}
+	}
+
+	.resume .submit{
+		width: 100%;
+	}
+
+	.picking{
+		width: calc(100% - 12px)
 	}
 }

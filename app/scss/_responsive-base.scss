@@ -549,6 +549,13 @@
 			}
 		}
 	}
+
+	.modal-dialog{
+		width: 90%;
+	}
+	.modal .cell{
+		width: 47%;
+	}
 }
 
 @media (max-width: 768px){
@@ -875,6 +882,13 @@
 			right: 20px;
 		}
 	}
+
+
+	.modal .bottom .submit{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
 }
 
 @media (max-width: 500px){
@@ -978,13 +992,49 @@
 	// catalog
 	.neck{
 		text-align: center;
+		.flexbox{
+			display: block;
+		}
 		.title{
+			display: block;
 			font-size: 2.5rem !important;
 		}
 		.head__tel a{
 			font-size: 2.2rem;
 		}
 	}
+
+	.modal{
+		.flexbox{
+			display: block;
+		}
+		.cell{
+			width: 100%;
+		}
+
+		.textarea-field{
+			margin-top: 1.5rem;
+		}
+
+		.modal-content{
+			padding-top: 3rem;
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+		.close{
+			right: 10px;
+			top: 10px;
+		}
+		.modal-title{
+			width: 90%;
+		}
+		.modal-text{
+			padding-right: 0;
+		}
+		.submit{
+			font-size: 1.5rem;
+		}
+	} 
 }
 
 @media (max-width: 420px){

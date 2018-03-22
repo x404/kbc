@@ -7872,7 +7872,11 @@ tbody.collapse.show {
       display: block;
       margin-left: 50px;
       margin-top: 2rem;
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem; }
+  .modal-dialog {
+    width: 90%; }
+  .modal .cell {
+    width: 47%; } }
 
 @media (max-width: 768px) {
   .header .contacts__cell-2 {
@@ -8074,7 +8078,11 @@ tbody.collapse.show {
       width: 100%;
       padding-right: 3rem; }
     .sidemodal .close-modal {
-      right: 20px; } }
+      right: 20px; }
+  .modal .bottom .submit {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; } }
 
 @media (max-width: 500px) {
   .header .flexbox {
@@ -8132,10 +8140,32 @@ tbody.collapse.show {
     width: 50%; }
   .neck {
     text-align: center; }
+    .neck .flexbox {
+      display: block; }
     .neck .title {
+      display: block;
       font-size: 2.5rem !important; }
     .neck .head__tel a {
-      font-size: 2.2rem; } }
+      font-size: 2.2rem; }
+  .modal .flexbox {
+    display: block; }
+  .modal .cell {
+    width: 100%; }
+  .modal .textarea-field {
+    margin-top: 1.5rem; }
+  .modal .modal-content {
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .modal .close {
+    right: 10px;
+    top: 10px; }
+  .modal .modal-title {
+    width: 90%; }
+  .modal .modal-text {
+    padding-right: 0; }
+  .modal .submit {
+    font-size: 1.5rem; } }
 
 @media (max-width: 420px) {
   .sidemodal .inner {
@@ -8352,7 +8382,11 @@ tbody.collapse.show {
     font-size: 1.5rem;
     flex-basis: 31%;
     padding-left: 4rem;
-    padding-right: 4rem; } }
+    padding-right: 4rem; }
+  .vacancies-page .offset-col-1 {
+    margin-left: 0; }
+  .list_vacancy .vacancy__item {
+    width: 90%; } }
 
 @media (max-width: 1500px) {
   .intro__right {
@@ -8479,7 +8513,9 @@ tbody.collapse.show {
     font-size: 1.4rem;
     padding-top: 2rem; }
   .gbi-page .main .content {
-    padding-left: 50px; } }
+    padding-left: 50px; }
+  .faq-page .head p, .vacancies-page .head p {
+    font-size: 1.5rem; } }
 
 @media (max-width: 1350px) {
   .table-flats td {
@@ -8928,6 +8964,19 @@ tbody.collapse.show {
       flex-grow: 1;
       text-align: right; } }
 
+@media (max-width: 1050px) {
+  .vacancies-page .side {
+    margin-left: -24px; }
+  .list_vacancy .vacancy__question {
+    padding-left: 70px; }
+  .list_vacancy .vacancy__item .name {
+    font-size: 1.8rem;
+    margin-top: 1.3rem; }
+  .list_vacancy .vacancy__item .text {
+    line-height: 1.4; }
+  .list_vacancy .vacancy__item .toggle {
+    left: 12px; } }
+
 @media (max-width: 991px) {
   .feature .promo {
     height: auto; }
@@ -9072,7 +9121,26 @@ tbody.collapse.show {
   .object__meta .object__composition {
     margin-right: 0; }
   .object__meta .object__flats {
-    text-align: center; } }
+    text-align: center; }
+  .vacancies-page .neck .col-7 {
+    flex-basis: 60%; } }
+
+@media (max-width: 920px) {
+  .vacancies-page .main {
+    display: block; }
+  .vacancies-page .side {
+    display: flex;
+    margin-left: 0; }
+  .vacancies-page .secondary {
+    margin-left: 4rem; }
+  .list_vacancy .vacancy__item {
+    width: 100%; }
+  .side-inner {
+    margin-top: 0; }
+    .side-inner .resume {
+      margin-top: 2rem; }
+  .vacancies-page .neck .col-7 {
+    flex-basis: 100%; } }
 
 @media (max-width: 850px) {
   .objects-intro {
@@ -9246,7 +9314,12 @@ tbody.collapse.show {
       .side .callback__form .inputs {
         display: flex; }
       .side .callback__form .input-field {
-        width: 46%; } }
+        width: 46%; }
+  .vacancies-page .side {
+    flex-direction: column;
+    align-items: center; }
+  .vacancies-page .secondary {
+    margin-left: 0; } }
 
 @media (max-width: 670px) {
   .feature .promo {
@@ -9404,7 +9477,10 @@ tbody.collapse.show {
       padding-top: 14px; }
   .gbi-catalog .head .flexbox {
     display: block;
-    flex-basis: 100%; } }
+    flex-basis: 100%; }
+  .faq-page .head p,
+  .vacancies-page .head p {
+    font-size: 1.4rem; } }
 
 @media (max-width: 630px) {
   .feature__right .about,
@@ -9540,7 +9616,26 @@ tbody.collapse.show {
       z-index: 3; }
   .condo-page .subtitle {
     display: block;
-    font-size: 1.8rem; } }
+    font-size: 1.8rem; }
+  .list_vacancy .vacancy__question {
+    padding-left: 55px; }
+  .list_vacancy .vacancy__item .toggle {
+    height: 40px;
+    left: 5px !important;
+    width: 40px; }
+  .list_vacancy .vacancy__item .name {
+    font-size: 1.5rem; }
+  .list_vacancy .vacancy__item .text {
+    font-size: 1.4rem;
+    padding-right: 2rem; }
+  .list_vacancy .vacancy__item .price {
+    padding-left: 70px; }
+  .list_vacancy .vacancy__item-expand .vacancy__question {
+    padding-left: 50px; }
+  .list_vacancy .vacancy__item .answer {
+    padding-left: 50px; }
+  .list_vacancy .answer__text {
+    font-size: 1.4rem; } }
 
 @media (max-width: 480px) {
   .feature .promo .type-1 .title {
@@ -9767,7 +9862,13 @@ tbody.collapse.show {
   .object__meta .object__address .icon-label:before {
     display: none; }
   .condo-page .subtitle {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .list_vacancy .answer {
+    padding-right: .5rem; }
+  .list_vacancy .btn {
+    padding-left: .7rem;
+    padding-right: .7rem;
+    font-size: 1.4rem; } }
 
 @media (max-width: 350px) {
   .intro__left {
@@ -9782,4 +9883,18 @@ tbody.collapse.show {
   .visual {
     margin: 2.2rem 0; }
   .catalog__item {
-    width: 95%; } }
+    width: 95%; }
+  .side-inner .secondary {
+    width: 100%; }
+  .side-inner .resume {
+    width: 95%; }
+    .side-inner .resume__title {
+      padding-left: 0; }
+      .side-inner .resume__title:before {
+        display: none; }
+    .side-inner .resume__text {
+      font-size: 1.5rem; }
+  .resume .submit {
+    width: 100%; }
+  .picking {
+    width: calc(100% - 12px); } }
