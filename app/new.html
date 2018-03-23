@@ -204,35 +204,43 @@
 						<div class="side side-inner offset-col-1 col-2">
 							<!-- =callback -->
 							<div class="callback perspective">
-								<p class="callback__title">У вас есть вопросы?</p>
-								<div class="callback__text">Позвоните по телефону или оставьте заявку и мы Вам перезвоним</div>
+								<div class="callback__top">
+									<p class="callback__title">У вас есть вопросы?</p>
+									<div class="callback__text">Позвоните по телефону или оставьте заявку и мы Вам перезвоним</div>
+								</div>
 								<p class="call"><a href="tel:+73912179217">+7 (391) 217-9-217</a></p>
 								<form action="#" method="post" class="callback__form">
 									<fieldset>
-										<div class="input-field icon-people">
-											<label for="callback_name" class="name-field">Ваше имя</label>
-											<label for="callback_name" class="helper-field helper-field-name">Ваше имя</label>
-											<input type="email" id="callback_name" name="name" class="form-control required" value="" />
+										<div class="callback__form-inner">
+											<div class="inputs">
+												<div class="input-field icon-people">
+													<label for="callback_name" class="name-field">Ваше имя</label>
+													<label for="callback_name" class="helper-field helper-field-name">Ваше имя</label>
+													<input type="email" id="callback_name" name="name" class="form-control required" value="" />
+												</div>
+												<div class="input-field icon-tel">
+													<label for="callback_tel" class="name-field">Телефон</label>
+													<label for="callback_tel" class="helper-field helper-field-name">Телефон</label>
+													<input type="tel" id="callback_tel" name="tel" class="form-control tel required" value="" />
+												</div>
+											</div>
+											<input type="submit" class="submit btn-red" value="Перезвоните мне" />
 										</div>
-										<div class="input-field icon-tel">
-											<label for="callback_tel" class="name-field">Телефон</label>
-											<label for="callback_tel" class="helper-field helper-field-name">Телефон</label>
-											<input type="tel" id="callback_tel" name="tel" class="form-control tel required" value="" />
-										</div>
-										<input type="submit" class="submit btn-red" value="Перезвоните мне" />
 									</fieldset>
 								</form>
 							</div>
 							<!-- =/callback -->
-
-							<!-- =picking -->
-							<div class="picking">
-								<div class="picking__inner">
-									<img src="images/picking-bg.png" alt="" />
-									<a href="#" title="" class="picking__link"><span>Подберите <br> квартиру <br>по параметрам</span></a>
+							
+							<div class="secondary">
+								<!-- =picking -->
+								<div class="picking">
+									<div class="picking__inner">
+										<img src="images/picking-bg.png" alt="" />
+										<a href="#" title="" class="picking__link"><span>Подберите <br> квартиру <br>по параметрам</span></a>
+									</div>
 								</div>
+								<!-- =/picking -->
 							</div>
-							<!-- =/picking -->
 						</div>
 					</div>
 					<!-- =/main -->

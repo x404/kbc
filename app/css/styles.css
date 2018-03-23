@@ -8419,7 +8419,8 @@ tbody.collapse.show {
     padding-right: 4rem; }
   .vacancies-page .offset-col-1,
   .faq-page .offset-col-1,
-  .actions-page .offset-col-1 {
+  .actions-page .offset-col-1,
+  .news-page .offset-col-1 {
     margin-left: 0; }
   .list_vacancy .vacancy__item,
   .actions-page .action__item,
@@ -8453,7 +8454,15 @@ tbody.collapse.show {
       width: 260px; }
   .list_construction .place__top, .list_construction .place__body {
     padding-left: 2rem;
-    padding-right: 2rem; } }
+    padding-right: 2rem; }
+  .content-bottom .subscribe__text {
+    font-size: 2rem; }
+  .news-page main {
+    padding-right: 5rem; }
+  .material__item {
+    width: 22%; }
+  .material__title {
+    font-size: 1.6rem; } }
 
 @media (max-width: 1500px) {
   .intro__right {
@@ -8869,7 +8878,13 @@ tbody.collapse.show {
   .list_construction .place__pic:after {
     margin-left: -138px;
     top: 7px;
-    width: calc(95% - 20px); } }
+    width: calc(95% - 20px); }
+  .content-bottom .subscribe__text {
+    font-size: 1.8rem; }
+  .content-bottom .subscribe__form {
+    flex-basis: 50%; }
+  .material__title {
+    font-size: 1.5rem; } }
 
 @media (max-width: 1170px) {
   .about-partners .partners {
@@ -9128,12 +9143,18 @@ tbody.collapse.show {
       top: 7px;
       width: calc(88% - 20px); }
   .construction-page .neck .head p {
-    margin-top: 1rem; } }
+    margin-top: 1rem; }
+  .content-bottom .subscribe {
+    padding: 2.5rem 3rem; }
+    .content-bottom .subscribe__text {
+      padding-right: 50px;
+      font-size: 1.6rem; } }
 
 @media (max-width: 1050px) {
   .vacancies-page .side,
   .actions-page .side,
-  .faq-page .side {
+  .faq-page .side,
+  .news-page .side {
     margin-left: -24px; }
   .list_vacancy .vacancy__question {
     padding-left: 70px; }
@@ -9143,7 +9164,10 @@ tbody.collapse.show {
   .list_vacancy .vacancy__item .text {
     line-height: 1.4; }
   .list_vacancy .vacancy__item .toggle {
-    left: 12px; } }
+    left: 12px; }
+  main img.justifyleft {
+    float: none;
+    margin-right: 0px; } }
 
 @media (max-width: 991px) {
   .feature .promo {
@@ -9305,16 +9329,19 @@ tbody.collapse.show {
     width: 230px; }
   .vacancies-page .main,
   .faq-page .main,
-  .actions-page .main {
+  .actions-page .main,
+  .news-page .main {
     display: block; }
   .vacancies-page .side,
   .faq-page .side,
-  .actions-page .side {
+  .actions-page .side,
+  .news-page .side {
     display: flex;
     margin-left: 0; }
   .vacancies-page .secondary,
   .faq-page .secondary,
-  .actions-page .secondary {
+  .actions-page .secondary,
+  .news-page .secondary {
     margin-left: 4rem; }
   .list_vacancy .vacancy__item {
     width: 100%; }
@@ -9324,7 +9351,8 @@ tbody.collapse.show {
     width: 100%; }
   .vacancies-page .neck .col-7,
   .faq-page .neck .col-7,
-  .actions-page .neck .col-7 {
+  .actions-page .neck .col-7,
+  .news-page .neck .col-7 {
     flex-basis: 100%; }
   .side-inner {
     margin-top: 0;
@@ -9343,7 +9371,20 @@ tbody.collapse.show {
   .list_construction .place__pic:after {
     margin-left: -138px;
     top: 7px;
-    width: calc(96% - 20px); } }
+    width: calc(96% - 20px); }
+  main {
+    font-size: 1.5rem; }
+  .news-page main {
+    padding-right: 0; }
+  .materials .flexbox {
+    flex-wrap: wrap; }
+  .materials .material__item {
+    margin-bottom: 1.5rem;
+    width: 50%; }
+  .subscribe .flexbox {
+    display: block; }
+  .subscribe__form .flexbox {
+    display: flex; } }
 
 @media (max-width: 920px) {
   .side-inner {
@@ -9519,7 +9560,11 @@ tbody.collapse.show {
     flex-basis: 100%; }
   .filter-sort .sortbox {
     margin-top: 2rem;
-    flex-basis: 100%; } }
+    flex-basis: 100%; }
+  .materials {
+    margin-bottom: 0; }
+    .materials .material__item {
+      width: 45%; } }
 
 @media (max-width: 720px) {
   .objects-callback .side .callback {
@@ -9789,7 +9834,13 @@ tbody.collapse.show {
         display: inline-flex; }
     .object__meta .object__flats {
       margin-top: 2rem;
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem; }
+  .news-page .neck .head .flexbox {
+    display: block; }
+    .news-page .neck .head .flexbox .title {
+      padding-right: 0; }
+  .news-page .neck .head__right {
+    margin-top: 1.5rem; } }
 
 @media (max-width: 600px) {
   .workers {
@@ -9860,7 +9911,24 @@ tbody.collapse.show {
     font-size: 1.5rem; }
     .neck .tabs .tab a {
       padding-left: 1rem;
-      padding-right: 1rem; } }
+      padding-right: 1rem; }
+  .content-bottom .subscribe__text {
+    padding-right: 0; }
+  .content-bottom .subscribe__form .flexbox {
+    display: block; }
+    .content-bottom .subscribe__form .flexbox .submit {
+      margin: 1rem auto 0;
+      width: 100%; }
+  .content-bottom .subscribe .input-field .form-control {
+    width: 100%; }
+  .materials .heading {
+    text-align: center; }
+  .materials .flexbox {
+    display: block; }
+  .materials .material__item {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px; } }
 
 @media (max-width: 500px) {
   .objects__carousel {
@@ -10057,7 +10125,15 @@ tbody.collapse.show {
   .neck .tabs {
     margin-top: 2rem;
     margin-left: 0;
-    justify-content: center; } }
+    justify-content: center; }
+  .neck .date {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px; }
+  .neck .back {
+    margin-left: auto;
+    margin-right: auto; } }
 
 @media (max-width: 450px) {
   .about-partners {
@@ -10232,8 +10308,13 @@ tbody.collapse.show {
   .list_construction .place__translation {
     margin-top: 1.2rem;
     font-size: 1.4rem; }
-  .text-page main {
-    text-align: justify; } }
+  .text-page main,
+  .news-page main {
+    text-align: justify;
+    font-size: 1.4rem; }
+  .materials .material__item {
+    text-align: justify;
+    width: 280px; } }
 
 @media (max-width: 350px) {
   .intro__left {
