@@ -12,6 +12,7 @@
 				color: $color2;
 				display: flex;
 				flex-direction: column;
+				flex-shrink: 0;
 				height: 513px;
 				justify-content: center;
 				padding-left: 160px;
@@ -89,6 +90,8 @@
 						display: block;
 						position: relative;
 						z-index: 2;
+						max-width: 100%;
+						height: auto;
 					}
 				}
 				&__link{
@@ -128,9 +131,11 @@
 								@extend .before;
 								background: #e6e9ea;
 								bottom: -10px;
-								height: 186px;
+								// height: 186px;
+								height: 100%;
 								right: -10px;
-								width: 250px;
+								// width: 250px;
+								width: 100%;
 							}
 						}
 					}
@@ -160,8 +165,13 @@
 		background:#086e42 url(../images/bg-3.jpg) no-repeat center top / cover;
 		color: $color2;
 		font-size: 1.7rem;
-		padding: 11.3rem 8rem;
 		line-height: 1.5;
+		overflow: hidden;
+		padding: 11.3rem 0;
+		// padding: 11.3rem 8rem;
+		.row{
+			// display: block;
+		}
 		.title{
 			font-size: 3.6rem;
 			font-weight: 700;
@@ -201,6 +211,7 @@
 			}
 
 			&:last-child{
+				padding-right: 0;
 				&:after,
 				&:before
 				{

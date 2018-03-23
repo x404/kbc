@@ -377,6 +377,44 @@
 		}
 	}
 	// =/NEWS
+
+	.listgk-inner{
+		flex: 0 0 70%;
+	}
+
+	.listgk-page .main{
+		.complex__pic{
+			width: 200px;
+		}
+	}
+
+
+	// =ABOUT
+	.about-page{
+		.calculator{
+			background-position: 50px center;
+			padding-left: 643px;
+		}
+		.carousel{
+			.item{
+				&__body{
+					padding-right: 50px;
+					padding-left: 120px;					
+				}
+			}
+		}
+
+		.about__video{
+			.video__item{
+				font-size: 1.5rem;
+				width: 30%;
+				.video__link .title{
+				}
+			}
+		}
+	}
+
+	// =/ABOUT
 }
 
 
@@ -615,7 +653,6 @@
 	}
 
 
-
 	// CONSTRUCTING
 	.list_construction{
 		.place{
@@ -642,6 +679,18 @@
 		}
 	}
 	// =/CONSTRUCTING
+
+
+	.about-page{
+		.about{
+			padding-right: 600px;
+		}
+
+		.calculator{
+			background-size: 25%;
+			padding-left: 450px;
+		}
+	}
 
 }
 
@@ -1151,7 +1200,40 @@
 		font-size: 1.5rem;
 	}
 
+	
+	.about-page{
+		.carousel .item{
+			&__title{
+				font-size: 3.2rem;
+			}
+			&__text{
+				font-size: 1.5rem;
+			}
+		}
+		.about{
+			background: none;
+			padding-right: 0;
+			min-height: 0;
+		}
+		.about__video .video__item{
+			width: 250px;
+		}
+		.scheme{
+			padding: 5rem 0 7rem;
+			.steps{
+				font-size: 1.5rem;
+			}
+			.step{
+				img{
+					width: 45%;
+				}
+			}
+		}
 
+		#map{
+			height: 400px;
+		}
+	}
 }
 
 

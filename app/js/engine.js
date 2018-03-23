@@ -158,7 +158,7 @@ $(document).ready(function(){
 		dotsContainer: '.owl-dots',
 		navContainer: '.owl-nav',
 		animateOut: 'fadeOut',
-		autoplay: true,
+		autoplay: false,
 		autoplayTimeout: 5000, 
 		loop: true
 	});
