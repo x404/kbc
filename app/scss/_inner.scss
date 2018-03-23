@@ -148,6 +148,7 @@
 			border: 2px solid $color19;
 			height: 5rem;
 			margin-left: -2px;
+			flex-shrink: 0;
 			a{
 				@extend .flex-cv;
 				color: $color19;

@@ -3217,7 +3217,8 @@ body.modal-open,
       transition: border-color 0.2s ease-out;
       border: 2px solid #80ccac;
       height: 5rem;
-      margin-left: -2px; }
+      margin-left: -2px;
+      flex-shrink: 0; }
       .neck .tabs .tab a {
         color: #80ccac;
         height: 5rem;
@@ -9392,7 +9393,11 @@ tbody.collapse.show {
   .subscribe .flexbox {
     display: block; }
   .subscribe__form .flexbox {
-    display: flex; } }
+    display: flex; }
+  .topnews .news__cell {
+    width: 50%; }
+    .topnews .news__cell:nth-child(3) {
+      display: none; } }
 
 @media (max-width: 920px) {
   .side-inner {
@@ -9844,15 +9849,28 @@ tbody.collapse.show {
       margin-top: 2rem;
       margin-bottom: 1rem; }
   .news-page .neck .head .flexbox,
+  .actions-page .neck .head .flexbox,
   .action-page .neck .head .flexbox {
     display: block;
     width: 100%; }
     .news-page .neck .head .flexbox .title,
+    .actions-page .neck .head .flexbox .title,
     .action-page .neck .head .flexbox .title {
       padding-right: 0; }
   .news-page .neck .head__right,
+  .actions-page .neck .head__right,
   .action-page .neck .head__right {
-    margin-top: 1.5rem; } }
+    margin-top: 1.5rem; }
+  .topnews .news__top {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .topnews .news__meta {
+    margin-left: 2rem;
+    margin-right: 2rem; }
+  .topnews .news__title, .topnews .news__desc {
+    font-size: 1.4rem; }
+  .neck .tabs {
+    margin-left: 0; } }
 
 @media (max-width: 600px) {
   .workers {
@@ -9876,7 +9894,9 @@ tbody.collapse.show {
     font-size: 1.4rem;
     line-height: 1.5; }
   .action__date {
-    margin-top: 1.5rem; } }
+    margin-top: 1.5rem; }
+  .topnews {
+    display: none !important; } }
 
 @media (max-width: 550px) {
   .objects header {
@@ -9919,8 +9939,10 @@ tbody.collapse.show {
   .about-partners .about__num {
     width: 150px; }
   .neck .tabs {
-    margin-left: 3rem;
-    font-size: 1.5rem; }
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+    justify-content: center; }
     .neck .tabs .tab a {
       padding-left: 1rem;
       padding-right: 1rem; }
@@ -10376,4 +10398,12 @@ tbody.collapse.show {
     .side-inner .callback .call a {
       font-size: 1.8rem; }
   .list_construction .place__item {
-    width: 280px; } }
+    width: 280px; }
+  .news-page .pagination {
+    padding-left: 0;
+    padding-right: 0; }
+  .news-page .neck .tabs {
+    font-size: 1.4rem; }
+    .news-page .neck .tabs .tab {
+      padding-left: .5rem;
+      padding-right: .5rem; } }
