@@ -1492,7 +1492,8 @@
 		}
 	}
 	.reviews-page,
-	.construction-page{
+	.construction-page,
+	.text-page{
 		.col-7{
 			flex-basis: 100%;
 		}
@@ -3122,6 +3123,10 @@
 			text-align: justify;
 		}
 	}
+
+	main{
+		font-size: 1.5rem;
+	}
 }
 
 
@@ -3545,6 +3550,15 @@
 
 	// CONSTRUCTING
 	.list_construction{
+		&__pic{
+			&:before,
+			&:after{
+				display: none;
+			}
+		}
+		&__body{
+			margin-top: 1rem;
+		}
 		.place{
 			&__item{
 				width: 300px;
@@ -3580,17 +3594,9 @@
 	// =/CONSTRUCTING
 
 
-	.list_construction{
-		.place{
-			&__pic{
-				&:before,
-				&:after{
-					display: none;
-				}
-			}
-			&__body{
-				margin-top: 1rem;
-			}
+	.text-page{
+		main{
+			text-align: justify;
 		}
 	}
 }
