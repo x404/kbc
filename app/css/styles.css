@@ -8400,7 +8400,30 @@ tbody.collapse.show {
   .review__item {
     width: calc(33.3% - 23px); }
   .review__wrapper {
-    width: 100%; } }
+    width: 100%; }
+  .list_construction .place__item {
+    width: calc(25% - 20px); }
+  .list_construction .place__pic {
+    margin-left: auto;
+    margin-right: auto;
+    width: 92%; }
+    .list_construction .place__pic img {
+      width: 100%;
+      height: auto; }
+    .list_construction .place__pic:before, .list_construction .place__pic:after {
+      height: 215px;
+      left: 50%; }
+    .list_construction .place__pic:before {
+      margin-left: -140px;
+      top: 10px;
+      width: 280px; }
+    .list_construction .place__pic:after {
+      margin-left: -130px;
+      top: 15px;
+      width: 260px; }
+  .list_construction .place__top, .list_construction .place__body {
+    padding-left: 2rem;
+    padding-right: 2rem; } }
 
 @media (max-width: 1500px) {
   .intro__right {
@@ -8531,7 +8554,18 @@ tbody.collapse.show {
   .faq-page .head p,
   .vacancies-page .head p,
   .actions-page .head p {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .list_construction .place__pic:before, .list_construction .place__pic:after {
+    height: calc(100% + 5px);
+    left: 50%;
+    width: 95%; }
+  .list_construction .place__pic:before {
+    margin-left: -130px;
+    top: 0px; }
+  .list_construction .place__pic:after {
+    margin-left: -120px;
+    top: 7px;
+    width: calc(95% - 20px); } }
 
 @media (max-width: 1350px) {
   .table-flats td {
@@ -8787,7 +8821,25 @@ tbody.collapse.show {
   .action__text {
     font-size: 1.5rem; }
   .action__date {
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+  .list_construction .place__item {
+    margin-right: 52px;
+    width: calc(33% - 35px); }
+    .list_construction .place__item:nth-child(4n) {
+      margin-right: auto; }
+    .list_construction .place__item:nth-child(3n) {
+      margin-right: 0; }
+  .list_construction .place__pic:before, .list_construction .place__pic:after {
+    height: calc(100% + 5px);
+    left: 50%;
+    width: 95%; }
+  .list_construction .place__pic:before {
+    margin-left: -148px;
+    top: 0px; }
+  .list_construction .place__pic:after {
+    margin-left: -138px;
+    top: 7px;
+    width: calc(95% - 20px); } }
 
 @media (max-width: 1170px) {
   .about-partners .partners {
@@ -8998,7 +9050,8 @@ tbody.collapse.show {
       margin-right: auto; }
     .review__item:nth-child(even) {
       margin-right: 0; }
-  .reviews-page .col-7 {
+  .reviews-page .col-7,
+  .construction-page .col-7 {
     flex-basis: 100%; }
   .filter-sort .filter {
     flex-basis: 220px; }
@@ -9023,7 +9076,28 @@ tbody.collapse.show {
       margin-left: 1rem; }
     .pagination a:not([class]), .pagination span:not(.separator) {
       width: 32px;
-      height: 32px; } }
+      height: 32px; }
+  .list_construction {
+    justify-content: space-between; }
+    .list_construction .place__item {
+      width: calc(50% - 35px);
+      max-width: 370px;
+      margin-right: 35px !important; }
+      .list_construction .place__item:nth-child(even) {
+        margin-right: 0 !important; }
+    .list_construction .place__pic:before, .list_construction .place__pic:after {
+      height: calc(100% + 5px);
+      left: 50%;
+      width: 88%; }
+    .list_construction .place__pic:before {
+      margin-left: -148px;
+      top: 0px; }
+    .list_construction .place__pic:after {
+      margin-left: -138px;
+      top: 7px;
+      width: calc(88% - 20px); }
+  .construction-page .neck .head p {
+    margin-top: 1rem; } }
 
 @media (max-width: 1050px) {
   .vacancies-page .side,
@@ -9227,7 +9301,18 @@ tbody.collapse.show {
     .side-inner .resume {
       margin-top: 0; }
   .picking {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .list_construction .place__pic:before, .list_construction .place__pic:after {
+    height: calc(100% + 5px);
+    left: 50%;
+    width: 96%; }
+  .list_construction .place__pic:before {
+    margin-left: -148px;
+    top: 0px; }
+  .list_construction .place__pic:after {
+    margin-left: -138px;
+    top: 7px;
+    width: calc(96% - 20px); } }
 
 @media (max-width: 920px) {
   .side-inner {
@@ -9366,7 +9451,12 @@ tbody.collapse.show {
       padding-bottom: 1rem;
       text-align: left; }
       .intro .link_groups a {
-        margin: 0 1.5rem; } }
+        margin: 0 1.5rem; }
+  .list_construction .place__item {
+    width: 320px;
+    margin-right: 25px !important; }
+    .list_construction .place__item:nth-child(even) {
+      margin-right: 0 !important; } }
 
 @media (max-width: 750px) {
   .objects-callback .more {
@@ -9440,7 +9530,26 @@ tbody.collapse.show {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    display: block; } }
+    display: block; }
+  .list_construction {
+    display: block; }
+    .list_construction .place__item {
+      width: 320px;
+      margin-right: auto !important;
+      margin-left: auto; }
+      .list_construction .place__item:nth-child(even) {
+        margin-right: auto !important; }
+    .list_construction .place__pic:before, .list_construction .place__pic:after {
+      height: calc(100% + 5px);
+      left: 50%;
+      width: 94%; }
+    .list_construction .place__pic:before {
+      margin-left: -140px;
+      top: 0px; }
+    .list_construction .place__pic:after {
+      margin-left: -130px;
+      top: 7px;
+      width: calc(94% - 20px); } }
 
 @media (max-width: 670px) {
   .feature .promo {
@@ -10069,7 +10178,27 @@ tbody.collapse.show {
   .review__body,
   .review__bottom {
     padding-left: 1.5rem;
-    padding-right: 1.5rem; } }
+    padding-right: 1.5rem; }
+  .list_construction .place__item {
+    width: 300px; }
+  .list_construction .place__wrapper {
+    padding-bottom: 1rem; }
+    .list_construction .place__wrapper .object__title {
+      font-size: 1.5rem; }
+    .list_construction .place__wrapper .object__info {
+      padding-left: 1rem; }
+  .list_construction .place__top, .list_construction .place__body {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+  .list_construction .place__date {
+    font-size: 1.4rem; }
+  .list_construction .place__translation {
+    margin-top: 1.2rem;
+    font-size: 1.4rem; }
+  .list_construction .place__pic:before, .list_construction .place__pic:after {
+    display: none; }
+  .list_construction .place__body {
+    margin-top: 1rem; } }
 
 @media (max-width: 350px) {
   .intro__left {
@@ -10106,4 +10235,6 @@ tbody.collapse.show {
     padding-right: 2rem;
     width: calc(100% - 14px); }
     .side-inner .callback .call a {
-      font-size: 1.8rem; } }
+      font-size: 1.8rem; }
+  .list_construction .place__item {
+    width: 280px; } }
