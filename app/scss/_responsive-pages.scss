@@ -279,7 +279,8 @@
 	.vacancies-page,
 	.faq-page,
 	.actions-page,
-	.news-page{
+	.news-page,
+	.action-page{
 		.offset-col-1{
 			margin-left: 0;
 		}
@@ -359,8 +360,12 @@
 		font-size: 2rem;
 	}
 
-	.news-page main{
-		padding-right: 5rem;
+	.news-page,
+	.action-page
+	{
+		main{
+			padding-right: 5rem;
+		}
 	}
 
 	.material{
@@ -1633,7 +1638,8 @@
 	.vacancies-page,
 	.actions-page,
 	.faq-page,
-	.news-page
+	.news-page,
+	.action-page
 	{
 		.side{
 			margin-left: -24px;			
@@ -1979,7 +1985,8 @@
 	.vacancies-page,
 	.faq-page,
 	.actions-page,
-	.news-page
+	.news-page,
+	.action-page
 	{
 		.main{
 			display: block;
@@ -2014,7 +2021,8 @@
 	.vacancies-page,
 	.faq-page,
 	.actions-page,
-	.news-page
+	.news-page,
+	.action-page
 	{
 		.neck .col-7{
 			flex-basis: 100%;
@@ -2065,8 +2073,13 @@
 	main{
 		font-size: 1.5rem;
 	}
-	.news-page main{
-		padding-right: 0;
+
+
+	.news-page,
+	.action-page{
+		main{
+			padding-right: 0;
+		}
 	}
 
 	.materials{
@@ -2907,11 +2920,13 @@
 		}
 	}
 
-	.news-page{
+	.news-page,
+	.action-page{
 		.neck{
 			.head{
 				.flexbox{
 					display: block;
+					width: 100%;
 					.title{
 						padding-right: 0;
 					}
@@ -3044,12 +3059,17 @@
 	}
 
 
-	.neck .tabs{
-		margin-left: 3rem;
-		font-size: 1.5rem;
-		.tab a{
-			padding-left: 1rem;
-			padding-right: 1rem;
+	.neck{
+		.tabs{
+			margin-left: 3rem;
+			font-size: 1.5rem;
+			.tab a{
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+		}
+		.title{
+			line-height: 1.3;
 		}
 	}
 
@@ -3269,6 +3289,15 @@
 
 	main{
 		font-size: 1.5rem;
+	}
+
+	.content-bottom .subscribe{
+		padding-left: 2rem;
+		padding-right: 2rem;
+		&__text{
+			font-size: 1.5rem;
+			text-align: center;
+		}
 	}
 }
 
@@ -3751,7 +3780,8 @@
 
 
 	.text-page,
-	.news-page{
+	.news-page,
+	.action-page{
 		main{
 			text-align: justify;
 			font-size: 1.4rem;
@@ -3763,6 +3793,10 @@
 			text-align: justify;
 			width: 280px;
 		}
+	}
+
+	.materials .heading{
+		font-size: 2.8rem !important;
 	}
 }
 
@@ -3848,5 +3882,9 @@
 		}
 	}
 
+
+	.materials .heading{
+		// font-size: 2rem !important;
+	}
 
 }
