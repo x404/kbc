@@ -297,10 +297,10 @@
 			<!-- =filter -->
 			<div class="container">
 				<div class="row">
-					<div class="filter">
+					<div class="filter filter-single">
 						<p class="title">Наши объекты по программе ЖНК </p>
 						<div class="flexbox">
-							<div class="cell">
+							<div class="cell cell-select">
 								<div class="objects-select__wrap">
 									<select name="obj2[]"
 										multiple
@@ -326,7 +326,7 @@
 									</select>	
 								</div>
 							</div>
-							<div class="cell flex-cv">
+							<div class="cell cell-checkbox flex-cv">
 								<div class="room__group">
 									<div class="room__checkbox">
 										<input type="checkbox" class="checkbox" id="checkbox1" />
@@ -350,9 +350,9 @@
 									</div>
 								</div>
 							</div>
-							<div class="cell">
+							<div class="cell cell-slider">
 								<p class="cell__title">Стоимость</p>
-								<div class="slider">
+								<div class="cell__wrapper">
 									<div class="slider">
 										<div id="slider-cost2"></div>
 									</div>
@@ -363,9 +363,9 @@
 									</div>
 								</div>
 							</div>
-							<div class="cell">
+							<div class="cell cell-slider cell-slider-area">
 								<p class="cell__title">Площадь</p>
-								<div class="slider">
+								<div class="cell__wrapper">
 									<div class="slider">
 										<div id="slider-area2"></div>
 									</div>
@@ -376,74 +376,74 @@
 									</div>
 								</div>
 							</div>
-							<div class="cell">
+							<div class="cell cell-buttons">
 								<a href="#" class="showflat icon-flats">
 									Показать <br> <span id="countflat2">256 квартир</span>
 								</a>
 							</div>
 						</div>
-							<script>
+						<script>
 
-								var handlesSlider3 = document.getElementById('slider-cost2'),
-									cost2from = document.getElementById('cost2-from'),
-									cost2to = document.getElementById('cost2-to');
-
-
-								var handlesSlider4 = document.getElementById('slider-area2'),
-									area2from = document.getElementById('area2-from'),
-									area2to = document.getElementById('area2-to');
+							var handlesSlider3 = document.getElementById('slider-cost2'),
+								cost2from = document.getElementById('cost2-from'),
+								cost2to = document.getElementById('cost2-to');
 
 
-								// цена - коммерческое
-								noUiSlider.create(handlesSlider3, {
-									start: [ 40, 120 ],
-									connect: true,
-									range: {
-										'min': 20,
-										'max': 150
-									}
-								});
-
-								handlesSlider3.noUiSlider.on('update', function(values, handle){
-									cost2from.value = 'от ' + parseInt(values[0]) + ' млн. руб';
-									cost2to.value = 'от ' + parseInt(values[1]) + ' млн. руб';
-								});
-								cost2from.addEventListener('change', function ( ) {
-									var value = this.value;
-									value = value.replace(/\D+/g,"");
-									handlesSlider3.noUiSlider.set([value, null]);
-								});
-								cost2to.addEventListener('change', function ( ) {
-									var value = this.value;
-									value = value.replace(/\D+/g,"");
-									handlesSlider3.noUiSlider.set([null, value]);
-								});	
+							var handlesSlider4 = document.getElementById('slider-area2'),
+								area2from = document.getElementById('area2-from'),
+								area2to = document.getElementById('area2-to');
 
 
-								// площадь - коммерческое
-								noUiSlider.create(handlesSlider4, {
-									start: [ 40, 120 ],
-									connect: true,
-									range: {
-										'min': 25,
-										'max': 250
-									}
-								});
-								handlesSlider4.noUiSlider.on('update', function(values, handle){
-									area2from.value = 'от ' + parseInt(values[0]) + ' м.кв.';
-									area2to.value = 'от ' + parseInt(values[1]) + ' м.кв.';
-								});
-								area2from.addEventListener('change', function ( ) {
-									var value = this.value;
-									value = value.replace(/\D+/g,"");
-									handlesSlider4.noUiSlider.set([value, null]);
-								});
-								area2to.addEventListener('change', function ( ) {
-									var value = this.value;
-									value = value.replace(/\D+/g,"");
-									handlesSlider4.noUiSlider.set([null, value]);
-								});	
-							</script>
+							// цена - коммерческое
+							noUiSlider.create(handlesSlider3, {
+								start: [ 40, 120 ],
+								connect: true,
+								range: {
+									'min': 20,
+									'max': 150
+								}
+							});
+
+							handlesSlider3.noUiSlider.on('update', function(values, handle){
+								cost2from.value = 'от ' + parseInt(values[0]) + ' млн. руб';
+								cost2to.value = 'от ' + parseInt(values[1]) + ' млн. руб';
+							});
+							cost2from.addEventListener('change', function ( ) {
+								var value = this.value;
+								value = value.replace(/\D+/g,"");
+								handlesSlider3.noUiSlider.set([value, null]);
+							});
+							cost2to.addEventListener('change', function ( ) {
+								var value = this.value;
+								value = value.replace(/\D+/g,"");
+								handlesSlider3.noUiSlider.set([null, value]);
+							});	
+
+
+							// площадь - коммерческое
+							noUiSlider.create(handlesSlider4, {
+								start: [ 40, 120 ],
+								connect: true,
+								range: {
+									'min': 25,
+									'max': 250
+								}
+							});
+							handlesSlider4.noUiSlider.on('update', function(values, handle){
+								area2from.value = 'от ' + parseInt(values[0]) + ' м.кв.';
+								area2to.value = 'от ' + parseInt(values[1]) + ' м.кв.';
+							});
+							area2from.addEventListener('change', function ( ) {
+								var value = this.value;
+								value = value.replace(/\D+/g,"");
+								handlesSlider4.noUiSlider.set([value, null]);
+							});
+							area2to.addEventListener('change', function ( ) {
+								var value = this.value;
+								value = value.replace(/\D+/g,"");
+								handlesSlider4.noUiSlider.set([null, value]);
+							});	
+						</script>
 					</div>
 				</div>
 			</div>
@@ -475,7 +475,7 @@
 								</div>
 								<div class="row">
 									<label class="title" for="radio1">Срок кредита</label>
-									<div class="flexbox">
+									<div class="flexbox radio-groups">
 										<input type="radio" class="radio" id="radio1" name="radio" value="3" checked="checked" />
 										<label for="radio1">3 года (под 5% годовых)</label>
 						
@@ -1264,7 +1264,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="cell flex-cv">
+							<div class="cell cell-checkbox flex-cv">
 								<div class="room__group">
 									<div class="room__checkbox">
 										<input type="checkbox" class="checkbox" id="fcheckbox1" />
@@ -1288,33 +1288,37 @@
 									</div>
 								</div>
 							</div>
-							<div class="cell">
+							<div class="cell cell-slider">
 								<p class="cell__title">Стоимость</p>
-								<div class="slider">
+								<div class="cell__wrapper">
 									<div class="slider">
-										<div id="fslider-cost"></div>
-									</div>
-									<div class="slider_controls">
-										<input type="text" id="fcost-from" class="param_control" placeholder="от"  /> 
-										<span class="separate"> — </span>
-										<input type="text" id="fcost-to" class="param_control" placeholder="до"  />
+										<div class="slider">
+											<div id="fslider-cost"></div>
+										</div>
+										<div class="slider_controls">
+											<input type="text" id="fcost-from" class="param_control" placeholder="от"  /> 
+											<span class="separate"> — </span>
+											<input type="text" id="fcost-to" class="param_control" placeholder="до"  />
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="cell">
+							<div class="cell cell-slider cell-slider-area">
 								<p class="cell__title">Площадь</p>
-								<div class="slider">
+								<div class="cell__wrapper">
 									<div class="slider">
-										<div id="fslider-area"></div>
-									</div>
-									<div class="slider_controls">
-										<input type="text" id="farea-from" class="param_control" placeholder="от"  />
-										<span class="separate"> — </span>
-										<input type="text" id="farea-to" class="param_control" placeholder="до"  />
+										<div class="slider">
+											<div id="fslider-area"></div>
+										</div>
+										<div class="slider_controls">
+											<input type="text" id="farea-from" class="param_control" placeholder="от"  />
+											<span class="separate"> — </span>
+											<input type="text" id="farea-to" class="param_control" placeholder="до"  />
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="cell">
+							<div class="cell cell-buttons">
 								<a href="#" class="showflat icon-flats">
 									Показать <br> <span id="fcountflat">256 квартир</span>
 								</a>
