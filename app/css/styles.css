@@ -8497,7 +8497,51 @@ tbody.collapse.show {
     .product__item:nth-child(4n) {
       margin-right: 2.1rem; }
     .product__item:nth-child(3n) {
-      margin-right: 0; } }
+      margin-right: 0; }
+  .card_flat .carousel {
+    width: 600px; }
+    .card_flat .carousel img {
+      max-width: 100%; }
+    .card_flat .carousel .owl-carousel {
+      margin-top: 0; }
+  .card_flat .card__description .description__body {
+    height: auto; }
+    .card_flat .card__description .description__body .title {
+      font-size: 3.5rem; }
+    .card_flat .card__description .description__body .object {
+      display: block; }
+    .card_flat .card__description .description__body .more {
+      margin-top: 1rem; }
+  .card_flat .card__description .description__bottom .left .price {
+    font-size: 2.5rem; }
+  .card_flat .card__description .description__bottom .right .btn {
+    height: 50px;
+    font-size: 1.6rem; }
+    .card_flat .card__description .description__bottom .right .btn:before {
+      top: 10px; }
+  .flat-page .card__description .description__body, .flat-page .card__description .description__bottom {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem; }
+  .offer {
+    display: block; }
+    .offer__left, .offer__right {
+      display: flex;
+      align-items: center;
+      padding-right: 0; }
+    .offer__right {
+      margin-top: 1.5rem; }
+    .offer .title {
+      margin-right: 1rem; }
+  .mortgage__item {
+    width: 25%; }
+  .installmentbox__left {
+    flex-basis: 70%;
+    padding-left: 300px; }
+  .additional_info .offset-col-1 {
+    margin-left: 0; }
+  .additional_info .similar_product {
+    flex-grow: 1;
+    padding-right: 50px; } }
 
 @media (max-width: 1500px) {
   .intro__right {
@@ -8644,7 +8688,33 @@ tbody.collapse.show {
     padding-right: 600px; }
   .about-page .calculator {
     background-size: 25%;
-    padding-left: 450px; } }
+    padding-left: 450px; }
+  .flat-page .table-flats td {
+    font-size: 1.4rem; }
+  .flat-page .card__description {
+    flex-basis: 430px;
+    padding-left: 20px; }
+    .flat-page .card__description .description__body .title {
+      font-size: 3rem; }
+    .flat-page .card__description .description__body .plage {
+      font-size: 1.6rem; }
+    .flat-page .card__description .description__bottom .left .price {
+      font-size: 2.2rem; }
+    .flat-page .card__description .description__bottom .right .btn {
+      font-size: 1.5rem;
+      height: 44px;
+      padding-left: 48px; }
+      .flat-page .card__description .description__bottom .right .btn:before {
+        left: 14px;
+        top: 7px; }
+  .installmentbox__left {
+    flex-basis: 55%;
+    padding-left: 300px;
+    width: 910px; }
+    .installmentbox__left .column {
+      width: 40%; }
+  .offer .title {
+    font-size: 2rem; } }
 
 @media (max-width: 1350px) {
   .table-flats td {

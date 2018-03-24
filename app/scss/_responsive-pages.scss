@@ -435,6 +435,98 @@
 		}
 	}
 	// =/CATALOG
+
+
+	// FLAT
+	.card_flat{
+		.carousel{
+			width: 600px;
+			img{
+				max-width: 100%;
+			}
+
+			.owl-carousel{
+				margin-top: 0;
+			}
+		}
+		.card__description{
+			.description__body{
+				height: auto;
+				.title{
+					font-size: 3.5rem;
+				}
+				.object{
+					display: block;
+				}
+				.more{
+					margin-top: 1rem;
+				}
+			}
+			.description__bottom{
+				.left .price{
+					font-size: 2.5rem;
+				}
+				.right{
+					.btn{
+						height: 50px;
+						font-size: 1.6rem;
+						&:before{
+							top: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.flat-page{
+		.card__description{
+			.description{
+				&__body,
+				&__bottom{
+					padding-left: 3.5rem;
+					padding-right: 3.5rem;
+				}
+			}
+		}
+	}
+	.offer{
+		display: block;
+		&__left,
+		&__right{
+			display: flex;
+			align-items: center;
+			padding-right: 0;
+		}
+
+		&__right{
+			margin-top: 1.5rem;
+		}
+		.title{
+			margin-right: 1rem;
+		}
+	}
+	.mortgage__item{
+		width: 25%;
+	}
+
+	.installmentbox{
+		&__left{
+			flex-basis: 70%;
+			padding-left: 300px;
+		}
+	}
+
+	.additional_info{
+		.offset-col-1{
+			margin-left: 0;
+		}
+		.similar_product{
+			flex-grow: 1;
+			padding-right: 50px;
+		}
+	}
+	// =/FLAT
 }
 
 
@@ -712,6 +804,52 @@
 		}
 	}
 
+
+	// =FLAT
+	.flat-page{
+		.table-flats td{
+			font-size: 1.4rem;
+		}
+		.card__description{
+			flex-basis: 430px;
+			padding-left: 20px;
+			.description__body{
+				.title{
+					font-size: 3rem;
+				}
+				.plage{
+					font-size: 1.6rem;
+				}
+			}
+			.description__bottom{
+				.left .price{
+					font-size: 2.2rem;
+				}
+				.right .btn{
+					font-size: 1.5rem;
+					height: 44px;
+					padding-left: 48px;
+					&:before{
+						left: 14px;
+						top: 7px;
+					}
+				}
+			}
+		}
+
+	}
+	.installmentbox__left{
+		flex-basis: 55%;
+		padding-left: 300px;
+		width: 910px;
+		.column{
+			width: 40%;
+		}
+	}
+	.offer .title{
+		font-size: 2rem;
+	}
+	// =/FLAT
 }
 
 @media (max-width: 1350px){
