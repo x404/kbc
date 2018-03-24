@@ -235,6 +235,7 @@
 		img{
 			@include transition-param(transform);
 			@extend .loader;
+			width: auto;
 		}
 		&:after{
 			@extend .before;
@@ -271,19 +272,22 @@
 
 	&__pic{
 		@extend .flex-center;
-		height: 170px;
+		// height: 170px;
+		height: auto;
 		overflow: hidden;
 		position: relative;
+		text-align: center;
 		width: 240px;
 		&.no-pic{
+			height: 170px;
 			@include gradient-vertical(#e2e2e2, #e2e2e2);
 			&:before{
-				@extend .before;
-				width: 100%;
-				left: 0;
-				top: 0;
-				height: 100%;
-				background: url(../images/noimage.png) no-repeat center;
+				// @extend .before;
+				// width: 100%;
+				// left: 0;
+				// top: 0;
+				// height: 100%;
+				// background: url(../images/noimage.png) no-repeat center;
 			}
 		}
 	}

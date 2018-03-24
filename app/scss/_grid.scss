@@ -80,6 +80,7 @@
 }
 
 
+
 @media (min-width: 1281px) {
 	.container {
 		width: 1250px;
@@ -102,10 +103,6 @@
 
 
 
-.table-responsive {
-}
-
-
 @media screen and (max-width: 1149px) {
 	.table-responsive {
 		overflow-x: auto;
@@ -125,4 +122,10 @@
 			}
 		}
 	}
+}
+
+
+@media (max-width: 1199px) {
+	.col-md-3{flex: 0 0 30%;}
+	.col-md-7{flex: 0 0 70%;}
 }

@@ -162,6 +162,12 @@
       .table-responsive > table tr th, .table-responsive > table tr td {
         white-space: nowrap; } }
 
+@media (max-width: 1199px) {
+  .col-md-3 {
+    flex: 0 0 30%; }
+  .col-md-7 {
+    flex: 0 0 70%; } }
+
 /*---------------------------------------------------
     SCSS Elements 0.1
   ---------------------------------------------------
@@ -706,7 +712,7 @@ h3 {
 .related .carousel .owl-carousel .owl-next:after, .objects__info:before, .object__item-outer:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .about-partners .partners:after, .big-icon:before, .neck:before, .neck:after, .neck .tabs .tab.active:after, .pagination .prev:before,
 .pagination .next:before, .picking:after, .picking:before, .picking__inner:before, .picking__link span:before, .content-bottom .subscribe:after, .content-bottom .subscribe:before, .sortbox__option-up:after, .sortbox__option-down:after, main ul li:before, .faq-page .head .btn:before,
-.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .favorite__item:after, .table-flats .sort:after, .catalog__item:after, .catalog__item:before, .product__item-inner:after, .product__item-inner:before, .product__item:after, .product__item:hover .product__item-inner:after, .product__item:hover .product__item-inner:before, .product__pic.no-pic:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .house:after, .flat-page .card__description .description__inner:after, .flat-page .card__description .description__inner:before, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .flat-page .card__description .description__bottom:before, .flat-page .card__description .description__bottom:hover:after, .flat-page .card__description .description__bottom:hover:before, .flat-page .card__description .description:after, .installmentbox__left:after, .installmentbox__left:before, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, #calc-gnk-form .alert:before, .complex-page .complex__left:before, .complex-page .complex__panel .video .bg:before, .complex-page .complex__panel .video .bg:after, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a span:after, .complex-page .complex__panel .house:after, .complex-page .about main .heading:after, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item__body:after, .about-page .carousel .item__body:before, .about-page .about .advantages:after, .about-page .about .advantages:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .about-page .calculator .calc-bottom:after, .about-page .calculator .calc-bottom:before, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .example__pic a:after, .calculator-page .example__pic a:before, .calculator-page .example__pic:after, .calculator-page .example__pic:before, .calculator-page .related__item:after, .calculator-page .related__item:before {
+.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .favorite__item:after, .table-flats .sort:after, .catalog__item:after, .catalog__item:before, .product__item-inner:after, .product__item-inner:before, .product__item:after, .product__item:hover .product__item-inner:after, .product__item:hover .product__item-inner:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .house:after, .flat-page .card__description .description__inner:after, .flat-page .card__description .description__inner:before, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .flat-page .card__description .description__bottom:before, .flat-page .card__description .description__bottom:hover:after, .flat-page .card__description .description__bottom:hover:before, .flat-page .card__description .description:after, .installmentbox__left:after, .installmentbox__left:before, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, #calc-gnk-form .alert:before, .complex-page .complex__left:before, .complex-page .complex__panel .video .bg:before, .complex-page .complex__panel .video .bg:after, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a span:after, .complex-page .complex__panel .house:after, .complex-page .about main .heading:after, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item__body:after, .about-page .carousel .item__body:before, .about-page .about .advantages:after, .about-page .about .advantages:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .about-page .calculator .calc-bottom:after, .about-page .calculator .calc-bottom:before, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .example__pic a:after, .calculator-page .example__pic a:before, .calculator-page .example__pic:after, .calculator-page .example__pic:before, .calculator-page .related__item:after, .calculator-page .related__item:before {
   content: "";
   display: block;
   position: absolute; }
@@ -5090,7 +5096,8 @@ main {
       width: 100%; }
   .product__item img {
     -webkit-transition: transform 0.2s ease-out;
-    transition: transform 0.2s ease-out; }
+    transition: transform 0.2s ease-out;
+    width: auto; }
   .product__item:after {
     -webkit-transition: border 0.2s ease-out;
     transition: border 0.2s ease-out;
@@ -5132,22 +5139,18 @@ main {
   height: 100%; }
 
 .product__pic {
-  height: 170px;
+  height: auto;
   overflow: hidden;
   position: relative;
+  text-align: center;
   width: 240px; }
   .product__pic.no-pic {
+    height: 170px;
     background-image: -webkit-linear-gradient(top, #e2e2e2 0%, #e2e2e2 100%);
     background-image: -o-linear-gradient(top, #e2e2e2 0%, #e2e2e2 100%);
     background-image: linear-gradient(to bottom, #e2e2e2 0%, #e2e2e2 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFE2E2E2', endColorstr='#FFE2E2E2', GradientType=0); }
-    .product__pic.no-pic:before {
-      width: 100%;
-      left: 0;
-      top: 0;
-      height: 100%;
-      background: url(../images/noimage.png) no-repeat center; }
 
 .product__title {
   font-size: 1.6rem;
@@ -7723,12 +7726,12 @@ tbody.collapse.show {
   .footer__logo {
     margin-top: 0; }
   .footer .col-1 {
+    align-items: center;
     border-top: 3px solid #253628;
-    order: 3;
-    flex-basis: 100%;
-    padding-top: 3rem;
     display: flex;
-    align-items: center; }
+    flex-basis: 100%;
+    order: 3;
+    padding-top: 3rem; }
   .footer__content {
     padding-left: 0; }
   .footer__logo {
@@ -8486,7 +8489,15 @@ tbody.collapse.show {
     font-size: 1.5rem;
     width: 30%; }
   .about-page .filter {
-    padding-top: 3rem; } }
+    padding-top: 3rem; }
+  .product__pic {
+    width: 100%; }
+  .product__item {
+    width: calc(33% - 1.8rem); }
+    .product__item:nth-child(4n) {
+      margin-right: 2.1rem; }
+    .product__item:nth-child(3n) {
+      margin-right: 0; } }
 
 @media (max-width: 1500px) {
   .intro__right {
@@ -8972,7 +8983,19 @@ tbody.collapse.show {
     width: 685px; }
   .calc-bottom {
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+  .list_product {
+    justify-content: space-between; }
+  .product__pic {
+    width: 100%; }
+  .product__item {
+    width: calc(50% - 1.8rem);
+    max-width: 320px;
+    margin-right: 0 !important; }
+    .product__item:nth-child(4n) {
+      margin-right: 0; }
+    .product__item:nth-child(3n) {
+      margin-right: 0; } }
 
 @media (max-width: 1170px) {
   .about-partners .partners {
@@ -9533,7 +9556,15 @@ tbody.collapse.show {
       padding-right: 20px;
       width: 400px; }
   .about-page .carousel .item__title {
-    font-size: 2.2rem; } }
+    font-size: 2.2rem; }
+  .sidebar {
+    font-size: 1.4rem; }
+    .sidebar a,
+    .sidebar span {
+      padding-left: 10px;
+      padding-right: 5px; }
+    .sidebar a:hover {
+      padding-left: 20px; } }
 
 @media (max-width: 920px) {
   .side-inner {
@@ -10743,4 +10774,13 @@ tbody.collapse.show {
     padding-left: 0;
     padding-right: 0;
     text-align: center;
-    width: 100%; } }
+    width: 100%; }
+  .list_product {
+    display: block;
+    padding-left: 0; }
+  .product__item {
+    width: 100%; }
+    .product__item-inner:after, .product__item-inner:before {
+      display: none !important; }
+    .product__item:after {
+      left: 0; } }

@@ -122,6 +122,7 @@
 			}
 		}
 	}
+
 }
 
 @media (max-width: 1399px){
@@ -270,13 +271,12 @@
 			margin-top: 0;
 		}
 		.col-1{
-			border-top: 3px solid #253628;
-			order: 3;
-			flex-basis: 100%;
-			padding-top: 3rem;
-			display: flex;
 			align-items: center;
-			// justify-content: space-between;
+			border-top: 3px solid #253628;
+			display: flex;
+			flex-basis: 100%;
+			order: 3;
+			padding-top: 3rem;
 		}
 		&__content{
 			padding-left: 0;
@@ -357,6 +357,8 @@
 			padding: 2.5rem 0 2rem;
 		}
 	}
+
+
 }
 
 @media (max-width: 1024px){
