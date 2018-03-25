@@ -109,6 +109,7 @@
   	right: 47px;
   	top: 55px;
   	position: absolute;
+  	z-index: 99;
   	svg{
 		transition: .3s transform;
   	}
@@ -236,6 +237,14 @@
 }
 
 #filter{
+	.tab-content{
+		padding-left: 4rem;
+	}
+
+	.param_control{
+		width: calc(50% - 15px);
+	}
+
 	.modal-dialog{
 		width: 1600px;
 	}
@@ -247,6 +256,8 @@
 	}
 
 	.cell{
+		margin-left: 1rem;
+		margin-right: 1rem;
 		width: auto;
 	}
 

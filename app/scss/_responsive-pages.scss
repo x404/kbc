@@ -1282,6 +1282,20 @@
 				display: none;
 			}
 		}
+
+	}
+
+	.condo-page,
+	#filter
+	{
+		.cell-buttons .showflat{
+			padding-left: 0;
+			justify-content: center;
+			&:before{
+				left: 50%;
+				margin-left: -120px;
+			}
+		}
 	}
 
 	.action{
