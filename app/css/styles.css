@@ -8714,7 +8714,9 @@ tbody.collapse.show {
     .installmentbox__left .column {
       width: 40%; }
   .offer .title {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .card_flat .carousel {
+    width: 530px; } }
 
 @media (max-width: 1350px) {
   .table-flats td {
@@ -9022,7 +9024,29 @@ tbody.collapse.show {
   .filter-single .showflat:before {
     top: 10px !important; }
   .filter-single .cell-slider {
-    width: 280px; } }
+    width: 280px; }
+  .installmentbox {
+    padding-bottom: 3rem; }
+    .installmentbox .row {
+      display: block; }
+    .installmentbox__left {
+      padding-left: 420px;
+      width: 100%;
+      flex-basis: 100%; }
+    .installmentbox__right {
+      flex-direction: row;
+      align-items: center;
+      margin-top: 3.5rem;
+      padding-left: 0;
+      justify-content: space-between; }
+      .installmentbox__right .title,
+      .installmentbox__right .variant {
+        width: 25%; }
+  .mortgage {
+    padding: 3.5rem 0 2.5rem; }
+    .mortgage__item {
+      width: 33.3%;
+      margin-bottom: 2.5rem; } }
 
 @media (max-width: 1199px) {
   .about-page .carousel .item {
@@ -9347,7 +9371,36 @@ tbody.collapse.show {
     .about-page .list_construction .place__pic:after {
       margin-left: -95px;
       top: 7px;
-      width: calc(88% - 20px); } }
+      width: calc(88% - 20px); }
+  .flat-page .card__visual {
+    flex-basis: 100%; }
+  .flat-page .card__description {
+    margin-top: 2rem;
+    flex-basis: 100%; }
+  .flat-page .card__flat .row {
+    display: block; }
+  .offer {
+    display: flex; }
+    .offer__left {
+      margin-right: 5rem; }
+  .installmentbox__left {
+    background-position: 30px center;
+    padding-left: 350px; }
+    .installmentbox__left .title {
+      font-size: 3rem; }
+    .installmentbox__left .flexbox {
+      width: 100%; }
+    .installmentbox__left .column {
+      width: 48%; }
+  .mortgage__item {
+    width: 50%; }
+    .mortgage__item a img {
+      height: auto;
+      width: 100%; }
+  .additional_info .similar_product {
+    flex-grow: 0;
+    width: 624px;
+    flex-basis: 624px; } }
 
 @media (max-width: 1050px) {
   .vacancies-page .side,
@@ -9634,7 +9687,46 @@ tbody.collapse.show {
       padding-left: 10px;
       padding-right: 5px; }
     .sidebar a:hover {
-      padding-left: 20px; } }
+      padding-left: 20px; }
+  .icon-check {
+    padding-left: 33px; }
+  .installmentbox__left {
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+    .installmentbox__left .category {
+      font-size: 1.6rem; }
+    .installmentbox__left .title {
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem; }
+    .installmentbox__left .flexbox {
+      display: block; }
+    .installmentbox__left .column {
+      padding-right: 2rem !important;
+      width: 100%; }
+  .installmentbox__right {
+    flex-wrap: wrap; }
+    .installmentbox__right .title {
+      font-size: 2.4rem;
+      flex-grow: 1;
+      width: 100%;
+      padding-bottom: 0; }
+    .installmentbox__right .variant {
+      width: 31%; }
+    .installmentbox__right .btn {
+      font-size: 1.8rem;
+      width: 250px;
+      height: 5rem; }
+  .additional_info {
+    display: block;
+    width: 100%; }
+    .additional_info .similar_product {
+      flex-basis: 100%;
+      width: 100%;
+      padding-right: 0; }
+    .additional_info .callback {
+      margin-top: 2.5rem; }
+  .additional_info {
+    padding-top: 3rem; } }
 
 @media (max-width: 920px) {
   .side-inner {
@@ -9666,7 +9758,13 @@ tbody.collapse.show {
   .documents .heading {
     text-align: center; }
   .filter-single .title {
-    text-align: center; } }
+    text-align: center; }
+  .installmentbox__left {
+    width: 98%; }
+  .card_flat .carousel {
+    width: 500px; }
+  .flat-page .card__description {
+    flex-basis: 98%; } }
 
 @media (max-width: 768px) {
   .feature .container {
@@ -9822,7 +9920,13 @@ tbody.collapse.show {
   .materials {
     margin-bottom: 0; }
     .materials .material__item {
-      width: 45%; } }
+      width: 45%; }
+  .installmentbox__right .variant {
+    width: 50%; }
+  .offer {
+    display: block; }
+    .offer__left {
+      margin-right: 0; } }
 
 @media (max-width: 720px) {
   .objects-callback .side .callback {
@@ -9901,7 +10005,16 @@ tbody.collapse.show {
     .about-page .list_construction .place__pic:after {
       margin-left: -140px;
       top: 7px;
-      width: calc(94% - 20px); } }
+      width: calc(94% - 20px); }
+  .flat-page .card__visual {
+    display: none; }
+  .installmentbox__left {
+    background-image: none;
+    padding-left: 25px; }
+  .additional_info .callback {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; } }
 
 @media (max-width: 670px) {
   .feature .promo {
@@ -10220,7 +10333,15 @@ tbody.collapse.show {
         .about-page .scheme .steps .step:last-child {
           margin-bottom: 3rem; }
   #calc-gnk-form .row .slider {
-    width: 160px; } }
+    width: 160px; }
+  .installmentbox__left {
+    padding-top: 2rem; }
+    .installmentbox__left .title {
+      font-size: 2.4rem;
+      margin-top: 1.5rem; }
+  .installmentbox__right .variant__cifr {
+    font-size: 4rem;
+    flex-basis: 65px; } }
 
 @media (max-width: 550px) {
   .objects header {
@@ -10427,7 +10548,11 @@ tbody.collapse.show {
       font-size: 1.5rem;
       text-align: center; }
   .about-page .carousel .item__body {
-    padding-left: 30px; } }
+    padding-left: 30px; }
+  .mortgage__item {
+    width: 100%; }
+  .heading {
+    font-size: 2.6rem !important; } }
 
 @media (max-width: 480px) {
   .feature .promo .type-1 .title {
@@ -10556,7 +10681,14 @@ tbody.collapse.show {
   .about-page .list_construction .place__pic:after {
     margin-left: -110px;
     top: 7px;
-    width: calc(94% - 20px); } }
+    width: calc(94% - 20px); }
+  .installmentbox__right {
+    display: block; }
+    .installmentbox__right .title {
+      padding-bottom: 1rem; }
+    .installmentbox__right .variant {
+      margin-bottom: 1.5rem;
+      width: 100%; } }
 
 @media (max-width: 450px) {
   .about-partners {
@@ -10760,7 +10892,20 @@ tbody.collapse.show {
     top: 7px;
     width: calc(94% - 20px); }
   .about-page .scheme .steps .step:before {
-    left: -50px; } }
+    left: -50px; }
+  .installmentbox__left .btn.more {
+    font-size: 1.6rem;
+    height: 5.8rem; }
+    .installmentbox__left .btn.more:before {
+      top: 19px; }
+  .installmentbox__left .category {
+    font-size: 1.4rem; }
+  .offer__left, .offer__right {
+    display: block; }
+    .offer__left .title br, .offer__right .title br {
+      display: none; }
+  .flat-page .main {
+    padding-bottom: 3rem; } }
 
 @media (max-width: 370px) {
   #calc-gnk-form .alert {
@@ -10810,12 +10955,14 @@ tbody.collapse.show {
   .list_faq .faq__item .text {
     padding-right: 1rem !important; }
   .side-inner .callback,
-  .documents .callback {
+  .documents .callback,
+  .additional_info .callback {
     padding-left: 2rem;
     padding-right: 2rem;
     width: calc(100% - 14px); }
     .side-inner .callback .call a,
-    .documents .callback .call a {
+    .documents .callback .call a,
+    .additional_info .callback .call a {
       font-size: 1.8rem; }
   .list_construction .place__item {
     width: 280px; }
@@ -10853,4 +11000,12 @@ tbody.collapse.show {
     .product__item-inner:after, .product__item-inner:before {
       display: none !important; }
     .product__item:after {
-      left: 0; } }
+      left: 0; }
+  .flat-page .card__description .description {
+    display: none; }
+  .installmentbox__left {
+    padding-right: 3rem; }
+  .heading {
+    font-size: 2.4rem !important; }
+  .additional_info .heading {
+    padding-bottom: 2rem; } }
