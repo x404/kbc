@@ -1,3 +1,12 @@
+@media (max-width: 1700px){
+	.list_construction  .tab-content .construction_carousel{
+		.owl-nav{
+			width: 99%;
+		}
+	}
+}
+
+
 @media (max-width: 1650px){
 	.big-icon{
 		padding-left: 65px;
@@ -313,43 +322,47 @@
 
 
 	// CONSTRUCTING
-	.list_construction{
-		.place{
-			&__item{
-				width: calc(25% - 20px);
-			}
-			&__pic{
-				margin-left: auto;
-				margin-right: auto;
-				width: 92%;
-				img{
-					width: 100%;
-					height: auto;
+	.about-page,
+	.construction-page
+	{
+		.list_construction{
+			.place{
+				&__item{
+					width: calc(25% - 20px);
 				}
+				&__pic{
+					margin-left: auto;
+					margin-right: auto;
+					width: 92%;
+					img{
+						width: 100%;
+						height: auto;
+					}
 
 
-				&:before,
-				&:after{
-					height: 215px;
-					left: 50%;
+					&:before,
+					&:after{
+						height: 215px;
+						left: 50%;
+					}
+					&:before{
+						margin-left: -140px;
+						top: 10px;
+						width: 280px;
+					}
+					&:after{
+						margin-left: -130px;
+						top: 15px;
+						width: 260px;
+					}
 				}
-				&:before{
-					margin-left: -140px;
-					top: 10px;
-					width: 280px;
-				}
-				&:after{
-					margin-left: -130px;
-					top: 15px;
-					width: 260px;
-				}
-			}
 
-			&__top,
-			&__body
-			{
-				padding-left: 2rem;
-				padding-right: 2rem;
+				&__top,
+				&__body
+				{
+					padding-left: 2rem;
+					padding-right: 2rem;
+				}
 			}
 		}
 	}
@@ -527,6 +540,52 @@
 		}
 	}
 	// =/FLAT
+
+
+	// =COMPLEX PAGE
+	.complex-page{
+		.complex__left{
+			padding-left: 68px;
+			padding-right: 27px;
+			width: 870px;
+		}
+		.complex .object__meta{
+			padding-top: 5.5rem;
+		}
+		.complex__panel .complex__grouphouse{
+			width: 550px;
+		}
+
+		.about .carousel{
+			width: 675px;
+			.item{
+				img{
+					height: auto;
+					width: 100%;
+				}
+			}
+		}
+
+		.houses .house{
+			&__info .btn{
+				font-size: 1.4rem;
+				width: 235px;
+				// padding-right: 10px;
+			}
+			&__desc{
+				padding-left: 2rem;
+				padding-right: 1rem;
+			}
+			&__item{
+				width: 49%;
+			}
+
+			&__pic{
+				width: 230px;
+			}
+		}
+	}
+	// =/COMPLEX PAGE
 }
 
 
@@ -766,7 +825,10 @@
 
 
 	// CONSTRUCTING
-	.list_construction{
+	.about-page,
+	.construction-page
+	{
+		.list_construction{
 		.place{
 			&__pic{
 				$w: 95%;
@@ -788,6 +850,7 @@
 					width: calc(95% - 20px);
 				}
 			}
+		}
 		}
 	}
 	// =/CONSTRUCTING
@@ -854,6 +917,48 @@
 		width: 530px;
 	}
 	// =/FLAT
+
+	// =COMPLEX PAGE
+	.fixed-navbar{
+		.subnav{
+			ul{
+				justify-content: space-between;
+			}
+			a{
+				padding-left: 1.2rem;
+				padding-right: 1.2rem;
+			}
+		}
+	}
+	.complex-page{
+		.complex__left{
+			padding-left: 68px;
+			padding-right: 27px;	
+			width: 830px;
+		}
+		.complex__right{
+			overflow: hidden;
+			width: 420px;
+		}
+		.complex__panel .complex__grouphouse{
+			width: 510px;
+		}
+
+		.complex__navhouses .nav{
+			width: 230px;
+		}
+
+		.about .carousel{
+			width: 620px;
+		}
+
+		.houses .house{
+			&__info .btn{
+				font-size: 1.3rem;
+			}
+		}
+	}
+	// =/COMPLEX PAGE
 }
 
 @media (max-width: 1350px){
@@ -861,6 +966,31 @@
 		font-size: 1.5rem;
 		padding-left: 1rem;
 		padding-right: 1rem;
+	}
+
+
+	.complex-page .houses{
+		.flexbox{
+			display: block;
+		}
+		.house{
+			&__pic{
+				width: auto;
+			}
+			&__item{
+				min-height: 280px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 2rem;
+				width: 100%;
+				.btn{
+					font-size: 1.4rem;
+				}
+				img{
+					height: 100%;
+				}
+			}
+		}
 	}
 }
 
@@ -1322,42 +1452,53 @@
 
 
 	// CONSTRUCTING
-	.list_construction{
-		.place{
-			&__item{
-				margin-right: 52px;
-				width: calc(33% - 35px);
-				&:nth-child(4n){
-					margin-right: auto;
+	.about-page,
+	.construction-page
+	{
+		.list_construction{
+			.place{
+				&__item{
+					margin-right: 52px;
+					width: calc(33% - 35px);
+					&:nth-child(4n){
+						margin-right: auto;
+					}
+					&:nth-child(3n){
+						margin-right: 0;
+					}
 				}
-				&:nth-child(3n){
-					margin-right: 0;
+
+				&__pic{
+					$w: 95%;
+					$d: -148px;
+					$t: -5px;
+					&:before,
+					&:after{
+						height: calc(100% + 5px);
+						left: 50%;
+						width: $w;
+					}
+					&:before{
+						margin-left: $d;
+						top: 0px;
+					}
+					&:after{
+						margin-left: $d + 10px;
+						top: $t + 12px;
+						width: calc(95% - 20px);
+					}
 				}
 			}
-
-			&__pic{
-				$w: 95%;
-				$d: -148px;
-				$t: -5px;
-				&:before,
-				&:after{
-					height: calc(100% + 5px);
-					left: 50%;
-					width: $w;
-				}
-				&:before{
-					margin-left: $d;
-					top: 0px;
-				}
-				&:after{
-					margin-left: $d + 10px;
-					top: $t + 12px;
-					width: calc(95% - 20px);
-				}
-			}
-
 		}
 	}
+
+.list_construction{
+	.place{
+		&__pic{
+
+		}
+	}	
+}
 	// =/CONSTRUCTING
 
 
@@ -1435,23 +1576,10 @@
 	}
 
 
-	// // CATALOG
-	// .product{
-	// 	&__item{
-	// 		width: calc(33% - 1.8rem);
-	// 		&:nth-child(4n){
-	// 			margin-right: 2.1rem;
-	// 		}
-	// 		&:nth-child(3n){
-	// 			margin-right: 0;
-	// 		}
-	// 	}
-	// }
-	// // =/CATALOG
-
 
 	// FLAT
 	.installmentbox{
+		padding-top: 4rem;
 		padding-bottom: 3rem;
 		.row{
 			display: block;
@@ -1482,6 +1610,148 @@
 		}
 	}
 	// =/FLAT
+
+
+	// =COMPLEX PAGE
+	.fixed-navbar{
+		.subnav{
+			ul{
+			}
+			a{
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+		}
+	}
+	.complex-page{
+		.subnav{
+			ul{
+				justify-content: space-between;
+			}
+			a{
+				padding: 0 1.2rem;
+			}
+		}
+		.complex__left{
+			padding-left: 68px;
+			padding-right: 27px;	
+			width: 770px;
+		}
+		.complex__right{
+			overflow: hidden;
+			width: 350px;
+			.tab-content{
+				padding-left: 2rem;
+				padding-right: 1rem;
+				padding-left: 1.5rem;
+			}
+		}
+		.complex__panel .complex__grouphouse{
+			width: 450px;
+		}
+
+		.complex__navhouses .nav{
+			width: 160px;
+		}
+
+		.house__body .table{
+			font-size: 1.4rem;
+		}
+
+		.params{
+			margin-top: 3.5rem;
+			&__cell{
+				height: 130px;
+			}
+
+			&__title{
+				font-size: 1.5rem;
+			}
+			&__value{
+				font-size: 1.7rem;
+			}
+		}
+
+
+		.about{
+			width: 100%;
+			main{
+				font-size: 1.6rem;
+				// width: 680px;
+				flex-basis: 488px;
+				.heading{
+					font-size: 3.2rem;
+				}
+				p{
+					font-size: 1.6rem;
+				}
+			}
+			.carousel{
+				width: 520px;
+				&-outer{
+					flex-basis: 520px;
+					// width: 520px;			
+				}
+			}
+		}
+
+		.houses{
+			margin-top: 7rem;
+			margin-bottom: 2rem;
+		}
+
+		.list_construction{
+			padding-top: 5rem;
+			padding-bottom: 5rem;
+			.heading{
+				font-size: 3.2rem !important;
+			}
+			.place__item{
+				width: 356px;
+			}
+			.place__pic_wrapper{
+				width: 300px;
+				img{
+					height: auto;
+					width: 100%;
+				}
+			}
+
+			.place__pic{
+				$w: 280px;
+				$d: -148px;
+				$t: -5px;
+				&:before,
+				&:after{
+					height: calc(100% + 5px);
+					left: 50%;
+					width: $w;
+				}
+				&:before{
+					margin-left: $d + 10px;
+					top: 0px;
+				}
+				&:after{
+					margin-left: $d + 20px;
+					top: $t + 12px;
+					width: calc(280px - 20px);
+				}
+
+			}
+		}
+
+		.list_reviews{
+			padding-top: 5rem;
+			.heading{
+				font-size: 3.2rem !important;
+			}
+		}
+		.review__text{
+			font-size: 1.4rem;
+		}
+	}
+	// =/COMPLEX PAGE
+
 }
 
 
@@ -2066,7 +2336,6 @@
 					}
 				}
 			}
-
 		}
 	}
 	// =/ABOUT

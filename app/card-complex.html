@@ -449,14 +449,20 @@
 					<div class="params">
 						<div class="params__cell">
 							<div class="params__pic">
-								<img src="/images/params/floors.png" alt="">
+								<picture>
+									<source srcset="/images/params/floors1280.png" media="(max-width: 1280px)">
+									<img src="/images/params/floors.png" alt="">									
+								</picture>
 							</div>
 							<p class="params__title">Этажи </p>
 							<p class="params__value">18</p>
 						</div>
 						<div class="params__cell">
 							<div class="params__pic">
-								<img src="/images/params/decoration.png" alt="">
+								<picture>
+									<source srcset="/images/params/decoration1280.png" media="(max-width: 1280px)">
+									<img src="/images/params/decoration.png" alt="">
+								</picture>
 							</div>
 							<p class="params__title">Отделка</p>
 							<p class="params__value">Чистовая</p>
@@ -508,7 +514,7 @@
 
 								<p>С 2001 года освоено производство изделий тоннельной обделки для строительства Красноярского Метрополитена. За последние годы на предприятии освоили выпуск десятков новых наименований изделий.</p>
 							</main>
-							<div class="col-5 offset-col-1">
+							<div class="col-5 offset-col-1 carousel-outer">
 								<div class="carousel">
 									<div class="owl-carousel" id="complex">
 										<div class="item">
@@ -947,7 +953,15 @@
 										dots: false,
 										items:4,
 										navText: ["", ""],
-										stagePadding : 0
+										stagePadding : 0,
+										responsive:{
+											1650:{
+												items: 4
+											},
+											991:{
+												items: 3
+											}
+										}
 									});
 								})
 							</script>

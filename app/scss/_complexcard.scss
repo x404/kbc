@@ -237,6 +237,7 @@
 					height: 188px;
 					top: 10px;
 					right: 0;
+					border-bottom: none;
 				}
 			}
 		}
@@ -398,6 +399,9 @@
 
 		&__pic{
 			height: 65px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 
 		&__title{
@@ -459,19 +463,21 @@
 			&:after{
 				@extend .before;
 				background-color: rgba(91, 123, 146, .1);
+				width: 100%;
 			}
 
 			&:before{
 				left: -10px;
 				top: 10px;
-				height: 581px;
-				width: 798px;
+				height: calc(100% - 25px);
+				// width: 798px;
 			}
 			&:after{
 				left: -20px;
 				top: 20px;
-				height: 562px;
-				width: 798px;
+				height: calc(100% - 44px);
+				// height: 562px;
+				// width: 798px;
 			}
 
 			.manage{
