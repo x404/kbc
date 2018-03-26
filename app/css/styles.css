@@ -9177,6 +9177,8 @@ tbody.collapse.show {
     height: 400px; }
   .about-page .list_construction .place__item:nth-child(4n) {
     display: none; }
+  .about-page .list_construction .place__wrapper {
+    height: 100%; }
   .filter-single .cell-buttons {
     margin-left: 0; }
   .filter-single .flexbox {
@@ -9279,6 +9281,10 @@ tbody.collapse.show {
       margin-left: -128px;
       top: 7px;
       width: calc(280px - 20px); }
+    .complex-page .list_construction .owl-carousel {
+      width: calc(100% - 8px); }
+      .complex-page .list_construction .owl-carousel .owl-next {
+        margin-right: -14px; }
   .complex-page .list_reviews {
     padding-top: 5rem; }
     .complex-page .list_reviews .heading {
@@ -9331,7 +9337,11 @@ tbody.collapse.show {
 
 @media (max-width: 1170px) {
   .about-partners .partners {
-    margin-left: -6rem; } }
+    margin-left: -6rem; }
+  .list_construction .tab-content .construction_carousel .owl-nav {
+    width: 98%; }
+  .complex-page .list_construction {
+    padding-bottom: 3rem; } }
 
 @media (max-width: 1149px) {
   .feature .news .date .my,
@@ -9638,7 +9648,144 @@ tbody.collapse.show {
   .additional_info .similar_product {
     flex-grow: 0;
     width: 624px;
-    flex-basis: 624px; } }
+    flex-basis: 624px; }
+  .fixed-navbar .subnav ul li {
+    margin-right: 0; }
+  .fixed-navbar .subnav a {
+    font-size: 1.6rem; }
+  .complex-page .subnav {
+    display: none; }
+    .complex-page .subnav ul li {
+      margin-right: 0; }
+    .complex-page .subnav a {
+      padding: 0 1.2rem;
+      font-size: 1.6rem; }
+  .complex-page .complex {
+    display: block; }
+    .complex-page .complex__left {
+      padding-left: 40px;
+      padding-right: 40px;
+      width: 100%;
+      min-height: 0;
+      padding-bottom: 28rem; }
+    .complex-page .complex .object__meta {
+      justify-content: flex-start;
+      padding-top: 3rem; }
+      .complex-page .complex .object__meta .object__composition {
+        margin-left: 3rem;
+        margin-right: .5rem; }
+    .complex-page .complex .object__title {
+      font-size: 3.4rem; }
+    .complex-page .complex__place {
+      font-size: 1.6rem; }
+    .complex-page .complex__text {
+      font-size: 1.5rem; }
+    .complex-page .complex__right {
+      display: flex;
+      overflow: hidden;
+      width: 100%; }
+      .complex-page .complex__right .tab-content {
+        padding-left: 2rem;
+        padding-right: 1rem;
+        padding-left: 1.5rem; }
+    .complex-page .complex__map {
+      width: 50%; }
+      .complex-page .complex__map .btn {
+        font-size: 1.4rem; }
+    .complex-page .complex__navhouses-outer {
+      width: 50%; }
+    .complex-page .complex__navhouses .nav {
+      width: 280px; }
+  .complex-page .complex__panel .complex__grouphouse {
+    width: 620px; }
+  .complex-page .params__title {
+    margin-top: 0.3rem; }
+  .complex-page .params__value {
+    padding-top: 0; }
+  .complex-page .about .flexbox {
+    display: block; }
+  .complex-page .about .heading {
+    padding-bottom: 18px;
+    font-size: 3rem; }
+    .complex-page .about .heading br {
+      display: none; }
+  .complex-page .about main {
+    font-size: 1.5rem; }
+    .complex-page .about main .heading {
+      margin-bottom: 2rem; }
+    .complex-page .about main p {
+      font-size: 1.5rem; }
+  .complex-page .about .carousel {
+    width: 100%;
+    flex-basis: 100%; }
+    .complex-page .about .carousel-outer {
+      flex-basis: 100%;
+      margin-left: 0;
+      margin-top: 3.5rem; }
+  .complex-page .houses {
+    margin-top: 5.3rem;
+    margin-bottom: 2rem; }
+    .complex-page .houses .heading {
+      font-size: 3rem !important; }
+  .complex-page .list_construction {
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+    .complex-page .list_construction .heading {
+      font-size: 3.2rem !important; }
+    .complex-page .list_construction .place__item {
+      width: 297px; }
+    .complex-page .list_construction .place__pic_wrapper {
+      width: 253px; }
+      .complex-page .list_construction .place__pic_wrapper img {
+        height: auto;
+        width: 100%; }
+    .complex-page .list_construction .place__pic:before, .complex-page .list_construction .place__pic:after {
+      height: calc(100% + 5px);
+      left: 50%;
+      width: 240px; }
+    .complex-page .list_construction .place__pic:before {
+      margin-left: -121px;
+      top: 0px; }
+    .complex-page .list_construction .place__pic:after {
+      margin-left: -111px;
+      top: 7px;
+      width: calc(240px - 20px); }
+    .complex-page .list_construction .construction__meta .nav .btn {
+      font-size: 1.4rem;
+      padding: 0 1.4rem; }
+    .complex-page .list_construction .construction__meta .right {
+      margin-right: 0; }
+    .complex-page .list_construction .translation__link {
+      font-size: 2rem; }
+    .complex-page .list_construction .translation .text {
+      font-size: 1.3rem; }
+  .complex-page .list_reviews {
+    padding-top: 5rem; }
+    .complex-page .list_reviews .heading {
+      font-size: 3.2rem !important; }
+    .complex-page .list_reviews .flexbox {
+      justify-content: space-between; }
+    .complex-page .list_reviews .review__body {
+      padding-left: 2.2rem;
+      padding-right: 2rem;
+      margin-top: 1.8rem; }
+    .complex-page .list_reviews .review__text {
+      padding-bottom: 1.5rem; }
+  .complex-page .review__text {
+    font-size: 1.4rem; }
+  .complex-page .review__item {
+    margin-right: 0;
+    width: 32%; }
+  .complex-page .list_construction .tab-content .construction_carousel .owl-nav {
+    width: 100%; }
+  .installmentbox__left .btn {
+    font-size: 1.6rem;
+    padding-right: 2rem; }
+  .installmentbox__left .title {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem; }
+  .mortgage {
+    padding-bottom: .5rem; } }
 
 @media (max-width: 1050px) {
   .vacancies-page .side,
@@ -9658,7 +9805,13 @@ tbody.collapse.show {
     left: 12px; }
   main img.justifyleft {
     float: none;
-    margin-right: 0px; } }
+    margin-right: 0px; }
+  .complex-page .list_construction .tab-content .construction_carousel .owl-nav {
+    width: 99%; } }
+
+@media (max-width: 1010px) {
+  .complex-page .list_construction .tab-content .construction_carousel .owl-nav {
+    width: 98%; } }
 
 @media (max-width: 991px) {
   .feature .promo {
@@ -9964,7 +10117,30 @@ tbody.collapse.show {
     .additional_info .callback {
       margin-top: 2.5rem; }
   .additional_info {
-    padding-top: 3rem; } }
+    padding-top: 3rem; }
+  .complex-page .complex {
+    width: 100%; }
+    .complex-page .complex__left {
+      padding-left: 20px;
+      padding-right: 20px; }
+    .complex-page .complex__place {
+      font-size: 1.5rem; }
+      .complex-page .complex__place .cell {
+        width: 32%; }
+    .complex-page .complex .object__title {
+      font-size: 3rem; }
+    .complex-page .complex__panel .video {
+      width: 254px; }
+    .complex-page .complex__panel .complex__grouphouse {
+      width: 486px; }
+    .complex-page .complex__map {
+      width: 45%; }
+    .complex-page .complex__navhouses-outer {
+      position: relative;
+      z-index: 2;
+      background: #fff; }
+    .complex-page .complex__navhouses .nav {
+      width: 180px; } }
 
 @media (max-width: 920px) {
   .side-inner {
