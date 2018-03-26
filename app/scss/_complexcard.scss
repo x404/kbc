@@ -379,21 +379,21 @@
 
  	// params
 	.params{
-		border: 2px solid #ebeef1;
 		display: flex;
 		justify-content: space-between;
 		margin-top: 5.5rem;
 		width: 100%;
 		text-align: center;
 		&__cell{
+			border: 2px solid #ebeef1;
 			display: flex;
 			justify-content: center;
 			flex-direction: column;
-			border-right: 2px solid #ebeef1;
+			// border-right: 2px solid #ebeef1;
 			height: 190px;
 			width: 230px;
 			&:last-child{
-				border-right: none;
+				// border-right: none;
 			}
 		}
 

@@ -6134,21 +6134,18 @@ main {
   height: 9rem; }
 
 .complex-page .params {
-  border: 2px solid #ebeef1;
   display: flex;
   justify-content: space-between;
   margin-top: 5.5rem;
   width: 100%;
   text-align: center; }
   .complex-page .params__cell {
+    border: 2px solid #ebeef1;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border-right: 2px solid #ebeef1;
     height: 190px;
     width: 230px; }
-    .complex-page .params__cell:last-child {
-      border-right: none; }
   .complex-page .params__pic {
     height: 65px;
     display: flex;
@@ -10138,9 +10135,87 @@ tbody.collapse.show {
     .complex-page .complex__navhouses-outer {
       position: relative;
       z-index: 2;
-      background: #fff; }
+      background: #fff;
+      width: 55%; }
     .complex-page .complex__navhouses .nav {
-      width: 180px; } }
+      width: 210px; }
+  .complex-page .params {
+    border: none;
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    .complex-page .params__cell {
+      border-bottom: 2px solid #ebeef1;
+      margin-bottom: -1px;
+      width: 145px; }
+  .complex-page .about {
+    margin-top: 3.8rem; }
+    .complex-page .about main .heading {
+      font-size: 2.8rem !important; }
+  .complex-page .houses .heading {
+    font-size: 2.8rem !important; }
+  .complex-page .houses .house__pic {
+    width: 225px; }
+  .complex-page .list_construction .heading {
+    font-size: 2.8rem !important; }
+  .complex-page .list_construction .construction__meta {
+    position: relative; }
+    .complex-page .list_construction .construction__meta .right {
+      position: absolute;
+      top: -50px;
+      left: 360px; }
+    .complex-page .list_construction .construction__meta .translation {
+      padding-left: 40px; }
+      .complex-page .list_construction .construction__meta .translation:before {
+        background-image: url(../images/sprite.png);
+        background-position: -266px -50px;
+        width: 23px;
+        height: 25px;
+        top: 5px; }
+      .complex-page .list_construction .construction__meta .translation__link {
+        font-size: 1.7rem; }
+    .complex-page .list_construction .construction__meta .nav .btn {
+      padding-left: 2rem;
+      padding-right: 2rem; }
+  .complex-page .list_construction .owl-carousel {
+    width: 100%; }
+    .complex-page .list_construction .owl-carousel .owl-prev {
+      left: -30px; }
+      .complex-page .list_construction .owl-carousel .owl-prev:hover {
+        left: -20px; }
+    .complex-page .list_construction .owl-carousel .owl-next {
+      margin-right: -4px; }
+  .complex-page .list_construction .place__item {
+    margin-left: auto;
+    margin-right: auto; }
+  .complex-page .list_reviews {
+    margin-bottom: 2rem; }
+    .complex-page .list_reviews .flexbox {
+      display: block; }
+    .complex-page .list_reviews .review__item {
+      margin-bottom: 1.4rem;
+      width: 100%; }
+  .complex-page #map {
+    height: 520px; }
+  .complex-page .map__info {
+    font-size: 1.4rem;
+    left: 110px;
+    padding: 3rem 2.2rem 2rem;
+    width: 250px; }
+  .complex-page .map .title {
+    font-size: 1.8rem; }
+  .review__top .name {
+    font-size: 1.4rem; }
+  .review__top .date {
+    font-size: 1.3rem; }
+  .mortgage .heading {
+    font-size: 2.8rem !important; }
+  .fixed-navbar .subnav a {
+    font-size: 1.4rem;
+    padding-left: .5rem;
+    padding-right: .5rem; }
+  .fixed-navbar .subnav ul {
+    margin-left: -15px;
+    margin-right: -15px; } }
 
 @media (max-width: 920px) {
   .side-inner {
@@ -10178,7 +10253,10 @@ tbody.collapse.show {
   .card_flat .carousel {
     width: 500px; }
   .flat-page .card__description {
-    flex-basis: 98%; } }
+    flex-basis: 98%; }
+  .about-page,
+  .complex-page {
+    overflow: hidden; } }
 
 @media (max-width: 768px) {
   .feature .container {
