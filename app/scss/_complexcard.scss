@@ -887,6 +887,10 @@
 				margin-bottom: 5.3rem;
 			}
 		}
+
+		&-bottom{
+			display: none;
+		}
  	}
 
 	#map{
@@ -903,6 +907,7 @@
 			position: absolute;
 			top: 60px;
 			width: 320px;
+			z-index: 2;
 			img{
 				position: absolute;
 				left: -54px;
@@ -948,6 +953,13 @@
 			width: $w;
 		}
 	}
+
+	.label-sm{
+		display: none;
+	}
+	.translation__bottom{
+		display: none;
+	}
 }
 
 
@@ -974,3 +986,5 @@
 		z-index: 99;
 	}
  }
+
+

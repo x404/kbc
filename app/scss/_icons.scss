@@ -253,6 +253,17 @@
 	}
 }
 
+.icon-cameramiddle{
+	position: relative;
+	padding-left: 46px;
+	&:before{
+		@extend .before;
+		@include sprite($icon-camera-middle);
+		left: 0;
+		top: -2px;
+	}
+}
+
 .icon-camerabig{
 	position: relative;
 	padding-left: 64px;

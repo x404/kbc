@@ -3383,8 +3383,8 @@
 				.translation {
 					padding-left: 40px;
 					&:before{
-						@include sprite($icon-camera);
-						top: 5px;
+						@include sprite($icon-camera-middle);
+						top: -3px;
 					}
 					&__link{
 						font-size: 1.7rem;
@@ -3398,9 +3398,11 @@
 			.owl-carousel{
 				width: 100%;
 				.owl-prev{
-					left: -30px;
+					// left: -30px;
+					left: -16px;
 					&:hover{
-						left: -20px;
+						// left: -20px;
+						left: -6px;
 					}
 				}
 				.owl-next{
@@ -3469,6 +3471,11 @@
 			margin-left: -15px;
 			margin-right: -15px;
 		}
+	}
+
+	.complex-page .complex__panel .video img{
+		height: 100%;
+		width: auto;
 	}
 }
 
@@ -3708,6 +3715,43 @@
 			}
 		}
 	}
+
+
+	.complex-page{
+		.complex__panel .complex__grouphouse{
+			width: 466px;
+		}
+		.params__cell{
+			width: 144px;
+		}
+		.list_construction{
+			.tab-content{
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+
+			.translation{
+				.text{
+					display: none;
+				}
+				&:before{
+					// top: 0 !important;
+				}
+			}
+
+			.construction__meta .right{
+				margin-top: 5px;
+			}
+		}
+	}
+
+	.list_construction{
+		header,
+		.construction__meta{
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
 }
 
 
@@ -3877,6 +3921,23 @@
 			margin-right: 0;
 		}
 	}
+
+
+	.complex-page{
+		.complex__panel .complex__grouphouse{
+			width: 439px;
+		}
+		.list_reviews{
+			width: 100%;
+		}
+		.review__item{
+			max-width: 100%;
+		}
+		.complex__navhouses .nav{
+			width: 185px;
+		}
+	}
+
 }
 
 
@@ -4034,6 +4095,149 @@
 		margin-right: auto;
 	}
 	// =/FLAT
+
+
+	.complex-page{
+		.complex__panel .complex__grouphouse{
+			width: 410px;
+		}
+		.complex__navhouses .nav{
+			width: 165px;
+		}
+	}
+
+
+	.complex-page .complex__place{
+		flex-wrap: wrap;
+		.cell{
+			width: 45%;
+		}
+	}
+}
+
+
+@media (max-width: 700px){
+
+	.fixed-navbar .subnav{
+		ul{
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		a{
+			height: 4rem;
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
+	}
+
+	.complex-page{
+		.houses{
+			.house{
+				&__pic{
+					display: none;
+				}
+				&__desc{
+					border-left: 1px solid #ebeef1;
+				}
+			}
+		}
+
+		.complex__panel .complex__grouphouse{
+			width: 380px;
+		}
+		.complex__navhouses .nav{
+			width: 155px;
+		}
+		.complex{
+			.object{
+				&__info{
+					flex-grow: 1;
+					width: 100%;
+					margin-bottom: 1rem;
+				}
+				&__meta{
+					.object__composition{
+						margin-left: 0;
+					}
+				}
+			}
+			&__place{
+				padding-bottom: 2rem;
+				.cell{
+					margin-bottom: 0;
+				}
+			}
+		}
+		.list_construction{
+			padding-bottom: 4rem;
+			.construction__meta{
+				.translation{
+					display: none;
+				}
+
+				.left{
+					flex-wrap: wrap;
+				}
+				.month-select.selectize-control{
+					margin-left: 0;
+					margin-top: 2rem;
+					width: 100%;
+				}
+			}
+		}
+		.translation__bottom{
+			display: block;
+			display: flex;
+			justify-content: center;
+			font-size: 1.7rem;
+			margin-top: 1rem;
+		}		
+
+		.list_reviews{
+			.heading{
+				font-size: 2.6rem !important;
+			}
+			.right{
+				display: none;
+			}
+			&-bottom{
+				display: block;
+				.more{
+					display: inline-block;
+					font-size: 1.5rem;
+					margin-top: 2rem;
+					margin-left: .5rem;
+				}
+				.btn{
+					margin-top: 2rem;
+				}
+			}
+		}
+		.sortbox{
+			font-size: 1.4rem;
+		}
+
+		.map{
+			&__info{
+				position: static;
+				width: 100%;
+				ul{
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					li{
+						width: 42%;
+					}
+				}
+			}
+
+			#map{
+				height: 400px;
+			}
+		}
+	}
 
 }
 
@@ -4323,8 +4527,106 @@
 		width: 200px;
 	}
 	// =/ABOUT
+
+
+	.complex-page .complex__map{
+		width: 35%;
+	}
+	.complex-page{
+		.complex__navhouses-outer{
+			width: 65%;
+		}
+		.label-sm{
+			display: inline;
+		}
+		.label-long{
+			display: none;
+		}
+		.complex__navhouses .nav{
+			width: 215px;
+		}
+
+		.list_construction{
+			.owl-carousel{
+				.owl-prev{
+					left: -30px;
+					&:hover{
+						left: -30px;
+					}
+				}
+				.owl-next{
+					right: -37px;
+					&:hover{
+						right: -37px;
+					}
+				}
+			}
+			.place__item{
+				width: 380px;
+			}
+			.place__pic_wrapper{
+				width: 320px;
+			}
+		}
+	}
+
 }
 
+
+
+@media (max-width: 650px){
+	.complex-page{
+		.complex__panel .complex__grouphouse{
+			width: 350px;
+		}
+		.complex__navhouses .nav{
+			width: 200px;
+		}
+		.complex__panel{
+			.house{
+				&__title{
+					font-size: 1.5rem;
+				}
+				.num{
+					font-size: 1.6rem;
+				}
+				.diagram{
+					$s: 66px;
+					height: $s;
+					width: $s;
+					overflow: hidden;
+					svg{
+						transform: scale(0.78);
+						transform-origin: 0 0;
+					}
+					.num{
+						height: $s;
+						width: $s;						
+					}
+				}
+			}
+		}
+		.complex{
+			.object__title{
+				font-size: 2.8rem;
+			}
+		}
+	}
+
+
+	.object__meta .btn{
+		font-size: 1.3rem !important;
+	}
+
+	.installmentbox__right .variant__cifr{
+		font-size: 4rem;
+	}
+
+
+	.complex-page .about main .heading{
+		font-size: 2.6rem !important;
+	}
+}
 
 
 @media (max-width: 630px){
@@ -4449,6 +4751,68 @@
 	.neck .tabs{
 		margin-left: 0;
 	}
+
+	.complex-page{
+		.complex .object__meta{
+			flex-direction: row;
+			flex-wrap: wrap;
+			.object{
+				&__flats,
+				&__composition{
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+			}
+		}
+		.complex__left{
+			padding-bottom: 25rem;
+		}
+
+		.complex__panel .complex__grouphouse{
+			width: 323px;
+		}
+		.complex__navhouses .nav{
+			width: 180px;
+		}
+
+		.complex{
+			&__right{
+				display: block;
+			}
+			&__map{
+				width: 100%;
+
+				img{
+					height: auto;
+					width: 100%;
+				}
+				.btn{
+					left: 50%;
+					margin-left: -80px;
+				}
+			}
+			&__navhouses-outer{
+				width: 100%;
+			}
+
+			&__navhouses{
+				// display: block;
+				.title{
+					// float: left;
+					padding-top: 1.5rem;
+				}
+				.nav{
+					// float: left;
+					width: calc(100% - 187px);
+				}
+			}
+		}
+
+		.params{
+			margin-top: 1rem;
+		}
+	}
+
 }
 
 
@@ -4583,6 +4947,18 @@
 	.installmentbox__right .variant__cifr{
 		font-size: 4rem;
 		flex-basis: 65px;
+	}
+
+	.complex-page .complex__panel .complex__grouphouse{
+		width: 295px;
+	}
+
+}
+
+
+@media (max-width: 570px){
+	.complex-page .complex__panel .complex__grouphouse{
+		width: 275px;
 	}
 }
 
@@ -4769,9 +5145,38 @@
 		}
 	}
 	// =/ABOUT
+
+
+	.complex-page .complex__panel .complex__grouphouse{
+		width: 250px;
+	}
 }
 
 
+
+
+@media (max-width: 530px){
+	.complex-page{
+		.complex__panel{
+			height: 20rem;
+			.complex__grouphouse{
+				width: 230px;
+			}
+			.video{
+				width: 240px;
+				a{
+					height: 100%;
+				}
+			}
+		}
+		.translation__bottom{
+			margin-top: 0;
+		}
+		.list_construction .place__wrapper{
+			margin-bottom: 1rem;
+		}
+	}
+}
 
 
 @media (max-width: 500px){
@@ -5109,6 +5514,127 @@
 			flex-basis: 100%;
 			text-align: center;
 			margin-bottom: 1rem;
+		}
+	}
+
+
+	.complex-page{
+
+
+		.main{
+			.container{
+				padding-left: 0;
+				padding-right: 0;
+				width: 100%;
+				.row{
+					margin-left: 0;
+					margin-right: 0;
+				}
+			}
+		}
+		.complex{
+			.object__meta{
+				padding-top: 3.2rem;
+				.object__info{
+					margin-bottom: .4rem;
+					p:not(.object__title){
+						font-size: 1.4rem;
+					}
+					.object__title{
+						margin-top: 1rem;
+					}
+				} 
+				.object__composition .btn{
+					height: 3.7rem;
+				}
+			}
+			&__place{
+				font-size: 1.4rem;
+				font-weight: 500;
+				padding-top: .5rem;
+				padding-bottom: .5rem;
+				.cell{
+					height: 4.9rem;
+					margin: .3rem 0 0;
+					padding-right: 0;
+					width: 50%;
+					img{
+						height: 41px;
+						margin-right: .7rem;
+						width: 41px;
+					}
+				}
+			}
+			&__text{
+				font-size: 1.4rem;
+				line-height: 1.4;
+				margin-top: 1.9rem;
+			}
+			&__navhouses{
+				display: block;
+				.title{
+					display: none;
+				}
+				.nav{
+					width: 100%;
+				}
+			}
+			.about main{
+				font-size: 1.4rem;
+			}
+
+			&__left{
+				padding-bottom: 21.4rem;
+			}
+			&__panel{
+				height: 19rem;
+			}
+		}
+
+		.about main{
+			font-size: 1.4rem;
+			p{
+				font-size: 1.4rem;
+				line-height: 1.5;				
+			}
+		}
+
+		.houses .heading{
+			font-size: 2.6rem !important;
+			line-height: 1.5;
+			padding-bottom: 1rem;
+		}
+
+		.installmentbox{
+			padding-top: 2.7rem;
+			padding-bottom: 3.7rem;
+			&__left{
+				.title{
+					margin-bottom: 2.2rem;
+				}
+			}
+		}
+
+		.list_construction{
+			padding-top: 4rem;
+			.translation__link{
+				font-size: 1.8rem;
+			}
+
+		}
+		.list_reviews .heading{
+			padding-bottom: 1.8rem;
+		}
+		.sortbox__label{
+			flex-basis: auto;
+		}
+
+		.list_reviews-bottom .more{
+			margin-top: 1rem;
+		}
+		
+		.map #map{
+			height: 275px;
 		}
 	}
 }

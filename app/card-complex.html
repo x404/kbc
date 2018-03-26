@@ -165,7 +165,7 @@
 
 								<div class="complex__place">
 									<div class="cell">
-										<img src="images/comfort.png" alt="" />
+										<img src="images/eco.png" alt="" />
 										Экологически чистый район
 									</div>
 									<div class="cell">
@@ -251,7 +251,10 @@
 								<!-- =map -->
 								<div class="complex__map">
 									<img src="tmp/map.jpg" alt="" />
-									<a href="#map" class="btn btn-red icon-label" data-targetscroll>Перейти на большую карту</a>
+									<a href="#map" class="btn btn-red icon-label" data-targetscroll>
+										<span class="label-long">Перейти на большую карту</span>
+										<span class="label-sm">Большая карта</span>
+									</a>
 								</div>
 								<!-- =/map -->
 
@@ -978,8 +981,11 @@
 											991:{
 												items: 3
 											},
-											768:{
+											670:{
 												items: 2
+											},
+											0:{
+												items: 1
 											}
 										}
 									});
@@ -1124,6 +1130,12 @@
 						</script>
 					</div>
 					<!-- =/carousel -->
+
+					<div class="translation__bottom">
+						<a href="#" class="translation__link icon-cameramiddle">
+							<span class="fill-effect"><span>Веб трансляция</span></span>
+						</a>
+					</div>
 				</div>
 			</section>
 			<!-- =/construction -->
@@ -1208,6 +1220,11 @@
 								</div>
 							</article>
 						</div>
+
+						<div class="list_reviews-bottom">
+							<a href="#" class="fill-effect more"><span>Смотреть все отзывы о ЖК</span></a>
+							<button type="button" data-toggle="modal" data-target="#add-review" class="btn icon-pencil">Написать отзыв</button>
+						</div>
 					</section>
 					<!-- =/reviews -->
 				</div>
@@ -1216,7 +1233,6 @@
 
 			<!-- =map -->
 			<div class="map">
-				<div id="map"></div>
 				<div class="map__info">
 					<div class="title">Инфраструктура</div>
 					<ul>
@@ -1246,6 +1262,7 @@
 						</li>
 					</ul>
 				</div>
+				<div id="map"></div>
 			</div>
 			<!-- =/map -->
 		</div>
@@ -2375,7 +2392,21 @@
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="Назад"></button>',
-		nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Вперед"></button>'
+		nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Вперед"></button>',
+		responsive: [{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 3
+			}
+		},
+		{
+			breakpoint: 720,
+			settings: {
+				slidesToShow: 2
+			}
+		}
+		]
+
 	});
 
 	$('#navhouses').slick({
