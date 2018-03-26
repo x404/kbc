@@ -496,6 +496,9 @@
 						font-weight: 600;
 						text-decoration: none;
 					}
+					i{
+						font-style: normal;
+					}
 				}
 				.owl{
 					$h: 24px;
@@ -582,7 +585,7 @@
 			}
 
 			.popover-container{
-				box-shadow: 0 5px 15px rgba(0,0,0,.75);
+				box-shadow: 0 8px 15px rgba(0,0,0,.75);
 				color: $color1;
 				position: absolute;
 				width: 195px;

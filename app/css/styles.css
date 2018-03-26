@@ -6223,6 +6223,8 @@ main {
           border-bottom-width: 1px;
           font-weight: 600;
           text-decoration: none; }
+        .complex-page .about .carousel .manage .photos i {
+          font-style: normal; }
       .complex-page .about .carousel .manage .owl-nav {
         height: 24px;
         margin-right: 14px;
@@ -6282,7 +6284,7 @@ main {
         top: 11px;
         z-index: 10; }
     .complex-page .about .carousel .popover-container {
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.75);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.75);
       color: #000;
       position: absolute;
       width: 195px; }
@@ -11917,4 +11919,25 @@ tbody.collapse.show {
     .complex-page .house__body .table a {
       font-size: inherit !important; }
   .complex-page .complex__place .cell {
-    width: 75%; } }
+    width: 75%; }
+  .complex-page .about .carousel {
+    margin-left: -15px;
+    margin-right: -15px;
+    width: calc(100% + 30px); }
+    .complex-page .about .carousel .manage {
+      padding-right: 15px; }
+  .complex-page .about .carousel .manage {
+    height: 47px;
+    width: 160px; }
+    .complex-page .about .carousel .manage i {
+      display: none; }
+    .complex-page .about .carousel .manage .owl-next,
+    .complex-page .about .carousel .manage .owl-prev {
+      background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAMAAADjcdz2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAApVBMVEWntcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcantcb///90HwFdAAAANXRSTlMAA1sbAYG9Enz+rA1+qA6pEKUL/JIGDH/2l4uQlGUZnviyr7O3mPt9BQqch5uKBAmNCNAXLoZWdzEAAAABYktHRDZHv4jRAAAAB3RJTUUH4gMaFicALTKwpQAAAH9JREFUGNNdjtkOgkAMRau4jWwujAgIigqoIIJw///XMIHEDuepvadpLlHPZKoRZzbHYsmDlcBaZ94ATEv19kb12x33e+HI/3pwBY6eHwycKAQEGBSdgUt8vQ3ciWSCNHvwUs8XkCu9ZQG8S558fklVjm+Cmid1gW+j/LGMth86slcPvkJAmtAAAAAASUVORK5CYII=") no-repeat left top;
+      filter: none;
+      height: 17px;
+      width: 16px; }
+    .complex-page .about .carousel .manage .owl-next:hover {
+      right: 18px; }
+    .complex-page .about .carousel .manage .owl-prev:hover {
+      left: 15px; } }
