@@ -11434,10 +11434,6 @@ tbody.collapse.show {
     margin-right: auto;
     width: 270px;
     text-align: center; }
-  .condo-page .subtitle {
-    font-size: 2.2rem; }
-  .condo-page .main {
-    padding-top: 2rem; }
   .action__item_pic {
     flex-basis: 180px; }
   .action__title {
@@ -11507,14 +11503,24 @@ tbody.collapse.show {
     flex-basis: 65px; }
   .complex-page .complex__panel .complex__grouphouse {
     width: 295px; }
+  .condo-page .subtitle {
+    font-size: 2.2rem; }
+  .condo-page .main {
+    padding-top: 2rem; }
   .condo-page .container {
     padding-left: 0;
     padding-right: 0; }
-  .condo-page .main {
+  .condo-page .main,
+  .condo-page .neck {
     padding-left: 15px;
     padding-right: 15px; }
+    .condo-page .main .col-7,
+    .condo-page .neck .col-7 {
+      flex-basis: 100%; }
   .condo-page .filter {
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    margin-left: 15px;
+    margin-right: 15px; }
   .condo-page .map {
     height: 285px;
     width: 100%; }
