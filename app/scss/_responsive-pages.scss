@@ -543,12 +543,22 @@
 	}
 
 	.additional_info{
+		width: 100%;
 		.offset-col-1{
 			margin-left: 0;
 		}
 		.similar_product{
 			flex-grow: 1;
-			padding-right: 50px;
+			flex-shrink: 0;
+			// padding-right: 50px;
+			.table-flats{
+				margin-right: 50px;
+			}
+		}
+
+		div.table-flats .td{
+			padding-left: 1rem;
+			padding-right: 1rem;
 		}
 	}
 	// =/FLAT
@@ -1614,6 +1624,45 @@
 		}
 	}
 
+	.flat-page{
+		div.table-flats{
+			.tbody .td{
+				font-size: 1.4rem;
+			}
+			.cell{
+				&-1{
+					width: 12%;
+				}
+
+				&-2{
+					width: 27%;
+				}
+				&-3{
+					width: 11%;
+				}
+				&-4{
+					width: 12%;
+				}
+				&-5{
+					display: none;
+				}
+				&-6{
+					width: 16%;
+				}
+				&-7{
+					width: 10%;
+				}
+				&-8{
+					width: 15%;
+				}
+				&-9{
+					width: 8%;
+					text-align: center;
+				}
+			}
+		}
+	}
+
 	div.table-flats{
 		.cell{
 			&-2{
@@ -2527,6 +2576,26 @@
 					// display: block;
 				}
 			}
+		}
+
+		.additional_info{
+			display: block;
+			width: 100%;
+			.similar_product{
+				flex-basis: 100%;
+				width: 100%;
+				padding-right: 0;
+				.table-flats{
+					margin-right: 0;
+				}
+			}
+			.callback{
+				margin-top: 2.5rem;
+			}
+		}
+
+		.additional_info{
+			padding-top: 3rem;
 		}
 	}
 
@@ -3543,22 +3612,7 @@
 		}
 	}
 
-	.additional_info{
-		display: block;
-		width: 100%;
-		.similar_product{
-			flex-basis: 100%;
-			width: 100%;
-			padding-right: 0;
-		}
-		.callback{
-			margin-top: 2.5rem;
-		}
-	}
 
-	.additional_info{
-		padding-top: 3rem;
-	}
 	// =/FLAT
 
 
@@ -4485,6 +4539,20 @@
 		padding-right: 2rem;
 	}
 
+
+	.flat-page div.table-flats{
+		.name{
+			font-size: 1.1rem;
+		}
+		.tbody .td{
+			font-size: 1.3rem;
+		}
+		.flat{
+			font-weight: 700;
+		}
+	}
+
+	.flat-page div.table-flats,
 	div.table-flats{
 		.tr{
 			position: relative;
@@ -4560,7 +4628,8 @@
 				padding-left: 1.8rem;
 				padding-right: 1.5rem;
 
-				&-title{
+				&-title,
+				.name{
 					display: block;
 					padding-bottom: .3rem;
 					.sort{
@@ -7401,6 +7470,8 @@
 
 
 @media (max-width: 390px){
+
+	.flat-page div.table-flats,
 	div.table-flats{
 		.cell{
 			&-1{
