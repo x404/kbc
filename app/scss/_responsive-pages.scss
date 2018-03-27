@@ -1617,13 +1617,10 @@
 	div.table-flats{
 		.cell{
 			&-2{
-				width: 20%;
+				width: 24%;
 			}
 			&-3{
-				width: 10%;
-			}
-			&-9{
-				width: 6%;
+				width: 8%;
 			}
 		}
 	}
@@ -3848,12 +3845,16 @@
 
 
 	div.table-flats{
+		.grow{
+			width: 89%;
+		}
 		.cell{
 			&-1{
 				width: 12%;
 			}
+
 			&-2{
-				width: 23%;
+				width: 27%;
 			}
 			&-3{
 				width: 11%;
@@ -3865,17 +3866,17 @@
 				display: none;
 			}
 			&-6{
-				width: 13%;
+				width: 16%;
 			}
 			&-7{
-				width: 9%;
+				width: 10%;
 			}
 			&-8{
-				width: 13%;
-
+				width: 15%;
 			}
 			&-9{
-				width: 6%;
+				width: 8%;
+				text-align: center;
 			}
 		}
 		.tr{
@@ -4480,6 +4481,25 @@
 		.tr-head{
 			display: none;
 		}
+	}
+
+	.object__meta{
+		margin-bottom: .8rem;
+		.object{
+			&__info,
+			&__address,
+			&__flats
+			{
+				margin-left: 0;
+			}
+			&__address{
+				margin-right: 2rem;
+			}
+		}
+	}
+	.object__right{
+		margin-left: 3rem;
+
 	}
 	// =/FAVORITE
 

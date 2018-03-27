@@ -215,7 +215,7 @@ div.table-flats{
 		}
 	}
 	.grow{
-		display: flex;
+		@extend .flex-cv;
 		width: 88%;
 	}
 	.tbody{
