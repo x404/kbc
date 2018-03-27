@@ -598,7 +598,7 @@ $(document).on('click','.to-fav', function(e){
 
 	// $(this).find('span').text(favin);
 
-	this.querySelector('span').textContent = favin;
+	// this.querySelector('span').textContent = favin; // house-list-all.html
 
 	// var timerfav = window.setInterval(function(){
 	// 	$('.added-to-compare').fadeOut('normal',function(){

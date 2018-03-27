@@ -688,11 +688,11 @@ h3 {
 
 .tdu, .file-upload span, .modal-menu .menu a, .footer__menu a, .footer .idealpromo a, .pagination .prev,
 .pagination .next, .faq-page .head p a,
-.vacancies-page .head p a, .contact__plate .email, table.table-flats td .place a, .complex-page .house__body .table td a, .about-page .documents__content a, .calculator-page .main .content .scheme .download a {
+.vacancies-page .head p a, .contact__plate .email, div.table-flats .tbody .td .place a, table.table-flats td .place a, .complex-page .house__body .table td a, .about-page .documents__content a, .calculator-page .main .content .scheme .download a {
   text-decoration: underline; }
   .tdu:hover, .file-upload span:hover, .modal-menu .menu a:hover, .footer__menu a:hover, .footer .idealpromo a:hover, .pagination .prev:hover,
   .pagination .next:hover, .faq-page .head p a:hover,
-  .vacancies-page .head p a:hover, .contact__plate .email:hover, table.table-flats td .place a:hover, .complex-page .house__body .table td a:hover, .about-page .documents__content a:hover, .calculator-page .main .content .scheme .download a:hover {
+  .vacancies-page .head p a:hover, .contact__plate .email:hover, div.table-flats .tbody .td .place a:hover, table.table-flats td .place a:hover, .complex-page .house__body .table td a:hover, .about-page .documents__content a:hover, .calculator-page .main .content .scheme .download a:hover {
     text-decoration: none; }
 
 .before, .icon-catalog:before, .icon-sett:before, .icon-pricelist:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-telbig:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-labelred:before, .icon-house-dark:before, .icon-camera:before, .icon-cameramiddle:before, .icon-camerabig:before, .icon-photo:before, .icon-scheme:before, .icon-schemebig:before, .icon-check:before, .icon-starsmall:before, .card_flat .btn-fav:before, .icon-starsmallfill:before, .card_flat .btn-fav-in:before, .icon-pencil-dark:before, .icon-scheme-green:before, .icon-ruller:before, .icon-doc:before, .about-page .documents .doclist__item a:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
@@ -723,7 +723,7 @@ h3 {
 .related .carousel .owl-carousel .owl-next:after, .objects__info:before, .object__item-outer:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .about-partners .partners:after, .big-icon:before, .neck:before, .neck:after, .neck .tabs .tab.active:after, .pagination .prev:before,
 .pagination .next:before, .picking:after, .picking:before, .picking__inner:before, .picking__link span:before, .content-bottom .subscribe:after, .content-bottom .subscribe:before, .sortbox__option-up:after, .sortbox__option-down:after, main ul li:before, .faq-page .head .btn:before,
-.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .favorite__item:after, table.table-flats .sort:after, .catalog__item:after, .catalog__item:before, .product__item-inner:after, .product__item-inner:before, .product__item:after, .product__item:hover .product__item-inner:after, .product__item:hover .product__item-inner:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .house:after, .flat-page .card__description .description__inner:after, .flat-page .card__description .description__inner:before, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .flat-page .card__description .description__bottom:before, .flat-page .card__description .description__bottom:hover:after, .flat-page .card__description .description__bottom:hover:before, .flat-page .card__description .description:after, .installmentbox__left:after, .installmentbox__left:before, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, #calc-gnk-form .alert:before, .complex-page .complex__left:before, .complex-page .complex__panel .video .bg:before, .complex-page .complex__panel .video .bg:after, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a span:after, .complex-page .complex__panel .house:after, .complex-page .about main .heading:after, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item__body:after, .about-page .carousel .item__body:before, .about-page .about .advantages:after, .about-page .about .advantages:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .about-page .calculator .calc-bottom:after, .about-page .calculator .calc-bottom:before, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .example__pic a:after, .calculator-page .example__pic a:before, .calculator-page .example__pic:after, .calculator-page .example__pic:before, .calculator-page .related__item:after, .calculator-page .related__item:before {
+.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .favorite__item:after, div.table-flats .sort:after, table.table-flats .sort:after, .catalog__item:after, .catalog__item:before, .product__item-inner:after, .product__item-inner:before, .product__item:after, .product__item:hover .product__item-inner:after, .product__item:hover .product__item-inner:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .house:after, .flat-page .card__description .description__inner:after, .flat-page .card__description .description__inner:before, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .flat-page .card__description .description__bottom:before, .flat-page .card__description .description__bottom:hover:after, .flat-page .card__description .description__bottom:hover:before, .flat-page .card__description .description:after, .installmentbox__left:after, .installmentbox__left:before, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, #calc-gnk-form .alert:before, .complex-page .complex__left:before, .complex-page .complex__panel .video .bg:before, .complex-page .complex__panel .video .bg:after, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a span:after, .complex-page .complex__panel .house:after, .complex-page .about main .heading:after, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item__body:after, .about-page .carousel .item__body:before, .about-page .about .advantages:after, .about-page .about .advantages:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .about-page .calculator .calc-bottom:after, .about-page .calculator .calc-bottom:before, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .example__pic a:after, .calculator-page .example__pic a:before, .calculator-page .example__pic:after, .calculator-page .example__pic:before, .calculator-page .related__item:after, .calculator-page .related__item:before {
   content: "";
   display: block;
   position: absolute; }
@@ -4826,14 +4826,119 @@ main {
     margin-left: 1.5rem; }
 
 div.table-flats .tr {
-  background: #e6e9ec;
-  color: #5e5e5e;
-  display: flex;
-  font-size: 1.4rem;
-  font-weight: 300;
-  padding: 2.5rem 1.5rem;
+  display: flex; }
+  div.table-flats .tr-head {
+    font-size: 1.4rem;
+    color: #5e5e5e;
+    font-weight: 300;
+    position: relative;
+    z-index: 30;
+    background: #e6e9ec; }
+  div.table-flats .tr .th {
+    padding: 2.5rem 1.5rem; }
+
+div.table-flats .td {
+  flex-shrink: 0; }
+
+div.table-flats .cell-1 {
+  text-align: center;
+  width: 11%; }
+
+div.table-flats .cell-2 {
+  width: 22%; }
+
+div.table-flats .cell-3 {
+  width: 9%; }
+
+div.table-flats .cell-4 {
+  width: 10%; }
+
+div.table-flats .cell-5 {
+  width: 11%; }
+
+div.table-flats .cell-6 {
+  width: 12%; }
+
+div.table-flats .cell-7 {
+  width: 8%; }
+
+div.table-flats .cell-8 {
+  width: 12%; }
+
+div.table-flats .cell-9 {
+  width: 5%;
+  text-align: center; }
+
+div.table-flats .tbody .tr {
+  align-items: center;
+  cursor: pointer;
+  transition: .3s;
+  border-bottom: 1px solid #ebeef1; }
+  div.table-flats .tbody .tr:hover {
+    box-shadow: 0 0 20px rgba(83, 99, 121, 0.4); }
+
+div.table-flats .tbody .td {
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 1.5rem;
   position: relative;
-  z-index: 30; }
+  z-index: 10; }
+  div.table-flats .tbody .td strong, div.table-flats .tbody .td b {
+    font-weight: 700; }
+  div.table-flats .tbody .td .flat a {
+    text-decoration: none; }
+    div.table-flats .tbody .td .flat a:hover {
+      color: #c40f39; }
+  div.table-flats .tbody .td .place {
+    margin-top: .3rem;
+    font-size: 1.4rem;
+    font-weight: 100; }
+    div.table-flats .tbody .td .place a {
+      color: #00874d; }
+      div.table-flats .tbody .td .place a:hover {
+        color: #c40f39; }
+  div.table-flats .tbody .td .address {
+    margin-top: .3rem;
+    color: #6f6f6f;
+    font-weight: 400;
+    font-size: 1.4rem; }
+  div.table-flats .tbody .td.has_plan {
+    z-index: 1; }
+    div.table-flats .tbody .td.has_plan .plan {
+      -webkit-transition: opacity 0.2s ease-out;
+      transition: opacity 0.2s ease-out;
+      box-shadow: 0 4px 20px rgba(104, 144, 187, 0.4);
+      left: 50px;
+      opacity: 0;
+      position: absolute;
+      top: 40px;
+      visibility: hidden;
+      width: 320px; }
+      div.table-flats .tbody .td.has_plan .plan img {
+        max-width: 100%; }
+    div.table-flats .tbody .td.has_plan:hover {
+      z-index: 100; }
+      div.table-flats .tbody .td.has_plan:hover .plan {
+        opacity: 1;
+        visibility: visible; }
+
+div.table-flats .sort {
+  text-decoration: none;
+  position: relative;
+  padding-right: 19px; }
+  div.table-flats .sort:hover {
+    color: #00874d; }
+    div.table-flats .sort:hover:after {
+      filter: grayscale(0); }
+  div.table-flats .sort:after {
+    background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHBAMAAAAsQKpuAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAG1BMVEUAh00Ah00Ah00Ah00Ah00Ah00Ah00Ah03////g9wgqAAAAB3RSTlMABgz9aqhxNl0TgwAAAAFiS0dECIbelXoAAAAHdElNRQfiAwITMQHVy4h/AAAAK0lEQVQI12NgZGBgAGJlBwYGZwUGFhMQAjIdnIECDCymIA4DQ3oCmGICYgBU7AN1ywxzCwAAAABJRU5ErkJggg==") no-repeat right top;
+    height: 6px;
+    width: 10px;
+    right: 0;
+    top: 5px;
+    filter: grayscale(1); }
+  div.table-flats .sort-asc:after {
+    transform: rotate(180deg); }
 
 table.table-flats {
   border-collapse: collapse;
