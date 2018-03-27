@@ -199,19 +199,19 @@
 
 .icon-people:before {
   background-image: url(../images/sprite.png);
-  background-position: -128px -81px;
+  background-position: -170px -112px;
   width: 18px;
   height: 17px; }
 
 .icon-people-gray:before {
   background-image: url(../images/sprite.png);
-  background-position: -205px -112px;
+  background-position: -188px -112px;
   width: 18px;
   height: 17px; }
 
 .icon-people-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -187px -112px;
+  background-position: -206px -112px;
   width: 18px;
   height: 17px; }
 
@@ -227,13 +227,13 @@
 
 .icon-tel:before {
   background-image: url(../images/sprite.png);
-  background-position: -127px -112px;
+  background-position: -172px -230px;
   width: 16px;
   height: 16px; }
 
 .icon-tel-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -266px -244px;
+  background-position: -127px -112px;
   width: 16px;
   height: 16px; }
 
@@ -288,7 +288,7 @@
 
 .icon-back:before {
   background-image: url(../images/sprite.png);
-  background-position: -170px -112px;
+  background-position: -128px -81px;
   width: 17px;
   height: 18px;
   left: 0;
@@ -296,7 +296,7 @@
 
 .icon-letter:before {
   background-image: url(../images/sprite.png);
-  background-position: -128px -98px;
+  background-position: -212px -152px;
   width: 18px;
   height: 14px;
   left: 0; }
@@ -329,7 +329,7 @@
   position: relative; }
   .icon-attach-dark:before {
     background-image: url(../images/sprite.png);
-    background-position: -219px -93px;
+    background-position: -77px -112px;
     width: 16px;
     height: 19px; }
 
@@ -337,7 +337,7 @@
   position: relative; }
   .icon-attach-white:before {
     background-image: url(../images/sprite.png);
-    background-position: -77px -112px;
+    background-position: -219px -93px;
     width: 16px;
     height: 19px; }
 
@@ -365,6 +365,13 @@
     width: 15px;
     height: 18px;
     left: 12px; }
+    @media (max-width: 600px) {
+      .icon-label:before {
+        background-image: url(../images/sprite.png);
+        background-position: -224px -112px;
+        width: 10px;
+        height: 13px;
+        left: 10px; } }
 
 .icon-labelred {
   position: relative; }
@@ -383,6 +390,14 @@
     width: 26px;
     height: 22px;
     left: 12px; }
+
+.icon-house-dark-sm {
+  position: relative; }
+  .icon-house-dark-sm:before {
+    background-image: url(../images/sprite.png);
+    background-position: -266px -244px;
+    width: 18px;
+    height: 16px; }
 
 .icon-camera {
   position: relative;
@@ -695,7 +710,7 @@ h3 {
   .vacancies-page .head p a:hover, .contact__plate .email:hover, div.table-flats .tbody .td .place a:hover, table.table-flats td .place a:hover, .complex-page .house__body .table td a:hover, .about-page .documents__content a:hover, .calculator-page .main .content .scheme .download a:hover {
     text-decoration: none; }
 
-.before, .icon-catalog:before, .icon-sett:before, .icon-pricelist:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-telbig:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-labelred:before, .icon-house-dark:before, .icon-camera:before, .icon-cameramiddle:before, .icon-camerabig:before, .icon-photo:before, .icon-scheme:before, .icon-schemebig:before, .icon-check:before, .icon-starsmall:before, .card_flat .btn-fav:before, .icon-starsmallfill:before, .card_flat .btn-fav-in:before, .icon-pencil-dark:before, .icon-scheme-green:before, .icon-ruller:before, .icon-doc:before, .about-page .documents .doclist__item a:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
+.before, .icon-catalog:before, .icon-sett:before, .icon-pricelist:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-telbig:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-labelred:before, .icon-house-dark:before, .icon-house-dark-sm:before, .icon-camera:before, .icon-cameramiddle:before, .icon-camerabig:before, .icon-photo:before, .icon-scheme:before, .icon-schemebig:before, .icon-check:before, .icon-starsmall:before, .card_flat .btn-fav:before, .icon-starsmallfill:before, .card_flat .btn-fav-in:before, .icon-pencil-dark:before, .icon-scheme-green:before, .icon-ruller:before, .icon-doc:before, .about-page .documents .doclist__item a:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
 .fixed-header .wishlist__link:before,
 .fixed-header .wishlist__link:after,
 .apanel .wishlist__link:before,
@@ -1096,14 +1111,14 @@ form .form-control {
 .header .wishlist__link:before,
 .fixed-header .wishlist__link:before {
   background-image: url(../images/sprite.png);
-  background-position: -235px -196px;
+  background-position: -235px -136px;
   width: 31px;
   height: 30px; }
 
 .header .wishlist__link:after,
 .fixed-header .wishlist__link:after {
   background-image: url(../images/sprite.png);
-  background-position: -235px -166px;
+  background-position: -235px -196px;
   width: 31px;
   height: 30px; }
 
@@ -5418,12 +5433,12 @@ table.table-flats {
   border: none;
   background-color: transparent;
   background-image: url(../images/sprite.png);
-  background-position: -235px -196px;
+  background-position: -235px -136px;
   width: 31px;
   height: 30px; }
   .btn-fav-in, .btn-fav:hover {
     background-image: url(../images/sprite.png);
-    background-position: -235px -166px;
+    background-position: -235px -196px;
     width: 31px;
     height: 30px; }
 
@@ -7608,7 +7623,7 @@ tbody.collapse.show {
       padding: 0; }
     .apanel__top .wishlist__link:before {
       background-image: url(../images/sprite.png);
-      background-position: -235px -136px;
+      background-position: -235px -166px;
       width: 31px;
       height: 30px; }
     .apanel__top .wishlist__link:after {
@@ -10726,7 +10741,9 @@ tbody.collapse.show {
     .object__meta .object__address .btn {
       padding-right: 1rem; }
     .object__meta .object__flats {
-      margin-left: 1rem; } }
+      margin-left: 1rem; }
+  .condo-page .subtitle {
+    font-size: 2rem; } }
 
 @media (max-width: 767px) {
   .objects-intro {
@@ -10837,6 +10854,8 @@ tbody.collapse.show {
     top: 19px; }
   .gbi-subcatalog .sidebar__menu {
     display: none; }
+  .object__meta .object__address .btn {
+    padding-right: 2rem; }
   div.table-flats .tr {
     position: relative; }
     div.table-flats .tr-head {
@@ -10855,15 +10874,15 @@ tbody.collapse.show {
     padding-right: 0 !important;
     height: 43px; }
   div.table-flats .cell-3 {
-    width: 25%;
+    width: 28%;
     order: 2; }
   div.table-flats .cell-4 {
     order: 3;
-    width: 45%; }
+    width: 44%; }
     div.table-flats .cell-4 .td-title {
       margin-bottom: -3px; }
   div.table-flats .cell-7 {
-    width: 30%;
+    width: 28%;
     order: 4; }
   div.table-flats .cell-8 {
     order: 5;
@@ -11338,22 +11357,6 @@ tbody.collapse.show {
   .worker__item {
     flex-basis: 250px;
     padding-right: 0; }
-  .object__meta {
-    flex-wrap: nowrap;
-    flex-direction: column; }
-    .object__meta .object__section {
-      flex-grow: 1;
-      flex-basis: 100%;
-      display: flex;
-      justify-content: center; }
-    .object__meta .object__composition {
-      margin-left: 0;
-      margin-bottom: 1.5rem; }
-      .object__meta .object__composition .btn {
-        display: inline-flex; }
-    .object__meta .object__flats {
-      margin-top: 2rem;
-      margin-bottom: 1rem; }
   .news-page .neck .head .flexbox,
   .actions-page .neck .head .flexbox,
   .action-page .neck .head .flexbox {
@@ -11503,7 +11506,67 @@ tbody.collapse.show {
     font-size: 4rem;
     flex-basis: 65px; }
   .complex-page .complex__panel .complex__grouphouse {
-    width: 295px; } }
+    width: 295px; }
+  .condo-page .container {
+    padding-left: 0;
+    padding-right: 0; }
+  .condo-page .main {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .condo-page .filter {
+    padding-bottom: 0; }
+  .condo-page .map {
+    height: 285px;
+    width: 100%; }
+    .condo-page .map:before, .condo-page .map:after {
+      display: none; }
+    .condo-page .map #map {
+      height: 285px; }
+  .condo-page .subtitle {
+    font-size: 1.8rem;
+    display: block;
+    margin-top: 1rem; }
+    .condo-page .subtitle .group {
+      font-size: 1.3rem;
+      margin-left: 0;
+      margin-top: .5rem; }
+  .object__meta .object__info {
+    margin-top: 1.6rem;
+    margin-bottom: .5rem;
+    width: 100%; }
+    .object__meta .object__info p:not(.object__title) {
+      font-size: 1.3rem; }
+  .object__meta .object__title {
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 1.2rem; }
+  .object__meta .object__composition {
+    margin-left: 0;
+    font-size: 1.3rem; }
+    .object__meta .object__composition .btn {
+      height: 30px;
+      padding-left: 34px;
+      padding-right: 14px; }
+      .object__meta .object__composition .btn:before {
+        background-image: url(../images/sprite.png);
+        background-position: -266px -244px;
+        width: 18px;
+        height: 16px; }
+  .object__meta .object__address {
+    margin-top: .5rem;
+    margin-right: 0; }
+    .object__meta .object__address .btn {
+      height: auto;
+      min-height: 30px;
+      padding: .5rem 1rem .5rem 30px; }
+  .object__meta .object__flats {
+    font-size: 1.4rem; }
+  .object__meta .object__price {
+    font-size: 1.6rem; }
+  .object__meta .object__right {
+    margin-left: 2.4rem; }
+    .object__meta .object__right .flats-price {
+      margin-top: .8rem; } }
 
 @media (max-width: 570px) {
   .complex-page .complex__panel .complex__grouphouse {
@@ -11833,13 +11896,6 @@ tbody.collapse.show {
   .contact__title {
     font-size: 2rem;
     padding-bottom: .5rem; }
-  .object__meta {
-    padding-left: 1rem;
-    padding-right: 1rem; }
-    .object__meta .object__title {
-      font-size: 2.5rem; }
-    .object__meta .btn {
-      font-size: 1.4rem; }
   .sortbox {
     flex-wrap: wrap; }
     .sortbox__label {
@@ -11931,6 +11987,27 @@ tbody.collapse.show {
     margin-top: .7rem; }
   div.table-flats .tbody .td-title {
     padding-bottom: .9rem; } }
+
+@media (max-width: 478px) {
+  .object__meta {
+    padding-right: 0;
+    display: block; }
+    .object__meta .object__pic {
+      max-height: 150px;
+      overflow: hidden; }
+      .object__meta .object__pic img {
+        height: auto;
+        width: 100%;
+        margin-top: -15%; }
+    .object__meta .object__info {
+      width: auto; }
+    .object__meta .object__address {
+      margin-top: .5rem; }
+    .object__meta .object__composition {
+      margin-top: 3rem;
+      margin-left: 3rem; }
+    .object__meta .object__right {
+      padding-bottom: 2rem; } }
 
 @media (max-width: 460px) {
   .filter-inner .cell-buttons .showflat {
@@ -12353,7 +12430,26 @@ tbody.collapse.show {
     margin-left: auto;
     margin-right: auto; }
   .complex-page .map__info ul li {
-    width: 60%; } }
+    width: 60%; }
+  .house__bottom {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+    .house__bottom .btn {
+      font-size: 1.4rem;
+      padding-right: 2rem;
+      white-space: nowrap; } }
+
+@media (max-width: 390px) {
+  div.table-flats .cell-1 {
+    width: 27%; }
+  div.table-flats .tbody .td {
+    padding-left: 1.2rem;
+    padding-right: 0; }
+  div.table-flats .grow {
+    padding-left: 1rem;
+    width: 73%; }
+  div.table-flats .sort {
+    padding-right: 13px; } }
 
 @media (max-width: 370px) {
   #calc-gnk-form .alert {
@@ -12513,4 +12609,6 @@ tbody.collapse.show {
     .offer__left a {
       text-transform: capitalize; }
     .offer i {
-      display: none; } }
+      display: none; }
+  .house__bottom .btn {
+    font-size: 1.3rem; } }

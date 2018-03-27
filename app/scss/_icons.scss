@@ -217,6 +217,10 @@
 		@extend .before;
 		@include sprite($icon-label);
 		left: 12px;
+		@media (max-width: 600px){
+			@include sprite($icon-label-sm);
+			left: 10px;
+		}
 	}
 }
 
@@ -241,6 +245,14 @@
 }
 
 
+.icon-house-dark-sm{
+	position: relative;
+	&:before{
+		@extend .before;
+		@include sprite($icon-house-dark-sm);
+		// left: 12px;
+	}
+}
 
 .icon-camera{
 	position: relative;

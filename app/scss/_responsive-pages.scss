@@ -4259,6 +4259,10 @@
 			}
 		}
 	}
+
+	.condo-page .subtitle{
+		font-size: 2rem;
+	}
 }
 
 
@@ -4477,6 +4481,10 @@
 
 
 	// FAVORITE
+	.object__meta .object__address .btn{
+		padding-right: 2rem;
+	}
+
 	div.table-flats{
 		.tr{
 			position: relative;
@@ -4505,20 +4513,19 @@
 				height: 43px;
 			}
 
-
 			&-3{
-				width: 25%;
+				width: 28%;
 				order: 2;
 			}
 			&-4{
 				order: 3;
-				width: 45%;
+				width: 44%;
 				.td-title{
 					margin-bottom: -3px;
 				}
 			}
 			&-7{
-				width: 30%;
+				width: 28%;
 				order: 4;
 			}
 
@@ -5374,27 +5381,27 @@
 	}
 
 	.object__meta{
-		flex-wrap: nowrap;
-		flex-direction: column;
-		.object{
-			&__section{
-				flex-grow: 1;
-				flex-basis: 100%;
-				display: flex;
-				justify-content: center;
-			}
-			&__composition{
-				margin-left: 0;
-				margin-bottom: 1.5rem;
-				.btn{
-					display: inline-flex;
-				}
-			}
-			&__flats{
-				margin-top: 2rem;
-				margin-bottom: 1rem;
-			}
-		}
+		// flex-wrap: nowrap;
+		// flex-direction: column;
+		// .object{
+		// 	&__section{
+		// 		flex-grow: 1;
+		// 		flex-basis: 100%;
+		// 		display: flex;
+		// 		justify-content: center;
+		// 	}
+		// 	&__composition{
+		// 		margin-left: 0;
+		// 		margin-bottom: 1.5rem;
+		// 		.btn{
+		// 			display: inline-flex;
+		// 		}
+		// 	}
+		// 	&__flats{
+		// 		margin-top: 2rem;
+		// 		margin-bottom: 1rem;
+		// 	}
+		// }
 	}
 
 	.news-page,
@@ -5669,6 +5676,98 @@
 		}
 	}
 
+
+	// FAVORITE
+	.condo-page{
+		.container{
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.main{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.filter{
+			padding-bottom: 0;
+		}
+		.map{
+			height: 285px;
+			width: 100%;
+			&:before,
+			&:after{
+				display: none;
+			}
+			#map{
+				height: 285px;
+			}
+		}
+		.subtitle{
+			font-size: 1.8rem;
+			display: block;
+			margin-top: 1rem;
+			.group{
+				font-size: 1.3rem;
+				margin-left: 0;
+				margin-top: .5rem;
+			}
+		}
+	}
+	.object__meta{
+		.object{
+			&__info{
+				margin-top: 1.6rem;
+				margin-bottom: .5rem;
+				width: 100%;
+				p:not(.object__title){
+					font-size: 1.3rem;
+				}
+			}
+			&__title{
+				display: inline-block;
+				font-size: 2rem;
+				margin-top: 1.2rem;
+			}
+
+			&__composition{
+				margin-left: 0;
+				font-size: 1.3rem;
+				.btn{
+					height: 30px;
+					padding-left: 34px;
+					padding-right: 14px;
+					&:before{
+						@include sprite($icon-house-dark-sm);
+					}
+				}
+			}
+
+			&__address{
+				margin-top: .5rem;
+				margin-right: 0;
+				.btn{
+					height: auto;
+					min-height: 30px;
+					padding: .5rem 1rem .5rem 30px;
+				}	
+			}
+
+			&__flats{
+				font-size: 1.4rem;
+			}
+			&__price{
+				font-size: 1.6rem;
+			}
+			&__right{
+				margin-left: 2.4rem;
+				.flats-price{
+					margin-top: .8rem;
+				}
+
+			}
+		}
+	}
+	// =/FAVORITE
+
 }
 
 
@@ -5918,6 +6017,7 @@
 	.card_flat .card__description .description__body .more{
 		flex-shrink: 0;
 	}
+
 }
 
 
@@ -6279,14 +6379,14 @@
 
 
 	.object__meta{
-		padding-left: 1rem;
-		padding-right: 1rem;
-		.object__title{
-			font-size: 2.5rem;
-		}
-		.btn{
-			font-size: 1.4rem;
-		}
+		// padding-left: 1rem;
+		// padding-right: 1rem;
+		// .object__title{
+		// 	font-size: 2.5rem;
+		// }
+		// .btn{
+		// 	font-size: 1.4rem;
+		// }
 	}
 
 
@@ -6456,6 +6556,37 @@
 	// =/FLAT
 }
 
+
+@media (max-width: 478px){
+	.object__meta{
+		padding-right: 0;
+		display: block;
+		.object{
+			&__pic{
+				max-height: 150px;
+				overflow: hidden;
+				img{
+					height: auto;
+					width: 100%;
+					margin-top: -15%;
+				}
+			}
+			&__info{
+				width: auto;
+			}
+			&__address{
+				margin-top: .5rem;
+			}
+			&__composition{
+				margin-top: 3rem;
+				margin-left: 3rem;
+			}
+			&__right{
+				padding-bottom: 2rem;
+			}
+		}
+	}
+}
 
 @media (max-width: 460px){
 	.filter-inner .cell-buttons .showflat{
@@ -7122,8 +7253,6 @@
 				font-size: 1.4rem;
 			}
 		}
-
-
 	}
 	// =/CONSTRUCTING
 
@@ -7247,8 +7376,39 @@
 	.complex-page .map__info ul li{
 		width: 60%;
 	}
+
+	.house__bottom{
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		.btn{
+			font-size: 1.4rem;
+			padding-right: 2rem;
+			white-space: nowrap;
+		}
+	}
 }
 
+
+@media (max-width: 390px){
+	div.table-flats{
+		.cell{
+			&-1{
+				width: 27%
+			}
+		}
+		.tbody .td{
+			padding-left: 1.2rem;
+			padding-right: 0;
+		}
+		.grow{
+			padding-left: 1rem;
+			width: 73%;
+		}
+		.sort{
+			padding-right: 13px;
+		}
+	}
+}
 
 @media (max-width: 370px){
 	#calc-gnk-form .alert{
@@ -7559,5 +7719,8 @@
 		}
 	}
 
+	.house__bottom .btn{
+		font-size: 1.3rem;
+	}
 
 }
