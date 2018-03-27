@@ -244,10 +244,13 @@
 	.heading{
 		padding-bottom: 0;
 	}
-	table.table-flats{
+
+	div.table-flats{
 		border: 2px solid $color28;
 		margin-top: 1.5em;
-
+		.td{
+			white-space: nowrap;
+		}
 		.name{
 			color: $color40;
 			font-size: 1.4rem;
@@ -255,9 +258,20 @@
 			padding-bottom: .7rem;
 		}
 	}
+	// table.table-flats{
+	// 	border: 2px solid $color28;
+	// 	margin-top: 1.5em;
+
+	// 	.name{
+	// 		color: $color40;
+	// 		font-size: 1.4rem;
+	// 		font-weight: 400;
+	// 		padding-bottom: .7rem;
+	// 	}
+	// }
 
 	td{
-		border-bottom: 2px solid $color28
+		// border-bottom: 2px solid $color28
 	}
 }
 
