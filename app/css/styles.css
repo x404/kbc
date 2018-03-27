@@ -11992,7 +11992,9 @@ tbody.collapse.show {
   div.table-flats .tbody .td .address {
     margin-top: .7rem; }
   div.table-flats .tbody .td-title {
-    padding-bottom: .9rem; } }
+    padding-bottom: .9rem; }
+    div.table-flats .tbody .td-title .sort:hover {
+      color: #00874d; } }
 
 @media (max-width: 478px) {
   .object__meta {

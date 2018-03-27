@@ -6555,6 +6555,11 @@
 				}
 				&-title{
 					padding-bottom: .9rem;
+					.sort{
+						&:hover{
+							color: $color8;
+						}
+					}
 				}
 			}
 		}
