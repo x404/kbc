@@ -315,8 +315,13 @@
 
 // sidebar
 .sidebar{
-	border: 2px solid #dce2e7;
 	font-size: 1.5rem;
+	&__menu{
+		border: 2px solid #dce2e7;		
+	}
+	&__select{
+		display: none;
+	}
 	a, span{
 		padding-left: 21px;
 		padding: 1.2rem 10px 1.2rem 21px;

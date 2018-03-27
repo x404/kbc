@@ -5189,8 +5189,11 @@ main {
   font-weight: 700; }
 
 .sidebar {
-  border: 2px solid #dce2e7;
   font-size: 1.5rem; }
+  .sidebar__menu {
+    border: 2px solid #dce2e7; }
+  .sidebar__select {
+    display: none; }
   .sidebar a, .sidebar span {
     padding-left: 21px;
     padding: 1.2rem 10px 1.2rem 21px; }
@@ -10282,7 +10285,8 @@ tbody.collapse.show {
   .flat-page .card__description {
     flex-basis: 98%; }
   .about-page,
-  .complex-page {
+  .complex-page,
+  .gbi-catalog {
     overflow: hidden; } }
 
 @media (max-width: 768px) {
@@ -10468,7 +10472,22 @@ tbody.collapse.show {
   .complex-page .review__item {
     max-width: 100%; }
   .complex-page .complex__navhouses .nav {
-    width: 185px; } }
+    width: 185px; }
+  .gbi-subcatalog .main {
+    display: block; }
+  .gbi-subcatalog .list_product {
+    margin-top: 2rem;
+    padding-left: 0; }
+  .gbi-subcatalog .sidebar__select {
+    display: block; }
+  .gbi-subcatalog .sidebar .selectize-input {
+    padding-left: 17px; }
+  .gbi-subcatalog .sidebar .selectize-control.single .selectize-input:after {
+    right: 5px; }
+  .gbi-subcatalog .sidebar .selectize-control.single .selectize-input.dropdown-active:after {
+    top: 19px; }
+  .gbi-subcatalog .sidebar__menu {
+    display: none; } }
 
 @media (max-width: 720px) {
   .objects-callback .side .callback {
@@ -11159,7 +11178,15 @@ tbody.collapse.show {
   .complex-page .translation__bottom {
     margin-top: 0; }
   .complex-page .list_construction .place__wrapper {
-    margin-bottom: 1rem; } }
+    margin-bottom: 1rem; }
+  .gbi-subcatalog .list_product {
+    display: block; }
+  .gbi-subcatalog .product__item {
+    margin-left: auto;
+    margin-right: auto !important;
+    width: 280px; }
+    .gbi-subcatalog .product__item-inner {
+      height: auto; } }
 
 @media (max-width: 500px) {
   .objects__carousel {
@@ -11449,7 +11476,8 @@ tbody.collapse.show {
     width: 150px; }
   .neck .back {
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    margin-top: 1rem; }
   #calc-gnk-form .alert {
     width: 22rem; }
   .about-page #calc-gnk-form .row .radio + label {
@@ -11940,4 +11968,6 @@ tbody.collapse.show {
     .complex-page .about .carousel .manage .owl-next:hover {
       right: 18px; }
     .complex-page .about .carousel .manage .owl-prev:hover {
-      left: 15px; } }
+      left: 15px; }
+  .gbi-subcatalog .product__item {
+    width: 100%; } }

@@ -388,6 +388,11 @@ $(document).ready(function(){
 		create: true
 	});
 
+	
+	$('.selectmenu').selectize({
+		create: true
+	});
+
 
 	// mask
 	$('input.tel').inputmask({
