@@ -4742,6 +4742,32 @@ main {
     padding-top: 5.5rem; }
   .favorite-page .head .title {
     font-size: 4rem; }
+  .favorite-page div.table-flats .grow {
+    width: 90%; }
+  .favorite-page div.table-flats .cell-1 {
+    width: 10%; }
+  .favorite-page div.table-flats .cell-2 {
+    width: 21%; }
+  .favorite-page div.table-flats .cell-3 {
+    width: 7%; }
+  .favorite-page div.table-flats .cell-4 {
+    width: 10%; }
+  .favorite-page div.table-flats .cell-5 {
+    width: 10%; }
+  .favorite-page div.table-flats .cell-6 {
+    width: 13%; }
+  .favorite-page div.table-flats .cell-7 {
+    width: 7%; }
+  .favorite-page div.table-flats .cell-8 {
+    width: 10%; }
+  .favorite-page div.table-flats .cell-9 {
+    width: 17%;
+    text-align: right; }
+    .favorite-page div.table-flats .cell-9 .btn {
+      margin-left: auto;
+      margin-right: auto; }
+  .favorite-page div.table-flats .cell-10 {
+    width: 6%; }
 
 .favorite__item {
   background: #fff;
