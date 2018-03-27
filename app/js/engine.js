@@ -112,7 +112,8 @@ $(document).ready(function(){
 		dots: false,
 		items:1,
 		navText: ["", ""],
-		stagePadding : 0
+		stagePadding : 0,
+		autoHeight: true
 	});
 
 
