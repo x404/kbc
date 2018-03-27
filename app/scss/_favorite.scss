@@ -152,7 +152,20 @@
 }
 
 
-.table-flats{
+div.table-flats{
+	.tr{
+		background: #e6e9ec;
+		color: $color40;
+		display: flex;
+		font-size: 1.4rem;
+		font-weight: 300;
+		padding: 2.5rem 1.5rem;
+		position: relative;
+		z-index: 30;
+	}
+}
+
+table.table-flats{
 	border-collapse: collapse;
 	padding: 0;
 	width: 100%;
