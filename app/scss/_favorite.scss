@@ -10,14 +10,16 @@
 	}
 
 	div.table-flats{
+		white-space: nowrap;
 		.grow{
 			width: 90%;
+		}
+		.th{
 		}
 		.cell{
 			&-1{
 				width: 10%;
 			}
-
 
 			&-2{
 				width: 21%;
