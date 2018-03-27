@@ -571,17 +571,21 @@ $(document).on('click', '.delete', function(e){
 });
 
 
+
+// click on row table
 $(document).on('click', '[data-link]', function(e){
-	e.preventDefault;
+	e.preventDefault();
 	e.stopPropagation();
 	let url = this.dataset.link;
 	window.open(url);
 });
-
-
-$(document).on('click', '.flat a, .place a, .btn-fav', function(e){
+$(document).on('click', '.flat a, .place a, .btn-fav, .td a', function(e){
 	e.stopPropagation();
 })
+
+
+
+
 
 // в избранное
 var favto = 'В избранное',
@@ -613,7 +617,9 @@ $(document).on('click','.btn-fav-in', function(e){
 	e.preventDefault();
 	this.classList.remove('btn-fav-in');
 	this.classList.add('to-fav');
-	this.querySelector('span').textContent = favto;
+	try{
+		this.querySelector('span').textContent = favto;
+	} catch(e){};
 });
 
 
