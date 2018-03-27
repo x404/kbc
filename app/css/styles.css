@@ -4930,6 +4930,8 @@ div.table-flats .tbody .td {
       div.table-flats .tbody .td.has_plan:hover .plan {
         opacity: 1;
         visibility: visible; }
+  div.table-flats .tbody .td-title {
+    display: none; }
 
 div.table-flats .sort {
   text-decoration: none;
@@ -10835,8 +10837,66 @@ tbody.collapse.show {
     top: 19px; }
   .gbi-subcatalog .sidebar__menu {
     display: none; }
-  div.table-flats .tr-head {
-    display: none; }
+  div.table-flats .tr {
+    position: relative; }
+    div.table-flats .tr-head {
+      display: none; }
+  div.table-flats .cell-1 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    width: 35%;
+    padding-left: 2rem; }
+  div.table-flats .cell-2 {
+    width: 100%;
+    order: 1; }
+  div.table-flats .cell-3, div.table-flats .cell-4, div.table-flats .cell-7 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-right: 0 !important;
+    height: 43px; }
+  div.table-flats .cell-3 {
+    width: 25%;
+    order: 2; }
+  div.table-flats .cell-4 {
+    order: 3;
+    width: 45%; }
+    div.table-flats .cell-4 .td-title {
+      margin-bottom: -3px; }
+  div.table-flats .cell-7 {
+    width: 30%;
+    order: 4; }
+  div.table-flats .cell-8 {
+    order: 5;
+    width: 50%; }
+  div.table-flats .cell-6 {
+    order: 6;
+    width: 50%; }
+  div.table-flats .cell-9 {
+    position: absolute !important;
+    right: 25px;
+    top: 18px;
+    width: auto;
+    padding: 0 !important; }
+  div.table-flats .grow {
+    padding-left: 2rem;
+    flex-wrap: wrap;
+    width: 65%; }
+    div.table-flats .grow .td {
+      padding-left: 0 !important; }
+  div.table-flats .tbody .td {
+    padding-left: 1.8rem;
+    padding-right: 1.5rem; }
+    div.table-flats .tbody .td-title {
+      display: block;
+      padding-bottom: .3rem; }
+      div.table-flats .tbody .td-title .sort {
+        color: #5e5e5e;
+        font-size: 1.1rem; }
+        div.table-flats .tbody .td-title .sort:after {
+          top: 2px; }
+  div.table-flats .has_plan img {
+    width: 100%;
+    height: auto; }
   .object__meta {
     margin-bottom: .8rem; }
     .object__meta .object__info, .object__meta .object__address, .object__meta .object__flats {
@@ -11864,7 +11924,13 @@ tbody.collapse.show {
     padding-right: 2rem; }
   .card_flat .card__description .description__body .title {
     font-size: 2.6rem;
-    text-align: center; } }
+    text-align: center; }
+  div.table-flats .tbody .td .place {
+    margin-top: .6rem; }
+  div.table-flats .tbody .td .address {
+    margin-top: .7rem; }
+  div.table-flats .tbody .td-title {
+    padding-bottom: .9rem; } }
 
 @media (max-width: 460px) {
   .filter-inner .cell-buttons .showflat {

@@ -207,7 +207,6 @@ div.table-flats{
 		}
 		&-8{
 			width: 13%;
-
 		}
 		&-9{
 			width: 7%;
@@ -290,6 +289,9 @@ div.table-flats{
 				}
 			}
 
+			&-title{
+				display: none;
+			}
 		}
 	}
 	.sort{
