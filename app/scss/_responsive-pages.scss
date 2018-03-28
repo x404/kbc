@@ -391,13 +391,21 @@
 	}
 	// =/NEWS
 
-	.listgk-inner{
-		flex: 0 0 70%;
-	}
 
 	.listgk-page .main{
-		.complex__pic{
-			width: 200px;
+		.listgk-inner{
+			flex-basis: 1042px;
+			padding-right: 3rem;
+		}
+		.listgk{
+			.object{
+				&__top{
+					padding-left: 20px;
+				}
+				&__title{
+					font-size: 2.4rem;
+				}
+			}
 		}
 	}
 
@@ -981,6 +989,28 @@
 		}
 	}
 	// =/COMPLEX PAGE
+
+	// LIST GK
+	.listgk-page{
+		.main .listgk{
+			&-inner{
+				flex-basis: 933px;
+			}
+			.object{
+				&__plate{
+					width: 50%;
+				}
+				&__item-outer{
+					width: 365px;
+				}
+			}
+		}
+		.object__labels img{
+			width: auto;
+		}
+	}
+	// =/LIST GK
+
 }
 
 @media (max-width: 1350px){
@@ -2025,6 +2055,25 @@
 			}
 		}	
 	}
+
+
+	// LIST GK
+	.listgk-page{
+		.main .listgk{
+			&-inner{
+				flex-basis: 802px;
+			}
+			.object{
+				&__plate{
+					width: 48%;
+				}
+				&__item-outer{
+					width: 350px;
+				}
+			}
+		}
+	}
+	// =/LIST GK
 }
 
 
@@ -3110,6 +3159,33 @@
 	}
 	// =/FAVORITES
 
+
+	// LIST GK
+	.listgk-page{
+		.main{
+			.panel{
+				.flexbox{
+					flex-wrap: wrap;
+				}
+			}
+			.listgk{
+				&-inner{
+					flex-basis: 66%;
+					padding-right: 1.5rem;
+				}
+				.object{
+					&__plate{
+						width: 50%;
+					}
+					&__item-outer{
+						width: 285px;
+					}
+				}
+			}
+		}
+	}
+	// =/LIST GK
+
 }
 
 
@@ -3483,7 +3559,8 @@
 	.actions-page,
 	.news-page,
 	.action-page,
-	.about-page
+	.about-page,
+	.listgk-page
 	{
 		.neck .col-7{
 			flex-basis: 100%;
@@ -4107,6 +4184,56 @@
 			}
 		}	
 	}
+
+	// LIST GK
+	.listgk-page{
+		.head{
+			.col-7{
+				flex-basis: 100%;
+			}
+		}
+		.main{
+			.panel{
+				.flexbox{
+					flex-basis: 100%;
+				}
+			}
+			.listgk{
+				&-inner{
+					flex-basis: 100%;
+					padding-right: 0;
+				}
+				.object{
+					&__plate{
+						width: 50%;
+					}
+					&__item-outer{
+						width: 340px;
+					}
+				}
+				.side{
+					margin-top: 0;
+					padding-top: 0;
+				}
+			}
+		}
+
+		.side{
+			flex-wrap: wrap;
+			flex-basis: 100%;
+			padding-bottom: 3rem;
+			.callback{
+				margin-left: 5rem;
+				height: 531px;
+			}
+			.secondary{
+				margin-left: 0;
+			}
+		}
+	}
+	// =/LIST GK
+
+
 }
 
 
@@ -4851,6 +4978,25 @@
 	}
 	// =/FAVORITE
 
+
+	// LIST GK
+	.listgk-page{
+		.main .listgk{
+			.object{
+				&__meta{
+					border-bottom: none;
+				}
+				&__plate{
+					width: 50%;
+				}
+				&__item-outer{
+					width: 320px;
+				}
+			}
+		}
+	}
+	// =/LIST GK
+
 }
 
 
@@ -5016,15 +5162,15 @@
 		.complex__navhouses .nav{
 			width: 165px;
 		}
-	}
-
-
-	.complex-page .complex__place{
-		flex-wrap: wrap;
-		.cell{
-			width: 45%;
+		.complex__place{
+			flex-wrap: wrap;
+			.cell{
+				width: 45%;
+			}
 		}
 	}
+
+
 
 	.card_flat{
 		.carousel{
@@ -5053,7 +5199,10 @@
 		flex-basis: 50%;
 	}
 
-
+	.listgk-page .side .callback{
+		margin-left: 0;
+	}
+	
 }
 
 
@@ -5180,6 +5329,21 @@
 		}
 	}
 
+
+	// LIST GK
+	.listgk-page{
+		.main .listgk{
+			.object{
+				&__plate{
+					width: 50%;
+				}
+				&__item-outer{
+					width: 280px;
+				}
+			}
+		}
+	}
+	// =/LIST GK
 }
 
 
@@ -5567,6 +5731,36 @@
 	.complex-page .about main .heading{
 		font-size: 2.6rem !important;
 	}
+
+
+	// LIST GK
+	.listgk-page{
+		.main{
+			.panel{
+				&__left{
+					display: block;
+				}
+				.text-count{
+					flex-basis: 100%;
+				}
+				.area-select__wrap{
+					margin-left: 0;
+					margin-top: 1rem;
+				}
+			}
+			.listgk{
+				.object{
+					&__plate{
+						width: 100%;
+					}
+					&__item-outer{
+						width: 370px;
+					}
+				}
+			}
+		}
+	}
+	// =/LIST GK
 }
 
 
@@ -6024,6 +6218,26 @@
 	}
 	// =/FAVORITE
 
+
+	.listgk-page .main{
+		.listgk .object{
+			&__info{
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			&__composition{
+				margin-top: 0;
+			}
+		}
+		.panel{
+			.flexbox{
+				display: block;
+			}
+			&__right{
+				margin-top: 1.5rem;
+			}
+		}
+	}
 }
 
 
@@ -6514,6 +6728,15 @@
 
 	.heading{
 		font-size: 2.6rem !important;
+	}
+
+	.listgk-page .head{
+		.title{
+			margin-bottom: 1rem;
+		}
+		.flexbox{
+			display: block;			
+		}
 	}
 
 }
@@ -7296,6 +7519,20 @@
 	.complex-page .map__info ul{
 		display: block;
 	}
+
+
+
+	// LIST GK
+	.listgk-page{
+		.main .listgk{
+			.object{
+				&__item-outer{
+					width: 320px;
+				}
+			}
+		}
+	}
+	// =/LIST GK
 }
 
 
@@ -7443,7 +7680,13 @@
 			}
 		}
 	}
-	
+
+	.listgk-page .main .listgk .object{
+		&__meta .object__info{
+			text-align: left;
+		}
+	}
+
 
 
 	.side{
@@ -7776,6 +8019,13 @@
 	.object__meta .object__right{
 		margin-left: 1.2rem;
 	}
+
+	.side__map{
+		width: calc(100% - 12px);
+		img{
+			max-width: 100%;
+		}
+	}
 }
 
 
@@ -8058,5 +8308,33 @@
 		right: 10px;
 		width: 32px;
 	}
+
+
+	// LIST GK
+	.listgk-page{
+		.main{
+			.listgk{
+				.object{
+					&__item-outer{
+						width: 280px;
+					}
+					&__labels img{
+						width: 70px;
+					}
+
+					&__title{
+						font-size: 2.1rem;
+					}
+					&__bottom{
+						padding-left: 1rem;
+					}
+				}
+			}
+			.complex__description{
+				padding-left: 1rem;
+			}
+		}
+	}
+	// =/LIST GK
 
 }

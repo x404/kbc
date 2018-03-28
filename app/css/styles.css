@@ -762,7 +762,7 @@ input[type="submit"] {
 .topnews .news .cat__link, .feature .promo .type-1 .statistic__cell p:not(.num), .object__bottom, .side__map .title, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
 .vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top,
 .list_construction .place__top, .review__bottom, .filter-sort .btn,
-.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, div.table-flats .grow, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .subnav a, .complex-page .complex__place .cell, .complex-page .complex__navhouses, .complex-page .about .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom, .about-page .scheme .step, .about-page .calculator .calc-bottom, .listgk-page .main .panel, .listgk-page .main .panel__left, .listgk-page .main .complex__bottom, .listgk-page .main .complex__bottom .right .btn {
+.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, div.table-flats .grow, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .subnav a, .complex-page .complex__place .cell, .complex-page .complex__navhouses, .complex-page .about .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom, .about-page .scheme .step, .about-page .calculator .calc-bottom, .listgk-page .main .panel, .listgk-page .main .panel__left, .listgk-page .main .listgk .object__subinfo, .listgk-page .main .complex__bottom, .listgk-page .main .complex__bottom .right .btn {
   display: flex;
   align-items: center; }
 
@@ -3364,7 +3364,7 @@ body.modal-open,
   margin-top: 3.7rem;
   position: relative;
   transition: .3s all;
-  width: 308px;
+  width: 304px;
   position: relative; }
   .picking:after, .picking:before {
     transition: .3s; }
@@ -7117,19 +7117,58 @@ circle:nth-child(2n) {
           transition: line-height 0.5s ease; }
         .listgk-page .main .area-select__wrap .not-full input:focus:-ms-input-placeholder {
           transition: line-height 0.5s ease; }
+    .listgk-page .main .listgk-inner {
+      flex-wrap: wrap;
+      align-items: flex-start;
+      padding-right: 6rem; }
     .listgk-page .main .listgk .side {
       margin-top: -17rem; }
-    .listgk-page .main .complex__pic {
+    .listgk-page .main .listgk .object__pic {
+      height: 238px;
+      overflow: hidden;
       position: relative; }
-      .listgk-page .main .complex__pic img {
-        display: block; }
-      .listgk-page .main .complex__pic .object__labels {
-        left: 25px;
+      .listgk-page .main .listgk .object__pic img {
+        transition: .3s transform;
         position: absolute;
-        top: 23px;
-        width: 100%; }
-        .listgk-page .main .complex__pic .object__labels img {
-          display: inline-block; }
+        bottom: 0;
+        vertical-align: bottom; }
+    .listgk-page .main .listgk .object__labels {
+      margin-top: 0; }
+    .listgk-page .main .listgk .object__top {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      padding-left: 25px;
+      padding-top: 20px; }
+    .listgk-page .main .listgk .object__bottom {
+      height: 86px;
+      padding-left: 2rem;
+      padding-right: 1.4rem; }
+    .listgk-page .main .listgk .object__plate {
+      width: 33.3%; }
+    .listgk-page .main .listgk .object__item {
+      margin-top: 3.5rem;
+      width: calc(100% - 7px); }
+      .listgk-page .main .listgk .object__item-outer:after {
+        width: calc(100% - 7px); }
+      .listgk-page .main .listgk .object__item:after {
+        background-image: linear-gradient(to bottom, #bdbec1 0, #bdbec1 calc(100% - 86px), #00a664 calc(100% - 86px), #00a664 100%); }
+      .listgk-page .main .listgk .object__item:hover .object__pic img {
+        transform: scale(1.15); }
+    .listgk-page .main .listgk .object__description {
+      position: static; }
+    .listgk-page .main .listgk .object__info {
+      font-size: 1.4rem; }
+    .listgk-page .main .listgk .object__title {
+      font-size: 2.6rem;
+      display: inline-block; }
+    .listgk-page .main .listgk .object__meta .object__info p:not(.object__title) {
+      font-size: 1.4rem; }
+    .listgk-page .main .listgk .object__composition {
+      margin-left: .7rem; }
+    .listgk-page .main .listgk .btn-more {
+      text-decoration: none; }
     .listgk-page .main .complex__link {
       display: block;
       overflow: hidden; }
@@ -7163,21 +7202,40 @@ circle:nth-child(2n) {
       line-height: 1.5;
       padding-bottom: 1.8rem; }
     .listgk-page .main .complex__description {
+      padding-left: 2rem;
+      padding-right: 1.8rem;
+      padding-bottom: 1rem;
       background: #fff;
       display: flex;
       flex-direction: column; }
+      .listgk-page .main .complex__description .str {
+        font-size: 1.3rem;
+        color: #3d3d3d;
+        padding: 1.2rem 0;
+        border-bottom: 1px solid #ebeef1; }
+        .listgk-page .main .complex__description .str:last-child {
+          border-bottom: none; }
       .listgk-page .main .complex__description .object__info {
         margin-left: 0; }
       .listgk-page .main .complex__description .object__meta {
         padding-left: 0;
-        padding-top: 33px;
+        padding: 1.5rem 0 0.5rem;
         z-index: 1; }
+        .listgk-page .main .complex__description .object__meta .btn {
+          font-size: 1.3rem;
+          height: 3rem;
+          padding-left: 35px;
+          padding-right: 14px;
+          display: inline-flex; }
+          .listgk-page .main .complex__description .object__meta .btn:before {
+            background-image: url(../images/sprite.png);
+            background-position: -266px -244px;
+            width: 18px;
+            height: 16px; }
     .listgk-page .main .complex__body {
-      flex-grow: 1;
-      padding-left: 32px; }
+      flex-grow: 1; }
     .listgk-page .main .complex__bottom {
-      background: #d7dde2;
-      padding: 1.9rem 0 1.9rem 32px; }
+      padding: 1.9rem 0 1.9rem 0; }
       .listgk-page .main .complex__bottom .left .flats {
         font-size: 1.6rem; }
         .listgk-page .main .complex__bottom .left .flats .num {
@@ -8676,10 +8734,13 @@ tbody.collapse.show {
     width: 22%; }
   .material__title {
     font-size: 1.6rem; }
-  .listgk-inner {
-    flex: 0 0 70%; }
-  .listgk-page .main .complex__pic {
-    width: 200px; }
+  .listgk-page .main .listgk-inner {
+    flex-basis: 1042px;
+    padding-right: 3rem; }
+  .listgk-page .main .listgk .object__top {
+    padding-left: 20px; }
+  .listgk-page .main .listgk .object__title {
+    font-size: 2.4rem; }
   .about-page .calculator {
     background-position: 50px center;
     padding-left: 643px; }
@@ -8959,7 +9020,15 @@ tbody.collapse.show {
   .complex-page .about .carousel {
     width: 620px; }
   .complex-page .houses .house__info .btn {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem; }
+  .listgk-page .main .listgk-inner {
+    flex-basis: 933px; }
+  .listgk-page .main .listgk .object__plate {
+    width: 50%; }
+  .listgk-page .main .listgk .object__item-outer {
+    width: 365px; }
+  .listgk-page .object__labels img {
+    width: auto; } }
 
 @media (max-width: 1350px) {
   .table-flats td {
@@ -9538,7 +9607,13 @@ tbody.collapse.show {
     width: 18%; }
   .favorite-page div.table-flats .cell-10 {
     width: 7%;
-    text-align: center; } }
+    text-align: center; }
+  .listgk-page .main .listgk-inner {
+    flex-basis: 802px; }
+  .listgk-page .main .listgk .object__plate {
+    width: 48%; }
+  .listgk-page .main .listgk .object__item-outer {
+    width: 350px; } }
 
 @media (max-width: 1199px) {
   .about-page .carousel .item {
@@ -10100,7 +10175,16 @@ tbody.collapse.show {
     .object__meta .object__right .flats-price {
       display: flex;
       flex-grow: 1;
-      margin-top: 1.5rem; } }
+      margin-top: 1.5rem; }
+  .listgk-page .main .panel .flexbox {
+    flex-wrap: wrap; }
+  .listgk-page .main .listgk-inner {
+    flex-basis: 66%;
+    padding-right: 1.5rem; }
+  .listgk-page .main .listgk .object__plate {
+    width: 50%; }
+  .listgk-page .main .listgk .object__item-outer {
+    width: 285px; } }
 
 @media (max-width: 1050px) {
   .vacancies-page .side,
@@ -10294,21 +10378,24 @@ tbody.collapse.show {
   .actions-page .neck .col-7,
   .news-page .neck .col-7,
   .action-page .neck .col-7,
-  .about-page .neck .col-7 {
+  .about-page .neck .col-7,
+  .listgk-page .neck .col-7 {
     flex-basis: 100%; }
   .vacancies-page .main,
   .faq-page .main,
   .actions-page .main,
   .news-page .main,
   .action-page .main,
-  .about-page .main {
+  .about-page .main,
+  .listgk-page .main {
     display: block; }
   .vacancies-page .side,
   .faq-page .side,
   .actions-page .side,
   .news-page .side,
   .action-page .side,
-  .about-page .side {
+  .about-page .side,
+  .listgk-page .side {
     display: flex;
     margin-left: 0; }
   .vacancies-page .secondary,
@@ -10316,7 +10403,8 @@ tbody.collapse.show {
   .actions-page .secondary,
   .news-page .secondary,
   .action-page .secondary,
-  .about-page .secondary {
+  .about-page .secondary,
+  .listgk-page .secondary {
     margin-left: 4rem; }
   .list_vacancy .vacancy__item {
     width: 100%; }
@@ -10635,7 +10723,30 @@ tbody.collapse.show {
     position: absolute;
     right: 50px;
     bottom: 5px;
-    padding: 0; } }
+    padding: 0; }
+  .listgk-page .head .col-7 {
+    flex-basis: 100%; }
+  .listgk-page .main .panel .flexbox {
+    flex-basis: 100%; }
+  .listgk-page .main .listgk-inner {
+    flex-basis: 100%;
+    padding-right: 0; }
+  .listgk-page .main .listgk .object__plate {
+    width: 50%; }
+  .listgk-page .main .listgk .object__item-outer {
+    width: 340px; }
+  .listgk-page .main .listgk .side {
+    margin-top: 0;
+    padding-top: 0; }
+  .listgk-page .side {
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    padding-bottom: 3rem; }
+    .listgk-page .side .callback {
+      margin-left: 5rem;
+      height: 531px; }
+    .listgk-page .side .secondary {
+      margin-left: 0; } }
 
 @media (max-width: 920px) {
   .side-inner {
@@ -11062,7 +11173,13 @@ tbody.collapse.show {
     right: 5px;
     top: 15px;
     bottom: auto;
-    padding: 0 !important; } }
+    padding: 0 !important; }
+  .listgk-page .main .listgk .object__meta {
+    border-bottom: none; }
+  .listgk-page .main .listgk .object__plate {
+    width: 50%; }
+  .listgk-page .main .listgk .object__item-outer {
+    width: 320px; } }
 
 @media (max-width: 720px) {
   .objects-callback .side .callback {
@@ -11168,7 +11285,9 @@ tbody.collapse.show {
       .card_flat .carousel .owl-carousel .owl-next:hover {
         right: -80px; }
   .characteristic__row {
-    flex-basis: 50%; } }
+    flex-basis: 50%; }
+  .listgk-page .side .callback {
+    margin-left: 0; } }
 
 @media (max-width: 700px) {
   .fixed-navbar .subnav ul {
@@ -11239,7 +11358,11 @@ tbody.collapse.show {
       .complex-page .map__info ul li {
         width: 42%; }
   .complex-page .map #map {
-    height: 400px; } }
+    height: 400px; }
+  .listgk-page .main .listgk .object__plate {
+    width: 50%; }
+  .listgk-page .main .listgk .object__item-outer {
+    width: 280px; } }
 
 @media (max-width: 670px) {
   .feature .promo {
@@ -11463,7 +11586,18 @@ tbody.collapse.show {
   .installmentbox__right .variant__cifr {
     font-size: 4rem; }
   .complex-page .about main .heading {
-    font-size: 2.6rem !important; } }
+    font-size: 2.6rem !important; }
+  .listgk-page .main .panel__left {
+    display: block; }
+  .listgk-page .main .panel .text-count {
+    flex-basis: 100%; }
+  .listgk-page .main .panel .area-select__wrap {
+    margin-left: 0;
+    margin-top: 1rem; }
+  .listgk-page .main .listgk .object__plate {
+    width: 100%; }
+  .listgk-page .main .listgk .object__item-outer {
+    width: 370px; } }
 
 @media (max-width: 630px) {
   .feature__right .about,
@@ -11711,7 +11845,16 @@ tbody.collapse.show {
   .object__meta .object__right {
     margin-left: 2.4rem; }
     .object__meta .object__right .flats-price {
-      margin-top: .8rem; } }
+      margin-top: .8rem; }
+  .listgk-page .main .listgk .object__info {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .listgk-page .main .listgk .object__composition {
+    margin-top: 0; }
+  .listgk-page .main .panel .flexbox {
+    display: block; }
+  .listgk-page .main .panel__right {
+    margin-top: 1.5rem; } }
 
 @media (max-width: 570px) {
   .complex-page .complex__panel .complex__grouphouse {
@@ -11969,7 +12112,11 @@ tbody.collapse.show {
   .mortgage__item {
     width: 100%; }
   .heading {
-    font-size: 2.6rem !important; } }
+    font-size: 2.6rem !important; }
+  .listgk-page .head .title {
+    margin-bottom: 1rem; }
+  .listgk-page .head .flexbox {
+    display: block; } }
 
 @media (max-width: 480px) {
   .feature .promo .type-1 .title {
@@ -12399,7 +12546,9 @@ tbody.collapse.show {
         .about-partners .partners .link_groups a {
           margin-right: 0; }
   .complex-page .map__info ul {
-    display: block; } }
+    display: block; }
+  .listgk-page .main .listgk .object__item-outer {
+    width: 320px; } }
 
 @media (max-width: 420px) {
   .modal-map {
@@ -12491,6 +12640,8 @@ tbody.collapse.show {
       margin-left: -14px; }
   .object__item-outer {
     width: 215px; }
+  .listgk-page .main .listgk .object__meta .object__info {
+    text-align: left; }
   .side .callback__form-inner .inputs {
     display: block !important;
     margin-right: 0 !important; }
@@ -12653,7 +12804,11 @@ tbody.collapse.show {
       padding-left: 7px;
       padding-right: 7px; }
   .object__meta .object__right {
-    margin-left: 1.2rem; } }
+    margin-left: 1.2rem; }
+  .side__map {
+    width: calc(100% - 12px); }
+    .side__map img {
+      max-width: 100%; } }
 
 @media (max-width: 350px) {
   .intro__left {
@@ -12798,4 +12953,14 @@ tbody.collapse.show {
     right: 10px; }
   .favorite-page div.table-flats .cell-10 {
     right: 10px;
-    width: 32px; } }
+    width: 32px; }
+  .listgk-page .main .listgk .object__item-outer {
+    width: 280px; }
+  .listgk-page .main .listgk .object__labels img {
+    width: 70px; }
+  .listgk-page .main .listgk .object__title {
+    font-size: 2.1rem; }
+  .listgk-page .main .listgk .object__bottom {
+    padding-left: 1rem; }
+  .listgk-page .main .complex__description {
+    padding-left: 1rem; } }
