@@ -565,8 +565,8 @@ $(document).on('click', '.delete', function(e){
 	e.preventDefault();
 	$this = $(this);
 
-	$this.closest('tr').addClass('remove').fadeOut('slow', function(){
-		$('tr.remove').remove();
+	$this.closest('.tr').addClass('remove').fadeOut('slow', function(){
+		$('.tr.remove').remove();
 	});
 });
 
