@@ -184,19 +184,19 @@
 								<p>Масштаб чертежа</p>
 
 								<div class="controls">
-									<input type="radio" class="radio" id="a1" name="scale" />
+									<input type="radio" class="radio" id="a1" name="scale" checked="checked" value="1" />
 									<label for="a1">A1</label>
 
-									<input type="radio" class="radio" id="a2" name="scale" />
+									<input type="radio" class="radio" id="a2" name="scale" value="2" />
 									<label for="a2">A2</label>
 
-									<input type="radio" class="radio" id="a3" name="scale" checked="checked" />
+									<input type="radio" class="radio" id="a3" name="scale" value="3" />
 									<label for="a3">A3</label>
 
-									<input type="radio" class="radio" id="a4" name="scale" />
+									<input type="radio" class="radio" id="a4" name="scale" value="4" />
 									<label for="a4">A4</label>
 
-									<input type="radio" class="radio" id="a5" name="scale" />
+									<input type="radio" class="radio" id="a5" name="scale" value="5"/>
 									<label for="a5">A5</label>
 								</div>
 							</div>
@@ -285,17 +285,21 @@
 
 
 										<div class="scheme__pic">
-											<div class="area-outer">
-												<div class="area-top-line">
-													<div id="tiles" style="height: 100px"></div>
-													<div class="length">{{lengthA}} м</div>
-													<div class="width">{{widthB}} м</div>
+											<div class="area-outer-top">
+												<div class="area-outer-left">
+													<div class="area-top-line">
+														<div class="area-left-line">
+															<div id="tiles" style="height: 100px; width: 500px"></div>
+															<div class="length">{{lengthA}} м</div>
+															<div class="width">{{widthB}} м</div>
+														</div>
+													</div>
 												</div>
 											</div>
 											
 										</div>
 
-										<img src="tmp/tile-scheme.jpg" alt="" />
+										<!-- <img src="tmp/tile-scheme.jpg" alt="" /> -->
 
 										<div class="params">
 											<div class="column">

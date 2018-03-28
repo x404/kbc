@@ -4,10 +4,14 @@ var app = new Vue({
 		lengthA: document.querySelector('#length').value,
 		widthB: document.querySelector('#width').value,
 		areatile: 0,
-		depth : document.querySelector('#depth').value
+		depth : document.querySelector('#depth').value,
+		k : 35,
+		scale : 1
 	},
 	computed: {
 		areaC: function(){
+			document.querySelector('#tiles').style.width = this.lengthA * this.k + 'px';
+			document.querySelector('#tiles').style.height = this.widthB * this.k + 'px';
 			output = this.lengthA * this.widthB;
 			return output;
 		},
