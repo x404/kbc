@@ -310,7 +310,7 @@
 	margin-top: 3.7rem;
 	position: relative;
 	transition: .3s all;
-	width: 308px;
+	width: 304px;
 	@include perspective(12px, #ee1746, $color61);
 	&:before{
 		background: linear-gradient(to right, #007948 0, #007948 75px, $color61 75px, $color61);

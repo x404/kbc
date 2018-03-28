@@ -3559,7 +3559,8 @@
 	.actions-page,
 	.news-page,
 	.action-page,
-	.about-page
+	.about-page,
+	.listgk-page
 	{
 		.neck .col-7{
 			flex-basis: 100%;
@@ -4210,10 +4211,29 @@
 						width: 340px;
 					}
 				}
+				.side{
+					margin-top: 0;
+					padding-top: 0;
+				}
+			}
+		}
+
+		.side{
+			flex-wrap: wrap;
+			flex-basis: 100%;
+			padding-bottom: 3rem;
+			.callback{
+				margin-left: 5rem;
+				height: 531px;
+			}
+			.secondary{
+				margin-left: 0;
 			}
 		}
 	}
 	// =/LIST GK
+
+
 }
 
 
@@ -5142,15 +5162,15 @@
 		.complex__navhouses .nav{
 			width: 165px;
 		}
-	}
-
-
-	.complex-page .complex__place{
-		flex-wrap: wrap;
-		.cell{
-			width: 45%;
+		.complex__place{
+			flex-wrap: wrap;
+			.cell{
+				width: 45%;
+			}
 		}
 	}
+
+
 
 	.card_flat{
 		.carousel{
@@ -5179,7 +5199,10 @@
 		flex-basis: 50%;
 	}
 
-
+	.listgk-page .side .callback{
+		margin-left: 0;
+	}
+	
 }
 
 
@@ -7995,6 +8018,13 @@
 
 	.object__meta .object__right{
 		margin-left: 1.2rem;
+	}
+
+	.side__map{
+		width: calc(100% - 12px);
+		img{
+			max-width: 100%;
+		}
 	}
 }
 
