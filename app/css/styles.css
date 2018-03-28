@@ -738,7 +738,7 @@ h3 {
 .related .carousel .owl-carousel .owl-next:after, .objects__info:before, .object__item-outer:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .about-partners .partners:after, .big-icon:before, .neck:before, .neck:after, .neck .tabs .tab.active:after, .pagination .prev:before,
 .pagination .next:before, .picking:after, .picking:before, .picking__inner:before, .picking__link span:before, .content-bottom .subscribe:after, .content-bottom .subscribe:before, .sortbox__option-up:after, .sortbox__option-down:after, main ul li:before, .faq-page .head .btn:before,
-.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .favorite__item:after, div.table-flats .sort:after, .catalog__item:after, .catalog__item:before, .product__item-inner:after, .product__item-inner:before, .product__item:after, .product__item:hover .product__item-inner:after, .product__item:hover .product__item-inner:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .house:after, .flat-page .card__description .description__inner:after, .flat-page .card__description .description__inner:before, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .flat-page .card__description .description__bottom:before, .flat-page .card__description .description__bottom:hover:after, .flat-page .card__description .description__bottom:hover:before, .flat-page .card__description .description:after, .installmentbox__left:after, .installmentbox__left:before, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, #calc-gnk-form .alert:before, .complex-page .complex__left:before, .complex-page .complex__panel .video .bg:before, .complex-page .complex__panel .video .bg:after, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a span:after, .complex-page .complex__panel .house:after, .complex-page .about main .heading:after, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item__body:after, .about-page .carousel .item__body:before, .about-page .about .advantages:after, .about-page .about .advantages:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .about-page .calculator .calc-bottom:after, .about-page .calculator .calc-bottom:before, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .example__pic a:after, .calculator-page .example__pic a:before, .calculator-page .example__pic:after, .calculator-page .example__pic:before, .calculator-page .related__item:after, .calculator-page .related__item:before {
+.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .favorite__item:after, div.table-flats .sort:after, .catalog__item:after, .catalog__item:before, .product__item-inner:after, .product__item-inner:before, .product__item:after, .product__item:hover .product__item-inner:after, .product__item:hover .product__item-inner:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .house:after, .flat-page .card__description .description__inner:after, .flat-page .card__description .description__inner:before, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .flat-page .card__description .description__bottom:before, .flat-page .card__description .description__bottom:hover:after, .flat-page .card__description .description__bottom:hover:before, .flat-page .card__description .description:after, .installmentbox__left:after, .installmentbox__left:before, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, #calc-gnk-form .alert:before, .complex-page .complex__left:before, .complex-page .complex__panel .video .bg:before, .complex-page .complex__panel .video .bg:after, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a span:after, .complex-page .complex__panel .house:after, .complex-page .about main .heading:after, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item__body:after, .about-page .carousel .item__body:before, .about-page .about .advantages:after, .about-page .about .advantages:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .about-page .calculator .calc-bottom:after, .about-page .calculator .calc-bottom:before, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .main .content .scheme .area-outer:before, .calculator-page .main .content .scheme .area-outer:after, .calculator-page .main .content .scheme .area-outer .area-top-line:before, .calculator-page .example__pic a:after, .calculator-page .example__pic a:before, .calculator-page .example__pic:after, .calculator-page .example__pic:before, .calculator-page .related__item:after, .calculator-page .related__item:before {
   content: "";
   display: block;
   position: absolute; }
@@ -7391,9 +7391,59 @@ circle:nth-child(2n) {
     .calculator-page .main .content .scheme {
       padding-left: 6.6rem;
       flex-grow: 1;
-      font-size: 1.5rem; }
-      .calculator-page .main .content .scheme #area {
-        margin-top: 2rem; }
+      font-size: 1.5rem;
+      padding-right: 8rem;
+      width: 100%; }
+      .calculator-page .main .content .scheme__pic {
+        margin-top: 2rem;
+        overflow: auto;
+        padding-left: 4rem;
+        padding-top: 4rem;
+        max-width: 850px;
+        max-height: 350px;
+        float: left; }
+      .calculator-page .main .content .scheme .area-outer {
+        width: 500px;
+        position: relative; }
+        .calculator-page .main .content .scheme .area-outer:before, .calculator-page .main .content .scheme .area-outer:after {
+          background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAHBAMAAADZviHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAMFBMVEXCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDH////hA6PIAAAADnRSTlMAG6gGePNI2HvhTrceilF/UNUAAAABYktHRA8YugDZAAAAB3RJTUUH4gMcEA0X4GzaJAAAACFJREFUCNdjYGAQYmAwiWNgq3vH8O7dO4ZOIGZYDcQMZwFvNgmsCDr4kwAAAABJRU5ErkJggg==") no-repeat left 4px;
+          border-left: 1px solid #c20831;
+          height: 26px;
+          top: -26px;
+          width: 6px; }
+        .calculator-page .main .content .scheme .area-outer:after {
+          right: 0;
+          transform: rotate(180deg);
+          background-position: left bottom 4px; }
+        .calculator-page .main .content .scheme .area-outer:before {
+          left: 0; }
+        .calculator-page .main .content .scheme .area-outer .area-top-line {
+          position: relative; }
+          .calculator-page .main .content .scheme .area-outer .area-top-line:before {
+            border-top: 1px solid #c20831;
+            left: 0;
+            top: -19px;
+            width: 100%; }
+      .calculator-page .main .content .scheme .length,
+      .calculator-page .main .content .scheme .width {
+        position: absolute;
+        color: #c20831;
+        font-weight: 700;
+        font-size: 1.5rem; }
+      .calculator-page .main .content .scheme .length {
+        left: 50%;
+        top: -40px;
+        margin-left: -5px; }
+      .calculator-page .main .content .scheme .width {
+        transform: rotate(-90deg);
+        left: -40px;
+        top: 50%;
+        margin-top: -5px;
+        tranform-origing: 0 0; }
+      .calculator-page .main .content .scheme #tiles {
+        border: 1px solid #000;
+        margin-bottom: 5rem;
+        background: #fff; }
       .calculator-page .main .content .scheme .params {
         display: flex;
         margin: 2.5rem 0 0 3.5rem; }

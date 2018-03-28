@@ -3,7 +3,8 @@ var app = new Vue({
 	data: {
 		lengthA: document.querySelector('#length').value,
 		widthB: document.querySelector('#width').value,
-		areatile: 0
+		areatile: 0,
+		depth : document.querySelector('#depth').value
 	},
 	computed: {
 		areaC: function(){
@@ -13,6 +14,10 @@ var app = new Vue({
 		counts: function(){
 			output = Math.ceil(this.areaC / this.areatile);
 			return output;
+		},
+		capacity: function(){
+			output = this.areaC * this.depth;
+			return +output.toFixed(10);
 		}
 	},
 	methods:{

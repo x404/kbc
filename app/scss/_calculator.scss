@@ -171,9 +171,81 @@
 				padding-left: 6.6rem;
 				flex-grow: 1;
 				font-size: 1.5rem;
-
-				#area{
+				padding-right: 8rem;
+				$color: #c20831;
+				width: 100%;
+				
+				&__pic{
 					margin-top: 2rem;
+					overflow: auto;
+					padding-left: 4rem;
+					padding-top: 4rem;
+					max-width: 850px;
+					max-height: 350px;
+					float: left;
+
+
+				}
+				.area-outer{
+width: 500px;					
+					position: relative;
+					&:before,
+					&:after{
+						@extend .before;
+						background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAHBAMAAADZviHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAMFBMVEXCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDHCCDH////hA6PIAAAADnRSTlMAG6gGePNI2HvhTrceilF/UNUAAAABYktHRA8YugDZAAAAB3RJTUUH4gMcEA0X4GzaJAAAACFJREFUCNdjYGAQYmAwiWNgq3vH8O7dO4ZOIGZYDcQMZwFvNgmsCDr4kwAAAABJRU5ErkJggg==") no-repeat left 4px;
+						border-left: 1px solid $color;
+						height: 26px;
+						top: -26px;
+						width: 6px;
+					}
+					&:after{
+						right: 0;
+						transform: rotate(180deg);
+						background-position: left bottom 4px;
+					}
+					&:before{
+						left: 0;
+					}
+
+					.area-top-line{
+						// background: url(../images/reddot.gif) repeat-x left top -4px;
+						position: relative;
+						&:before{
+							@extend .before;
+							border-top: 1px solid $color;
+							left: 0;
+							top: -19px;
+							width: 100%;
+						}
+					}
+				}
+
+				.length,
+				.width{
+					position: absolute;
+					color: $color;
+					font-weight: 700;
+					font-size: 1.5rem;
+				}
+
+				.length{
+					left: 50%;
+					top: -40px;
+					margin-left: -5px;					
+				}
+
+				.width{
+					transform: rotate(-90deg);
+					left: -40px;
+					top: 50%;
+					margin-top: -5px;
+					tranform-origing: 0 0;
+				}
+
+				#tiles{
+					border: 1px solid #000;
+					margin-bottom: 5rem;
+					background: $color2;
 				}
 
 				.params{

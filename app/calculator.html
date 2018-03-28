@@ -283,9 +283,19 @@
 									<div class="scheme">
 										<p class="heading">Схема укладки</p>
 
-										<div id="area">
-											<img src="tmp/tile-scheme.jpg" alt="" />
+
+										<div class="scheme__pic">
+											<div class="area-outer">
+												<div class="area-top-line">
+													<div id="tiles" style="height: 100px"></div>
+													<div class="length">{{lengthA}} м</div>
+													<div class="width">{{widthB}} м</div>
+												</div>
+											</div>
+											
 										</div>
+
+										<img src="tmp/tile-scheme.jpg" alt="" />
 
 										<div class="params">
 											<div class="column">
@@ -296,7 +306,7 @@
 											<div class="column">
 												<p><strong>Площадь одной плитки: </strong> {{areatile}} м<sup>2</sup></p>
 												<p><strong>Количество плиток:</strong> {{counts}} шт.</p>
-												<p><strong>Объем подсыпки:</strong> 1.2 м<sup>3</sup></p>
+												<p><strong>Объем подсыпки:</strong> {{capacity}} м<sup>3</sup></p>
 											</div>
 										</div>
 
