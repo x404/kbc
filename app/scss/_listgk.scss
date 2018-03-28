@@ -79,7 +79,7 @@
 				}
 				&__item{
 					margin-top: 3.5rem;
-					width: 358px;
+					width: calc(100% - 7px);
 					&-outer{
 						&:after{
 							width: calc(100% - 7px);

@@ -391,13 +391,21 @@
 	}
 	// =/NEWS
 
-	.listgk-inner{
-		flex: 0 0 70%;
-	}
 
 	.listgk-page .main{
-		.complex__pic{
-			width: 200px;
+		.listgk-inner{
+			flex-basis: 1042px;
+			padding-right: 3rem;
+		}
+		.listgk{
+			.object{
+				&__top{
+					padding-left: 20px;
+				}
+				&__title{
+					font-size: 2.4rem;
+				}
+			}
 		}
 	}
 
@@ -981,6 +989,28 @@
 		}
 	}
 	// =/COMPLEX PAGE
+
+	// LIST GK
+	.listgk-page{
+		.main .listgk{
+			&-inner{
+				flex-basis: 933px;
+			}
+			.object{
+				&__plate{
+					width: 50%;
+				}
+				&__item-outer{
+					width: 365px;
+				}
+			}
+		}
+		.object__labels img{
+			width: auto;
+		}
+	}
+	// =/LIST GK
+
 }
 
 @media (max-width: 1350px){
@@ -2025,6 +2055,25 @@
 			}
 		}	
 	}
+
+
+	// LIST GK
+	.listgk-page{
+		.main .listgk{
+			&-inner{
+				flex-basis: 802px;
+			}
+			.object{
+				&__plate{
+					width: 48%;
+				}
+				&__item-outer{
+					width: 350px;
+				}
+			}
+		}
+	}
+	// =/LIST GK
 }
 
 
@@ -3110,6 +3159,26 @@
 	}
 	// =/FAVORITES
 
+
+	// LIST GK
+	.listgk-page{
+		.main .listgk{
+			&-inner{
+				flex-basis: 66%;
+				padding-right: 1.5rem;
+			}
+			.object{
+				&__plate{
+					width: 50%;
+				}
+				&__item-outer{
+					width: 285px;
+				}
+			}
+		}
+	}
+	// =/LIST GK
+
 }
 
 
@@ -4107,6 +4176,25 @@
 			}
 		}	
 	}
+
+	// LIST GK
+	.listgk-page{
+		.main .listgk{
+			&-inner{
+				flex-basis: 100%;
+				padding-right: 0;
+			}
+			.object{
+				&__plate{
+					width: 50%;
+				}
+				&__item-outer{
+					width: 340px;
+				}
+			}
+		}
+	}
+	// =/LIST GK
 }
 
 
@@ -4851,6 +4939,25 @@
 	}
 	// =/FAVORITE
 
+
+	// LIST GK
+	.listgk-page{
+		.main .listgk{
+			.object{
+				&__meta{
+					border-bottom: none;
+				}
+				&__plate{
+					width: 50%;
+				}
+				&__item-outer{
+					width: 320px;
+				}
+			}
+		}
+	}
+	// =/LIST GK
+
 }
 
 
@@ -5179,6 +5286,23 @@
 			}
 		}
 	}
+
+
+	// LIST GK
+	.listgk-page{
+		.main .listgk{
+			.object{
+				&__plate{
+					width: 50%;
+				}
+				&__item-outer{
+					width: 280px;
+				}
+			}
+		}
+	}
+	// =/LIST GK
+
 
 }
 
@@ -5567,6 +5691,22 @@
 	.complex-page .about main .heading{
 		font-size: 2.6rem !important;
 	}
+
+
+	// LIST GK
+	.listgk-page{
+		.main .listgk{
+			.object{
+				&__plate{
+					width: 100%;
+				}
+				&__item-outer{
+					width: 370px;
+				}
+			}
+		}
+	}
+	// =/LIST GK
 }
 
 
@@ -6024,6 +6164,16 @@
 	}
 	// =/FAVORITE
 
+
+	.listgk-page .main .listgk .object{
+		&__info{
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		&__composition{
+			margin-top: 0;
+		}
+	}
 }
 
 
@@ -7296,6 +7446,20 @@
 	.complex-page .map__info ul{
 		display: block;
 	}
+
+
+
+	// LIST GK
+	.listgk-page{
+		.main .listgk{
+			.object{
+				&__item-outer{
+					width: 320px;
+				}
+			}
+		}
+	}
+	// =/LIST GK
 }
 
 
@@ -7443,7 +7607,13 @@
 			}
 		}
 	}
-	
+
+	.listgk-page .main .listgk .object{
+		&__meta .object__info{
+			text-align: left;
+		}
+	}
+
 
 
 	.side{
@@ -8058,5 +8228,33 @@
 		right: 10px;
 		width: 32px;
 	}
+
+
+	// LIST GK
+	.listgk-page{
+		.main{
+			.listgk{
+				.object{
+					&__item-outer{
+						width: 280px;
+					}
+					&__labels img{
+						width: 70px;
+					}
+
+					&__title{
+						font-size: 2.1rem;
+					}
+					&__bottom{
+						padding-left: 1rem;
+					}
+				}
+			}
+			.complex__description{
+				padding-left: 1rem;
+			}
+		}
+	}
+	// =/LIST GK
 
 }

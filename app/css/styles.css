@@ -7149,7 +7149,7 @@ circle:nth-child(2n) {
       width: 33.3%; }
     .listgk-page .main .listgk .object__item {
       margin-top: 3.5rem;
-      width: 358px; }
+      width: calc(100% - 7px); }
       .listgk-page .main .listgk .object__item-outer:after {
         width: calc(100% - 7px); }
       .listgk-page .main .listgk .object__item:after {
@@ -8734,10 +8734,13 @@ tbody.collapse.show {
     width: 22%; }
   .material__title {
     font-size: 1.6rem; }
-  .listgk-inner {
-    flex: 0 0 70%; }
-  .listgk-page .main .complex__pic {
-    width: 200px; }
+  .listgk-page .main .listgk-inner {
+    flex-basis: 1042px;
+    padding-right: 3rem; }
+  .listgk-page .main .listgk .object__top {
+    padding-left: 20px; }
+  .listgk-page .main .listgk .object__title {
+    font-size: 2.4rem; }
   .about-page .calculator {
     background-position: 50px center;
     padding-left: 643px; }
@@ -9017,7 +9020,15 @@ tbody.collapse.show {
   .complex-page .about .carousel {
     width: 620px; }
   .complex-page .houses .house__info .btn {
-    font-size: 1.3rem; } }
+    font-size: 1.3rem; }
+  .listgk-page .main .listgk-inner {
+    flex-basis: 933px; }
+  .listgk-page .main .listgk .object__plate {
+    width: 50%; }
+  .listgk-page .main .listgk .object__item-outer {
+    width: 365px; }
+  .listgk-page .object__labels img {
+    width: auto; } }
 
 @media (max-width: 1350px) {
   .table-flats td {
@@ -9596,7 +9607,13 @@ tbody.collapse.show {
     width: 18%; }
   .favorite-page div.table-flats .cell-10 {
     width: 7%;
-    text-align: center; } }
+    text-align: center; }
+  .listgk-page .main .listgk-inner {
+    flex-basis: 802px; }
+  .listgk-page .main .listgk .object__plate {
+    width: 48%; }
+  .listgk-page .main .listgk .object__item-outer {
+    width: 350px; } }
 
 @media (max-width: 1199px) {
   .about-page .carousel .item {
@@ -10158,7 +10175,14 @@ tbody.collapse.show {
     .object__meta .object__right .flats-price {
       display: flex;
       flex-grow: 1;
-      margin-top: 1.5rem; } }
+      margin-top: 1.5rem; }
+  .listgk-page .main .listgk-inner {
+    flex-basis: 66%;
+    padding-right: 1.5rem; }
+  .listgk-page .main .listgk .object__plate {
+    width: 50%; }
+  .listgk-page .main .listgk .object__item-outer {
+    width: 285px; } }
 
 @media (max-width: 1050px) {
   .vacancies-page .side,
@@ -10693,7 +10717,14 @@ tbody.collapse.show {
     position: absolute;
     right: 50px;
     bottom: 5px;
-    padding: 0; } }
+    padding: 0; }
+  .listgk-page .main .listgk-inner {
+    flex-basis: 100%;
+    padding-right: 0; }
+  .listgk-page .main .listgk .object__plate {
+    width: 50%; }
+  .listgk-page .main .listgk .object__item-outer {
+    width: 340px; } }
 
 @media (max-width: 920px) {
   .side-inner {
@@ -11120,7 +11151,13 @@ tbody.collapse.show {
     right: 5px;
     top: 15px;
     bottom: auto;
-    padding: 0 !important; } }
+    padding: 0 !important; }
+  .listgk-page .main .listgk .object__meta {
+    border-bottom: none; }
+  .listgk-page .main .listgk .object__plate {
+    width: 50%; }
+  .listgk-page .main .listgk .object__item-outer {
+    width: 320px; } }
 
 @media (max-width: 720px) {
   .objects-callback .side .callback {
@@ -11297,7 +11334,11 @@ tbody.collapse.show {
       .complex-page .map__info ul li {
         width: 42%; }
   .complex-page .map #map {
-    height: 400px; } }
+    height: 400px; }
+  .listgk-page .main .listgk .object__plate {
+    width: 50%; }
+  .listgk-page .main .listgk .object__item-outer {
+    width: 280px; } }
 
 @media (max-width: 670px) {
   .feature .promo {
@@ -11521,7 +11562,11 @@ tbody.collapse.show {
   .installmentbox__right .variant__cifr {
     font-size: 4rem; }
   .complex-page .about main .heading {
-    font-size: 2.6rem !important; } }
+    font-size: 2.6rem !important; }
+  .listgk-page .main .listgk .object__plate {
+    width: 100%; }
+  .listgk-page .main .listgk .object__item-outer {
+    width: 370px; } }
 
 @media (max-width: 630px) {
   .feature__right .about,
@@ -11769,7 +11814,12 @@ tbody.collapse.show {
   .object__meta .object__right {
     margin-left: 2.4rem; }
     .object__meta .object__right .flats-price {
-      margin-top: .8rem; } }
+      margin-top: .8rem; }
+  .listgk-page .main .listgk .object__info {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .listgk-page .main .listgk .object__composition {
+    margin-top: 0; } }
 
 @media (max-width: 570px) {
   .complex-page .complex__panel .complex__grouphouse {
@@ -12457,7 +12507,9 @@ tbody.collapse.show {
         .about-partners .partners .link_groups a {
           margin-right: 0; }
   .complex-page .map__info ul {
-    display: block; } }
+    display: block; }
+  .listgk-page .main .listgk .object__item-outer {
+    width: 320px; } }
 
 @media (max-width: 420px) {
   .modal-map {
@@ -12549,6 +12601,8 @@ tbody.collapse.show {
       margin-left: -14px; }
   .object__item-outer {
     width: 215px; }
+  .listgk-page .main .listgk .object__meta .object__info {
+    text-align: left; }
   .side .callback__form-inner .inputs {
     display: block !important;
     margin-right: 0 !important; }
@@ -12856,4 +12910,14 @@ tbody.collapse.show {
     right: 10px; }
   .favorite-page div.table-flats .cell-10 {
     right: 10px;
-    width: 32px; } }
+    width: 32px; }
+  .listgk-page .main .listgk .object__item-outer {
+    width: 280px; }
+  .listgk-page .main .listgk .object__labels img {
+    width: 70px; }
+  .listgk-page .main .listgk .object__title {
+    font-size: 2.1rem; }
+  .listgk-page .main .listgk .object__bottom {
+    padding-left: 1rem; }
+  .listgk-page .main .complex__description {
+    padding-left: 1rem; } }
