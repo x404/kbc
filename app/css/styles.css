@@ -10176,6 +10176,8 @@ tbody.collapse.show {
       display: flex;
       flex-grow: 1;
       margin-top: 1.5rem; }
+  .listgk-page .main .panel .flexbox {
+    flex-wrap: wrap; }
   .listgk-page .main .listgk-inner {
     flex-basis: 66%;
     padding-right: 1.5rem; }
@@ -10718,6 +10720,10 @@ tbody.collapse.show {
     right: 50px;
     bottom: 5px;
     padding: 0; }
+  .listgk-page .head .col-7 {
+    flex-basis: 100%; }
+  .listgk-page .main .panel .flexbox {
+    flex-basis: 100%; }
   .listgk-page .main .listgk-inner {
     flex-basis: 100%;
     padding-right: 0; }
@@ -11563,6 +11569,13 @@ tbody.collapse.show {
     font-size: 4rem; }
   .complex-page .about main .heading {
     font-size: 2.6rem !important; }
+  .listgk-page .main .panel__left {
+    display: block; }
+  .listgk-page .main .panel .text-count {
+    flex-basis: 100%; }
+  .listgk-page .main .panel .area-select__wrap {
+    margin-left: 0;
+    margin-top: 1rem; }
   .listgk-page .main .listgk .object__plate {
     width: 100%; }
   .listgk-page .main .listgk .object__item-outer {
@@ -11819,7 +11832,11 @@ tbody.collapse.show {
     margin-top: 0;
     margin-bottom: 0; }
   .listgk-page .main .listgk .object__composition {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .listgk-page .main .panel .flexbox {
+    display: block; }
+  .listgk-page .main .panel__right {
+    margin-top: 1.5rem; } }
 
 @media (max-width: 570px) {
   .complex-page .complex__panel .complex__grouphouse {
@@ -12077,7 +12094,11 @@ tbody.collapse.show {
   .mortgage__item {
     width: 100%; }
   .heading {
-    font-size: 2.6rem !important; } }
+    font-size: 2.6rem !important; }
+  .listgk-page .head .title {
+    margin-bottom: 1rem; }
+  .listgk-page .head .flexbox {
+    display: block; } }
 
 @media (max-width: 480px) {
   .feature .promo .type-1 .title {

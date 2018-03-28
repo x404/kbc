@@ -3162,17 +3162,24 @@
 
 	// LIST GK
 	.listgk-page{
-		.main .listgk{
-			&-inner{
-				flex-basis: 66%;
-				padding-right: 1.5rem;
-			}
-			.object{
-				&__plate{
-					width: 50%;
+		.main{
+			.panel{
+				.flexbox{
+					flex-wrap: wrap;
 				}
-				&__item-outer{
-					width: 285px;
+			}
+			.listgk{
+				&-inner{
+					flex-basis: 66%;
+					padding-right: 1.5rem;
+				}
+				.object{
+					&__plate{
+						width: 50%;
+					}
+					&__item-outer{
+						width: 285px;
+					}
 				}
 			}
 		}
@@ -4179,17 +4186,29 @@
 
 	// LIST GK
 	.listgk-page{
-		.main .listgk{
-			&-inner{
+		.head{
+			.col-7{
 				flex-basis: 100%;
-				padding-right: 0;
 			}
-			.object{
-				&__plate{
-					width: 50%;
+		}
+		.main{
+			.panel{
+				.flexbox{
+					flex-basis: 100%;
 				}
-				&__item-outer{
-					width: 340px;
+			}
+			.listgk{
+				&-inner{
+					flex-basis: 100%;
+					padding-right: 0;
+				}
+				.object{
+					&__plate{
+						width: 50%;
+					}
+					&__item-outer{
+						width: 340px;
+					}
 				}
 			}
 		}
@@ -5302,8 +5321,6 @@
 		}
 	}
 	// =/LIST GK
-
-
 }
 
 
@@ -5695,13 +5712,27 @@
 
 	// LIST GK
 	.listgk-page{
-		.main .listgk{
-			.object{
-				&__plate{
-					width: 100%;
+		.main{
+			.panel{
+				&__left{
+					display: block;
 				}
-				&__item-outer{
-					width: 370px;
+				.text-count{
+					flex-basis: 100%;
+				}
+				.area-select__wrap{
+					margin-left: 0;
+					margin-top: 1rem;
+				}
+			}
+			.listgk{
+				.object{
+					&__plate{
+						width: 100%;
+					}
+					&__item-outer{
+						width: 370px;
+					}
 				}
 			}
 		}
@@ -6165,13 +6196,23 @@
 	// =/FAVORITE
 
 
-	.listgk-page .main .listgk .object{
-		&__info{
-			margin-top: 0;
-			margin-bottom: 0;
+	.listgk-page .main{
+		.listgk .object{
+			&__info{
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			&__composition{
+				margin-top: 0;
+			}
 		}
-		&__composition{
-			margin-top: 0;
+		.panel{
+			.flexbox{
+				display: block;
+			}
+			&__right{
+				margin-top: 1.5rem;
+			}
 		}
 	}
 }
@@ -6664,6 +6705,15 @@
 
 	.heading{
 		font-size: 2.6rem !important;
+	}
+
+	.listgk-page .head{
+		.title{
+			margin-bottom: 1rem;
+		}
+		.flexbox{
+			display: block;			
+		}
 	}
 
 }
