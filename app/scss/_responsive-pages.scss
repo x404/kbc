@@ -4693,10 +4693,6 @@
 
 
 	// FAVORITE
-	.object__meta .object__address .btn{
-		padding-right: 2rem;
-	}
-
 
 	.flat-page div.table-flats{
 		.name{
@@ -4811,7 +4807,8 @@
 	}
 
 	.object__meta{
-		margin-bottom: .8rem;
+		// margin-bottom: .8rem;
+		border-bottom: .8rem solid $color59;
 		.object{
 			&__info,
 			&__address,
@@ -4820,7 +4817,11 @@
 				margin-left: 0;
 			}
 			&__address{
-				margin-right: 2rem;
+				// margin-right: 2rem;
+				width: 100%;
+				.btn{
+					padding-right: 2rem;
+				}
 			}
 		}
 	}
@@ -6846,7 +6847,11 @@
 				width: auto;
 			}
 			&__address{
-				margin-top: .5rem;
+				margin-top: .8rem;
+				margin-left: 0;
+				margin-right: 0;
+				// width: auto;
+				text-align: left;
 			}
 			&__composition{
 				margin-top: 3rem;
@@ -6854,6 +6859,49 @@
 			}
 			&__right{
 				padding-bottom: 2rem;
+			}
+		}
+	}
+
+	.favorite-page
+	{
+		.object__meta{
+			.object{
+				&__info{
+					text-align: left;
+					// width: 100%;
+					margin-right: 2rem;
+				}
+				&__composition{
+					margin-top: 2rem;
+					margin-left: 0;
+				}
+
+			}
+		}
+	}
+
+	.favorite-page{
+		.object__meta{
+			padding-bottom: 0;
+			padding-top: 2rem;
+			padding-left: 0;
+			.object{
+				&__pic{
+					text-align: center;
+					max-height: 100%;
+					width: 100%;
+					img{
+						max-width: 100%;
+						width: auto;
+						margin-top: 0;
+						margin-left: auto;
+						margin-right: auto;
+					}
+				}
+				&__address{
+
+				}
 			}
 		}
 	}
@@ -7723,6 +7771,10 @@
 		.btn-fav{
 
 		}
+	}
+
+	.object__meta .object__right{
+		margin-left: 1.2rem;
 	}
 }
 

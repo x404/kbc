@@ -11003,8 +11003,6 @@ tbody.collapse.show {
     top: 19px; }
   .gbi-subcatalog .sidebar__menu {
     display: none; }
-  .object__meta .object__address .btn {
-    padding-right: 2rem; }
   .flat-page div.table-flats .name {
     font-size: 1.1rem; }
   .flat-page div.table-flats .tbody .td {
@@ -11123,11 +11121,13 @@ tbody.collapse.show {
     width: 100%;
     height: auto; }
   .object__meta {
-    margin-bottom: .8rem; }
+    border-bottom: 0.8rem solid #f3f3f4; }
     .object__meta .object__info, .object__meta .object__address, .object__meta .object__flats {
       margin-left: 0; }
     .object__meta .object__address {
-      margin-right: 2rem; }
+      width: 100%; }
+      .object__meta .object__address .btn {
+        padding-right: 2rem; }
   .object__right {
     margin-left: 3rem; }
   .favorite-page div.table-flats .cell-9 {
@@ -12231,12 +12231,35 @@ tbody.collapse.show {
     .object__meta .object__info {
       width: auto; }
     .object__meta .object__address {
-      margin-top: .5rem; }
+      margin-top: .8rem;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: left; }
     .object__meta .object__composition {
       margin-top: 3rem;
       margin-left: 3rem; }
     .object__meta .object__right {
-      padding-bottom: 2rem; } }
+      padding-bottom: 2rem; }
+  .favorite-page .object__meta .object__info {
+    text-align: left;
+    margin-right: 2rem; }
+  .favorite-page .object__meta .object__composition {
+    margin-top: 2rem;
+    margin-left: 0; }
+  .favorite-page .object__meta {
+    padding-bottom: 0;
+    padding-top: 2rem;
+    padding-left: 0; }
+    .favorite-page .object__meta .object__pic {
+      text-align: center;
+      max-height: 100%;
+      width: 100%; }
+      .favorite-page .object__meta .object__pic img {
+        max-width: 100%;
+        width: auto;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto; } }
 
 @media (max-width: 460px) {
   .filter-inner .cell-buttons .showflat {
@@ -12708,7 +12731,9 @@ tbody.collapse.show {
     font-size: 1.4rem; }
     .card_flat .carousel_tab li {
       padding-left: 7px;
-      padding-right: 7px; } }
+      padding-right: 7px; }
+  .object__meta .object__right {
+    margin-left: 1.2rem; } }
 
 @media (max-width: 350px) {
   .intro__left {
