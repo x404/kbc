@@ -762,7 +762,7 @@ input[type="submit"] {
 .topnews .news .cat__link, .feature .promo .type-1 .statistic__cell p:not(.num), .object__bottom, .side__map .title, .neck .back, .neck .tabs .tab, .neck .tabs .tab a, .breadcrumbs, .picking__link, .category_link, .action__wrapper, .faq-page .head .btn,
 .vacancies-page .head .btn, .list_faq .answer__name, .list_vacancy .answer__name, .review__top,
 .list_construction .place__top, .review__bottom, .filter-sort .btn,
-.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, div.table-flats .grow, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .subnav a, .complex-page .complex__place .cell, .complex-page .complex__navhouses, .complex-page .about .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom, .about-page .scheme .step, .about-page .calculator .calc-bottom, .listgk-page .main .panel, .listgk-page .main .panel__left, .listgk-page .main .complex__bottom, .listgk-page .main .complex__bottom .right .btn {
+.complex-page .list_reviews .btn, .favorite__item .btn-order, .object__meta .object__composition .btn, div.table-flats .grow, .catalog__pic, .sidebar a, .sidebar span, .condo-page .subtitle, .installmentbox__left, .installmentbox__right .variant, .subnav a, .complex-page .complex__place .cell, .complex-page .complex__navhouses, .complex-page .about .carousel .manage, .complex-page .list_construction .construction__meta .nav .btn, .complex-page .list_construction .construction__meta .left, .complex-page .map__info li, .popover-bottom, .about-page .scheme .step, .about-page .calculator .calc-bottom, .listgk-page .main .panel, .listgk-page .main .panel__left, .listgk-page .main .listgk .object__subinfo, .listgk-page .main .complex__bottom, .listgk-page .main .complex__bottom .right .btn {
   display: flex;
   align-items: center; }
 
@@ -7117,19 +7117,58 @@ circle:nth-child(2n) {
           transition: line-height 0.5s ease; }
         .listgk-page .main .area-select__wrap .not-full input:focus:-ms-input-placeholder {
           transition: line-height 0.5s ease; }
+    .listgk-page .main .listgk-inner {
+      flex-wrap: wrap;
+      align-items: flex-start;
+      padding-right: 6rem; }
     .listgk-page .main .listgk .side {
       margin-top: -17rem; }
-    .listgk-page .main .complex__pic {
+    .listgk-page .main .listgk .object__pic {
+      height: 238px;
+      overflow: hidden;
       position: relative; }
-      .listgk-page .main .complex__pic img {
-        display: block; }
-      .listgk-page .main .complex__pic .object__labels {
-        left: 25px;
+      .listgk-page .main .listgk .object__pic img {
+        transition: .3s transform;
         position: absolute;
-        top: 23px;
-        width: 100%; }
-        .listgk-page .main .complex__pic .object__labels img {
-          display: inline-block; }
+        bottom: 0;
+        vertical-align: bottom; }
+    .listgk-page .main .listgk .object__labels {
+      margin-top: 0; }
+    .listgk-page .main .listgk .object__top {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      padding-left: 25px;
+      padding-top: 20px; }
+    .listgk-page .main .listgk .object__bottom {
+      height: 86px;
+      padding-left: 2rem;
+      padding-right: 1.4rem; }
+    .listgk-page .main .listgk .object__plate {
+      width: 33.3%; }
+    .listgk-page .main .listgk .object__item {
+      margin-top: 3.5rem;
+      width: 358px; }
+      .listgk-page .main .listgk .object__item-outer:after {
+        width: calc(100% - 7px); }
+      .listgk-page .main .listgk .object__item:after {
+        background-image: linear-gradient(to bottom, #bdbec1 0, #bdbec1 calc(100% - 86px), #00a664 calc(100% - 86px), #00a664 100%); }
+      .listgk-page .main .listgk .object__item:hover .object__pic img {
+        transform: scale(1.15); }
+    .listgk-page .main .listgk .object__description {
+      position: static; }
+    .listgk-page .main .listgk .object__info {
+      font-size: 1.4rem; }
+    .listgk-page .main .listgk .object__title {
+      font-size: 2.6rem;
+      display: inline-block; }
+    .listgk-page .main .listgk .object__meta .object__info p:not(.object__title) {
+      font-size: 1.4rem; }
+    .listgk-page .main .listgk .object__composition {
+      margin-left: .7rem; }
+    .listgk-page .main .listgk .btn-more {
+      text-decoration: none; }
     .listgk-page .main .complex__link {
       display: block;
       overflow: hidden; }
@@ -7163,21 +7202,40 @@ circle:nth-child(2n) {
       line-height: 1.5;
       padding-bottom: 1.8rem; }
     .listgk-page .main .complex__description {
+      padding-left: 2rem;
+      padding-right: 1.8rem;
+      padding-bottom: 1rem;
       background: #fff;
       display: flex;
       flex-direction: column; }
+      .listgk-page .main .complex__description .str {
+        font-size: 1.3rem;
+        color: #3d3d3d;
+        padding: 1.2rem 0;
+        border-bottom: 1px solid #ebeef1; }
+        .listgk-page .main .complex__description .str:last-child {
+          border-bottom: none; }
       .listgk-page .main .complex__description .object__info {
         margin-left: 0; }
       .listgk-page .main .complex__description .object__meta {
         padding-left: 0;
-        padding-top: 33px;
+        padding: 1.5rem 0 0.5rem;
         z-index: 1; }
+        .listgk-page .main .complex__description .object__meta .btn {
+          font-size: 1.3rem;
+          height: 3rem;
+          padding-left: 35px;
+          padding-right: 14px;
+          display: inline-flex; }
+          .listgk-page .main .complex__description .object__meta .btn:before {
+            background-image: url(../images/sprite.png);
+            background-position: -266px -244px;
+            width: 18px;
+            height: 16px; }
     .listgk-page .main .complex__body {
-      flex-grow: 1;
-      padding-left: 32px; }
+      flex-grow: 1; }
     .listgk-page .main .complex__bottom {
-      background: #d7dde2;
-      padding: 1.9rem 0 1.9rem 32px; }
+      padding: 1.9rem 0 1.9rem 0; }
       .listgk-page .main .complex__bottom .left .flats {
         font-size: 1.6rem; }
         .listgk-page .main .complex__bottom .left .flats .num {

@@ -37,32 +37,102 @@
 			}
 		}
 		.listgk{
-			// overflow: hidden;
-			// padding-left: $pl;
-			// padding-right: $pr;
+			&-inner{
+				flex-wrap: wrap;
+				align-items: flex-start;
+				padding-right: 6rem;
+			}
 			.side{
 				margin-top: -17rem;
+			}
+
+			.object{
+				&__pic{
+					height: 238px;
+					overflow: hidden;
+					position: relative;
+					img{
+						transition: .3s transform;
+						position: absolute;
+						bottom: 0;
+						vertical-align: bottom;
+					}
+				}
+				&__labels{
+					margin-top: 0;
+				}
+				&__top{
+					position: absolute;
+					left: 0;
+					top: 0;
+					z-index: 2;
+					padding-left: 25px;
+					padding-top: 20px;
+				}
+				&__bottom{
+					height: 86px;
+					padding-left: 2rem;
+					padding-right: 1.4rem;
+				}
+				&__plate{
+					width: 33.3%;					
+				}
+				&__item{
+					margin-top: 3.5rem;
+					width: 358px;
+					&-outer{
+						&:after{
+							width: calc(100% - 7px);
+						}
+					}
+					&:after{
+						background-image: linear-gradient(to bottom,#bdbec1 0,#bdbec1 calc(100% - 86px),#00a664 calc(100% - 86px),#00a664 100%);
+					}
+
+					&:hover{
+						.object__pic{
+							img{
+								transform: scale(1.15)
+							}
+						}
+					}
+
+				}
+				&__description{
+					position: static;
+				}
+
+				&__info{
+					font-size: 1.4rem;
+				}
+				&__title{
+					font-size: 2.6rem;
+					display: inline-block;
+				}
+
+				&__meta .object__info p:not(.object__title){
+					font-size: 1.4rem;
+				}
+
+				&__subinfo{
+					@extend .flex-cv;
+				}
+
+				&__composition{
+					margin-left: .7rem;
+				}
+
+			}
+
+			.btn-more{
+				text-decoration: none;
 			}
 		}
 
 
 		.complex{
 			$pl: 32px;
-			&__pic{
-				position: relative;
-				img{
-					display: block;
-				}
-				.object__labels{
-					left: 25px;
-					position: absolute;
-					top: 23px;
-					width: 100%;
-					img{
-						display: inline-block;
-					}
-				}
-			}
+
 
 			&__link{
 				display: block;
@@ -116,30 +186,52 @@
 			}
 
 			&__description{
+				.str{
+					font-size: 1.3rem;
+					color: #3d3d3d;
+					padding: 1.2rem 0;
+					border-bottom: 1px solid #ebeef1;
+					&:last-child{
+						border-bottom: none;
+					}
+				}
+				padding-left: 2rem;
+				padding-right: 1.8rem;
+				padding-bottom: 1rem;
 				background: $color2;
 				display: flex;
 				flex-direction: column;
 				.object{
 					&__info{
 						margin-left: 0;
+
 					}
 					&__meta{
 						padding-left: 0;
-						padding-top: 33px;
+						padding: 1.5rem 0 0.5rem;
 						z-index: 1;
+						.btn{
+							font-size: 1.3rem;
+							height: 3rem;
+							padding-left: 35px;
+							padding-right: 14px;
+							display: inline-flex;
+							&:before{
+								@include sprite($icon-house-dark-sm);
+							}
+						}
 					}
 				}
 			}
 
 			&__body{
 				flex-grow: 1;
-				padding-left: $pl;
+				// padding-left: $pl;
 			}
 
 			&__bottom{
 				@extend .flex-cv;
-				background: #d7dde2;
-				padding: 1.9rem 0 1.9rem $pl;
+				padding: 1.9rem 0 1.9rem 0;
 				.left{
 					.flats{
 						// color: $color1;
