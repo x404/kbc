@@ -8747,4 +8747,19 @@
 	}
 	// =/LIST GK
 
+
+	.calculator-page .related{
+		&__item{
+			width: 235px;
+		}
+		.carousel .owl-carousel{
+			.owl-prev{
+				left: -25px;
+			}
+			.owl-next{
+				right: -25px;
+			}
+		}
+	}	
+
 }

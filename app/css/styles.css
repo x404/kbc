@@ -13288,4 +13288,10 @@ tbody.collapse.show {
   .listgk-page .main .listgk .object__bottom {
     padding-left: 1rem; }
   .listgk-page .main .complex__description {
-    padding-left: 1rem; } }
+    padding-left: 1rem; }
+  .calculator-page .related__item {
+    width: 235px; }
+  .calculator-page .related .carousel .owl-carousel .owl-prev {
+    left: -25px; }
+  .calculator-page .related .carousel .owl-carousel .owl-next {
+    right: -25px; } }
