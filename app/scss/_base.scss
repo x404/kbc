@@ -2024,3 +2024,11 @@ body.modal-open,
 .hide{
 	display: none;
 }
+
+
+@media print {
+body {
+	-webkit-print-color-adjust: exact;
+	 color-adjust: exact;
+}
+}

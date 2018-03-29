@@ -282,9 +282,32 @@
 				}
 
 				#tiles{
-					border: 1px solid #000;
-					
-					background: $color2;
+					border: 1px solid #000;					
+					background-color: $color2;
+					transition: .3s;
+				}
+
+
+				@for $i from 1 to 7 { 
+					.tile#{$i}{
+						background: url(../images/calc/tile-#{$i}.gif);
+						&.color{
+							background: url(../images/calc/tile-#{$i}-color.gif);						
+						}
+					}
+				}
+
+				.scale2{
+					&.tile2{background-size: 100px}
+				}
+				.scale3{
+					&.tile2{background-size: 66px}
+				}
+				.scale4{
+					&.tile2{background-size: 50px}
+				}
+				.scale5{
+					&.tile2{background-size: 40px}
 				}
 
 				.params{

@@ -6,12 +6,17 @@ var app = new Vue({
 		areatile: 0,
 		depth : document.querySelector('#depth').value,
 		k : 35,
-		scale : 1
+		scale : 1,
+		tile: '',
+		active: true,
+		lcb : 'gray',  //COLORS
+		gray: 'gray',
+		color: 'color'
 	},
 	computed: {
 		areaC: function(){
-			document.querySelector('#tiles').style.width = this.lengthA * this.k + 'px';
-			document.querySelector('#tiles').style.height = this.widthB * this.k + 'px';
+			document.querySelector('#tiles').style.width = Math.ceil(this.lengthA * this.k / this.scale) + 'px';
+			document.querySelector('#tiles').style.height = Math.ceil(this.widthB * this.k / this.scale) + 'px';
 			output = this.lengthA * this.widthB;
 			return output;
 		},
@@ -27,9 +32,14 @@ var app = new Vue({
 	methods:{
 		changeTile: function(e){
 			this.areatile = e.target.dataset.areatile;
+			this.tile = e.target.hash.replace("#","");
 		},
 		loadData: function(){
-			this.areatile = document.querySelector('.tiles .active').dataset.areatile;
+			active = document.querySelector('.tiles .active');
+			this.areatile = active.dataset.areatile;
+			this.tile = active.hash.replace("#","");
+			document.querySelector('#tiles').style.width = Math.ceil(this.lengthA * this.k / this.scale) + 'px';
+			document.querySelector('#tiles').style.height = Math.ceil(this.widthB * this.k / this.scale) + 'px';
 		}
 	},
 	mounted: function(){

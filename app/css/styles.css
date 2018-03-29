@@ -2196,6 +2196,11 @@ body.modal-open,
 .hide {
   display: none; }
 
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact; } }
+
 .feature .news__cell,
 .feature .about__cell,
 .topnews .news__cell,
@@ -7463,7 +7468,40 @@ circle:nth-child(2n) {
         transform-origin: 0 0; }
       .calculator-page .main .content .scheme #tiles {
         border: 1px solid #000;
-        background: #fff; }
+        background-color: #fff;
+        transition: .3s; }
+      .calculator-page .main .content .scheme .tile1 {
+        background: url(../images/calc/tile-1.gif); }
+        .calculator-page .main .content .scheme .tile1.color {
+          background: url(../images/calc/tile-1-color.gif); }
+      .calculator-page .main .content .scheme .tile2 {
+        background: url(../images/calc/tile-2.gif); }
+        .calculator-page .main .content .scheme .tile2.color {
+          background: url(../images/calc/tile-2-color.gif); }
+      .calculator-page .main .content .scheme .tile3 {
+        background: url(../images/calc/tile-3.gif); }
+        .calculator-page .main .content .scheme .tile3.color {
+          background: url(../images/calc/tile-3-color.gif); }
+      .calculator-page .main .content .scheme .tile4 {
+        background: url(../images/calc/tile-4.gif); }
+        .calculator-page .main .content .scheme .tile4.color {
+          background: url(../images/calc/tile-4-color.gif); }
+      .calculator-page .main .content .scheme .tile5 {
+        background: url(../images/calc/tile-5.gif); }
+        .calculator-page .main .content .scheme .tile5.color {
+          background: url(../images/calc/tile-5-color.gif); }
+      .calculator-page .main .content .scheme .tile6 {
+        background: url(../images/calc/tile-6.gif); }
+        .calculator-page .main .content .scheme .tile6.color {
+          background: url(../images/calc/tile-6-color.gif); }
+      .calculator-page .main .content .scheme .scale2.tile2 {
+        background-size: 100px; }
+      .calculator-page .main .content .scheme .scale3.tile2 {
+        background-size: 66px; }
+      .calculator-page .main .content .scheme .scale4.tile2 {
+        background-size: 50px; }
+      .calculator-page .main .content .scheme .scale5.tile2 {
+        background-size: 40px; }
       .calculator-page .main .content .scheme .params {
         display: flex;
         margin: 2.5rem 0 0 3.5rem;
