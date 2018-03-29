@@ -3839,7 +3839,10 @@
 		}
 		.material__item{
 			margin-bottom: 1.5rem;
-			width: 50%;
+			width: 48%;
+			img{
+				width: 100%
+			}
 		}
 	}
 
@@ -4608,6 +4611,8 @@
 	}
 
 
+
+	.news-page,
 	.about-page,
 	.complex-page,
 	.gbi-catalog,
@@ -4900,6 +4905,30 @@
 	// CALCULATOR
 	.calculator-page .main .content .scheme{
 		padding-right: 2rem;
+	}
+
+	.neck{
+		.tabs{
+			margin-left: 0;
+		}
+	}
+	.news-page .neck{
+		.flexbox{
+			justify-content: space-between
+		}
+	}
+
+
+	.materials{
+		margin-top: 5rem;
+	}
+	.material{
+		&__item{
+			margin-bottom: 2rem;
+		}
+		&__date{
+			margin-top: .9rem;
+		}
 	}
 }
 
@@ -5304,6 +5333,25 @@
 	}
 	// =/LIST GK
 
+
+	.neck .tabs{
+		// margin-left: 0;
+	}
+
+	.news-page{
+		.neck .head{
+			.flexbox{
+				display: block;
+			}
+			&__right{
+				margin-top: 2rem;
+				.tabs{
+					// justify-content: center;
+				}
+			}
+		}
+		// padding-right: 0;
+	}
 }
 
 
@@ -5524,6 +5572,11 @@
 
 
 @media (max-width: 700px){
+	.pagination{
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
 	.about-partners .partners{
 		width: 100%;
 	}
@@ -6009,6 +6062,7 @@
 			margin-left: 0;
 		}
 	}
+
 }
 
 
@@ -6929,6 +6983,15 @@
 
 
 @media (max-width: 500px){
+	.material{
+		&__title{
+			padding-top: 1rem;
+		}
+		&__item{
+			margin-bottom: 2rem;
+		}
+	}
+
 	.objects__carousel{
 		.owl-carousel{
 			.owl{

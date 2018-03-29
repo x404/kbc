@@ -10654,7 +10654,9 @@ tbody.collapse.show {
     flex-wrap: wrap; }
   .materials .material__item {
     margin-bottom: 1.5rem;
-    width: 50%; }
+    width: 48%; }
+    .materials .material__item img {
+      width: 100%; }
   .subscribe .flexbox {
     display: block; }
   .subscribe__form .flexbox {
@@ -11063,6 +11065,7 @@ tbody.collapse.show {
     width: 500px; }
   .flat-page .card__description {
     flex-basis: 98%; }
+  .news-page,
   .about-page,
   .complex-page,
   .gbi-catalog,
@@ -11203,7 +11206,17 @@ tbody.collapse.show {
   .condo-page .subtitle {
     font-size: 2rem; }
   .calculator-page .main .content .scheme {
-    padding-right: 2rem; } }
+    padding-right: 2rem; }
+  .neck .tabs {
+    margin-left: 0; }
+  .news-page .neck .flexbox {
+    justify-content: space-between; }
+  .materials {
+    margin-top: 5rem; }
+  .material__item {
+    margin-bottom: 2rem; }
+  .material__date {
+    margin-top: .9rem; } }
 
 @media (max-width: 767px) {
   .objects-intro {
@@ -11463,7 +11476,11 @@ tbody.collapse.show {
   .listgk-page .main .listgk .object__plate {
     width: 50%; }
   .listgk-page .main .listgk .object__item-outer {
-    width: 320px; } }
+    width: 320px; }
+  .news-page .neck .head .flexbox {
+    display: block; }
+  .news-page .neck .head__right {
+    margin-top: 2rem; } }
 
 @media (max-width: 720px) {
   .objects-callback .side .callback {
@@ -11575,6 +11592,9 @@ tbody.collapse.show {
     margin-left: 0; } }
 
 @media (max-width: 700px) {
+  .pagination {
+    margin-top: 0;
+    margin-bottom: 0; }
   .about-partners .partners {
     width: 100%; }
   .fixed-navbar .subnav ul {
@@ -12331,6 +12351,10 @@ tbody.collapse.show {
       height: auto; } }
 
 @media (max-width: 500px) {
+  .material__title {
+    padding-top: 1rem; }
+  .material__item {
+    margin-bottom: 2rem; }
   .objects__carousel {
     position: relative; }
     .objects__carousel .owl-carousel .owl-prev, .objects__carousel .owl-carousel .owl-next {
