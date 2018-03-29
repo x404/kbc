@@ -8319,6 +8319,12 @@ tbody.collapse.show {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem; } }
 
+@media (max-width: 750px) and (orientation: landscape) {
+  .sidemodal {
+    width: 370px; }
+    .sidemodal .inner {
+      padding-right: 20px; } }
+
 @media (max-width: 750px) {
   .footer__contacts {
     flex-wrap: wrap;
