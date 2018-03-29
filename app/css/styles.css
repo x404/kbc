@@ -11676,7 +11676,9 @@ tbody.collapse.show {
   .listgk-page .main .listgk .object__plate {
     width: 50%; }
   .listgk-page .main .listgk .object__item-outer {
-    width: 280px; } }
+    width: 280px; }
+  .btn-review {
+    margin-top: 3rem; } }
 
 @media (max-width: 670px) {
   .visual {
@@ -13172,7 +13174,11 @@ tbody.collapse.show {
   .calculator-page .related .carousel .owl-carousel .owl-next {
     right: -20px; }
     .calculator-page .related .carousel .owl-carousel .owl-next:hover {
-      right: -20px; } }
+      right: -20px; }
+  .review__item {
+    width: 98%; }
+    .review__item .object__address {
+      text-align: left; } }
 
 @media (max-width: 370px) {
   #calc-gnk-form .alert {

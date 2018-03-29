@@ -5724,6 +5724,10 @@
 		}
 	}
 	// =/LIST GK
+
+	.btn-review{
+		margin-top: 3rem;
+	}
 }
 
 
@@ -8510,6 +8514,13 @@
 			&:hover{
 				right: -20px;
 			}
+		}
+	}
+
+	.review__item{
+		width: 98%;
+		.object__address{
+			text-align: left;
 		}
 	}
 
