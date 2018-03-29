@@ -13195,7 +13195,9 @@ tbody.collapse.show {
   .side__map {
     width: calc(100% - 12px); }
     .side__map img {
-      max-width: 100%; } }
+      max-width: 100%; }
+  .gbi-subcatalog .sidebar .selectize-input {
+    padding-left: 8px; } }
 
 @media (max-width: 350px) {
   .intro__left {
@@ -13356,4 +13358,6 @@ tbody.collapse.show {
   .calculator-page .related .carousel .owl-carousel .owl-prev {
     left: -25px; }
   .calculator-page .related .carousel .owl-carousel .owl-next {
-    right: -25px; } }
+    right: -25px; }
+  #menu #menu-selectized {
+    position: absolute !important; } }

@@ -8553,6 +8553,11 @@
 			max-width: 100%;
 		}
 	}
+
+
+	.gbi-subcatalog .sidebar .selectize-input{
+		padding-left: 8px;
+	}
 }
 
 
@@ -8879,4 +8884,7 @@
 		}
 	}	
 
+	#menu #menu-selectized{
+		position: absolute !important;
+	}
 }
