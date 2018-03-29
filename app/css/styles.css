@@ -11406,11 +11406,12 @@ tbody.collapse.show {
   .flat-page div.table-flats .cell-9,
   .favorite-page div.table-flats .cell-9,
   div.table-flats .cell-9 {
+    padding: 0 !important;
     position: absolute !important;
     right: 25px;
     top: 18px;
     width: auto;
-    padding: 0 !important; }
+    z-index: 20 !important; }
   .flat-page div.table-flats .grow,
   .favorite-page div.table-flats .grow,
   div.table-flats .grow {
@@ -11476,7 +11477,8 @@ tbody.collapse.show {
     right: 5px;
     top: 15px;
     bottom: auto;
-    padding: 0 !important; }
+    padding: 0 !important;
+    z-index: 20; }
   .listgk-page .main .listgk .object__meta {
     border-bottom: none; }
   .listgk-page .main .listgk .object__plate {
@@ -12180,7 +12182,9 @@ tbody.collapse.show {
   .complex-page .complex__panel .complex__grouphouse {
     width: 275px; }
   .calculator-page .main .row aside .params__row {
-    width: 100%; } }
+    width: 100%; }
+  .filter-inner .cell-buttons {
+    margin-right: -1.5rem; } }
 
 @media (max-width: 550px) {
   .objects header {

@@ -5225,11 +5225,12 @@
 				width: 50%;
 			}
 			&-9{
+				padding: 0 !important;
 				position: absolute !important;
 				right: 25px;
 				top: 18px;
 				width: auto;
-				padding: 0 !important;
+				z-index: 20 !important;
 			}
 		}
 
@@ -5310,6 +5311,7 @@
 				top: 15px;
 				bottom: auto;
 				padding: 0 !important;
+				z-index: 20;
 			}
 		}
 	}
@@ -6637,6 +6639,10 @@
 
 	.calculator-page .main .row aside .params__row{
 		width: 100%;
+	}
+
+	.filter-inner .cell-buttons{
+		margin-right: -1.5rem;
 	}
 }
 
