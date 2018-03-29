@@ -91,7 +91,7 @@ $(document).ready(function(){
 			},
 			320: {
 				items: 1,
-				stagePadding : 35
+				stagePadding : 50
 			}
 		}
 	});

@@ -558,7 +558,8 @@
 }
 
 .objects-intro{
-	background: url(../images/bg-1.jpg) no-repeat center #ececed /cover;
+	background: url(../images/bg-1.jpg) no-repeat center #ececed;
+	background-size: cover;
 	padding: 7.5rem 0 8rem;
 	.intro{
 		padding-top: 11rem;
@@ -1147,13 +1148,21 @@
 
 .modal-map{
 	left: 0;
-	position: absolute;
-	top: 10rem;	
+	// position: absolute;
+	// top: 10rem;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto;
+
 	width: 100%;
 	transition: .3s;
 	opacity: 0;
 	z-index: -10;
 	.inner{
+		margin-top: 6rem;
+		margin-bottom: 2rem;
 	}
 	&.open{
 		display: block;

@@ -1217,6 +1217,7 @@
 
 			&__link{
 				height: 100%;
+				width: 100%;
 			}
 		}
 
@@ -2345,6 +2346,17 @@
 		}
 		.about{
 			display: block;
+			.tocat{
+				font-size: 1.4rem;
+				padding-left: 37px;
+				padding-top: 4px;
+				br{
+					display: none;
+				}				
+				&:before{
+					@include sprite($icon-catalog-xsm);
+				}
+			}
 			&__meta{
 				margin-right: 0;
 				width: 90%;
@@ -2374,13 +2386,16 @@
 
 	// OBJECTS
 	.objects-callback{
+		.side{
+			justify-content: flex-start;
+		}
 		display: block;
 		.callback{
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			padding: 2rem;
-			width: 100%;
+			width: calc(100% - 27px);
 			.call{
 				margin-left: 3rem;
 				margin-top: 0;
@@ -2500,12 +2515,14 @@
 
 
 	.about-partners{
+		height: 100%;
 		flex-direction: column;
 		padding-bottom: 6rem;
 		.partners{
 			font-size: 1.4rem;
-			margin-top: 4.8rem;
+			margin-top: 2.5rem;
 			margin-left: 0;
+			width: calc(100% - 12px);
 			.partners__inner{
 				display: flex;
 				padding-top: 3rem;
@@ -2528,9 +2545,6 @@
 			}
 			.title{
 				font-size: 3.2rem;
-			}
-			&:after{
-				bottom: 0;
 			}
 		}
 		.about{
@@ -4979,6 +4993,10 @@
 }
 
 @media (max-width: 750px){
+	.about-partners .partners{
+		width: 100%;
+	}
+
 	.objects-callback{
 		.more{
 			flex-grow: 0;
@@ -4997,6 +5015,10 @@
 		}
 		.side .callback__form .input-field{
 			width: 33%;
+		}
+
+		.callback{
+			width: 100%;
 		}
 	}
 
@@ -5288,10 +5310,16 @@
 @media (max-width: 720px){
 	.objects-callback .side{
 		.callback{
-			display: block;
+			// display: block;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+
+
 			&__top{
 				text-align: center;
 				display: block;
+				flex-basis: auto;
 			}
 			&__text{
 				margin-left: 0;
@@ -5299,12 +5327,16 @@
 			}
 
 			.call{
-				display: flex;
-				justify-content: center;
+				// display: flex;
+				// justify-content: center;
 				margin-left: 0;
 				margin-top: 8px;
 				&:before{
-					margin-left: -70px;
+					// margin-left: -70px;
+				}
+
+				a{
+					padding-left: 36px;
 				}
 			}
 
@@ -5492,6 +5524,10 @@
 
 
 @media (max-width: 700px){
+	.about-partners .partners{
+		width: 100%;
+	}
+
 
 	.fixed-navbar .subnav{
 		ul{
@@ -5633,6 +5669,9 @@
 
 
 @media (max-width: 670px){
+	.visual{
+		margin-top: 1rem;
+	}
 	.feature{
 		.promo{
 			height: auto;
@@ -5714,8 +5753,8 @@
 		.service__link p{
 			line-height: 1.4;
 		}
-
 	}
+
 
 	.feature .promo,
 	.about-page .carousel
@@ -7926,10 +7965,20 @@
 		}
 	}
 	// =/LIST GK
+
+	#filter .close{
+		top: 15px;
+	}
 }
 
 
 @media (max-width: 420px){
+
+	.about-partners .partners{
+		width: calc(100% - 12px);
+	}
+
+
 	.modal-map{
 		top: 6rem;
 		.head{
