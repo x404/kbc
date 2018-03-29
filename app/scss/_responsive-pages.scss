@@ -7077,7 +7077,6 @@
 		}
 	}
 
-
 	.list_vacancy{
 		.vacancy__question{
 			padding-left: 55px;
@@ -7090,8 +7089,13 @@
 				padding-left: 70px;
 			}
 
-			&-expand .vacancy__question{
-				padding-left: 50px;
+			&-expand{
+				.vacancy__question{
+					padding-left: 50px;
+				}
+				.toggle{
+					left: 5px !important;
+				}
 			}
 		}
 
