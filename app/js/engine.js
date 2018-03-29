@@ -171,9 +171,20 @@ $(document).ready(function(){
 		loop:false,
 		nav:true,
 		dots: false,
-		items:4,
+		items:1,
 		navText: ["", ""],
-		stagePadding : 0
+		stagePadding : 0,
+		responsive:{
+			1650:{
+				items: 4
+			},
+			1300:{
+				items: 3
+			},
+			991:{
+				items: 2
+			}
+		}
 	});
 
 
