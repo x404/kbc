@@ -949,6 +949,13 @@
 		.card__description{
 			flex-basis: 430px;
 			padding-left: 20px;
+			.description{
+				&__body,
+				&__bottom{
+					padding-right: 1.5rem;
+				}
+			}
+
 			.description__body{
 				.title{
 					font-size: 3rem;
@@ -975,7 +982,7 @@
 
 	}
 	.installmentbox__left{
-		flex-basis: 55%;
+		flex-basis: auto;
 		padding-left: 300px;
 		width: 910px;
 		.column{
@@ -1725,8 +1732,8 @@
 		}
 		&__left{
 			padding-left: 420px;
-			width: 100%;
-			flex-basis: 100%;
+			width: calc(100% - 12px);
+			flex-basis: auto;
 		}
 		&__right{
 			flex-direction: row;
@@ -4171,7 +4178,7 @@
 	// CARD FLAT
 	.card_flat{
 		.card__visual{
-			flex-basis: 100%;
+			flex-basis: auto;
 			width: 100%;
 		}
 		.carousel{
@@ -4631,10 +4638,6 @@
 		overflow: hidden;
 	}
 	.card_flat{
-		.card__visual{
-			flex-basis: 100%;
-			width: 100%;
-		}
 		.carousel{
 			width: 100%;
 			.owl-carousel{
@@ -8417,7 +8420,7 @@
 			font-size: 1.6rem;
 		}
 		&__right{
-			padding-right: 1rem;
+			padding-right: 3rem;
 			// display: block;
 			.title{
 				br{

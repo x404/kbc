@@ -613,8 +613,12 @@ $(document).on('click','.to-fav', function(e){
 	this.classList.add('btn-fav-in');
 
 	// $(this).find('span').text(favin);
+	// сщтыщ
 
-	// this.querySelector('span').textContent = favin; // house-list-all.html
+	try{
+		this.querySelector('span').textContent = favin; // house-list-all.html
+	} catch(e){};
+	
 
 	// var timerfav = window.setInterval(function(){
 	// 	$('.added-to-compare').fadeOut('normal',function(){

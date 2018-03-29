@@ -9130,12 +9130,14 @@ tbody.collapse.show {
   .flat-page .card__description {
     flex-basis: 430px;
     padding-left: 20px; }
+    .flat-page .card__description .description__body, .flat-page .card__description .description__bottom {
+      padding-right: 1.5rem; }
     .flat-page .card__description .description__body .title {
       font-size: 3rem; }
     .flat-page .card__description .description__body .plage {
       font-size: 1.6rem; }
   .installmentbox__left {
-    flex-basis: 55%;
+    flex-basis: auto;
     padding-left: 300px;
     width: 910px; }
     .installmentbox__left .column {
@@ -9541,8 +9543,8 @@ tbody.collapse.show {
       display: block; }
     .installmentbox__left {
       padding-left: 420px;
-      width: 100%;
-      flex-basis: 100%; }
+      width: calc(100% - 12px);
+      flex-basis: auto; }
     .installmentbox__right {
       flex-direction: row;
       align-items: center;
@@ -10841,7 +10843,7 @@ tbody.collapse.show {
     height: 100%;
     width: auto; }
   .card_flat .card__visual {
-    flex-basis: 100%;
+    flex-basis: auto;
     width: 100%; }
   .card_flat .carousel {
     width: 100%; }
@@ -11080,9 +11082,6 @@ tbody.collapse.show {
     overflow: hidden; }
   .flat-page {
     overflow: hidden; }
-  .card_flat .card__visual {
-    flex-basis: 100%;
-    width: 100%; }
   .card_flat .carousel {
     width: 100%; }
     .card_flat .carousel .owl-carousel .owl-prev {
@@ -13124,7 +13123,7 @@ tbody.collapse.show {
   .offer .title {
     font-size: 1.6rem; }
   .offer__right {
-    padding-right: 1rem; }
+    padding-right: 3rem; }
   .flat-page .main {
     padding-bottom: 3rem; }
   .object__composition,
