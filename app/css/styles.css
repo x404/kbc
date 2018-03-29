@@ -11207,10 +11207,10 @@ tbody.collapse.show {
     font-size: 2rem; }
   .calculator-page .main .content .scheme {
     padding-right: 2rem; }
-  .neck .tabs {
-    margin-left: 0; }
   .news-page .neck .flexbox {
     justify-content: space-between; }
+  .news-page .neck .neck .tabs {
+    margin-left: 0; }
   .materials {
     margin-top: 5rem; }
   .material__item {
@@ -12708,10 +12708,8 @@ tbody.collapse.show {
     margin-left: 0;
     justify-content: center; }
   .neck .date {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px; }
+    display: inline-flex;
+    width: auto; }
   .neck .back {
     margin-left: auto;
     margin-right: auto;

@@ -4907,14 +4907,14 @@
 		padding-right: 2rem;
 	}
 
-	.neck{
-		.tabs{
-			margin-left: 0;
-		}
-	}
+
+
 	.news-page .neck{
 		.flexbox{
 			justify-content: space-between
+		}
+		.neck .tabs{
+			margin-left: 0;
 		}
 	}
 
@@ -7639,10 +7639,14 @@
 			justify-content: center;
 		}
 		.date{
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 150px;
+			// display: block;
+			// margin-left: auto;
+			// margin-right: auto;
+			// width: 150px;
+			// width: 100%;
+
+			display: inline-flex;
+			width: auto;
 		}
 		.back{
 			margin-left: auto;
