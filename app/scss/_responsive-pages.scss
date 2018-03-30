@@ -2416,6 +2416,7 @@
 				margin-left: 3rem;
 				margin-top: 0;
 				flex-grow: 1;
+
 			}
 			&__top{
 				flex-basis: 250px;
@@ -3448,16 +3449,79 @@
 
 @media (max-width: 991px){
 	.side-inner{
-		.picking,
-		.callback {
-			// width: 100%;
-			min-width: 304px;
+		width: 100%;
+		display: block !important;
+		.picking
+		{
+			width: 320px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.secondary{
+			// margin-left: 0 !important;
+			margin-top: 2rem;
 		}
 		.callback{
 			padding-left: 3rem;
 			padding-right: 3rem;
+			&__title{
+				font-size: 2.1rem;
+			}
+			&__text{
+				font-size: 1.4rem;
+			}
+			.call{
+				&:before{
+					@include sprite($icon-tel-small);
+				}
+				a{
+					font-size: 1.6rem;
+					height: 31px;
+					line-height: 31px;
+				}
+			}
 		}
+
+
+		.callback{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 2rem;
+			width: calc(100% - 27px);
+			.call{
+				margin-left: 3rem;
+				margin-top: 0;
+				flex-grow: 1;
+			}
+			&__top{
+				flex-basis: 250px;
+				flex-shrink: 0;
+			}
+			&__form{
+				&-inner{
+					display: flex;
+					align-items: center;
+					.submit{
+						margin-left: 2.8rem;
+						margin-top: 1.5rem;
+					}					
+				}
+				.input-field{
+					margin-top: 0;
+					width: 180px;
+				}
+			}
+			.submit{
+				height: 4.5rem;
+				width: 155px;
+			}
+		}
+
+
+
 	}
+
 
 
 	.feature{
@@ -3794,7 +3858,7 @@
 			margin-left: 0;
 		}
 		.secondary{
-			margin-left: 4rem;
+			// margin-left: 4rem;
 		}
 	}
 
@@ -5391,7 +5455,8 @@
 
 
 @media (max-width: 720px){
-	.objects-callback .side{
+	.objects-callback .side,
+	.side-inner{
 		.callback{
 			// display: block;
 			display: flex;
@@ -5439,22 +5504,22 @@
 	}
 
 
-	.side-inner{
-		align-items: center;
-		flex-direction: column;
-		.callback{
-			height: auto;
-			margin-bottom: 3.5rem;
-			.submit{
-				width: 90%;
-				margin-left: auto;
-				margin-right: auto;					
-			}
-		}
-		.secondary{
-			margin-left: 0;
-		}
-	}
+	// .side-inner{
+	// 	align-items: center;
+	// 	flex-direction: column;
+	// 	.callback{
+	// 		height: auto;
+	// 		margin-bottom: 3.5rem;
+	// 		.submit{
+	// 			// width: 90%;
+	// 			// margin-left: auto;
+	// 			// margin-right: auto;					
+	// 		}
+	// 	}
+	// 	.secondary{
+	// 		margin-left: 0;
+	// 	}
+	// }
 
 
 	.resume .submit{
@@ -8261,6 +8326,10 @@
 		}
 	}
 
+	.side-inner .picking{
+		margin-left: 0;
+		width: calc(100% - 12px);
+	}
 	// intro
 	.intro{
 		&__right{
