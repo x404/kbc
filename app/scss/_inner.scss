@@ -18,8 +18,10 @@
 
 	&__map{
 		margin-bottom: 4.5rem;
-		width: 30.4rem;
+		// width: 30.4rem;
 		// margin-top: -17rem;
+
+		width: calc(100% - 12px);
 		.title{
 			background: $color2;
 			@extend .flex-cv;

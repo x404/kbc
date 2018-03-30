@@ -1341,7 +1341,7 @@ form .form-control {
   color: #fff;
   flex-shrink: 0;
   padding: 3.5rem 4rem;
-  width: 30.4rem;
+  width: calc(100% - 12px);
   position: relative; }
   .callback__title,
   .resume__title {
@@ -3170,7 +3170,7 @@ body.modal-open,
 
 .side__map {
   margin-bottom: 4.5rem;
-  width: 30.4rem; }
+  width: calc(100% - 12px); }
   .side__map .title {
     background: #fff;
     font-size: 2.5rem;
@@ -10452,7 +10452,6 @@ tbody.collapse.show {
 @media (max-width: 991px) {
   .side-inner .picking,
   .side-inner .callback {
-    width: 100%;
     min-width: 304px; }
   .side-inner .callback {
     padding-left: 3rem;
@@ -10501,32 +10500,43 @@ tbody.collapse.show {
     background-image: linear-gradient(to bottom, #bdbec1 0, #bdbec1 321px, #00a664 321px, #00a664 100%); }
   .object__labels img {
     width: 80px; }
-  .objects-callback .side {
+  .objects-callback .side,
+  .side-inner {
     padding-top: 1rem; }
-    .objects-callback .side .callback {
-      flex-wrap: wrap; }
-      .objects-callback .side .callback__top {
+    .objects-callback .side .callback,
+    .side-inner .callback {
+      flex-wrap: wrap;
+      width: calc(100% - 12px); }
+      .objects-callback .side .callback__top,
+      .side-inner .callback__top {
         display: flex;
         flex-grow: 1; }
-      .objects-callback .side .callback__text {
+      .objects-callback .side .callback__text,
+      .side-inner .callback__text {
         flex: 0 0 250px;
         margin-left: 5rem;
         margin-top: 0; }
-      .objects-callback .side .callback .call {
+      .objects-callback .side .callback .call,
+      .side-inner .callback .call {
         flex-grow: 0; }
-      .objects-callback .side .callback__form {
+      .objects-callback .side .callback__form,
+      .side-inner .callback__form {
         flex-grow: 1;
         margin-top: 1.5rem; }
-        .objects-callback .side .callback__form-inner {
+        .objects-callback .side .callback__form-inner,
+        .side-inner .callback__form-inner {
           justify-content: space-between; }
-        .objects-callback .side .callback__form .inputs {
+        .objects-callback .side .callback__form .inputs,
+        .side-inner .callback__form .inputs {
           justify-content: space-between;
           display: flex;
           display: contents;
           margin-right: 2rem; }
-        .objects-callback .side .callback__form .input-field {
+        .objects-callback .side .callback__form .input-field,
+        .side-inner .callback__form .input-field {
           width: 225px; }
-        .objects-callback .side .callback__form .submit {
+        .objects-callback .side .callback__form .submit,
+        .side-inner .callback__form .submit {
           margin-left: 0; }
   .intro__carousel {
     width: 315px; }
@@ -13232,6 +13242,13 @@ tbody.collapse.show {
     padding-left: 8px; } }
 
 @media (max-width: 350px) {
+  .side-inner {
+    align-items: flex-start;
+    width: 100%; }
+    .side-inner .callback,
+    .side-inner .picking {
+      min-width: 0;
+      width: calc(100% - 14px); }
   .intro__left {
     padding-left: 15px;
     padding-right: 15px; }
@@ -13257,17 +13274,13 @@ tbody.collapse.show {
       font-size: 1.5rem; }
   .resume .submit {
     width: 100%; }
-  .picking {
-    width: calc(100% - 12px); }
   .list_faq .faq__item .text {
     padding-right: 1rem !important; }
-  .side-inner .callback,
   .documents .callback,
   .additional_info .callback {
     padding-left: 2rem;
     padding-right: 2rem;
     width: calc(100% - 14px); }
-    .side-inner .callback .call a,
     .documents .callback .call a,
     .additional_info .callback .call a {
       font-size: 1.8rem; }

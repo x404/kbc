@@ -3450,7 +3450,7 @@
 	.side-inner{
 		.picking,
 		.callback {
-			width: 100%;
+			// width: 100%;
 			min-width: 304px;
 		}
 		.callback{
@@ -3546,10 +3546,12 @@
 	}
 
 
-	.objects-callback .side{
+	.objects-callback .side,
+	.side-inner{
 		padding-top: 1rem;
 		.callback{
 			flex-wrap: wrap;
+			width: calc(100% - 12px);
 			&__top{
 				display: flex;
 				flex-grow: 1;
@@ -8617,6 +8619,15 @@
 
 
 @media (max-width: 350px){
+	.side-inner{
+		align-items: flex-start;
+		width: 100%;
+		.callback,
+		.picking{
+			min-width: 0;
+			width: calc(100% - 14px);
+		}
+	}
 	.intro{
 		&__left{
 			padding-left: 15px;
@@ -8668,7 +8679,7 @@
 	}
 
 	.picking{
-		width: calc(100% - 12px)
+		// width: calc(100% - 12px)
 	}
 
 	.list_faq{
@@ -8677,7 +8688,6 @@
 		}
 	}
 
-	.side-inner,
 	.documents,
 	.additional_info
 	{

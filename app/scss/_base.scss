@@ -866,7 +866,8 @@ form{
 	color: $color2;
 	flex-shrink: 0;
 	padding: 3.5rem 4rem;
-	width: 30.4rem;
+	// width: 30.4rem;
+	width: calc(100% - 12px);
 	position: relative;
 	
 	// @extend .perspective;
