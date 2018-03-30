@@ -8805,6 +8805,13 @@ tbody.collapse.show {
   .news-page .offset-col-1,
   .action-page .offset-col-1 {
     margin-left: 0; }
+  .side-inner {
+    flex-basis: auto;
+    flex-shrink: 1;
+    width: 320px; }
+    .side-inner .callback,
+    .side-inner .picking {
+      width: calc(100% - 12px); }
   .list_vacancy .vacancy__item,
   .actions-page .action__item,
   .list_faq .faq__item {
@@ -9936,6 +9943,13 @@ tbody.collapse.show {
   .side {
     display: block;
     padding-top: 2.5rem; }
+    .side-inner {
+      width: 300px; }
+      .side-inner .callback {
+        padding-left: 2rem;
+        padding-right: 2rem; }
+      .side-inner .callback {
+        height: auto; }
   .objects {
     width: 100%; }
     .objects__carousel {
@@ -10436,6 +10450,13 @@ tbody.collapse.show {
     width: 98%; } }
 
 @media (max-width: 991px) {
+  .side-inner .picking,
+  .side-inner .callback {
+    width: 100%;
+    min-width: 304px; }
+  .side-inner .callback {
+    padding-left: 3rem;
+    padding-right: 3rem; }
   .feature .promo {
     height: auto; }
     .feature .promo .owl-carousel .owl-item img {
@@ -11677,7 +11698,7 @@ tbody.collapse.show {
     width: 50%; }
   .listgk-page .main .listgk .object__item-outer {
     width: 280px; }
-  .btn-review {
+  .btn-review, .btn-faq {
     margin-top: 3rem; } }
 
 @media (max-width: 670px) {

@@ -298,6 +298,15 @@
 			margin-left: 0;
 		}
 	}
+	.side-inner{
+		flex-basis: auto;
+		flex-shrink: 1;
+		width: 320px;
+		.callback,
+		.picking{
+			width: calc(100% - 12px);
+		}
+	}
 
 	.list_vacancy .vacancy,
 	.actions-page .action,
@@ -2437,8 +2446,13 @@
 		display: block;
 		padding-top: 2.5rem;
 		&-inner{
+			width: 300px;
 			.callback{
-				// display: block;
+				padding-left: 2rem;
+				padding-right: 2rem;
+			}
+			.callback{
+				height: auto;
 			}
 		}
 	}
@@ -3433,6 +3447,19 @@
 
 
 @media (max-width: 991px){
+	.side-inner{
+		.picking,
+		.callback {
+			width: 100%;
+			min-width: 304px;
+		}
+		.callback{
+			padding-left: 3rem;
+			padding-right: 3rem;
+		}
+	}
+
+
 	.feature{
 		.promo{
 			$h: auto;
@@ -5725,8 +5752,12 @@
 	}
 	// =/LIST GK
 
-	.btn-review{
-		margin-top: 3rem;
+	.btn{
+		&-review,
+		&-faq
+		{
+			margin-top: 3rem;
+		}
 	}
 }
 
