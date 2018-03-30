@@ -7466,7 +7466,8 @@ circle:nth-child(2n) {
         position: absolute;
         color: #c20831;
         font-weight: 700;
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        white-space: nowrap; }
       .calculator-page .main .content .scheme .length {
         left: 50%;
         top: -40px;
@@ -7482,36 +7483,88 @@ circle:nth-child(2n) {
         background-color: #fff;
         transition: .3s; }
       .calculator-page .main .content .scheme .tile1 {
-        background: url(../images/calc/tile-1.gif); }
+        background: url(../images/calc/tile-1.svg); }
         .calculator-page .main .content .scheme .tile1.color {
-          background: url(../images/calc/tile-1-color.gif); }
+          background: url(../images/calc/tile-1-color.svg); }
       .calculator-page .main .content .scheme .tile2 {
-        background: url(../images/calc/tile-2.gif); }
+        background: url(../images/calc/tile-2.svg); }
         .calculator-page .main .content .scheme .tile2.color {
-          background: url(../images/calc/tile-2-color.gif); }
+          background: url(../images/calc/tile-2-color.svg); }
       .calculator-page .main .content .scheme .tile3 {
-        background: url(../images/calc/tile-3.gif); }
+        background: url(../images/calc/tile-3.svg); }
         .calculator-page .main .content .scheme .tile3.color {
-          background: url(../images/calc/tile-3-color.gif); }
+          background: url(../images/calc/tile-3-color.svg); }
       .calculator-page .main .content .scheme .tile4 {
-        background: url(../images/calc/tile-4.gif); }
+        background: url(../images/calc/tile-4.svg); }
         .calculator-page .main .content .scheme .tile4.color {
-          background: url(../images/calc/tile-4-color.gif); }
+          background: url(../images/calc/tile-4-color.svg); }
       .calculator-page .main .content .scheme .tile5 {
-        background: url(../images/calc/tile-5.gif); }
+        background: url(../images/calc/tile-5.svg); }
         .calculator-page .main .content .scheme .tile5.color {
-          background: url(../images/calc/tile-5-color.gif); }
+          background: url(../images/calc/tile-5-color.svg); }
       .calculator-page .main .content .scheme .tile6 {
-        background: url(../images/calc/tile-6.gif); }
+        background: url(../images/calc/tile-6.svg); }
         .calculator-page .main .content .scheme .tile6.color {
-          background: url(../images/calc/tile-6-color.gif); }
+          background: url(../images/calc/tile-6-color.svg); }
+      .calculator-page .main .content .scheme .scale1.tile1 {
+        background-size: 34px; }
+      .calculator-page .main .content .scheme .scale1.tile2 {
+        background-size: 34px; }
+      .calculator-page .main .content .scheme .scale1.tile3 {
+        background-size: 34px; }
+      .calculator-page .main .content .scheme .scale1.tile4 {
+        background-size: 34px; }
+      .calculator-page .main .content .scheme .scale1.tile5 {
+        background-size: 34px; }
+      .calculator-page .main .content .scheme .scale1.tile6 {
+        background-size: 34px; }
+      .calculator-page .main .content .scheme .scale2.tile1 {
+        background-size: 100px; }
       .calculator-page .main .content .scheme .scale2.tile2 {
         background-size: 100px; }
+      .calculator-page .main .content .scheme .scale2.tile3 {
+        background-size: 100px; }
+      .calculator-page .main .content .scheme .scale2.tile4 {
+        background-size: 100px; }
+      .calculator-page .main .content .scheme .scale2.tile5 {
+        background-size: 100px; }
+      .calculator-page .main .content .scheme .scale2.tile6 {
+        background-size: 100px; }
+      .calculator-page .main .content .scheme .scale3.tile1 {
+        background-size: 66px; }
       .calculator-page .main .content .scheme .scale3.tile2 {
         background-size: 66px; }
+      .calculator-page .main .content .scheme .scale3.tile3 {
+        background-size: 66px; }
+      .calculator-page .main .content .scheme .scale3.tile4 {
+        background-size: 66px; }
+      .calculator-page .main .content .scheme .scale3.tile5 {
+        background-size: 66px; }
+      .calculator-page .main .content .scheme .scale3.tile6 {
+        background-size: 66px; }
+      .calculator-page .main .content .scheme .scale4.tile1 {
+        background-size: 50px; }
       .calculator-page .main .content .scheme .scale4.tile2 {
         background-size: 50px; }
+      .calculator-page .main .content .scheme .scale4.tile3 {
+        background-size: 50px; }
+      .calculator-page .main .content .scheme .scale4.tile4 {
+        background-size: 50px; }
+      .calculator-page .main .content .scheme .scale4.tile5 {
+        background-size: 50px; }
+      .calculator-page .main .content .scheme .scale4.tile6 {
+        background-size: 50px; }
+      .calculator-page .main .content .scheme .scale5.tile1 {
+        background-size: 40px; }
       .calculator-page .main .content .scheme .scale5.tile2 {
+        background-size: 40px; }
+      .calculator-page .main .content .scheme .scale5.tile3 {
+        background-size: 40px; }
+      .calculator-page .main .content .scheme .scale5.tile4 {
+        background-size: 40px; }
+      .calculator-page .main .content .scheme .scale5.tile5 {
+        background-size: 40px; }
+      .calculator-page .main .content .scheme .scale5.tile6 {
         background-size: 40px; }
       .calculator-page .main .content .scheme .params {
         display: flex;

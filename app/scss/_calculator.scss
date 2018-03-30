@@ -263,6 +263,7 @@
 					color: $color;
 					font-weight: 700;
 					font-size: 1.5rem;
+					white-space: nowrap
 				}
 
 				.length{
@@ -288,24 +289,52 @@
 
 				@for $i from 1 to 7 { 
 					.tile#{$i}{
-						background: url(../images/calc/tile-#{$i}.gif);
+						background: url(../images/calc/tile-#{$i}.svg);
 						&.color{
-							background: url(../images/calc/tile-#{$i}-color.gif);						
+							background: url(../images/calc/tile-#{$i}-color.svg);						
 						}
 					}
 				}
 
+				.scale1{
+					&.tile1{background-size: 34px}
+					&.tile2{background-size: 34px}
+					&.tile3{background-size: 34px}
+					&.tile4{background-size: 34px}
+					&.tile5{background-size: 34px}
+					&.tile6{background-size: 34px}
+				}
 				.scale2{
+					&.tile1{background-size: 100px}
 					&.tile2{background-size: 100px}
+					&.tile3{background-size: 100px}
+					&.tile4{background-size: 100px}
+					&.tile5{background-size: 100px}
+					&.tile6{background-size: 100px}
 				}
 				.scale3{
+					&.tile1{background-size: 66px}
 					&.tile2{background-size: 66px}
+					&.tile3{background-size: 66px}
+					&.tile4{background-size: 66px}
+					&.tile5{background-size: 66px}
+					&.tile6{background-size: 66px}
 				}
 				.scale4{
+					&.tile1{background-size: 50px}
 					&.tile2{background-size: 50px}
+					&.tile3{background-size: 50px}
+					&.tile4{background-size: 50px}
+					&.tile5{background-size: 50px}
+					&.tile6{background-size: 50px}
 				}
 				.scale5{
+					&.tile1{background-size: 40px}
 					&.tile2{background-size: 40px}
+					&.tile3{background-size: 40px}
+					&.tile4{background-size: 40px}
+					&.tile5{background-size: 40px}
+					&.tile6{background-size: 40px}
 				}
 
 				.params{
