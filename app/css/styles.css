@@ -10109,25 +10109,6 @@ tbody.collapse.show {
     .pagination a:not([class]), .pagination span:not(.separator) {
       width: 32px;
       height: 32px; }
-  .list_construction {
-    justify-content: space-between; }
-    .list_construction .place__item {
-      width: calc(50% - 35px);
-      max-width: 370px;
-      margin-right: 35px !important; }
-      .list_construction .place__item:nth-child(even) {
-        margin-right: 0 !important; }
-    .list_construction .place__pic:before, .list_construction .place__pic:after {
-      height: calc(100% + 5px);
-      left: 50%;
-      width: 88%; }
-    .list_construction .place__pic:before {
-      margin-left: -148px;
-      top: 0px; }
-    .list_construction .place__pic:after {
-      margin-left: -138px;
-      top: 7px;
-      width: calc(88% - 20px); }
   .construction-page .neck .head p {
     margin-top: 1rem; }
   .content-bottom .subscribe {
@@ -10135,24 +10116,41 @@ tbody.collapse.show {
     .content-bottom .subscribe__text {
       padding-right: 50px;
       font-size: 1.6rem; }
+  .about-page .list_construction,
+  .construction-page .list_construction {
+    justify-content: space-between; }
+    .about-page .list_construction .place__item,
+    .construction-page .list_construction .place__item {
+      margin-right: 0;
+      width: calc(33.3% - 17px);
+      max-width: 370px; }
+      .about-page .list_construction .place__item:nth-child(3n),
+      .construction-page .list_construction .place__item:nth-child(3n) {
+        margin-right: 0; }
+    .about-page .list_construction .place__pic,
+    .construction-page .list_construction .place__pic {
+      width: 80%; }
+      .about-page .list_construction .place__pic:before, .about-page .list_construction .place__pic:after,
+      .construction-page .list_construction .place__pic:before,
+      .construction-page .list_construction .place__pic:after {
+        height: calc(100% + 5px);
+        left: 50%;
+        width: 90%; }
+      .about-page .list_construction .place__pic:before,
+      .construction-page .list_construction .place__pic:before {
+        margin-left: -105px;
+        top: 0px; }
+      .about-page .list_construction .place__pic:after,
+      .construction-page .list_construction .place__pic:after {
+        margin-left: -95px;
+        top: 7px;
+        width: calc(88% - 20px); }
+  .construction-page .list_construction {
+    justify-content: flex-start; }
+    .construction-page .list_construction .place__item {
+      margin-right: 25px; }
   .about-page .report {
     padding: 4rem 0; }
-  .about-page .list_construction .place__item {
-    margin-right: 0 !important;
-    width: calc(33.3% - 17px); }
-  .about-page .list_construction .place__pic {
-    width: 80%; }
-    .about-page .list_construction .place__pic:before, .about-page .list_construction .place__pic:after {
-      height: calc(100% + 5px);
-      left: 50%;
-      width: 90%; }
-    .about-page .list_construction .place__pic:before {
-      margin-left: -105px;
-      top: 0px; }
-    .about-page .list_construction .place__pic:after {
-      margin-left: -95px;
-      top: 7px;
-      width: calc(88% - 20px); }
   .flat-page .additional_info {
     display: block;
     width: 100%; }
@@ -10740,6 +10738,18 @@ tbody.collapse.show {
     width: 50%; }
     .topnews .news__cell:nth-child(3) {
       display: none; }
+  .about-page .list_construction .place__item,
+  .construction-page .list_construction .place__item {
+    width: 45%; }
+    .about-page .list_construction .place__item:nth-child(4n),
+    .construction-page .list_construction .place__item:nth-child(4n) {
+      display: block; }
+  .construction-page .list_construction {
+    justify-content: space-between; }
+    .construction-page .list_construction .place__item {
+      margin-right: 0; }
+      .construction-page .list_construction .place__item:nth-child(4n) {
+        margin-right: 0; }
   .about-page .scheme .step {
     display: block;
     text-align: center; }
@@ -10752,10 +10762,6 @@ tbody.collapse.show {
       right: 0; }
   .about-page .about__video .video__item {
     width: 31%; }
-  .about-page .list_construction .place__item {
-    width: 45%; }
-    .about-page .list_construction .place__item:nth-child(4n) {
-      display: block; }
   .about-page .documents .row {
     display: block; }
   .about-page .documents__content {
@@ -11601,40 +11607,27 @@ tbody.collapse.show {
     margin-left: auto;
     margin-right: auto;
     display: block; }
-  .list_construction {
-    display: block; }
-    .list_construction .place__item {
-      width: 320px;
-      margin-right: auto !important;
-      margin-left: auto; }
-      .list_construction .place__item:nth-child(even) {
-        margin-right: auto !important; }
-    .list_construction .place__pic:before, .list_construction .place__pic:after {
-      height: calc(100% + 5px);
-      left: 50%;
-      width: 94%; }
-    .list_construction .place__pic:before {
-      margin-left: -140px;
-      top: 0px; }
-    .list_construction .place__pic:after {
-      margin-left: -130px;
-      top: 7px;
-      width: calc(94% - 20px); }
-  .about-page .list_construction {
+  .about-page .list_construction,
+  .construction-page .list_construction {
     width: 100%; }
-    .about-page .list_construction .place__item {
+    .about-page .list_construction .place__item,
+    .construction-page .list_construction .place__item {
       margin-left: auto;
       margin-right: auto !important;
       width: 100%;
       max-width: 400px; }
-    .about-page .list_construction .place__pic:before, .about-page .list_construction .place__pic:after {
+    .about-page .list_construction .place__pic:before, .about-page .list_construction .place__pic:after,
+    .construction-page .list_construction .place__pic:before,
+    .construction-page .list_construction .place__pic:after {
       height: calc(100% + 5px);
       left: 50%;
       width: 94%; }
-    .about-page .list_construction .place__pic:before {
+    .about-page .list_construction .place__pic:before,
+    .construction-page .list_construction .place__pic:before {
       margin-left: -150px;
       top: 0px; }
-    .about-page .list_construction .place__pic:after {
+    .about-page .list_construction .place__pic:after,
+    .construction-page .list_construction .place__pic:after {
       margin-left: -140px;
       top: 7px;
       width: calc(94% - 20px); }
@@ -12812,16 +12805,21 @@ tbody.collapse.show {
     font-size: 2.8rem !important; }
   .about-page .calculator {
     padding-top: 2rem; }
-  .about-page .list_construction .place__item {
+  .about-page .list_construction .place__item,
+  .construction-page .list_construction .place__item {
     width: 320px; }
-  .about-page .list_construction .place__pic:before, .about-page .list_construction .place__pic:after {
+  .about-page .list_construction .place__pic:before, .about-page .list_construction .place__pic:after,
+  .construction-page .list_construction .place__pic:before,
+  .construction-page .list_construction .place__pic:after {
     height: calc(100% + 5px);
     left: 50%;
     width: 94%; }
-  .about-page .list_construction .place__pic:before {
+  .about-page .list_construction .place__pic:before,
+  .construction-page .list_construction .place__pic:before {
     margin-left: -120px;
     top: 0px; }
-  .about-page .list_construction .place__pic:after {
+  .about-page .list_construction .place__pic:after,
+  .construction-page .list_construction .place__pic:after {
     margin-left: -110px;
     top: 7px;
     width: calc(94% - 20px); }
@@ -13002,7 +13000,9 @@ tbody.collapse.show {
   .listgk-page .main .listgk .object__item-outer {
     width: 320px; }
   #filter .close {
-    top: 15px; } }
+    top: 15px; }
+  .place__item .object__address {
+    text-align: left; } }
 
 @media (max-width: 420px) {
   .about-partners .partners {
@@ -13140,26 +13140,6 @@ tbody.collapse.show {
   .review__bottom {
     padding-left: 1.5rem;
     padding-right: 1.5rem; }
-  .list_construction__pic:before, .list_construction__pic:after {
-    display: none; }
-  .list_construction__body {
-    margin-top: 1rem; }
-  .list_construction .place__item {
-    width: 300px; }
-  .list_construction .place__wrapper {
-    padding-bottom: 1rem; }
-    .list_construction .place__wrapper .object__title {
-      font-size: 1.5rem; }
-    .list_construction .place__wrapper .object__info {
-      padding-left: 1rem; }
-  .list_construction .place__top, .list_construction .place__body {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem; }
-  .list_construction .place__date {
-    font-size: 1.4rem; }
-  .list_construction .place__translation {
-    margin-top: 1.2rem;
-    font-size: 1.4rem; }
   .text-page main,
   .news-page main,
   .action-page main {
@@ -13175,16 +13155,21 @@ tbody.collapse.show {
   .calc-bottom {
     padding-left: 15px;
     padding-right: 15px; }
-  .about-page .list_construction .place__item {
+  .about-page .list_construction .place__item,
+  .construction-page .list_construction .place__item {
     width: 280px; }
-  .about-page .list_construction .place__pic:before, .about-page .list_construction .place__pic:after {
+  .about-page .list_construction .place__pic:before, .about-page .list_construction .place__pic:after,
+  .construction-page .list_construction .place__pic:before,
+  .construction-page .list_construction .place__pic:after {
     height: calc(100% + 5px);
     left: 50%;
     width: 94%; }
-  .about-page .list_construction .place__pic:before {
+  .about-page .list_construction .place__pic:before,
+  .construction-page .list_construction .place__pic:before {
     margin-left: -100px;
     top: 0px; }
-  .about-page .list_construction .place__pic:after {
+  .about-page .list_construction .place__pic:after,
+  .construction-page .list_construction .place__pic:after {
     margin-left: -90px;
     top: 7px;
     width: calc(94% - 20px); }
@@ -13336,10 +13321,14 @@ tbody.collapse.show {
     .news-page .neck .tabs .tab {
       padding-left: .5rem;
       padding-right: .5rem; }
+  .about-page .list_construction .place__top img,
+  .construction-page .list_construction .place__top img {
+    display: none; }
+  .about-page .place__wrapper .object__info,
+  .construction-page .place__wrapper .object__info {
+    padding-left: 0; }
   .about-page .scheme .steps .step:before {
     left: -80px; }
-  .about-page .list_construction .place__top img {
-    display: none; }
   .about-page .scheme .title,
   .about-page .filter .title,
   .about-page .documents .heading,
