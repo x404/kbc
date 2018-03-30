@@ -10450,12 +10450,56 @@ tbody.collapse.show {
     width: 98%; } }
 
 @media (max-width: 991px) {
-  .side-inner .picking,
-  .side-inner .callback {
-    min-width: 304px; }
-  .side-inner .callback {
-    padding-left: 3rem;
-    padding-right: 3rem; }
+  .side-inner {
+    width: 100%;
+    display: block !important; }
+    .side-inner .picking {
+      width: 320px;
+      margin-left: auto;
+      margin-right: auto; }
+    .side-inner .secondary {
+      margin-top: 2rem; }
+    .side-inner .callback {
+      padding-left: 3rem;
+      padding-right: 3rem; }
+      .side-inner .callback__title {
+        font-size: 2.1rem; }
+      .side-inner .callback__text {
+        font-size: 1.4rem; }
+      .side-inner .callback .call:before {
+        background-image: url(../images/sprite.png);
+        background-position: -235px -75px;
+        width: 31px;
+        height: 31px; }
+      .side-inner .callback .call a {
+        font-size: 1.6rem;
+        height: 31px;
+        line-height: 31px; }
+    .side-inner .callback {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      width: calc(100% - 27px); }
+      .side-inner .callback .call {
+        margin-left: 3rem;
+        margin-top: 0;
+        flex-grow: 1; }
+      .side-inner .callback__top {
+        flex-basis: 250px;
+        flex-shrink: 0; }
+      .side-inner .callback__form-inner {
+        display: flex;
+        align-items: center; }
+        .side-inner .callback__form-inner .submit {
+          margin-left: 2.8rem;
+          margin-top: 1.5rem; }
+      .side-inner .callback__form .input-field {
+        margin-top: 0;
+        width: 180px; }
+      .side-inner .callback .submit {
+        height: 4.5rem;
+        width: 155px; }
   .feature .promo {
     height: auto; }
     .feature .promo .owl-carousel .owl-item img {
@@ -10652,14 +10696,6 @@ tbody.collapse.show {
   .listgk-page .side {
     display: flex;
     margin-left: 0; }
-  .vacancies-page .secondary,
-  .faq-page .secondary,
-  .actions-page .secondary,
-  .news-page .secondary,
-  .action-page .secondary,
-  .about-page .secondary,
-  .listgk-page .secondary {
-    margin-left: 4rem; }
   .list_vacancy .vacancy__item {
     width: 100%; }
   .list_faq .faq__item {
@@ -11521,42 +11557,39 @@ tbody.collapse.show {
     margin-top: 2rem; } }
 
 @media (max-width: 720px) {
-  .objects-callback .side .callback {
+  .objects-callback .side .callback,
+  .side-inner .callback {
     display: flex;
     justify-content: center;
     flex-direction: column; }
-    .objects-callback .side .callback__top {
+    .objects-callback .side .callback__top,
+    .side-inner .callback__top {
       text-align: center;
       display: block;
       flex-basis: auto; }
-    .objects-callback .side .callback__text {
+    .objects-callback .side .callback__text,
+    .side-inner .callback__text {
       margin-left: 0;
       margin-top: .5rem; }
-    .objects-callback .side .callback .call {
+    .objects-callback .side .callback .call,
+    .side-inner .callback .call {
       margin-left: 0;
       margin-top: 8px; }
-      .objects-callback .side .callback .call a {
+      .objects-callback .side .callback .call a,
+      .side-inner .callback .call a {
         padding-left: 36px; }
-    .objects-callback .side .callback__form {
+    .objects-callback .side .callback__form,
+    .side-inner .callback__form {
       margin-top: .5rem; }
-      .objects-callback .side .callback__form-inner {
+      .objects-callback .side .callback__form-inner,
+      .side-inner .callback__form-inner {
         flex-direction: column; }
-      .objects-callback .side .callback__form .inputs {
+      .objects-callback .side .callback__form .inputs,
+      .side-inner .callback__form .inputs {
         display: flex; }
-      .objects-callback .side .callback__form .input-field {
+      .objects-callback .side .callback__form .input-field,
+      .side-inner .callback__form .input-field {
         width: 46%; }
-  .side-inner {
-    align-items: center;
-    flex-direction: column; }
-    .side-inner .callback {
-      height: auto;
-      margin-bottom: 3.5rem; }
-      .side-inner .callback .submit {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto; }
-    .side-inner .secondary {
-      margin-left: 0; }
   .resume .submit {
     width: 90%;
     margin-left: auto;
@@ -13064,6 +13097,9 @@ tbody.collapse.show {
     margin-right: 0 !important; }
   .side .callback__form-inner .input-field {
     width: 100% !important; }
+  .side-inner .picking {
+    margin-left: 0;
+    width: calc(100% - 12px); }
   .intro__right {
     padding-left: 15px;
     padding-right: 15px; }
