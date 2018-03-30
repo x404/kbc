@@ -435,6 +435,9 @@
 					padding-right: 50px;
 					padding-left: 120px;					
 				}
+				img{
+					height: 100%;
+				}
 			}
 		}
 
@@ -448,6 +451,12 @@
 		}
 		.filter{
 			padding-top: 3rem;
+		}
+
+		.documents{
+			.side-inner{
+				margin-right: 12px;
+			}
 		}
 	}
 	// =/ABOUT
@@ -1615,6 +1624,12 @@
 			.place{
 				&__item{
 				}
+			}
+		}
+
+		.calculator{
+			.calc-bottom{
+				width: calc(100% - 12px);
 			}
 		}
 	}
@@ -2860,6 +2875,14 @@
 		.report{
 			padding: 4rem 0;
 		}
+		.documents{
+			.side-inner{
+				width: 320px;
+			}
+			&__content{
+				padding-right: 2rem;
+			}
+		}
 	}
 	// =/ABOUT
 
@@ -4041,14 +4064,19 @@
 			width: 31%;
 		}
 
-
-
 		.documents{
 			.row{
 				display: block;
 			}
 			&__content{
 				padding-right: 0;
+			}
+			.callback{
+				font-size: 1.4rem;
+				width: calc(100% - 12px);
+			}
+			.side-inner{
+				width: 100%;
 			}
 		}
 		.callback{
@@ -4065,6 +4093,12 @@
 			}
 			.item__title{
 				font-size: 2.2rem;
+			}
+		}
+
+		.list_construction{
+			.place__item{
+				margin-right: 0 !important;
 			}
 		}
 	}

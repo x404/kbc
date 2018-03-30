@@ -7092,7 +7092,9 @@ circle:nth-child(2n) {
     .about-page .documents .doclist__item a:hover {
       color: #c40f39; }
   .about-page .documents .callback {
-    align-self: flex-start; }
+    align-self: flex-start;
+    margin-right: 12px;
+    width: 320px; }
 
 .listgk-page {
   position: relative; }
@@ -8881,11 +8883,15 @@ tbody.collapse.show {
   .about-page .carousel .item__body {
     padding-right: 50px;
     padding-left: 120px; }
+  .about-page .carousel .item img {
+    height: 100%; }
   .about-page .about__video .video__item {
     font-size: 1.5rem;
     width: 30%; }
   .about-page .filter {
     padding-top: 3rem; }
+  .about-page .documents .side-inner {
+    margin-right: 12px; }
   .product__pic {
     width: 100%; }
   .product__item {
@@ -9487,6 +9493,8 @@ tbody.collapse.show {
     font-size: 1.5rem; }
   .action__date {
     font-size: 1.4rem; }
+  .about-page .calculator .calc-bottom {
+    width: calc(100% - 12px); }
   .about-page .list_construction .place__item,
   .construction-page .list_construction .place__item {
     margin-right: 52px;
@@ -10156,6 +10164,10 @@ tbody.collapse.show {
       margin-right: 25px; }
   .about-page .report {
     padding: 4rem 0; }
+  .about-page .documents .side-inner {
+    width: 320px; }
+  .about-page .documents__content {
+    padding-right: 2rem; }
   .flat-page .additional_info {
     display: block;
     width: 100%; }
@@ -10771,6 +10783,11 @@ tbody.collapse.show {
     display: block; }
   .about-page .documents__content {
     padding-right: 0; }
+  .about-page .documents .callback {
+    font-size: 1.4rem;
+    width: calc(100% - 12px); }
+  .about-page .documents .side-inner {
+    width: 100%; }
   .about-page .callback {
     margin-top: 2.5rem; }
   .about-page .carousel .item {
@@ -10780,6 +10797,8 @@ tbody.collapse.show {
       width: 400px; }
   .about-page .carousel .item__title {
     font-size: 2.2rem; }
+  .about-page .list_construction .place__item {
+    margin-right: 0 !important; }
   .sidebar {
     font-size: 1.4rem; }
     .sidebar a,
