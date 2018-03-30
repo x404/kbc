@@ -139,7 +139,7 @@ gulp.task('img', function() {
 
 
 // File where the favicon markups are stored
-var FAVICON_DATA_FILE = 'faviconData.json';
+var FAVICON_DATA_FILE = 'app/faviconData.json';
 
 // Generate the icons. This task takes a few seconds to complete.
 // You should run it at least once to create the icons. Then,
@@ -147,8 +147,8 @@ var FAVICON_DATA_FILE = 'faviconData.json';
 // package (see the check-for-favicon-update task below).
 gulp.task('generate-favicon', function(done) {
 	realFavicon.generateFavicon({
-		masterPicture: 'assets/app/favicon.png',
-		dest: 'assets/app/the_favicon',
+		masterPicture: 'app/favicon.png',
+		dest: 'app/the_favicon',
 		iconsPath: '/the_favicon/',
 		design: {
 			ios: {
@@ -208,9 +208,9 @@ gulp.task('generate-favicon', function(done) {
 // this task whenever you modify a page. You can keep this task
 // as is or refactor your existing HTML pipeline.
 gulp.task('inject-favicon-markups', function() {
-	return gulp.src([ 'app/*.html' ])
+	return gulp.src([ 'app/Templates/*.dwt' ])
 		.pipe(realFavicon.injectFaviconMarkups(JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).favicon.html_code))
-		.pipe(gulp.dest('app/'));
+		.pipe(gulp.dest('app/Templates/'));
 });
 
 // Check for updates on RealFaviconGenerator (think: Apple has just
@@ -240,7 +240,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 	])
 	.pipe(gulp.dest(config.destDir + '/css'));
 
-	// var buildFavicon = gulp.src('app/the_favicon/*.*').pipe(gulp.dest(config.destDir + '/the_favicon'));
+	var buildFavicon = gulp.src('app/the_favicon/*.*').pipe(gulp.dest(config.destDir + '/the_favicon'));
 	var buildHtml = gulp.src('app/*.html').pipe(gulp.dest(config.destDir + '/'));
 	var buildHtaccess = gulp.src('app/.htaccess').pipe(gulp.dest(config.destDir));
 	var buildrobots = gulp.src('app/robots.txt').pipe(gulp.dest(config.destDir));
