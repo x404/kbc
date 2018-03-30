@@ -3164,6 +3164,8 @@ body.modal-open,
   margin-top: -70px;
   position: relative;
   top: -30px; }
+  .side-inner .callback {
+    height: auto; }
 
 .side .resume {
   margin-top: -10rem; }
@@ -5690,6 +5692,8 @@ div.table-flats .sort {
   padding-top: 8.5rem; }
   .additional_info .heading {
     padding-bottom: 0; }
+  .additional_info .side-inner {
+    margin-top: 0; }
   .additional_info div.table-flats {
     border: 2px solid #ebeef1;
     margin-top: 1.5em; }
@@ -9202,7 +9206,9 @@ tbody.collapse.show {
         width: 100%; }
   .calculator-page .main .content .scheme {
     flex-grow: 0;
-    width: calc(100% - 260px); } }
+    width: calc(100% - 260px); }
+  .card_flat .card__visual {
+    flex-basis: calc(100% - 430px); } }
 
 @media (max-width: 1370px) {
   .calculator-page .related .carousel .owl-carousel .owl-next {
@@ -9309,25 +9315,32 @@ tbody.collapse.show {
       .feature .about__cell img {
         max-width: auto;
         width: 100%; }
+  .flat-page .callback,
   .objects-callback .callback {
     padding: 2.5rem 2rem 0;
     width: 24rem; }
+    .flat-page .callback__text,
     .objects-callback .callback__text {
       font-size: 1.4rem;
       margin-top: 1.4rem; }
+    .flat-page .callback__title,
     .objects-callback .callback__title {
       font-size: 2.1rem; }
+    .flat-page .callback .call,
     .objects-callback .callback .call {
       margin-top: 1.8rem; }
+      .flat-page .callback .call a,
       .objects-callback .callback .call a {
         height: 31px;
         line-height: 31px;
         font-size: 1.6rem; }
+      .flat-page .callback .call:before,
       .objects-callback .callback .call:before {
         background-image: url(../images/sprite.png);
         background-position: -235px -75px;
         width: 31px;
         height: 31px; }
+    .flat-page .callback .submit,
     .objects-callback .callback .submit {
       margin-top: 2rem;
       font-size: 1.5rem;
@@ -9720,12 +9733,10 @@ tbody.collapse.show {
           margin-left: 0;
           left: 0;
           top: 3px; }
-  .card_flat .card__visual {
-    flex-basis: 50%; }
-    .card_flat .card__visual .flexbox {
-      flex-direction: column; }
-    .card_flat .card__visual .carousel {
-      order: 1; }
+  .card_flat .card__visual .flexbox {
+    flex-direction: column; }
+  .card_flat .card__visual .carousel {
+    order: 1; }
   .card_flat .carousel_tab {
     display: flex;
     font-size: 1.5rem;
@@ -9765,8 +9776,6 @@ tbody.collapse.show {
         right: -70px; }
       .card_flat .carousel .owl-carousel .owl-next:before {
         margin-left: 2px; }
-  .card_flat .card__description {
-    flex-basis: calc(50% - 12px); }
   .card_flat .card__description .description__bottom .left .price {
     font-size: 3rem; }
   .card_flat .card__description .description__bottom .right .btn {
@@ -9924,32 +9933,41 @@ tbody.collapse.show {
       display: none; }
   .feature .about__text {
     display: none; }
+  .flat-page,
   .objects-callback {
     display: block; }
+    .flat-page .side,
     .objects-callback .side {
       justify-content: flex-start; }
+    .flat-page .callback,
     .objects-callback .callback {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 2rem;
       width: calc(100% - 27px); }
+      .flat-page .callback .call,
       .objects-callback .callback .call {
         margin-left: 3rem;
         margin-top: 0;
         flex-grow: 1; }
+      .flat-page .callback__top,
       .objects-callback .callback__top {
         flex-basis: 250px;
         flex-shrink: 0; }
+      .flat-page .callback__form-inner,
       .objects-callback .callback__form-inner {
         display: flex;
         align-items: center; }
+        .flat-page .callback__form-inner .submit,
         .objects-callback .callback__form-inner .submit {
           margin-left: 2.8rem;
           margin-top: 1.5rem; }
+      .flat-page .callback__form .input-field,
       .objects-callback .callback__form .input-field {
         margin-top: 0;
         width: 180px; }
+      .flat-page .callback .submit,
       .objects-callback .callback .submit {
         height: 4.5rem;
         width: 155px; }
@@ -9976,6 +9994,10 @@ tbody.collapse.show {
     background-image: linear-gradient(to bottom, #bdbec1 0, #bdbec1 259px, #00a664 259px, #00a664 100%); }
   .object__item-outer {
     width: 290px; }
+  .flat-page .side-inner {
+    width: calc(100% - 12px); }
+    .flat-page .side-inner .callback {
+      width: 100%; }
   .intro__carousel {
     width: 415px; }
     .intro__carousel:before {
@@ -11144,7 +11166,9 @@ tbody.collapse.show {
 
 @media (max-width: 850px) {
   .objects-intro {
-    overflow: hidden; } }
+    overflow: hidden; }
+  #calc-gnk .modal-content {
+    width: 100%; } }
 
 @media (max-width: 800px) {
   .about-partners {
@@ -11323,7 +11347,16 @@ tbody.collapse.show {
   .material__item {
     margin-bottom: 2rem; }
   .material__date {
-    margin-top: .9rem; } }
+    margin-top: .9rem; }
+  #calc-gnk-form .flexbox {
+    flex-wrap: wrap; }
+  #calc-gnk-form .row .form-control {
+    margin-right: 10rem;
+    width: 50%; }
+  #calc-gnk-form .row .slider {
+    margin-left: 2rem;
+    margin-top: 5rem;
+    width: 70%; } }
 
 @media (max-width: 767px) {
   .objects-intro {
@@ -11591,7 +11624,20 @@ tbody.collapse.show {
   .news-page .neck .head .flexbox {
     display: block; }
   .news-page .neck .head__right {
-    margin-top: 2rem; } }
+    margin-top: 2rem; }
+  .calc-bottom {
+    display: block;
+    text-align: center; }
+    .calc-bottom .right {
+      margin-top: 1.5rem; }
+  .card_flat .carousel .owl-carousel .owl-next {
+    right: -20px; }
+    .card_flat .carousel .owl-carousel .owl-next:hover {
+      right: -10px; }
+  .card_flat .carousel .owl-carousel .owl-prev {
+    left: -30px; }
+    .card_flat .carousel .owl-carousel .owl-prev:hover {
+      left: -20px; } }
 
 @media (max-width: 720px) {
   .objects-callback .side .callback,
@@ -11660,9 +11706,7 @@ tbody.collapse.show {
     background-image: none;
     padding-left: 25px; }
   .additional_info .callback {
-    height: auto;
-    margin-left: auto;
-    margin-right: auto; }
+    height: auto; }
   .complex-page .complex__panel .complex__grouphouse {
     width: 410px; }
   .complex-page .complex__navhouses .nav {
@@ -11974,7 +12018,9 @@ tbody.collapse.show {
     margin-left: 0;
     flex-direction: column; }
   .calculator-page .main .content .scheme .download {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .additional_info .callback {
+    margin-bottom: 2rem; } }
 
 @media (max-width: 650px) {
   .complex-page .complex__panel .complex__grouphouse {
@@ -12111,7 +12157,11 @@ tbody.collapse.show {
     justify-content: space-between; }
     .offer__left {
       padding-right: 0;
-      margin-right: 0; } }
+      margin-right: 0; }
+  #calc-gnk-form .row .radio + label {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem; } }
 
 @media (max-width: 600px) {
   .workers {
@@ -12432,7 +12482,21 @@ tbody.collapse.show {
   .calculator-page .related .carousel .owl-carousel .owl-prev:before {
     left: 20px; }
   .calculator-page .related .carousel .owl-carousel .owl-next:before {
-    left: 4px; } }
+    left: 4px; }
+  #calc-gnk .modal-title {
+    font-size: 3rem; }
+  #calc-gnk .row .title {
+    font-size: 1.6rem; }
+  #calc-gnk .close {
+    top: 15px;
+    right: 10px; }
+  .calc-bottom p {
+    font-size: 2rem; }
+  .calc-bottom .cifr {
+    font-size: 2.6rem; }
+  .calc-bottom .btn {
+    height: 5rem;
+    font-size: 1.6rem; } }
 
 @media (max-width: 530px) {
   .complex-page .complex__panel {
@@ -12580,7 +12644,11 @@ tbody.collapse.show {
   .listgk-page .head .title {
     margin-bottom: 1rem; }
   .listgk-page .head .flexbox {
-    display: block; } }
+    display: block; }
+  .card_flat .card__description {
+    flex-basis: calc(100% - 12px); }
+  .installmentbox__left {
+    width: calc(100% - 12px); } }
 
 @media (max-width: 480px) {
   .feature .promo .type-1 .title {
@@ -13010,7 +13078,12 @@ tbody.collapse.show {
     .characteristic__row {
       flex-basis: 100%;
       display: flex;
-      justify-content: space-between; } }
+      justify-content: space-between; }
+  #calc-gnk-form .row .flexbox {
+    display: block; }
+  #calc-gnk-form .row label {
+    display: block;
+    min-height: 22px; } }
 
 @media (max-width: 450px) {
   .about-partners {
@@ -13042,7 +13115,28 @@ tbody.collapse.show {
   #filter .close {
     top: 15px; }
   .place__item .object__address {
-    text-align: left; } }
+    text-align: left; }
+  #calc-gnk .modal-body {
+    padding-left: 3rem;
+    padding-right: 2rem; }
+  #calc-gnk .modal-title {
+    font-size: 2.8rem;
+    padding-left: 0;
+    text-align: center;
+    width: 100%; }
+  #calc-gnk .row .slider {
+    margin-left: 0;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    width: 80%; }
+  #calc-gnk .row .slider_end,
+  #calc-gnk .row .slider_start {
+    font-size: 1.3rem;
+    top: 14px; }
+  #calc-gnk .row .slider_start {
+    left: 0; }
+  #calc-gnk .row .slider_end {
+    left: calc(100% - 30px); } }
 
 @media (max-width: 420px) {
   .about-partners .partners {
@@ -13476,4 +13570,12 @@ tbody.collapse.show {
   .calculator-page .related .carousel .owl-carousel .owl-next {
     right: -25px; }
   #menu #menu-selectized {
-    position: absolute !important; } }
+    position: absolute !important; }
+  #calc-gnk .modal-title {
+    font-size: 2.4rem; }
+  .calc-bottom .left {
+    height: auto; }
+  .calc-bottom p {
+    font-size: 1.6rem; }
+  .calc-bottom .cifr {
+    font-size: 2.4rem; } }
