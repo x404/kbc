@@ -1327,3 +1327,12 @@
 		display: none !important;
 	}
 }
+
+@media (max-width: 350px){
+	.fixed-navbar{
+		.container{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}

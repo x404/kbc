@@ -5222,6 +5222,10 @@
 				width: 65px;				
 			}
 		}
+
+		&__composition{
+			min-width: 120px;
+		}
 	}
 
 	.list_reviews{
@@ -5885,6 +5889,18 @@
 		&-faq
 		{
 			margin-top: 3rem;
+		}
+	}
+
+	.complex-page{
+		.object{
+			&__meta{
+				flex-wrap: wrap;
+			}
+			&__address{
+				margin-left: 1rem;
+				width: auto;
+			}
 		}
 	}
 }
@@ -6997,8 +7013,13 @@
 	// =/ABOUT
 
 
-	.complex-page .complex__panel .complex__grouphouse{
-		width: 250px;
+	.complex-page{
+		.complex__panel .complex__grouphouse{
+			width: 250px;
+		}
+		.params__cell{
+			width: 33.3%;
+		}
 	}
 
 
@@ -7758,9 +7779,12 @@
 		}
 	}
 
-	.favorite-page
-	{
+
+	.favorite-page{
 		.object__meta{
+			padding-bottom: 0;
+			padding-top: 2rem;
+			padding-left: 0;
 			.object{
 				&__info{
 					text-align: left;
@@ -7771,17 +7795,6 @@
 					margin-top: 2rem;
 					margin-left: 0;
 				}
-
-			}
-		}
-	}
-
-	.favorite-page{
-		.object__meta{
-			padding-bottom: 0;
-			padding-top: 2rem;
-			padding-left: 0;
-			.object{
 				&__pic{
 					text-align: center;
 					max-height: 100%;
@@ -7794,10 +7807,29 @@
 						margin-right: auto;
 					}
 				}
-				&__address{
-
-				}
 			}
+		}
+	}
+
+
+	.complex-page{
+		.complex{
+			.object__meta{
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				.object__composition{
+					margin-right: 0;
+					min-width: 80px;
+					margin-top: 1rem;
+				}
+				.object__address .btn{
+					min-height: 40px;
+					margin-top: 1rem;
+				}
+			}			
 		}
 	}
 }
@@ -7920,9 +7952,9 @@
 			}
 			.object{
 				&__meta{
-					display: block;
-					margin-left: 15px;
-					margin-right: 15px;
+					// display: block;
+					// margin-left: 15px;
+					// margin-right: 15px;
 					.object__info{
 						margin-bottom: .8rem;
 					}
@@ -7945,7 +7977,7 @@
 					}
 				}
 				.complex__grouphouse{
-					width: 100%;
+					width: auto;
 				}
 				.house{
 					height: 180px;
