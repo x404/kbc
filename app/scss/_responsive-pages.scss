@@ -407,7 +407,7 @@
 
 	.listgk-page .main{
 		.listgk-inner{
-			flex-basis: 1042px;
+			flex-basis: 1030px;
 			padding-right: 3rem;
 		}
 		.listgk{
@@ -1053,7 +1053,7 @@
 	.listgk-page{
 		.main .listgk{
 			&-inner{
-				flex-basis: 933px;
+				flex-basis: 930px;
 			}
 			.object{
 				&__plate{
@@ -2180,7 +2180,7 @@
 	.listgk-page{
 		.main .listgk{
 			&-inner{
-				flex-basis: 802px;
+				flex-basis: 800px;
 			}
 			.object{
 				&__plate{
@@ -4553,15 +4553,23 @@
 		}
 
 		.side{
-			flex-wrap: wrap;
-			flex-basis: 100%;
+			// flex-wrap: wrap;
+			// flex-basis: 100%;
 			padding-bottom: 3rem;
 			.callback{
-				margin-left: 5rem;
-				height: 531px;
+				// margin-left: 5rem;
+				// height: 531px;
 			}
 			.secondary{
-				margin-left: 0;
+				// margin-left: 0;
+			}
+			&__map{
+				height: 35rem;
+				overflow: hidden;
+				img{
+					height: auto;
+					width: 100%;
+				}
 			}
 		}
 	}
