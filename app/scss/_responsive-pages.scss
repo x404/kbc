@@ -4790,6 +4790,7 @@
 
 
 @media (max-width: 768px){
+
 	.feature{
 		.container{
 			padding-left: 0;
@@ -4933,6 +4934,19 @@
 					left: 0;
 				}
 			}
+		}
+	}
+
+
+	.gbi-page{
+		.menu{
+			margin-top: 3rem;
+		}
+		.neck{
+			padding-bottom: 1rem;
+		}
+		.main{
+			padding-top: 0;
 		}
 	}
 

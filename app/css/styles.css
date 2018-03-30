@@ -11252,6 +11252,12 @@ tbody.collapse.show {
         left: 30px; }
       .gbi-page .menu ul .icon-pricelist:before {
         left: 0; }
+  .gbi-page .menu {
+    margin-top: 3rem; }
+  .gbi-page .neck {
+    padding-bottom: 1rem; }
+  .gbi-page .main {
+    padding-top: 0; }
   .complex-page .complex__panel .complex__grouphouse {
     width: 466px; }
   .complex-page .params__cell {
