@@ -5,8 +5,9 @@ var app = new Vue({
 		widthB: document.querySelector('#width').value,
 		areatile: 0,
 		depth : document.querySelector('#depth').value,
-		k : 35,
-		scale : 1,
+		// k : 35,
+		k : 105,
+		scale : 3,
 		tile: '',
 		active: true,
 		lcb : 'gray',  //COLORS
