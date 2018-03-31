@@ -63,6 +63,11 @@ input::-moz-focus-inner{
 	padding: 0;
 }
 
+.submit,
+[type="submit"]{
+	-webkit-appearance: none;
+}
+
 
 .outerwrapper,
 .footer{
@@ -1506,6 +1511,10 @@ form{
 		}
 	}
 
+	.selectize-dropdown{
+		z-index: 40;
+	}
+
 	.room{
 		&__group{
 			display: flex;
@@ -2033,4 +2042,27 @@ body {
 	-webkit-print-color-adjust: exact;
 	 color-adjust: exact;
 }
+}
+
+
+.android{
+	.rur{
+		display: inline !important;
+		.visually-hidden{
+			clip: auto;
+			height: auto;
+			position: static;
+			width: auto;
+		}
+		&:after{
+			display: none !important;
+		}
+	}
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }

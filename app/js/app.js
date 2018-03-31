@@ -5,6 +5,9 @@ var app = new Vue({
 		widthB: document.querySelector('#width').value,
 		areatile: 0,
 		depth : document.querySelector('#depth').value,
+
+		countC: document.querySelector('#count').value, 
+
 		// k : 35,
 		k : 105,
 		scale : 3,
@@ -22,7 +25,8 @@ var app = new Vue({
 			return output;
 		},
 		counts: function(){
-			output = Math.ceil(this.areaC / this.areatile);
+			// output = Math.ceil(this.areaC / this.areatile);
+			output = Math.ceil(this.areaC * this.countC);
 			return output;
 		},
 		capacity: function(){

@@ -4792,7 +4792,7 @@
 
 @media (max-width: 800px){
 	.about-partners{
-		width: calc(100% - 14px);
+		width: 100%;
 		.about{
 			&__left p{
 				font-size: 2.2rem;
@@ -5035,39 +5035,33 @@
 				}
 			}
 		}
-	}
-	// =/GBI
-
-	.gbi-page .menu ul{
-		// display: block;
-		flex-direction: column;
-		li{
-			display: flex;
-			justify-content: center;
-			margin-bottom: 3rem;
-			margin-left: auto;
-			margin-right: auto;
-			width: 100%;
-		}
-		.icon{
-			height: 60px;
-			&-sett{
-				&:before{
-					left: 30px;
-				}
-			}
-			&-pricelist{
-				&:before{
-					left: 0;
-				}
-			}
-		}
-	}
-
-
-	.gbi-page{
 		.menu{
 			margin-top: 3rem;
+			ul{
+				// display: block;
+				flex-direction: column;
+				li{
+					display: flex;
+					justify-content: center;
+					margin-bottom: 3rem;
+					margin-left: auto;
+					margin-right: auto;
+					width: 100%;
+				}
+				.icon{
+					height: 60px;
+					&-sett{
+						&:before{
+							left: 30px;
+						}
+					}
+					&-pricelist{
+						&:before{
+							left: 0;
+						}
+					}
+				}
+			}
 		}
 		.neck{
 			padding-bottom: 1rem;
@@ -5076,6 +5070,8 @@
 			padding-top: 0;
 		}
 	}
+	// =/GBI
+
 
 
 	.complex-page{
@@ -5150,7 +5146,7 @@
 		.flexbox{
 			justify-content: space-between
 		}
-		.neck .tabs{
+		.tabs{
 			margin-left: 0;
 		}
 	}
@@ -5182,6 +5178,28 @@
 				margin-top: 5rem;
 				width: 70%;
 			}
+		}
+	}
+
+
+	.favorite-page div.table-flats .tr .th.cell-2{
+		white-space: normal;
+	}
+
+	.listgk-page .main .listgk{
+		&-inner{
+			justify-content: space-between;
+			width: calc(100% - 7px);
+			flex-basis: auto;
+		}
+		.object__plate{
+			width: 333px;
+		}
+	}
+
+	#add-faq{
+		.modal-dialog{
+			margin-top: 100px;
 		}
 	}
 }
@@ -5277,6 +5295,9 @@
 
 
 @media (max-width: 750px){
+	.about-partners{
+		width: calc(100% - 14px);
+	}
 	.about-partners .partners{
 		width: 100%;
 	}
@@ -5861,6 +5882,12 @@
 	.pagination{
 		margin-top: 0;
 		margin-bottom: 0;
+	}
+
+	.actions-page{
+		.pagination{
+			margin-bottom: 2rem;
+		}
 	}
 
 	.about-partners .partners{
@@ -6685,6 +6712,22 @@
 			margin-bottom: 1rem;
 		}
 	}
+
+	.listgk-page{
+		.main .complex__description .object__meta .btn:before{
+			top: 5px;
+		}
+		.head{
+			.col-7{
+				align-items: center;				
+			}
+		}
+		.head__right{
+			margin-left: 2rem;
+		}
+	}
+
+
 }
 
 
@@ -6867,6 +6910,9 @@
 				margin-left: 0;
 				margin-top: .5rem;
 			}
+		}
+		.object__composition{
+			min-width: 0;
 		}
 	}
 	.object__meta{
@@ -7235,8 +7281,13 @@
 					padding-left: 0;
 				}
 			}
-			.row aside .tiles .flexbox a{
-				width: 33.3%;
+			.row aside{
+				.colors{
+					display: none;
+				}
+				.tiles .flexbox a{
+					width: 33.3%;
+				}
 			}
 		}
 		.related .carousel .owl-carousel{
@@ -7336,6 +7387,7 @@
 			}
 		}
 	}
+
 }
 
 
@@ -7568,6 +7620,8 @@
 	.installmentbox__left{
 		width: calc(100% - 12px);
 	}
+
+
 }
 
 
@@ -7705,6 +7759,14 @@
 			text-align: center;
 			margin-bottom: 1rem;
 		}
+	}
+
+
+
+	.filter-sort .sortbox{
+		.sortbox__option:last-child{
+			margin-right: 0;
+		}	
 	}
 
 
@@ -7912,7 +7974,6 @@
 
 	}
 
-
 }
 
 
@@ -8002,6 +8063,11 @@
 				}
 			}			
 		}
+	}
+
+	.pagination{
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
@@ -8190,6 +8256,9 @@
 				margin-top: 1.2rem;
 				padding-bottom: 1.8rem;
 			}
+			.house__item .btn{
+				width: auto;
+			}
 		}
 
 		.installmentbox__left .btn{
@@ -8288,6 +8357,7 @@
 			padding-right: 15px;
 		}
 		.card__description{
+			padding-left: 15px;
 			.description{
 				&__body{
 					.object{
@@ -8370,10 +8440,15 @@
 		}
 	}
 
-	
-	.complex-page .houses .house__item .btn{
-		width: auto;
+	.contacts-page{
+		.head{
+			.col-7{
+				flex-basis: auto;
+				width: 100%;
+			}
+		}
 	}
+
 }
 
 
@@ -8475,6 +8550,11 @@
 	}
 
 
+
+
+	.modal-dialog{
+		margin: 45px auto 0;
+	}
 
 }
 
@@ -8705,6 +8785,9 @@
 		.subtitle{
 			font-size: 1.5rem;
 		}
+		.object__meta .object__info{
+			text-align: left;
+		}
 	}
 
 
@@ -8904,6 +8987,13 @@
 			padding-right: 2rem;
 			white-space: nowrap;
 		}
+	}
+
+
+	.gbi-catalog{
+		.selectize-input > input{
+			position: absolute;
+		}		
 	}
 }
 
@@ -9114,9 +9204,6 @@
 			padding-left: 0;
 			padding-right: 0;
 		}
-	}
-
-	.news-page{
 		.neck .tabs{
 			font-size: 1.4rem;
 			.tab{
@@ -9125,6 +9212,7 @@
 			}
 		}
 	}
+
 
 	.about-page,
 	.construction-page
@@ -9154,7 +9242,6 @@
 		.about .heading{
 			font-size: 2.5rem !important;
 		}
-
 
 	}
 
@@ -9377,5 +9464,52 @@
 		.cifr{
 			font-size: 2.4rem;
 		}
+	}
+
+
+	#filter .close{
+		right: 15px;
+		top: 10px;
+	}
+
+	.condo-page{
+		.object__info{
+			width: 100%;
+		}
+		.object__meta{
+			.object__composition{
+				margin-left: 0;
+				margin-top: .2rem;
+			}
+			.object__title{
+				margin-top: .5rem;
+			}
+		}
+	}
+}
+
+
+
+@media (max-width: 320px){
+	#filter{
+		.cell-checkbox{
+			margin-top: 1rem;
+		}
+
+		.close{
+			right: 12px;
+			top: 8px;
+		}
+	}
+
+	.condo-page{
+		.object__meta .object__composition .btn:before{
+			top: 6px;
+		}
+	}
+
+	.list_construction .place__wrapper .object__address, 
+	.review__wrapper .object__address{
+		margin-top: .3rem;
 	}
 }

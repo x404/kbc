@@ -1,3 +1,7 @@
+if ( parseInt(getAndroidVersion()) <= 4){
+	document.querySelector('body').classList.add('android');
+};
+
 $(document).ready(function(){
 	$.fn.ForceNumericOnly =
 	function(){
@@ -91,7 +95,7 @@ $(document).ready(function(){
 			},
 			320: {
 				items: 1,
-				stagePadding : 50
+				stagePadding : 35
 			}
 		}
 	});
@@ -183,6 +187,12 @@ $(document).ready(function(){
 			},
 			991:{
 				items: 2
+			},
+			468:{
+				items: 2
+			},
+			320:{
+				items: 1
 			}
 		}
 	});
@@ -561,7 +571,7 @@ $(document).on('click', '.showmap', function(e){
 
 
 $(document).on('click', '.extra-toggle', function(e){
-	if (window.innerWidth > 480) {
+	if (window.innerWidth > 650) {
 		var modal = $(this).data('popup');
 		$('#' + modal).addClass('open');
 		document.querySelector('body').classList.add('modal-open-my')
@@ -745,3 +755,10 @@ $(document).on('click', '.apanel .folder span', function(e){
 	$('.apanel .subnav_content-active').removeClass('subnav_content-active');
 	$('.apanel .subnav_content-' + menuItem).addClass('subnav_content-active');
 });
+
+
+function getAndroidVersion(ua) {
+    ua = (ua || navigator.userAgent).toLowerCase(); 
+    var match = ua.match(/android\s([0-9\.]*)/);
+    return match ? match[1] : false;
+};

@@ -244,19 +244,19 @@
 								<p class="title">Укажите необходимые <br>размеры в метрах</p>
 								<div class="params__row">
 									<label for="length">Длина дорожки, м <span class="abbr">(A)</span></label>
-									<input type="text" class="form-control" id="length" value="20" v-model.number="lengthA" />
+									<input type="number" class="form-control" id="length" value="20" v-model.number="lengthA" tabindex="1" />
 								</div>
 								<div class="params__row">
 									<label for="width">Ширина дорожки, м <span class="abbr">(B)</span></label>
-									<input type="text" class="form-control" id="width" value="5" v-model.number="widthB" />
+									<input type="number" class="form-control" id="width" value="5" v-model.number="widthB" tabindex="2" />
 								</div>
 								<div class="params__row">
 									<label for="count">Кол-во плитки на 1м<sup>2</sup> <span class="abbr">(С)</span></label>
-									<input type="text" class="form-control" id="count" value="6.25" />
+									<input type="number" class="form-control" id="count" value="6.25" v-model.number="countC" tabindex="3"/>
 								</div>
 								<div class="params__row">
 									<label for="depth">Глубина отсыпки, м<sup>3</sup>  <span class="abbr">(H)</span></label>
-									<input type="text" class="form-control" id="depth" value="0.2" />
+									<input type="number" class="form-control" id="depth" value="0.2" v-model.number="depth" tabindex="4"  />
 								</div>
 							</div>
 
