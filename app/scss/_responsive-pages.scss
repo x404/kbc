@@ -957,6 +957,14 @@
 			background-size: 25%;
 			padding-left: 450px;
 		}
+		.documents__content{
+			padding-right: 5rem;
+		}
+		.documents .doclist .column{
+			&:first-child{
+				padding-right: 2rem;
+			}
+		}
 	}
 
 
@@ -1054,6 +1062,12 @@
 		.houses .house{
 			&__info .btn{
 				font-size: 1.3rem;
+				padding-right: .8rem;
+				padding-left: 42px;
+				width: 200px;
+				&:before{
+					left: 13px;
+				}
 			}
 		}
 	}
@@ -1150,6 +1164,7 @@
 				width: 100%;
 				.btn{
 					font-size: 1.4rem;
+					width: 220px;
 				}
 				img{
 					height: 100%;
@@ -1157,6 +1172,8 @@
 			}
 		}
 	}
+
+
 }
 
 
@@ -8352,6 +8369,11 @@
 			min-height: 22px;
 		}
 	}
+
+	
+	.complex-page .houses .house__item .btn{
+		width: auto;
+	}
 }
 
 
@@ -8450,8 +8472,10 @@
 				left: calc(100% - 30px)
 			}
 		}
-
 	}
+
+
+
 }
 
 

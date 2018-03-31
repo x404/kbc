@@ -32,6 +32,13 @@
 					font-size: 1.7rem;
 					font-weight: 700;
 				}
+				&.colors{
+					display: flex;
+					label{
+						// white-space: nowrap;
+						// margin-right: 2rem;				
+					}
+				}
 			}
 
 			// scale	
@@ -87,6 +94,8 @@
 							color: $color8;
 							text-decoration: underline;
 							img{
+								-webkit-filter: grayscale(0) brightness(1);
+								filter: gray;
 								filter: grayscale(0) brightness(1);
 							}
 						}

@@ -4,12 +4,17 @@
 
 
 // safari
-_::-webkit-:host:not(:root:root), .header{
+_::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radio+label{
+	margin-right: 1rem;
+	white-space: nowrap;
 }
 
 
 // edge
 @supports (-ms-ime-align:auto) {
+	.sidebar .active:after{
+		display: none;
+	}
 }
 
 
@@ -105,8 +110,13 @@ _::-webkit-:host:not(:root:root), .header{
 		}
 	}
 
-	.listgk-page .main .complex__description{
-		width: 858px;
+	.listgk-page .main{
+		.complex__description{
+			width: 858px;
+		}
+		.listgk-inner{
+			padding-right: 0;
+		}
 	}
 
 

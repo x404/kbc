@@ -1120,7 +1120,7 @@ form{
 	transform: translateY(-100%);
 	transition: .5s all;
 	width: 100%;
-	z-index: 9999;
+	z-index: -1;
 
 	height: 82%;
 	// min-height: 765px;
@@ -1279,6 +1279,7 @@ form{
 	&.open{
 		transform: translateY(0);
 		opacity: 1;
+		z-index: 9999;
 	}
 }
 

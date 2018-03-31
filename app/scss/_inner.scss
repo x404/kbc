@@ -43,7 +43,8 @@
 	color: $color2;
 	padding-bottom: 13px;
 	position: relative;
-	z-index: 21;
+	// z-index: 21;
+	z-index: 31;
 
 	&__inner{
 		background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAOCAQAAABESr7XAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAxMNBhY4AhMMAAAAI0lEQVQI12Ng0Gdi+M/E8JuJ4TcTwx8k9BdG/mVi+MvAwAQA/BsMH4jbHgcAAAAASUVORK5CYII=") repeat-x left top;		
@@ -189,6 +190,24 @@
 			}
 		}
 	}
+}
+
+.faq,
+.gbi,
+.news,
+.action,
+.actions,
+.vacancies
+{
+	&-page{
+		.neck{
+			z-index: 21;
+		}
+	}
+}
+
+.listgk-page .main{
+	z-index: 32;
 }
 // =/neck
 

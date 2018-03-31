@@ -1505,7 +1505,7 @@ form .form-control {
   transform: translateY(-100%);
   transition: .5s all;
   width: 100%;
-  z-index: 9999;
+  z-index: -1;
   height: 82%; }
   .modal-menu .inner {
     bottom: 0;
@@ -1609,7 +1609,8 @@ form .form-control {
       font-weight: 700; }
   .modal-menu.open {
     transform: translateY(0);
-    opacity: 1; }
+    opacity: 1;
+    z-index: 9999; }
 
 /* =footer
 ---------------------------*/
@@ -3150,7 +3151,7 @@ body.modal-open,
   color: #fff;
   padding-bottom: 13px;
   position: relative;
-  z-index: 21; }
+  z-index: 31; }
   .neck__inner {
     background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAOCAQAAABESr7XAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAxMNBhY4AhMMAAAAI0lEQVQI12Ng0Gdi+M/E8JuJ4TcTwx8k9BdG/mVi+MvAwAQA/BsMH4jbHgcAAAAASUVORK5CYII=") repeat-x left top; }
   .neck:before {
@@ -3256,6 +3257,17 @@ body.modal-open,
       .neck .tabs .tab:hover {
         border-color: #fff;
         z-index: 2; }
+
+.faq-page .neck,
+.gbi-page .neck,
+.news-page .neck,
+.action-page .neck,
+.actions-page .neck,
+.vacancies-page .neck {
+  z-index: 21; }
+
+.listgk-page .main {
+  z-index: 32; }
 
 .breadcrumbs {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -7287,6 +7299,8 @@ circle:nth-child(2n) {
         line-height: 1.5;
         font-size: 1.7rem;
         font-weight: 700; }
+      .calculator-page .main aside .box.colors {
+        display: flex; }
     .calculator-page .main aside .scale .controls {
       display: flex;
       margin-top: 1rem; }
@@ -7322,6 +7336,8 @@ circle:nth-child(2n) {
             color: #00874d;
             text-decoration: underline; }
             .calculator-page .main aside .tiles .flexbox a:hover img, .calculator-page .main aside .tiles .flexbox a.active img {
+              -webkit-filter: grayscale(0) brightness(1);
+              filter: gray;
               filter: grayscale(0) brightness(1); }
         .calculator-page .main aside .tiles .flexbox .pic {
           height: 50px;
@@ -7839,6 +7855,14 @@ tbody.collapse.show {
 ::-ms-clear {
   display: none; }
 
+_::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radio + label {
+  margin-right: 1rem;
+  white-space: nowrap; }
+
+@supports (-ms-ime-align: auto) {
+  .sidebar .active:after {
+    display: none; } }
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   html,
   body,
@@ -7883,6 +7907,8 @@ tbody.collapse.show {
       vertical-align: top; }
   .listgk-page .main .complex__description {
     width: 858px; }
+  .listgk-page .main .listgk-inner {
+    padding-right: 0; }
   .installment .checkbox + label, .panel .checkbox + label {
     padding-top: 5px; }
   .contact__plate {
@@ -7977,7 +8003,9 @@ tbody.collapse.show {
 
 @media (max-width: 1399px) {
   .neck p {
-    font-size: 1.7rem; } }
+    font-size: 1.7rem; }
+  .modal-dialog {
+    margin: 4% auto; } }
 
 @media (max-width: 1280px) {
   .mainnav {
@@ -9166,6 +9194,10 @@ tbody.collapse.show {
   .about-page .calculator {
     background-size: 25%;
     padding-left: 450px; }
+  .about-page .documents__content {
+    padding-right: 5rem; }
+  .about-page .documents .doclist .column:first-child {
+    padding-right: 2rem; }
   .flat-page .table-flats td {
     font-size: 1.4rem; }
   .flat-page .card__description {
@@ -9206,7 +9238,12 @@ tbody.collapse.show {
   .complex-page .about .carousel {
     width: 620px; }
   .complex-page .houses .house__info .btn {
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    padding-right: .8rem;
+    padding-left: 42px;
+    width: 200px; }
+    .complex-page .houses .house__info .btn:before {
+      left: 13px; }
   .listgk-page .main .listgk-inner {
     flex-basis: 930px; }
   .listgk-page .main .listgk .object__plate {
@@ -9251,7 +9288,8 @@ tbody.collapse.show {
     margin-bottom: 2rem;
     width: 100%; }
     .complex-page .houses .house__item .btn {
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      width: 220px; }
     .complex-page .houses .house__item img {
       height: 100%; } }
 
@@ -13102,7 +13140,9 @@ tbody.collapse.show {
     display: block; }
   #calc-gnk-form .row label {
     display: block;
-    min-height: 22px; } }
+    min-height: 22px; }
+  .complex-page .houses .house__item .btn {
+    width: auto; } }
 
 @media (max-width: 450px) {
   .about-partners {
