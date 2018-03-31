@@ -171,7 +171,7 @@ $(document).ready(function(){
 		loop:false,
 		nav:true,
 		dots: false,
-		items:1,
+		items:4,
 		navText: ["", ""],
 		stagePadding : 0,
 		responsive:{

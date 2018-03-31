@@ -277,41 +277,41 @@
 						<div class="col-8">
 							<div class="content">
 								<div class="flexbox">
-									<div class="scheme">
-										<p class="heading">Схема укладки</p>
 
-										<div class="scheme__pic">
-											<div class="area-outer-top">
-												<div class="area-outer-left">
-													<div class="area-top-line">
-														<div class="area-left-line">
-															<div id="tiles" v-bind:class="[lcb, tile, 'scale'+scale]" style="height: 300px; width: 800px"></div>
-															<div class="length">{{lengthA}} м</div>
-															<div class="width">{{widthB}} м</div>
+									<div class="scheme">
+										<div id="pdf">
+											<p class="heading">Схема укладки</p>
+
+											<div class="scheme__pic">
+												<div class="area-outer-top">
+													<div class="area-outer-left">
+														<div class="area-top-line">
+															<div class="area-left-line">
+																<div id="tiles" v-bind:class="[lcb, tile, 'scale'+scale]" style="height: 300px; width: 800px"></div>
+																<div class="length">{{lengthA}} м</div>
+																<div class="width">{{widthB}} м</div>
+															</div>
 														</div>
 													</div>
 												</div>
 											</div>
-											
-										</div>
 
-										<!-- <img src="tmp/tile-scheme.jpg" alt="" /> -->
-
-										<div class="params">
-											<div class="column">
-												<p><strong>Длина дорожки:</strong> {{lengthA}} м</p>
-												<p><strong>Ширина дорожки:</strong> {{widthB}} м</p>
-												<p><strong>Площадь дорожки:</strong> {{areaC}} м<sup>2</sup></p>
-											</div>
-											<div class="column">
-												<p><strong>Площадь одной плитки: </strong> {{areatile}} м<sup>2</sup></p>
-												<p><strong>Количество плиток:</strong> {{counts}} шт.</p>
-												<p><strong>Объем подсыпки:</strong> {{capacity}} м<sup>3</sup></p>
+											<div class="params">
+												<div class="column">
+													<p><strong>Длина дорожки:</strong> {{lengthA}} м</p>
+													<p><strong>Ширина дорожки:</strong> {{widthB}} м</p>
+													<p><strong>Площадь дорожки:</strong> {{areaC}} м<sup>2</sup></p>
+												</div>
+												<div class="column">
+													<p><strong>Площадь одной плитки: </strong> {{areatile}} м<sup>2</sup></p>
+													<p><strong>Количество плиток:</strong> {{counts}} шт.</p>
+													<p><strong>Объем подсыпки:</strong> {{capacity}} м<sup>3</sup></p>
+												</div>
 											</div>
 										</div>
 
 										<div class="download">
-											<a href="#.pdf">
+											<a href="javascript:savePDF()" class="pdf">
 												Скачать PDF <br>
 												(версия для печати)
 											</a>
@@ -1316,6 +1316,8 @@
 	</div>
 </div>
 <!-- =/apanel -->
+
+
 <!-- InstanceBeginEditable name="EditRegion5" -->
 <!-- InstanceEndEditable -->
 <div id="outdated"></div>
@@ -1344,6 +1346,23 @@
 
 <script src="/js/app.js"></script>
 
+<script src="/js/jspdf.min.js"></script>
+<script src="js/dom-to-image.min.js"></script>
+
+<script>
+function savePDF() {	
+	node = document.getElementById('pdf');
+	domtoimage.toPng(node)
+    .then(function (dataUrl) {
+		var doc = new jsPDF();
+		doc.addImage(dataUrl, 'PNG', 10, 10);
+		doc.save('sheme.pdf');
+    })
+    .catch(function (error) {
+        console.error('oops, something went wrong!', error);
+    });
+}
+</script>
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>

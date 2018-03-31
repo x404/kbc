@@ -48,6 +48,7 @@ gulp.task('js-libs', function(){
 	var nouislider = gulp.src(config.libsDir + '/nouislider/distribute/nouislider.min.js').pipe(gulp.dest(config.templateDir + '/js/'));
 	var slick = gulp.src(config.libsDir + '/slick-carousel/slick/slick.min.js').pipe(gulp.dest(config.templateDir + '/js/'));
 	var vue = gulp.src(config.libsDir + '/vue/dist/vue.min.js').pipe(gulp.dest(config.templateDir + '/js/'));
+	var domtoimage =  gulp.src(config.libsDir + '/dom-to-image/dist/dom-to-image.min.js').pipe(gulp.dest(config.templateDir + '/js/'))
 	// var nprogress = gulp.src('node_modules/nprogress/nprogress.js').pipe(gulp.dest(config.templateDir + '/js/'));
 	// var vueuislider = gulp.src(config.libsDir + '/vue-nouislider/src/nouislider.vue.js').pipe(gulp.dest(config.templateDir + '/js/'));
 });
@@ -236,7 +237,8 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 		config.templateDir + '/css/perfect-scrollbar.css',
 		config.templateDir + '/css/jquery.fancybox.min.css',
 		config.templateDir + '/css/owl.carousel.css',
-		config.templateDir + '/css/nprogress.css'
+		config.templateDir + '/css/nprogress.css',
+		config.templateDir + '/css/content_mce.css'
 	])
 	.pipe(gulp.dest(config.destDir + '/css'));
 

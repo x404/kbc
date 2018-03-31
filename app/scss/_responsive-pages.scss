@@ -655,8 +655,9 @@
 				}
 			}
 			.col-8{
-				width: 80%;
+				flex-basis: auto;
 				flex-shrink: 1;
+				width: 80%;
 			}
 		}
 		.related{

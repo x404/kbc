@@ -41,3 +41,5 @@ __Используемые в проекте js плагины__
 * Маска ввода для vue [https://vuejs-tips.github.io/vue-the-mask/](https://vuejs-tips.github.io/vue-the-mask/)
 * Маска ввода для vue [https://github.com/vuejs-tips/v-money](https://github.com/vuejs-tips/v-money)
 * Прелоадер NProgress [https://github.com/rstacruz/nprogress] (https://github.com/rstacruz/nprogress)
+* Генератор PDF [https://github.com/MrRio/jsPDF](https://github.com/MrRio/jsPDF)
+* Конвертер страниц в картинку [https://github.com/tsayen/dom-to-image](https://github.com/tsayen/dom-to-image)

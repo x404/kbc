@@ -369,7 +369,8 @@
 						}						
 					}
 
-					a[href$=".pdf"]{
+					a[href$=".pdf"], 
+					a.pdf{
 						background: url(../images/pdf.png) no-repeat left 3px;
 					}
 				}
