@@ -185,13 +185,10 @@ $(document).ready(function(){
 			1300:{
 				items: 3
 			},
-			991:{
+			600:{
 				items: 2
 			},
-			468:{
-				items: 2
-			},
-			320:{
+			0:{
 				items: 1
 			}
 		}

@@ -35,6 +35,9 @@
 				&.colors{
 					display: flex;
 				}
+				&.scale{
+					margin-bottom: 0;
+				}
 			}
 
 			// scale	
@@ -45,15 +48,15 @@
 
 					.radio + label{
 						$s: 40px;
-						height: $s;
 						@extend .flex-center;
-						margin-right: .5rem;
-						padding-left: 0;
-						width: $s;
-						font-weight: 700;
 						border-radius: 50%;
 						border: 2px solid $color44;
+						font-weight: 700;
+						height: $s;
+						margin-right: .5rem;
+						padding-left: 0;
 						transition: .3s;
+						width: $s;
 						&:before,
 						&:after{
 							display: none;

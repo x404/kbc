@@ -3511,23 +3511,40 @@
 	}
 
 
-	.calculator-page .related{
-		&__item{
-			width: 250px;
-		}
-		&__pic{
-			img{
-				height: auto;
-				width: 100%;
+	.calculator-page{
+		.related{
+			&__item{
+				width: 250px;
 			}
-		}
-		.carousel .owl-carousel .owl-next{
-			right: -60px;
-			&:hover{
-				right: -50px;
+			&__pic{
+				img{
+					height: auto;
+					width: 100%;
+				}
+			}
+			.carousel{
+				margin-left: 0;
+				.owl-carousel{
+					.owl-nav{
+						width: 100%;
+					}
+					.owl-prev{
+						left: -20px;
+						&:hover{
+							left: -10px;
+						}
+					}
+					.owl-next{
+						right: -25px;
+						&:hover{
+							right: -15px;
+						}
+					}
+				}
 			}
 		}
 	}
+
 }
 
 
@@ -4681,15 +4698,15 @@
 				margin-left: 0;
 				.owl-carousel{
 					.owl-next{
-						right: 0;
+						right: -40px;
 						&:hover{
-							right: 10px;
+							right: -30px;
 						}
 					}
 					.owl-prev{
-						left: 0;
+						left: -30px;
 						&:hover{
-							left: 10px;
+							left: -20px;
 						}
 					}
 					.owl-nav{
@@ -4912,6 +4929,32 @@
 			}
 		}
 	}
+
+
+
+	// CALCULATOR
+	.calculator-page{
+		.related{
+			padding-left: 0 !important;
+			.carousel{
+				.owl-carousel{
+					.owl-prev{
+						left: 0;
+						&:hover{
+							left: 10px;
+						}
+					}
+					.owl-next{
+						right: 0;
+						&:hover{
+							right: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+
 
 }
 
@@ -5202,6 +5245,7 @@
 			margin-top: 100px;
 		}
 	}
+
 }
 
 
@@ -6051,6 +6095,30 @@
 			}
 		}
 	}
+
+
+	// CALCULATOR
+	.calculator-page{
+		.related{
+			.carousel{
+				.owl-carousel{
+					.owl-prev{
+						left: -15px;
+						&:hover{
+							left: -5px;
+						}
+					}
+					.owl-next{
+						right: -15px;
+						&:hover{
+							right: -5px;
+						}
+					}
+				}
+			}
+		}
+	}
+
 }
 
 
@@ -7946,6 +8014,7 @@
 				font-size: 2.8rem !important;
 			}
 			.scheme .params .column{
+				margin-right: 0;
 				padding-right: 0;
 			}
 			.heading{
@@ -9511,5 +9580,10 @@
 	.list_construction .place__wrapper .object__address, 
 	.review__wrapper .object__address{
 		margin-top: .3rem;
+	}
+
+	.about-partners .partners__inner{
+		padding-left: 2rem;
+		padding-right: 2rem;
 	}
 }
