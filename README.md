@@ -43,3 +43,14 @@ __Используемые в проекте js плагины__
 * Прелоадер NProgress [https://github.com/rstacruz/nprogress] (https://github.com/rstacruz/nprogress)
 * Генератор PDF [https://github.com/MrRio/jsPDF](https://github.com/MrRio/jsPDF)
 * Конвертер страниц в картинку [https://github.com/tsayen/dom-to-image](https://github.com/tsayen/dom-to-image)
+* Модальные окна bootstrap [https://getbootstrap.com/docs/4.0/components/modal/](https://getbootstrap.com/docs/4.0/components/modal/)
+* Плагин всплывающих окон fancybox [http://fancyapps.com/fancybox/3/](http://fancyapps.com/fancybox/3/)
+
+
+
+---------------------------------------------------------
+
+Сточку защиты  от поисковиков при программировании удалить:
+<meta name="robots" content="noindex,nofollow">
+
+
