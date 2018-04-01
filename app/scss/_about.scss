@@ -131,10 +131,8 @@
 								@extend .before;
 								background: #e6e9ea;
 								bottom: -10px;
-								// height: 186px;
 								height: 100%;
 								right: -10px;
-								// width: 250px;
 								width: 100%;
 							}
 						}
@@ -168,10 +166,6 @@
 		line-height: 1.5;
 		overflow: hidden;
 		padding: 11.3rem 0;
-		// padding: 11.3rem 8rem;
-		.row{
-			// display: block;
-		}
 		.title{
 			font-size: 3.6rem;
 			font-weight: 700;
@@ -263,9 +257,6 @@
 			justify-content: space-between;
 			margin-top: 7px;
 			width: 685px;
-			.right{
-				// margin-left: 6.5rem;
-			}
 		}
 	}
 

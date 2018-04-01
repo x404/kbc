@@ -191,7 +191,6 @@
 					padding-top: 4rem;
 					max-width: 850px;
 					max-height: 350px;
-					// width: 750px;	//////////////////////////////////////////				
 
 				}
 				.area-outer-top{
@@ -386,8 +385,6 @@
 		}
 	}
 	.example{
-		// margin-left: 160px;
-		// margin-right: 25px;
 		width: 280px;
 
 		&__pic{
@@ -464,24 +461,13 @@
 			display: block;
 		}
 		&__item{
+			@include perspective(7px, $color57, $color58);				
 			background-color: $color2;
-			// position: relative;
 			transition: .3s box-shadow;
 			width: 284px;
 			margin-bottom: 8px;
-			@include perspective(7px, $color57, $color58);				
 			padding: 2rem;
-			&-inner{
-			}
 
-			&:after{
-				// @extend .before;
-				// left: 0;
-				// bottom: 0;
-				// border-bottom: 4px solid $color7;
-				// width: 284px;
-				// transition: .3s border-bottom;
-			}
 			&:hover{
 				box-shadow: 0 5px 20px rgba(83, 99, 121, .5);
 				&:after{

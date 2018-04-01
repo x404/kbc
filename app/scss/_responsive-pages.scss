@@ -199,9 +199,9 @@
 				padding-right: 3rem;
 				width: 50%;
 				img{
+					display: block;
 					max-width: 100%;
 					height: auto;
-					display: block;
 				}
 			}
 
@@ -538,22 +538,7 @@
 			}
 		}
 	}
-	// .offer{
-	// 	display: block;
-	// 	&__left,
-	// 	&__right{
-	// 		display: flex;
-	// 		align-items: center;
-	// 		padding-right: 0;
-	// 	}
 
-	// 	&__right{
-	// 		margin-top: 1.5rem;
-	// 	}
-	// 	.title{
-	// 		margin-right: 1rem;
-	// 	}
-	// }
 	.offer{
 		justify-content: space-around;
 		&__left,
@@ -580,7 +565,6 @@
 		.similar_product{
 			flex-grow: 1;
 			flex-shrink: 0;
-			// padding-right: 50px;
 			.table-flats{
 				margin-right: 50px;
 			}
@@ -622,7 +606,6 @@
 			&__info .btn{
 				font-size: 1.4rem;
 				width: 235px;
-				// padding-right: 10px;
 			}
 			&__desc{
 				padding-left: 2rem;
@@ -991,20 +974,6 @@
 					font-size: 1.6rem;
 				}
 			}
-			.description__bottom{
-				.left .price{
-					// font-size: 2.2rem;
-				}
-				.right .btn{
-					// font-size: 1.5rem;
-					// height: 44px;
-					// padding-left: 48px;
-					&:before{
-						// left: 14px;
-						// top: 7px;
-					}
-				}
-			}
 		}
 
 	}
@@ -1210,7 +1179,6 @@
 		$h: auto;
 		height: $h;
 		&__left{
-			// width: 700px;
 			width: 670px;
 		}
 		&__right{
@@ -1236,9 +1204,6 @@
 
 		.promo{
 			height: 392px;
-			img{
-				// height: 412px;
-			}
 			.description{
 				padding-right: 5%;
 			}
@@ -1933,7 +1898,6 @@
 			width: 100%;
 			main{
 				font-size: 1.6rem;
-				// width: 680px;
 				flex-basis: 488px;
 				.heading{
 					font-size: 3.2rem;
@@ -1946,10 +1910,7 @@
 				width: 520px;
 				&-outer{
 					flex-basis: 520px;
-					// width: 520px;			
 				}
-
-
 			}
 		}
 
@@ -2137,26 +2098,12 @@
 	
 
 		.card__description{
-			.description__body{
-				.title{
-					// font-size: 3rem;
-				}
-				.plage{
-					// font-size: 1.6rem;
-				}
-			}
 			.description__bottom{
 				.left .price{
 					font-size: 3rem;
 				}
 				.right .btn{
-					// font-size: 1.5rem;
 					height: 60px;
-					// padding-left: 48px;
-					&:before{
-						// left: 14px;
-						// top: 7px;
-					}
 				}
 			}
 		}
@@ -2274,8 +2221,6 @@
 			}
 		}
 	}
-
-
 }
 
 
@@ -2360,9 +2305,6 @@
 	.list_construction .tab-content .construction_carousel{
 		.owl-nav{
 			width: 98%;
-		}
-		.owl-prev{
-			// left: -20px;
 		}
 	}
 
@@ -2472,7 +2414,6 @@
 				flex-shrink: 0;
 			}
 			&__form{
-				// margin-left: 8rem;
 				&-inner{
 					display: flex;
 					align-items: center;
@@ -2748,9 +2689,6 @@
 				margin-right: 0;
 			}
 		}
-		&__wrapper{
-			// width: 100%;
-		}
 	}
 	.reviews-page,
 	.construction-page,
@@ -2799,45 +2737,6 @@
 			height: 32px;
 		}
 	}
-
-	// CONSTRUCTING
-	// .list_construction{
-	// 	justify-content: space-between;
-	// 	.place{
-	// 		&__item{
-	// 			// width: calc(50% - 35px);
-	// 			width: calc(33.3% - 17px);
-	// 			// max-width: 370px;
-	// 			// margin-right: 35px !important;
-	// 			&:nth-child(even){
-	// 				// margin-right: 0 !important;
-	// 			}
-	// 		}
-
-
-	// 		&__pic{
-	// 			$w: 88%;
-	// 			$d: -148px;
-	// 			$t: -5px;
-	// 			&:before,
-	// 			&:after{
-	// 				height: calc(100% + 5px);
-	// 				left: 50%;
-	// 				width: $w;
-	// 			}
-	// 			&:before{
-	// 				margin-left: $d;
-	// 				top: 0px;
-	// 			}
-	// 			&:after{
-	// 				margin-left: $d + 10px;
-	// 				top: $t + 12px;
-	// 				width: calc(88% - 20px);
-	// 			}
-	// 		}
-
-	// 	}
-	// }
 
 	.construction-page .neck .head p{
 		margin-top: 1rem;
@@ -2924,22 +2823,6 @@
 
 	// FLAT
 	.flat-page{
-		.card{
-			&__visual{
-				// flex-basis: 100%;
-			}
-			&__description{
-				// margin-top: 2rem;
-				// flex-basis: 100%;
-			}
-
-			&__flat{
-				.row{
-					// display: block;
-				}
-			}
-		}
-
 		.additional_info{
 			display: block;
 			width: 100%;
@@ -2992,10 +2875,6 @@
 				}
 				.right .btn{
 					height: 50px;
-					&:before{
-						// left: 14px;
-						// top: 7px;
-					}
 				}
 			}
 		}
@@ -3139,11 +3018,6 @@
 		}
 
 
-
-		.house__body .table{
-			// font-size: 1.4rem;
-		}
-
 		.params{
 			&__title{
 				margin-top: 0.3rem;
@@ -3181,8 +3055,6 @@
 				flex-basis: 100%;
 				&-outer{
 					flex-basis: 100%;
-					// width: 520px;	
-
 					margin-left: 0;
 					margin-top: 3.5rem;		
 				}
@@ -3207,7 +3079,6 @@
 				width: 297px;
 			}
 			.place__pic_wrapper{
-				// width: 300px;
 				width: 253px;
 				img{
 					height: auto;
@@ -3397,21 +3268,7 @@
 	// =FAVORITES
 	.object__meta{
 		flex-wrap: nowrap;
-		// justify-content: space-between;
 		.object{
-			&__composition{
-				// margin-left: 7rem;
-				// margin-right: 5rem;
-			}
-			&__address{
-				.btn{
-					// padding-left: 37px;
-				}
-			}
-			&__flats{
-				// flex-grow: 1;
-				// text-align: right;
-			}
 			&__right{
 				.flats-price{
 					display: flex;
@@ -3561,12 +3418,11 @@
 		display: block !important;
 		.picking
 		{
-			width: 320px;
 			margin-left: auto;
 			margin-right: auto;
+			width: 320px;
 		}
 		.secondary{
-			// margin-left: 0 !important;
 			margin-top: 2rem;
 		}
 		.callback{
@@ -3657,9 +3513,9 @@
 			}
 		}
 		&__right{
-			width: auto;
 			flex-basis: 100%;
 			flex-direction: row;
+			width: auto;
 			.news{
 				flex-basis: 33.3%;
 				&__cell{
@@ -3859,7 +3715,7 @@
 					}
 				}
 				&-sett{
-						padding-right: 1rem;
+					padding-right: 1rem;
 					&:before{
 						left: 8px;
 					}
@@ -3888,24 +3744,15 @@
 
 
 	.object__meta{
-		.object__section{
-			// margin-bottom: 1em;
-		}
 		.object{
 			&__composition{
 				margin-right: 0;
-				// margin-left: 7rem;
-				// margin-right: 5rem;
 			}
 			&__address{
 				margin-top: 1.5rem;
 				margin-left: 2.5rem;
-				.btn{
-					// padding-left: 37px;
-				}
 			}
 			&__flats{
-				// text-align: center;
 				margin-left: 1.9rem;
 			}
 			&__title{
@@ -3961,9 +3808,6 @@
 		.side{
 			display: flex;
 			margin-left: 0;
-		}
-		.secondary{
-			// margin-left: 4rem;
 		}
 	}
 
@@ -4202,8 +4046,8 @@
 			.title{
 				font-size: 2.4rem;
 				flex-grow: 1; 
-				width: 100%;
 				padding-bottom: 0;
+				width: 100%;
 			}
 			.variant{
 				width: 31%;
@@ -4318,10 +4162,8 @@
 			.owl-carousel{
 				width: 100%;
 				.owl-prev{
-					// left: -30px;
 					left: -16px;
 					&:hover{
-						// left: -20px;
 						left: -6px;
 					}
 				}
@@ -4451,18 +4293,6 @@
 					margin-top: .4rem;
 				}
 			}
-			// .description__bottom{
-			// 	.left .price{
-			// 		font-size: 2.6rem;
-			// 	}
-			// 	.right .btn{
-			// 		height: 50px;
-			// 		&:before{
-			// 			// left: 14px;
-			// 			// top: 7px;
-			// 		}
-			// 	}
-			// }
 		}
 
 		.additional{
@@ -4793,7 +4623,6 @@
 			}
 		}
 	}
-
 }
 
 
@@ -4855,7 +4684,6 @@
 	}
 
 
-
 	.news-page,
 	.about-page,
 	.complex-page,
@@ -4865,8 +4693,6 @@
 	{
 		overflow: hidden;
 	}
-
-
 
 
 
@@ -4954,13 +4780,10 @@
 			}
 		}
 	}
-
-
 }
 
 
 @media (max-width: 768px){
-
 	.feature{
 		.container{
 			padding-left: 0;
@@ -5081,7 +4904,6 @@
 		.menu{
 			margin-top: 3rem;
 			ul{
-				// display: block;
 				flex-direction: column;
 				li{
 					display: flex;
@@ -5133,9 +4955,6 @@
 			.translation{
 				.text{
 					display: none;
-				}
-				&:before{
-					// top: 0 !important;
 				}
 			}
 
@@ -5245,7 +5064,6 @@
 			margin-top: 100px;
 		}
 	}
-
 }
 
 
@@ -5595,7 +5413,6 @@
 	}
 
 	.object__meta{
-		// margin-bottom: .8rem;
 		border-bottom: .8rem solid $color59;
 		.object{
 			&__info,
@@ -5605,7 +5422,6 @@
 				margin-left: 0;
 			}
 			&__address{
-				// margin-right: 2rem;
 				width: 100%;
 				.btn{
 					padding-right: 2rem;
@@ -5660,10 +5476,6 @@
 	// =/LIST GK
 
 
-	.neck .tabs{
-		// margin-left: 0;
-	}
-
 	.news-page{
 		.neck .head{
 			.flexbox{
@@ -5671,12 +5483,8 @@
 			}
 			&__right{
 				margin-top: 2rem;
-				.tabs{
-					// justify-content: center;
-				}
 			}
 		}
-		// padding-right: 0;
 	}
 
 	.calc-bottom{
@@ -5725,14 +5533,8 @@
 			}
 
 			.call{
-				// display: flex;
-				// justify-content: center;
 				margin-left: 0;
 				margin-top: 8px;
-				&:before{
-					// margin-left: -70px;
-				}
-
 				a{
 					padding-left: 36px;
 				}
@@ -5753,69 +5555,12 @@
 		}
 	}
 
-
-	// .side-inner{
-	// 	align-items: center;
-	// 	flex-direction: column;
-	// 	.callback{
-	// 		height: auto;
-	// 		margin-bottom: 3.5rem;
-	// 		.submit{
-	// 			// width: 90%;
-	// 			// margin-left: auto;
-	// 			// margin-right: auto;					
-	// 		}
-	// 	}
-	// 	.secondary{
-	// 		margin-left: 0;
-	// 	}
-	// }
-
-
 	.resume .submit{
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
 	}
-
-	// CONSTRUCTING
-	// .list_construction{
-	// 	display: block;
-	// 	.place{
-	// 		&__item{
-	// 			width: 320px;
-	// 			margin-right: auto !important;
-	// 			margin-left: auto;
-	// 			&:nth-child(even){
-	// 				margin-right: auto !important;
-	// 			}
-	// 		}
-
-	// 		&__pic{
-	// 			$w: 94%;
-	// 			$d: -140px;
-	// 			$t: -5px;
-	// 			&:before,
-	// 			&:after{
-	// 				height: calc(100% + 5px);
-	// 				left: 50%;
-	// 				width: $w;
-	// 			}
-	// 			&:before{
-	// 				margin-left: $d;
-	// 				top: 0px;
-	// 			}
-	// 			&:after{
-	// 				margin-left: $d + 10px;
-	// 				top: $t + 12px;
-	// 				width: calc(94% - 20px);
-	// 			}
-	// 		}
-
-	// 	}
-	// }
-	// =/CONSTRUCTING
 
 	// =ABOUT
 	.about-page,
@@ -5856,8 +5601,6 @@
 
 
 	// FLAT
-	.flat-page .card__visual{
-	}
 	.installmentbox__left{
 		background-image: none;
 		padding-left: 25px;
@@ -5865,8 +5608,6 @@
 
 	.additional_info .callback{
 		height: auto;
-		// margin-left: auto;
-		// margin-right: auto;
 	}
 	// =/FLAT
 
@@ -6118,7 +5859,6 @@
 			}
 		}
 	}
-
 }
 
 
@@ -6282,10 +6022,6 @@
 						&.active{
 							border-color: #00874d;
 						}
-					}
-					&-prev,
-					&-next{
-						// background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAXCAQAAABO1swWAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiAxQNASgr9aDZAAAA8ElEQVQoz42RvU5CQRCFzwJCcn0GCktbAjc2llL5FDyKbwCSoKGgws4XMTa2xL+EQIyFiZVawEezG+Du3MXZaiffzDkz45ARudZ6jLLEL+eND86L+Rhs8wLAA8dptM07AJ9cprvmPAOwpBsbs6S/uDAmkCXdtcAtGqQXZWBAg/ScszIQ1SR1dK+mJDTUt1qqWFcRosMr/4nfilo68VUHwpHpWj0PP+lHdbPI6U+IjFsvclU+VNhAnbGH+xyl0V14SDWNiowbDw9opNHdzgPLxv43aaNYu7UxKtqIPYXOU9whVDSYcBeP5sx7nmqlWTG5AcJX4O+zflxMAAAAAElFTkSuQmCC") no-repeat; 
 					}
 				}
 			}
@@ -6468,7 +6204,6 @@
 	.additional_info .callback{
 		margin-bottom: 2rem;
 	}
-
 }
 
 
@@ -6565,18 +6300,11 @@
 			.news{
 				height: 260px;
 				flex-basis: 50%;
-				&__link{
-					// height: 50%;
-				}
 			}
 			.about{
-				// display: block;
 				flex-direction: column;
 				&__cell{
 					width: 100%;
-					&-right{
-						// display: block;
-					}
 				}
 				&__text{
 					display: none;
@@ -6616,30 +6344,6 @@
 	.worker__item{
 		flex-basis: 250px;
 		padding-right: 0;
-	}
-
-	.object__meta{
-		// flex-wrap: nowrap;
-		// flex-direction: column;
-		// .object{
-		// 	&__section{
-		// 		flex-grow: 1;
-		// 		flex-basis: 100%;
-		// 		display: flex;
-		// 		justify-content: center;
-		// 	}
-		// 	&__composition{
-		// 		margin-left: 0;
-		// 		margin-bottom: 1.5rem;
-		// 		.btn{
-		// 			display: inline-flex;
-		// 		}
-		// 	}
-		// 	&__flats{
-		// 		margin-top: 2rem;
-		// 		margin-bottom: 1rem;
-		// 	}
-		// }
 	}
 
 	.news-page,
@@ -6725,13 +6429,10 @@
 			}
 
 			&__navhouses{
-				// display: block;
 				.title{
-					// float: left;
 					padding-top: 1.5rem;
 				}
 				.nav{
-					// float: left;
 					width: calc(100% - 187px);
 				}
 			}
@@ -6794,8 +6495,6 @@
 			margin-left: 2rem;
 		}
 	}
-
-
 }
 
 
@@ -7155,7 +6854,6 @@
 
 	.neck{
 		.tabs{
-			// margin-left: 3rem;
 			margin-left: auto;
 			margin-right: auto;
 			font-size: 1.5rem;
@@ -7477,9 +7175,9 @@
 				{
 					height: 14px;
 					&:before{
-						width: 15px;
 						height: 14px;
 						margin-top: 20px;
+						width: 15px;
 					}
 				}
 
@@ -7565,7 +7263,6 @@
 				}
 			}
 		}
-
 	}
 
 	.list_faq{
@@ -7808,18 +7505,6 @@
 	}
 
 
-	.object__meta{
-		// padding-left: 1rem;
-		// padding-right: 1rem;
-		// .object__title{
-		// 	font-size: 2.5rem;
-		// }
-		// .btn{
-		// 	font-size: 1.4rem;
-		// }
-	}
-
-
 	.sortbox{
 		flex-wrap: wrap;
 		&__label{
@@ -7998,9 +7683,6 @@
 
 	.favorite-page div.table-flats{
 		.cell{
-			&-9{
-				// margin-top: 0;
-			}
 			&-10{
 				right: 15px;
 			}
@@ -8040,9 +7722,7 @@
 				}
 			}
 		}
-
 	}
-
 }
 
 
@@ -8067,7 +7747,6 @@
 				margin-top: .8rem;
 				margin-left: 0;
 				margin-right: 0;
-				// width: auto;
 				text-align: left;
 			}
 			&__composition{
@@ -8088,9 +7767,8 @@
 			padding-left: 0;
 			.object{
 				&__info{
-					text-align: left;
-					// width: 100%;
 					margin-right: 2rem;
+					text-align: left;
 				}
 				&__composition{
 					margin-top: 2rem;
@@ -8116,10 +7794,10 @@
 	.complex-page{
 		.complex{
 			.object__meta{
-				text-align: center;
+				align-items: center;
 				display: flex;
 				flex-direction: column;
-				align-items: center;
+				text-align: center;
 
 				.object__composition{
 					margin-right: 0;
@@ -8154,12 +7832,6 @@
 			justify-content: center;
 		}
 		.date{
-			// display: block;
-			// margin-left: auto;
-			// margin-right: auto;
-			// width: 150px;
-			// width: 100%;
-
 			display: inline-flex;
 			width: auto;
 		}
@@ -8258,9 +7930,6 @@
 			}
 			.object{
 				&__meta{
-					// display: block;
-					// margin-left: 15px;
-					// margin-right: 15px;
 					.object__info{
 						margin-bottom: .8rem;
 					}
@@ -8517,7 +8186,6 @@
 			}
 		}
 	}
-
 }
 
 
@@ -8619,12 +8287,9 @@
 	}
 
 
-
-
 	.modal-dialog{
 		margin: 45px auto 0;
 	}
-
 }
 
 
@@ -8700,24 +8365,15 @@
 				align-items: center;
 				padding-left: 0;
 				text-align: center;
-				p{
-					// padding: 0 1.5rem;
-				}
 			}
 			&__cell{
 				height: 136px;
-				&:first-child{
-					img{
-						// margin-top: 0;
-					}
-				}
 				img{
 					display: block;
 					margin-left: auto;
 					margin-right: auto;
 					position: static;
 					margin-top: 0 !important;
-					// left: 20px;
 				}
 			}
 
@@ -8836,10 +8492,8 @@
 			}
 			&__address{
 				.btn{
-					// padding-top: 30px;
 					padding: 1rem 1.2rem;
 					height: auto;
-					// padding-bottom: 10px;
 				}
 				.icon-label{
 					&:before{
@@ -8876,52 +8530,6 @@
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
 	}
-
-
-	// CONSTRUCTING
-	// .list_construction{
-	// 	&__pic{
-	// 		&:before,
-	// 		&:after{
-	// 			display: none;
-	// 		}
-	// 	}
-	// 	&__body{
-	// 		margin-top: 1rem;
-	// 	}
-	// 	.place{
-	// 		&__item{
-	// 			width: 300px;
-	// 		}
-	// 		&__wrapper{
-	// 			padding-bottom: 1rem;
-	// 			.object{
-	// 				&__title{
-	// 					font-size: 1.5rem;
-	// 				}
-	// 				&__info{
-	// 					padding-left: 1rem;
-	// 				}
-	// 			}
-	// 		}
-
-	// 		&__top,
-	// 		&__body{
-	// 			padding-left: 1.5rem;
-	// 			padding-right: 1.5rem;
-	// 		}
-
-	// 		&__date{
-	// 			font-size: 1.4rem;
-	// 		}
-
-	// 		&__translation{
-	// 			margin-top: 1.2rem;
-	// 			font-size: 1.4rem;
-	// 		}
-	// 	}
-	// }
-	// =/CONSTRUCTING
 
 
 	.text-page,
@@ -9011,12 +8619,6 @@
 		}
 		&__right{
 			padding-right: 3rem;
-			// display: block;
-			.title{
-				br{
-					// display: none;
-				}
-			}
 		}
 	}
 
@@ -9141,8 +8743,6 @@
 		}
 	}
 	
-
-	// .card_flat .additional-bottom .documents
 	.card_flat .carousel_tab{
 		font-size: 1.4rem;
 		li{
@@ -9234,9 +8834,6 @@
 		width: 100%;
 	}
 
-	.picking{
-		// width: calc(100% - 12px)
-	}
 
 	.list_faq{
 		.faq__item .text{

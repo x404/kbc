@@ -172,30 +172,6 @@ $color_2: #0563bf;
 	nav{
 		font-size: 1.7rem;
 		font-weight: 500;
-		// margin-top: 5.2rem;
-
-		& > ul{
-			// position: relative;
-			// z-index: 999;
-			& > li{
-				// position: relative;
-
-				// .transition;
-				&:hover,
-				&.current,
-				&.active{
-					&:before{
-						// background-color: $color1;
-						// left: 70px;
-					}
-					a, span{
-						// background-color: $color2;
-						// color: $color1;
-						// padding-left: 9.5rem;
-					}
-				}
-			}
-		}
 	}
 
 	.contacts_social{

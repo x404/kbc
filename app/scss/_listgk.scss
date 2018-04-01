@@ -12,7 +12,6 @@
 			@extend .flex-cv;
 			background: $color2;
 			font-size: 1.5rem;
-			// height: 85px;
 			margin-top: 1.3rem;
 			padding: 1.7rem 0 2rem;
 			.flexbox{
@@ -226,7 +225,6 @@
 
 			&__body{
 				flex-grow: 1;
-				// padding-left: $pl;
 			}
 
 			&__bottom{
@@ -234,7 +232,6 @@
 				padding: 1.9rem 0 1.9rem 0;
 				.left{
 					.flats{
-						// color: $color1;
 						font-size: 1.6rem;
 						.num{
 							color: $color8;

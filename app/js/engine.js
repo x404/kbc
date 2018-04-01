@@ -612,27 +612,14 @@ var favto = 'В избранное',
 
 $(document).on('click','.to-fav', function(e){
 	e.preventDefault();
-	// var $this = $(this);
-	// msg = '<div class="added-to-compare"><div class="wrapper"><p>Товар добавлен <br> <a href="#">в избранное</a></p><button type="button" class="close" data-dismiss="modal"><img src="images/close.png" alt="" /></button></div></div>';
-	// $('body').append(msg);
 
 	this.classList.remove('to-fav');
 	this.classList.add('btn-fav-in');
-
-	// $(this).find('span').text(favin);
-	// сщтыщ
 
 	try{
 		this.querySelector('span').textContent = favin; // house-list-all.html
 	} catch(e){};
 	
-
-	// var timerfav = window.setInterval(function(){
-	// 	$('.added-to-compare').fadeOut('normal',function(){
-	// 		this.remove();
-	// 	});
-	// 	window.clearInterval(timerfav);
-	// },2000);
 });
 
 // из избранного
@@ -718,12 +705,6 @@ $(document).on('click', '[data-targetscroll], .subnav a', function(e){
 	}
 });
 
-
-
-	// // scroll page
-	// $('.mainmenu a[href*=\\#]:not([href=\\#]), .graduate_info_box-experts a, .neck_card .graduate_info_box-users .title a').click(function() {
-
-	// });	
 
 
 $(window).on('load', function(){

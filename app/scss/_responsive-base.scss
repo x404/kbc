@@ -132,7 +132,6 @@
 			margin-left: 0;
 		}
 	}
-
 }
 
 @media (max-width: 1500px){
@@ -239,7 +238,6 @@
 			.cell{
 				&-select{
 					display: flex;
-					// flex-basis: 100%;
 				}
 			}
 		}
@@ -932,7 +930,6 @@
 		.prev,
 		.next{
 			display: none;
-			// flex-grow: 1;
 		}
 	}
 }
@@ -1342,9 +1339,6 @@
 					margin-left: 0;
 				}
 			}
-		}
-		.cell-slider-area{
-			// padding-left: 1.2rem;
 		}
 		.showmap{
 			padding-left: 40px;

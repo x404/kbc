@@ -669,7 +669,6 @@
 }
 
 .objects{
-	// width: 1185px;
 	width: 1230px;
 	.flexbox{
 		align-items: center;
@@ -731,7 +730,6 @@
 .object{
 	&__item{
 		$d: 8px;
-		// padding-bottom: 0;
 		@extend .perspective;
 		
 		&:after{
@@ -1148,8 +1146,6 @@
 
 .modal-map{
 	left: 0;
-	// position: absolute;
-	// top: 10rem;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -1201,4 +1197,3 @@
 		}
 	}
 }
-

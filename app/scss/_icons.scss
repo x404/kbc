@@ -4,14 +4,6 @@
 		@include sprite($icon-catalog);
 		left: 0;
 		top: 0;
-		// @media (max-width: 1650px){
-		// 	@include sprite($icon-catalog-sm);
-		// 	top: 7px;
-		// }
-		// @media (max-width: 991px){
-		// 	@include sprite($icon-catalog-xsm);
-		// 	top: 0;
-		// }
 	}
 }
 
@@ -59,7 +51,6 @@
 }
 
 .icon-telbig{
-	// padding-left: 50px;
 	position: relative;
 	&:before{
 		@extend .before;
@@ -250,7 +241,6 @@
 	&:before{
 		@extend .before;
 		@include sprite($icon-house-dark-sm);
-		// left: 12px;
 	}
 }
 

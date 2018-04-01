@@ -83,7 +83,6 @@
 
 		// panel
 		&__panel{
-			// background: $color2;
 			position: absolute;
 			left: 0;
 			bottom: 0;
@@ -306,7 +305,6 @@
 			background: #ebeef1;
 			font-size: 1.5rem;
 			height: 6rem;
-			// padding-left: 3rem;
 			font-weight: 700;
 			.title{
 				flex-shrink: 0;
@@ -314,8 +312,6 @@
 				text-align: center;
 			}
 			.nav{
-				// display: flex;
-				// margin-left: 2rem;
 				width: 290px;
 				.btn{
 					@extend .flex-center;
@@ -389,12 +385,8 @@
 			display: flex;
 			justify-content: center;
 			flex-direction: column;
-			// border-right: 2px solid #ebeef1;
 			height: 190px;
 			width: 230px;
-			&:last-child{
-				// border-right: none;
-			}
 		}
 
 		&__pic{
@@ -470,14 +462,11 @@
 				left: -10px;
 				top: 10px;
 				height: calc(100% - 25px);
-				// width: 798px;
 			}
 			&:after{
 				left: -20px;
 				top: 20px;
 				height: calc(100% - 44px);
-				// height: 562px;
-				// width: 798px;
 			}
 
 			.manage{
@@ -854,8 +843,6 @@
 		}
 		.tab-content{
 			margin-top: 2.7rem;
-			// padding-left: 15px;
-			// padding-right: 15px;
 			.owl-carousel{
 				margin-top: 2.7rem;
 			}
@@ -974,11 +961,10 @@
 
 
 
- .fixed-navbar{
+.fixed-navbar{
  	background-color: $color7;
 	position: fixed;
 	left: 0;
-	// top: 70px;
 	top: 0;
 	width: 100%;
 	transform: translateY(-140%);
@@ -986,15 +972,12 @@
 	z-index: -10;
 	.subnav{
 		a{
-			height: 6rem;			
+			height: 6rem;
 		}
 	}
 
 	&.sticky{
 		transform: translateY(70px);
-		// top: 70px;
 		z-index: 99;
 	}
- }
-
-
+}
