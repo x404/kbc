@@ -6000,6 +6000,20 @@ div.table-flats .sort {
   #calc-gnk-form .alert.show {
     opacity: 1;
     z-index: 10; }
+  #calc-gnk-form .alert .close {
+    background: url(../images/close2.png) no-repeat;
+    border: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    width: 12px;
+    height: 12px;
+    transition: .3s; }
+    #calc-gnk-form .alert .close:hover {
+      transform: rotate(90deg); }
 
 #calc-gnk {
   color: #000; }

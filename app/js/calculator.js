@@ -144,13 +144,46 @@ function calc(){
 
 	if (msg != ''){
 		document.querySelector('.alert').classList.add('show');
-		document.querySelector('.alert').innerHTML = msg;
+		document.querySelector('.alert').innerHTML = msg + '<button type="button" class="close"></button>';
+		astartClock()
+
 	} else {
 		document.querySelector('.alert').classList.remove('show') ;
 	};
 
 	$('#calcpayment').text(output);
 }
+
+
+var atimer,
+	asec = 4;
+
+
+function ashowTime(sendform){
+	asec = asec-1;
+	if (asec <=0) {
+		astopClock();
+		document.querySelector('.alert').classList.remove('show') ;
+	}
+}
+
+function astopClock(){
+	window.clearInterval(atimer);
+	atimer = null;
+	asec = 4;
+}
+
+function astartClock(sendform){
+	if (!atimer)
+		atimer = window.setInterval("ashowTime()",1000);
+}
+
+
+$(document).on('click', '.alert .close', function(e){
+	e.preventDefault();
+	let $this = $(this);
+	document.querySelector('.alert.show').classList.remove('show')
+})
 
 //сумма процентов за месяц при 5%
 function getPlata(){

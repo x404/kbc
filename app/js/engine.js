@@ -488,6 +488,9 @@ function showTime(sendform){
 	}
 }
 
+var timer,
+	sec = 3;
+
 function stopClock(){
 	window.clearInterval(timer);
 	timer = null;
