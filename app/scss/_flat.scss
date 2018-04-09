@@ -24,10 +24,22 @@
 }
 
 .flat-page{
+	.breadcrumbs{
+		color: #a5a5a5;
+		font-size: 1.3rem;
+		width: 100%;
+		a{
+			color: currentColor;
+		}
+		li{
+			padding-right: .6rem;
+		}
+	}
+
 	// main
 	.main{
 		background: #f3f3f4;
-		padding: 5.5rem 0;
+		padding: 0.2rem 0 5.5rem;
 	}
 
 	.card__description{

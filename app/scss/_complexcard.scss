@@ -28,6 +28,18 @@
 
 
 .complex-page{
+	.breadcrumbs{
+		border-top: 1px solid #f3f3f3;
+		margin-right: 0;
+		color: #a5a5a5;
+		a{
+			color: currentColor;
+		}
+		.container{
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
 	.main{
 		padding-top: 0;
 		padding-bottom: 0;
@@ -620,11 +632,11 @@
 				display: none;
 			}
 			&__item{
-				justify-content: space-between;
+				@include transition-param(box-shadow);
 				display: flex;
+				justify-content: space-between;
 				margin-top: .5rem;
 				width: 775px;
-				@include transition-param(box-shadow);
 				&:hover{
 					box-shadow: 0 5px 30px rgba(83, 99, 121, .5);
 					.house__pic{

@@ -4325,7 +4325,7 @@
 
 
 	.flat-page .main{
-		padding-top: 3rem;
+		// padding-top: 3rem;
 	}
 	// =/CARD FLAT
 
@@ -7382,8 +7382,14 @@
 	}
 
 
-	.card_flat .card__description{
-		flex-basis: calc(100% - 12px);		
+	.card_flat{
+		.breadcrumbs{
+			text-align: center;
+			justify-content: center;
+		}
+		.card__description{
+			flex-basis: calc(100% - 12px);		
+		}
 	}
 
 	.installmentbox__left{

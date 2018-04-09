@@ -5517,9 +5517,18 @@ div.table-flats .sort {
       .mortgage__item a:hover {
         box-shadow: 0 5px 30px rgba(83, 99, 121, 0.5); }
 
+.flat-page .breadcrumbs {
+  color: #a5a5a5;
+  font-size: 1.3rem;
+  width: 100%; }
+  .flat-page .breadcrumbs a {
+    color: currentColor; }
+  .flat-page .breadcrumbs li {
+    padding-right: .6rem; }
+
 .flat-page .main {
   background: #f3f3f4;
-  padding: 5.5rem 0; }
+  padding: 0.2rem 0 5.5rem; }
 
 .flat-page .card__description {
   padding-left: 88px; }
@@ -6052,6 +6061,16 @@ div.table-flats .sort {
   .subnav ul li {
     margin-right: 2rem; }
 
+.complex-page .breadcrumbs {
+  border-top: 1px solid #f3f3f3;
+  margin-right: 0;
+  color: #a5a5a5; }
+  .complex-page .breadcrumbs a {
+    color: currentColor; }
+  .complex-page .breadcrumbs .container {
+    padding-left: 0;
+    padding-right: 0; }
+
 .complex-page .main {
   padding-top: 0;
   padding-bottom: 0; }
@@ -6458,12 +6477,12 @@ div.table-flats .sort {
   .complex-page .houses .house__footer {
     display: none; }
   .complex-page .houses .house__item {
-    justify-content: space-between;
-    display: flex;
-    margin-top: .5rem;
-    width: 775px;
     -webkit-transition: box-shadow 0.2s ease-out;
-    transition: box-shadow 0.2s ease-out; }
+    transition: box-shadow 0.2s ease-out;
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5rem;
+    width: 775px; }
     .complex-page .houses .house__item:hover {
       box-shadow: 0 5px 30px rgba(83, 99, 121, 0.5); }
       .complex-page .houses .house__item:hover .house__pic img {
@@ -11155,8 +11174,6 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
     .offer__left {
       padding-left: 2rem;
       padding-right: 20%; }
-  .flat-page .main {
-    padding-top: 3rem; }
   div.table-flats .grow {
     width: 89%; }
   div.table-flats .cell-1 {
@@ -12836,6 +12853,9 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
     margin-bottom: 1rem; }
   .listgk-page .head .flexbox {
     display: block; }
+  .card_flat .breadcrumbs {
+    text-align: center;
+    justify-content: center; }
   .card_flat .card__description {
     flex-basis: calc(100% - 12px); }
   .installmentbox__left {
