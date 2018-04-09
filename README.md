@@ -45,7 +45,7 @@ __Используемые в проекте js плагины__
 * Конвертер страниц в картинку [https://github.com/tsayen/dom-to-image](https://github.com/tsayen/dom-to-image)
 * Модальные окна bootstrap [https://getbootstrap.com/docs/4.0/components/modal/](https://getbootstrap.com/docs/4.0/components/modal/)
 * Плагин всплывающих окон fancybox [http://fancyapps.com/fancybox/3/](http://fancyapps.com/fancybox/3/)
-
+* Начертания для знака рубля [http://alexeybychkov.com/blog/typography/rouble-font/](http://alexeybychkov.com/blog/typography/rouble-font/)
 
 
 ---------------------------------------------------------

@@ -12,6 +12,12 @@
 				img{
 					transform: scale(1.15)
 				}
+				.tocat{
+					span{
+						background-color: $color7;
+						color: $color2;
+					}
+				}
 			}
 		}
 		&__link{
@@ -347,7 +353,6 @@
 		.type-2{
 			.title{
 				font-size: 4rem;
-				// font-weight: 900;
 				font-weight: 700;
 				text-transform: uppercase;
 				color: $color1;
@@ -362,7 +367,8 @@
 				font-weight: 900;
 				text-transform: uppercase;
 				color: $color8;
-				max-width: 450px;text-shadow: -5px 0 #fff,0 5px #fff,5px 0 #fff,0 -5px #fff;
+				max-width: 450px;
+				text-shadow: -5px 0 #fff,0 5px #fff,5px 0 #fff,0 -5px #fff;
 				text-shadow: 0 0 5px #fff;
 				.red{
 					color: $color7;
@@ -382,10 +388,10 @@
 
 	// =service
 	.service{
-		$color_1: #980929;
-		$color_2: #c20831;
-		@include gradient-vertical($color_1, $color_2);
-		background-color: #a7092c;
+		// $color_1: #980929;
+		// $color_2: #c20831;
+		// @include gradient-vertical($color_1, $color_2);
+		background-color: #c40f39 ;
 		align-items: center;
 		margin-top: 5px;
 		.short{
@@ -483,7 +489,6 @@
 	.about{
 		flex-grow: 1;
 		&__cell{
-
 			display: flex;
 			img{
 				display: block;
@@ -523,6 +528,10 @@
 					top: 0;
 				}
 			}
+			span{
+				transition: .3s;
+			}
+
 		}
 		&__meta{
 			top: 4rem;
@@ -554,6 +563,12 @@
 		flex-grow: 1;
 		display: flex;
 		justify-content: flex-end;
+	}
+
+	.object__top,
+	.object__bottom
+	{
+		padding-left: 40px;
 	}
 }
 

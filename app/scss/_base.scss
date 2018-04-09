@@ -1942,11 +1942,7 @@ body.modal-open,
 
 
 .rur{
-	position: relative;
-	&:after{
-		content:"\20BD"; 
-		font-weight: bold;
-	}
+	font-family: 'als_rublregular';
 }
 
 

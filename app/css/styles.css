@@ -29,6 +29,12 @@
   font-weight: 900;
   font-style: normal; }
 
+@font-face {
+  font-family: 'als_rublregular';
+  src: url("../fonts/rouble.woff2") format("woff2"), url("../fonts/rouble.woff") format("woff"), url("../fonts/rouble.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -2104,10 +2110,7 @@ body.modal-open,
   clip: rect(0 0 0 0); }
 
 .rur {
-  position: relative; }
-  .rur:after {
-    content: "\20BD";
-    font-weight: bold; }
+  font-family: 'als_rublregular'; }
 
 .bg-gray {
   background: #f3f3f4; }
@@ -2203,6 +2206,12 @@ input[type=number]::-webkit-outer-spin-button {
   .topnews .news__cell:hover img,
   .topnews .about__cell:hover img {
     transform: scale(1.15); }
+  .feature .news__cell:hover .tocat span,
+  .feature .about__cell:hover .tocat span,
+  .topnews .news__cell:hover .tocat span,
+  .topnews .about__cell:hover .tocat span {
+    background-color: #c40f39;
+    color: #fff; }
 
 .feature .news__link,
 .feature .about__link,
@@ -2505,12 +2514,7 @@ input[type=number]::-webkit-outer-spin-button {
   .feature .about__cell {
     width: 320px; }
   .feature .service {
-    background-image: -webkit-linear-gradient(top, #980929 0%, #c20831 100%);
-    background-image: -o-linear-gradient(top, #980929 0%, #c20831 100%);
-    background-image: linear-gradient(to bottom, #980929 0%, #c20831 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF980929', endColorstr='#FFC20831', GradientType=0);
-    background-color: #a7092c;
+    background-color: #c40f39;
     align-items: center;
     margin-top: 5px; }
     .feature .service .short {
@@ -2613,6 +2617,8 @@ input[type=number]::-webkit-outer-spin-button {
           width: 27px;
           height: 23px;
           top: 0; } }
+      .feature .about .tocat span {
+        transition: .3s; }
     .feature .about__meta {
       top: 4rem; }
     .feature .about__link {
@@ -2630,6 +2636,9 @@ input[type=number]::-webkit-outer-spin-button {
     flex-grow: 1;
     display: flex;
     justify-content: flex-end; }
+  .objects-callback .object__top,
+  .objects-callback .object__bottom {
+    padding-left: 40px; }
 
 .objects-intro {
   background: url(../images/bg-1.jpg) no-repeat center #ececed;
