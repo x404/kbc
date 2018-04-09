@@ -244,7 +244,8 @@
   left: 0;
   right: 0;*/
 }
-.selectize-dropdown {
+.selectize-dropdown { 
+  box-shadow: 0 0 7px rgba(0,0,0,.25);
   position: absolute;
   z-index: 10;
   /*border: 1px solid #d0d0d0;*/
@@ -331,4 +332,15 @@ background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHBAMAAADOnLE
 .selectize-control .selectize-input.disabled {
   opacity: 0.5;
   background-color: #fafafa;
+}
+
+
+.selectize-close{
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	right: 4px;
+	top: -25px;
+	cursor: pointer;
+	
 }
