@@ -889,6 +889,7 @@
 			position: relative;
 			text-decoration: none;
 			span{
+				transition: .3s;
 				border-bottom: 2px solid $color7;
 			}
 			&:before{
@@ -900,6 +901,8 @@
 					left: -10px;
 				}
 				span{
+					background: $color7;
+					color: $color2;
 					border-bottom: none;
 				}
 			}

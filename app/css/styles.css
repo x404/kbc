@@ -2929,6 +2929,7 @@ input[type=number]::-webkit-outer-spin-button {
     text-decoration: none; }
     .intro .link_groups a span,
     .about-partners .link_groups a span {
+      transition: .3s;
       border-bottom: 2px solid #c40f39; }
     .intro .link_groups a:before,
     .about-partners .link_groups a:before {
@@ -2938,6 +2939,8 @@ input[type=number]::-webkit-outer-spin-button {
       left: -10px; }
     .intro .link_groups a:hover span,
     .about-partners .link_groups a:hover span {
+      background: #c40f39;
+      color: #fff;
       border-bottom: none; }
   .intro .link_groups .big-icon:before,
   .about-partners .link_groups .big-icon:before {
