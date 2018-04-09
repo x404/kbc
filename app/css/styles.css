@@ -8599,7 +8599,9 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
   .filter .cell-buttons .showflat {
     width: 50%; }
   #filter .installment__tooltip {
-    margin-left: 4px; } }
+    margin-left: 4px; }
+  .fixed-header {
+    display: none !important; } }
 
 @media (max-width: 460px) {
   .footer {
