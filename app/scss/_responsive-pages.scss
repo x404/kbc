@@ -786,6 +786,12 @@
 				height: 5rem;
 			}
 		}
+		.object__bottom{
+			padding-left: 20px;
+			p{
+				white-space: nowrap;
+			}
+		}
 	}
 
 	.objects{
@@ -6836,9 +6842,12 @@
 		}
 	}
 
-	.objects-callback .side{
-		padding-left: 20px;
-		padding-right: 20px;
+	.objects-callback{
+		.side{
+			padding-left: 20px;
+			// padding-right: 20px;
+			padding-right: 0;
+		}
 	}
 
 
@@ -7401,6 +7410,10 @@
 
 
 @media (max-width: 480px){
+	.fixed-navbar.sticky{
+		transform: translateY(0);
+	}
+	
 	.feature{
 		.promo .type-1{
 			.title{
@@ -7523,7 +7536,6 @@
 			margin-bottom: 1rem;
 		}
 	}
-
 
 
 	.filter-sort .sortbox{

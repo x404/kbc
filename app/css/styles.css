@@ -9219,6 +9219,10 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
       margin-top: 2rem;
       font-size: 1.5rem;
       height: 5rem; }
+  .objects-callback .object__bottom {
+    padding-left: 20px; }
+    .objects-callback .object__bottom p {
+      white-space: nowrap; }
   .objects {
     width: 950px; }
     .objects__carousel {
@@ -12570,7 +12574,7 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
         left: 0; }
   .objects-callback .side {
     padding-left: 20px;
-    padding-right: 20px; }
+    padding-right: 0; }
   .intro__right {
     padding-left: 20px;
     padding-right: 20px; }
@@ -12862,6 +12866,8 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
     width: calc(100% - 12px); } }
 
 @media (max-width: 480px) {
+  .fixed-navbar.sticky {
+    transform: translateY(0); }
   .feature .promo .type-1 .title {
     font-size: 1.8rem;
     font-weight: 500; }
