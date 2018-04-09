@@ -12088,6 +12088,9 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
     .feature .promo .manage.dark .owl-dot.active,
     .about-page .carousel .manage.dark .owl-dot.active {
       border-color: #00874d; }
+  .objects-intro {
+    background-position: left top;
+    background-size: auto; }
   .object__item-outer {
     width: 230px; }
   .object__item:after {
