@@ -711,8 +711,8 @@ $(document).on('click', '[data-targetscroll], .subnav a', function(e){
 
 
 $(window).on('load', function(){
-	NProgress.set(1);
-	NProgress.done();
+	// NProgress.set(1);
+	// NProgress.done();
 });
 
 

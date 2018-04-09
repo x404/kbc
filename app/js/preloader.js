@@ -30,8 +30,10 @@ $(document).ready(function() {
 			(progress > 75 && document.querySelectorAll('.fade-4').length > 0) ? document.querySelector('.fade-4').style.opacity = 1 : '';
 			(progress > 90 && document.querySelectorAll('.fade-5').length > 0) ? document.querySelector('.fade-5').style.opacity = 1 : '';
 			NProgress.set(Math.ceil(progress)/120); 
-			// if (progress >= 100 || loadedImg == imagesCount) {				
-			// }
+			if (progress >= 100 || loadedImg == imagesCount) {
+				NProgress.set(1);
+				NProgress.done();
+			}
 		}
 	}
 	else{

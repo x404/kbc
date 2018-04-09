@@ -1,7 +1,3 @@
-$(document).ready(function(){
-	ymaps.ready(init);
-});
-
 function init(){
 	// https://tech.yandex.ru/maps/doc/jsapi/2.0/dg/concepts/geoobjects-docpage/
 	// https://jsfiddle.net/r2prk693/

@@ -1660,11 +1660,8 @@
 <script src="/js/engine.js"></script>
 <!-- InstanceBeginEditable name="EditRegion4" -->
 
-<script src="http://api-maps.yandex.ru/2.1.60/?lang=ru_RU"></script>
+<script async src="http://api-maps.yandex.ru/2.1.60/?lang=ru_RU&onload=init"></script>
 <script>
-$(document).ready(function(){
-	ymaps.ready(init);
-});
 
 var myMap, myPlacemark, coords;
 function init(){

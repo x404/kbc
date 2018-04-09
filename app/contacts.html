@@ -1106,12 +1106,8 @@
 <!-- =/phone mask -->
 <script src="/js/engine.js"></script>
 <!-- InstanceBeginEditable name="EditRegion4" -->
-<script src="http://api-maps.yandex.ru/2.1.60/?lang=ru_RU"></script>
+<script async src="http://api-maps.yandex.ru/2.1.60/?lang=ru_RU&onload=init"></script>
 <script>
-$(document).ready(function(){
-	ymaps.ready(init);
-});
-
 function init(){
 	// https://tech.yandex.ru/maps/doc/jsapi/2.0/dg/concepts/geoobjects-docpage/
 	ymaps.ready(function() {
