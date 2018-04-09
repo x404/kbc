@@ -6768,6 +6768,10 @@
 			}
 		}
 	}
+
+	.object__meta .object__composition .btn:before{
+		top: 6px;
+	}
 }
 
 
@@ -7405,6 +7409,10 @@
 		width: calc(100% - 12px);
 	}
 
+
+	.object__meta .object__composition .btn:before{
+		top: 9px;
+	}
 
 }
 

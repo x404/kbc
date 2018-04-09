@@ -4890,6 +4890,8 @@ main {
       transition: background 0.2s ease-out; }
       .object__meta .object__composition .btn:hover {
         background: #d8dde2; }
+      .object__meta .object__composition .btn:before {
+        top: 8px; }
   .object__meta .object__address .btn {
     padding-left: 37px;
     font-weight: 100; }
@@ -6732,7 +6734,8 @@ div.table-flats .sort {
   transition: .55s;
   z-index: -10; }
   .fixed-navbar .subnav a {
-    height: 6rem; }
+    height: 6rem;
+    margin-right: 2rem; }
   .fixed-navbar.sticky {
     transform: translateY(70px);
     z-index: 99; }
@@ -12530,7 +12533,9 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
   .listgk-page .main .panel .flexbox {
     display: block; }
   .listgk-page .main .panel__right {
-    margin-top: 1.5rem; } }
+    margin-top: 1.5rem; }
+  .object__meta .object__composition .btn:before {
+    top: 6px; } }
 
 @media (max-width: 570px) {
   .complex-page .complex__panel .complex__grouphouse {
@@ -12863,7 +12868,9 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
   .card_flat .card__description {
     flex-basis: calc(100% - 12px); }
   .installmentbox__left {
-    width: calc(100% - 12px); } }
+    width: calc(100% - 12px); }
+  .object__meta .object__composition .btn:before {
+    top: 9px; } }
 
 @media (max-width: 480px) {
   .fixed-navbar.sticky {

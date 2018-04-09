@@ -2186,15 +2186,15 @@
 	<!-- =subnav -->
 	<div class="subnav" id="subnav">
 		<div class="container">
-			<ul class="nav" role="tablist">
-				<li><a href="#about" class="nav-link" title="">Об объекте</a></li>
-				<li><a href="#houses" class="nav-link" title="">Квартиры</a></li>
-				<li><a href="#construction" class="nav-link" title="">Ход строительства</a></li>
-				<li><a href="#map" class="nav-link" title="">Инфраструктура</a></li>
-				<li><a href="#mortgage" class="nav-link" title="">Ипотека</a></li>
-				<li><a href="#gnk" class="nav-link" title="">ЖНК</a></li>
-				<li><a href="docs.pdf" title="">Документы</a></li>
-				<li><a href="#reviews" class="nav-link" title="">Отзывы</a></li>
+			<div class="nav" id="subnav-touch">
+				<div><a href="#about" class="nav-link" title="">Об объекте</a></div>
+				<div><a href="#houses" class="nav-link" title="">Квартиры</a></div>
+				<div><a href="#construction" class="nav-link" title="">Ход строительства</a></div>
+				<div><a href="#map" class="nav-link" title="">Инфраструктура</a></div>
+				<div><a href="#mortgage" class="nav-link" title="">Ипотека</a></div>
+				<div><a href="#gnk" class="nav-link" title="">ЖНК</a></div>
+				<div><a href="docs.pdf" title="">Документы</a></div>
+				<div><a href="#reviews" class="nav-link" title="">Отзывы</a></div>
 			</ul>
 		</div>
 	</div>
@@ -2371,6 +2371,16 @@
 		focusOnSelect: true,
 		prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="Назад"></button>',
 		nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Вперед"></button>'
+	});
+
+	$('#subnav-touch').slick({
+		centerMode: false,
+		slidesToShow: 3,
+		infinite: false,
+		variableWidth: true,
+		focusOnSelect: false,
+		prevArrow: '',
+		nextArrow: ''
 	});
 
 	    
