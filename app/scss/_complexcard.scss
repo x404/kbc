@@ -557,7 +557,11 @@
 					background-color: #e20c3c;
 				}
 				&-green{
+					transition: .3s background-color;
 					background-color: #00874d;
+					&:hover{
+						background-color: #e20c3c;						
+					}
 				}
 
 				&:hover{
@@ -970,11 +974,6 @@
 		display: none;
 	}
 }
-
-#navhouses{
-
-}
-
 
 
 .fixed-navbar{

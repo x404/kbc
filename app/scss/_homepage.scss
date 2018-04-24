@@ -178,6 +178,7 @@
 			height: 280px;
 			left: -7px;
 			position: absolute;
+			width: 30px;
 		}
 
 		&-prev,
@@ -388,9 +389,6 @@
 
 	// =service
 	.service{
-		// $color_1: #980929;
-		// $color_2: #c20831;
-		// @include gradient-vertical($color_1, $color_2);
 		background-color: #c40f39 ;
 		align-items: center;
 		margin-top: 5px;
@@ -1032,13 +1030,13 @@
 	padding-bottom: 117px;
 	.about,
 	.partners{
-		// flex: 1 0 50%;
 		flex-basis: 50%
 	}
 	.about{
 		padding-right: 70px;
 		padding-top: 3rem;
 		&__left{
+			max-width: 268px;
 			p{
 				font-size: 3rem;
 				font-weight: 700;

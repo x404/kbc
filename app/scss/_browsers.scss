@@ -35,6 +35,11 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
 		transform: rotateY(0)
 	}
 
+	.about-page .carousel .owl-nav,
+	.feature .promo .owl-nav{
+		margin-top: -140px;
+		top: 50%;
+	}
 
 	.intro{
 		&__left{
@@ -60,7 +65,11 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
 			}
 		}
 	}
+	.callback{
+		width: 360px;
+	}
 
+	
 	.sidebar .active:after{
 		display: none;
 	}

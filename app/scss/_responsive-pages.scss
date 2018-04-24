@@ -687,9 +687,11 @@
 			width: 750px;
 		}
 		&__right{
-			flex-basis: 440px;
+			// flex-basis: 440px;
+			// flex-basis: 500px;
 			width: 500px;
 			height: $h;
+			flex: 0 0 auto
 		}
 
 		.service{
@@ -1513,6 +1515,7 @@
 			.more__link{
 				font-size: 1.5rem;
 				height: 4.6rem;
+				white-space: nowrap;
 			}
 		}
 		.partners{
@@ -6076,11 +6079,12 @@
 		.about{
 			flex-direction: column;
 			&__left{
-				order: 1;
-				margin-right: 0;
 				display: flex;
-				width: 100%;
 				justify-content: center;
+				margin-right: 0;
+				max-width: 100%;
+				order: 1;
+				width: 100%;
 			}
 			&__right{
 				order: 0;
@@ -6771,6 +6775,12 @@
 
 	.object__meta .object__composition .btn:before{
 		top: 6px;
+	}
+
+	.favorite-page{
+		.object__meta{
+			padding-top: 1rem;
+		}
 	}
 }
 
@@ -9178,6 +9188,40 @@
 				margin-top: .2rem;
 			}
 			.object__title{
+				margin-top: .5rem;
+			}
+		}
+	}
+
+	.favorite-page{
+		.object__meta .object{
+			&__right{
+				display: block;
+				padding-right: 0;
+				margin-right: 1.2rem;
+				text-align: center;
+				.flats-price{
+					display: block;
+				}
+			}
+			&__info{
+				margin-right: 0;
+				text-align: center;
+			}
+			&__composition{
+				display: inline-block;
+				min-width: 70px;
+				margin-top: 1rem;
+				.btn:before{
+					top: 7px;
+				}
+			}
+			&__address{
+				text-align: center;
+			}
+
+			&__price{
+				margin-left: 0;
 				margin-top: .5rem;
 			}
 		}
