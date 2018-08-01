@@ -195,6 +195,40 @@ $(document).ready(function(){
 	});
 
 
+	//about.html
+	$('#video2').owlCarousel({
+		loop:false,
+		nav:true,
+		dots: false,
+		items:3,
+		navText: ["", ""],
+		stagePadding : 0,
+        responsiveRefreshRate: 200,
+        responsiveBaseWidth: window,
+		responsive:{
+			320: {
+				items: 1,
+				stagePadding : 35
+			},
+			380: {
+				items: 1,
+				stagePadding : 55
+			},
+			420: {
+				items: 1,
+				stagePadding : 80
+			},
+			500:{
+				items: 5,
+				stagePadding : 0
+			},
+			1650:{
+				items: 3
+			}
+		}
+	});
+
+
 	// mobile-menu
 	$('#navbar').each(function(){
 		let $this = $(this),

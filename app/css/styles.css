@@ -704,16 +704,20 @@ h3 {
 .list_construction .tab-content .owl-carousel .owl-prev:before,
 .list_construction .tab-content .owl-carousel .owl-next:before,
 .related .carousel .owl-carousel .owl-prev:before,
-.related .carousel .owl-carousel .owl-next:before, .card_flat .carousel .owl-carousel .owl-prev:after, .card_flat .carousel .owl-carousel .owl-next:after,
+.related .carousel .owl-carousel .owl-next:before,
+.about__video .owl-carousel .owl-prev:before,
+.about__video .owl-carousel .owl-next:before, .card_flat .carousel .owl-carousel .owl-prev:after, .card_flat .carousel .owl-carousel .owl-next:after,
 .objects .owl-carousel .owl-prev:after,
 .objects .owl-carousel .owl-next:after,
 .list_construction .tab-content .owl-carousel .owl-prev:after,
 .list_construction .tab-content .owl-carousel .owl-next:after,
 .related .carousel .owl-carousel .owl-prev:after,
-.related .carousel .owl-carousel .owl-next:after, .objects__info:before, .object__item-outer:after, .object__top .name:after, .intro .link_groups a:before,
+.related .carousel .owl-carousel .owl-next:after,
+.about__video .owl-carousel .owl-prev:after,
+.about__video .owl-carousel .owl-next:after, .objects__info:before, .object__item-outer:after, .object__top .name:after, .intro .link_groups a:before,
 .about-partners .link_groups a:before, .intro__carousel:before, .intro__carousel:after, .about-partners .about__right .title:after, .about-partners .partners:after, .big-icon:before, .neck:before, .neck:after, .neck .tabs .tab.active:after, .pagination .prev:before,
 .pagination .next:before, .picking:after, .picking:before, .picking__inner:before, .picking__link span:before, .content-bottom .subscribe:after, .content-bottom .subscribe:before, .sortbox__option-up:after, .sortbox__option-down:after, main ul li:before, .faq-page .head .btn:before,
-.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .favorite__item:after, div.table-flats .sort:after, .catalog__item:after, .catalog__item:before, .product__item-inner:after, .product__item-inner:before, .product__item:after, .product__item:hover .product__item-inner:after, .product__item:hover .product__item-inner:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .house:after, .flat-page .card__description .description__inner:after, .flat-page .card__description .description__inner:before, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .flat-page .card__description .description__bottom:before, .flat-page .card__description .description__bottom:hover:after, .flat-page .card__description .description__bottom:hover:before, .flat-page .card__description .description:after, .installmentbox__left:after, .installmentbox__left:before, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, #calc-gnk-form .alert:before, .complex-page .complex__left:before, .complex-page .complex__panel .video .bg:before, .complex-page .complex__panel .video .bg:after, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a span:after, .complex-page .complex__panel .house:after, .complex-page .about main .heading:after, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item__body:after, .about-page .carousel .item__body:before, .about-page .about .advantages:after, .about-page .about .advantages:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .about-page .calculator .calc-bottom:after, .about-page .calculator .calc-bottom:before, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .main .content .scheme .area-outer-top:before, .calculator-page .main .content .scheme .area-outer-top:after, .calculator-page .main .content .scheme .area-outer-top .area-top-line:before,
+.vacancies-page .head .btn:before, .list_faq .answer:before, .list_vacancy .answer ul li:before, .favorite__item:after, div.table-flats .sort:after, .catalog__item:after, .catalog__item:before, .product__item-inner:after, .product__item-inner:before, .product__item:after, .product__item:hover .product__item-inner:after, .product__item:hover .product__item-inner:before, .sidebar .active:after, .list_construction .place__pic:before, .list_construction .place__pic:after, .house:after, .flat-page .card__description .description__inner:after, .flat-page .card__description .description__inner:before, .flat-page .card__description .description__body .more:before, .flat-page .card__description .description__bottom:after, .flat-page .card__description .description__bottom:before, .flat-page .card__description .description__bottom:hover:after, .flat-page .card__description .description__bottom:hover:before, .flat-page .card__description .description:after, .installmentbox__left:after, .installmentbox__left:before, .installmentbox__left .btn.more:before, .card_flat .carousel_tab li.current:before, #calc-gnk-form .alert:before, .complex-page .complex__left:before, .complex-page .complex__panel .video .bg:before, .complex-page .complex__panel .video .bg:after, .complex-page .complex__panel .video a:after, .complex-page .complex__panel .video a span:after, .complex-page .complex__panel .house:after, .complex-page .about main .heading:after, .complex-page .about main .head:after, .complex-page .about .carousel:before, .complex-page .about .carousel:after, .complex-page .list_construction .construction__meta .nav .btn.active:after, .popover-link:before, .about-page .carousel .item__body:after, .about-page .carousel .item__body:before, .about-page .about .advantages:after, .about-page .about .advantages:before, .about-page .about__video .video__link .pic:before, .about-page .about__video .video__link .pic:after, .about-page .about__video .video__link .pic__wrapper:after, .about-page .about__video .slick-prev:before, .about-page .about__video .slick-next:before, .about-page .about__video .slick-prev:after, .about-page .about__video .slick-next:after, .about-page .about__video .slick2-next:before, .about-page .about__video .slick2-next:after, .about-page .about__video .slick2-prev:before, .about-page .about__video .slick2-prev:after, .about-page .scheme .step:before, .about-page .scheme .step:after, .about-page .calculator .calc-bottom:after, .about-page .calculator .calc-bottom:before, .listgk-page .main .complex__item:after, .calculator-page .prompt:before, .calculator-page .main .content .scheme .area-outer-top:before, .calculator-page .main .content .scheme .area-outer-top:after, .calculator-page .main .content .scheme .area-outer-top .area-top-line:before,
 .calculator-page .main .content .scheme .area-outer-top .area-left-line:before, .calculator-page .main .content .scheme .area-outer-left:before, .calculator-page .main .content .scheme .area-outer-left:after, .calculator-page .example__pic a:after, .calculator-page .example__pic a:before, .calculator-page .example__pic:after, .calculator-page .example__pic:before, .calculator-page .related__item:after, .calculator-page .related__item:before {
   content: "";
   display: block;
@@ -2664,7 +2668,9 @@ input[type=number]::-webkit-outer-spin-button {
 .list_construction .tab-content .owl-carousel .owl-prev:before,
 .list_construction .tab-content .owl-carousel .owl-next:before,
 .related .carousel .owl-carousel .owl-prev:before,
-.related .carousel .owl-carousel .owl-next:before {
+.related .carousel .owl-carousel .owl-next:before,
+.about__video .owl-carousel .owl-prev:before,
+.about__video .owl-carousel .owl-next:before {
   transition: .3s all ease-out;
   background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAYCAMAAAAmopZHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAqFBMVEUAh00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah03////LzDCzAAAANnRSTlMAYyZ50Sx4/LEGd+NFAeQ9/t873jziesojAv3Nlp6PZvdn9gN9z5uklHzJIXvhOdzdOELULiiNp6GjAAAAAWJLR0Q3MLi4RwAAAAd0SU1FB+ICFxEtB4P8KmQAAACiSURBVCjPdZFHFsIwDERFh4AoCTGdUEIJxHR0/6Mhr/KMlNl5Rv7jAlCoUgVNNao3FLvZImp3hB2w3e2hhBD1BxIyJBqFKiQaq5WxhASOLacNsyfTf3dm5jy+WK48rSFh1yW+NrAlTTvYp4ynw/Hk6cwNGfuXq3wwzDmwN+UpDd/LhkqQ84nu2g7X8XiWdMRlKPtCGRj9HwFTen8UEGDyLRY/EnAekAPc1nQAAAAASUVORK5CYII=") no-repeat center;
   filter: grayscale(1);
@@ -2679,14 +2685,17 @@ input[type=number]::-webkit-outer-spin-button {
 .list_construction .tab-content .owl-carousel .owl-prev:hover:before,
 .list_construction .tab-content .owl-carousel .owl-next:hover:before,
 .related .carousel .owl-carousel .owl-prev:hover:before,
-.related .carousel .owl-carousel .owl-next:hover:before {
+.related .carousel .owl-carousel .owl-next:hover:before,
+.about__video .owl-carousel .owl-prev:hover:before,
+.about__video .owl-carousel .owl-next:hover:before {
   filter: grayscale(0); }
 
 .card_flat .carousel .owl-carousel .owl-next:before,
 .objects .owl-carousel .owl-next:before,
 .intro__carousel .owl-carousel .owl-next:before,
 .list_construction .tab-content .owl-carousel .owl-next:before,
-.related .carousel .owl-carousel .owl-next:before {
+.related .carousel .owl-carousel .owl-next:before,
+.about__video .owl-carousel .owl-next:before {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
@@ -2694,12 +2703,14 @@ input[type=number]::-webkit-outer-spin-button {
 .card_flat .carousel .owl-carousel,
 .objects .owl-carousel,
 .list_construction .tab-content .owl-carousel,
-.related .carousel .owl-carousel {
+.related .carousel .owl-carousel,
+.about__video .owl-carousel {
   margin-top: 4.2rem; }
   .card_flat .carousel .owl-carousel .owl-nav,
   .objects .owl-carousel .owl-nav,
   .list_construction .tab-content .owl-carousel .owl-nav,
-  .related .carousel .owl-carousel .owl-nav {
+  .related .carousel .owl-carousel .owl-nav,
+  .about__video .owl-carousel .owl-nav {
     margin-top: -45px;
     position: absolute;
     top: 50%;
@@ -2710,7 +2721,9 @@ input[type=number]::-webkit-outer-spin-button {
   .list_construction .tab-content .owl-carousel .owl-prev,
   .list_construction .tab-content .owl-carousel .owl-next,
   .related .carousel .owl-carousel .owl-prev,
-  .related .carousel .owl-carousel .owl-next {
+  .related .carousel .owl-carousel .owl-next,
+  .about__video .owl-carousel .owl-prev,
+  .about__video .owl-carousel .owl-next {
     height: 90px;
     position: absolute;
     top: 0;
@@ -2721,7 +2734,9 @@ input[type=number]::-webkit-outer-spin-button {
     .list_construction .tab-content .owl-carousel .owl-prev:before,
     .list_construction .tab-content .owl-carousel .owl-next:before,
     .related .carousel .owl-carousel .owl-prev:before,
-    .related .carousel .owl-carousel .owl-next:before {
+    .related .carousel .owl-carousel .owl-next:before,
+    .about__video .owl-carousel .owl-prev:before,
+    .about__video .owl-carousel .owl-next:before {
       left: 50%;
       margin-top: -12px;
       top: 50%;
@@ -2732,7 +2747,9 @@ input[type=number]::-webkit-outer-spin-button {
     .list_construction .tab-content .owl-carousel .owl-prev:after,
     .list_construction .tab-content .owl-carousel .owl-next:after,
     .related .carousel .owl-carousel .owl-prev:after,
-    .related .carousel .owl-carousel .owl-next:after {
+    .related .carousel .owl-carousel .owl-next:after,
+    .about__video .owl-carousel .owl-prev:after,
+    .about__video .owl-carousel .owl-next:after {
       background: white;
       height: 90px;
       top: 0;
@@ -2740,46 +2757,54 @@ input[type=number]::-webkit-outer-spin-button {
   .card_flat .carousel .owl-carousel .owl-prev,
   .objects .owl-carousel .owl-prev,
   .list_construction .tab-content .owl-carousel .owl-prev,
-  .related .carousel .owl-carousel .owl-prev {
+  .related .carousel .owl-carousel .owl-prev,
+  .about__video .owl-carousel .owl-prev {
     left: -50px;
     -webkit-transition: left 0.2s ease-out;
     transition: left 0.2s ease-out; }
     .card_flat .carousel .owl-carousel .owl-prev:before,
     .objects .owl-carousel .owl-prev:before,
     .list_construction .tab-content .owl-carousel .owl-prev:before,
-    .related .carousel .owl-carousel .owl-prev:before {
+    .related .carousel .owl-carousel .owl-prev:before,
+    .about__video .owl-carousel .owl-prev:before {
       margin-left: -6px; }
     .card_flat .carousel .owl-carousel .owl-prev:after,
     .objects .owl-carousel .owl-prev:after,
     .list_construction .tab-content .owl-carousel .owl-prev:after,
-    .related .carousel .owl-carousel .owl-prev:after {
+    .related .carousel .owl-carousel .owl-prev:after,
+    .about__video .owl-carousel .owl-prev:after {
       right: 0; }
     .card_flat .carousel .owl-carousel .owl-prev:hover,
     .objects .owl-carousel .owl-prev:hover,
     .list_construction .tab-content .owl-carousel .owl-prev:hover,
-    .related .carousel .owl-carousel .owl-prev:hover {
+    .related .carousel .owl-carousel .owl-prev:hover,
+    .about__video .owl-carousel .owl-prev:hover {
       left: -40px; }
   .card_flat .carousel .owl-carousel .owl-next,
   .objects .owl-carousel .owl-next,
   .list_construction .tab-content .owl-carousel .owl-next,
-  .related .carousel .owl-carousel .owl-next {
+  .related .carousel .owl-carousel .owl-next,
+  .about__video .owl-carousel .owl-next {
     -webkit-transition: right 0.2s ease-out;
     transition: right 0.2s ease-out;
     right: -30px; }
     .card_flat .carousel .owl-carousel .owl-next:before,
     .objects .owl-carousel .owl-next:before,
     .list_construction .tab-content .owl-carousel .owl-next:before,
-    .related .carousel .owl-carousel .owl-next:before {
+    .related .carousel .owl-carousel .owl-next:before,
+    .about__video .owl-carousel .owl-next:before {
       left: 10px; }
     .card_flat .carousel .owl-carousel .owl-next:after,
     .objects .owl-carousel .owl-next:after,
     .list_construction .tab-content .owl-carousel .owl-next:after,
-    .related .carousel .owl-carousel .owl-next:after {
+    .related .carousel .owl-carousel .owl-next:after,
+    .about__video .owl-carousel .owl-next:after {
       right: 10px; }
     .card_flat .carousel .owl-carousel .owl-next:hover,
     .objects .owl-carousel .owl-next:hover,
     .list_construction .tab-content .owl-carousel .owl-next:hover,
-    .related .carousel .owl-carousel .owl-next:hover {
+    .related .carousel .owl-carousel .owl-next:hover,
+    .about__video .owl-carousel .owl-next:hover {
       right: -20px; }
 
 .objects {
@@ -3004,6 +3029,8 @@ input[type=number]::-webkit-outer-spin-button {
       top: 18px; }
       .intro__carousel .owl-next:hover, .intro__carousel .owl-prev:hover {
         opacity: 1; }
+      .intro__carousel .owl-next:before, .intro__carousel .owl-prev:before {
+        top: 0; }
     .intro__carousel .owl-prev {
       padding-left: 40px;
       left: 0; }
@@ -7001,7 +7028,9 @@ circle:nth-child(2n) {
     font-weight: 500;
     color: #000;
     justify-content: space-between;
-    width: 100%; }
+    width: 967px; }
+    .about-page .about__video .slick-slider {
+      width: 100%; }
     .about-page .about__video .video__item {
       width: 251px; }
       .about-page .about__video .video__item img {
@@ -7049,6 +7078,108 @@ circle:nth-child(2n) {
       .about-page .about__video .video__link .title {
         font-weight: 700;
         padding-top: 2.8rem; }
+    .about-page .about__video .slick-prev:before, .about-page .about__video .slick-next:before {
+      transition: .3s all ease-out;
+      background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAYCAMAAAAmopZHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAqFBMVEUAh00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah03////LzDCzAAAANnRSTlMAYyZ50Sx4/LEGd+NFAeQ9/t873jziesojAv3Nlp6PZvdn9gN9z5uklHzJIXvhOdzdOELULiiNp6GjAAAAAWJLR0Q3MLi4RwAAAAd0SU1FB+ICFxEtB4P8KmQAAACiSURBVCjPdZFHFsIwDERFh4AoCTGdUEIJxHR0/6Mhr/KMlNl5Rv7jAlCoUgVNNao3FLvZImp3hB2w3e2hhBD1BxIyJBqFKiQaq5WxhASOLacNsyfTf3dm5jy+WK48rSFh1yW+NrAlTTvYp4ynw/Hk6cwNGfuXq3wwzDmwN+UpDd/LhkqQ84nu2g7X8XiWdMRlKPtCGRj9HwFTen8UEGDyLRY/EnAekAPc1nQAAAAASUVORK5CYII=") no-repeat center;
+      filter: grayscale(1);
+      height: 24px;
+      width: 23px; }
+    .about-page .about__video .slick-prev:hover:before, .about-page .about__video .slick-next:hover:before {
+      filter: grayscale(0); }
+    .about-page .about__video .slick-next:before {
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
+    .about-page .about__video .slick-prev, .about-page .about__video .slick-next {
+      background: none;
+      border: none;
+      height: 90px;
+      position: absolute;
+      top: 45px;
+      width: 50px;
+      z-index: 999; }
+      .about-page .about__video .slick-prev:before, .about-page .about__video .slick-next:before {
+        left: 50%;
+        margin-top: -12px;
+        top: 50%;
+        z-index: 2; }
+      .about-page .about__video .slick-prev:after, .about-page .about__video .slick-next:after {
+        background: #f3f3f4;
+        height: 90px;
+        top: 0;
+        width: 40px; }
+      .about-page .about__video .slick-prev:active, .about-page .about__video .slick-prev:focus, .about-page .about__video .slick-next:active, .about-page .about__video .slick-next:focus {
+        outline: none; }
+    .about-page .about__video .slick-prev {
+      left: -50px;
+      -webkit-transition: left 0.2s ease-out;
+      transition: left 0.2s ease-out; }
+      .about-page .about__video .slick-prev:before {
+        margin-left: -6px; }
+      .about-page .about__video .slick-prev:after {
+        right: 0; }
+      .about-page .about__video .slick-prev:hover {
+        left: -40px; }
+    .about-page .about__video .slick-next {
+      -webkit-transition: right 0.2s ease-out;
+      transition: right 0.2s ease-out;
+      right: 10px; }
+      .about-page .about__video .slick-next:before {
+        left: 10px; }
+      .about-page .about__video .slick-next:after {
+        right: 10px; }
+      .about-page .about__video .slick-next:hover {
+        right: 20px; }
+    .about-page .about__video .slick2-nav {
+      background: #fff;
+      right: 0;
+      bottom: 0;
+      width: 120px;
+      height: 60px; }
+    .about-page .about__video .slick2-next, .about-page .about__video .slick2-prev {
+      background: none;
+      border: none;
+      position: absolute;
+      opacity: .5;
+      bottom: 0;
+      top: 18px;
+      height: 90px;
+      position: absolute;
+      top: 0;
+      width: 50px; }
+      .about-page .about__video .slick2-next:hover, .about-page .about__video .slick2-prev:hover {
+        opacity: 1; }
+      .about-page .about__video .slick2-next:before, .about-page .about__video .slick2-next:after, .about-page .about__video .slick2-prev:before, .about-page .about__video .slick2-prev:after {
+        background: rgba(31, 45, 39, 0.1); }
+      .about-page .about__video .slick2-next:before, .about-page .about__video .slick2-prev:before {
+        transition: .3s all ease-out;
+        background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAYCAMAAAAmopZHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAqFBMVEUAh00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah00Ah03////LzDCzAAAANnRSTlMAYyZ50Sx4/LEGd+NFAeQ9/t873jziesojAv3Nlp6PZvdn9gN9z5uklHzJIXvhOdzdOELULiiNp6GjAAAAAWJLR0Q3MLi4RwAAAAd0SU1FB+ICFxEtB4P8KmQAAACiSURBVCjPdZFHFsIwDERFh4AoCTGdUEIJxHR0/6Mhr/KMlNl5Rv7jAlCoUgVNNao3FLvZImp3hB2w3e2hhBD1BxIyJBqFKiQaq5WxhASOLacNsyfTf3dm5jy+WK48rSFh1yW+NrAlTTvYp4ynw/Hk6cwNGfuXq3wwzDmwN+UpDd/LhkqQ84nu2g7X8XiWdMRlKPtCGRj9HwFTen8UEGDyLRY/EnAekAPc1nQAAAAASUVORK5CYII=") no-repeat center;
+        filter: grayscale(1);
+        height: 24px;
+        width: 23px;
+        left: 50%;
+        margin-top: -12px;
+        top: 50%;
+        z-index: 2; }
+      .about-page .about__video .slick2-next:after, .about-page .about__video .slick2-prev:after {
+        background: #f3f3f4;
+        height: 90px;
+        top: 0;
+        width: 40px; }
+    .about-page .about__video .slick2-prev {
+      padding-left: 40px;
+      left: -50px; }
+      .about-page .about__video .slick2-prev:before {
+        right: 0; }
+      .about-page .about__video .slick2-prev:hover:before {
+        right: 5px; }
+    .about-page .about__video .slick2-next {
+      padding-right: 40px;
+      right: 0; }
+      .about-page .about__video .slick2-next:before {
+        left: 0; }
+      .about-page .about__video .slick2-next:hover:before {
+        left: 5px; }
 
 .about-page .scheme {
   background: #086e42 url(../images/bg-3.jpg) no-repeat center top/cover;
@@ -8971,6 +9102,12 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
   .about-partners .link_groups a {
     margin-right: 3rem;
     font-size: 2.2rem; }
+  .about-page .about__video {
+    width: 790px; }
+    .about-page .about__video .slick-next {
+      right: 84px; }
+      .about-page .about__video .slick-next:hover {
+        right: 92px; }
   .intro__right {
     padding-right: 0; }
   .gbi-page .main .content {
@@ -9075,8 +9212,7 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
   .about-page .carousel .item img {
     height: 100%; }
   .about-page .about__video .video__item {
-    font-size: 1.5rem;
-    width: 30%; }
+    font-size: 1.5rem; }
   .about-page .filter {
     padding-top: 3rem; }
   .about-page .documents .side-inner {
@@ -9709,6 +9845,19 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
     font-size: 1.4rem; }
   .about-page .calculator .calc-bottom {
     width: calc(100% - 12px); }
+  .about-page .about__video {
+    width: 100%; }
+    .about-page .about__video .slick-prev {
+      left: -8px; }
+      .about-page .about__video .slick-prev:hover {
+        left: 2px; }
+    .about-page .about__video .slick-next {
+      right: -16px; }
+      .about-page .about__video .slick-next:hover {
+        right: -6px; }
+    .about-page .about__video .video__item {
+      margin-left: auto;
+      margin-right: auto; }
   .about-page .list_construction .place__item,
   .construction-page .list_construction .place__item {
     margin-right: 52px;
@@ -11016,8 +11165,6 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
     .about-page .scheme .step:before {
       background-size: 50%;
       right: 0; }
-  .about-page .about__video .video__item {
-    width: 31%; }
   .about-page .documents .row {
     display: block; }
   .about-page .documents__content {
@@ -13917,7 +14064,10 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
     text-align: center; }
   .favorite-page .object__meta .object__price {
     margin-left: 0;
-    margin-top: .5rem; } }
+    margin-top: .5rem; }
+  .about-page .about__video .video__item {
+    font-size: 1.4rem;
+    width: 200px; } }
 
 @media (max-width: 320px) {
   #filter .cell-checkbox {

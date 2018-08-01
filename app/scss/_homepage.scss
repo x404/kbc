@@ -584,7 +584,8 @@
 .objects,
 .intro__carousel,
 .list_construction .tab-content,
-.related .carousel
+.related .carousel,
+.about__video
 {
 	.owl-carousel{
 		.owl{
@@ -618,7 +619,8 @@
 .card_flat .carousel,
 .objects,
 .list_construction .tab-content,
-.related .carousel
+.related .carousel,
+.about__video
 {
 	.owl-carousel{
 		margin-top: 4.2rem;
@@ -976,8 +978,12 @@
 				opacity: .5;
 				bottom: 0;
 				top: 18px;
+				// width: 40px;
 				&:hover{
 					opacity: 1;
+				}
+				&:before{
+					top: 0;
 				}
 			}
 			&-prev{
@@ -1002,7 +1008,7 @@
 				&:hover{
 					&:before{
 						left: 5px;
-					}					
+					}
 				}
 			}
 		}
