@@ -11850,7 +11850,9 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
   .card_flat .carousel .owl-carousel .owl-prev {
     left: -30px; }
     .card_flat .carousel .owl-carousel .owl-prev:hover {
-      left: -20px; } }
+      left: -20px; }
+  #calc-gnk .modal-title {
+    padding-right: 75px; } }
 
 @media (max-width: 720px) {
   .objects-callback .side .callback,
@@ -12286,7 +12288,9 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
   .listgk-page .main .listgk .object__plate {
     width: 100%; }
   .listgk-page .main .listgk .object__item-outer {
-    width: 370px; } }
+    width: 370px; }
+  #calc-gnk .modal-title {
+    font-size: 3rem; } }
 
 @media (max-width: 630px) {
   .feature__right .about,
@@ -12894,7 +12898,9 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
   .installmentbox__left {
     width: calc(100% - 12px); }
   .object__meta .object__composition .btn:before {
-    top: 9px; } }
+    top: 9px; }
+  #calc-gnk .modal-title {
+    padding-right: 0; } }
 
 @media (max-width: 480px) {
   .fixed-navbar.sticky {

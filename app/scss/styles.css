@@ -1,10 +1,10 @@
 /*
 Error: Invalid CSS after "&:first-child(": expected pseudo_expr, was ")"
-        on line 409 of W:/domains/kbc.local/app/scss/_homepage.scss
+        on line 410 of W:/domains/kbc.local/app/scss/_homepage.scss
         from line 10 of W:\domains\kbc.local\app\scss\styles.scss
 
 Backtrace:
-W:/domains/kbc.local/app/scss/_homepage.scss:409
+W:/domains/kbc.local/app/scss/_homepage.scss:410
 W:\domains\kbc.local\app\scss\styles.scss:10
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:1179:in `expected'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/scss/parser.rb:1115:in `expected'
@@ -95,4 +95,4 @@ C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"&:first-child(\": expected pseudo_expr, was \")\"\A         on line 409 of W:/domains/kbc.local/app/scss/_homepage.scss\A         from line 10 of W:\domains\kbc.local\app\scss\styles.scss"; }
+  content: "Error: Invalid CSS after \"&:first-child(\": expected pseudo_expr, was \")\"\A         on line 410 of W:/domains/kbc.local/app/scss/_homepage.scss\A         from line 10 of W:\domains\kbc.local\app\scss\styles.scss"; }

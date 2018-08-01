@@ -5518,6 +5518,11 @@
 			}
 		}
 	}
+
+
+	#calc-gnk .modal-title{
+		padding-right: 75px;
+	}
 }
 
 
@@ -5525,7 +5530,6 @@
 	.objects-callback .side,
 	.side-inner{
 		.callback{
-			// display: block;
 			display: flex;
 			justify-content: center;
 			flex-direction: column;
@@ -6304,6 +6308,10 @@
 		}
 	}
 	// =/LIST GK
+
+	#calc-gnk .modal-title{
+		font-size: 3rem;
+	}
 }
 
 
@@ -7424,6 +7432,9 @@
 		top: 9px;
 	}
 
+	#calc-gnk .modal-title{
+		padding-right: 0;
+	}
 }
 
 
