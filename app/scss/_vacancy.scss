@@ -140,6 +140,33 @@
 				}
 			}
 		}
+
+		.flexbox{
+			align-items: center;
+			.tel,
+			.email{
+				font-size: 17px;
+				font-weight: 700;
+			}
+		}
+
+		&__email,
+		&__tel{
+			color: #464646;
+		}
+
+		&__tel{
+			margin-left: 30px;
+			margin-right: 25px;
+		}
+		&__email{
+			border-left: 1px solid #e1e1e5;
+			padding-left: 25px;
+			.email{
+				color: $color8new;
+				@extend .tdu;
+			}
+		}
 	}
 
 	.btn{

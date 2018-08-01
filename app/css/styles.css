@@ -678,11 +678,11 @@ h3 {
 
 .tdu, .file-upload span, .modal-menu .menu a, .footer__menu a, .footer .idealpromo a, .pagination .prev,
 .pagination .next, .faq-page .head p a,
-.vacancies-page .head p a, .contact__plate .email, div.table-flats .tbody .td .place a, .complex-page .house__body .table td a, .about-page .documents__content a, .calculator-page .main .content .scheme .download a {
+.vacancies-page .head p a, .list_vacancy .answer__email .email, .contact__plate .email, div.table-flats .tbody .td .place a, .complex-page .house__body .table td a, .about-page .documents__content a, .calculator-page .main .content .scheme .download a {
   text-decoration: underline; }
   .tdu:hover, .file-upload span:hover, .modal-menu .menu a:hover, .footer__menu a:hover, .footer .idealpromo a:hover, .pagination .prev:hover,
   .pagination .next:hover, .faq-page .head p a:hover,
-  .vacancies-page .head p a:hover, .contact__plate .email:hover, div.table-flats .tbody .td .place a:hover, .complex-page .house__body .table td a:hover, .about-page .documents__content a:hover, .calculator-page .main .content .scheme .download a:hover {
+  .vacancies-page .head p a:hover, .list_vacancy .answer__email .email:hover, .contact__plate .email:hover, div.table-flats .tbody .td .place a:hover, .complex-page .house__body .table td a:hover, .about-page .documents__content a:hover, .calculator-page .main .content .scheme .download a:hover {
     text-decoration: none; }
 
 .before, .icon-catalog:before, .icon-sett:before, .icon-pricelist:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-telbig:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-labelred:before, .icon-house-dark:before, .icon-house-dark-sm:before, .icon-camera:before, .icon-cameramiddle:before, .icon-camerabig:before, .icon-photo:before, .icon-scheme:before, .icon-schemebig:before, .icon-check:before, .icon-starsmall:before, .card_flat .btn-fav:before, .icon-starsmallfill:before, .card_flat .btn-fav-in:before, .icon-pencil-dark:before, .icon-scheme-green:before, .icon-ruller:before, .icon-doc:before, .about-page .documents .doclist__item a:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
@@ -4519,6 +4519,22 @@ main {
       margin-top: -3px;
       top: 50%;
       width: 14px; }
+  .list_vacancy .answer .flexbox {
+    align-items: center; }
+    .list_vacancy .answer .flexbox .tel,
+    .list_vacancy .answer .flexbox .email {
+      font-size: 17px;
+      font-weight: 700; }
+  .list_vacancy .answer__email, .list_vacancy .answer__tel {
+    color: #464646; }
+  .list_vacancy .answer__tel {
+    margin-left: 30px;
+    margin-right: 25px; }
+  .list_vacancy .answer__email {
+    border-left: 1px solid #e1e1e5;
+    padding-left: 25px; }
+    .list_vacancy .answer__email .email {
+      color: #009259; }
 
 .list_vacancy .btn {
   font-size: 1.5rem;
@@ -10019,7 +10035,15 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
   .calculator-page .related .carousel .owl-carousel .owl-next {
     right: -70px; }
     .calculator-page .related .carousel .owl-carousel .owl-next:hover {
-      right: -60px; } }
+      right: -60px; }
+  .list_vacancy .answer .flexbox {
+    flex-wrap: wrap; }
+  .list_vacancy .answer__left {
+    flex-grow: 1;
+    padding-bottom: 5px;
+    width: 100%; }
+  .list_vacancy .answer__tel {
+    margin-left: 0; } }
 
 @media (max-width: 1199px) {
   .about-page .carousel .item {
@@ -11121,7 +11145,7 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
       margin-right: -4px; }
   .complex-page .list_construction .place__item {
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto !important; }
   .complex-page .list_reviews {
     margin-bottom: 2rem; }
     .complex-page .list_reviews .flexbox {
@@ -12571,7 +12595,18 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
   .calculator-page .main .row aside .params__row {
     width: 100%; }
   .filter-inner .cell-buttons {
-    margin-right: -1.5rem; } }
+    margin-right: -1.5rem; }
+  .list_vacancy .answer .flexbox {
+    display: block; }
+  .list_vacancy .answer__left {
+    margin-left: 0; }
+  .list_vacancy .answer__tel {
+    margin-left: 0;
+    margin-right: 0; }
+  .list_vacancy .answer__email {
+    border-left: 0;
+    margin: 10px 0 0;
+    padding-left: 0; } }
 
 @media (max-width: 550px) {
   .objects header {
