@@ -18,7 +18,6 @@ var gulp 		= require('gulp'),
 	var realFavicon = require ('gulp-real-favicon');
 	var fs = require('fs');	
 
-
 var config = {
 	templateDir : 'app',
 	destDir : 'dist',

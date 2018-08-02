@@ -3268,6 +3268,9 @@ input[type=number]::-webkit-outer-spin-button {
     padding-left: 3.8rem;
     text-transform: uppercase; }
 
+.fancybox-slide--video video {
+  max-width: 100%; }
+
 .neck {
   background-color: #007948;
   color: #fff;
