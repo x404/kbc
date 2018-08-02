@@ -54,3 +54,9 @@ __Используемые в проекте js плагины__
 <meta name="robots" content="noindex,nofollow">
 
 
+Каталог tmp содержит временные картинки-заглушки. Каталог при программировании удалить.
+
+
+
+
+owl.trigger('destroy.owl.carousel')

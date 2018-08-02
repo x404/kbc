@@ -695,6 +695,18 @@ window.onscroll = function(){
 			fnavbar.classList.remove('sticky');
 		} catch(e){};
 	}
+
+	var y = window.scrollY;
+	if (y > 0){
+		try{
+			document.querySelector('.mobilepagedown').classList.add('hide')			
+		} catch(e){}
+	} else{
+		try{
+			document.querySelector('.mobilepagedown').classList.remove('hide')
+		} catch(e){}
+	}
+
 };
 
 

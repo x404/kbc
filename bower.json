@@ -6,7 +6,7 @@
     "x404"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/x404/ambene",
+  "homepage": "https://github.com/x404/kbc",
   "ignore": [
     "**/.*",
     "node_modules",

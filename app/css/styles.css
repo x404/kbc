@@ -690,7 +690,7 @@ h3 {
 .fixed-header .wishlist__link:after,
 .apanel .wishlist__link:before,
 .apanel .wishlist__link:after, .panelfilter a:before,
-.fixed-header a:before, .line-animate span:after, .extra-toggle:after, .perspective:after, .perspective-gray:after, .listgk-page .main .complex__item-inner:after, .object__item:after, .perspective:before, .perspective-gray:before, .listgk-page .main .complex__item-inner:before, .object__item:before, .callback .call:before,
+.fixed-header .qfilter a:before, .line-animate span:after, .extra-toggle:after, .perspective:after, .perspective-gray:after, .listgk-page .main .complex__item-inner:after, .object__item:after, .perspective:before, .perspective-gray:before, .listgk-page .main .complex__item-inner:before, .object__item:before, .callback .call:before,
 .resume .call:before, .modal-menu .close-modal:after,
 .modal-menu .close-menu:after,
 .apanel .close-modal:after,
@@ -1129,22 +1129,22 @@ form .form-control {
     top: -2px; }
 
 .panelfilter a,
-.fixed-header a {
+.fixed-header .qfilter a {
   position: relative;
   text-decoration: none;
   padding-left: 55px; }
   .panelfilter a:before,
-  .fixed-header a:before {
+  .fixed-header .qfilter a:before {
     background-image: url(../images/sprite.png);
     background-position: 0px -230px;
     width: 39px;
     height: 30px;
     left: 0; }
   .panelfilter a span,
-  .fixed-header a span {
+  .fixed-header .qfilter a span {
     border-bottom: 2px solid #c40f39; }
   .panelfilter a i,
-  .fixed-header a i {
+  .fixed-header .qfilter a i {
     font-style: normal;
     font-weight: 700;
     position: relative;
