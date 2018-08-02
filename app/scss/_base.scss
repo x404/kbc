@@ -591,6 +591,43 @@ form{
 	}
 }
 
+.panelfilter{
+	@extend .flex-center;
+	background: #ececec;
+	height: 4rem;
+	font-size: 1.5rem;
+	display: none;
+	a{
+		&:before{
+			top: -2px;
+		}
+	}
+}
+
+
+.panelfilter,
+.fixed-header{
+	a{
+		position: relative;
+		text-decoration: none;
+		padding-left: 55px;
+		&:before{
+			@extend .before;
+			@include sprite($icon-filter);
+			left: 0;
+		}
+		span{
+			border-bottom: 2px solid $color7;
+		}
+		i{
+			font-style: normal;
+			font-weight: 700;
+			position: relative;
+			z-index: 3;
+		}
+	}	
+}
+
 
 .fixed-header{
 	background: $color2;
@@ -628,19 +665,6 @@ form{
 			font-style: normal;
 			position: relative;
 			z-index: 3;
-		}
-		a{
-			position: relative;
-			text-decoration: none;
-			padding-left: 55px;
-			&:before{
-				@extend .before;
-				@include sprite($icon-filter);
-				left: 0;
-			}
-			span{
-				border-bottom: 2px solid $color7;
-			}
 		}
 	}
 
@@ -2053,4 +2077,47 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
+}
+
+.mobilepagedown{
+	$s: 30px;
+	background:url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAARCAQAAACh6J5QAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCAEPAhelLZz1AAAAcElEQVQY09XNvQnCAABE4YvYByzEwmVMETKGphMcxUbIALZOYGXcyx8+q5g4gve6O45XaLLKOdPUWccRe/lSebvGXDcZNp56i4hCh4OoPPRKGa4dLl5uSpFobEWccFeKWjsqZ3aW/68cGJU/9aCMyAeU7uzhHNxUIgAAAABJRU5ErkJggg==") no-repeat center;
+	background-color: #000;
+	border-radius: 50%;
+	border: none;
+	bottom: 10px;
+	display: none;
+	height: $s;
+	left: 50%;
+	margin-left: -$s/2;
+	position: fixed;
+	width: $s;
+	z-index: 999;
+	padding: 0;
+	animation-duration: 2s;
+	animation-name: fadein;
+	animation-iteration-count: infinite;
+	transition: .3s;
+	&:hover{
+		background-color: #000;
+	}
+	&.hide{
+		opacity: 0;
+		z-index: -2;
+	}
+}
+
+
+@keyframes fadein {
+  from {
+  	background-color: rgba(0,0,0,.2);
+  }
+
+  50% {
+    background-color: rgba(0,0,0,.8);
+  }
+
+  to {
+    background-color: rgba(0,0,0,.2);
+  }
 }

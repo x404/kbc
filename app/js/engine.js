@@ -750,6 +750,26 @@ $(window).on('load', function(){
 });
 
 
+document.querySelector('.mobilepagedown').addEventListener("click", function(){
+	var h = window.innerHeight;
+	$('html,body').animate({
+		scrollTop: h
+	}, 1000);
+
+}, false);
+
+
+
+window.onscroll = function() {
+	var y = window.scrollY;
+	if (y > 0){
+		document.querySelector('.mobilepagedown').classList.add('hide')
+	} else{
+		document.querySelector('.mobilepagedown').classList.remove('hide')		
+	}
+}
+
+
 
 // mobile menu
 document.querySelector('.apanel .close-menu').addEventListener("click", function(){

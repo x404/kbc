@@ -5114,6 +5114,9 @@
 
 
 @media (max-width: 767px){
+	.feature .promo .owl-carousel .owl-item .carousel-image{
+		height: auto;
+	}
 	.objects{
 		&-intro{
 			padding-left: 0;
@@ -7502,6 +7505,10 @@
 	.fixed-navbar.sticky{
 		transform: translateY(0);
 	}
+
+	.panelfilter{
+		display: flex;
+	}
 	
 	.feature{
 		.promo .type-1{
@@ -8468,6 +8475,7 @@
 		}
 		.promo .owl-carousel .owl-item .carousel-image{
 			height: 235px;
+			width: auto;
 		}
 
 		.service{
