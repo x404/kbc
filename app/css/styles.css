@@ -6692,6 +6692,8 @@ div.table-flats .sort {
     margin-bottom: 2rem; }
   .complex-page .list_construction .place__pic {
     margin-top: 0; }
+  .complex-page .list_construction .place__photos i {
+    font-style: normal; }
   .complex-page .list_construction .construction__meta {
     margin-top: -8px;
     display: flex;
