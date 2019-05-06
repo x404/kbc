@@ -1086,6 +1086,7 @@ form .form-control {
   .fixed-header .wishlist .count,
   .apanel .wishlist .count {
     border-bottom: 2px solid #c40f39;
+    min-width: 14px;
     padding: 2px 2px 0;
     text-align: center; }
 
