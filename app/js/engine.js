@@ -645,13 +645,20 @@ $(document).on('click', '.flat a, .place a, .btn-fav, .td a', function(e){
 
 // в избранное
 var favto = 'В избранное',
-	favin = 'В избранном';
+	favin = 'В избранном',
+	favEl1 = $('.header .wishlist i'),
+	favEl2 = $('.fixed-header .wishlist i');
 
 $(document).on('click','.to-fav', function(e){
 	e.preventDefault();
+	let favCount = parseInt(favEl1.text());
 
 	this.classList.remove('to-fav');
 	this.classList.add('btn-fav-in');
+
+	// увеличиваем количество избранного 
+	favEl1.text(favCount + 1);
+	favEl2.text(favCount + 1);
 
 	try{
 		this.querySelector('span').textContent = favin; // house-list-all.html
@@ -662,8 +669,15 @@ $(document).on('click','.to-fav', function(e){
 // из избранного
 $(document).on('click','.btn-fav-in', function(e){
 	e.preventDefault();
+	let favCount = parseInt(favEl1.text());
+
 	this.classList.remove('btn-fav-in');
 	this.classList.add('to-fav');
+
+	// уменьшаем количество избранного 
+	favEl1.text(favCount - 1);
+	favEl2.text(favCount - 1);
+
 	try{
 		this.querySelector('span').textContent = favto;
 	} catch(e){};
