@@ -657,8 +657,9 @@ $(document).on('click','.to-fav', function(e){
 	this.classList.add('btn-fav-in');
 
 	// увеличиваем количество избранного 
-	favEl1.text(favCount + 1);
-	favEl2.text(favCount + 1);
+	favCount = favCount + 1;
+	favEl1.text(favCount);
+	favEl2.text(favCount);
 
 	try{
 		this.querySelector('span').textContent = favin; // house-list-all.html
@@ -675,8 +676,9 @@ $(document).on('click','.btn-fav-in', function(e){
 	this.classList.add('to-fav');
 
 	// уменьшаем количество избранного 
-	favEl1.text(favCount - 1);
-	favEl2.text(favCount - 1);
+	favCount = favCount - 1;
+	favEl1.text(favCount);
+	favEl2.text(favCount);
 
 	try{
 		this.querySelector('span').textContent = favto;
