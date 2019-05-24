@@ -50,6 +50,13 @@
 	}
 }
 
+.icon-people-green{
+	&:before{
+		@extend .before;
+		@include sprite($icon-people-green);
+	}
+}
+
 .icon-telbig{
 	position: relative;
 	&:before{
@@ -72,6 +79,13 @@
 	&:before{
 		@extend .before;
 		@include sprite($icon-tel-dark);
+	}
+}
+
+.icon-tel-green{
+	&:before{
+		@extend .before;
+		@include sprite($icon-tel-green);
 	}
 }
 
