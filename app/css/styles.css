@@ -175,13 +175,19 @@
 
 .icon-people-gray:before {
   background-image: url(../images/sprite.png);
-  background-position: -188px -112px;
+  background-position: -206px -112px;
   width: 18px;
   height: 17px; }
 
 .icon-people-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -206px -112px;
+  background-position: -128px -81px;
+  width: 18px;
+  height: 17px; }
+
+.icon-people-green:before {
+  background-image: url(../images/sprite.png);
+  background-position: -188px -112px;
   width: 18px;
   height: 17px; }
 
@@ -197,13 +203,19 @@
 
 .icon-tel:before {
   background-image: url(../images/sprite.png);
-  background-position: -172px -230px;
+  background-position: -203px -230px;
   width: 16px;
   height: 16px; }
 
 .icon-tel-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -127px -112px;
+  background-position: -128px -112px;
+  width: 16px;
+  height: 16px; }
+
+.icon-tel-green:before {
+  background-image: url(../images/sprite.png);
+  background-position: -187px -230px;
   width: 16px;
   height: 16px; }
 
@@ -239,7 +251,7 @@
   padding-left: 25px; }
   .icon-clock:before {
     background-image: url(../images/sprite.png);
-    background-position: -200px -93px;
+    background-position: -151px -112px;
     width: 19px;
     height: 19px;
     left: 0;
@@ -250,7 +262,7 @@
   position: relative; }
   .icon-darkclock:before {
     background-image: url(../images/sprite.png);
-    background-position: -151px -112px;
+    background-position: -200px -93px;
     width: 19px;
     height: 19px;
     left: 0;
@@ -258,7 +270,7 @@
 
 .icon-back:before {
   background-image: url(../images/sprite.png);
-  background-position: -128px -81px;
+  background-position: -77px -112px;
   width: 17px;
   height: 18px;
   left: 0;
@@ -266,14 +278,14 @@
 
 .icon-letter:before {
   background-image: url(../images/sprite.png);
-  background-position: -212px -152px;
+  background-position: -128px -98px;
   width: 18px;
   height: 14px;
   left: 0; }
 
 .icon-comment:before {
   background-image: url(../images/sprite.png);
-  background-position: -93px -112px;
+  background-position: -94px -112px;
   width: 17px;
   height: 17px;
   left: 0;
@@ -281,7 +293,7 @@
 
 .icon-comment-dark:before {
   background-image: url(../images/sprite.png);
-  background-position: -110px -112px;
+  background-position: -111px -112px;
   width: 17px;
   height: 17px;
   left: 0;
@@ -299,7 +311,7 @@
   position: relative; }
   .icon-attach-dark:before {
     background-image: url(../images/sprite.png);
-    background-position: -77px -112px;
+    background-position: -212px -134px;
     width: 16px;
     height: 19px; }
 
@@ -331,7 +343,7 @@
   position: relative; }
   .icon-label:before {
     background-image: url(../images/sprite.png);
-    background-position: -157px -230px;
+    background-position: -172px -230px;
     width: 15px;
     height: 18px;
     left: 12px;
@@ -348,7 +360,7 @@
   position: relative; }
   .icon-labelred:before {
     background-image: url(../images/sprite.png);
-    background-position: -212px -134px;
+    background-position: -157px -230px;
     width: 15px;
     height: 18px;
     left: 0; }
@@ -375,7 +387,7 @@
   padding-left: 33px; }
   .icon-camera:before {
     background-image: url(../images/sprite.png);
-    background-position: -266px -50px;
+    background-position: -266px -27px;
     width: 23px;
     height: 25px;
     left: 0;
@@ -451,7 +463,7 @@
   position: relative; }
   .icon-starsmall:before, .card_flat .btn-fav:before {
     background-image: url(../images/sprite.png);
-    background-position: -266px -27px;
+    background-position: -266px -52px;
     width: 25px;
     height: 23px;
     left: 0;
@@ -685,7 +697,7 @@ h3 {
   .vacancies-page .head p a:hover, .list_vacancy .answer__email .email:hover, .contact__plate .email:hover, div.table-flats .tbody .td .place a:hover, .complex-page .house__body .table td a:hover, .about-page .documents__content a:hover, .calculator-page .main .content .scheme .download a:hover {
     text-decoration: none; }
 
-.before, .icon-catalog:before, .icon-sett:before, .icon-pricelist:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-telbig:before, .icon-tel:before, .icon-tel-dark:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-labelred:before, .icon-house-dark:before, .icon-house-dark-sm:before, .icon-camera:before, .icon-cameramiddle:before, .icon-camerabig:before, .icon-photo:before, .icon-scheme:before, .icon-schemebig:before, .icon-check:before, .icon-starsmall:before, .card_flat .btn-fav:before, .icon-starsmallfill:before, .card_flat .btn-fav-in:before, .icon-pencil-dark:before, .icon-scheme-green:before, .icon-ruller:before, .icon-doc:before, .about-page .documents .doclist__item a:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
+.before, .icon-catalog:before, .icon-sett:before, .icon-pricelist:before, .icon-people:before, .icon-people-gray:before, .icon-people-dark:before, .icon-people-green:before, .icon-telbig:before, .icon-tel:before, .icon-tel-dark:before, .icon-tel-green:before, .icon-bulldozer:before, .icon-house:before, .icon-clock:before, .icon-darkclock:before, .icon-back:before, .icon-letter:before, .icon-comment:before, .icon-comment-dark:before, .icon-resume:before, .icon-attach-dark:before, .icon-attach-white:before, .icon-pencil:before, .icon-pencil-small:before, .icon-label:before, .icon-labelred:before, .icon-house-dark:before, .icon-house-dark-sm:before, .icon-camera:before, .icon-cameramiddle:before, .icon-camerabig:before, .icon-photo:before, .icon-scheme:before, .icon-schemebig:before, .icon-check:before, .icon-starsmall:before, .card_flat .btn-fav:before, .icon-starsmallfill:before, .card_flat .btn-fav-in:before, .icon-pencil-dark:before, .icon-scheme-green:before, .icon-ruller:before, .icon-doc:before, .about-page .documents .doclist__item a:before, .btn-red:before, .list_vacancy .btn:before, .btn-faq span:before, .btn-review span:before, .btn-faq:after, .btn-review:after, .btn-animate:before, .btn-animate:after, .fill-effect:before, .header .wishlist__link:before, .header .wishlist__link:after,
 .fixed-header .wishlist__link:before,
 .fixed-header .wishlist__link:after,
 .apanel .wishlist__link:before,
@@ -1100,7 +1112,7 @@ form .form-control {
 .header .wishlist__link:after,
 .fixed-header .wishlist__link:after {
   background-image: url(../images/sprite.png);
-  background-position: -235px -196px;
+  background-position: -235px -106px;
   width: 31px;
   height: 30px; }
 
@@ -1879,7 +1891,7 @@ form .form-control {
       background-color: #00874d; }
     .filter .showmap:before {
       background-image: url(../images/sprite.png);
-      background-position: -157px -230px;
+      background-position: -172px -230px;
       width: 15px;
       height: 18px;
       left: 20px;
@@ -2118,6 +2130,11 @@ form .form-control {
 
 .tab-content > .active {
   display: block; }
+
+body.modal-open {
+  padding-right: 16px !important; }
+  body.modal-open .fixed-header.sticky {
+    right: 8px; }
 
 body.modal-open,
 .modal-open-my {
@@ -5528,7 +5545,7 @@ div.table-flats .sort {
   height: 30px; }
   .btn-fav-in, .btn-fav:hover {
     background-image: url(../images/sprite.png);
-    background-position: -235px -196px;
+    background-position: -235px -106px;
     width: 31px;
     height: 30px; }
 
@@ -8084,7 +8101,7 @@ tbody.collapse.show {
       height: 30px; }
     .apanel__top .wishlist__link:after {
       background-image: url(../images/sprite.png);
-      background-position: -235px -106px;
+      background-position: -235px -196px;
       width: 31px;
       height: 30px; }
     .apanel__top .close-menu {
@@ -8147,6 +8164,67 @@ tbody.collapse.show {
     .asubnav_content.subnav_content-active {
       display: block;
       z-index: 10; }
+
+#consultation {
+  color: #000;
+  font-size: 1.6rem; }
+  #consultation .modal-dialog {
+    width: 69rem; }
+  #consultation .modal-content {
+    background-color: #fff;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+    padding: 4.2rem 5rem 0; }
+  #consultation .title {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase; }
+  #consultation .calcinfo {
+    background-color: #f1f4f6;
+    font-size: 1.8rem;
+    margin: 1.5rem 0 2rem;
+    padding: 2rem 3rem .3rem; }
+    #consultation .calcinfo .row {
+      border-bottom: 2px solid #fff;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 1rem 0; }
+      #consultation .calcinfo .row .field {
+        width: 58%; }
+    #consultation .calcinfo .final {
+      border-bottom: none;
+      font-size: 2.4rem;
+      padding-top: 1.5rem; }
+      #consultation .calcinfo .final .value {
+        color: #00874d;
+        font-size: 3rem; }
+  #consultation .inputs {
+    margin-top: 1rem; }
+  #consultation p {
+    line-height: 1.6; }
+  #consultation .value {
+    font-weight: bold; }
+  #consultation .form-control {
+    border-bottom-color: #00874d;
+    color: #000;
+    width: 245px; }
+  #consultation form .input-field label {
+    color: #000; }
+  #consultation .box-submit {
+    background: #f1f4f6;
+    margin-left: -5rem;
+    margin-right: -5rem;
+    margin-top: 3rem;
+    padding: 2.5rem 6rem 2.5rem 0;
+    display: flex;
+    justify-content: flex-end; }
+    #consultation .box-submit .btn {
+      font-size: 2rem;
+      height: auto;
+      padding: 2rem 2.5rem; }
+  #consultation .close {
+    top: 45px; }
+    #consultation .close line {
+      stroke: #929292; }
 
 ::-ms-clear {
   display: none; }
@@ -8345,7 +8423,7 @@ _::-webkit-:host:not(:root:root), .calculator-page .main aside .box.colors .radi
       margin-top: 0; }
       .filter .cell-buttons .showmap:before {
         background-image: url(../images/sprite.png);
-        background-position: -212px -134px;
+        background-position: -157px -230px;
         width: 15px;
         height: 18px;
         top: 20px; }

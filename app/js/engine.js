@@ -772,6 +772,15 @@ $(document).on('click', '[data-targetscroll], .subnav a', function(e){
 
 
 
+$('#consultation').on('show.bs.modal', function (e) {
+	document.querySelector('#costflat2').innerHTML = document.querySelector('#costflat').value;
+	document.querySelector('#first-payment2').innerHTML = document.querySelector('#first-payment').value;
+	document.querySelector('#calcpayment2').innerHTML = document.querySelector('#calcpayment').innerHTML;
+	document.querySelector('#term').innerHTML = document.querySelector('input[name="radio"]:checked').nextElementSibling.innerHTML;
+})
+
+
+
 $(window).on('load', function(){
 	// NProgress.set(1);
 	// NProgress.done();

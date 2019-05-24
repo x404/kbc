@@ -1947,6 +1947,14 @@ form{
 
 
 body.modal-open,
+{
+	padding-right: 16px !important;
+	.fixed-header.sticky{
+		right: 8px;
+	}
+}
+
+body.modal-open,
 .modal-open-my{
 	overflow: hidden;
 	width: 100%;
