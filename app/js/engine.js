@@ -772,12 +772,24 @@ $(document).on('click', '[data-targetscroll], .subnav a', function(e){
 
 
 
+// consultation
 $('#consultation').on('show.bs.modal', function (e) {
 	document.querySelector('#costflat2').innerHTML = document.querySelector('#costflat').value;
 	document.querySelector('#first-payment2').innerHTML = document.querySelector('#first-payment').value;
 	document.querySelector('#calcpayment2').innerHTML = document.querySelector('#calcpayment').innerHTML;
 	document.querySelector('#term').innerHTML = document.querySelector('input[name="radio"]:checked').nextElementSibling.innerHTML;
 })
+
+var cf = document.querySelector('.consultation__form');
+cf.onsubmit = function(e){
+	e.preventDefault();
+	let newDiv = document.createElement("div");
+		newDiv.className = 'thank';
+	document.querySelector('#consultation h3').innerHTML = 'Ваша заявка отправлена';
+	newDiv.innerHTML = 'наш менеджер перезвонит Вам в течение рабочего дня';
+	cf.parentNode.insertBefore(newDiv,cf);
+	cf.style.display = 'none';
+}
 
 
 

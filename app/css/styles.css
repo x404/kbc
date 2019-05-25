@@ -8225,6 +8225,72 @@ tbody.collapse.show {
     top: 45px; }
     #consultation .close line {
       stroke: #929292; }
+  #consultation .thank {
+    padding: 2rem 0 4rem; }
+
+@media (max-width: 750px) {
+  #consultation {
+    font-size: 1.5rem; }
+    #consultation .modal-dialog {
+      width: 95%; }
+    #consultation .calcinfo {
+      font-size: 1.6rem;
+      padding: 1.8rem 2.2rem .3rem; }
+      #consultation .calcinfo .final {
+        font-size: 2.2rem; }
+        #consultation .calcinfo .final .value {
+          font-size: 2.8rem; } }
+
+@media (max-width: 650px) {
+  #consultation .calcinfo .row {
+    flex-wrap: nowrap; }
+    #consultation .calcinfo .row .field {
+      min-width: 250px; }
+  #consultation .modal-content {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem; }
+  #consultation .inputs {
+    display: block; }
+    #consultation .inputs .input-field {
+      margin-top: 1.5rem; }
+    #consultation .inputs .form-control {
+      width: 100%; }
+  #consultation .box-submit {
+    justify-content: center;
+    margin-left: -2.5rem;
+    margin-right: -2.5rem;
+    padding-right: 0; }
+    #consultation .box-submit .btn {
+      padding: 1.5rem 2rem; } }
+
+@media (max-width: 600px) {
+  #consultation .close {
+    top: 15px;
+    right: 12px; }
+  #consultation .title {
+    font-size: 2.6rem;
+    text-align: center; }
+  #consultation .calcinfo .row {
+    display: block;
+    text-align: center; }
+    #consultation .calcinfo .row .field {
+      margin-bottom: 1rem;
+      width: 100%; }
+  #consultation .thank {
+    text-align: center; } }
+
+@media (max-width: 380px) {
+  #consultation .modal-content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+  #consultation .box-submit {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem; }
+  #consultation .calcinfo {
+    padding-left: .5rem;
+    padding-right: .5rem; }
+  #consultation .box-submit .btn {
+    font-size: 1.8rem; } }
 
 ::-ms-clear {
   display: none; }
