@@ -772,8 +772,9 @@ $(document).on('click', '[data-targetscroll], .subnav a', function(e){
 
 
 
-// consultation
+// =consultation
 $('#consultation').on('show.bs.modal', function (e) {
+	$('#calc-gnk').modal('hide');
 	document.querySelector('#costflat2').innerHTML = document.querySelector('#costflat').value;
 	document.querySelector('#first-payment2').innerHTML = document.querySelector('#first-payment').value;
 	document.querySelector('#calcpayment2').innerHTML = document.querySelector('#calcpayment').innerHTML;
@@ -790,6 +791,7 @@ cf.onsubmit = function(e){
 	cf.parentNode.insertBefore(newDiv,cf);
 	cf.style.display = 'none';
 }
+// =/consultation
 
 
 
