@@ -528,7 +528,7 @@
 								<p class="cifr" id="calcpayment"></p>
 							</div>
 							<div class="right">
-								<button type="button" class="btn btn-red">Получить консультацию</button>
+								<button type="button" class="btn btn-red" data-toggle="modal" data-target="#consultation">Получить консультацию</button>
 							</div>
 						</div>
 					</div>
@@ -1601,6 +1601,68 @@
 </div>
 <!-- =/apanel -->
 <!-- InstanceBeginEditable name="EditRegion5" -->
+
+
+<!-- =consultation-->
+<div class="modal fade" id="consultation" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<h3 class="title">Получить консультацию</h3>
+
+			<form action="#" method="post" class="consultation__form">
+				<fieldset>
+					<div class="calcinfo">
+						<div class="row">
+							<div class="field">Стоимость квартиры</div>
+							<div class="value" id="costflat2">3 650 000 Р</div>
+						</div>
+						<div class="row">
+							<div class="field">Срок кредита</div>
+							<div class="value" id="term">5 лет (под 8% годовых)</div>
+						</div>
+						<div class="row">
+							<div class="field">Первоначальный взнос</div>
+							<div class="value" id="first-payment2">1 650 000 Р</div>
+						</div>
+						<div class="row final">
+							<div class="field">Ежемесячный платеж</div>
+							<div class="value" id="calcpayment2">24 460 Р/Мес</div>
+						</div>
+					</div>
+
+					<p>Оставьте свои контактные данные и наш менеджер перезвонит Вам в течение рабочего дня</p>
+
+					<div class="flexbox inputs">
+						<div class="input-field icon-people-green">
+							<label for="consultation_name" class="name-field">Ваше имя</label>
+							<label for="consultation_name" class="helper-field helper-field-name">Ваше имя</label>
+							<input type="email" id="consultation_name" name="name" class="form-control required" value="">
+						</div>
+						<div class="input-field icon-tel-green">
+							<label for="consultation_tel" class="name-field">Телефон</label>
+							<label for="consultation_tel" class="helper-field helper-field-name">Телефон</label>
+							<input type="tel" id="consultation_tel" name="tel" class="form-control tel required" value="">
+						</div>
+					</div>
+
+					<div class="box-submit">
+						<button type="submit" class="submit btn btn-red"><span>Получить консультацию</span></button>
+					</div>
+				</fieldset>
+			</form>
+
+			<button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+				<svg width="24" height="24">
+					<line x1="0" y1="0" x2="24" y2="24"/>
+					<line x1="24" y1="0" x2="0" y2="24"/>
+				</svg>
+			</button>
+		</div>
+	</div>
+</div>
+<!-- =/consultation -->
+
+
 
 <script src="js/wNumb.js"></script>
 <script src="/js/calculator.js"></script>
